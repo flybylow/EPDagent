@@ -1,12 +1,14 @@
 import * as crypto from "node:crypto";
 import * as fs from "node:fs";
 import * as path from "node:path";
-import { phase2PageRange } from "../pdf/pages";
+import { resolvePhase2PageSpec } from "../extract/phase2-pages";
+import { resolvePhase3CompositionPageSpec } from "../extract/phase3-composition-pages";
+import { resolvePhase3PageSpec } from "../extract/phase3-pages";
 import { PHASE_DIRS } from "../paths";
-import type { Phase2Data } from "../types";
+import type { Phase2Data, Phase3CompositionData, Phase3ProductData } from "../types";
 
 const DEFAULT_MAX_PDF_BYTES = 5 * 1024 * 1024;
-const DEFAULT_MAX_API_PDF_BYTES = 1024 * 1024;
+const DEFAULT_MAX_API_PDF_BYTES = 2 * 1024 * 1024;
 
 export function maxPdfBytes(): number {
   const raw = process.env.EPDAGENT_MAX_PDF_BYTES?.trim();
@@ -78,7 +80,7 @@ export function phase2CacheStatus(stem: string, pdfPath: string, force = false):
   const cached = JSON.parse(fs.readFileSync(outPath, "utf-8")) as Phase2Data;
   const cachedHash = cached._source?.pdf_sha256;
   const cachedPages = cached._source?.api_pages as string | undefined;
-  const currentPages = phase2PageRange();
+  const currentPages = resolvePhase2PageSpec(stem);
   if (!cachedHash) {
     return { skip: false, outPath };
   }
@@ -88,6 +90,75 @@ export function phase2CacheStatus(stem: string, pdfPath: string, force = false):
     return {
       skip: true,
       reason: `unchanged PDF + pages ${currentPages}; cached phase2 output exists (use --force to re-extract)`,
+      outPath,
+    };
+  }
+
+  return { skip: false, outPath };
+}
+
+export interface Phase3CacheStatus {
+  skip: boolean;
+  reason?: string;
+  outPath: string;
+}
+
+/** Skip phase 3 when cached output matches the current PDF hash and page spec. */
+export function phase3CacheStatus(stem: string, pdfPath: string, force = false): Phase3CacheStatus {
+  const outPath = path.join(PHASE_DIRS.phase3, `${stem}.json`);
+  if (force || !fs.existsSync(outPath)) {
+    return { skip: false, outPath };
+  }
+
+  const cached = JSON.parse(fs.readFileSync(outPath, "utf-8")) as Phase3ProductData;
+  const cachedHash = cached._source?.pdf_sha256;
+  const cachedPages = cached._source?.api_pages as string | undefined;
+  const currentPages = resolvePhase3PageSpec(stem);
+  if (!cachedHash) {
+    return { skip: false, outPath };
+  }
+
+  const currentHash = pdfSha256(pdfPath);
+  if (cachedHash === currentHash && cachedPages === currentPages) {
+    return {
+      skip: true,
+      reason: `unchanged PDF + pages ${currentPages}; cached phase3 output exists (use --force to re-extract)`,
+      outPath,
+    };
+  }
+
+  return { skip: false, outPath };
+}
+
+export interface Phase3CompositionCacheStatus {
+  skip: boolean;
+  reason?: string;
+  outPath: string;
+}
+
+export function phase3CompositionCacheStatus(
+  stem: string,
+  pdfPath: string,
+  force = false
+): Phase3CompositionCacheStatus {
+  const outPath = path.join(PHASE_DIRS.phase3_composition, `${stem}.json`);
+  if (force || !fs.existsSync(outPath)) {
+    return { skip: false, outPath };
+  }
+
+  const cached = JSON.parse(fs.readFileSync(outPath, "utf-8")) as Phase3CompositionData;
+  const cachedHash = cached._source?.pdf_sha256;
+  const cachedPages = cached._source?.api_pages as string | undefined;
+  const currentPages = resolvePhase3CompositionPageSpec(stem);
+  if (!cachedHash) {
+    return { skip: false, outPath };
+  }
+
+  const currentHash = pdfSha256(pdfPath);
+  if (cachedHash === currentHash && cachedPages === currentPages) {
+    return {
+      skip: true,
+      reason: `unchanged PDF + pages ${currentPages}; cached phase3 composition exists (use --force to re-extract)`,
       outPath,
     };
   }

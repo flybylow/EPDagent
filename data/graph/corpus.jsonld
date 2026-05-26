@@ -82,7 +82,8 @@
     {
       "@id": "http://localhost:3000/id/operator/BE-BD",
       "@type": "ProgramOperator",
-      "schema:name": "BE-BD"
+      "schema:name": "BE-BD",
+      "operatorCode": "BE-BD"
     },
     {
       "@id": "http://localhost:3000/id/org/2d723fd34267",
@@ -123,10 +124,13 @@
       "schema:validThrough": "2028-10-26",
       "pcrReference": "EN 16783, Thermal insulation products – Product category rules (PCR) for factory made and in-situ formed",
       "programOperator": {
-        "@id": "http://localhost:3000/id/operator/BE-BD"
+        "@id": "http://localhost:3000/id/operator/B-EPD"
       },
       "producer": {
         "@id": "http://localhost:3000/id/org/70171658eb5b"
+      },
+      "verifier": {
+        "@id": "http://localhost:3000/id/person/40a66510e56a"
       },
       "prov:wasDerivedFrom": {
         "@type": "prov:Entity",
@@ -135,9 +139,10 @@
       "prov:generatedAtTime": "2026-05-26T10:04:07.581Z"
     },
     {
-      "@id": "http://localhost:3000/id/operator/BE-BD",
+      "@id": "http://localhost:3000/id/operator/B-EPD",
       "@type": "ProgramOperator",
-      "schema:name": "BE-BD"
+      "schema:name": "Federal Public Service of Health, Food Chain Safety and Environment",
+      "operatorCode": "B-EPD"
     },
     {
       "@id": "http://localhost:3000/id/org/70171658eb5b",
@@ -145,6 +150,12 @@
       "schema:name": "ROCKWOOL",
       "schema:address": null,
       "schema:addressCountry": "BE"
+    },
+    {
+      "@id": "http://localhost:3000/id/person/40a66510e56a",
+      "@type": "schema:Person",
+      "schema:name": "Evert Vermaut (Vincotte)",
+      "verificationType": "independent_third_party"
     },
     {
       "@id": "http://localhost:3000/id/epd/EPD-BBD-20230001-IBE1-EN",
@@ -182,7 +193,8 @@
     {
       "@id": "http://localhost:3000/id/operator/BE-BD",
       "@type": "ProgramOperator",
-      "schema:name": "BE-BD"
+      "schema:name": "BE-BD",
+      "operatorCode": null
     },
     {
       "@id": "http://localhost:3000/id/org/3c3f89f6ca59",
@@ -233,7 +245,8 @@
     {
       "@id": "http://localhost:3000/id/operator/BE-BD",
       "@type": "ProgramOperator",
-      "schema:name": "BE-BD"
+      "schema:name": "BE-BD",
+      "operatorCode": null
     },
     {
       "@id": "http://localhost:3000/id/org/d41897f685a3",

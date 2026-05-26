@@ -11,8 +11,9 @@ import {
   pdfDir,
   pdfStem,
 } from "./paths";
-import type { EpdRecord, Phase1Data, Phase2Data } from "./types";
+import type { EpdRecord, Phase1Data, Phase2Data, Phase3CompositionData, Phase3ProductData } from "./types";
 import type { DraftDocument, DraftManifest, VerificationResult } from "./templates/types";
+import type { PhaseDocmapResult } from "./extract/docmap";
 import { getReferenceByStem } from "./reference";
 
 function isDemoFixture(phase1: Phase1Data | null, phase2: Phase2Data | null): boolean {
@@ -52,6 +53,14 @@ export function loadPhase2(stem: string): Phase2Data | null {
   return readJson<Phase2Data>(path.join(PHASE_DIRS.phase2, `${stem}.json`));
 }
 
+export function loadPhase3(stem: string): Phase3ProductData | null {
+  return readJson<Phase3ProductData>(path.join(PHASE_DIRS.phase3, `${stem}.json`));
+}
+
+export function loadPhase3Composition(stem: string): Phase3CompositionData | null {
+  return readJson<Phase3CompositionData>(path.join(PHASE_DIRS.phase3_composition, `${stem}.json`));
+}
+
 export function loadGraphDocument(stem: string): Record<string, unknown> | null {
   const jsonld = path.join(GRAPH_DIR, `${stem}.jsonld`);
   return readJson<Record<string, unknown>>(jsonld);
@@ -71,6 +80,10 @@ export function loadDraftManifest(stem: string): DraftManifest | null {
 
 export function loadVerification(stem: string): VerificationResult | null {
   return readJson<VerificationResult>(path.join(VERIFICATION_DIR, `${stem}.json`));
+}
+
+export function loadDocmap(stem: string): PhaseDocmapResult | null {
+  return readJson<PhaseDocmapResult>(path.join(PHASE_DIRS.phase_docmap, `${stem}.json`));
 }
 
 export function pdfPathForStem(stem: string): string | null {

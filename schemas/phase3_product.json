@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EPD Product Identification",
+  "description": "Phase 3 output: product description (§1) and technical data (§2) from an EN 15804 EPD PDF",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": ["string", "null"],
+      "description": "Full product description text from section 1.2"
+    },
+    "intended_use": {
+      "type": ["string", "null"],
+      "description": "Intended use / application from section 1.2 or 1.4"
+    },
+    "reference_flow": {
+      "type": "object",
+      "properties": {
+        "value": { "type": ["number", "null"] },
+        "unit": { "type": ["string", "null"] },
+        "description": {
+          "type": ["string", "null"],
+          "description": "Verbatim declared unit / reference flow sentence"
+        }
+      },
+      "required": ["value", "unit", "description"]
+    },
+    "installation": {
+      "type": ["string", "null"],
+      "description": "Installation notes from section 1.4"
+    },
+    "reference_service_life_years": {
+      "type": ["number", "null"],
+      "description": "Reference service life in years from section 1.6"
+    },
+    "geographical_representativity": {
+      "type": ["string", "null"],
+      "description": "Geographical representativity from section 1.7"
+    },
+    "production_process": {
+      "type": ["string", "null"],
+      "description": "Production process summary from section 1.8"
+    },
+    "technical_properties": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "object",
+        "properties": {
+          "property": { "type": ["string", "null"] },
+          "standard": { "type": ["string", "null"] },
+          "value": { "type": ["string", "null"] },
+          "unit": { "type": ["string", "null"] },
+          "comment": { "type": ["string", "null"] }
+        },
+        "required": ["property", "standard", "value", "unit", "comment"]
+      },
+      "description": "Rows from the technical data / physical characteristics table (section 2)"
+    }
+  },
+  "required": [
+    "description",
+    "intended_use",
+    "reference_flow",
+    "installation",
+    "reference_service_life_years",
+    "geographical_representativity",
+    "production_process",
+    "technical_properties"
+  ]
+}

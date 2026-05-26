@@ -60,12 +60,13 @@ export function buildEpdGraph(stem: string, phase1: Phase1Data | null, phase2: P
     epdNode.pcrReference = phase2.pcr_reference;
   }
 
-  const operatorId = operatorIri(phase2?.program_operator);
+  const operatorId = operatorIri(phase2?.program_operator_code ?? phase2?.program_operator);
   if (operatorId) {
     nodes.push({
       "@id": operatorId,
       "@type": "ProgramOperator",
       "schema:name": phase2?.program_operator,
+      operatorCode: phase2?.program_operator_code ?? null,
     });
     epdNode.programOperator = ref(operatorId);
   }

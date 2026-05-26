@@ -7,9 +7,12 @@
   "producer": "ETEX",
   "product": "natura ea",
   "language": "EN",
+  "phase3Pages": "2-4",
+  "phase3CompositionPages": "3",
   "outputs": {
     "phase1": "out/phase1_filename/{stem}.json",
     "phase2": "out/phase2_header/{stem}.json",
+    "phase3": "out/phase3_product/{stem}.json",
     "draft": "out/drafts/{stem}/draft.json",
     "graph": "data/graph/{stem}.jsonld",
     "verification": "out/verification/{stem}.json"

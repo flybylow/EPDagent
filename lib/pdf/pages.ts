@@ -48,28 +48,50 @@ export interface PdfSliceResult {
 }
 
 /**
- * Extract a page range from a PDF for API upload.
- * Optionally writes the slice to out/pdf_slices/ for inspection and reuse.
+ * Extract PDF pages for API upload (single range or comma list, e.g. "1-4,18,21").
  */
-export async function slicePdfPages(
+export function parsePageSpecs(spec: string): number[] {
+  const pages = new Set<number>();
+  for (const part of spec.split(",").map((s) => s.trim()).filter(Boolean)) {
+    if (part.includes("-")) {
+      const range = parsePageRange(part);
+      for (let p = range.start; p <= range.end; p++) pages.add(p);
+    } else {
+      const page = Number(part);
+      if (!Number.isInteger(page) || page < 1) {
+        throw new Error(`Invalid page spec "${spec}". Use "1-4,18,21" or single pages.`);
+      }
+      pages.add(page);
+    }
+  }
+  return [...pages].sort((a, b) => a - b);
+}
+
+function pageListLabel(pages: number[]): string {
+  return pages.map((p) => `p${p}`).join("-");
+}
+
+/** Slice a comma/range page spec (e.g. "1-4,18,21") for API upload. */
+export async function slicePdfByPageSpec(
   pdfPath: string,
   pageSpec: string,
   options: { export?: boolean; stem?: string } = {}
 ): Promise<PdfSliceResult> {
-  const range = parsePageRange(pageSpec);
+  const pages = parsePageSpecs(pageSpec);
+  if (pages.length === 0) {
+    throw new Error(`Page spec "${pageSpec}" matched no pages.`);
+  }
+
   const srcBytes = fs.readFileSync(pdfPath);
   const srcDoc = await PDFDocument.load(srcBytes, { ignoreEncryption: true });
   const totalPages = srcDoc.getPageCount();
 
-  if (range.start > totalPages) {
-    throw new Error(
-      `Page range ${pageSpec} starts at page ${range.start} but PDF has only ${totalPages} page(s).`
-    );
-  }
-
-  const end = Math.min(range.end, totalPages);
-  const pageIndexes = Array.from({ length: end - range.start + 1 }, (_, i) => range.start - 1 + i);
-  const pages = pageIndexes.map((i) => i + 1);
+  const pageIndexes = pages.map((p) => {
+    if (p > totalPages) {
+      throw new Error(`Page ${p} not in PDF (only ${totalPages} pages).`);
+    }
+    return p - 1;
+  });
 
   const outDoc = await PDFDocument.create();
   const copied = await outDoc.copyPages(srcDoc, pageIndexes);
@@ -77,13 +99,13 @@ export async function slicePdfPages(
 
   const bytes = Buffer.from(await outDoc.save());
   const sha256 = crypto.createHash("sha256").update(bytes).digest("hex");
-  const pageRange = pages.length === 1 ? String(pages[0]) : `${pages[0]}-${pages[pages.length - 1]}`;
+  const pageRange = pages.join(",");
 
   let exportPath: string | null = null;
   if (options.export !== false) {
     const stem = options.stem ?? path.basename(pdfPath, path.extname(pdfPath));
     fs.mkdirSync(PDF_SLICES_DIR, { recursive: true });
-    exportPath = path.join(PDF_SLICES_DIR, `${stem}.${range.label}.pdf`);
+    exportPath = path.join(PDF_SLICES_DIR, `${stem}.${pageListLabel(pages)}.pdf`);
     fs.writeFileSync(exportPath, bytes);
   }
 

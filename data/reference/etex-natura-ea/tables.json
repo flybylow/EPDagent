@@ -1,0 +1,26 @@
+{
+  "stem": "B-EPD 21-0135-03-00-00-EN ETEX - natura ea - signed",
+  "tables": [
+    {
+      "id": "composition",
+      "title": "Composition and content",
+      "phase": "phase3_composition",
+      "page": 3,
+      "section": "1.5"
+    },
+    {
+      "id": "technical_data",
+      "title": "Technical data / physical characteristics",
+      "phase": "phase3_product",
+      "page": 4,
+      "section": "2"
+    },
+    {
+      "id": "lca_impacts",
+      "title": "Potential environmental impacts per reference unit",
+      "phase": "phase4_lca",
+      "page": 11,
+      "section": "4"
+    }
+  ]
+}

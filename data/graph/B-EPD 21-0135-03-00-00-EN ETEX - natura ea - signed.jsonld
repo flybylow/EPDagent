@@ -82,7 +82,8 @@
     {
       "@id": "http://localhost:3000/id/operator/BE-BD",
       "@type": "ProgramOperator",
-      "schema:name": "BE-BD"
+      "schema:name": "BE-BD",
+      "operatorCode": "BE-BD"
     },
     {
       "@id": "http://localhost:3000/id/org/2d723fd34267",

@@ -1,12 +1,9 @@
 import Anthropic from "@anthropic-ai/sdk";
 import * as fs from "node:fs";
 import * as path from "node:path";
-import {
-  assertApiPayloadWithinBudget,
-  assertPdfWithinBudget,
-  pdfSha256,
-} from "../anthropic/guard";
-import { phase2PageRange, slicePdfPages } from "../pdf/pages";
+import { assertApiPayloadWithinBudget, assertPdfWithinBudget, pdfSha256 } from "../anthropic/guard";
+import { resolvePhase2PageSpec } from "./phase2-pages";
+import { slicePdfByPageSpec } from "../pdf/pages";
 import { PHASE_DIRS, SCHEMAS_DIR } from "../paths";
 import type { Phase2Data } from "../types";
 
@@ -20,10 +17,13 @@ const SYSTEM_PROMPT = `You are an extractor for Environmental Product Declaratio
 
 Your task: read the attached EPD PDF excerpt and extract the header-level metadata fields defined in the provided tool schema.
 
-The attachment contains only the first pages of the full EPD (cover and general information). All header fields should appear in these pages.
+The attachment may include cover pages plus later pages (e.g. verifier signature blocks). Extract verifier.name from any attached page where it appears.
 
 Rules:
 - Return values exactly as they appear in the document. Do not normalize or paraphrase product names.
+- program_operator: full legal name as printed (e.g. "Federal Public Service of Health, Food Chain Safety and Environment"). Never substitute abbreviations like BE-BD or B-EPD for this field.
+- program_operator_code: short label only when explicitly shown (e.g. "B-EPD", "BE-BD", "BBD"); otherwise null.
+- verifier.name: person name with organisation in parentheses when shown, e.g. "Evert Vermaut (Vincotte)".
 - product_name: main title on the cover. product_description: secondary product type line when separate from declared_scope.
 - declared_scope: verbatim cover line combining declared unit and product application, when shown as one sentence under MODULES DECLARED.
 - declared_modules: list every lifecycle module code (A1, A2, A3, A4, A5, B1–B7, C1–C4, D) that is marked declared on the cover; use A1, A2, A3 not A1-A3 unless the PDF groups them.
@@ -35,7 +35,6 @@ Rules:
 - Country codes must be ISO 3166-1 alpha-2 (e.g. BE, NL, DE, FR).
 - declared_unit.unit: use a short symbol form (m3, m2, kg, t, piece, m, kWh). No spaces, no Unicode superscripts.
 - If a field is not present in the document or you are not confident, set it to null. Do not guess.
-- The EPD program operator for BEBD documents is typically "BE-BD" (also written "BBD" or "Belgian Building Declaration"). Use "BE-BD" as the canonical string.
 - For verifier.type: "independent_third_party" if the EPD explicitly mentions external/independent verification per EN 15804 section 8.1.3; "internal" if it states internal verification; otherwise "unknown".`;
 
 export async function runPhase2(
@@ -46,8 +45,8 @@ export async function runPhase2(
   const stem = path.basename(pdfPath, path.extname(pdfPath));
   assertPdfWithinBudget(pdfPath);
 
-  const pageSpec = phase2PageRange();
-  const slice = await slicePdfPages(pdfPath, pageSpec, { stem });
+  const pageSpec = resolvePhase2PageSpec(stem);
+  const slice = await slicePdfByPageSpec(pdfPath, pageSpec, { stem });
   assertApiPayloadWithinBudget(
     slice.byteSize,
     `Phase 2 slice (pages ${slice.pageRange})`

@@ -1,0 +1,74 @@
+{
+  "version": "1",
+  "phases": [
+    {
+      "id": "docmap",
+      "order": 0,
+      "name": "Document index",
+      "description": "Table of contents / section map from the PDF",
+      "outputDir": "phase_docmap",
+      "apiPath": "docmap"
+    },
+    {
+      "id": "phase1",
+      "order": 1,
+      "name": "Filename parse",
+      "description": "EPD id, language, and filename pattern",
+      "outputDir": "phase1_filename",
+      "apiPath": "phases",
+      "apiQuery": "phase=1"
+    },
+    {
+      "id": "phase2",
+      "order": 2,
+      "name": "Header metadata",
+      "description": "Cover, declaration scope, producer, verification",
+      "outputDir": "phase2_header",
+      "apiPath": "phases",
+      "apiQuery": "phase=2",
+      "hasDraft": true
+    },
+    {
+      "id": "phase3_product",
+      "order": 3,
+      "name": "Product identification",
+      "description": "Product description (§1) and technical data (§2)",
+      "outputDir": "phase3_product",
+      "apiPath": "phases",
+      "apiQuery": "phase=3",
+      "tablePhase": "phase3_product"
+    },
+    {
+      "id": "phase3_composition",
+      "order": 3.1,
+      "name": "Composition and content",
+      "description": "Materials, ingredients, quantities",
+      "outputDir": "phase3_composition",
+      "apiPath": "phases",
+      "apiQuery": "phase=3-composition",
+      "tablePhase": "phase3_composition"
+    },
+    {
+      "id": "phase4_lca",
+      "order": 4,
+      "name": "LCA tables",
+      "description": "Environmental impacts per reference unit",
+      "outputDir": "phase4_lca",
+      "tablePhase": "phase4_lca"
+    },
+    {
+      "id": "phase5_scenarios",
+      "order": 5,
+      "name": "Scenarios",
+      "description": "Transport, installation, use, end-of-life assumptions",
+      "outputDir": "phase5_scenarios"
+    },
+    {
+      "id": "phase6_refs",
+      "order": 6,
+      "name": "References",
+      "description": "Bibliography and additional information",
+      "outputDir": "phase6_refs"
+    }
+  ]
+}

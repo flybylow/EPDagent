@@ -17,7 +17,7 @@ function SourceTag({ record }: { record: EpdRecord }) {
   if (record.referenceId) {
     return (
       <span className="source-tag source-reference" title={record.referenceLabel ?? undefined}>
-        reference{record.referenceId === "etex-natura-ea" ? " · compare here" : ""}
+        reference
       </span>
     );
   }

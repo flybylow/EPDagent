@@ -10,8 +10,8 @@ export default function HomePage() {
       <section>
         <h1>EPD corpus</h1>
         <p className="lede">
-          EPD PDFs in <code>data/EPD/</code>. The ETEX <em>natura ea</em> file is the canonical
-          reference for compare — tag <strong>reference · compare here</strong>.
+          EPD PDFs in <code>data/EPD/</code>. Open any EPD to compare the source PDF with the
+          formatted draft side by side.
         </p>
       </section>
 

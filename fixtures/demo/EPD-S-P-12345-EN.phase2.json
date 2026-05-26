@@ -1,6 +1,7 @@
 {
   "epd_number": "S-P-12345",
   "program_operator": "BE-BD",
+  "program_operator_code": "BE-BD",
   "producer": {
     "name": "Demo Manufacturer NV",
     "address": "Industrielaan 1, 1000 Brussels",

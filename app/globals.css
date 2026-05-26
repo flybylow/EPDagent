@@ -572,3 +572,278 @@ code {
     grid-template-columns: 1fr;
   }
 }
+
+.dev-data-panel {
+  padding: 0;
+}
+
+.dev-data-summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 1rem 1.25rem;
+  margin: 0;
+}
+
+.dev-data-summary::-webkit-details-marker {
+  display: none;
+}
+
+.dev-data-body {
+  padding: 0 1.25rem 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.dev-data-body h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.draft-panel-head {
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.draft-panel-head-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.draft-panel-head-main h2 {
+  margin: 0;
+}
+
+.view-tabs {
+  display: inline-flex;
+  gap: 0.25rem;
+  padding: 0.2rem;
+  border-radius: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+.view-tab {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.view-tab:hover {
+  color: var(--text);
+}
+
+.view-tab-active {
+  background: #fff;
+  color: var(--text);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.draft-panel-body {
+  flex: 1;
+  min-height: min(65vh, 680px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.draft-panel-body .draft-doc,
+.draft-panel-body .docmap-doc {
+  flex: 1;
+  overflow: auto;
+}
+
+.docmap-doc {
+  background: #fff;
+  color: #1a1a1a;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+}
+
+.docmap-doc-meta {
+  margin: 0 0 1rem;
+  color: #5c6570;
+  font-size: 0.9rem;
+}
+
+.docmap-tree {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.docmap-tree .docmap-tree {
+  margin-left: 1rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--border);
+}
+
+.docmap-tree-item {
+  margin: 0.35rem 0;
+}
+
+.docmap-tree-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.5rem 0.75rem;
+  align-items: baseline;
+  font-size: 0.92rem;
+}
+
+.docmap-tree-number {
+  font-variant-numeric: tabular-nums;
+  color: #5c6570;
+  min-width: 2rem;
+}
+
+.docmap-tree-title {
+  line-height: 1.35;
+}
+
+.docmap-tree-page {
+  font-variant-numeric: tabular-nums;
+  color: #5c6570;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.docmap-tree-item[data-level="1"] > .docmap-tree-row .docmap-tree-title {
+  font-weight: 600;
+}
+
+.epd-detail-workspace {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.epd-detail-columns {
+  align-items: stretch;
+}
+
+.epd-detail-pdf {
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+  max-height: calc(100vh - 2rem);
+}
+
+.epd-detail-phases {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.phase-panel-head-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+}
+
+.phase-panel-head-main h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.phase-panel-desc {
+  margin: 0 0 0.75rem;
+}
+
+.phase-panel-body .draft-doc,
+.phase-panel-body .docmap-doc {
+  margin: 0;
+}
+
+.phase-status {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.phase-status-ready {
+  background: #e6f4ea;
+  color: #1e6b3a;
+}
+
+.phase-status-visual_only {
+  background: #e8f0fe;
+  color: #1a4dab;
+}
+
+.phase-status-pending {
+  background: #f3f4f6;
+  color: #5c6570;
+}
+
+.phase-status-empty {
+  background: #fef3e6;
+  color: #8a5a00;
+}
+
+.phase1-summary {
+  background: #fff;
+  color: #1a1a1a;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+.phase3-doc {
+  background: #fff;
+  color: #1a1a1a;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+.phase3-table-wrap {
+  overflow-x: auto;
+}
+
+.phase3-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.phase3-table th,
+.phase3-table td {
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.phase3-table th {
+  background: var(--bg);
+  font-weight: 600;
+}
+
+.phase3-declarations {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+  color: #5c6570;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .epd-detail-pdf {
+    position: static;
+    max-height: none;
+  }
+}
+

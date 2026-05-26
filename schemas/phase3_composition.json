@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EPD Composition and Content",
+  "description": "Phase 3.1 output: composition table from section 1.5",
+  "type": "object",
+  "properties": {
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section": {
+            "type": ["string", "null"],
+            "description": "Table section grouping, e.g. Product, Fixation materials, Packaging"
+          },
+          "component": {
+            "type": ["string", "null"],
+            "description": "Component / material name"
+          },
+          "composition": {
+            "type": ["string", "null"],
+            "description": "Composition / content / ingredients column"
+          },
+          "quantity": {
+            "type": ["string", "null"],
+            "description": "Quantity as printed, e.g. '70-80 %', '6 p', '0.0688 kg'"
+          }
+        },
+        "required": ["section", "component", "composition", "quantity"]
+      }
+    },
+    "declarations": {
+      "type": ["array", "null"],
+      "items": { "type": "string" },
+      "description": "Verbatim notes below the table, e.g. SVHC statements"
+    }
+  },
+  "required": ["components", "declarations"]
+}

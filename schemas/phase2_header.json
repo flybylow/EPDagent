@@ -10,7 +10,11 @@
     },
     "program_operator": {
       "type": ["string", "null"],
-      "description": "The EPD program operator, e.g. 'BE-BD', 'EPD International', 'IBU', 'INIES'"
+      "description": "Program operator name exactly as in the PDF (full legal name, not an abbreviation)"
+    },
+    "program_operator_code": {
+      "type": ["string", "null"],
+      "description": "Short program label when shown separately, e.g. 'B-EPD', 'BE-BD', 'BBD'"
     },
     "producer": {
       "type": "object",
@@ -76,7 +80,7 @@
     "verifier": {
       "type": "object",
       "properties": {
-        "name": { "type": ["string", "null"], "description": "Name of the independent verifier" },
+        "name": { "type": ["string", "null"], "description": "Verifier name as in the PDF, including organisation in parentheses if shown, e.g. 'Evert Vermaut (Vincotte)'" },
         "type": {
           "type": ["string", "null"],
           "enum": ["independent_third_party", "internal", "unknown", null],
@@ -89,6 +93,7 @@
   "required": [
     "epd_number",
     "program_operator",
+    "program_operator_code",
     "producer",
     "product_name",
     "product_description",

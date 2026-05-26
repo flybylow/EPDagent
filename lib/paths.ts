@@ -23,6 +23,9 @@ export const VERIFICATION_DIR = path.join(OUT_DIR, "verification");
 export const PHASE_DIRS = {
   phase1: path.join(OUT_DIR, "phase1_filename"),
   phase2: path.join(OUT_DIR, "phase2_header"),
+  phase3: path.join(OUT_DIR, "phase3_product"),
+  phase3_composition: path.join(OUT_DIR, "phase3_composition"),
+  phase_docmap: path.join(OUT_DIR, "phase_docmap"),
 } as const;
 
 export function pdfStem(filename: string): string {

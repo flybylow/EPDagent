@@ -1,6 +1,6 @@
 {
   "id": "epd-header",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "title": "EPD Header Draft",
   "sections": [
     {
@@ -8,14 +8,30 @@
       "title": "Identification",
       "fields": [
         { "id": "product_name", "label": "Product name", "path": "phase2.product_name", "format": "text" },
-        { "id": "product_description", "label": "Product type", "path": "phase2.product_description", "format": "text" },
+        {
+          "id": "product_description",
+          "label": "Product type",
+          "path": "phase2.product_description",
+          "format": "text"
+        },
         { "id": "epd_number", "label": "EPD number", "path": "phase2.epd_number", "format": "text" },
         { "id": "issued", "label": "Date of issue", "path": "phase2.validity.issued", "format": "date-eu" },
         { "id": "valid_until", "label": "Valid until", "path": "phase2.validity.valid_until", "format": "date-eu" },
         { "id": "verification_statement", "label": "Verification", "path": "phase2.verification_statement", "format": "text" },
-        { "id": "conformity_basis", "label": "Conformity basis", "path": "phase2.conformity_basis", "format": "text" },
-        { "id": "standards_conformity", "label": "Standards conformity", "path": "phase2.standards_conformity", "format": "text" },
+        {
+          "id": "conformity",
+          "label": "Conformity",
+          "path": "phase2.conformity_basis",
+          "fallbackPath": "phase2.standards_conformity",
+          "format": "text"
+        },
         { "id": "program_operator", "label": "Program operator", "path": "phase2.program_operator", "format": "text" },
+        {
+          "id": "program_operator_code",
+          "label": "Program code",
+          "path": "phase2.program_operator_code",
+          "format": "text"
+        },
         { "id": "language", "label": "Document language", "path": "phase1.language", "format": "text" },
         { "id": "filename_pattern", "label": "Filename pattern", "path": "phase1.pattern", "format": "text" }
       ]

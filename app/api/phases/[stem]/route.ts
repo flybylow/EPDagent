@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { loadPhase1, loadPhase2 } from "@/lib/data";
+import { loadPhase1, loadPhase2, loadPhase3, loadPhase3Composition } from "@/lib/data";
 
 export async function GET(
   request: Request,
@@ -22,5 +22,22 @@ export async function GET(
     return NextResponse.json(data);
   }
 
-  return NextResponse.json({ error: "Use ?phase=1 or ?phase=2" }, { status: 400 });
+  if (phase === "3") {
+    const data = loadPhase3(stem);
+    if (!data) return NextResponse.json({ error: "Phase 3 not found" }, { status: 404 });
+    return NextResponse.json(data);
+  }
+
+  if (phase === "3-composition") {
+    const data = loadPhase3Composition(stem);
+    if (!data) {
+      return NextResponse.json({ error: "Phase 3 composition not found" }, { status: 404 });
+    }
+    return NextResponse.json(data);
+  }
+
+  return NextResponse.json(
+    { error: "Use ?phase=1, ?phase=2, ?phase=3, or ?phase=3-composition" },
+    { status: 400 }
+  );
 }

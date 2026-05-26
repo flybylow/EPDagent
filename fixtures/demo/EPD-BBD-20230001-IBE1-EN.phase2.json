@@ -1,6 +1,7 @@
 {
   "epd_number": "EPD-BBD-20230001-IBE1",
   "program_operator": "BE-BD",
+  "program_operator_code": "BE-BD",
   "producer": {
     "name": "Acme Insulation SA",
     "address": "Rue Example 42, 4000 Liège",

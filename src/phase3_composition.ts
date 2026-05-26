@@ -1,11 +1,9 @@
 /**
- * Phase 2: Header metadata extraction (CLI)
- *
- * Uses lib/extract/phase2.ts — sends only configured page range to Claude.
+ * Phase 3.1: Composition and content (§1.5)
  *
  * Usage:
- *   npm run phase2 -- data/EPD/foo.pdf
- *   npm run phase2 -- --all [--force]
+ *   npm run phase3-composition -- data/EPD/foo.pdf
+ *   npm run phase3-composition -- --all [--force]
  */
 
 import * as fs from "node:fs";
@@ -13,22 +11,20 @@ import * as path from "node:path";
 import "dotenv/config";
 import {
   assertBulkApiAllowed,
-  phase2CacheStatus,
+  phase3CompositionCacheStatus,
 } from "../lib/anthropic/guard";
-import { loadPhase1, loadPhase2 } from "../lib/data";
-import { runPhase2 } from "../lib/extract/phase2";
-import { resolvePhase2PageSpec } from "../lib/extract/phase2-pages";
+import { runPhase3Composition } from "../lib/extract/phase3-composition";
+import { resolvePhase3CompositionPageSpec } from "../lib/extract/phase3-composition-pages";
 import { pdfDir, PHASE_DIRS } from "../lib/paths";
-import { writeDraftOutputs } from "../lib/templates";
 
-const OUT_DIR = PHASE_DIRS.phase2;
+const OUT_DIR = PHASE_DIRS.phase3_composition;
 
 async function processPdf(pdfPath: string, force = false): Promise<void> {
   const stem = path.basename(pdfPath, path.extname(pdfPath));
   const outPath = path.join(OUT_DIR, `${stem}.json`);
-  const cache = phase2CacheStatus(stem, pdfPath, force);
+  const cache = phase3CompositionCacheStatus(stem, pdfPath, force);
 
-  console.log(`-> ${path.basename(pdfPath)} (pages ${resolvePhase2PageSpec(stem)})`);
+  console.log(`-> ${path.basename(pdfPath)} (pages ${resolvePhase3CompositionPageSpec(stem)})`);
 
   if (cache.skip) {
     console.log(`   skip  ${cache.reason}  -> ${path.relative(process.cwd(), cache.outPath)}`);
@@ -44,8 +40,7 @@ async function processPdf(pdfPath: string, force = false): Promise<void> {
   const start = Date.now();
 
   try {
-    const result = await runPhase2(pdfPath, apiKey, { force });
-    writeDraftOutputs(stem, { phase1: loadPhase1(stem), phase2: loadPhase2(stem) });
+    const result = await runPhase3Composition(pdfPath, apiKey, { force });
     const src = result._source ?? {};
     const elapsed = ((Date.now() - start) / 1000).toFixed(1);
     console.log(
@@ -54,6 +49,7 @@ async function processPdf(pdfPath: string, force = false): Promise<void> {
     if (src.api_pdf_slice) {
       console.log(`       slice saved: ${src.api_pdf_slice}`);
     }
+    console.log(`       components=${result.components.length}`);
   } catch (err) {
     console.error(`   fail ${(err as Error).message}`);
     fs.mkdirSync(OUT_DIR, { recursive: true });
@@ -63,7 +59,7 @@ async function processPdf(pdfPath: string, force = false): Promise<void> {
         {
           error: (err as Error).message,
           pdf_filename: path.basename(pdfPath),
-          api_pages: resolvePhase2PageSpec(stem),
+          api_pages: resolvePhase3CompositionPageSpec(stem),
           attempted_at: new Date().toISOString(),
         },
         null,
@@ -76,7 +72,7 @@ async function processPdf(pdfPath: string, force = false): Promise<void> {
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
   if (args.length === 0) {
-    console.error("Usage: phase2_header.ts <pdf-path> | --all [--force]");
+    console.error("Usage: phase3_composition.ts <pdf-path> | --all [--force]");
     process.exit(1);
   }
 

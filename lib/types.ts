@@ -10,6 +10,7 @@ export interface Phase1Data {
 export interface Phase2Data {
   epd_number: string | null;
   program_operator: string | null;
+  program_operator_code: string | null;
   producer: {
     name: string | null;
     address: string | null;
@@ -35,6 +36,43 @@ export interface Phase2Data {
     name: string | null;
     type: string | null;
   };
+  _source?: Record<string, unknown>;
+}
+
+export interface TechnicalPropertyRow {
+  property: string | null;
+  standard: string | null;
+  value: string | null;
+  unit: string | null;
+  comment: string | null;
+}
+
+export interface Phase3ProductData {
+  description: string | null;
+  intended_use: string | null;
+  reference_flow: {
+    value: number | null;
+    unit: string | null;
+    description: string | null;
+  };
+  installation: string | null;
+  reference_service_life_years: number | null;
+  geographical_representativity: string | null;
+  production_process: string | null;
+  technical_properties: TechnicalPropertyRow[] | null;
+  _source?: Record<string, unknown>;
+}
+
+export interface CompositionRow {
+  section: string | null;
+  component: string | null;
+  composition: string | null;
+  quantity: string | null;
+}
+
+export interface Phase3CompositionData {
+  components: CompositionRow[];
+  declarations: string[] | null;
   _source?: Record<string, unknown>;
 }
 

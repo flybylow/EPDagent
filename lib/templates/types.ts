@@ -4,6 +4,8 @@ export interface TemplateFieldDef {
   id: string;
   label: string;
   path: string;
+  /** Use when primary path is empty (e.g. B-EPD conformity_basis vs ETEX standards_conformity). */
+  fallbackPath?: string;
   format?: "text" | "date" | "date-eu" | "enum" | "list";
   enumLabels?: Record<string, string>;
 }

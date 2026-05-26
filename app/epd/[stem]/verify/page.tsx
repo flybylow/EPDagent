@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { loadDraft, loadEpdRecord, loadVerification } from "@/lib/data";
-import { loadTableManifest } from "@/lib/tables/manifest";
-import { VerifyWorkspace } from "./VerifyWorkspace";
+import { EpdCompareWorkspace } from "@/app/components/EpdCompareWorkspace";
+import { loadEpdRecord, loadVerification } from "@/lib/data";
+import { resolveEpdPhases } from "@/lib/phases/registry";
 
 export default async function VerifyPage({
   params,
@@ -12,27 +12,27 @@ export default async function VerifyPage({
   const { stem: rawStem } = await params;
   const stem = decodeURIComponent(rawStem);
   const record = loadEpdRecord(stem);
-  const draft = loadDraft(stem);
+  const registry = resolveEpdPhases(stem);
 
-  if (!draft) {
+  if (!registry.draft) {
     notFound();
   }
 
   const verification = loadVerification(stem);
-  const tableExports = loadTableManifest(stem);
 
   return (
     <div className="stack-lg">
       <p>
-        <Link href={`/epd/${encodeURIComponent(stem)}`}>← {draft.title}</Link>
+        <Link href={`/epd/${encodeURIComponent(stem)}`}>
+          ← {registry.draft.title}
+        </Link>
       </p>
 
-      <VerifyWorkspace
-        stem={stem}
-        draft={draft}
+      <EpdCompareWorkspace
+        registry={registry}
         pdfAvailable={!!record.pdfPath}
         initialVerification={verification}
-        tableExports={tableExports}
+        showVerification
       />
     </div>
   );

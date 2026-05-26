@@ -15,7 +15,14 @@ export function buildDraft(
     id: section.id,
     title: section.title,
     fields: section.fields.map((field) => {
-      const { value, sourcePhase } = resolvePath(data, field.path);
+      let resolved = resolvePath(data, field.path);
+      if (
+        (resolved.value === null || resolved.value === "") &&
+        field.fallbackPath
+      ) {
+        resolved = resolvePath(data, field.fallbackPath);
+      }
+      const { value, sourcePhase } = resolved;
       const displayValue = formatDisplayValue(value, field.format, field.enumLabels);
       return {
         id: field.id,

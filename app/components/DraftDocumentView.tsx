@@ -14,10 +14,12 @@ export function DraftDocumentView({ draft }: { draft: DraftDocument }) {
         <section key={section.id} className="draft-doc-section">
           <h3>{section.title}</h3>
           <dl className="draft-doc-fields">
-            {section.fields.map((field) => (
+            {section.fields
+              .filter((field) => !field.empty)
+              .map((field) => (
               <div
                 key={field.id}
-                className={`draft-doc-field${field.empty ? " is-empty" : ""}`}
+                className="draft-doc-field"
                 data-field-id={field.id}
               >
                 <dt>{field.label}</dt>

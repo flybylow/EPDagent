@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import type { DraftDocument, FieldVerification, VerificationResult } from "@/lib/templates/types";
-import type { TableExportManifest } from "@/lib/tables/types";
-import { DraftDocumentView } from "@/app/components/DraftDocumentView";
-import { TableComparePanel } from "./TableComparePanel";
+import type { FieldVerification, VerificationResult } from "@/lib/templates/types";
+import type { EpdPhaseRegistry } from "@/lib/phases/registry";
+import { EpdDetailWorkspace } from "@/app/components/EpdDetailWorkspace";
 
 function statusClass(status: FieldVerification["status"]): string {
   switch (status) {
@@ -87,64 +86,31 @@ function VerificationPanel({
       ) : (
         <p className="hint">
           Compares each templated draft field against the source PDF using Claude. Requires{" "}
-          <code>ANTHROPIC_API_KEY</code> and <code>pdfs/{stem}.pdf</code> for full checks.
+          <code>ANTHROPIC_API_KEY</code> and a PDF in <code>data/EPD/</code> for full checks.
         </p>
       )}
     </section>
   );
 }
 
-export function VerifyWorkspace({
-  stem,
-  draft,
+export function EpdCompareWorkspace({
+  registry,
   pdfAvailable,
   initialVerification,
-  tableExports,
+  showVerification = true,
 }: {
-  stem: string;
-  draft: DraftDocument;
+  registry: EpdPhaseRegistry;
   pdfAvailable: boolean;
   initialVerification: VerificationResult | null;
-  tableExports: TableExportManifest | null;
+  showVerification?: boolean;
 }) {
-  const pdfUrl = `/api/pdf/${encodeURIComponent(stem)}`;
-
   return (
     <div className="verify-workspace">
-      <div className="verify-columns">
-        <section className="panel verify-source">
-          <div className="panel-head">
-            <h2>Original PDF</h2>
-            {pdfAvailable ? (
-              <a href={pdfUrl} target="_blank" rel="noreferrer">
-                Open
-              </a>
-            ) : null}
-          </div>
-          {pdfAvailable ? (
-            <iframe title="EPD PDF" src={pdfUrl} className="pdf-frame" />
-          ) : (
-            <div className="pdf-placeholder">
-              <p>No PDF in <code>data/EPD/</code> for this stem.</p>
-              <p className="hint">Draft template still renders from phase JSON.</p>
-            </div>
-          )}
-        </section>
+      <EpdDetailWorkspace registry={registry} pdfAvailable={pdfAvailable} />
 
-        <section className="panel verify-draft">
-          <div className="panel-head">
-            <h2>Formatted draft</h2>
-            <a href={`/api/drafts/${encodeURIComponent(stem)}`} target="_blank" rel="noreferrer">
-              draft.json
-            </a>
-          </div>
-          <DraftDocumentView draft={draft} />
-        </section>
-      </div>
-
-      {tableExports ? <TableComparePanel manifest={tableExports} /> : null}
-
-      <VerificationPanel initial={initialVerification} stem={stem} />
+      {showVerification && registry.draft ? (
+        <VerificationPanel initial={initialVerification} stem={registry.stem} />
+      ) : null}
     </div>
   );
 }
