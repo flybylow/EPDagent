@@ -1,0 +1,34 @@
+{
+  "epd_number": "S-P-12345",
+  "program_operator": "BE-BD",
+  "producer": {
+    "name": "Demo Manufacturer NV",
+    "address": "Industrielaan 1, 1000 Brussels",
+    "country": "BE"
+  },
+  "product_name": "Demo Concrete C30/37",
+  "product_description": null,
+  "standards_conformity": null,
+  "verification_statement": "Third party verified",
+  "conformity_basis": null,
+  "declared_scope": null,
+  "declared_modules": null,
+  "declared_unit": {
+    "value": 1,
+    "unit": "m3"
+  },
+  "validity": {
+    "issued": "2024-01-15",
+    "valid_until": "2029-01-14"
+  },
+  "pcr_reference": "PCR 2019:14 v1.2.5",
+  "verifier": {
+    "name": "Jane Verifier",
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "EPD-S-P-12345-EN.pdf",
+    "extracted_by": "demo-fixture",
+    "extracted_at": "2026-05-26T10:00:00.000Z"
+  }
+}

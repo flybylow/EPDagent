@@ -1,0 +1,21 @@
+{
+  "id": "etex-natura-ea",
+  "role": "canonical",
+  "sourcePdf": "../EPD/B-EPD 21-0135-03-00-00-EN ETEX - natura ea - signed.pdf",
+  "stem": "B-EPD 21-0135-03-00-00-EN ETEX - natura ea - signed",
+  "epdNumber": "21-0135-03-00-00",
+  "producer": "ETEX",
+  "product": "natura ea",
+  "language": "EN",
+  "outputs": {
+    "phase1": "out/phase1_filename/{stem}.json",
+    "phase2": "out/phase2_header/{stem}.json",
+    "draft": "out/drafts/{stem}/draft.json",
+    "graph": "data/graph/{stem}.jsonld",
+    "verification": "out/verification/{stem}.json"
+  },
+  "ui": {
+    "detail": "/epd/{stem}",
+    "verify": "/epd/{stem}/verify"
+  }
+}

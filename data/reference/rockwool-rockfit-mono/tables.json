@@ -1,0 +1,25 @@
+{
+  "stem": "B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed",
+  "tables": [
+    {
+      "id": "composition",
+      "title": "Composition and content",
+      "phase": "phase3_composition",
+      "page": 6,
+      "notes": "Components / composition / ingredients / quantity; diagonal headers"
+    },
+    {
+      "id": "technical_data",
+      "title": "Technical data / physical characteristics",
+      "phase": "phase3_product",
+      "page": 8
+    },
+    {
+      "id": "lca_impacts",
+      "title": "Potential environmental impacts per reference unit",
+      "phase": "phase4_lca",
+      "page": 13,
+      "section": "6"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "@context": {
+    "@vocab": "https://epdagent.dev/vocab/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "EPD": "https://epdagent.dev/vocab/EPD",
+    "ProgramOperator": "https://epdagent.dev/vocab/ProgramOperator",
+    "declaredUnit": {
+      "@id": "https://epdagent.dev/vocab/declaredUnit",
+      "@type": "schema:QuantitativeValue"
+    },
+    "programOperator": {
+      "@id": "https://epdagent.dev/vocab/programOperator",
+      "@type": "@id"
+    },
+    "producer": {
+      "@id": "https://epdagent.dev/vocab/producer",
+      "@type": "@id"
+    },
+    "verifier": {
+      "@id": "https://epdagent.dev/vocab/verifier",
+      "@type": "@id"
+    },
+    "pcrReference": "https://epdagent.dev/vocab/pcrReference",
+    "epdNumber": "https://epdagent.dev/vocab/epdNumber",
+    "language": "https://epdagent.dev/vocab/language",
+    "filenamePattern": "https://epdagent.dev/vocab/filenamePattern",
+    "schema:name": "https://schema.org/name",
+    "schema:address": "https://schema.org/address",
+    "schema:addressCountry": "https://schema.org/addressCountry",
+    "schema:validFrom": {
+      "@id": "https://schema.org/validFrom",
+      "@type": "xsd:date"
+    },
+    "schema:validThrough": {
+      "@id": "https://schema.org/validThrough",
+      "@type": "xsd:date"
+    },
+    "schema:value": "https://schema.org/value",
+    "schema:unitCode": "https://schema.org/unitCode",
+    "prov:wasDerivedFrom": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "prov:generatedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "xsd:dateTime"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://localhost:3000/id/epd/B-EPD%2021-0135-03-00-00-EN%20ETEX%20-%20natura%20ea%20-%20signed",
+      "@type": [
+        "EPD",
+        "schema:Product"
+      ],
+      "epdNumber": "21-0135-03-00-00-EN",
+      "schema:name": "EQUITONE [natura – textura - materia]",
+      "schema:description": "fibre cement sheets",
+      "standardsConformity": "Conform to EN 15804+A2, NBN/DTD B08-001 and ISO 14025",
+      "verificationStatement": "Third party verified",
+      "language": "EN",
+      "filenamePattern": "B-EPD",
+      "declaredUnit": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2"
+      },
+      "schema:validFrom": "2021-10-07",
+      "schema:validThrough": "2026-10-07",
+      "pcrReference": "NBN/DTD B08-001",
+      "programOperator": {
+        "@id": "http://localhost:3000/id/operator/BE-BD"
+      },
+      "producer": {
+        "@id": "http://localhost:3000/id/org/2d723fd34267"
+      },
+      "prov:wasDerivedFrom": {
+        "@type": "prov:Entity",
+        "schema:name": "B-EPD 21-0135-03-00-00-EN ETEX - natura ea - signed.pdf"
+      },
+      "prov:generatedAtTime": "2026-05-26T09:58:38.140Z"
+    },
+    {
+      "@id": "http://localhost:3000/id/operator/BE-BD",
+      "@type": "ProgramOperator",
+      "schema:name": "BE-BD"
+    },
+    {
+      "@id": "http://localhost:3000/id/org/2d723fd34267",
+      "@type": "schema:Organization",
+      "schema:name": "Etex services",
+      "schema:address": null,
+      "schema:addressCountry": null
+    }
+  ]
+}

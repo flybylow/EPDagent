@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Phase 1 Filename Parse",
+  "description": "Structured fields parsed from a BEBD EPD PDF filename",
+  "type": "object",
+  "properties": {
+    "pdf_filename": { "type": "string" },
+    "pdf_stem": { "type": "string" },
+    "epd_number": { "type": ["string", "null"] },
+    "language": { "type": ["string", "null"], "description": "ISO 639-1 language code from filename suffix" },
+    "pattern": {
+      "type": ["string", "null"],
+      "description": "Which filename pattern matched: S-P, BBD, or unknown"
+    }
+  },
+  "required": ["pdf_filename", "pdf_stem", "epd_number", "language", "pattern"]
+}

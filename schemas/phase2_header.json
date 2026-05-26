@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EPD Header Metadata",
+  "description": "Phase 2 output: header-level metadata from an EN 15804 EPD PDF",
+  "type": "object",
+  "properties": {
+    "epd_number": {
+      "type": ["string", "null"],
+      "description": "The official EPD declaration number, e.g. 'S-P-12345' or 'EPD-BBD-20230001-IBE1-EN'"
+    },
+    "program_operator": {
+      "type": ["string", "null"],
+      "description": "The EPD program operator, e.g. 'BE-BD', 'EPD International', 'IBU', 'INIES'"
+    },
+    "producer": {
+      "type": "object",
+      "properties": {
+        "name": { "type": ["string", "null"], "description": "Manufacturer / declaration owner name" },
+        "address": { "type": ["string", "null"], "description": "Full address as a single string if present" },
+        "country": { "type": ["string", "null"], "description": "ISO 3166-1 alpha-2 country code, e.g. 'BE'" }
+      },
+      "required": ["name", "address", "country"]
+    },
+    "product_name": {
+      "type": ["string", "null"],
+      "description": "The declared product name as it appears on the EPD cover (main title)"
+    },
+    "product_description": {
+      "type": ["string", "null"],
+      "description": "Product type or subtitle on the cover below the main name, e.g. 'fibre cement sheets'"
+    },
+    "standards_conformity": {
+      "type": ["string", "null"],
+      "description": "Verbatim conformity statement from the cover, e.g. 'Conform to EN 15804+A2, NBN/DTD B08-001 and ISO 14025'"
+    },
+    "verification_statement": {
+      "type": ["string", "null"],
+      "description": "Verbatim verification badge text from the cover, e.g. 'Third party verified' or 'THIRD PARTY VERIFIED'"
+    },
+    "conformity_basis": {
+      "type": ["string", "null"],
+      "description": "Secondary conformity line under the verification badge, e.g. 'in accordance with EN 15804+A2 and B-EPD-PCR'"
+    },
+    "declared_scope": {
+      "type": ["string", "null"],
+      "description": "Verbatim declared unit + product scope line from the cover, e.g. '1 m² Rockfit Mono insulation for cavity walls, curtain walls and separating walls.'"
+    },
+    "declared_modules": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "string",
+        "description": "Lifecycle module code marked as declared on the cover, e.g. A1, A2, A3, A4, A5, B2, B4, C, D"
+      },
+      "description": "EN 15804 lifecycle modules declared on the cover (MODULES DECLARED section)"
+    },
+    "declared_unit": {
+      "type": "object",
+      "properties": {
+        "value": { "type": ["number", "null"], "description": "Numeric value of the declared unit, e.g. 1" },
+        "unit": { "type": ["string", "null"], "description": "Unit of measure, e.g. 'm3', 'm2', 'kg', 't', 'piece'" }
+      },
+      "required": ["value", "unit"]
+    },
+    "validity": {
+      "type": "object",
+      "properties": {
+        "issued": { "type": ["string", "null"], "description": "ISO date of issuance (YYYY-MM-DD)" },
+        "valid_until": { "type": ["string", "null"], "description": "ISO date of expiry (YYYY-MM-DD)" }
+      },
+      "required": ["issued", "valid_until"]
+    },
+    "pcr_reference": {
+      "type": ["string", "null"],
+      "description": "Full PCR title from the cover, e.g. 'EN 16783, Thermal insulation products – Product category rules (PCR) for factory made and in-situ formed'"
+    },
+    "verifier": {
+      "type": "object",
+      "properties": {
+        "name": { "type": ["string", "null"], "description": "Name of the independent verifier" },
+        "type": {
+          "type": ["string", "null"],
+          "enum": ["independent_third_party", "internal", "unknown", null],
+          "description": "Verification type as defined in EN 15804"
+        }
+      },
+      "required": ["name", "type"]
+    }
+  },
+  "required": [
+    "epd_number",
+    "program_operator",
+    "producer",
+    "product_name",
+    "product_description",
+    "standards_conformity",
+    "verification_statement",
+    "conformity_basis",
+    "declared_scope",
+    "declared_modules",
+    "declared_unit",
+    "validity",
+    "pcr_reference",
+    "verifier"
+  ]
+}

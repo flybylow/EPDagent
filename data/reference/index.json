@@ -1,0 +1,32 @@
+{
+  "version": "1",
+  "pdfFolder": "data/EPD",
+  "referenceEpds": [
+    {
+      "id": "etex-natura-ea",
+      "role": "canonical",
+      "label": "ETEX natura ea — primary comparison EPD",
+      "pdfFile": "B-EPD 21-0135-03-00-00-EN ETEX - natura ea - signed.pdf",
+      "stem": "B-EPD 21-0135-03-00-00-EN ETEX - natura ea - signed",
+      "epdNumber": "21-0135-03-00-00",
+      "program": "B-EPD",
+      "producer": "ETEX",
+      "product": "natura ea",
+      "language": "EN",
+      "comparePath": "data/reference/etex-natura-ea"
+    },
+    {
+      "id": "rockwool-rockfit-mono",
+      "role": "secondary",
+      "label": "Rockwool Rockfit Mono",
+      "pdfFile": "B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed.pdf",
+      "stem": "B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed",
+      "epdNumber": "023.0011.007-02.00.00",
+      "program": "B-EPD",
+      "producer": "Rockwool",
+      "product": "Rockfit Mono",
+      "language": "EN",
+      "comparePath": "data/reference/rockwool-rockfit-mono"
+    }
+  ]
+}

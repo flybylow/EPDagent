@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+
+# Extraction outputs (regenerate locally)
+out/
+
+# Environment
+.env
+.env.local
+.env*.local
+
+# OS / editor
+.DS_Store
+*.log
+
+# TypeScript
+next-env.d.ts

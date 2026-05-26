@@ -1,0 +1,101 @@
+{
+  "@context": {
+    "@vocab": "https://epdagent.dev/vocab/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "EPD": "https://epdagent.dev/vocab/EPD",
+    "ProgramOperator": "https://epdagent.dev/vocab/ProgramOperator",
+    "declaredUnit": {
+      "@id": "https://epdagent.dev/vocab/declaredUnit",
+      "@type": "schema:QuantitativeValue"
+    },
+    "programOperator": {
+      "@id": "https://epdagent.dev/vocab/programOperator",
+      "@type": "@id"
+    },
+    "producer": {
+      "@id": "https://epdagent.dev/vocab/producer",
+      "@type": "@id"
+    },
+    "verifier": {
+      "@id": "https://epdagent.dev/vocab/verifier",
+      "@type": "@id"
+    },
+    "pcrReference": "https://epdagent.dev/vocab/pcrReference",
+    "epdNumber": "https://epdagent.dev/vocab/epdNumber",
+    "language": "https://epdagent.dev/vocab/language",
+    "filenamePattern": "https://epdagent.dev/vocab/filenamePattern",
+    "schema:name": "https://schema.org/name",
+    "schema:address": "https://schema.org/address",
+    "schema:addressCountry": "https://schema.org/addressCountry",
+    "schema:validFrom": {
+      "@id": "https://schema.org/validFrom",
+      "@type": "xsd:date"
+    },
+    "schema:validThrough": {
+      "@id": "https://schema.org/validThrough",
+      "@type": "xsd:date"
+    },
+    "schema:value": "https://schema.org/value",
+    "schema:unitCode": "https://schema.org/unitCode",
+    "prov:wasDerivedFrom": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "prov:generatedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "xsd:dateTime"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://localhost:3000/id/epd/EPD-BBD-20230001-IBE1-EN",
+      "@type": [
+        "EPD",
+        "schema:Product"
+      ],
+      "epdNumber": "EPD-BBD-20230001-IBE1",
+      "schema:name": "Mineral Wool Board λ40",
+      "language": "EN",
+      "filenamePattern": "BBD",
+      "declaredUnit": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2"
+      },
+      "schema:validFrom": "2023-06-01",
+      "schema:validThrough": "2028-05-31",
+      "pcrReference": "PCR 2019:14 v1.2.5",
+      "programOperator": {
+        "@id": "http://localhost:3000/id/operator/BE-BD"
+      },
+      "producer": {
+        "@id": "http://localhost:3000/id/org/3c3f89f6ca59"
+      },
+      "verifier": {
+        "@id": "http://localhost:3000/id/person/a29fefe65f45"
+      },
+      "prov:wasDerivedFrom": {
+        "@type": "prov:Entity",
+        "schema:name": "EPD-BBD-20230001-IBE1-EN.pdf"
+      },
+      "prov:generatedAtTime": "2026-05-26T10:05:00.000Z"
+    },
+    {
+      "@id": "http://localhost:3000/id/operator/BE-BD",
+      "@type": "ProgramOperator",
+      "schema:name": "BE-BD"
+    },
+    {
+      "@id": "http://localhost:3000/id/org/3c3f89f6ca59",
+      "@type": "schema:Organization",
+      "schema:name": "Acme Insulation SA",
+      "schema:address": "Rue Example 42, 4000 Liège",
+      "schema:addressCountry": "BE"
+    },
+    {
+      "@id": "http://localhost:3000/id/person/a29fefe65f45",
+      "@type": "schema:Person",
+      "schema:name": "External Verifier SPRL",
+      "verificationType": "independent_third_party"
+    }
+  ]
+}

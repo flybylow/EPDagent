@@ -1,0 +1,34 @@
+{
+  "epd_number": "EPD-BBD-20230001-IBE1",
+  "program_operator": "BE-BD",
+  "producer": {
+    "name": "Acme Insulation SA",
+    "address": "Rue Example 42, 4000 Liège",
+    "country": "BE"
+  },
+  "product_name": "Mineral Wool Board λ40",
+  "product_description": null,
+  "standards_conformity": null,
+  "verification_statement": null,
+  "conformity_basis": null,
+  "declared_scope": null,
+  "declared_modules": null,
+  "declared_unit": {
+    "value": 1,
+    "unit": "m2"
+  },
+  "validity": {
+    "issued": "2023-06-01",
+    "valid_until": "2028-05-31"
+  },
+  "pcr_reference": "PCR 2019:14 v1.2.5",
+  "verifier": {
+    "name": "External Verifier SPRL",
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "EPD-BBD-20230001-IBE1-EN.pdf",
+    "extracted_by": "demo-fixture",
+    "extracted_at": "2026-05-26T10:05:00.000Z"
+  }
+}

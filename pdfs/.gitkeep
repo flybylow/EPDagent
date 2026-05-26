@@ -1,0 +1,2 @@
+pdfs/
+# Symlink or copy BEBD EPD PDFs here. Demo mode works without PDFs (npm run demo).

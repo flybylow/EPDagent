@@ -1,0 +1,252 @@
+{
+  "@context": {
+    "@vocab": "https://epdagent.dev/vocab/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "EPD": "https://epdagent.dev/vocab/EPD",
+    "ProgramOperator": "https://epdagent.dev/vocab/ProgramOperator",
+    "declaredUnit": {
+      "@id": "https://epdagent.dev/vocab/declaredUnit",
+      "@type": "schema:QuantitativeValue"
+    },
+    "programOperator": {
+      "@id": "https://epdagent.dev/vocab/programOperator",
+      "@type": "@id"
+    },
+    "producer": {
+      "@id": "https://epdagent.dev/vocab/producer",
+      "@type": "@id"
+    },
+    "verifier": {
+      "@id": "https://epdagent.dev/vocab/verifier",
+      "@type": "@id"
+    },
+    "pcrReference": "https://epdagent.dev/vocab/pcrReference",
+    "epdNumber": "https://epdagent.dev/vocab/epdNumber",
+    "language": "https://epdagent.dev/vocab/language",
+    "filenamePattern": "https://epdagent.dev/vocab/filenamePattern",
+    "schema:name": "https://schema.org/name",
+    "schema:address": "https://schema.org/address",
+    "schema:addressCountry": "https://schema.org/addressCountry",
+    "schema:validFrom": {
+      "@id": "https://schema.org/validFrom",
+      "@type": "xsd:date"
+    },
+    "schema:validThrough": {
+      "@id": "https://schema.org/validThrough",
+      "@type": "xsd:date"
+    },
+    "schema:value": "https://schema.org/value",
+    "schema:unitCode": "https://schema.org/unitCode",
+    "prov:wasDerivedFrom": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "prov:generatedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "xsd:dateTime"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://localhost:3000/id/epd/B-EPD%2021-0135-03-00-00-EN%20ETEX%20-%20natura%20ea%20-%20signed",
+      "@type": [
+        "EPD",
+        "schema:Product"
+      ],
+      "epdNumber": "21-0135-03-00-00-EN",
+      "schema:name": "EQUITONE [natura – textura - materia]",
+      "schema:description": "fibre cement sheets",
+      "standardsConformity": "Conform to EN 15804+A2, NBN/DTD B08-001 and ISO 14025",
+      "verificationStatement": "Third party verified",
+      "language": "EN",
+      "filenamePattern": "B-EPD",
+      "declaredUnit": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2"
+      },
+      "schema:validFrom": "2021-10-07",
+      "schema:validThrough": "2026-10-07",
+      "pcrReference": "NBN/DTD B08-001",
+      "programOperator": {
+        "@id": "http://localhost:3000/id/operator/BE-BD"
+      },
+      "producer": {
+        "@id": "http://localhost:3000/id/org/2d723fd34267"
+      },
+      "prov:wasDerivedFrom": {
+        "@type": "prov:Entity",
+        "schema:name": "B-EPD 21-0135-03-00-00-EN ETEX - natura ea - signed.pdf"
+      },
+      "prov:generatedAtTime": "2026-05-26T09:58:38.140Z"
+    },
+    {
+      "@id": "http://localhost:3000/id/operator/BE-BD",
+      "@type": "ProgramOperator",
+      "schema:name": "BE-BD"
+    },
+    {
+      "@id": "http://localhost:3000/id/org/2d723fd34267",
+      "@type": "schema:Organization",
+      "schema:name": "Etex services",
+      "schema:address": null,
+      "schema:addressCountry": null
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/B-EPD_023.0011.007-02.00.00%20Rockwool%20Rockfit%20Mono%20EN%20-%20signed",
+      "@type": [
+        "EPD",
+        "schema:Product"
+      ],
+      "epdNumber": "21.0011.07-02.00.00",
+      "schema:name": "Rockfit Mono",
+      "verificationStatement": "THIRD PARTY VERIFIED",
+      "conformityBasis": "in accordance with EN 15804+A2 and B-EPD-PCR",
+      "declaredScope": "1 m² Rockfit Mono insulation for cavity walls, curtain walls and separating walls.",
+      "declaredModules": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "B2",
+        "B4",
+        "C",
+        "D"
+      ],
+      "filenamePattern": "unknown",
+      "declaredUnit": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2"
+      },
+      "schema:validFrom": "2023-10-26",
+      "schema:validThrough": "2028-10-26",
+      "pcrReference": "EN 16783, Thermal insulation products – Product category rules (PCR) for factory made and in-situ formed",
+      "programOperator": {
+        "@id": "http://localhost:3000/id/operator/BE-BD"
+      },
+      "producer": {
+        "@id": "http://localhost:3000/id/org/70171658eb5b"
+      },
+      "prov:wasDerivedFrom": {
+        "@type": "prov:Entity",
+        "schema:name": "B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed.pdf"
+      },
+      "prov:generatedAtTime": "2026-05-26T10:04:07.581Z"
+    },
+    {
+      "@id": "http://localhost:3000/id/operator/BE-BD",
+      "@type": "ProgramOperator",
+      "schema:name": "BE-BD"
+    },
+    {
+      "@id": "http://localhost:3000/id/org/70171658eb5b",
+      "@type": "schema:Organization",
+      "schema:name": "ROCKWOOL",
+      "schema:address": null,
+      "schema:addressCountry": "BE"
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/EPD-BBD-20230001-IBE1-EN",
+      "@type": [
+        "EPD",
+        "schema:Product"
+      ],
+      "epdNumber": "EPD-BBD-20230001-IBE1",
+      "schema:name": "Mineral Wool Board λ40",
+      "language": "EN",
+      "filenamePattern": "BBD",
+      "declaredUnit": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2"
+      },
+      "schema:validFrom": "2023-06-01",
+      "schema:validThrough": "2028-05-31",
+      "pcrReference": "PCR 2019:14 v1.2.5",
+      "programOperator": {
+        "@id": "http://localhost:3000/id/operator/BE-BD"
+      },
+      "producer": {
+        "@id": "http://localhost:3000/id/org/3c3f89f6ca59"
+      },
+      "verifier": {
+        "@id": "http://localhost:3000/id/person/a29fefe65f45"
+      },
+      "prov:wasDerivedFrom": {
+        "@type": "prov:Entity",
+        "schema:name": "EPD-BBD-20230001-IBE1-EN.pdf"
+      },
+      "prov:generatedAtTime": "2026-05-26T10:05:00.000Z"
+    },
+    {
+      "@id": "http://localhost:3000/id/operator/BE-BD",
+      "@type": "ProgramOperator",
+      "schema:name": "BE-BD"
+    },
+    {
+      "@id": "http://localhost:3000/id/org/3c3f89f6ca59",
+      "@type": "schema:Organization",
+      "schema:name": "Acme Insulation SA",
+      "schema:address": "Rue Example 42, 4000 Liège",
+      "schema:addressCountry": "BE"
+    },
+    {
+      "@id": "http://localhost:3000/id/person/a29fefe65f45",
+      "@type": "schema:Person",
+      "schema:name": "External Verifier SPRL",
+      "verificationType": "independent_third_party"
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/EPD-S-P-12345-EN",
+      "@type": [
+        "EPD",
+        "schema:Product"
+      ],
+      "epdNumber": "S-P-12345",
+      "schema:name": "Demo Concrete C30/37",
+      "language": "EN",
+      "filenamePattern": "S-P",
+      "declaredUnit": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m3"
+      },
+      "schema:validFrom": "2024-01-15",
+      "schema:validThrough": "2029-01-14",
+      "pcrReference": "PCR 2019:14 v1.2.5",
+      "programOperator": {
+        "@id": "http://localhost:3000/id/operator/BE-BD"
+      },
+      "producer": {
+        "@id": "http://localhost:3000/id/org/d41897f685a3"
+      },
+      "verifier": {
+        "@id": "http://localhost:3000/id/person/d9b87fc7de20"
+      },
+      "prov:wasDerivedFrom": {
+        "@type": "prov:Entity",
+        "schema:name": "EPD-S-P-12345-EN.pdf"
+      },
+      "prov:generatedAtTime": "2026-05-26T10:00:00.000Z"
+    },
+    {
+      "@id": "http://localhost:3000/id/operator/BE-BD",
+      "@type": "ProgramOperator",
+      "schema:name": "BE-BD"
+    },
+    {
+      "@id": "http://localhost:3000/id/org/d41897f685a3",
+      "@type": "schema:Organization",
+      "schema:name": "Demo Manufacturer NV",
+      "schema:address": "Industrielaan 1, 1000 Brussels",
+      "schema:addressCountry": "BE"
+    },
+    {
+      "@id": "http://localhost:3000/id/person/d9b87fc7de20",
+      "@type": "schema:Person",
+      "schema:name": "Jane Verifier",
+      "verificationType": "independent_third_party"
+    }
+  ]
+}

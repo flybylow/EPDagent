@@ -1,0 +1,101 @@
+{
+  "@context": {
+    "@vocab": "https://epdagent.dev/vocab/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "EPD": "https://epdagent.dev/vocab/EPD",
+    "ProgramOperator": "https://epdagent.dev/vocab/ProgramOperator",
+    "declaredUnit": {
+      "@id": "https://epdagent.dev/vocab/declaredUnit",
+      "@type": "schema:QuantitativeValue"
+    },
+    "programOperator": {
+      "@id": "https://epdagent.dev/vocab/programOperator",
+      "@type": "@id"
+    },
+    "producer": {
+      "@id": "https://epdagent.dev/vocab/producer",
+      "@type": "@id"
+    },
+    "verifier": {
+      "@id": "https://epdagent.dev/vocab/verifier",
+      "@type": "@id"
+    },
+    "pcrReference": "https://epdagent.dev/vocab/pcrReference",
+    "epdNumber": "https://epdagent.dev/vocab/epdNumber",
+    "language": "https://epdagent.dev/vocab/language",
+    "filenamePattern": "https://epdagent.dev/vocab/filenamePattern",
+    "schema:name": "https://schema.org/name",
+    "schema:address": "https://schema.org/address",
+    "schema:addressCountry": "https://schema.org/addressCountry",
+    "schema:validFrom": {
+      "@id": "https://schema.org/validFrom",
+      "@type": "xsd:date"
+    },
+    "schema:validThrough": {
+      "@id": "https://schema.org/validThrough",
+      "@type": "xsd:date"
+    },
+    "schema:value": "https://schema.org/value",
+    "schema:unitCode": "https://schema.org/unitCode",
+    "prov:wasDerivedFrom": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "prov:generatedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "xsd:dateTime"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://localhost:3000/id/epd/EPD-S-P-12345-EN",
+      "@type": [
+        "EPD",
+        "schema:Product"
+      ],
+      "epdNumber": "S-P-12345",
+      "schema:name": "Demo Concrete C30/37",
+      "language": "EN",
+      "filenamePattern": "S-P",
+      "declaredUnit": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m3"
+      },
+      "schema:validFrom": "2024-01-15",
+      "schema:validThrough": "2029-01-14",
+      "pcrReference": "PCR 2019:14 v1.2.5",
+      "programOperator": {
+        "@id": "http://localhost:3000/id/operator/BE-BD"
+      },
+      "producer": {
+        "@id": "http://localhost:3000/id/org/d41897f685a3"
+      },
+      "verifier": {
+        "@id": "http://localhost:3000/id/person/d9b87fc7de20"
+      },
+      "prov:wasDerivedFrom": {
+        "@type": "prov:Entity",
+        "schema:name": "EPD-S-P-12345-EN.pdf"
+      },
+      "prov:generatedAtTime": "2026-05-26T10:00:00.000Z"
+    },
+    {
+      "@id": "http://localhost:3000/id/operator/BE-BD",
+      "@type": "ProgramOperator",
+      "schema:name": "BE-BD"
+    },
+    {
+      "@id": "http://localhost:3000/id/org/d41897f685a3",
+      "@type": "schema:Organization",
+      "schema:name": "Demo Manufacturer NV",
+      "schema:address": "Industrielaan 1, 1000 Brussels",
+      "schema:addressCountry": "BE"
+    },
+    {
+      "@id": "http://localhost:3000/id/person/d9b87fc7de20",
+      "@type": "schema:Person",
+      "schema:name": "Jane Verifier",
+      "verificationType": "independent_third_party"
+    }
+  ]
+}
