@@ -27,6 +27,7 @@ Quick start and run commands: [README](../README.md).
 | [phase-tables-verify.md](phase-tables-verify.md) | Table page exports + visual verify (composition, LCA §6) |
 | [local-dev.md](local-dev.md) | localhost setup, demo, scripts, API routes |
 | [facts-api.md](facts-api.md) | Cross-domain Product Facts API + CORS for Tabulas / Pentapylas |
+| [vercel-deploy.md](vercel-deploy.md) | Extract local, serve on Vercel; publish workflow and `maxDuration` limits (300 Hobby) |
 | [reference-epd-corpus.md](reference-epd-corpus.md) | `data/EPD/` PDFs, canonical ETEX natura ea comparison file |
 | [GAPS.md](GAPS.md) | Section gap snapshots (`out/gap_reports/`) and manual locks (`data/gap-locks/`) |
 

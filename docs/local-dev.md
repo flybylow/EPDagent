@@ -29,9 +29,13 @@ If you see `Cannot find module './NNN.js'`, stop the dev server, run `npm run cl
 
 Copy `.env.example` → `.env`.
 
-- `ANTHROPIC_API_KEY` — required for phase 2 only
+- `ANTHROPIC_API_KEY` — required for phase 2 only (**local extract**; not needed on Vercel for read-only serve)
 - `EPDAGENT_IRI_BASE` — defaults to `http://localhost:3000/id` for JSON-LD `@id` values
 - `EPDAGENT_MAX_PDF_BYTES` / `EPDAGENT_ALLOW_BULK_API` — see [api-budget-policy.md](api-budget-policy.md)
+
+## Deploy to Vercel
+
+Extraction stays on your machine; production only **serves** committed phase JSON and graphs. See **[vercel-deploy.md](vercel-deploy.md)** (publish workflow, Hobby 300s `maxDuration` vs local/Pro).
 
 ## API
 

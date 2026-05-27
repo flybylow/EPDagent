@@ -26,6 +26,7 @@ Before running phase 2, Extract PDF (with phase 2), or AI verify, **read [`api-b
 - **Knowledge graph:** JSON-LD node graphs built on open standards (not a proprietary graph format).
 - **Contracts:** Phase JSON schemas are the extraction contract; JSON-LD is the publication / linking layer.
 - **PDF corpus:** `data/EPD/` (default folder). Reference EPDs registered in `data/reference/index.json` — see [reference-epd-corpus.md](reference-epd-corpus.md).
+- **Deploy:** Extract locally; Vercel domain serves committed `out/` slices + `data/graph/` for Tabulas — see [vercel-deploy.md](vercel-deploy.md).
 
 ## Docmap (section index / nav menu)
 

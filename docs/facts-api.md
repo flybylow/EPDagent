@@ -64,16 +64,15 @@ curl -s 'http://localhost:3000/api/products?tag=insulation' | head
 curl -s 'http://localhost:3000/api/facts/B-EPD_023.0011.007-02.00.00%20Rockwool%20Rockfit%20Mono%20EN%20-%20signed?parts=thermal,lca' | head
 ```
 
-## Vercel
+## Vercel (serve only)
 
-Deploy as a normal Next.js app. Set env vars in the Vercel project:
+**Extract locally, serve on the Vercel domain.** Full workflow, `maxDuration` limits (300s Hobby vs local/Pro), and what not to run on Vercel: **[vercel-deploy.md](vercel-deploy.md)**.
 
-- `EPDAGENT_IRI_BASE` — public base for JSON-LD `@id` (e.g. `https://your-app.vercel.app/id`)
-- `EPDAGENT_CORS_ORIGINS` — `https://tabulas.eu,https://www.tabulas.eu` (and local dev origins if needed)
+Quick checklist:
 
-Published phase JSON under `out/phase2_header/`, `out/phase3_product/`, `out/phase4_lca_probe/`, etc. is committed so `/api/facts` and `/api/products` work without running extraction on Vercel. Large PDFs and full `out/` (docmap cache, pdf slices) stay local.
-
-After deploy, Tabulas calls `https://your-app.vercel.app/api/products?tag=insulation`.
+- Commit `out/phase2_header/`, `out/phase3_product/`, `out/phase4_lca_probe/`, … and `data/graph/*.jsonld` after local extract.
+- Set `EPDAGENT_IRI_BASE` and `EPDAGENT_CORS_ORIGINS` on the Vercel project.
+- Tabulas calls `https://your-app.vercel.app/api/products?tag=insulation` (no extraction on Vercel Hobby).
 
 The `node-domexception` npm warning on install is a transitive dependency notice; safe to ignore for deploy.
 

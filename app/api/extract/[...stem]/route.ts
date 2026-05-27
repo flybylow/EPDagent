@@ -7,7 +7,10 @@ import { logExtractProgress } from "@/lib/extract/progress";
 import { extractPdf } from "@/lib/extract/run";
 import { normalizeEpdStem } from "@/lib/stems/normalize";
 
-/** Vercel Hobby caps at 300s; raise on Pro via route segment config if needed. */
+/**
+ * Serverless limit: 300 on Vercel Hobby (do not push higher on Hobby).
+ * Local long extracts: see docs/vercel-deploy.md (optional 600 locally / Pro).
+ */
 export const maxDuration = 300;
 
 async function resolveExtractStem(params: Promise<{ stem: string[] }>): Promise<string> {
