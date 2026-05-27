@@ -1,5 +1,6 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
+import { pathIsDirectory, safeReaddir, safeReadJson } from "./fs-safe";
 import {
   DEFAULT_PDF_DIR,
   DRAFTS_DIR,
@@ -47,8 +48,7 @@ function isDemoFixture(phase1: Phase1Data | null, phase2: Phase2Data | null): bo
 }
 
 function readJson<T>(filePath: string): T | null {
-  if (!fs.existsSync(filePath)) return null;
-  return JSON.parse(fs.readFileSync(filePath, "utf-8")) as T;
+  return safeReadJson<T>(filePath);
 }
 
 export function listEpdStems(): string[] {
@@ -146,10 +146,10 @@ export function resolvePdfPathForStem(stem: string): string | null {
     if (fs.existsSync(byRef)) return byRef;
   }
 
-  if (!fs.existsSync(dir)) return null;
+  if (!pathIsDirectory(dir)) return null;
 
   const folded = foldPdfStem(stem);
-  for (const file of fs.readdirSync(dir)) {
+  for (const file of safeReaddir(dir)) {
     if (!file.endsWith(".pdf")) continue;
     const base = path.basename(file, ".pdf");
     if (foldPdfStem(base) === folded) return path.join(dir, file);
@@ -186,7 +186,16 @@ export function canonicalExtractStem(stem: string): string {
   return stem;
 }
 
-export function loadEpdRecord(rawStem: string): EpdRecord {
+export interface LoadEpdRecordOptions {
+  /** Section-nav coverage is heavy; skip on corpus home (Vercel serverless). */
+  includeSectionCoverage?: boolean;
+}
+
+export function loadEpdRecord(
+  rawStem: string,
+  options: LoadEpdRecordOptions = {}
+): EpdRecord {
+  const includeSectionCoverage = options.includeSectionCoverage ?? true;
   const stem = resolveCorpusStem(rawStem);
   const graphPath = fs.existsSync(path.join(GRAPH_DIR, `${stem}.jsonld`))
     ? path.join(GRAPH_DIR, `${stem}.jsonld`)
@@ -210,11 +219,12 @@ export function loadEpdRecord(rawStem: string): EpdRecord {
     status: phase.status,
   }));
   const extractRun = summarizeExtractRun(stem);
-  const sectionCoverage = pdfPath
-    ? sectionNavCoverageStats(
-        resolveEpdPhases(stem, { pdfAvailable: true }).sectionNav.items
-      )
-    : null;
+  const sectionCoverage =
+    includeSectionCoverage && pdfPath
+      ? sectionNavCoverageStats(
+          resolveEpdPhases(stem, { pdfAvailable: true }).sectionNav.items
+        )
+      : null;
 
   return {
     stem,
@@ -246,7 +256,14 @@ export function loadEpdRecord(rawStem: string): EpdRecord {
 }
 
 export function listEpdRecords(): EpdRecord[] {
-  return listEpdStems().map(loadEpdRecord);
+  return listEpdStems().map((stem) => loadEpdRecord(stem));
+}
+
+/** Corpus home — phase lights + extract summary, no section-nav build. */
+export function listEpdDashboardRecords(): EpdRecord[] {
+  return listEpdStems().map((stem) =>
+    loadEpdRecord(stem, { includeSectionCoverage: false })
+  );
 }
 
 export function listPdfFilenames(): string[] {

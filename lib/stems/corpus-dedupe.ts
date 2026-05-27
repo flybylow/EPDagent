@@ -1,6 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { docmapIsCached } from "../extract/docmap-cache";
+import { pathIsDirectory, safeReaddir } from "../fs-safe";
 import { OUT_DIR, pdfDir, pdfStem } from "../paths";
 import { listPdfFiles } from "../paths";
 
@@ -23,9 +24,7 @@ function foldStem(s: string): string {
 }
 
 function listStemsFromDir(dir: string): string[] {
-  if (!fs.existsSync(dir)) return [];
-  return fs
-    .readdirSync(dir)
+  return safeReaddir(dir)
     .filter((f) => f.endsWith(".json") && !f.endsWith(".error.json"))
     .map((f) => path.basename(f, ".json"));
 }
@@ -54,8 +53,8 @@ export function pickCanonicalStem(candidates: string[]): string {
   if (unique.length === 1) return unique[0]!;
 
   const dir = pdfDir();
-  if (fs.existsSync(dir)) {
-    for (const file of fs.readdirSync(dir)) {
+  if (pathIsDirectory(dir)) {
+    for (const file of safeReaddir(dir)) {
       if (!file.endsWith(".pdf")) continue;
       const base = path.basename(file, ".pdf");
       const match = unique.find((s) => foldStem(s) === foldStem(base));

@@ -1,8 +1,10 @@
 import { EpdCorpusList } from "@/app/components/EpdCorpusList";
-import { listEpdRecords } from "@/lib/data";
+import { listEpdDashboardRecords } from "@/lib/data";
+
+export const dynamic = "force-dynamic";
 
 export default function HomePage() {
-  const records = listEpdRecords();
+  const records = listEpdDashboardRecords();
 
   return (
     <div className="stack-lg">

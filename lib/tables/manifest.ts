@@ -1,5 +1,6 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
+import { safeReadJson, safeReaddir, pathIsDirectory } from "../fs-safe";
 import { REFERENCE_DIR } from "../paths";
 import { defaultTableRegistryForStem } from "./default-registry";
 import type { TableExportDef, TableExportManifest } from "./types";
@@ -7,20 +8,15 @@ import type { TableExportDef, TableExportManifest } from "./types";
 export const TABLE_EXPORTS_DIR = path.join(process.cwd(), "out", "table_exports");
 
 export function tableRegistryForStem(stem: string): TableExportDef[] {
-  const refDirs = fs.existsSync(REFERENCE_DIR)
-    ? fs.readdirSync(REFERENCE_DIR).filter((d) => {
-        const p = path.join(REFERENCE_DIR, d, "tables.json");
-        return fs.existsSync(p);
-      })
-    : [];
+  if (!pathIsDirectory(REFERENCE_DIR)) {
+    return defaultTableRegistryForStem(stem);
+  }
 
-  for (const dir of refDirs) {
+  for (const dir of safeReaddir(REFERENCE_DIR)) {
     const file = path.join(REFERENCE_DIR, dir, "tables.json");
-    const data = JSON.parse(fs.readFileSync(file, "utf-8")) as {
-      stem?: string;
-      tables?: TableExportDef[];
-    };
-    if (data.stem === stem && data.tables?.length) {
+    if (!fs.existsSync(file)) continue;
+    const data = safeReadJson<{ stem?: string; tables?: TableExportDef[] }>(file);
+    if (data?.stem === stem && data.tables?.length) {
       return data.tables;
     }
   }

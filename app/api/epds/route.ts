@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getPdfFolderInfo, listEpdRecords, loadPhase2, loadPhase3 } from "@/lib/data";
+import { getPdfFolderInfo, listEpdDashboardRecords, loadPhase2, loadPhase3 } from "@/lib/data";
 import { inferProductTags, recordMatchesTag } from "@/lib/facts/tags";
 import { withCors } from "@/lib/http/cors";
 
@@ -7,7 +7,7 @@ export async function GET(request: Request) {
   const url = new URL(request.url);
   const tag = url.searchParams.get("tag")?.trim().toLowerCase() ?? null;
 
-  let records = listEpdRecords();
+  const records = listEpdDashboardRecords();
 
   const epds = records
     .map((r) => {

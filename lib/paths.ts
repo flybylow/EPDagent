@@ -1,5 +1,5 @@
-import * as fs from "node:fs";
 import * as path from "node:path";
+import { pathIsDirectory, safeReaddir } from "./fs-safe";
 
 export const ROOT = process.cwd();
 export const DEFAULT_PDF_DIR = path.join(ROOT, "data", "EPD");
@@ -40,9 +40,7 @@ export function pdfStem(filename: string): string {
 
 export function listPdfFiles(): string[] {
   const dir = pdfDir();
-  if (!fs.existsSync(dir)) return [];
-  return fs
-    .readdirSync(dir)
+  return safeReaddir(dir)
     .filter((f) => f.toLowerCase().endsWith(".pdf"))
     .sort();
 }
