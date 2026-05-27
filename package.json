@@ -35,6 +35,9 @@
     "refresh:phase7-text": "tsx src/refresh_phase7_text.ts",
     "pipeline": "tsx src/phase_docmap.ts --all && tsx src/phase1_filename.ts --all && tsx src/build_graph.ts && tsx src/build_drafts.ts"
   },
+  "optionalDependencies": {
+    "@napi-rs/canvas": "^0.1.100"
+  },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.40.0",
     "dotenv": "^16.4.5",

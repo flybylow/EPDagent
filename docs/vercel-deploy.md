@@ -90,6 +90,12 @@ curl -s "https://searchepd.vercel.app/api/facts/B-EPD_023.0011.007-02.00.00%20Ro
 
 If `/api/epds` returns **500** with an empty body, check Vercel env: delete **`EPDAGENT_PDF_DIR`** if it points outside the deployment (or to a missing folder).
 
+### pdfjs / `@napi-rs/canvas` warning
+
+`pdfjs-dist` optionally loads `@napi-rs/canvas`. On Vercel, **serve-only** mode skips auto PDF parsing on EPD pages (`VERCEL=1`). Read APIs do not need canvas.
+
+The repo lists `@napi-rs/canvas` under `optionalDependencies` so Linux deploys install the native binary when present. Extraction stays **local** (`npm install` on your machine). If the warning still appears in Vercel logs during an extract API call, ignore it for Tabulas — use `/api/products` and `/api/facts` only.
+
 ## Related
 
 - [facts-api.md](facts-api.md) — cross-domain Product Facts API

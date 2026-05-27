@@ -11,6 +11,7 @@ import {
   pdfPathForStem,
   resolveCorpusStem,
 } from "@/lib/data";
+import { isServeOnlyDeploy } from "@/lib/deploy/serve-only";
 import { docmapIsCached } from "@/lib/extract/docmap-cache";
 import { ensureDocmapForStem } from "@/lib/extract/ensure-docmap";
 import { ensurePhase7ForStem } from "@/lib/extract/ensure-phase7";
@@ -24,7 +25,7 @@ export default async function VerifyPage({
 }) {
   const { stem: rawStem } = await params;
   const stem = resolveCorpusStem(normalizeEpdStem(rawStem));
-  if (pdfPathForStem(stem)) {
+  if (pdfPathForStem(stem) && !isServeOnlyDeploy()) {
     const canonical = canonicalExtractStem(stem);
     if (!docmapIsCached(canonical)) {
       await ensureDocmapForStem(stem);

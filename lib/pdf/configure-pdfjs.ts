@@ -42,6 +42,8 @@ export function pdfjsDocumentOptions(data: Uint8Array) {
   return {
     data,
     disableFontFace: true,
+    /** Text extraction only — avoids optional @napi-rs/canvas when unavailable. */
+    useSystemFonts: true,
     standardFontDataUrl: pdfjsAssetUrl("standard_fonts"),
     cMapUrl: pdfjsAssetUrl("cmaps"),
     cMapPacked: true,
