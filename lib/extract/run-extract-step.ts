@@ -65,35 +65,41 @@ export async function runExtractStepForStem(
       await writeDocmap(pdfPath);
       step = { id: stepId, ok: true };
     } else {
-      const apiKey = process.env.ANTHROPIC_API_KEY?.trim() || undefined;
+      const apiKeyEnv = process.env.ANTHROPIC_API_KEY?.trim();
       const needsApi =
         (stepId !== "phase3-lca-study" || !resolveSystemBoundariesPageSpec(stem)) &&
         (stepId !== "phase3-composition" || !resolvePhase3CompositionPageSpec(stem));
-      if (needsApi && !apiKey) {
+      if (needsApi && !apiKeyEnv) {
         throw new Error("ANTHROPIC_API_KEY is required for this extract step.");
       }
+      const requireApiKey = (): string => {
+        if (!apiKeyEnv) {
+          throw new Error("ANTHROPIC_API_KEY is required for this extract step.");
+        }
+        return apiKeyEnv;
+      };
 
       if (stepId === "phase2") {
-        await runPhase2(pdfPath, apiKey, { force });
+        await runPhase2(pdfPath, requireApiKey(), { force });
       } else if (stepId === "phase3") {
-        await runPhase3(pdfPath, apiKey, { force });
+        await runPhase3(pdfPath, requireApiKey(), { force });
       } else if (stepId === "phase3-composition") {
-        await runPhase3Composition(pdfPath, apiKey, { force });
+        await runPhase3Composition(pdfPath, apiKeyEnv, { force });
       } else if (stepId === "phase3-lca-study") {
-        await runPhase3LcaStudy(pdfPath, apiKey, { force });
+        await runPhase3LcaStudy(pdfPath, apiKeyEnv, { force });
       } else if (stepId === "phase5") {
-        await runPhase5(pdfPath, apiKey, { force });
+        await runPhase5(pdfPath, requireApiKey(), { force });
       } else if (stepId === "phase6") {
-        await runPhase6(pdfPath, apiKey, { force });
+        await runPhase6(pdfPath, requireApiKey(), { force });
       } else if (stepId === "phase7") {
-        await runPhase7(pdfPath, apiKey, { force });
+        await runPhase7(pdfPath, requireApiKey(), { force });
       } else if (stepId.startsWith("phase4-")) {
         const tableId = stepId.slice("phase4-".length);
         const table = tableRegistryForStem(stem).find((t) => t.id === tableId);
         if (!table) {
           throw new Error(`LCA table not found: ${tableId}`);
         }
-        await runPhase4Probe(pdfPath, apiKey, {
+        await runPhase4Probe(pdfPath, requireApiKey(), {
           force,
           pageSpec: probePageSpecForTable(table),
         });

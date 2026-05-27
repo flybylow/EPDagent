@@ -1,4 +1,5 @@
-import { canonicalExtractStem, loadDocmapForStem, pdfPathForStem } from "../data";
+import { canonicalExtractStem, pdfPathForStem } from "../data";
+import { loadDocmapForStem } from "../phases/registry";
 import { docmapIsCached } from "./docmap-cache";
 import { writeDocmap } from "./docmap";
 import type { PhaseDocmapResult } from "./docmap";

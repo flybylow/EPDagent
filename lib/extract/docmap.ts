@@ -22,7 +22,7 @@ export interface PhaseDocmapResult {
     pdf_path: string;
     pdf_sha256: string;
     page_spec_source: "manifest" | "scan" | "default";
-    extracted_by: "pdf-text-toc-parser";
+    extracted_by: "pdf-text-toc-parser" | "pdf-heading-scan";
     extracted_at: string;
     entry_count: number;
     tree_node_count: number;

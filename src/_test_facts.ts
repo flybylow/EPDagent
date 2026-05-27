@@ -35,7 +35,10 @@ assert(tags.includes("thermal-data"), "rockwool has thermal-data tag");
 // full facts
 const full = buildProductFacts(ROCKWOOL, parseFactParts(null));
 assert(full?.schema === "epdagent.product-facts.v1", "schema version");
-assert(full?.thermal?.properties?.some((r) => /λ|lambda|thermal/i.test(r.property ?? "")), "thermal lambda");
+assert(
+  Boolean(full?.thermal?.properties?.some((r) => /λ|lambda|thermal/i.test(r.property ?? ""))),
+  "thermal lambda"
+);
 
 // partial facts
 const slice = buildProductFacts(ROCKWOOL, new Set(["thermal", "lca"]));
