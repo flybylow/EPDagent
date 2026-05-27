@@ -13,6 +13,12 @@ export default function HomePage() {
       <p className="hint">
         Select an EPD to open the workspace — corpus strip on top, section tree and PDF below.
       </p>
+      {isServeOnlyDeploy() ? (
+        <p className="hint deploy-readonly-banner">
+          Published read-only on this host — phase lights show committed outputs; extract locally
+          to refresh data.
+        </p>
+      ) : null}
       <EpdCorpusList records={records} extractEnabled={!isServeOnlyDeploy()} />
     </div>
   );

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { EpdCoverageStats } from "@/app/components/EpdCoverageStats";
 import { EpdExtractToolbar } from "@/app/components/EpdExtractToolbar";
+import { EpdPhaseLights } from "@/app/components/EpdPhaseLights";
 import type { EpdRecord } from "@/lib/types";
 
 function SourceTag({ record }: { record: EpdRecord }) {
@@ -74,6 +75,11 @@ export function EpdCorpusCard({
       </div>
 
       <div className="epd-actions">
+        {record.pipelinePhases.length > 0 && !extractEnabled ? (
+          <div className="epd-extract-stack epd-phase-lights-readonly" aria-label="Pipeline phase status">
+            <EpdPhaseLights phases={record.pipelinePhases} />
+          </div>
+        ) : null}
         {record.hasPdf && extractEnabled ? (
           <EpdExtractToolbar
             stem={record.stem}

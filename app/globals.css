@@ -125,6 +125,18 @@ h2 {
   font-size: 0.9rem;
 }
 
+.deploy-readonly-banner {
+  padding: 0.65rem 0.9rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  max-width: 72ch;
+}
+
+.epd-phase-lights-readonly {
+  margin-top: 0.35rem;
+}
+
 code {
   font-family: var(--mono);
   font-size: 0.85em;
@@ -681,6 +693,88 @@ code {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.api-docs-page .panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.api-example-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.api-example-head h2 {
+  margin: 0 0 0.25rem;
+}
+
+.api-status {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.api-status-ok {
+  background: color-mix(in srgb, var(--ok) 20%, transparent);
+  color: var(--ok);
+}
+
+.api-status-err {
+  background: color-mix(in srgb, #e85d5d 20%, transparent);
+  color: #f0a0a0;
+}
+
+.api-route {
+  margin: 0 0 0.75rem;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+}
+
+.api-method {
+  color: var(--ok);
+  margin-right: 0.35rem;
+}
+
+.api-curl-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.api-curl {
+  flex: 1 1 280px;
+  margin: 0;
+  padding: 0.65rem 0.85rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  line-height: 1.4;
+  overflow-x: auto;
+}
+
+.api-response-label {
+  margin: 0 0 0.35rem;
+}
+
+.api-docs-more {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.api-docs-more li {
+  margin: 0.25rem 0;
 }
 
 .actions-row {

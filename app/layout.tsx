@@ -17,12 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </a>
             <nav>
               <a href="/">EPDs</a>
-              <a href="/api/graph/corpus" target="_blank" rel="noreferrer">
-                corpus.jsonld
-              </a>
-              <a href="/api/context" target="_blank" rel="noreferrer">
-                @context
-              </a>
+              <a href="/api-docs">API</a>
             </nav>
           </div>
         </header>
