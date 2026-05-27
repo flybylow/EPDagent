@@ -1,0 +1,12 @@
+{
+  "pdf_filename": "B-EPD 025.0262.004-01.00.00 Beton Agglo Carbstones Kimblok EN - signed.pdf",
+  "pdf_stem": "B-EPD 025.0262.004-01.00.00 Beton Agglo Carbstones Kimblok EN - signed",
+  "epd_number": null,
+  "language": null,
+  "pattern": "unknown",
+  "_source": {
+    "pdf_filename": "B-EPD 025.0262.004-01.00.00 Beton Agglo Carbstones Kimblok EN - signed.pdf",
+    "extracted_by": "filename-regex",
+    "extracted_at": "2026-05-26T18:04:02.803Z"
+  }
+}

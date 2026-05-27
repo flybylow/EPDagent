@@ -1,0 +1,32 @@
+{
+  "bibliography": [],
+  "additional_information": [
+    "Owner of the EPD, Responsible for the data, LCA and information: Etex services, Kuiermansstraat 1, 1880 Kapelle-op-den-Bos, Belgium, Tel : +32 (0) 15 71 82 83; For more information you can contact Peggy Van De velde, peggy.vandevelde@etexgroup.com",
+    "EPD program, Program operator, Publisher of this EPD: B-EPD, Federal Public Service of Health / DG Environment, Galileelaan 5/2, 1210 Brussels, Belgium, www.environmentalproductdeclarations.eu",
+    "Contact programma operator: epd@environment.belgium.be",
+    "Based on following PCR documents: EN 15804+A2:2019, NBN/DTD B 08-001 and its complement",
+    "PCR review conducted by: Federal Public Service of Health and Environment & PCR Review committee",
+    "Author(s) of the LCA and EPD: Arthur De Jaegher, arthur@enperas.com",
+    "Identification of the project report: Life cycle assessment of CEDRAL (VITO, 07-09-21)",
+    "Verification: External independent verification of the declaration and data according to EN ISO 14025 and relevant PCR documents",
+    "Name of the third party verifier: Evert Vermaut (Vinçotte), Date of verification: 08.09.2021",
+    "LCA practitioner: www.vito.be, www.enperas.be",
+    "Building calculator of the regional authorities: www.totem-building.be",
+    "Federal Public Service of Health, Food Chain Safety and Environment: www.b-epd.be",
+    "Comparing EPDs is not possible unless they are conform to the same PCR and taking into account the building context. The program operator cannot be held responsible for the information supplied by the owner of the EPD nor LCA practitioner."
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 21-0135-02-00-00-EN ETEX - cedral - signed.pdf",
+    "pdf_sha256": "64d786fb4145521fbc02d5e3008e2efd5520be5c54a7e7cc6be48c3ece292bfb",
+    "api_pages": "20-21",
+    "api_pages_resolved": "20,21",
+    "api_pdf_bytes": 331346,
+    "api_pdf_sha256": "2a7519bbd61f77663505c868a128c8bded2f19d008ba545fd53a925015f53a75",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 21-0135-02-00-00-EN ETEX - cedral - signed.p20-p21.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:23:43.757Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 5227,
+    "output_tokens": 1124
+  }
+}

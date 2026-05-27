@@ -1,0 +1,12 @@
+{
+  "pdf_filename": "B-EPD 024.0263.001-01.00.00 Fire damper RF-Technologies-EN_signed.pdf",
+  "pdf_stem": "B-EPD 024.0263.001-01.00.00 Fire damper RF-Technologies-EN_signed",
+  "epd_number": null,
+  "language": null,
+  "pattern": "unknown",
+  "_source": {
+    "pdf_filename": "B-EPD 024.0263.001-01.00.00 Fire damper RF-Technologies-EN_signed.pdf",
+    "extracted_by": "filename-regex",
+    "extracted_at": "2026-05-26T18:04:05.485Z"
+  }
+}

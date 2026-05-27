@@ -1,0 +1,12 @@
+{
+  "pdf_filename": "B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed.pdf",
+  "pdf_stem": "B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed",
+  "epd_number": null,
+  "language": null,
+  "pattern": "unknown",
+  "_source": {
+    "pdf_filename": "B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed.pdf",
+    "extracted_by": "filename-regex",
+    "extracted_at": "2026-05-26T18:00:32.868Z"
+  }
+}

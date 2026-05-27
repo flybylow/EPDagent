@@ -1,0 +1,12 @@
+{
+  "pdf_filename": "B-EPD 024.0013.010-01.00.00 Gyproc WR 12.5 Saint-Gobain-EN_ signed.pdf",
+  "pdf_stem": "B-EPD 024.0013.010-01.00.00 Gyproc WR 12.5 Saint-Gobain-EN_ signed",
+  "epd_number": null,
+  "language": null,
+  "pattern": "unknown",
+  "_source": {
+    "pdf_filename": "B-EPD 024.0013.010-01.00.00 Gyproc WR 12.5 Saint-Gobain-EN_ signed.pdf",
+    "extracted_by": "filename-regex",
+    "extracted_at": "2026-05-26T17:38:16.821Z"
+  }
+}

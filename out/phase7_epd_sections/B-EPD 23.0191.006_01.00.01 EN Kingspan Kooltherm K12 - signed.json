@@ -1,0 +1,36 @@
+{
+  "blocks": [
+    {
+      "number": "11.1",
+      "title": "Indoor air",
+      "content": "The product is not intended for indoor use and hence no specific VOC emission tests are performed."
+    },
+    {
+      "number": "11.2",
+      "title": "Soil and water",
+      "content": "The product is not intended for indoor use and hence no specific VOC emission tests are performed.\n\nTheproduct does not come in contact with soil or water."
+    },
+    {
+      "number": "12",
+      "title": "DEMONSTRATION OF VERIFICATION",
+      "content": "11 RELEASE OF DANGEROUS\n\nSUBSTANCES TO INDOOR AIR,\n\nSOIL AND WATER DURING THE\n\nUSE STAG E\n\n11.1 Indoor air\n\nThe product is not intended for indoor use and hence no specific VOC emission tests are performed.\n\n11.2 Soil and wate r\n\nTheproduct does not come in contact with soil or water.\n\nVERIFICATION\n\nEN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO14025:2010\n\nInternal☐ External☒\n\nThird party verifier:\n\nVinçotte nv\n\nRamses Sterckx\n\nJan Olieslagerslaan 35 1800 Vilvoorde\n\nrsterckx@vincotte.b"
+    },
+    {
+      "number": "13",
+      "title": "lca interpretation",
+      "content": "12 DEMONSTRATION OF\n\nVERIFICATION\n\nEN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO14025:2010\n\nInternal☐ External☒\n\nThird party verifier:\n\nVinçotte nv\n\nRamses Sterckx\n\nJan Olieslagerslaan 35 1800 Vilvoorde\n\nrsterckx@vincotte.b\n\nAll impact categories are mainlydetermined by the raw materials supply in A1. For GWP(and to less extend also the values\n\nfor ODP, FAETP and MAETP) also the incinerationemissions at the end of life have a significant environmental impact. The\n\npotential creditsfor thermal and electricalenergy are declared in module D and result in negative valuesfor most of the\n\nimpact categories."
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 23.0191.006_01.00.01 EN Kingspan Kooltherm K12 - signed.pdf",
+    "pdf_sha256": "dc110f9f93e224960dbb448f52c7ea5f05e51c4824c2fa22f95370c4c9c59b55",
+    "api_pages": "25-30",
+    "api_pages_slice": "25-30",
+    "api_pages_resolved": "25-30",
+    "extracted_by": "pdf-text-parser",
+    "extracted_at": "2026-05-26T20:46:26.721Z",
+    "model": null,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

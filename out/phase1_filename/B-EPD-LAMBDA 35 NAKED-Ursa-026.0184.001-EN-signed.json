@@ -1,0 +1,12 @@
+{
+  "pdf_filename": "B-EPD-LAMBDA 35 NAKED-Ursa-026.0184.001-EN-signed.pdf",
+  "pdf_stem": "B-EPD-LAMBDA 35 NAKED-Ursa-026.0184.001-EN-signed",
+  "epd_number": null,
+  "language": null,
+  "pattern": "unknown",
+  "_source": {
+    "pdf_filename": "B-EPD-LAMBDA 35 NAKED-Ursa-026.0184.001-EN-signed.pdf",
+    "extracted_by": "filename-regex",
+    "extracted_at": "2026-05-26T18:22:12.760Z"
+  }
+}

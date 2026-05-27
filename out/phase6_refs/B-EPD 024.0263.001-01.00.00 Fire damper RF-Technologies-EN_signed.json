@@ -1,0 +1,26 @@
+{
+  "bibliography": [
+    "Statbel, 2021"
+  ],
+  "additional_information": [
+    "Ecoinvent v3.9.1 data record: 'Transport, freight, lorry 16-32 metric ton, EURO6 {RER}| transport, freight, lorry 16-32 metric ton, EURO6 | Cut-off, U'",
+    "Ecoinvent v3.9.1 Cut-off data record: 'Transport, freight, lorry 7.5-16 metric ton, EURO6 {RER}| market for transport, freight, lorry 7.5-16 metric ton, EURO6 | Cut-off, U'",
+    "Ecoinvent v3.9.1 data record: 'Transport, freight, lorry >32 metric ton, EURO6 {RER}| transport, freight, lorry >32 metric ton, EURO6 | Cut-off, U'",
+    "Ecoinvent v3.9.1 data record: 'Transport, freight, lorry 16-32 metric ton, EURO6 {RER}| transport, freight, lorry 16-32 metric ton, EURO6 | Cut-off, U'",
+    "Ecoinvent v3.9.1 data record: 'Transport, freight, lorry 7.5-16 metric ton, EURO6 {RER}| transport, freight, lorry 7.5-16 metric ton, EURO6 | Cut-off, U'"
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 024.0263.001-01.00.00 Fire damper RF-Technologies-EN_signed.pdf",
+    "pdf_sha256": "3870a1cd5451b08545478c285f81696f3e733ff900a5912cad19811be002d2dd",
+    "api_pages": "20-21",
+    "api_pages_resolved": "20,21",
+    "api_pdf_bytes": 28530,
+    "api_pdf_sha256": "9d202a1b51ff06a59948f38f5092965a67f78513c5f286e7572c4543e8dbb19f",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 024.0263.001-01.00.00 Fire damper RF-Technologies-EN_signed.p20-p21.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:25:30.652Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 5370,
+    "output_tokens": 399
+  }
+}

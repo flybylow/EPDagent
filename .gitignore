@@ -6,11 +6,15 @@ node_modules/
 
 # Extraction outputs (regenerate locally; publish slices for Vercel Facts API)
 out/*
+!out/phase1_filename/
 !out/phase2_header/
 !out/phase3_product/
 !out/phase3_composition/
 !out/phase3_lca_study/
 !out/phase4_lca_probe/
+!out/phase5_scenarios/
+!out/phase6_refs/
+!out/phase7_epd_sections/
 !out/phase_docmap/
 !out/phase_docmap/**
 

@@ -1,0 +1,18 @@
+{
+  "bibliography": [],
+  "additional_information": null,
+  "_source": {
+    "pdf_filename": "B-EPD 23.0191.003_01.00.01 EN Kingspan Kooltherm K8 - signed.pdf",
+    "pdf_sha256": "54126da41d22c7435bd572d70db49eeba6a715ea80f8bf268407d3b68f28fae7",
+    "api_pages": "20-21",
+    "api_pages_resolved": "20,21",
+    "api_pdf_bytes": 60638,
+    "api_pdf_sha256": "9957e095cd276c7d49dc0f32bbbe06c4aa9b71b33305b45eb0283cd872dfb766",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 23.0191.003_01.00.01 EN Kingspan Kooltherm K8 - signed.p20-p21.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:24:03.875Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 5644,
+    "output_tokens": 52
+  }
+}

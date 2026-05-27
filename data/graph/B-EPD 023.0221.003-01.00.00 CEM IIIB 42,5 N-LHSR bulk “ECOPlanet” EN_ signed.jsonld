@@ -118,6 +118,9 @@
       "productSection": {
         "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.003-01.00.00%2520CEM%2520IIIB%252042%252C5%2520N-LHSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN_%2520signed/product"
       },
+      "composition": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.003-01.00.00%2520CEM%2520IIIB%252042%252C5%2520N-LHSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN_%2520signed/composition"
+      },
       "lcaStudy": {
         "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.003-01.00.00%2520CEM%2520IIIB%252042%252C5%2520N-LHSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN_%2520signed/lca-study"
       },
@@ -148,7 +151,7 @@
         "phase1": true,
         "phase2": true,
         "phase3_product": true,
-        "phase3_composition": false,
+        "phase3_composition": true,
         "phase3_lca_study": true,
         "phase4_lca": [
           "lca_impacts",
@@ -254,20 +257,61 @@
       ]
     },
     {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.003-01.00.00%2520CEM%2520IIIB%252042%252C5%2520N-LHSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN_%2520signed/composition",
+      "@type": "Composition",
+      "components": [
+        {
+          "section": null,
+          "component": "Portland clinker produced in Obourg",
+          "composition": null,
+          "quantity": "20% to 30%"
+        },
+        {
+          "section": null,
+          "component": "Blast-furnace slag",
+          "composition": null,
+          "quantity": "63% to 73% *"
+        },
+        {
+          "section": null,
+          "component": "Minor additional constituents",
+          "composition": null,
+          "quantity": "<= 5%"
+        },
+        {
+          "section": null,
+          "component": "Additives",
+          "composition": null,
+          "quantity": "<= 1%"
+        },
+        {
+          "section": null,
+          "component": "Gypsum and/or anhydrite",
+          "composition": null,
+          "quantity": "<= 6%"
+        }
+      ],
+      "declarations": [
+        "The product does not contain materials listed in the \"Candidate list of Substances of Very High Concern for authorization\"."
+      ]
+    },
+    {
       "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.003-01.00.00%2520CEM%2520IIIB%252042%252C5%2520N-LHSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN_%2520signed/lca-study",
       "@type": "LcaStudy",
       "sectionTitle": "3 LCA-STUDY",
-      "standardsAndMethodology": "The \"GCCA EPD Tool\" is a specific tool to the cement and concrete industry, it is compliant with the EN 15804+A2 standard and is verified by EPD international.",
-      "lcaSoftwareAndDatabase": "For the calculation of the LCA results, the software program \"GCCA EPD Tool\" (v4.0) was used for A1 to A3 calculations and is based on ecoinvent 3.5. The \"GCCA EPD Tool\" is a specific tool to the cement and concrete industry, it is compliant with the EN 15804+A2 standard and is verified by EPD international. SimaPro was used to model module A4 module in combination with ecoinvent v3.8.",
-      "productionSites": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site.",
+      "standardsAndMethodology": "For the calculation of the LCA results, the software program \"GCCA EPD Tool\" (v4.0) was used for A1 to A3 calculations and is based on ecoinvent 3.5. The \"GCCA EPD Tool\" is a specific tool to the cement and concrete industry, it is compliant with the EN 15804+A2 standard and is verified by EPD international.",
+      "pcrReference": "The allocation rules defined by EN 15804+A2 and EN16908 have been applied.",
+      "lcaSoftwareAndDatabase": "For the calculation of the LCA results, the software program \"GCCA EPD Tool\" (v4.0) was used for A1 to A3 calculations and is based on ecoinvent 3.5. The \"GCCA EPD Tool\" is a specific tool to the cement and concrete industry, it is compliant with the EN 15804+A2 standard and is verified by EPD international. SimaPro was used to model module A4 module in combination with ecoinvent v3.8 . Ecoinvent v3.5 for A1 to A3 and ecoinvent version 3.8 for A4.",
+      "systemBoundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 13\nDeclared modules (☒): A1, A2, A3, A4\nNot declared (☐): A5, B1, B2, B3, B4, B5, B6, B7, C1, C2, C3, C4, D\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4\n\nModule labels (vertical text):\nA1: Raw materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: Construction\nB1: Use\nB2: Maintenance\nB3: Repa\nB4: Replacement\nB5: Refurbishment\nB6: Operational energy use\nB7: Operational water use\nC1: construction\nC2: Transport\nC3: Waste processing\nC4: Disposal\nD: Recovery",
+      "productionSites": "The product is produced in Antwerp, where Holcim Belgium operates a cement blending plant.",
       "cutOffCriteria": "The following processes are considered below cut-off:\n- Cleaning of the installation\n- Wear of grinding balls\n- Cement grinding losses\n- Cement mixing losses",
       "allocation": "The allocation rules defined by EN 15804+A2 and EN16908 have been applied.\nThe manufacturing process does not produce co-products that require allocation.\nA cut-off is applied when recyclable waste reaches the end of the waste state.\nBy default, this EPD addresses the environmental impacts of cement production excluding the incineration of the input waste (net figure). For clarity and transparency, the gross figure is also communicated as recommended in the EN 16908+A1.\nFor the blast furnace slag, a co-product of the pig iron production, economic allocation has been used conform EN 15804+A2, based on EPD data from the main supplier.",
-      "dataQuality": "The activity data is based on site specific data (volumes, lower heating values, emission factors) verified by the EU ETS system for the clinker production. For the cement production, the main data used is the recipe.\nBackground data is included in the GCCA EPD tool and has been verified by EPD International.",
+      "dataQuality": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site. The activity data is based on site specific data (volumes, lower heating values, emission factors) verified by the EU ETS system for the clinker production. For the cement production, the main data used is the recipe. Background data is included in the GCCA EPD tool and has been verified by EPD International.",
       "timeRepresentativeness": "Manufacturer specific data have been collected for the year 2021.",
       "geographicalRepresentativeness": "The residual electricity mix of Belgium in 2021 was used, based on the electricity attributes provided by the Association of issuing Bodies (AIB).",
       "impactAssessment": "The EF3.0 version of the EN 15804+A2 LCIA method was used. The characterization factors from EC-JRC were applied. No additional or deviating characterisation factors were used.",
       "additionalParagraphs": [
-        "Following processes were excluded for the inventory:\n- Production and construction of equipment for buildings and installations\n- Production and construction of equipment for the production of clinker and cement and lab analyses\n- Activities related to the personnel (mobility, furniture and desk consumables)\n- Utilization of water and energy related to the sales and management of the product\n- Cleaning of offices",
+        "Following processes were excluded for the inventory: Production and construction of equipment for buildings and installations; Production and construction of equipment for the production of clinker and cement and lab analyses; Activities related to the personnel (mobility, furniture and desk consumables); Utilization of water and energy related to the sales and management of the product; Cleaning of offices",
         "The product does not contain biogenic carbon. The product is sold in bulk and does not require packaging.",
         "Carbon offsetting is not allowed in the EN 15804+A2 and hence not taken into account in the calculations",
         "No carbonation of cementitious materials is considered in the scope of this EPD. The construction products made with cement (mortar, concrete) may indeed carbonate in the following life cycle stages.",
@@ -302,7 +346,7 @@
         {
           "number": "3.6",
           "title": "Information on biogenic carbon modelling",
-          "content": "The product does not contain biogenic carbon.\nThe product is sold in bulk and does not require packaging.\n\nBiogenic carbon content (kg C / FU)\nBiogenic carbon content in product (at the gate): 0\nBiogenic carbon content in accompanying packaging (at the gate): 0"
+          "content": "The product does not contain biogenic carbon.\nThe product is sold in bulk and does not require packaging.\n\nBiogenic carbon content (kg C / FU )\nBiogenic carbon content in product (at the gate): 0\nBiogenic carbon content in accompanying packaging (at the gate): 0"
         },
         {
           "number": "3.7",
@@ -3342,32 +3386,27 @@
         {
           "number": "11.1",
           "title": "Indoor air",
-          "content": "Cement is not in direct contact with indoor air. It is the cement-based products (concrete, mortar …) that are potentially in contact with indoor air."
+          "content": "SUBSTANCES TO INDOOR AIR, SOIL\n\nAND WATER DURING THE USE\n\nSTAG E\n\nCement is not in direct contact with indoorair. It is the cement-based products (concrete, mortar…) that are potentially in contact\n\nwith indoor air."
         },
         {
           "number": "11.2",
           "title": "Soil and water",
-          "content": "Cement is not in direct contact with soil and water. It is the cement-based products (concrete, mortar …) that are potentially in contact with soil and water."
+          "content": "Cement is not in direct contact with indoorair. It is the cement-based products (concrete, mortar…) that are potentially in contact\n\nwith indoor air.\n\nCement is not in direct contact withsoil and water. It is the cement-based products (concrete, mortar…) that are potentially incontact\n\nwith soil and water."
         },
         {
           "number": "12",
-          "title": "DEMONSTRATION OF VERIFICATION",
-          "content": "EN 15804+A2 serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\nInternal ☐ External ☒\n\nThird party verifier: [ Evert Vermaut Jan Olieslagerslaan 35, 1800 Vilvoorde, rsterckx@vincotte.be]"
+          "title": "DEMONSTRATION OF VERIFICATION 3|26B-EPDCEM III/B42,5 N-LH/SRbulk“ECOPlanet”",
+          "content": "Cement is not in direct contact withsoil and water. It is the cement-based products (concrete, mortar…) that are potentially incontact\n\nwith soil and water.\n\nEN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\n\nInternal☐ External☒\n\nThird party verifier:[Evert VermautJan Olieslagerslaan 35,1800 Vilvoorde, rsterckx@vincotte.be]"
         },
         {
           "number": "13",
-          "title": "LCA INTERPRETATION",
-          "content": "Not provided."
-        },
-        {
-          "number": "15",
-          "title": "APPLICATION UNIT",
-          "content": "Not applicable for this EPD."
+          "title": "lca interpretation",
+          "content": "EN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\n\nInternal☐ External☒\n\nThird party verifier:[Evert VermautJan Olieslagerslaan 35,1800 Vilvoorde, rsterckx@vincotte.be]\n\nNot provided."
         },
         {
           "number": "16",
           "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
-          "content": "Not applicable for this EPD."
+          "content": "Not applicable for this EPD.\n\nREVERSIBILITY\n\nNot applicable for this EPD."
         }
       ]
     }

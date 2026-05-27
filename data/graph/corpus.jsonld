@@ -28070,9 +28070,24 @@
       "@type": "EpdSectionSet",
       "blocks": [
         {
-          "number": "12",
-          "title": "DEMONSTRATION OF VERIFICATION",
-          "content": "(“lap” system)\n\nExteriorwallcovering\n\n(“click” system)\n\nADDITIONAL INFORMATION ON REVERSIBILITY\n\nFor the application and installation as described in this EPD a qualitative assessment of the reversibility is given. Following 4 indicators shall\n\nbe used (based on BAMB–buildings as material banks). The assessment isapplicable for exteriorwall cladding and for all frameworks.\n\nReversibility - Reversible with light repairable damage (fixation with screws, bolts and dowels)\n\nSimplicity of disassembly - simple-no specific dismantling tools required\n\nSpeed ofdisassembly - speedy disassembly\n\nEase of handling (size and weight)- can be handled manually, but size and/or weight requires two or more workers\n\nRobustnessofmaterial(material - the material resists well duringdisassembly\n\nresistance to disassembly)\n\n19"
+          "number": "11.2",
+          "title": "SOIL AND WATER",
+          "content": "INDOOR AIR\n\nUnder normal conditions of use,CEDRAL products do not cause any adverse health effects or release of volatile organic compounds\n\n(VOCs) to indoor air.\n\nSOIL AND WATER\n\nNo environmental impact to water, air or soil is expected due to the extremely low metal release from the low maintenance requirements.\n\nDEMONSTRATION OF VERIFICATION\n\nEN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\n\nInternal☐ External☒\n\nThird party verifier: Evert Vermaut (Vincotte)\n\nJan Olieslagerslaan 35"
+        },
+        {
+          "number": "13",
+          "title": "ADDITIONAL TECHNICAL INFORMATION FOR SCENARIO DEVELOPMENT",
+          "content": "This EPD does not include the framework on which the panels are installed. At building levelthe impactoftheframework should be added.\n\nIf specific information on quantities ismissing, following weights can be used. The values are applicable for exterior wall cladding.\n\nWooden framework\n\nComponents quantity Description\n\nWooden frame 2,4 kg\n\nEPDM sealing tape 0,018 kg\n\nSteel framework\n\nComponents quantity Description\n\nSteel frame 2,48 kg\n\nPVC foam 0,02 kg"
+        },
+        {
+          "number": "14",
+          "title": "APPLICATION UNIT",
+          "content": "This paragraph gives information onthe applied productand how the reference flow and table with impacts relate to different applications.\n\n2\n\nThe tablebelow gives an overview of the standard thicknesses, the thickness range and the ratio to the declared unit of 1 mfor each\n\napplication.The environmental impact is proportional with the thickness.\n\n2\n\nApplication Standard thickness Thickness range Ratio to the declared unit of 1 m\n\nExteriorwallcovering"
+        },
+        {
+          "number": "15",
+          "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+          "content": "For the application and installation as described in this EPD a qualitative assessment of the reversibility is given. Following 4 indicators shall\n\nbe used (based on BAMB–buildings as material banks). The assessment isapplicable for exteriorwall cladding and for all frameworks.\n\nReversibility - Reversible with light repairable damage (fixation with screws, bolts and dowels)\n\nSimplicity of disassembly - simple-no specific dismantling tools required\n\nSpeed ofdisassembly - speedy disassembly\n\nEase of handling (size and weight)- can be handled manually, but size and/or weight requires two or more workers\n\nRobustnessofmaterial(material - the material resists well duringdisassembly\n\nresistance to disassembly)\n\n19"
         }
       ]
     },
@@ -28140,6 +28155,9 @@
       "bibliography": {
         "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/references"
       },
+      "epdSections": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/sections"
+      },
       "extractionCoverage": {
         "phase1": true,
         "phase2": true,
@@ -28151,7 +28169,7 @@
         ],
         "phase5_scenarios": true,
         "phase6_refs": true,
-        "phase7_epd_sections": false
+        "phase7_epd_sections": true
       }
     },
     {
@@ -28504,6 +28522,12 @@
           "column_codes": [
             "D"
           ]
+        },
+        {
+          "label": "Total excl module D",
+          "column_codes": [
+            "Total"
+          ]
         }
       ],
       "columns": [
@@ -28595,7 +28619,7 @@
         {
           "code": "Total",
           "label": "Total excl module D",
-          "group": null
+          "group": "Total excl module D"
         }
       ],
       "rows": [
@@ -29069,7 +29093,7 @@
         },
         {
           "indicator": "EP - freshwater",
-          "unit": "kg Pequiv/FU",
+          "unit": "kg P equiv/FU",
           "values": [
             {
               "column_code": "A1",
@@ -29147,7 +29171,7 @@
         },
         {
           "indicator": "EP - marine",
-          "unit": "kg Nequiv/FU",
+          "unit": "kg N equiv/FU",
           "values": [
             {
               "column_code": "A1",
@@ -29225,7 +29249,7 @@
         },
         {
           "indicator": "EP - terrestrial",
-          "unit": "mol Nequiv/FU",
+          "unit": "mol N equiv/FU",
           "values": [
             {
               "column_code": "A1",
@@ -29462,6 +29486,37 @@
         "Building calculator of the regional authorities: www.totem-building.be",
         "Federal Public Service of Health, Food Chain Safety and Environment: www.b-epd.be",
         "Comparing EPDs is not possible unless they are conform to the same PCR and taking into account the building context. The program operator cannot be held responsible for the information supplied by the owner of the EPD nor LCA practitioner."
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/sections",
+      "@type": "EpdSectionSet",
+      "blocks": [
+        {
+          "number": "11.2",
+          "title": "SOIL AND WATER",
+          "content": "INDOOR AIR\n\nUnder normal conditions of use,EQUITONE [natura-textura-materia]products do not cause any adverse health effects or release of volatile\n\norganic compounds (VOCs) to indoor air.\n\nSOIL AND WATER\n\nNo environmental impact to water, air or soil isexpected due to the extremely low metal release from the low maintenance requirements."
+        },
+        {
+          "number": "12",
+          "title": "DEMONSTRATION OF VERIFICATION",
+          "content": "EN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according tostandard EN ISO 14025:2010\n\nInternal☐ External☒\n\nThird party verifier: Evert Vermaut (Vincotte)\n\nJan Olieslagerslaan 35"
+        },
+        {
+          "number": "13",
+          "title": "ADDITIONAL TECHNICAL INFORMATION FOR SCENARIO DEVELOPMENT",
+          "content": "This EPD does not include the framework on which the panels are installed. At building levelthe impactoftheframework should be added.\n\nIf specific information on quantities is missing, following weights can be used. The values are applicable for exterior wall cladding.\n\nWooden framework\n\nComponents quantity Description\n\nWooden frame 2,4 kg\n\nEPDM sealing tape 0,018 kg UVprotectionofthejoints\n\nAluminium framework\n\nComponents quantity Description\n\nAluminium profiles 1,61 kg\n\nThefoam strip is designed to create a watertight seal even with minimal force\n\nPVC foam 0,02 kg applied. It also minimizes vibrations from the facade panel and prevents\n\ncontact between uncoated fiber cement and the aluminum support structure.\n\nSteel framework\n\nComponents quantity Description\n\nSteel frame 2,48 kg\n\nThe foam strip is designed to create a watertight seal even with minimal force\n\nPVC foam 0,02 kg applied. It also minimizes vibrations from the facade panel and prevents\n\ncontact between uncoated fiber cement andthe aluminum support structure."
+        },
+        {
+          "number": "14",
+          "title": "APPLICATION UNIT",
+          "content": "This paragraph gives information onthe applied productand how the reference flow and table with impacts relate to different applications.\n\n2\n\nThe tablebelow gives an overview of the standard thicknesses, the thickness range and the ratio to the declared unit of 1 mfor each\n\napplication.The environmental impact is proportional with the thickness.\n\n2\n\nApplication Standard thickness Thickness range Ratio to the declared unit of 1 m\n\nExterior wall covering 8mm 8and12mm 1\n\nCeilings 8 mm 8and 12mm 1"
+        },
+        {
+          "number": "15",
+          "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+          "content": "For the application and installation as described in this EPD a qualitative assessment of the reversibility is given. Following 4 indicators shall\n\nbe used (based on BAMB–buildings as material banks). The assessment isapplicable for exteriorwall cladding and for all frameworks.\n\nReversibility - Reversible with light repairable damage (fixation with screws, bolts and dowels)\n\nSimplicity of disassembly - simple-no specific dismantling tools required\n\nSpeed of disassembly - speedy disassembly\n\nEase ofhandling (size and weight)- can be handled manually, but size and/or weight requires two or more workers\n\nRobustnessofmaterial(material - the material resists well during disassembly\n\nresistance to disassembly)\n\n19"
+        }
       ]
     },
     {

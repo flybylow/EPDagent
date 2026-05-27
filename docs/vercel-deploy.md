@@ -34,8 +34,10 @@ flowchart LR
 
 2. **Commit published artifacts** (whitelisted in `.gitignore`):
 
-   - `out/phase_docmap/` — **required for section navigation** on EPD detail pages (PDF table of contents)
+   - `out/phase_docmap/` — **required for section navigation** (PDF table of contents / menu)
+   - `out/phase7_epd_sections/` — narrative section text bound to the menu (no PDF parse on Vercel)
    - `out/phase2_header/`, `out/phase3_product/`, `out/phase3_composition/`, `out/phase3_lca_study/`, `out/phase4_lca_probe/`
+   - `out/phase5_scenarios/`, `out/phase6_refs/`, `out/phase1_filename/` (optional but matches local dashboard)
    - `data/graph/*.jsonld`
 
    Build docmaps locally (no Claude API):

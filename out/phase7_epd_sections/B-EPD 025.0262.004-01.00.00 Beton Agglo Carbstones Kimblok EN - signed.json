@@ -1,0 +1,31 @@
+{
+  "blocks": [
+    {
+      "number": "11.1",
+      "title": "Indoor air",
+      "content": "SUBSTANCES TO INDOOR AIR, SOIL\n\nAND WATER DURING THE USE\n\nSTAGE\n\nNot applicable."
+    },
+    {
+      "number": "12",
+      "title": "DEMONSTRATION OF VERIFICATION",
+      "content": "Not applicable.\n\nEN 15804+A2 serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\n\nInternal☐ External☒\n\nThird party verifier:\n\nVinçotte nv\n\nRamses Sterckx\n\nJan Olieslagerslaan 35 1800 Vilvoorde\n\nrsterckx@vincotte.be"
+    },
+    {
+      "number": "14",
+      "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+      "content": "13 APPLICATION UNIT\n\nThis table gives information on the applied product. The table gives information on the length, width and height.\n\nProduct group Length Width Height\n\nCarbstone Kimblok 29 cm 9 – 19 CM 22 cm\n\nFor more information please check the Additional rules complimentary toB-EPD PCR v18.10.2022onwww.b-epd.be\n\nSimplicity of Speed of Ease of handlingRobustness of material (material\n\nDescription Type of fixing Level of reversibility\n\ndisassembly disassembly (size and weight)resistance to disassembly)\n\nStones joint Specific glue Non reversible Easy to manipulate\n\ntogether to form an connections by hand : one\n\ninternal wall worker should be\n\nsufficient"
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 025.0262.004-01.00.00 Beton Agglo Carbstones Kimblok EN - signed.pdf",
+    "pdf_sha256": "bf8437a84b87484607fc2b36353bf7d82115eed369c2d0cb746ff34dde2db5b1",
+    "api_pages": "20-23",
+    "api_pages_slice": "20-23",
+    "api_pages_resolved": "20-23",
+    "extracted_by": "pdf-text-parser",
+    "extracted_at": "2026-05-26T20:46:26.397Z",
+    "model": null,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

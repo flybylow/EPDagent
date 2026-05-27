@@ -1,0 +1,18 @@
+{
+  "section_title": null,
+  "scenarios": [],
+  "_source": {
+    "pdf_filename": "B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.pdf",
+    "pdf_sha256": "652da07295d0a6313acb20af893985679cd92a7c3baa0635c289f60aaeb96b32",
+    "api_pages": "16-19",
+    "api_pages_resolved": "16,17,18,19",
+    "api_pdf_bytes": 312387,
+    "api_pdf_sha256": "987b34f40e886e258ffa19fd94cc61bd60fd1f08553b2af955b5bb6df07cfab8",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.p16-p17-p18-p19.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T17:50:47.242Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 8619,
+    "output_tokens": 52
+  }
+}

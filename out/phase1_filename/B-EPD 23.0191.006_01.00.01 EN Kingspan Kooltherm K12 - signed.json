@@ -1,0 +1,12 @@
+{
+  "pdf_filename": "B-EPD 23.0191.006_01.00.01 EN Kingspan Kooltherm K12 - signed.pdf",
+  "pdf_stem": "B-EPD 23.0191.006_01.00.01 EN Kingspan Kooltherm K12 - signed",
+  "epd_number": null,
+  "language": null,
+  "pattern": "unknown",
+  "_source": {
+    "pdf_filename": "B-EPD 23.0191.006_01.00.01 EN Kingspan Kooltherm K12 - signed.pdf",
+    "extracted_by": "filename-regex",
+    "extracted_at": "2026-05-26T18:04:33.137Z"
+  }
+}

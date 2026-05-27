@@ -76,14 +76,13 @@
   },
   "@graph": [
     {
-      "@id": "http://localhost:3000/id/epd/B-EPD%2021-0127-012-00-00-EN%20Dragopaint%20-%20velout%C3%A9%20sup%20airless%20%E2%80%93%20signed",
+      "@id": "http://localhost:3000/id/epd/B-EPD%2021-0127-012-00-00-EN%20Dragopaint%20-%20veloute%CC%81%20sup%20airless%20%E2%80%93%20signed",
       "@type": [
         "EPD",
         "schema:Product"
       ],
       "epdNumber": "21-0127-012-00-00-EN",
       "schema:name": "DRAGOCRYL VELOUTE SUP AIRLESS",
-      "schema:description": "water-based paint",
       "standardsConformity": "Conform to EN 15804+A2, NBN/DTD B08-001 and ISO 14025",
       "verificationStatement": "Third party verified",
       "declaredScope": "Protect and decorate 1m2 of substrate for a lifespan of 10 years.",
@@ -110,19 +109,25 @@
       "producer": {
         "@id": "http://localhost:3000/id/org/fd8fff5cb019"
       },
+      "verifier": {
+        "@id": "http://localhost:3000/id/person/f2a4b1ea015c"
+      },
       "prov:wasDerivedFrom": {
         "@type": "prov:Entity",
-        "schema:name": "B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.pdf"
+        "schema:name": "B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.pdf"
       },
-      "prov:generatedAtTime": "2026-05-26T17:50:10.111Z",
+      "prov:generatedAtTime": "2026-05-26T20:30:00.523Z",
       "productSection": {
-        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520velout%25C3%25A9%2520sup%2520airless%2520%25E2%2580%2593%2520signed/product"
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520veloute%25CC%2581%2520sup%2520airless%2520%25E2%2580%2593%2520signed/product"
       },
       "composition": {
-        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520velout%25C3%25A9%2520sup%2520airless%2520%25E2%2580%2593%2520signed/composition"
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520veloute%25CC%2581%2520sup%2520airless%2520%25E2%2580%2593%2520signed/composition"
       },
       "lcaStudy": {
-        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520velout%25C3%25A9%2520sup%2520airless%2520%25E2%2580%2593%2520signed/lca-study"
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520veloute%25CC%2581%2520sup%2520airless%2520%25E2%2580%2593%2520signed/lca-study"
+      },
+      "bibliography": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520veloute%25CC%2581%2520sup%2520airless%2520%25E2%2580%2593%2520signed/references"
       },
       "extractionCoverage": {
         "phase1": true,
@@ -132,7 +137,7 @@
         "phase3_lca_study": true,
         "phase4_lca": [],
         "phase5_scenarios": false,
-        "phase6_refs": false,
+        "phase6_refs": true,
         "phase7_epd_sections": false
       }
     },
@@ -150,7 +155,13 @@
       "schema:addressCountry": null
     },
     {
-      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520velout%25C3%25A9%2520sup%2520airless%2520%25E2%2580%2593%2520signed/product",
+      "@id": "http://localhost:3000/id/person/f2a4b1ea015c",
+      "@type": "schema:Person",
+      "schema:name": "Evert Vermaut",
+      "verificationType": "independent_third_party"
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520veloute%25CC%2581%2520sup%2520airless%2520%25E2%2580%2593%2520signed/product",
       "@type": "ProductSection",
       "description": "Dragocryl velouté sup airless is a water-based paint. The product has 1.41 kg/L density and an average coverage 8.55 m2/L, with an opacity of 95.48 %.\n\nThis is a specific EPD from a single company.",
       "intendedUse": "Dragocryl velouté sup airless is applied to interior walls and ceilings, following the standard EN 13300.",
@@ -210,7 +221,7 @@
       ]
     },
     {
-      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520velout%25C3%25A9%2520sup%2520airless%2520%25E2%2580%2593%2520signed/composition",
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520veloute%25CC%2581%2520sup%2520airless%2520%25E2%2580%2593%2520signed/composition",
       "@type": "Composition",
       "components": [
         {
@@ -279,12 +290,39 @@
       ]
     },
     {
-      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520velout%25C3%25A9%2520sup%2520airless%2520%25E2%2580%2593%2520signed/lca-study",
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520veloute%25CC%2581%2520sup%2520airless%2520%25E2%2580%2593%2520signed/lca-study",
       "@type": "LcaStudy",
       "sectionTitle": "POTENTIAL ENVIRONMENTAL IMPACTS PER REFERENCE FLOW",
       "functionalUnit": "The results are provided for coverage of 1m2 using Dragocryl Velouté sup airless.",
+      "systemBoundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 7\nDeclared modules (☒): A1, A2, A3, A4, A5, B1, B2, B3, B4, B5, B6, B7, C1, C2, C3, C4, D\nNot declared (☐): —\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4, A5\nUse stage: B1, B2, B3, B4, B5, B6, B7\nEnd of life stage: C1, C2, C3, C4\nBeyond the system boundaries: D\n\nModule labels (vertical text):\nA1: materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: installation\nB1: Use\nB2: Maintenance\nB3: Repair\nB4: Replacement\nB5: Refurbishment\nB6: use\nB7: use\nC1: construction\nC2: Transport\nC3: processing\nC4: Disposal\nD: Recovery",
       "additionalParagraphs": [
         "The results of the LCIA are calculated for Dragocryl Velouté sup airless."
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520veloute%25CC%2581%2520sup%2520airless%2520%25E2%2580%2593%2520signed/references",
+      "@type": "Bibliography",
+      "bibliography": [
+        "DTU 59.1 - Travaux de bâtiment - Revêtements de peinture en feuil mince, semi-épais, ou épais.",
+        "Dragopaint Environmental Product Declaration Background Report – Decorative paints version 2.0",
+        "ISO 14040:2006: Environmental Management-Life Cycle Assessment-Principles and framework.",
+        "ISO 14044:2006: Environmental Management-Life Cycle Assessment-Requirements and guidelines.",
+        "ISO 14025:2006: Environmental labels and Declarations-Type III Environmental Declarations-Principles and procedures.",
+        "NBN EN 15804+A2:2019",
+        "NBN/DTD B 08-001 (BE-PCR)",
+        "Product Environmental Footprint Category Rules – Decorative Paints version 1.0 (April 2018)",
+        "Product Environmental Footprint Category Rules – Thermal insulation",
+        "TOTEM Lifespans (updated 15 October 2020)",
+        "{insert relevant reference documents used}"
+      ],
+      "additionalInformation": [
+        "ADDITIONAL INFORMATION ON RELEASE OF DANGEROUS SUBSTANCES TO INDOOR AIR, SOIL AND WATER DURING THE USE STAGE\n\nINDOOR AIR\nThis material is not classified as dangerous by the European legislation. There is no dangerous substance, according to CE n° 1272/2008. The product does not need to be stamped, according to the CE directives (67/548/ECC or 1999/45/EC). A test following the ISO 16000 has been realized. The emission class the most beneficial is retained for this B-EPD.\n\nSOIL AND WATER\nNot applicable as this product is not in contact with water and soil.",
+        "DEMONSTRATION OF VERIFICATION\n\nEN 15804+A2 serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\nInternal ☐ External☒\n\nThird party verifier: Evert Vermaut\nVinçotte\nJan Olieslagerslaan 35 B-1800 Vilvoorde\nevermaut@vincotte.be\nFebruary 2021",
+        "Owner of the EPD, Responsible for the data, LCA and information\n\nDragopaint\nRue de l'Europe, 42 (Zone industrielle)\nB-7080 Frameries\nBelgium\nFor more information you can contact Camille Soissons\ncamille.soissons@dragopaint.be",
+        "EPD program, Program operator, Publisher of this EPD\n\nB-EPD\nFederal Public Service of Health / DG Environment\nGalileelaan 5/2\n1210 Brussels\nBelgium\nwww.environmentalproductdeclarations.eu\n\nContact program operator epd@environment.belgium.be",
+        "Author(s) of the LCA and EPD\n\nWeLOOP\nPépinières d'éco-entreprises – Base du 11/19 – Bâtiment 1\nRue Léon Blum\n62750 Loos-en-Gohelle\nFrance",
+        "Identification of the project report: Dragopaint Environmental Product Declaration Background Report – Decorative Paints version 2.0",
+        "Verification: External independent verification of the declaration and data according to EN ISO 14025 and relevant PCR documents\n\nName of the third party verifier: Evert Vermaut, Vinçotte\nDate of verification: 01.03.2021"
       ]
     }
   ]

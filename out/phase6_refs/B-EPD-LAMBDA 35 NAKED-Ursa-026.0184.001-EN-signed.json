@@ -1,0 +1,24 @@
+{
+  "bibliography": [
+    "ISO 14040:2006: Environmental Management-Life Cycle Assessment-Principles and framework.",
+    "ISO 14044:2006: Environmental Management-Life Cycle Assessment-Requirements and guidelines.",
+    "ISO 14025:2006: Environmental labels and Declarations-Type III Environmental Declarations-Principles and procedures. NBN EN 15804:2012+A2:2019 Sustainability of construction works - Environmental product declarations - Core rules for the product category of construction products",
+    "B-EPD PCR_versie1.0_18.10.2022",
+    "EN 13162:2012+A1:2015 Thermal insulation products for buildings - Factory made mineral wool (MW) products - Specification"
+  ],
+  "additional_information": null,
+  "_source": {
+    "pdf_filename": "B-EPD-LAMBDA 35 NAKED-Ursa-026.0184.001-EN-signed.pdf",
+    "pdf_sha256": "c16c8bd610fffb8e96be0ebdda7b3c76c3c056541930ff6383d5cfc89fe9ee68",
+    "api_pages": "22",
+    "api_pages_resolved": "22",
+    "api_pdf_bytes": 323117,
+    "api_pdf_sha256": "d9fe58929059ef4e7b12cd24ad2bcaa2d139298cf28fb0e36351a68a960592e0",
+    "api_pdf_slice": "out/pdf_slices/B-EPD-LAMBDA 35 NAKED-Ursa-026.0184.001-EN-signed.p22.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:58:34.078Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 2700,
+    "output_tokens": 212
+  }
+}

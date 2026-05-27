@@ -1,0 +1,61 @@
+{
+  "section_title": "10 DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
+  "scenarios": [
+    {
+      "module": "A1",
+      "number": "10.1",
+      "title": "A1 - raw material supply",
+      "description": "This module takes into account the extraction and processing of all raw materials and energy which occur upstream to the studied manufacturing process."
+    },
+    {
+      "module": "A2",
+      "number": "10.2",
+      "title": "A2 – transport to the manufacturer",
+      "description": "The raw materials are transported to the manufacturing site."
+    },
+    {
+      "module": "A3",
+      "number": "10.3",
+      "title": "A3 - manufacturing",
+      "description": "This module considers the production process, including waste generated during production, as well as treatment of waste coming from raw materials packaging."
+    },
+    {
+      "module": "A4",
+      "number": "10.4",
+      "title": "A4 – transport to the building site",
+      "description": "Fuel type and consumption of vehicle or vehicle type used for transport: Truck 16-32 ton, EURO6\nDistance: 100 km\nCapacity utilization (including empty returns): 50%\nBulk density of transported products: -\nVolume capacity utilization factor: 1\n\nThe default B-EPD PCR scenario of 100 km has been considered."
+    },
+    {
+      "module": "A5",
+      "number": "10.5",
+      "title": "A5 – installation in the building",
+      "description": "At the construction site, packaging materials become waste. The impact of packaging's EOL treatment has been included in this module (until end-of-waste point). All other processes and materials are out of scope of this study,\n\nPackaging waste type | Quantity, kg | Description\nWood | 1.69E-02, 7.38E-02, 1.78E-01 | RECYCLED, INCINERATED, LANDFILLED\nCardboard | 2.03E-01, 1.92E-02, 1.49E-02 | RECYCLED, INCINERATED, LANDFILLED\nPlastic | 2.36E-01, 5.03E-01, 2.86E-01 | RECYCLED, INCINERATED, LANDFILLED"
+    },
+    {
+      "module": "C",
+      "number": "10.6",
+      "title": "C: End of life",
+      "description": "The following scenarios have been used for different materials to model end-of-life stage:\n\nSorting | Landfill | Incineration | Recycling\nAluminium: 100% | 4% | - | 96%\nRubbers: - | 1% | 99% | -\nPlastic parts: - | 10% | 90% | -\nOther metal parts: - | 5% | - | 95%\nCoating, sealants, glues: - | - | 100% | -\n\nC1: No input is required to dismantle the window, as it is manual process.\nC2: Default transport scenarios for Belgium have been considered for transport of waste.\nC3: Only aluminium profiles & other metals are recycled at the end-of-life of the window.\nC4: All plastic parts are either incinerated or landfilled at the end-of-life. Coatings, sealants, glues are incinerated with the low efficiency.\n\nModule C2 – Transport to waste processing:\nType of vehicle (truck/boat/etc.): Truck 16-32 t, EURO5\nFuel consumption (litres/km): Default from ecoinvent 3.9.1\nDistance (km): Sorting: 30 km, Landfill: 50 km, Incineration: 150 km, Recycling: 200 km\nCapacity utilization (%): 50%\nDensity of products (kg/m3): -\n\nEnd-of-life modules – C3 and C4:\nParameter | Value (kg)\nWastes collected separately: 14.4\nWastes collected as mixed construction waste: 4.23\nWaste for re-use: 0\nWaste for recycling: 14.4\nWaste for energy recovery: 0\nWaste for final disposal: 4.23"
+    },
+    {
+      "module": "D",
+      "number": "10.7",
+      "title": "D – Benefits and loads beyond the system boundaries",
+      "description": "The following waste streams are considered in module D: aluminium, other metal parts, rubbers, coatings, sealants as well as the packaging of the window systems sent to treatment in A5 stage.\n\nQUANTITATIVE DESCRIPTION OF THE LOADS BEYOND THE SYSTEM BOUNDARIES:\nSorting & pressing of 12.6 kg of aluminium for recycling\nSorting & pressing of 1.25 kg of metals for recycling\nSorting & recycling of 0.23 kg of plastic waste (packaging)\nSorting & shredding of 0.017 kg of wood waste (packaging)\nSorting of 0.203 kg of paper waste (packaging)\n\nQUANTITATIVE DESCRIPTION OF THE BENEFITS BEYOND THE SYSTEM BOUNDARIES:\nAvoided production of 12.6 kg primary aluminium\nAvoided production of 1.25 kg primary brass\nAvoided production of 0.23 kg primary PE (packaging)\nAvoided use of 0.017 kg of wood (packaging)"
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 025.0297.004-01.00.00 Aliplast STAR75 Dubbel EN - signed.pdf",
+    "pdf_sha256": "4c73c735316035f8359c687c4955f5ab7730fbd90cec179e9a085f6057722580",
+    "api_pages": "18-20",
+    "api_pages_resolved": "18,19,20",
+    "api_pdf_bytes": 66020,
+    "api_pdf_sha256": "88a5e281cac3d754c8ee9c34ca0377a3ba1a8a60c1862acefea913702761f0c3",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.0297.004-01.00.00 Aliplast STAR75 Dubbel EN - signed.p18-p19-p20.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T17:26:55.678Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 7072,
+    "output_tokens": 1455
+  }
+}

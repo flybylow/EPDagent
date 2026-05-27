@@ -1,0 +1,41 @@
+{
+  "blocks": [
+    {
+      "number": "11.1",
+      "title": "Indoor air",
+      "content": "VOC emissions have been assessed in accordance with EN16516 and arebelow the minimum threshold. This means no indoor air\n\nproblems."
+    },
+    {
+      "number": "11.2",
+      "title": "Soil and water",
+      "content": "VOC emissions have been assessed in accordance with EN16516 and arebelow the minimum threshold. This means no indoor air\n\nproblems.\n\nThe contact with water is reduced by the application and then the emissions of substances potentially problematic is not relevant."
+    },
+    {
+      "number": "12",
+      "title": "DEMONSTRATION OF VERIFICATION",
+      "content": "The contact with water is reduced by the application and then the emissions of substances potentially problematic is not relevant.\n\nEN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\n\nInternal☐ External☒\n\nThird party verifier:Agnes Schuurmans & Bob Roijen, SGS INTRON B.V., Dr. Nolenslaan 126, 6136 GV Sittard, the Netherlands,\n\nbob.roijen@sgs.com"
+    },
+    {
+      "number": "13",
+      "title": "lca interpretation",
+      "content": "11 RELEASE OF DANGEROUS\n\nSUBSTANCES TO INDOOR AIR, SOIL\n\nAND WATER DURING THE USE\n\nSTAG E\n\n11.1 Indoor air\n\nVOC emissions have been assessed in accordance with EN16516 and arebelow the minimum threshold. This means no indoor air\n\nproblems.\n\n11.2 Soil and water\n\nThe contact with water is reduced by the application and then the emissions of substances potentially problematic is not relevant.\n\n12 DEMONSTRATION OF VERIFICATION\n\nEN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\n\nInternal☐ External☒\n\nThird party verifier:Agnes Schuurmans & Bob Roijen, SGS INTRON B.V., Dr. Nolenslaan 126, 6136 GV Sittard, the Netherlands,\n\nbob.roijen@sgs.com\n\nThis study has shown the low environmental impact of product coming from earth as a resource, especially when using secondary\n\nresources such as Loess loam coming from excavations of construction sitesas well asrecycled washed concrete.\n\nThis study has shown the importance of the take back program that implies a reuse of the components and then savings of resources\n\nand energy. The take back program is already in place but this type of element is quite new on the market and there are few\n\nexperiences about demolition of buildings including this product. Indeed, the starting point of the use of this component is less old\n\nthan the lifetime of the buildings where they are involved. However, a take back program as a defining principle of earth building\n\nmaterials is also mentioned in the German PCR for Clay Plaster (see German PKR forEarth Blocks and Earth Masonry Mortarchapter"
+    },
+    {
+      "number": "16",
+      "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+      "content": "15 APPLICATION UNIT\n\nThe functional unit is defined as “To build 1 m² of wall with 140ratio between the density of the blocks (90 and 140/190), the\n\nmm width compressed earth blocks installed with Earth adhesiveproportional rule must be multiplied by 1.12 to obtain the results\n\nmortar and with a lifetime of100 years, in Belgium”.To fulfil this,for modules A1 to A4.\n\n238.5kg of product is needed.This study is performed for theModule A5 is directly proportional to the width of the blocks.\n\nCompressed Earth Block“as installed” with Earth adhesiveThat means:\n\nmortar (6.7 kg per FU).This functional unit is in accordance withImpact of CEB 90 (A1 to A4) = Impacts of CEB 140 (A1 to A4)\n\nthe TOTEM program. *90/140*1.12\n\nImpact of CEB 190 = Impacts of CEB 140 * 190/140\n\nThis study is related to the block of 140 mm width withThe impact of module B1 is then converted with the same ratio\n\ninstallation using Earth Adhesive Mortar. as for A1-A4 (based on density ratio).\n\nThe thickness of the block can vary between 90 mm and 190 mm.Lastly, for C1-D, the conversion factor to go from 140mm to\n\nFor the 190 mm, a proportional rule can be applied due to the90mm is based on the mass of block and mortar separately, also\n\nsame density of the product. added up.\n\nFor the 90 mm, the rule of weight is not direct. Indeed, theAn overview table with the thickness conversion factors per\n\n3\n\ndensity of the block 90 mm is 1970 kg/mwhile for the 140 andmodule can be found below.\n\n3\n\n190 mm, the density is 1760 kg/m. That means that block of 90\n\nmm requires proportionally more matter than the ones of 140\n\nand 190 mm. Calculations from A1 to A4 are directly\n\nproportional to the mass of the blocks. Based on this, and the\n\nConversion factors to extrapolate the impact to different block thicknesses\n\nBlock\n\nA1 A2 A3 A4 A5 B1 C1 C2 C3 C4 D\n\nthickness\n\n190mm 1,36 1,36 1,36 1,36 1,36 1,36 1,36 1,36 1,36 1,36 1,36\n\n140mm 1 1 1 1 1 1 1 1 1 1 1\n\n0,71\n\n90mm 0,71 0,71 0,71 0,64 0,71 0,71 0,71 0,71 0,71 0,71\n\nREVERSIBILITY\n\nEase of\n\nRobustness of material\n\nType of Level of Simplicityof Speed of handling\n\nDescription (materialresistanceto Comment\n\nfixing reversibilitydisassemblydisassembly (sizeand\n\ndisassembly)\n\nweight)\n\nBlocksjointEarth AdhesiveReversible simple–use ofSpeedy disassemblyeasy to handleThematerialresistswell\n\nmortar trowelsand manually, oneduring disassembly, there is\n\ntogetherto connection(See\n\nwater if workerisno loss of quality.\n\nform an GermanPKRfor\n\nneeded. usually\n\ninteriorwall EarthBlocksand\n\nsufficient\n\nEarthMasonry\n\nMortar,Chapter\n\n8)"
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed.pdf",
+    "pdf_sha256": "423c951eac4a4121b02a3c9fc71a346b8eeae5b97bceec40ec250d6c795e4132",
+    "api_pages": "22-26",
+    "api_pages_slice": "22-26",
+    "api_pages_resolved": "22-26",
+    "extracted_by": "pdf-text-parser",
+    "extracted_at": "2026-05-26T20:46:26.534Z",
+    "model": null,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "bibliography": [],
+  "additional_information": [
+    "Owner of the EPD, Responsible for the data, LCA and information: Etex services, Kuiermansstraat 1, 1880 Kapelle-op-den-Bos, Belgium. Tel : +32 (0) 15 71 82 83; For more information you can contact Peggy Van De velde, peggy.vandevelde@etexgroup.com",
+    "EPD program, Program operator, Publisher of this EPD: B-EPD, Federal Public Service of Health / DG Environment, Galileelaan 5/2, 1210 Brussels, Belgium. www.environmentalproductdeclarations.eu",
+    "Contact programma operator: epd@environment.belgium.be",
+    "Based on following PCR documents: EN 15804+A2:2019, NBN/DTD B 08-001 and its complement",
+    "PCR review conducted by: Federal Public Service of Health and Environment & PCR Review committee",
+    "Author(s) of the LCA and EPD: Arthur De Jaegher, arthur@enperas.com",
+    "Identification of the project report: Life cycle assessment of EQUITONE [natura-textura-materia] (VITO, 07-09-21)",
+    "Verification: External independent verification of the declaration and data according to EN ISO 14025 and relevant PCR documents",
+    "Name of the third party verifier: Evert Vermaut (Vinçotte)",
+    "Date of verification: 08.09.2021",
+    "LCA practitioner: www.vito.be, www.enperas.be",
+    "Building calculator of the regional authorities: www.totem-building.be",
+    "Federal Public Service of Health, Food Chain Safety and Environment: www.b-epd.be",
+    "Comparing EPDs is not possible unless they are conform to the same PCR and taking into account the building context. The program operator cannot be held responsible for the information supplied by the owner of the EPD nor LCA practitioner."
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 21-0135-03-00-00-EN ETEX - natura ea - signed.pdf",
+    "pdf_sha256": "a978cdef703774f12007227bbe6bd0df254ccdf8cae3dbd4372ec40eac9bbf22",
+    "api_pages": "20-21",
+    "api_pages_resolved": "20,21",
+    "api_pdf_bytes": 331325,
+    "api_pdf_sha256": "26270892795129ea79dc1bcb062de2b87da9fa93b7c9a4c12c98def65d5b7e43",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 21-0135-03-00-00-EN ETEX - natura ea - signed.p20-p21.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T16:17:47.150Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 5237,
+    "output_tokens": 1197
+  }
+}

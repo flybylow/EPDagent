@@ -1,0 +1,12 @@
+{
+  "pdf_filename": "B-EPD 023.0221.004-01.00.00 Holcim CEM VA (S-V) 425 N-LH HSR bulk “ECOPlanet” EN - signed.pdf",
+  "pdf_stem": "B-EPD 023.0221.004-01.00.00 Holcim CEM VA (S-V) 425 N-LH HSR bulk “ECOPlanet” EN - signed",
+  "epd_number": null,
+  "language": null,
+  "pattern": "unknown",
+  "_source": {
+    "pdf_filename": "B-EPD 023.0221.004-01.00.00 Holcim CEM VA (S-V) 425 N-LH HSR bulk “ECOPlanet” EN - signed.pdf",
+    "extracted_by": "filename-regex",
+    "extracted_at": "2026-05-26T17:57:38.932Z"
+  }
+}

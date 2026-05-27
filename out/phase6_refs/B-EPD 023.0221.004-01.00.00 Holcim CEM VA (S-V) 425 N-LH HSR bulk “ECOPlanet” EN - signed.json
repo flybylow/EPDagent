@@ -1,0 +1,22 @@
+{
+  "bibliography": [],
+  "additional_information": [
+    "The blast furnace slag input has been economically allocated as a co-product of pig iron production.",
+    "The impact of the siliceous fly ash (a waste from coal-fire electricity production) has been allocated to the previous system.",
+    "The B-PCR provides default transport scenarios for the transport to the building site for cases where specific data on transport are missing. The B-PCR provides scenarios for this life cycle stage. The following transport steps apply: – 75% directly to the construction site over 100 km with a Lorry 16-32 ton (EURO5) (ecoinvent record: 'Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, U') – 25% to a supplier over 100 km with a >32 ton lorry (ecoinvent record: 'Transport, freight, lorry >32 metric ton, EURO5 {RER}| transport, freight, lorry >32 metric ton, EURO5 | Cut-off, U'). Afterwards the product is transported from the supplier to the construction site. 90% of the 25% is transported with a Lorry 16-32 ton (EURO5) over a distance of 35km and 10% of the 25% is transported with a Lorry 7.5-16 ton (EURO5) over a distance of 35km. (ecoinvent records: 'Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, U', 'Transport, freight, lorry 7.5-16 metric ton, EURO5 {RER}| transport, freight, lorry 7.5-16 metric ton, EURO5 | Cut-off, U')"
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 023.0221.004-01.00.00 Holcim CEM VA (S-V) 425 N-LH HSR bulk “ECOPlanet” EN - signed.pdf",
+    "pdf_sha256": "c49ea64d7f7cd1394aec643bcae3e3735a785d81662aaaf16253bba6a5106a70",
+    "api_pages": "20-21",
+    "api_pages_resolved": "20,21",
+    "api_pdf_bytes": 48244,
+    "api_pdf_sha256": "2158751894efc8467a85aefee4c7b438d82a9288d447f97292f03191cb526a4c",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 023.0221.004-01.00.00 Holcim CEM VA (S-V) 425 N-LH HSR bulk “ECOPlanet” EN - signed.p20-p21.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T17:59:37.893Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 5494,
+    "output_tokens": 501
+  }
+}

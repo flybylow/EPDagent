@@ -1,0 +1,41 @@
+{
+  "blocks": [
+    {
+      "number": "11.1",
+      "title": "Indoor air",
+      "content": "SUBSTANCES TO INDOOR AIR, SOIL\n\nAND WATER DURING THE USE\n\nSTAG E\n\nCement is not in direct contact with indoor air. It is the cement-based products (concrete, mortar…) that are potentially in contact\n\nwith indoor air."
+    },
+    {
+      "number": "11.2",
+      "title": "Soil and water",
+      "content": "Cement is not in direct contact with indoor air. It is the cement-based products (concrete, mortar…) that are potentially in contact\n\nwith indoor air.\n\nCement is not in direct contact withsoil and water. It is the cement-based products (concrete, mortar…) that are potentially in contact\n\nwith soil and water."
+    },
+    {
+      "number": "12",
+      "title": "DEMONSTRATION OF VERIFICATION 3|26B-EPDCEMV/A(S-V)42,5 N-LH HSRbulk“ECOPlanet”",
+      "content": "Cement is not in direct contact withsoil and water. It is the cement-based products (concrete, mortar…) that are potentially in contact\n\nwith soil and water.\n\nEN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\n\nInternal☐ External☒\n\nThird party verifier:[Evert Vermaut, JanOlieslagerslaan 35,1800 Vilvoorde, rsterckx@vincotte.be]"
+    },
+    {
+      "number": "13",
+      "title": "lca interpretation",
+      "content": "EN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\n\nInternal☐ External☒\n\nThird party verifier:[Evert Vermaut, JanOlieslagerslaan 35,1800 Vilvoorde, rsterckx@vincotte.be]\n\nNot provided."
+    },
+    {
+      "number": "16",
+      "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+      "content": "Not applicable for this EPD.\n\nREVERSIBILITY\n\nNot applicable for this EPD."
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 023.0221.004-01.00.00 Holcim CEM VA (S-V) 425 N-LH HSR bulk “ECOPlanet” EN - signed.pdf",
+    "pdf_sha256": "c49ea64d7f7cd1394aec643bcae3e3735a785d81662aaaf16253bba6a5106a70",
+    "api_pages": "23-24",
+    "api_pages_slice": "23-24",
+    "api_pages_resolved": "23-24",
+    "extracted_by": "pdf-text-parser",
+    "extracted_at": "2026-05-26T20:46:26.191Z",
+    "model": null,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

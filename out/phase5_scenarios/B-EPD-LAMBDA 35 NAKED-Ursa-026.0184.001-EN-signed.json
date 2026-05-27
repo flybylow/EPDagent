@@ -1,0 +1,43 @@
+{
+  "section_title": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
+  "scenarios": [
+    {
+      "module": "A1",
+      "number": "10.1",
+      "title": "A1 - raw material supplier",
+      "description": "This module takes into account:\n- the extraction and processing of all raw materials and energy which occur upstream to the studied manufacturing process;\n- the supply and processing of all raw materials and the energy produced prior to the manufacturing process.\n\nIn particular, it covers supply of raw materials for manufacturing the binding of glass fibers. In addition to these raw materials, 50% of recycled materials (cullet) are used in the process."
+    },
+    {
+      "module": "A2",
+      "number": "10.2",
+      "title": "A2 – transport to the manufacturer",
+      "description": "The raw materials are transported to the manufacturing site using supplier specific distances."
+    },
+    {
+      "module": "A3",
+      "number": "10.3",
+      "title": "A3- Manufacturing",
+      "description": "This module takes into account the production process. Glass wool manufacture includes stages of fusion and fibre formation (see diagram of manufacturing process). The electricity mix used for Desselgem electricity consumption modelling is based on the general mix, considering the electricity bills percentages in 2023. It uses fossil and nuclear energy. Furthermore, production of packaging is considered during this phase."
+    },
+    {
+      "module": "A4",
+      "number": null,
+      "title": "A4 – transport to the building site",
+      "description": "Fuel type and consumption of vehicle or vehicle type used for transport:\n- Truck 7,5-16 ton EURO5: xx l diesel / km\n- Truck 16-32 ton EURO5: 0,256 l diesel / km\n- Truck >32 ton EURO5: 0,256 l diesel / km\n\nDistance:\n- 35 km\n- 135 km\n- 100 km\n\nCapacity utilisation (including empty returns): 100 % volume capacity\n\nBulk density of transported products: 19 kg/m³\n\nVolume capacity utilisation factor: 1 or lower for compressed insulation materials\n\nThe following transport steps apply:\n– 40% directly to the construction site over 100 km with a 16-32 ton lorry (ecoinvent record: 'Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, U')\n– 60% to a supplier over 100 km with a 16 -32 ton lorry (ecoinvent record: 'Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, U')\n– 85% of these 60% is transported over 35 km from supplier to construction site with a 16-32 ton lorry (ecoinvent record: 'Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, U')\n– 15% of these 60% is transported over 35 km from supplier to construction site with a 7.5-16 ton lorry (ecoinvent record: 'Transport, freight, lorry 7.5-16 metric ton, EURO5 {RER}| transport, freight, lorry 7.5-16 metric ton, EURO5 | Cut-off, U')"
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD-LAMBDA 35 NAKED-Ursa-026.0184.001-EN-signed.pdf",
+    "pdf_sha256": "c16c8bd610fffb8e96be0ebdda7b3c76c3c056541930ff6383d5cfc89fe9ee68",
+    "api_pages": "16",
+    "api_pages_resolved": "16",
+    "api_pdf_bytes": 353203,
+    "api_pdf_sha256": "f0f381eb2eb6149f98fc1ffe39b827cb48cd1cb9c52167d48235752dca025ddd",
+    "api_pdf_slice": "out/pdf_slices/B-EPD-LAMBDA 35 NAKED-Ursa-026.0184.001-EN-signed.p16.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:58:29.673Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 3624,
+    "output_tokens": 952
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "blocks": [
+    {
+      "number": "11.1",
+      "title": "Indoor air",
+      "content": "SUBSTANCES TO INDOOR AIR,\n\nSOIL AND WATER DURING THE\n\nUSE STAG E\n\nThe European Regulation (CE) n° 1272/2008 onclassification, labelling and packaging of substances and mixtures updated\n\nby the Regulation (CE) n°790/2009 does not classify mineral wool fibres as a dangerous substance as long as they fulfil\n\ncriteria defined in its Note Q. The European Certification Board for mineral wool products, EUCEB, certify mineral wool\n\nproducts made of fibres are fulfilling Note Q.www.euceb.org. The product subject of this EPD has a certificate demonstrating\n\ncompliance to Note Q. According to IARC, mineral wool insulating products are not classifiable as to carcinogenicity in\n\nhumans (group 3). The fibers are only to be expected to be released when the product is handled, during installation. Once\n\ninstalled there are is no release of fibres.\n\nROCKWOOL insulation products for the French market have been tested and obtained a category A+ (très faibles émissions,\n\nor very low emissions). The product subject of this EPD emits formaldehyde in concentrations < 0.0016% which is way below\n\nthe CLP threshold of 0,1%."
+    },
+    {
+      "number": "11.2",
+      "title": "Soil and water",
+      "content": "The European Regulation (CE) n° 1272/2008 onclassification, labelling and packaging of substances and mixtures updated\n\nby the Regulation (CE) n°790/2009 does not classify mineral wool fibres as a dangerous substance as long as they fulfil\n\ncriteria defined in its Note Q. The European Certification Board for mineral wool products, EUCEB, certify mineral wool\n\nproducts made of fibres are fulfilling Note Q.www.euceb.org. The product subject of this EPD has a certificate demonstrating\n\ncompliance to Note Q. According to IARC, mineral wool insulating products are not classifiable as to carcinogenicity in\n\nhumans (group 3). The fibers are only to be expected to be released when the product is handled, during installation. Once\n\ninstalled there are is no release of fibres.\n\nROCKWOOL insulation products for the French market have been tested and obtained a category A+ (très faibles émissions,\n\nor very low emissions). The product subject of this EPD emits formaldehyde in concentrations < 0.0016% which is way below\n\nthe CLP threshold of 0,1%.\n\nThere are no emissions to soil and water during the use stage."
+    },
+    {
+      "number": "12",
+      "title": "DEMONSTRATION OF VERIFICATION",
+      "content": "11 RELEASE OF DANGEROUS\n\nSUBSTANCES TO INDOOR AIR,\n\nSOIL AND WATER DURING THE\n\nUSE STAG E\n\n11.1 Indoor air\n\nThe European Regulation (CE) n° 1272/2008 onclassification, labelling and packaging of substances and mixtures updated\n\nby the Regulation (CE) n°790/2009 does not classify mineral wool fibres as a dangerous substance as long as they fulfil\n\ncriteria defined in its Note Q. The European Certification Board for mineral wool products, EUCEB, certify mineral wool\n\nproducts made of fibres are fulfilling Note Q.www.euceb.org. The product subject of this EPD has a certificate demonstrating\n\ncompliance to Note Q. According to IARC, mineral wool insulating products are not classifiable as to carcinogenicity in\n\nhumans (group 3). The fibers are only to be expected to be released when the product is handled, during installation. Once\n\ninstalled there are is no release of fibres.\n\nROCKWOOL insulation products for the French market have been tested and obtained a category A+ (très faibles émissions,\n\nor very low emissions). The product subject of this EPD emits formaldehyde in concentrations < 0.0016% which is way below\n\nthe CLP threshold of 0,1%.\n\n11.2 Soil and wate r\n\nThere are no emissions to soil and water during the use stage.\n\nVERIFICATION\n\nEN 15804+A2serves as the core PCR.\n\nIndependent verification of theenvironmental declaration and data according to standard EN ISO 14025:2010.\n\nInternal☐ External☒\n\nThird party verifier:Agnes Schuurmans, SGS INTRON, Dr. Nolenslaan 126, 6136 GV Sittard,agnes.schuurmans@sgs.com"
+    },
+    {
+      "number": "14",
+      "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+      "content": "13 APPLICATION UNIT\n\nPRODUCT DESCRIPTIONREFERENCE THICKNESS SCALABILITY SCALABILITYSPECIFICATIONSAPPLICATION RATIO\n\nMAXIMUM (MM)\n\nFLOW (MM) MINIMUM(MM)\n\nEuro Class A1; unit\n\nmineral wool,\n\nCavity walls;\n\nRockfit load35kg/m³,\n\n600x1000mm, 1m² 150 40 250 curtain walls;1m² 1\n\nMono R=4.25; no facing;\n\nD\n\nseparating walls\n\nλ0.035W/m.K\n\nloss of ignition =3.2\n\nSimplicity of Ease of handling (sizeRobustness of material (material\n\nDescription Type of fixing Level of reversibility Speed of disassembly Comment\n\ndisassembly and weight) resistance to disassembly)\n\nEasy to manipulate (by\n\nInsulation of masonryFixedwith cavity ties andReversible connectionsSimple–no specific hand (small size and\n\nSpeedy disassembly Disassembly is possible but should be done\n\ncavity walls with partial orclips (components to bewith non-repairable dismantling tools required limited weight): one\n\ncarefully in order not to generate any damage\n\nfull cavity fillingadded) damage worker should be\n\nsufficient"
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed.pdf",
+    "pdf_sha256": "1dcb3791d8f8ef2b1f3401323db334c05be0e3b8fae30c73fea242cad12aabdb",
+    "api_pages": "23-26",
+    "api_pages_slice": "23-26",
+    "api_pages_resolved": "23-26",
+    "extracted_by": "pdf-text-parser",
+    "extracted_at": "2026-05-26T20:46:26.828Z",
+    "model": null,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

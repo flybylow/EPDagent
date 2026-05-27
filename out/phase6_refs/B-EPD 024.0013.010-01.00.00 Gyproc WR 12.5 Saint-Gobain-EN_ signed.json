@@ -1,0 +1,28 @@
+{
+  "bibliography": [
+    "ISO 14040:2006: Environmental Management-Life Cycle Assessment-Principles and framework.",
+    "ISO 14044:2006: Environmental Management-Life Cycle Assessment-Requirements and guidelines.",
+    "ISO 14025:2006: Environmental labels and Declarations-Type III Environmental Declarations-Principles and procedures.",
+    "NBN EN 15804+A2:2019",
+    "B-EPD PCR",
+    "European Chemical Agency, Candidate List of substances of very high concern for Authorization. https://echa.europa.eu/candidate-list-table"
+  ],
+  "additional_information": [
+    "Owner of the EPD, Responsible for the data, LCA and information\n\nSaint-Gobain Construction Products Belgium nv/sa\nSint-Jansweg 9\n9130 Kallo - Belgium\nTel: +32 (0)3 360 2211\n\nFor more information you can contact:\nproducten_systemen@saint-gobain.com",
+    "Verifier\n\nAgnes Stehmann-Schuurmans and Bob Roijen\nSGS INTRON B.V.\nDr. Nolenslaan 126, 6136 GV Sittard\nThe Netherlands\nbob.roijen@sgs.com\n\nDate of verification: 12.09.2024\n\nExternal independent verification of the declaration and data according to EN ISO 14025 and relevant PCR documents"
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 024.0013.010-01.00.00 Gyproc WR 12.5 Saint-Gobain-EN_ signed.pdf",
+    "pdf_sha256": "24c3cdfb55ab8612f6979a7a7270fa4279c40cf2c8d4a2539c4b8d129228dfa2",
+    "api_pages": "24",
+    "api_pages_resolved": "24",
+    "api_pdf_bytes": 35732,
+    "api_pdf_sha256": "fa2c60a2042ca08fcb1df206d5662b6709bea1ace2384759ec31f36e82a03cfe",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 024.0013.010-01.00.00 Gyproc WR 12.5 Saint-Gobain-EN_ signed.p24.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T17:58:37.954Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 2872,
+    "output_tokens": 387
+  }
+}

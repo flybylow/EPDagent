@@ -1,0 +1,61 @@
+{
+  "section_title": "10 DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
+  "scenarios": [
+    {
+      "module": "A1",
+      "number": "10.1",
+      "title": "A1 - raw material supply",
+      "description": "This module takes into account the extraction and processing of all raw materials and energy which occur upstream to the studied manufacturing process."
+    },
+    {
+      "module": "A2",
+      "number": "10.2",
+      "title": "A2 – transport to the manufacturer",
+      "description": "The raw materials are transported to the manufacturing site."
+    },
+    {
+      "module": "A3",
+      "number": "10.3",
+      "title": "manufacturing",
+      "description": "This module takes into account the production process."
+    },
+    {
+      "module": "A4",
+      "number": "10.4",
+      "title": "A4 – transport to the building site",
+      "description": "Fuel type and consumption of vehicle or vehicle type used for transport: Truck 16-32 ton, 0,256 l diesel / km\nDistance: 180 km\nCapacity utilisation (including empty returns): 50%\nBulk density of transported products: Ecoinvent\nVolume capacity utilisation factor: Ecoinvent\n\nKooltherm® K8 is only sold on a project basis. Kooltherm will therefore only be delivered directly to construction sites.\n\nThe following transport scenario applies:\n– 100% directly to the construction site over 180 km with a 16-32 ton lorry (ecoinvent record: 'Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, U')"
+    },
+    {
+      "module": "A5",
+      "number": "10.5",
+      "title": "A5 – installation in the building",
+      "description": "At the construction site, packaging materials are released. Also 2% material losses have been taken into account\n\nParts of the installation quantity:\nMaterial losses: 0,056 kg Kooltherm K8 - THE QUANTITY OF MATERIAL LOST DUE TO CUTTING IT IN THE RIGHT SHAPE\nPackaging: 0,0135 kg PE foil, 0,0504 kg EPS Skids - THE PACKAGING WASTE AT THE CONSTRUCTION SITE"
+    },
+    {
+      "module": "C",
+      "number": "10.6",
+      "title": "C: End of life",
+      "description": "The default scenario for synthetic isolation materials in the NBN/DTD B08-001 states 5% of the waste treatment consists of landfilling, the other 95% consists of incineration and/or energetic valorisation.\n\nAfter incineration the aluminium will be recycled from the bottom ash (based on sustainability report of Indaver: samen werken aan een circulaire economie, duurzaamheidsrapport 2021).\n\nThe default scenario for metals (non-ferro) in the NBN/DTD B08-001 states 5% of the waste treatment consists of landfilling, the other 95% consists of recycling.\n\nModule C2 – Transport to waste processing:\nTruck 16-32 ton, 0,256 l diesel/km, Distance 30 km, Capacity utilisation 50%, Density of products: Ecoinvent scenario, Assumptions: Ecoinvent scenario\nTruck 16-32 ton, 0,256 l diesel/km, Distance 50 km, Capacity utilisation 50%, Density of products: Ecoinvent scenario, Assumptions: Ecoinvent scenario\nTruck 16-32 ton, 0,256 l diesel/km, Distance 10 km, Capacity utilisation 50%, Density of products: Ecoinvent scenario, Assumptions: Ecoinvent scenario\n\nEnd-of-life modules – C3 and C4:\nWastes collected separately: 0\nWastes collected as mixed construction waste: 2,80 kg\nWaste for re-use: 0\nWaste for recycling: 0,09 kg\nWaste for energy recovery: 2,57 kg\nWaste for final disposal: 0,14 kg"
+    },
+    {
+      "module": "D",
+      "number": "10.7",
+      "title": "D – Benefits and loads beyond the system boundaries",
+      "description": "QUANTITATIVE DESCRIPTION OF THE LOADS BEYOND THE SYSTEM BOUNDARIES: No loads\n\nQUANTITATIVE DESCRIPTION OF THE BENEFITS BEYOND THE SYSTEM BOUNDARIES:\nAvoided production of 13,4 MJ of heat using natural gas\nAvoided production of 6,7 MJ of Belgian electricity mix"
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 23.0191.003_01.00.01 EN Kingspan Kooltherm K8 - signed.pdf",
+    "pdf_sha256": "54126da41d22c7435bd572d70db49eeba6a715ea80f8bf268407d3b68f28fae7",
+    "api_pages": "22-24",
+    "api_pages_resolved": "22,23,24",
+    "api_pdf_bytes": 41903,
+    "api_pdf_sha256": "b7761fbb7fa1877d76f9aee8f1a1a3d1464de8f3d28284c37fdb5d9ebd03c9f3",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 23.0191.003_01.00.01 EN Kingspan Kooltherm K8 - signed.p22-p23-p24.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T19:04:15.164Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 6937,
+    "output_tokens": 1252
+  }
+}

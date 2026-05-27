@@ -1,0 +1,12 @@
+{
+  "pdf_filename": "BEPD_024.0156.002-01.00.00_Derbigum NT 4- EN - signed.pdf",
+  "pdf_stem": "BEPD_024.0156.002-01.00.00_Derbigum NT 4- EN - signed",
+  "epd_number": null,
+  "language": null,
+  "pattern": "unknown",
+  "_source": {
+    "pdf_filename": "BEPD_024.0156.002-01.00.00_Derbigum NT 4- EN - signed.pdf",
+    "extracted_by": "filename-regex",
+    "extracted_at": "2026-05-26T18:22:11.041Z"
+  }
+}

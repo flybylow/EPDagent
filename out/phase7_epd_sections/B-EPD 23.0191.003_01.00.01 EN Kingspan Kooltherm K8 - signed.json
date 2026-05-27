@@ -1,0 +1,41 @@
+{
+  "blocks": [
+    {
+      "number": "11.1",
+      "title": "Indoor air",
+      "content": "The product is not intended for indoor use and hence no specific VOC emission tests are performed."
+    },
+    {
+      "number": "11.2",
+      "title": "Soil and water",
+      "content": "The product is not intended for indoor use and hence no specific VOC emission tests are performed.\n\nTheproduct does not come in contact with soil or water."
+    },
+    {
+      "number": "12",
+      "title": "DEMONSTRATION OF VERIFICATION",
+      "content": "11 RELEASE OF DANGEROUS\n\nSUBSTANCES TO INDOOR AIR,\n\nSOIL AND WATER DURING THE\n\nUSE STAG E\n\n11.1 Indoor air\n\nThe product is not intended for indoor use and hence no specific VOC emission tests are performed.\n\n11.2 Soil and wate r\n\nTheproduct does not come in contact with soil or water.\n\nVERIFICATION\n\nEN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO14025:2010\n\nInternal☐ External☒\n\nThird party verifier:\n\nVinçotte nv\n\nRamses Sterckx\n\nJan Olieslagerslaan 35 1800 Vilvoorde\n\nrsterckx@vincotte.be"
+    },
+    {
+      "number": "13",
+      "title": "lca interpretation",
+      "content": "12 DEMONSTRATION OF\n\nVERIFICATION\n\nEN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO14025:2010\n\nInternal☐ External☒\n\nThird party verifier:\n\nVinçotte nv\n\nRamses Sterckx\n\nJan Olieslagerslaan 35 1800 Vilvoorde\n\nrsterckx@vincotte.be\n\nAll impact categories are mainlydetermined by the raw materials supply in A1. For GWP(and to less extend also the values\n\nfor ODP, FAETP and MAETP) also the incinerationemissions at the end of life have a significant environmental impact. The\n\npotential creditsfor thermal and electricalenergy are declared in module D and result in negative valuesfor most of the\n\nimpact categories."
+    },
+    {
+      "number": "15",
+      "title": "ADDITIONAL INFORMATION ON rEVERSIBILITY",
+      "content": "14 APPLICATION UNIT\n\n.\n\n®\n\nThis paragraph gives information on KoolthermK8 and how the reference flow and table with impacts relate to\n\ndifferent applications.\n\nApplication: exterior walls\n\nThickness range: 20–200 mm\n\n2\n\nRatio to the declared unit of 1 m(based on the standard thickness): 1\n\nThe results of chapter 6 to 9 in thisEPD can be converted to other thicknesses (and corresponding Rvalue) using the\n\nD\n\nfollowing formula:\n\nLCA results new thickness = LCA result foam core 80 mm *(new thickness (mm)/ 80 mm) + LCA result multilayer facer\n\nR EVERSIBILITY\n\nDescriptionType of fixingLevel of Simplicity ofSpeed of Ease of Robustness of material\n\nreversibilitydisassembly disassembly handling\n\nInsulation Mechanically Reversible Simple, no Rather Easy to Disassembly is possible\n\nfor cavity fixed connections specific toolsspeedy manipulate bybut can cause damage to\n\nwall with light required disassembly hand: one the material due to the\n\napplications repairable worker shouldtype of assembly or fixing\n\ndamage be sufficientused."
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 23.0191.003_01.00.01 EN Kingspan Kooltherm K8 - signed.pdf",
+    "pdf_sha256": "54126da41d22c7435bd572d70db49eeba6a715ea80f8bf268407d3b68f28fae7",
+    "api_pages": "25-30",
+    "api_pages_slice": "25-30",
+    "api_pages_resolved": "25-30",
+    "extracted_by": "pdf-text-parser",
+    "extracted_at": "2026-05-26T20:46:26.673Z",
+    "model": null,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

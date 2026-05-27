@@ -1,0 +1,38 @@
+{
+  "bibliography": [
+    "DTU 59.1 - Travaux de bâtiment - Revêtements de peinture en feuil mince, semi-épais, ou épais.",
+    "Dragopaint Environmental Product Declaration Background Report – Decorative paints version 2.0",
+    "ISO 14040:2006: Environmental Management-Life Cycle Assessment-Principles and framework.",
+    "ISO 14044:2006: Environmental Management-Life Cycle Assessment-Requirements and guidelines.",
+    "ISO 14025:2006: Environmental labels and Declarations-Type III Environmental Declarations-Principles and procedures.",
+    "NBN EN 15804+A2:2019",
+    "NBN/DTD B 08-001 (BE-PCR)",
+    "Product Environmental Footprint Category Rules – Decorative Paints version 1.0 (April 2018)",
+    "Product Environmental Footprint Category Rules – Thermal insulation",
+    "TOTEM Lifespans (updated 15 October 2020)",
+    "{insert relevant reference documents used}"
+  ],
+  "additional_information": [
+    "ADDITIONAL INFORMATION ON RELEASE OF DANGEROUS SUBSTANCES TO INDOOR AIR, SOIL AND WATER DURING THE USE STAGE\n\nINDOOR AIR\nThis material is not classified as dangerous by the European legislation. There is no dangerous substance, according to CE n° 1272/2008. The product does not need to be stamped, according to the CE directives (67/548/ECC or 1999/45/EC). A test following the ISO 16000 has been realized. The emission class the most beneficial is retained for this B-EPD.\n\nSOIL AND WATER\nNot applicable as this product is not in contact with water and soil.",
+    "DEMONSTRATION OF VERIFICATION\n\nEN 15804+A2 serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\nInternal ☐ External☒\n\nThird party verifier: Evert Vermaut\nVinçotte\nJan Olieslagerslaan 35 B-1800 Vilvoorde\nevermaut@vincotte.be\nFebruary 2021",
+    "Owner of the EPD, Responsible for the data, LCA and information\n\nDragopaint\nRue de l'Europe, 42 (Zone industrielle)\nB-7080 Frameries\nBelgium\nFor more information you can contact Camille Soissons\ncamille.soissons@dragopaint.be",
+    "EPD program, Program operator, Publisher of this EPD\n\nB-EPD\nFederal Public Service of Health / DG Environment\nGalileelaan 5/2\n1210 Brussels\nBelgium\nwww.environmentalproductdeclarations.eu\n\nContact program operator epd@environment.belgium.be",
+    "Author(s) of the LCA and EPD\n\nWeLOOP\nPépinières d'éco-entreprises – Base du 11/19 – Bâtiment 1\nRue Léon Blum\n62750 Loos-en-Gohelle\nFrance",
+    "Identification of the project report: Dragopaint Environmental Product Declaration Background Report – Decorative Paints version 2.0",
+    "Verification: External independent verification of the declaration and data according to EN ISO 14025 and relevant PCR documents\n\nName of the third party verifier: Evert Vermaut, Vinçotte\nDate of verification: 01.03.2021"
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.pdf",
+    "pdf_sha256": "652da07295d0a6313acb20af893985679cd92a7c3baa0635c289f60aaeb96b32",
+    "api_pages": "20-21",
+    "api_pages_resolved": "16,17,18,19",
+    "api_pdf_bytes": 312387,
+    "api_pdf_sha256": "f5cd5b7c87177588a44551ba5f97ebc634fe622c8ee6353262984da939027e2a",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.p16-p17-p18-p19.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T19:05:53.231Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 8401,
+    "output_tokens": 911
+  }
+}

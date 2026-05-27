@@ -88,11 +88,10 @@
       "conformityBasis": "in accordance with EN 15804+A2 and B-EPD PCR",
       "declaredScope": "Coverage of 1 m2 of external wall with a window ( with a surface of < 2.3 m2) providing thermal and acoustic insulation, natural light transmission, water and air tightness and natural ventilation over a lifespan of 60 years.",
       "declaredModules": [
-        "A1",
-        "A2",
-        "A3",
+        "A123",
         "A4",
         "A5",
+        "B",
         "C",
         "D"
       ],
@@ -110,11 +109,14 @@
       "producer": {
         "@id": "http://localhost:3000/id/org/316279078ee4"
       },
+      "verifier": {
+        "@id": "http://localhost:3000/id/person/500595ad76a6"
+      },
       "prov:wasDerivedFrom": {
         "@type": "prov:Entity",
         "schema:name": "B-EPD 025.0297.004-01.00.00 Aliplast STAR75 Dubbel EN - signed.pdf"
       },
-      "prov:generatedAtTime": "2026-05-26T17:21:47.863Z",
+      "prov:generatedAtTime": "2026-05-26T19:49:04.805Z",
       "productSection": {
         "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.0297.004-01.00.00%2520Aliplast%2520STAR75%2520Dubbel%2520EN%2520-%2520signed/product"
       },
@@ -164,7 +166,7 @@
     {
       "@id": "http://localhost:3000/id/operator/B-EPD",
       "@type": "ProgramOperator",
-      "schema:name": "Federal Public Service Health, Food Chain Safety and Environment",
+      "schema:name": "Federal Public Service of Health, Food Chain Safety and Environment",
       "operatorCode": "B-EPD"
     },
     {
@@ -173,6 +175,12 @@
       "schema:name": "Aliplast NV",
       "schema:address": null,
       "schema:addressCountry": "BE"
+    },
+    {
+      "@id": "http://localhost:3000/id/person/500595ad76a6",
+      "@type": "schema:Person",
+      "schema:name": "Bob Roijen & Agnes Schuurmans (SGS INTRON B.V.)",
+      "verificationType": "independent_third_party"
     },
     {
       "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.0297.004-01.00.00%2520Aliplast%2520STAR75%2520Dubbel%2520EN%2520-%2520signed/product",
@@ -240,6 +248,7 @@
       "sectionTitle": "3 LCA-STUDY",
       "standardsAndMethodology": "The allocation procedure described by the European standard EN 15804+A2 has been followed.\nCut-off criteria described in EN15804+A2 has been followed: 5% of energy and materials by module and 1% of total energy and raw materials.\nFollowing EN15804+A2, flows of biogenic carbon have been allocated according to physical properties, because the net sum of biogenic CO2 uptake and release over modules A1-C4 should be zero. Relevant data records have been adjusted accordingly.\nCarbon offsetting is not allowed in EN 15804+A2 and hence not taken into account in the calculations.",
       "lcaSoftwareAndDatabase": "For the calculation of the LCA results, the software program SimaPro 9.5.1 has been used.\nDatabased used for modelling include:\n- Ecoinvent 3.9\n- Industry 2.0",
+      "systemBoundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 11\nDeclared modules (☒): A1, A2, A3, A4, A5, C1, C2, C3, C4, D\nNot declared (☐): B1, B2, B3, B4, B5, B6, B7\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4, A5\nEnd of life stage: C1, C2, C3, C4\nBeyond the system boundaries: D\n\nModule labels (vertical text):\nA1: Raw materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: Construction\nB1: Use\nB2: Maintenance\nB3: Repa\nB4: Replacement\nB5: Refurbishment\nB6: Operational energy use\nB7: Operational water use\nC1: construction\nC2: Transport\nC3: Waste processing\nC4: Disposal\nD: Recovery",
       "productionSites": "The data used for the LCA is specific for this product which is manufactured by a single manufacturer in a single production site.",
       "cutOffCriteria": "The following processes are considered below cut-off: \n• Recycling of raw materials packaging.\n• All activities and energy use related to the offices and personnel.\n• Steel cassettes as packaging of one of the raw materials, as these are re-used countless times.\n• Infrastructure & impacts related to the use of the machines at Aliplast's site.\nCut-off criteria described in EN15804+A2 has been followed: 5% of energy and materials by module and 1% of total energy and raw materials.",
       "allocation": "Allocation of inputs and outputs has been necessary in the manufacturing stage A3. Allocation has been performed using physical relationship – annual usage vs. annual volume of the specific window system produced.\nThe allocation procedure described by the European standard EN 15804+A2 has been followed.",
@@ -3614,13 +3623,13 @@
           "module": "A5",
           "number": "10.5",
           "title": "A5 – installation in the building",
-          "description": "At the construction site, packaging materials become waste. The impact of packaging's EOL treatment has been included in this module (until end-of-waste point). All other processes and materials are out of scope of this study,\n\nPackaging waste type - Quantity, kg - Description\nWood - 1.69E-02, 7.38E-02, 1.78E-01 - RECYCLED, INCINERATED, LANDFILLED\nCardboard - 2.03E-01, 1.92E-02, 1.49E-02 - RECYCLED, INCINERATED, LANDFILLED\nPlastic - 2.36E-01, 5.03E-01, 2.86E-01 - RECYCLED, INCINERATED, LANDFILLED"
+          "description": "At the construction site, packaging materials become waste. The impact of packaging's EOL treatment has been included in this module (until end-of-waste point). All other processes and materials are out of scope of this study,\n\nPackaging waste type | Quantity, kg | Description\nWood | 1.69E-02, 7.38E-02, 1.78E-01 | RECYCLED, INCINERATED, LANDFILLED\nCardboard | 2.03E-01, 1.92E-02, 1.49E-02 | RECYCLED, INCINERATED, LANDFILLED\nPlastic | 2.36E-01, 5.03E-01, 2.86E-01 | RECYCLED, INCINERATED, LANDFILLED"
         },
         {
           "module": "C",
           "number": "10.6",
           "title": "C: End of life",
-          "description": "The following scenarios have been used for different materials to model end-of-life stage:\nAluminium - Sorting: 100%, Landfill: 4%, Incineration: -, Recycling: 96%\nRubbers - Sorting: -, Landfill: 1%, Incineration: 99%, Recycling: -\nPlastic parts - Sorting: -, Landfill: 10%, Incineration: 90%, Recycling: -\nOther metal parts - Sorting: -, Landfill: 5%, Incineration: -, Recycling: 95%\nCoating, sealants, glues - Sorting: -, Landfill: -, Incineration: 100%, Recycling: -\n\nC1: No input is required to dismantle the window, as it is manual process.\nC2: Default transport scenarios for Belgium have been considered for transport of waste.\nC3: Only aluminium profiles & other metals are recycled at the end-of-life of the window.\nC4: All plastic parts are either incinerated or landfilled at the end-of-life. Coatings, sealants, glues are incinerated with the low efficiency.\n\nModule C2 – Transport to waste processing:\nType of vehicle: Truck 16-32 t, EURO5\nFuel consumption: Default from ecoinvent 3.9.1\nDistance: Sorting: 30 km, Landfill: 50 km, Incineration: 150 km, Recycling: 200 km\nCapacity utilization: 50%\nDensity of products: -\n\nEnd-of-life modules – C3 and C4:\nWastes collected separately: 14.4 kg\nWastes collected as mixed construction waste: 4.23 kg\nWaste for re-use: 0 kg\nWaste for recycling: 14.4 kg\nWaste for energy recovery: 0 kg\nWaste for final disposal: 4.23 kg"
+          "description": "The following scenarios have been used for different materials to model end-of-life stage:\n\nSorting | Landfill | Incineration | Recycling\nAluminium: 100% | 4% | - | 96%\nRubbers: - | 1% | 99% | -\nPlastic parts: - | 10% | 90% | -\nOther metal parts: - | 5% | - | 95%\nCoating, sealants, glues: - | - | 100% | -\n\nC1: No input is required to dismantle the window, as it is manual process.\nC2: Default transport scenarios for Belgium have been considered for transport of waste.\nC3: Only aluminium profiles & other metals are recycled at the end-of-life of the window.\nC4: All plastic parts are either incinerated or landfilled at the end-of-life. Coatings, sealants, glues are incinerated with the low efficiency.\n\nModule C2 – Transport to waste processing:\nType of vehicle (truck/boat/etc.): Truck 16-32 t, EURO5\nFuel consumption (litres/km): Default from ecoinvent 3.9.1\nDistance (km): Sorting: 30 km, Landfill: 50 km, Incineration: 150 km, Recycling: 200 km\nCapacity utilization (%): 50%\nDensity of products (kg/m3): -\n\nEnd-of-life modules – C3 and C4:\nParameter | Value (kg)\nWastes collected separately: 14.4\nWastes collected as mixed construction waste: 4.23\nWaste for re-use: 0\nWaste for recycling: 14.4\nWaste for energy recovery: 0\nWaste for final disposal: 4.23"
         },
         {
           "module": "D",
@@ -3643,24 +3652,24 @@
       "@type": "EpdSectionSet",
       "blocks": [
         {
-          "number": "11",
-          "title": "RELEASE OF DANGEROUS SUBSTANCES TO INDOOR AIR, SOIL AND WATER DURING THE USE STAGE",
-          "content": "This section covers the release of dangerous substances to indoor air, soil and water during the use stage."
-        },
-        {
           "number": "11.1",
           "title": "Indoor air",
-          "content": "This product contributes to healthy indoor air quality by being aligned with the airtightness class C5 according to EN 1026 EN12207."
+          "content": "This product contributes to healthy indoor air quality by being aligned with the airtightness class C5 according toEN 1026\n\nEN12207."
         },
         {
           "number": "11.2",
           "title": "Soil and water",
-          "content": "This product does not claim any performance in this regard."
+          "content": "This product contributes to healthy indoor air quality by being aligned with the airtightness class C5 according toEN 1026\n\nEN12207.\n\nThis product does not claim any performance in this regard."
         },
         {
           "number": "12",
           "title": "DEMONSTRATION OF VERIFICATION",
-          "content": "EN 15804+A2 serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\nInternal ☐ External ☒\n\nThird party verifier:\nBob Roijen & Agnes Schuurmans\nSGS INTRON B.V.,\nDr. Nolenslaan 126, 6136 GV Sittard,\nNetherlands,\ne-mail: bob.roijen@sgs.com"
+          "content": "This product does not claim any performance in this regard.\n\nVERIFICATION\n\nEN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\n\nInternal☐ External☒\n\nThird party verifier:\n\nBobRoijen & Agnes Schuurmans\n\nSGS INTRON B.V.,\n\nDr. Nolenslaan 126, 6136 GV Sittard,\n\nNetherlands,\n\ne-mail: bob.roijen@sgs.com"
+        },
+        {
+          "number": "15",
+          "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+          "content": "14 APPLICATION UNIT\n\nThis paragraph gives information on the applied product and how thereference flow and table with impacts relate to different\n\napplications.\n\nSTAR 75 window systems have only 1 application.\n\n2 2\n\nResults presented in this EPD are for 1 mof a window system with the size < 2.3 m.\n\nDifferent dimensions are possible, and window systems are made to measure, depending on the requirements of the\n\ncustomer and limited by the glass supplier.\n\nTocalculate the environmental impact of a window system with a different surface area:\n\n2\n\n- Results must be multiplied by the surface area (in m) of the window system in question.\n\n2\n\nFor example, if window system is 1.5 m, results presented in this EPD have to be multiplied by 1.5.\n\nTheratio between application and the referenceflow in the EPD is, therefore1.\n\nSimplicity of Ease of handling (sizeRobustness of material (material\n\nDescription Type of fixing Level of reversibility Speed of disassembly Comment\n\ndisassembly and weight) resistance to disassembly)\n\nOuter or inner wall of aSteel wall anchors forReversible connectionsSimple–requires the useSpeed of disassemblyEasy to manipulate (byThe material resists well during disassembly\n\nresidential or commercialmechanical fixingwith light repairableof specific thoughvaries from quick to slowhand (small size and\n\nbuilding damage common tools depending on elementlimited weight): one\n\ndimensions worker should be\n\nsufficient"
         }
       ]
     }

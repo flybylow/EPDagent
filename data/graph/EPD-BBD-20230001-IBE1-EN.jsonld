@@ -43,6 +43,35 @@
     "prov:generatedAtTime": {
       "@id": "http://www.w3.org/ns/prov#generatedAtTime",
       "@type": "xsd:dateTime"
+    },
+    "extractionCoverage": "https://epdagent.dev/vocab/extractionCoverage",
+    "productSection": {
+      "@id": "https://epdagent.dev/vocab/productSection",
+      "@type": "@id"
+    },
+    "composition": {
+      "@id": "https://epdagent.dev/vocab/composition",
+      "@type": "@id"
+    },
+    "lcaStudy": {
+      "@id": "https://epdagent.dev/vocab/lcaStudy",
+      "@type": "@id"
+    },
+    "lcaTables": {
+      "@id": "https://epdagent.dev/vocab/lcaTables",
+      "@type": "@id"
+    },
+    "scenarios": {
+      "@id": "https://epdagent.dev/vocab/scenarios",
+      "@type": "@id"
+    },
+    "bibliography": {
+      "@id": "https://epdagent.dev/vocab/bibliography",
+      "@type": "@id"
+    },
+    "epdSections": {
+      "@id": "https://epdagent.dev/vocab/epdSections",
+      "@type": "@id"
     }
   },
   "@graph": [
@@ -77,12 +106,24 @@
         "@type": "prov:Entity",
         "schema:name": "EPD-BBD-20230001-IBE1-EN.pdf"
       },
-      "prov:generatedAtTime": "2026-05-26T10:05:00.000Z"
+      "prov:generatedAtTime": "2026-05-26T10:05:00.000Z",
+      "extractionCoverage": {
+        "phase1": true,
+        "phase2": true,
+        "phase3_product": false,
+        "phase3_composition": false,
+        "phase3_lca_study": false,
+        "phase4_lca": [],
+        "phase5_scenarios": false,
+        "phase6_refs": false,
+        "phase7_epd_sections": false
+      }
     },
     {
       "@id": "http://localhost:3000/id/operator/BE-BD",
       "@type": "ProgramOperator",
-      "schema:name": "BE-BD"
+      "schema:name": "BE-BD",
+      "operatorCode": null
     },
     {
       "@id": "http://localhost:3000/id/org/3c3f89f6ca59",

@@ -117,6 +117,14 @@
       "productSection": {
         "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.004-01.00.00%2520Holcim%2520CEM%2520VA%2520(S-V)%2520425%2520N-LH%2520HSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN%2520-%2520signed/product"
       },
+      "lcaStudy": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.004-01.00.00%2520Holcim%2520CEM%2520VA%2520(S-V)%2520425%2520N-LH%2520HSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN%2520-%2520signed/lca-study"
+      },
+      "lcaTables": [
+        {
+          "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.004-01.00.00%2520Holcim%2520CEM%2520VA%2520(S-V)%2520425%2520N-LH%2520HSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN%2520-%2520signed/lca-table/lca_impacts"
+        }
+      ],
       "bibliography": {
         "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.004-01.00.00%2520Holcim%2520CEM%2520VA%2520(S-V)%2520425%2520N-LH%2520HSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN%2520-%2520signed/references"
       },
@@ -129,7 +137,9 @@
         "phase3_product": true,
         "phase3_composition": false,
         "phase3_lca_study": true,
-        "phase4_lca": [],
+        "phase4_lca": [
+          "lca_impacts"
+        ],
         "phase5_scenarios": false,
         "phase6_refs": true,
         "phase7_epd_sections": true
@@ -157,7 +167,1167 @@
     {
       "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.004-01.00.00%2520Holcim%2520CEM%2520VA%2520(S-V)%2520425%2520N-LH%2520HSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN%2520-%2520signed/product",
       "@type": "ProductSection",
-      "intendedUse": "The intended use of this EPD is to communicate scientifically based environmental information for construction products, for the purpose of assessing the environmental performance of buildings."
+      "description": "Cement is a hydraulic binder, i.e. a finely ground inorganic material which, when mixed with water, forms a paste which sets and hardens by means of hydration reactions and processes and which, after hardening, retains its strength and stability even under water.\n\nCement is an intermediate product in the building sector and is mainly used as a binder for concrete, mortar or cement screed. CEM V/A (S-V) 42,5 N-LH HSR bulk \"ECOPlanet is a composite cement whose main constituents are Portland clinker, granulated blast-furnace slag (S) and siliceous fly ash (V). CEM V/A (S-V) 42,5 N-LH HSR is a low-heat cement according to EN 197-1, a sulfate-resisting cement according to NBN B12-108 and a cement with a limited alkali content according to NBN B12-109.\n\nThis EPD is a specific EPD of the CEM V/A (S-V) 42,5 N-LH HSR bulk \"ECOPlanet\" cement type that is produced both in Holcim Belgium's integrated cement plant in Obourg and in Holcim Belgium's cement blending plant in Antwerp.",
+      "intendedUse": "Cement is an intermediate product in the building sector and is mainly used as a binder for concrete, mortar or cement screed.",
+      "installation": "The installation of the product is not covered by the scope of the EPD as cement is an intermediate product.",
+      "geographicalRepresentativity": "CEM V/A (S-V) 42,5 N-LH HSR bulk \"ECOPlanet\" is mainly sold to customers in Belgium, but exportations to France, Luxembourg, Germany and the Netherlands are common. Modules A1 to A3 are representative of the cement sold to all these countries. Module A4 is specific to the Belgian market. The EPD is representative for the Belgian market.",
+      "productionProcess": "The cement-making process can be divided into two basic steps: \n- Clinker (the main constituent of cement) is made in a kiln where the flame temperature reaches 2000°C, which heats raw materials such as limestone (calcium carbonate) with other silica, alumina and iron bearing materials (e.g. clay) up to 1450°C. During the first stage of this process, known as calcination, the calcium carbonate (limestone) is transformed into calcium oxide (free lime). During the second stage, known as clinkerisation, the calcium oxide reacts with the other constituents from the raw material mix to form new minerals, collectively called (Portland) clinker. This near-molten material is rapidly cooled to a temperature of 100 - 200°C. \n- In a second step, clinker is ground together with gypsum and other materials such as limestone, blast furnace slag, siliceous fly ash, natural or calcined pozzolana (known as \"MIC\" Mineral Components or \"SCM\" Supplementary Cementitious Materials) to produce the fine (grey) powder known as cement. Other constituents are calcium sulfate (gypsum and/or anhydrite) to control setting, additives such as grindings aids and chromate reducing agents (the total quantity of which shall not exceed 1.0 % by mass of the cement) and minor additional constituents added to improve the physical properties of the cement, such as workability or water retention.\n\nSpecific for the production facility in Antwerp, there is a third production step. The final cement is produced by blending (dry mixing) of different mineral powders: Portland cement CEM I 52,5 N from Obourg (as a source of the clinker, according to the 2 production steps described above), ground granulated blast furnace slag (as opposed to (coarse) granulated slag in Obourg that is co-ground with the clinker), siliceous fly ash, a small quantity of additional set regulator (anhydrite, as a complement to the set regulator already present in the CEM I) and minor additional constituents.",
+      "referenceFlow": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1000,
+        "schema:unitCode": "kg",
+        "description": "The weight of the declared unit is 1000 kg (1 tonne or 1 T)."
+      },
+      "technicalProperties": [
+        {
+          "property": "Standard consistence",
+          "standard": "EN 196-3",
+          "value": "30",
+          "unit": "%",
+          "comment": null
+        },
+        {
+          "property": "Initial setting time",
+          "standard": "EN 196-3",
+          "value": "04:50",
+          "unit": "hh:mm",
+          "comment": null
+        },
+        {
+          "property": "Final setting time",
+          "standard": "EN 196-3",
+          "value": "05:50",
+          "unit": "hh:mm",
+          "comment": null
+        },
+        {
+          "property": "Soundness",
+          "standard": "EN 196-3",
+          "value": "< 1",
+          "unit": "mm",
+          "comment": null
+        },
+        {
+          "property": "Compressive strength: 2 days",
+          "standard": "EN 196-1",
+          "value": "19",
+          "unit": "N/mm2",
+          "comment": null
+        },
+        {
+          "property": "Compressive strength: 28 days",
+          "standard": "EN 196-1",
+          "value": "53",
+          "unit": "N/mm2",
+          "comment": null
+        },
+        {
+          "property": "Fineness (Blaine)",
+          "standard": "EN 196-6",
+          "value": "4300",
+          "unit": "cm2/g",
+          "comment": null
+        },
+        {
+          "property": "Density",
+          "standard": "EN 196-6",
+          "value": "2910",
+          "unit": "kg/m3",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.004-01.00.00%2520Holcim%2520CEM%2520VA%2520(S-V)%2520425%2520N-LH%2520HSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN%2520-%2520signed/lca-study",
+      "@type": "LcaStudy",
+      "sectionTitle": "3 LCA-STUDY",
+      "standardsAndMethodology": "The \"GCCA EPD Tool\" is a specific tool to the cement and concrete industry, it is compliant with the EN 15804+A2 standard and is verified by EPD international. The allocation rules defined by EN 15804+A2 and EN16908 have been applied.",
+      "lcaSoftwareAndDatabase": "For the calculation of the LCA results, the software program \"GCCA EPD Tool\" (v4.0) was used for A1 to A3 calculations and is based on ecoinvent 3.5. The \"GCCA EPD Tool\" is a specific tool to the cement and concrete industry, it is compliant with the EN 15804+A2 standard and is verified by EPD international. SimaPro was used to model module A4 module in combination with ecoinvent v3.8. Background data is included in the GCCA EPD tool and has been verified by EPD International. Ecoinvent v3.5 for A1 to A3 and ecoinvent version 3.8 for A4.",
+      "systemBoundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 13\nDeclared modules (☒): A1, A2, A3, A4\nNot declared (☐): A5, B1, B2, B3, B4, B5, B6, B7, C1, C2, C3, C4, D\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4\n\nModule labels (vertical text):\nA1: Raw materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: Construction\nB1: Use\nB2: Maintenance\nB3: Repa\nB4: Replacement\nB5: Refurbishment\nB6: Operational energy use\nB7: Operational water use\nC1: construction\nC2: Transport\nC3: Waste processing\nC4: Disposal\nD: Recovery",
+      "productionSites": "The EPD is specific to the product and manufacturing site. The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site.",
+      "cutOffCriteria": "The following processes are considered below cut-off:\n- Cleaning of the installation\n- Wear of grinding balls\n- Cement grinding losses\n- Cement mixing losses\n\nFollowing processes were excluded for the inventory:\n- Production and construction of equipment for buildings and installations\n- Production and construction of equipment for the production of clinker and cement and lab analyses\n- Activities related to the personnel (mobility, furniture and desk consumables)\n- Utilization of water and energy related to the sales and management of the product\n- Cleaning of offices",
+      "allocation": "The allocation rules defined by EN 15804+A2 and EN16908 have been applied.\nThe manufacturing process does not produce co-products that require allocation.\nA cut-off is applied when recyclable waste reaches the end of the waste state.\nBy default, this EPD addresses the environmental impacts of cement production excluding the incineration of the input waste (net figure). For clarity and transparency, the gross figure is also communicated as recommended in the EN 16908+A1.\nFor the blast furnace slag, a co-product of the pig iron production, economic allocation has been used conform EN 15804+A2, based on EPD data from the main supplier.\nFor the fly ash, a waste from coal-fired power plants, no allocated has been accounted for in this EPD.",
+      "dataQuality": "The activity data is based on site specific data (volumes, lower heating values, emission factors) verified by the EU ETS system for the clinker production. For the cement production, the main data used is the recipe.\nBackground data is included in the GCCA EPD tool and has been verified by EPD International.",
+      "timeRepresentativeness": "Manufacturer specific data have been collected for the year 2021.",
+      "geographicalRepresentativeness": "The residual electricity mix of Belgium in 2021 was used, based on the electricity attributes provided by the Association of issuing Bodies (AIB).",
+      "impactAssessment": "The EF3.0 version of the EN 15804+A2 LCIA method was used. The characterization factors from EC-JRC were applied. No additional or deviating characterisation factors were used.",
+      "additionalParagraphs": [
+        "The product does not contain biogenic carbon. The product is sold in bulk and does not require packaging. Biogenic carbon content in product (at the gate): 0 kg C / FU. Biogenic carbon content in accompanying packaging (at the gate): 0 kg C / FU.",
+        "Carbon offsetting is not allowed in the EN 15804+A2 and hence not taken into account in the calculations",
+        "No carbonation of cementitious materials is considered in the scope of this EPD. The construction products made with cement (mortar, concrete) may indeed carbonate in the following life cycle stages.",
+        "The EPD is specific to the product and manufacturing site. No underlying parameters or assumptions that would impact the results were made. The results do not vary."
+      ],
+      "subsections": [
+        {
+          "number": "3.1",
+          "title": "Date of LCA-study",
+          "content": "September 27, 2023"
+        },
+        {
+          "number": "3.2",
+          "title": "Software",
+          "content": "For the calculation of the LCA results, the software program \"GCCA EPD Tool\" (v4.0) was used for A1 to A3 calculations and is based on ecoinvent 3.5. The \"GCCA EPD Tool\" is a specific tool to the cement and concrete industry, it is compliant with the EN 15804+A2 standard and is verified by EPD international. SimaPro was used to model module A4 module in combination with ecoinvent v3.8 ."
+        },
+        {
+          "number": "3.3",
+          "title": "Information on allocation",
+          "content": "The allocation rules defined by EN 15804+A2 and EN16908 have been applied.\nThe manufacturing process does not produce co-products that require allocation.\nA cut-off is applied when recyclable waste reaches the end of the waste state.\nBy default, this EPD addresses the environmental impacts of cement production excluding the incineration of the input waste (net figure). For clarity and transparency, the gross figure is also communicated as recommended in the EN 16908+A1.\nFor the blast furnace slag, a co-product of the pig iron production, economic allocation has been used conform EN 15804+A2, based on EPD data from the main supplier.\nFor the fly ash, a waste from coal-fired power plants, no allocated has been accounted for in this EPD."
+        },
+        {
+          "number": "3.4",
+          "title": "Information on cut off",
+          "content": "The following processes are considered below cut-off:\n- Cleaning of the installation\n- Wear of grinding balls\n- Cement grinding losses\n- Cement mixing losses"
+        },
+        {
+          "number": "3.5",
+          "title": "Information on excluded processes",
+          "content": "Following processes were excluded for the inventory:\n- Production and construction of equipment for buildings and installations\n- Production and construction of equipment for the production of clinker and cement and lab analyses\n- Activities related to the personnel (mobility, furniture and desk consumables)\n- Utilization of water and energy related to the sales and management of the product\n- Cleaning of offices"
+        },
+        {
+          "number": "3.6",
+          "title": "Information on biogenic carbon modelling",
+          "content": "The product does not contain biogenic carbon.\nThe product is sold in bulk and does not require packaging.\nBiogenic carbon content in product (at the gate): 0 kg C / FU\nBiogenic carbon content in accompanying packaging (at the gate): 0 kg C / FU"
+        },
+        {
+          "number": "3.7",
+          "title": "Information on carbon offsetting",
+          "content": "Carbon offsetting is not allowed in the EN 15804+A2 and hence not taken into account in the calculations"
+        },
+        {
+          "number": "3.8",
+          "title": "Information on carbonation of cementitious materials",
+          "content": "No carbonation of cementitious materials is considered in the scope of this EPD. The construction products made with cement (mortar, concrete) may indeed carbonate in the following life cycle stages."
+        },
+        {
+          "number": "3.9",
+          "title": "Additional or deviating characterisation factors",
+          "content": "The EF3.0 version of the EN 15804+A2 LCIA method was used. The characterization factors from EC-JRC were applied. No additional or deviating characterisation factors were used."
+        },
+        {
+          "number": "3.10",
+          "title": "Description of the variability",
+          "content": "The EPD is specific to the product and manufacturing site. No underlying parameters or assumptions that would impact the results were made. The results do not vary."
+        },
+        {
+          "number": "3.11",
+          "title": "Specificity",
+          "content": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site."
+        },
+        {
+          "number": "3.12",
+          "title": "Period of data collection",
+          "content": "Manufacturer specific data have been collected for the year 2021."
+        },
+        {
+          "number": "3.13",
+          "title": "Information on data collection",
+          "content": "The activity data is based on site specific data (volumes, lower heating values, emission factors) verified by the EU ETS system for the clinker production. For the cement production, the main data used is the recipe.\nBackground data is included in the GCCA EPD tool and has been verified by EPD International."
+        },
+        {
+          "number": "3.14",
+          "title": "Database used for background data",
+          "content": "Ecoinvent v3.5 for A1 to A3 and ecoinvent version 3.8 for A4."
+        },
+        {
+          "number": "3.15",
+          "title": "Energy mix",
+          "content": "The residual electricity mix of Belgium in 2021 was used, based on the electricity attributes provided by the Association of issuing Bodies (AIB)."
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.004-01.00.00%2520Holcim%2520CEM%2520VA%2520(S-V)%2520425%2520N-LH%2520HSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN%2520-%2520signed/lca-table/lca_impacts",
+      "@type": "LcaTable",
+      "tableKey": "lca_impacts",
+      "tableTitle": "POTENTIAL ENVIRONMENTAL IMPACTS PER REFERENCE FLOW",
+      "tableType": "impacts",
+      "introductoryText": "Reference results: Net impacts for 1 ton of cement production.",
+      "columnGroups": [
+        {
+          "label": "Production",
+          "column_codes": [
+            "A1-A3"
+          ]
+        },
+        {
+          "label": "Construction process stage",
+          "column_codes": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "label": "Use stage",
+          "column_codes": [
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7"
+          ]
+        },
+        {
+          "label": "End-of-life stage",
+          "column_codes": [
+            "C1",
+            "C2",
+            "C3",
+            "C4"
+          ]
+        },
+        {
+          "label": null,
+          "column_codes": [
+            "D"
+          ]
+        }
+      ],
+      "columns": [
+        {
+          "code": "A1-A3",
+          "label": "A1-A3 Product stage",
+          "group": "Production"
+        },
+        {
+          "code": "A4",
+          "label": "A4 Transport",
+          "group": "Construction process stage"
+        },
+        {
+          "code": "A5",
+          "label": "A5 Installation",
+          "group": "Construction process stage"
+        },
+        {
+          "code": "B1",
+          "label": "B1 Use",
+          "group": "Use stage"
+        },
+        {
+          "code": "B2",
+          "label": "B2 Maintenance",
+          "group": "Use stage"
+        },
+        {
+          "code": "B3",
+          "label": "B3 Repair",
+          "group": "Use stage"
+        },
+        {
+          "code": "B4",
+          "label": "B4 Replacement",
+          "group": "Use stage"
+        },
+        {
+          "code": "B5",
+          "label": "B5 Refurbishment",
+          "group": "Use stage"
+        },
+        {
+          "code": "B6",
+          "label": "B6 Operational energy use",
+          "group": "Use stage"
+        },
+        {
+          "code": "B7",
+          "label": "B7 Operational water use",
+          "group": "Use stage"
+        },
+        {
+          "code": "C1",
+          "label": "C1 Deconstruction / demolition",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C2",
+          "label": "C2 Transport",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C3",
+          "label": "C3 Waste processing",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C4",
+          "label": "C4 Disposal",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "D",
+          "label": "D Reuse, recovery, recycling",
+          "group": null
+        }
+      ],
+      "rows": [
+        {
+          "indicator": "GWP total",
+          "unit": "kg CO2 equiv/FU",
+          "values": [
+            {
+              "column_code": "A1-A3",
+              "raw_value": "4,02E+02"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "1,62E+01"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B1",
+              "raw_value": null
+            },
+            {
+              "column_code": "B2",
+              "raw_value": null
+            },
+            {
+              "column_code": "B3",
+              "raw_value": null
+            },
+            {
+              "column_code": "B4",
+              "raw_value": null
+            },
+            {
+              "column_code": "B5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B6",
+              "raw_value": null
+            },
+            {
+              "column_code": "B7",
+              "raw_value": null
+            },
+            {
+              "column_code": "C1",
+              "raw_value": null
+            },
+            {
+              "column_code": "C2",
+              "raw_value": null
+            },
+            {
+              "column_code": "C3",
+              "raw_value": null
+            },
+            {
+              "column_code": "C4",
+              "raw_value": null
+            },
+            {
+              "column_code": "D",
+              "raw_value": null
+            }
+          ]
+        },
+        {
+          "indicator": "GWP fossil",
+          "unit": "kg CO2 equiv/FU",
+          "values": [
+            {
+              "column_code": "A1-A3",
+              "raw_value": "4,02E+02"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "1,62E+01"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B1",
+              "raw_value": null
+            },
+            {
+              "column_code": "B2",
+              "raw_value": null
+            },
+            {
+              "column_code": "B3",
+              "raw_value": null
+            },
+            {
+              "column_code": "B4",
+              "raw_value": null
+            },
+            {
+              "column_code": "B5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B6",
+              "raw_value": null
+            },
+            {
+              "column_code": "B7",
+              "raw_value": null
+            },
+            {
+              "column_code": "C1",
+              "raw_value": null
+            },
+            {
+              "column_code": "C2",
+              "raw_value": null
+            },
+            {
+              "column_code": "C3",
+              "raw_value": null
+            },
+            {
+              "column_code": "C4",
+              "raw_value": null
+            },
+            {
+              "column_code": "D",
+              "raw_value": null
+            }
+          ]
+        },
+        {
+          "indicator": "GWP biogenic",
+          "unit": "kg CO2 equiv/FU",
+          "values": [
+            {
+              "column_code": "A1-A3",
+              "raw_value": "4,33E-02"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "1,49E-02"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B1",
+              "raw_value": null
+            },
+            {
+              "column_code": "B2",
+              "raw_value": null
+            },
+            {
+              "column_code": "B3",
+              "raw_value": null
+            },
+            {
+              "column_code": "B4",
+              "raw_value": null
+            },
+            {
+              "column_code": "B5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B6",
+              "raw_value": null
+            },
+            {
+              "column_code": "B7",
+              "raw_value": null
+            },
+            {
+              "column_code": "C1",
+              "raw_value": null
+            },
+            {
+              "column_code": "C2",
+              "raw_value": null
+            },
+            {
+              "column_code": "C3",
+              "raw_value": null
+            },
+            {
+              "column_code": "C4",
+              "raw_value": null
+            },
+            {
+              "column_code": "D",
+              "raw_value": null
+            }
+          ]
+        },
+        {
+          "indicator": "GWP luluc",
+          "unit": "kg CO2 equiv/FU",
+          "values": [
+            {
+              "column_code": "A1-A3",
+              "raw_value": "3,66E-02"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "6,31E-03"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B1",
+              "raw_value": null
+            },
+            {
+              "column_code": "B2",
+              "raw_value": null
+            },
+            {
+              "column_code": "B3",
+              "raw_value": null
+            },
+            {
+              "column_code": "B4",
+              "raw_value": null
+            },
+            {
+              "column_code": "B5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B6",
+              "raw_value": null
+            },
+            {
+              "column_code": "B7",
+              "raw_value": null
+            },
+            {
+              "column_code": "C1",
+              "raw_value": null
+            },
+            {
+              "column_code": "C2",
+              "raw_value": null
+            },
+            {
+              "column_code": "C3",
+              "raw_value": null
+            },
+            {
+              "column_code": "C4",
+              "raw_value": null
+            },
+            {
+              "column_code": "D",
+              "raw_value": null
+            }
+          ]
+        },
+        {
+          "indicator": "ODP",
+          "unit": "kg CFC 11 equiv/FU",
+          "values": [
+            {
+              "column_code": "A1-A3",
+              "raw_value": "1,68E-05"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "3,77E-06"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B1",
+              "raw_value": null
+            },
+            {
+              "column_code": "B2",
+              "raw_value": null
+            },
+            {
+              "column_code": "B3",
+              "raw_value": null
+            },
+            {
+              "column_code": "B4",
+              "raw_value": null
+            },
+            {
+              "column_code": "B5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B6",
+              "raw_value": null
+            },
+            {
+              "column_code": "B7",
+              "raw_value": null
+            },
+            {
+              "column_code": "C1",
+              "raw_value": null
+            },
+            {
+              "column_code": "C2",
+              "raw_value": null
+            },
+            {
+              "column_code": "C3",
+              "raw_value": null
+            },
+            {
+              "column_code": "C4",
+              "raw_value": null
+            },
+            {
+              "column_code": "D",
+              "raw_value": null
+            }
+          ]
+        },
+        {
+          "indicator": "AP",
+          "unit": "mol H+ eq/FU",
+          "values": [
+            {
+              "column_code": "A1-A3",
+              "raw_value": "2,01E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "6,61E-02"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B1",
+              "raw_value": null
+            },
+            {
+              "column_code": "B2",
+              "raw_value": null
+            },
+            {
+              "column_code": "B3",
+              "raw_value": null
+            },
+            {
+              "column_code": "B4",
+              "raw_value": null
+            },
+            {
+              "column_code": "B5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B6",
+              "raw_value": null
+            },
+            {
+              "column_code": "B7",
+              "raw_value": null
+            },
+            {
+              "column_code": "C1",
+              "raw_value": null
+            },
+            {
+              "column_code": "C2",
+              "raw_value": null
+            },
+            {
+              "column_code": "C3",
+              "raw_value": null
+            },
+            {
+              "column_code": "C4",
+              "raw_value": null
+            },
+            {
+              "column_code": "D",
+              "raw_value": null
+            }
+          ]
+        },
+        {
+          "indicator": "EP - freshwater",
+          "unit": "kg (PO4)3- equiv/FU",
+          "values": [
+            {
+              "column_code": "A1-A3",
+              "raw_value": "1,89E-02"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "1,04E-03"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B1",
+              "raw_value": null
+            },
+            {
+              "column_code": "B2",
+              "raw_value": null
+            },
+            {
+              "column_code": "B3",
+              "raw_value": null
+            },
+            {
+              "column_code": "B4",
+              "raw_value": null
+            },
+            {
+              "column_code": "B5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B6",
+              "raw_value": null
+            },
+            {
+              "column_code": "B7",
+              "raw_value": null
+            },
+            {
+              "column_code": "C1",
+              "raw_value": null
+            },
+            {
+              "column_code": "C2",
+              "raw_value": null
+            },
+            {
+              "column_code": "C3",
+              "raw_value": null
+            },
+            {
+              "column_code": "C4",
+              "raw_value": null
+            },
+            {
+              "column_code": "D",
+              "raw_value": null
+            }
+          ]
+        },
+        {
+          "indicator": "EP - marine",
+          "unit": "kg (PO4)3- equiv/FU",
+          "values": [
+            {
+              "column_code": "A1-A3",
+              "raw_value": "7,61E-03"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "1,99E-02"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B1",
+              "raw_value": null
+            },
+            {
+              "column_code": "B2",
+              "raw_value": null
+            },
+            {
+              "column_code": "B3",
+              "raw_value": null
+            },
+            {
+              "column_code": "B4",
+              "raw_value": null
+            },
+            {
+              "column_code": "B5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B6",
+              "raw_value": null
+            },
+            {
+              "column_code": "B7",
+              "raw_value": null
+            },
+            {
+              "column_code": "C1",
+              "raw_value": null
+            },
+            {
+              "column_code": "C2",
+              "raw_value": null
+            },
+            {
+              "column_code": "C3",
+              "raw_value": null
+            },
+            {
+              "column_code": "C4",
+              "raw_value": null
+            },
+            {
+              "column_code": "D",
+              "raw_value": null
+            }
+          ]
+        },
+        {
+          "indicator": "EP - terrestrial",
+          "unit": "kg (PO4)3- equiv/FU",
+          "values": [
+            {
+              "column_code": "A1-A3",
+              "raw_value": "4,82E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "2,18E-01"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B1",
+              "raw_value": null
+            },
+            {
+              "column_code": "B2",
+              "raw_value": null
+            },
+            {
+              "column_code": "B3",
+              "raw_value": null
+            },
+            {
+              "column_code": "B4",
+              "raw_value": null
+            },
+            {
+              "column_code": "B5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B6",
+              "raw_value": null
+            },
+            {
+              "column_code": "B7",
+              "raw_value": null
+            },
+            {
+              "column_code": "C1",
+              "raw_value": null
+            },
+            {
+              "column_code": "C2",
+              "raw_value": null
+            },
+            {
+              "column_code": "C3",
+              "raw_value": null
+            },
+            {
+              "column_code": "C4",
+              "raw_value": null
+            },
+            {
+              "column_code": "D",
+              "raw_value": null
+            }
+          ]
+        },
+        {
+          "indicator": "POCP",
+          "unit": "kg Ethene equiv/FU",
+          "values": [
+            {
+              "column_code": "A1-A3",
+              "raw_value": "1,17E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "6,72E-02"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B1",
+              "raw_value": null
+            },
+            {
+              "column_code": "B2",
+              "raw_value": null
+            },
+            {
+              "column_code": "B3",
+              "raw_value": null
+            },
+            {
+              "column_code": "B4",
+              "raw_value": null
+            },
+            {
+              "column_code": "B5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B6",
+              "raw_value": null
+            },
+            {
+              "column_code": "B7",
+              "raw_value": null
+            },
+            {
+              "column_code": "C1",
+              "raw_value": null
+            },
+            {
+              "column_code": "C2",
+              "raw_value": null
+            },
+            {
+              "column_code": "C3",
+              "raw_value": null
+            },
+            {
+              "column_code": "C4",
+              "raw_value": null
+            },
+            {
+              "column_code": "D",
+              "raw_value": null
+            }
+          ]
+        },
+        {
+          "indicator": "ADP Elements",
+          "unit": "kg Sb equiv/FU",
+          "values": [
+            {
+              "column_code": "A1-A3",
+              "raw_value": "1,78E-04"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "5,40E-05"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B1",
+              "raw_value": null
+            },
+            {
+              "column_code": "B2",
+              "raw_value": null
+            },
+            {
+              "column_code": "B3",
+              "raw_value": null
+            },
+            {
+              "column_code": "B4",
+              "raw_value": null
+            },
+            {
+              "column_code": "B5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B6",
+              "raw_value": null
+            },
+            {
+              "column_code": "B7",
+              "raw_value": null
+            },
+            {
+              "column_code": "C1",
+              "raw_value": null
+            },
+            {
+              "column_code": "C2",
+              "raw_value": null
+            },
+            {
+              "column_code": "C3",
+              "raw_value": null
+            },
+            {
+              "column_code": "C4",
+              "raw_value": null
+            },
+            {
+              "column_code": "D",
+              "raw_value": null
+            }
+          ]
+        },
+        {
+          "indicator": "ADP fossil fuels",
+          "unit": "MJ/FU",
+          "values": [
+            {
+              "column_code": "A1-A3",
+              "raw_value": "2,72E+03"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "2,46E+02"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B1",
+              "raw_value": null
+            },
+            {
+              "column_code": "B2",
+              "raw_value": null
+            },
+            {
+              "column_code": "B3",
+              "raw_value": null
+            },
+            {
+              "column_code": "B4",
+              "raw_value": null
+            },
+            {
+              "column_code": "B5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B6",
+              "raw_value": null
+            },
+            {
+              "column_code": "B7",
+              "raw_value": null
+            },
+            {
+              "column_code": "C1",
+              "raw_value": null
+            },
+            {
+              "column_code": "C2",
+              "raw_value": null
+            },
+            {
+              "column_code": "C3",
+              "raw_value": null
+            },
+            {
+              "column_code": "C4",
+              "raw_value": null
+            },
+            {
+              "column_code": "D",
+              "raw_value": null
+            }
+          ]
+        },
+        {
+          "indicator": "WDP",
+          "unit": "m³ water eq deprived /FU",
+          "values": [
+            {
+              "column_code": "A1-A3",
+              "raw_value": "2,00E+01"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "7,55E-01"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B1",
+              "raw_value": null
+            },
+            {
+              "column_code": "B2",
+              "raw_value": null
+            },
+            {
+              "column_code": "B3",
+              "raw_value": null
+            },
+            {
+              "column_code": "B4",
+              "raw_value": null
+            },
+            {
+              "column_code": "B5",
+              "raw_value": null
+            },
+            {
+              "column_code": "B6",
+              "raw_value": null
+            },
+            {
+              "column_code": "B7",
+              "raw_value": null
+            },
+            {
+              "column_code": "C1",
+              "raw_value": null
+            },
+            {
+              "column_code": "C2",
+              "raw_value": null
+            },
+            {
+              "column_code": "C3",
+              "raw_value": null
+            },
+            {
+              "column_code": "C4",
+              "raw_value": null
+            },
+            {
+              "column_code": "D",
+              "raw_value": null
+            }
+          ]
+        }
+      ],
+      "capture": {
+        "headers_rotated": true,
+        "column_count": 15,
+        "row_count": 13,
+        "complete": true,
+        "notes": "Table shows only A1-A3 (Production) and A4 (Transport) columns with data. All other columns (A5, B1-B7, C1-C4, D) are present in the header structure but contain no visible values (empty cells). All 13 environmental impact indicators are captured."
+      }
     },
     {
       "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.004-01.00.00%2520Holcim%2520CEM%2520VA%2520(S-V)%2520425%2520N-LH%2520HSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN%2520-%2520signed/references",
@@ -176,27 +1346,27 @@
         {
           "number": "11.1",
           "title": "Indoor air",
-          "content": "Cement is not in direct contact with indoor air. It is the cement-based products (concrete, mortar …) that are potentially in contact with indoor air."
+          "content": "SUBSTANCES TO INDOOR AIR, SOIL\n\nAND WATER DURING THE USE\n\nSTAG E\n\nCement is not in direct contact with indoor air. It is the cement-based products (concrete, mortar…) that are potentially in contact\n\nwith indoor air."
         },
         {
           "number": "11.2",
           "title": "Soil and water",
-          "content": "Cement is not in direct contact with soil and water. It is the cement-based products (concrete, mortar …) that are potentially in contact with soil and water."
+          "content": "Cement is not in direct contact with indoor air. It is the cement-based products (concrete, mortar…) that are potentially in contact\n\nwith indoor air.\n\nCement is not in direct contact withsoil and water. It is the cement-based products (concrete, mortar…) that are potentially in contact\n\nwith soil and water."
         },
         {
           "number": "12",
-          "title": "DEMONSTRATION OF VERIFICATION",
-          "content": "EN 15804+A2 serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\nInternal ☐ External ☒\n\nThird party verifier: [ Evert Vermaut, Jan Olieslagerslaan 35, 1800 Vilvoorde, rsterckx@vincotte.be]"
+          "title": "DEMONSTRATION OF VERIFICATION 3|26B-EPDCEMV/A(S-V)42,5 N-LH HSRbulk“ECOPlanet”",
+          "content": "Cement is not in direct contact withsoil and water. It is the cement-based products (concrete, mortar…) that are potentially in contact\n\nwith soil and water.\n\nEN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\n\nInternal☐ External☒\n\nThird party verifier:[Evert Vermaut, JanOlieslagerslaan 35,1800 Vilvoorde, rsterckx@vincotte.be]"
         },
         {
-          "number": "15",
-          "title": "APPLICATION UNIT",
-          "content": "Not applicable for this EPD."
+          "number": "13",
+          "title": "lca interpretation",
+          "content": "EN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\n\nInternal☐ External☒\n\nThird party verifier:[Evert Vermaut, JanOlieslagerslaan 35,1800 Vilvoorde, rsterckx@vincotte.be]\n\nNot provided."
         },
         {
           "number": "16",
           "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
-          "content": "Not applicable for this EPD."
+          "content": "Not applicable for this EPD.\n\nREVERSIBILITY\n\nNot applicable for this EPD."
         }
       ]
     }

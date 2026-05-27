@@ -1,0 +1,12 @@
+{
+  "pdf_filename": "B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed.pdf",
+  "pdf_stem": "B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed",
+  "epd_number": null,
+  "language": null,
+  "pattern": "unknown",
+  "_source": {
+    "pdf_filename": "B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed.pdf",
+    "extracted_by": "filename-regex",
+    "extracted_at": "2026-05-26T15:57:08.961Z"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "pdf_filename": "B-EPD 025.0297.002-01.00.00 Aliplast STAR75 LC Kip EN - signed.pdf",
+  "pdf_stem": "B-EPD 025.0297.002-01.00.00 Aliplast STAR75 LC Kip EN - signed",
+  "epd_number": null,
+  "language": null,
+  "pattern": "unknown",
+  "_source": {
+    "pdf_filename": "B-EPD 025.0297.002-01.00.00 Aliplast STAR75 LC Kip EN - signed.pdf",
+    "extracted_by": "filename-regex",
+    "extracted_at": "2026-05-26T17:59:57.185Z"
+  }
+}

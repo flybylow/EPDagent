@@ -1,0 +1,21 @@
+{
+  "bibliography": [],
+  "additional_information": [
+    "Commercial names:\n– Derbigum NT 4 (4 mm thickness)\n– Derbigum NT 3 (3 mm thickness)\n– Roll: 1 m (width) x 8 m (length) = 8 m²\n– Pallet: 25 rolls (200 m²)",
+    "Ratio between application and the reference flow in the EPD.\n– 1 (10,5% overlap included)\n– For different overlap: ratio (1+overlap)/(1+0,105)"
+  ],
+  "_source": {
+    "pdf_filename": "BEPD_024.0156.002-01.00.00_Derbigum NT 4- EN - signed.pdf",
+    "pdf_sha256": "8bd47b60762ce8be6b470c27271b0c2bd92247df0f127707856b0048245c72c0",
+    "api_pages": "30",
+    "api_pages_resolved": "30",
+    "api_pdf_bytes": 20645,
+    "api_pdf_sha256": "a3df5bf6170c3753408793d4d7392258cd32bb4df323b3300ab48529c296f6ae",
+    "api_pdf_slice": "out/pdf_slices/BEPD_024.0156.002-01.00.00_Derbigum NT 4- EN - signed.p30.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T19:03:39.435Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 2988,
+    "output_tokens": 178
+  }
+}

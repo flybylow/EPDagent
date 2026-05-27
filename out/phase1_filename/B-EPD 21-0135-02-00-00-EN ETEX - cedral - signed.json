@@ -1,0 +1,12 @@
+{
+  "pdf_filename": "B-EPD 21-0135-02-00-00-EN ETEX - cedral - signed.pdf",
+  "pdf_stem": "B-EPD 21-0135-02-00-00-EN ETEX - cedral - signed",
+  "epd_number": "21-0135-02-00-00",
+  "language": "EN",
+  "pattern": "B-EPD",
+  "_source": {
+    "pdf_filename": "B-EPD 21-0135-02-00-00-EN ETEX - cedral - signed.pdf",
+    "extracted_by": "filename-regex",
+    "extracted_at": "2026-05-26T18:02:27.780Z"
+  }
+}

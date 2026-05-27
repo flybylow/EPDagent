@@ -109,6 +109,9 @@
       "producer": {
         "@id": "http://localhost:3000/id/org/1128b282827d"
       },
+      "verifier": {
+        "@id": "http://localhost:3000/id/person/f65746f88cd1"
+      },
       "prov:wasDerivedFrom": {
         "@type": "prov:Entity",
         "schema:name": "B-EPD 025.0262.004-01.00.00 Beton Agglo Carbstones Kimblok EN - signed.pdf"
@@ -116,6 +119,9 @@
       "prov:generatedAtTime": "2026-05-26T18:04:15.598Z",
       "productSection": {
         "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.0262.004-01.00.00%2520Beton%2520Agglo%2520Carbstones%2520Kimblok%2520EN%2520-%2520signed/product"
+      },
+      "composition": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.0262.004-01.00.00%2520Beton%2520Agglo%2520Carbstones%2520Kimblok%2520EN%2520-%2520signed/composition"
       },
       "lcaStudy": {
         "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.0262.004-01.00.00%2520Beton%2520Agglo%2520Carbstones%2520Kimblok%2520EN%2520-%2520signed/lca-study"
@@ -147,7 +153,7 @@
         "phase1": true,
         "phase2": true,
         "phase3_product": true,
-        "phase3_composition": false,
+        "phase3_composition": true,
         "phase3_lca_study": true,
         "phase4_lca": [
           "lca_impacts",
@@ -172,6 +178,12 @@
       "schema:name": "Orbix & Betonagglomeraten Gubbels N.V.",
       "schema:address": null,
       "schema:addressCountry": "BE"
+    },
+    {
+      "@id": "http://localhost:3000/id/person/f65746f88cd1",
+      "@type": "schema:Person",
+      "schema:name": "Vinçotte nv",
+      "verificationType": "independent_third_party"
     },
     {
       "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.0262.004-01.00.00%2520Beton%2520Agglo%2520Carbstones%2520Kimblok%2520EN%2520-%2520signed/product",
@@ -227,12 +239,76 @@
       ]
     },
     {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.0262.004-01.00.00%2520Beton%2520Agglo%2520Carbstones%2520Kimblok%2520EN%2520-%2520signed/composition",
+      "@type": "Composition",
+      "components": [
+        {
+          "section": "Carbstone Kimblok",
+          "component": "Argex 1/5 clay granules",
+          "composition": null,
+          "quantity": "20% - 60%"
+        },
+        {
+          "section": "Carbstone Kimblok",
+          "component": "Carbinox",
+          "composition": null,
+          "quantity": "20% - 60%"
+        },
+        {
+          "section": "Carbstone Kimblok",
+          "component": "Water",
+          "composition": null,
+          "quantity": "1% - 15%"
+        },
+        {
+          "section": "Carbstone Kimblok",
+          "component": "Liquid CO 2",
+          "composition": null,
+          "quantity": "1% - 15%"
+        },
+        {
+          "section": "Fixation materials",
+          "component": "Fixation materials",
+          "composition": null,
+          "quantity": "NA"
+        },
+        {
+          "section": "Jointing materials",
+          "component": "Jointing materials",
+          "composition": "All Carbstones, use a specific glue.",
+          "quantity": "2 mm on the sides of the stones"
+        },
+        {
+          "section": "Treatments",
+          "component": "Treatments",
+          "composition": null,
+          "quantity": "NA"
+        },
+        {
+          "section": "Packaging",
+          "component": "Wooden pallet",
+          "composition": null,
+          "quantity": "0,1 – 0,3 kg"
+        },
+        {
+          "section": "Packaging",
+          "component": "PET straps",
+          "composition": null,
+          "quantity": "< 0,01 kg"
+        }
+      ],
+      "declarations": [
+        "The product does not contain materials listed in the “Candidate list of Substances of Very High Concern for authorization”."
+      ]
+    },
+    {
       "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.0262.004-01.00.00%2520Beton%2520Agglo%2520Carbstones%2520Kimblok%2520EN%2520-%2520signed/lca-study",
       "@type": "LcaStudy",
       "sectionTitle": "LCA-STUDY",
       "standardsAndMethodology": "The following processes are considered below cut-off (which follows the EN 15804+A2 rules of chapter 6.3.6) because the contribution and environmental impacts are expected to be less than 1% (per unit process for mass and energy) and less than 5% over the total mass and energy",
       "lcaSoftwareAndDatabase": "For the calculation of the LCA results, the software program SimaPro v9.5 has been used. The Ecoinvent v3.6 database is used for background data. The database was released in 2019.",
       "functionalUnit": "The declared unit is 1 m2.",
+      "systemBoundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 10\nDeclared modules (☒): A1, A2, A3, A4, A5, B1, B2, B3, B4, B5, B6, B7, C1, C2, C3, C4, D\nNot declared (☐): —\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4, A5\nUse stage: B1, B2, B3, B4, B5, B6, B7\nEnd of life stage: C1, C2, C3, C4\nBeyond the system boundaries: D\n\nModule labels (vertical text):\nA1: Raw materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: Construction\nB1: Use\nB2: Maintenance\nB3: Repa\nB4: Replacement\nB5: Refurbishment\nB6: Operational energy use\nB7: Operational water use\nC1: -construction demolition\nC2: Transport\nC3: Waste processing\nC4: Disposal\nD: -Recovery- Recycling-",
       "productionSites": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site.",
       "cutOffCriteria": "The following processes are considered below cut-off (which follows the EN 15804+A2 rules of chapter 6.3.6) because the contribution and environmental impacts are expected to be less than 1% (per unit process for mass and energy) and less than 5% over the total mass and energy:\n Maintenance and use of auxiliary materials and equipment, excluding such processes included in the Ecoinvent background processes.\n Capital equipment and infrastructure processes, excluding such processes included in the Ecoinvent background processes. However, the capital goods of the crushing, screening and separation process at Orbix are included.\n PMD, paper and cardboard, and waste oil are not included because the masses are lower than 0.008%, and these are mainly office waste.",
       "allocation": "For the raw materials sourced from Orbix used in the Carbstones, allocation takes place in their production. At the production location of Beton Agglomeraten Gubbels, the amount of materials, energy and auxiliary materials in the production processes are allocated per brick based on production quantities from the year 2022.",
@@ -3659,24 +3735,19 @@
       "@type": "EpdSectionSet",
       "blocks": [
         {
-          "number": "11",
-          "title": "RELEASE OF DANGEROUS SUBSTANCES TO INDOOR AIR, SOIL AND WATER DURING THE USE STAGE",
-          "content": "11 RELEASE OF DANGEROUS SUBSTANCES TO INDOOR AIR, SOIL AND WATER DURING THE USE STAGE"
-        },
-        {
           "number": "11.1",
           "title": "Indoor air",
-          "content": "Not applicable."
-        },
-        {
-          "number": "11.2",
-          "title": "Soil and water",
-          "content": "Not applicable."
+          "content": "SUBSTANCES TO INDOOR AIR, SOIL\n\nAND WATER DURING THE USE\n\nSTAGE\n\nNot applicable."
         },
         {
           "number": "12",
           "title": "DEMONSTRATION OF VERIFICATION",
-          "content": "EN 15804+A2 serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\nInternal ☐ External ☒\n\nThird party verifier:\nVinçotte nv\nRamses Sterckx\nJan Olieslagerslaan 35 1800 Vilvoorde\nrsterckx@vincotte.be"
+          "content": "Not applicable.\n\nEN 15804+A2 serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\n\nInternal☐ External☒\n\nThird party verifier:\n\nVinçotte nv\n\nRamses Sterckx\n\nJan Olieslagerslaan 35 1800 Vilvoorde\n\nrsterckx@vincotte.be"
+        },
+        {
+          "number": "14",
+          "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+          "content": "13 APPLICATION UNIT\n\nThis table gives information on the applied product. The table gives information on the length, width and height.\n\nProduct group Length Width Height\n\nCarbstone Kimblok 29 cm 9 – 19 CM 22 cm\n\nFor more information please check the Additional rules complimentary toB-EPD PCR v18.10.2022onwww.b-epd.be\n\nSimplicity of Speed of Ease of handlingRobustness of material (material\n\nDescription Type of fixing Level of reversibility\n\ndisassembly disassembly (size and weight)resistance to disassembly)\n\nStones joint Specific glue Non reversible Easy to manipulate\n\ntogether to form an connections by hand : one\n\ninternal wall worker should be\n\nsufficient"
         }
       ]
     }

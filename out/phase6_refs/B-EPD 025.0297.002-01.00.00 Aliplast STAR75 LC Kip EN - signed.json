@@ -1,0 +1,20 @@
+{
+  "bibliography": [],
+  "additional_information": [
+    "15 ADDITIONAL INFORMATION ON REVERSIBILITY\n\nDescription: Outer or inner wall of a residential or commercial building\nType of fixing: Steel wall anchors for mechanical fixing\nLevel of reversibility: Reversible connections with light repairable damage\nSimplicity of disassembly: Simple – requires the use of specific though common tools\nSpeed of disassembly: Speed of disassembly varies from quick to slow depending on element dimensions\nEase of handling (size and weight): Easy to manipulate (by hand (small size and limited weight): one worker should be sufficient\nRobustness of material (material resistance to disassembly): The material resists well during disassembly"
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 025.0297.002-01.00.00 Aliplast STAR75 LC Kip EN - signed.pdf",
+    "pdf_sha256": "4f62158c52c59848d61364bd4f9d594d412bfce6e3ea39aef460c22472efbf41",
+    "api_pages": "25",
+    "api_pages_resolved": "25",
+    "api_pdf_bytes": 18358,
+    "api_pdf_sha256": "844056fcf7546b6c77dff22a9640a356b184885e5ea12885964458ae0d27220e",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.0297.002-01.00.00 Aliplast STAR75 LC Kip EN - signed.p25.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:49:24.181Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 2743,
+    "output_tokens": 212
+  }
+}

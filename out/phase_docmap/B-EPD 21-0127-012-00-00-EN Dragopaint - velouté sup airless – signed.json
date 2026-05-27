@@ -411,11 +411,11 @@
     }
   ],
   "_source": {
-    "pdf_path": "/Users/warddem/dev/EPDagent/data/EPD/B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.pdf",
+    "pdf_path": "/Users/warddem/dev/EPDagent/data/EPD/B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.pdf",
     "pdf_sha256": "652da07295d0a6313acb20af893985679cd92a7c3baa0635c289f60aaeb96b32",
     "page_spec_source": "default",
     "extracted_by": "pdf-heading-scan",
-    "extracted_at": "2026-05-26T20:33:40.059Z",
+    "extracted_at": "2026-05-27T15:58:16.585Z",
     "entry_count": 33,
     "tree_node_count": 33
   }

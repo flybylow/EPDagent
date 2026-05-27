@@ -1,0 +1,18 @@
+{
+  "section_title": null,
+  "scenarios": [],
+  "_source": {
+    "pdf_filename": "B-EPD 023.0221.004-01.00.00 Holcim CEM VA (S-V) 425 N-LH HSR bulk “ECOPlanet” EN - signed.pdf",
+    "pdf_sha256": "c49ea64d7f7cd1394aec643bcae3e3735a785d81662aaaf16253bba6a5106a70",
+    "api_pages": "16-19",
+    "api_pages_resolved": "16,17,18,19",
+    "api_pdf_bytes": 92692,
+    "api_pdf_sha256": "d3863973767bb1aecb45caa105c4638b3ed5c73ea5129189e46699dc81aa82c9",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 023.0221.004-01.00.00 Holcim CEM VA (S-V) 425 N-LH HSR bulk “ECOPlanet” EN - signed.p16-p17-p18-p19.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T17:58:24.549Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 10016,
+    "output_tokens": 52
+  }
+}

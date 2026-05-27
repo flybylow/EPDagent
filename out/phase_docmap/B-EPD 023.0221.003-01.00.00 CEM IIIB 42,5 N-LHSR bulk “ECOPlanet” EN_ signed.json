@@ -123,8 +123,44 @@
         },
         {
           "number": "3.9",
-          "title": "Additional or deviating characterisation factors 3.10Description of the variability................................................................................................................11 3.11Specificity................................................................................................................................................12 3.12Period of data collection.......................................................................................................................12 3.13Information on data collection............................................................................................................12 3.14Database used for background data..................................................................................................12 3.15Energy mix...............................................................................................................................................12",
+          "title": "Additional or deviating characterisation factors",
           "page": 11,
+          "level": 2
+        },
+        {
+          "number": "3.10",
+          "title": "Description of the variability",
+          "page": 11,
+          "level": 2
+        },
+        {
+          "number": "3.11",
+          "title": "Specificity",
+          "page": 12,
+          "level": 2
+        },
+        {
+          "number": "3.12",
+          "title": "Period of data collection",
+          "page": 12,
+          "level": 2
+        },
+        {
+          "number": "3.13",
+          "title": "Information on data collection",
+          "page": 12,
+          "level": 2
+        },
+        {
+          "number": "3.14",
+          "title": "Database used for background data",
+          "page": 12,
+          "level": 2
+        },
+        {
+          "number": "3.15",
+          "title": "Energy mix",
+          "page": 12,
           "level": 2
         }
       ]
@@ -175,9 +211,71 @@
     },
     {
       "number": "10",
-      "title": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS 10.1A1-raw material supply.......................................................................................................................21 10.2A2–transport to the manufacturer...................................................................................................21 10.3manufacturing........................................................................................................................................21 10.4A4–transport to the building site......................................................................................................21 10.5A5–installation in the building...........................................................................................................22 10.6B–use stage (excluding potential savings).....................................................................................22 10.7C: End of life............................................................................................................................................22 10.8D–Benefits and loads beyond the system boundaries.................................................................22 STAGe 23 11.1Indoor air.................................................................................................................................................23 11.2Soil and water.........................................................................................................................................23",
+      "title": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
       "page": 21,
-      "level": 1
+      "level": 1,
+      "children": [
+        {
+          "number": "10.1",
+          "title": "A1-raw material supply",
+          "page": 21,
+          "level": 2
+        },
+        {
+          "number": "10.2",
+          "title": "A2–transport to the manufacturer",
+          "page": 21,
+          "level": 2
+        },
+        {
+          "number": "10.3",
+          "title": "manufacturing",
+          "page": 21,
+          "level": 2
+        },
+        {
+          "number": "10.4",
+          "title": "A4–transport to the building site",
+          "page": 21,
+          "level": 2
+        },
+        {
+          "number": "10.5",
+          "title": "A5–installation in the building",
+          "page": 22,
+          "level": 2
+        },
+        {
+          "number": "10.6",
+          "title": "B–use stage (excluding potential savings)",
+          "page": 22,
+          "level": 2
+        },
+        {
+          "number": "10.7",
+          "title": "C: End of life",
+          "page": 22,
+          "level": 2
+        },
+        {
+          "number": "10.8",
+          "title": "D–Benefits and loads beyond the system boundaries 11 RELEASE OF DANGEROUS SUBSTANCES TO INDOOR AIR, SOIL AND WATER DURING THE USE",
+          "page": 22,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "number": "11.1",
+      "title": "Indoor air",
+      "page": 23,
+      "level": 2
+    },
+    {
+      "number": "11.2",
+      "title": "Soil and water",
+      "page": 23,
+      "level": 2
     },
     {
       "number": "12",
@@ -333,8 +431,44 @@
     },
     {
       "number": "3.9",
-      "title": "Additional or deviating characterisation factors 3.10Description of the variability................................................................................................................11 3.11Specificity................................................................................................................................................12 3.12Period of data collection.......................................................................................................................12 3.13Information on data collection............................................................................................................12 3.14Database used for background data..................................................................................................12 3.15Energy mix...............................................................................................................................................12",
+      "title": "Additional or deviating characterisation factors",
       "page": 11,
+      "level": 2
+    },
+    {
+      "number": "3.10",
+      "title": "Description of the variability",
+      "page": 11,
+      "level": 2
+    },
+    {
+      "number": "3.11",
+      "title": "Specificity",
+      "page": 12,
+      "level": 2
+    },
+    {
+      "number": "3.12",
+      "title": "Period of data collection",
+      "page": 12,
+      "level": 2
+    },
+    {
+      "number": "3.13",
+      "title": "Information on data collection",
+      "page": 12,
+      "level": 2
+    },
+    {
+      "number": "3.14",
+      "title": "Database used for background data",
+      "page": 12,
+      "level": 2
+    },
+    {
+      "number": "3.15",
+      "title": "Energy mix",
+      "page": 12,
       "level": 2
     },
     {
@@ -381,9 +515,69 @@
     },
     {
       "number": "10",
-      "title": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS 10.1A1-raw material supply.......................................................................................................................21 10.2A2–transport to the manufacturer...................................................................................................21 10.3manufacturing........................................................................................................................................21 10.4A4–transport to the building site......................................................................................................21 10.5A5–installation in the building...........................................................................................................22 10.6B–use stage (excluding potential savings).....................................................................................22 10.7C: End of life............................................................................................................................................22 10.8D–Benefits and loads beyond the system boundaries.................................................................22 STAGe 23 11.1Indoor air.................................................................................................................................................23 11.2Soil and water.........................................................................................................................................23",
+      "title": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
       "page": 21,
       "level": 1
+    },
+    {
+      "number": "10.1",
+      "title": "A1-raw material supply",
+      "page": 21,
+      "level": 2
+    },
+    {
+      "number": "10.2",
+      "title": "A2–transport to the manufacturer",
+      "page": 21,
+      "level": 2
+    },
+    {
+      "number": "10.3",
+      "title": "manufacturing",
+      "page": 21,
+      "level": 2
+    },
+    {
+      "number": "10.4",
+      "title": "A4–transport to the building site",
+      "page": 21,
+      "level": 2
+    },
+    {
+      "number": "10.5",
+      "title": "A5–installation in the building",
+      "page": 22,
+      "level": 2
+    },
+    {
+      "number": "10.6",
+      "title": "B–use stage (excluding potential savings)",
+      "page": 22,
+      "level": 2
+    },
+    {
+      "number": "10.7",
+      "title": "C: End of life",
+      "page": 22,
+      "level": 2
+    },
+    {
+      "number": "10.8",
+      "title": "D–Benefits and loads beyond the system boundaries 11 RELEASE OF DANGEROUS SUBSTANCES TO INDOOR AIR, SOIL AND WATER DURING THE USE",
+      "page": 22,
+      "level": 2
+    },
+    {
+      "number": "11.1",
+      "title": "Indoor air",
+      "page": 23,
+      "level": 2
+    },
+    {
+      "number": "11.2",
+      "title": "Soil and water",
+      "page": 23,
+      "level": 2
     },
     {
       "number": "12",
@@ -427,8 +621,8 @@
     "pdf_sha256": "55bf1c8885461ad261acc495b542a6dd2e3a94f3795d822ed050355f1e8487de",
     "page_spec_source": "scan",
     "extracted_by": "pdf-text-toc-parser",
-    "extracted_at": "2026-05-26T17:38:49.199Z",
-    "entry_count": 34,
-    "tree_node_count": 34
+    "extracted_at": "2026-05-27T15:58:14.549Z",
+    "entry_count": 50,
+    "tree_node_count": 50
   }
 }

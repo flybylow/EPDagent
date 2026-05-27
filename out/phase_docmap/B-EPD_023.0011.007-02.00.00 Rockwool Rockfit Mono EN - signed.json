@@ -69,13 +69,13 @@
     },
     {
       "number": "3",
-      "title": "LCA - study",
+      "title": "LCA-study",
       "page": 9,
       "level": 1,
       "children": [
         {
           "number": "3.1",
-          "title": "Date of LCA - study",
+          "title": "Date of LCA-study",
           "page": 9,
           "level": 2
         },
@@ -117,7 +117,7 @@
         },
         {
           "number": "3.8",
-          "title": "Additional or deviating characterisation factors",
+          "title": "Additional ordeviating characterisation factors",
           "page": 10,
           "level": 2
         },
@@ -205,19 +205,19 @@
     },
     {
       "number": "10",
-      "title": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
+      "title": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS 2|30B-EPD[ProductName]",
       "page": 19,
       "level": 1,
       "children": [
         {
           "number": "10.1",
-          "title": "A1 - raw material supply",
+          "title": "A1-raw material supply",
           "page": 19,
           "level": 2
         },
         {
           "number": "10.2",
-          "title": "A2 – transport to the manufacturer",
+          "title": "A2–transport to the manufacturer",
           "page": 19,
           "level": 2
         },
@@ -229,19 +229,19 @@
         },
         {
           "number": "10.4",
-          "title": "A4 – transport to the building site",
+          "title": "A4–transport to the building site",
           "page": 19,
           "level": 2
         },
         {
           "number": "10.5",
-          "title": "A5 – installation in the building",
+          "title": "A5–installation in the building",
           "page": 20,
           "level": 2
         },
         {
           "number": "10.6",
-          "title": "B – use stage (excluding potential savings)",
+          "title": "B–use stage (excluding potential savings)",
           "page": 21,
           "level": 2
         },
@@ -253,7 +253,7 @@
         },
         {
           "number": "10.8",
-          "title": "D – Benefits and loads beyond the system boundaries . STAGe 23",
+          "title": "D–Benefits and loads beyond the system boundaries 11 RELEASE OF DANGEROUS SUBSTANCES TO INDOOR AIR, SOIL AND WATER DURING THE USE",
           "page": 22,
           "level": 2
         }
@@ -291,7 +291,7 @@
     },
     {
       "number": "15",
-      "title": "BIBLIOGRAPHY",
+      "title": "BIBLIOGRAPHY 3|30B-EPD[ProductName]",
       "page": 27,
       "level": 1
     }
@@ -359,13 +359,13 @@
     },
     {
       "number": "3",
-      "title": "LCA - study",
+      "title": "LCA-study",
       "page": 9,
       "level": 1
     },
     {
       "number": "3.1",
-      "title": "Date of LCA - study",
+      "title": "Date of LCA-study",
       "page": 9,
       "level": 2
     },
@@ -407,7 +407,7 @@
     },
     {
       "number": "3.8",
-      "title": "Additional or deviating characterisation factors",
+      "title": "Additional ordeviating characterisation factors",
       "page": 10,
       "level": 2
     },
@@ -491,19 +491,19 @@
     },
     {
       "number": "10",
-      "title": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
+      "title": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS 2|30B-EPD[ProductName]",
       "page": 19,
       "level": 1
     },
     {
       "number": "10.1",
-      "title": "A1 - raw material supply",
+      "title": "A1-raw material supply",
       "page": 19,
       "level": 2
     },
     {
       "number": "10.2",
-      "title": "A2 – transport to the manufacturer",
+      "title": "A2–transport to the manufacturer",
       "page": 19,
       "level": 2
     },
@@ -515,19 +515,19 @@
     },
     {
       "number": "10.4",
-      "title": "A4 – transport to the building site",
+      "title": "A4–transport to the building site",
       "page": 19,
       "level": 2
     },
     {
       "number": "10.5",
-      "title": "A5 – installation in the building",
+      "title": "A5–installation in the building",
       "page": 20,
       "level": 2
     },
     {
       "number": "10.6",
-      "title": "B – use stage (excluding potential savings)",
+      "title": "B–use stage (excluding potential savings)",
       "page": 21,
       "level": 2
     },
@@ -539,7 +539,7 @@
     },
     {
       "number": "10.8",
-      "title": "D – Benefits and loads beyond the system boundaries . STAGe 23",
+      "title": "D–Benefits and loads beyond the system boundaries 11 RELEASE OF DANGEROUS SUBSTANCES TO INDOOR AIR, SOIL AND WATER DURING THE USE",
       "page": 22,
       "level": 2
     },
@@ -575,7 +575,7 @@
     },
     {
       "number": "15",
-      "title": "BIBLIOGRAPHY",
+      "title": "BIBLIOGRAPHY 3|30B-EPD[ProductName]",
       "page": 27,
       "level": 1
     }
@@ -585,7 +585,7 @@
     "pdf_sha256": "1dcb3791d8f8ef2b1f3401323db334c05be0e3b8fae30c73fea242cad12aabdb",
     "page_spec_source": "manifest",
     "extracted_by": "pdf-text-toc-parser",
-    "extracted_at": "2026-05-26T10:56:01.883Z",
+    "extracted_at": "2026-05-27T15:58:18.192Z",
     "entry_count": 47,
     "tree_node_count": 47
   }

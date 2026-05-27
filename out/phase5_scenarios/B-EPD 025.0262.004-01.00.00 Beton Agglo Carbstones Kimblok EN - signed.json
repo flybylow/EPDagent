@@ -1,0 +1,67 @@
+{
+  "section_title": "10 DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
+  "scenarios": [
+    {
+      "module": "A1",
+      "number": "10.1",
+      "title": "A1 - raw material supply",
+      "description": "This module takes into account the extraction and processing of all raw materials and energy which occur upstream to the studied manufacturing process. These are materials of Orbix, water, glue, packaging materials, liquid CO2 and expanded clay pellets. An EPD of the expanded clay pellets is used, and primary data of the production process at Orbix has been used to model the materials."
+    },
+    {
+      "module": "A2",
+      "number": "10.2",
+      "title": "A2 – transport to the manufacturer",
+      "description": "The raw materials are transported to the manufacturing site."
+    },
+    {
+      "module": "A3",
+      "number": "10.3",
+      "title": "A3 – manufacturing",
+      "description": "This module takes into account the production process.\n\nAt Betonagglomeraten Gubbels, Orbix raw materials and Argex expanded clay pellets are mixed and pressed as a mixture in a block form on a vibrating press. Next, this pressed mix goes to a climate chamber, here the liquid CO2 is injected into the process. It is measured how much CO2 enters the chamber and how much is absorbed by the stones through carbonation and calcium carbonate is created. After this, the stones are polished if necessary. Finally, they go to a stacking/packing machine, which sorts the Carbstones for storage and transport to customers.\n\nThe energy input in the manufacturing is electricity from photovoltaic panels."
+    },
+    {
+      "module": "A4",
+      "number": "10.4",
+      "title": "A4 – transport to the building site",
+      "description": "Fuel type and consumption of vehicle or vehicle type used for transport: Truck 16-32 ton, 0,256 l diesel / km\nDistance: 75 km\nCapacity utilisation (including empty returns): 50%\nBulk density of transported products: Ecoinvent\nVolume capacity utilisation factor: Ecoinvent\n\nBetonagglomeraten Gubbels NV had reported that deliveries are made to several locations to distributors. The average distance to the middlemen is 40 km.\n\nThere is also flat rate that should be used in the absence of specific data, which is the case here. This distance from the distributor to the construction site is 35 km.\n\nThe following transport steps apply:\n– 100% is transported over 40 km from supplier to distributors with a 16-32 ton lorry (ecoinvent record: 'Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, U')\n– 100% is transported over 35 km from distributor to construction site with a 16-32 ton lorry (ecoinvent record: 'Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, U')"
+    },
+    {
+      "module": "A5",
+      "number": "10.5",
+      "title": "A5 – installation in the building",
+      "description": "At the construction site, packaging materials are released. Also 3% material losses have been taken into account of the Carbstone and 15% of the glue.\n\nThe Carbstone has a similar function to concrete, therefore it was also chosen to follow this waste scenario. This means 99% recycling and 1% landfill. This differs from the concrete waste scenario prescribed by B-EPD, the OVAM prescribes (based on Article 4.3.2 Vlarema) that construction rubble must be completely separated and recycled. As it is difficult in practice to recycle all construction rubble 100%, a conservative approach of 1% landfill has been assumed. Since the glue is not collected and processed separately, it follows the same waste scenario as the Carbstone.\n\nParts of the installation quantity Description\nMaterial losses – Carbstone: 3% - THE QUANTITY OF MATERIAL LOST DUE TO CUTTING IT IN THE RIGHT SHAPE\nMaterial losses – glue: 15% - THE QUANTITY OF MATERIAL LOST DUE TO CUTTING IT IN THE RIGHT SHAPE\nPackaging – Wooden Pallet: 0,1 – 0,3 kg - THE PACKAGING WASTE AT THE CONSTRUCTION SITE\nPackaging – PET straps: < 0,1 kg - THE PACKAGING WASTE AT THE CONSTRUCTION SITE"
+    },
+    {
+      "module": "B",
+      "number": "10.6",
+      "title": "B – use stage (excluding potential savings)",
+      "description": "In the use phase, carbonation also takes place over the years. This is because there are still CaOH present that will eventually react with CO2 from the ambient air, this is converted to calcium carbonates. The carbonation of the blocks in the use phase is 1,87%."
+    },
+    {
+      "module": "C",
+      "number": "10.7",
+      "title": "C – end of life",
+      "description": "The Carbstone has a similar function to concrete, therefore it was also chosen to follow this waste scenario. This means 99% recycling and 1% landfill. This differs from the concrete waste scenario prescribed by B-EPD, the OVAM prescribes (based on Article 4.3.2 Vlarema) that construction rubble must be completely separated and recycled. As it is difficult in practice to recycle all construction rubble 100%, a conservative approach of 1% landfill has been assumed.\n\nThe adhesive follows the scenario finishing layers stuck to stony waste. It is assumed that the glue follows the same scenario, they are also not separated so therefore follow the same processes.\n\nModule C2 – Transport to waste processing\nRecycling: Truck 16-32 ton, 0,256 l diesel/km, Distance 130 km, Capacity utilisation 50%, Density of products: Ecoinvent scenario, Assumptions: Ecoinvent scenario\nLandfill: Truck 16-32 ton, 0,256 l diesel/km, Distance 80 km, Capacity utilisation 50%, Density of products: Ecoinvent scenario, Assumptions: Ecoinvent scenario\n\nEnd-of-life modules – C3 and C4\nWastes collected separately: -\nWastes collected as mixed construction waste: -\nWaste for re-use: -\nWaste for recycling: 99%\nWaste for energy recovery: -\nWaste for final disposal: 1%"
+    },
+    {
+      "module": "D",
+      "number": "10.8",
+      "title": "D – benefits and loads beyond the system boundaries",
+      "description": "QUANTITATIVE DESCRIPTION OF THE LOADS BEYOND THE SYSTEM BOUNDARIES: No loads\n\nQUANTITATIVE DESCRIPTION OF THE BENEFITS BEYOND THE SYSTEM BOUNDARIES: Avoided production of stone granulates."
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 025.0262.004-01.00.00 Beton Agglo Carbstones Kimblok EN - signed.pdf",
+    "pdf_sha256": "bf8437a84b87484607fc2b36353bf7d82115eed369c2d0cb746ff34dde2db5b1",
+    "api_pages": "17-19",
+    "api_pages_resolved": "17,18,19",
+    "api_pdf_bytes": 621768,
+    "api_pdf_sha256": "f52232e463332cd24972da16f42aeca71111ed32cf6732e16930f81b088c9ccc",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.0262.004-01.00.00 Beton Agglo Carbstones Kimblok EN - signed.p17-p18-p19.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:49:57.199Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 7447,
+    "output_tokens": 1832
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "blocks": [
+    {
+      "number": "11.1",
+      "title": "Indoor air",
+      "content": "This product contributes to healthy indoor air quality by being aligned with the airtightness class C5 according toEN 1026\n\nEN12207."
+    },
+    {
+      "number": "11.2",
+      "title": "Soil and water",
+      "content": "This product contributes to healthy indoor air quality by being aligned with the airtightness class C5 according toEN 1026\n\nEN12207.\n\nThis product does not claim any performance in this regard."
+    },
+    {
+      "number": "12",
+      "title": "DEMONSTRATION OF VERIFICATION",
+      "content": "This product does not claim any performance in this regard.\n\nVERIFICATION\n\nEN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\n\nInternal☐ External☒\n\nThird party verifier:\n\nBobRoijen & Agnes Schuurmans\n\nSGS INTRON B.V.,\n\nDr. Nolenslaan 126, 6136 GV Sittard,\n\nNetherlands,\n\ne-mail: bob.roijen@sgs.com"
+    },
+    {
+      "number": "15",
+      "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+      "content": "14 APPLICATION UNIT\n\nThis paragraph gives information on the applied product and how thereference flow and table with impacts relate to different\n\napplications.\n\nSTAR 75 window systems have only 1 application.\n\n2 2\n\nResults presented in this EPD are for 1 mof a window system with the size < 2.3 m.\n\nDifferent dimensions are possible, and window systems are made to measure, depending on the requirements of the\n\ncustomer and limited by the glass supplier.\n\nTocalculate the environmental impact of a window system with a different surface area:\n\n2\n\n- Results must be multiplied by the surface area (in m) of the window system in question.\n\n2\n\nFor example, if window system is 1.5 m, results presented in this EPD have to be multiplied by 1.5.\n\nTheratio between application and the referenceflow in the EPD is, therefore1.\n\nSimplicity of Ease of handling (sizeRobustness of material (material\n\nDescription Type of fixing Level of reversibility Speed of disassembly Comment\n\ndisassembly and weight) resistance to disassembly)\n\nOuter or inner wall of aSteel wall anchors forReversible connectionsSimple–requires the useSpeed of disassemblyEasy to manipulate (byThe material resists well during disassembly\n\nresidential or commercialmechanical fixingwith light repairableof specific thoughvaries from quick to slowhand (small size and\n\nbuilding damage common tools depending on elementlimited weight): one\n\ndimensions worker should be\n\nsufficient"
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 025.0297.004-01.00.00 Aliplast STAR75 Dubbel EN - signed.pdf",
+    "pdf_sha256": "4c73c735316035f8359c687c4955f5ab7730fbd90cec179e9a085f6057722580",
+    "api_pages": "22-26",
+    "api_pages_slice": "22-26",
+    "api_pages_resolved": "22-26",
+    "extracted_by": "pdf-text-parser",
+    "extracted_at": "2026-05-26T20:46:26.468Z",
+    "model": null,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

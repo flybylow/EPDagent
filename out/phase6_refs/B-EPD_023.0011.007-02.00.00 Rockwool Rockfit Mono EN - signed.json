@@ -1,0 +1,28 @@
+{
+  "bibliography": [
+    "ISO 14040:2006: Environmental Management-Life Cycle Assessment-Principles and framework.",
+    "ISO 14044:2006: Environmental Management-Life Cycle Assessment-Requirements and guidelines.",
+    "ISO 14025:2006: Environmental labels and Declarations-Type III Environmental Declarations-Principles and procedures.",
+    "NBN EN 15804+A2:2019",
+    "B-EPD-PCR",
+    "EN13162+A1:2015 Thermal insulation products for buildings. Factory made mineral wool (MW) products. Specification, 4.2.1",
+    "EN12667:2000 Thermal performance of building materials and products - Determination of thermal resistance by means of guarded hot plate and heat flow meter methods - Products of high and medium thermal resistance.",
+    "EN12939:2001 Thermal performance of building materials and products. Determination of thermal resistance by means of guarded hot plate and heat flow meter methods. Thick products of high and medium thermal resistance.",
+    "EN13162+A1:2015 Thermal insulation products for buildings. Factory made mineral wool (MW) products. Specification, 4.3.15"
+  ],
+  "additional_information": null,
+  "_source": {
+    "pdf_filename": "B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed.pdf",
+    "pdf_sha256": "1dcb3791d8f8ef2b1f3401323db334c05be0e3b8fae30c73fea242cad12aabdb",
+    "api_pages": "27",
+    "api_pages_resolved": "27",
+    "api_pdf_bytes": 24801,
+    "api_pdf_sha256": "3d7e6d4de510c9dcc7f62df23af501898ec237c7043b9b8c6617bc10edff706d",
+    "api_pdf_slice": "out/pdf_slices/B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed.p27.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T16:02:51.273Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 2821,
+    "output_tokens": 307
+  }
+}

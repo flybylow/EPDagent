@@ -1,0 +1,15 @@
+{
+  "blocks": [],
+  "_source": {
+    "pdf_filename": "B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.pdf",
+    "pdf_sha256": "652da07295d0a6313acb20af893985679cd92a7c3baa0635c289f60aaeb96b32",
+    "api_pages": "16-18",
+    "api_pages_slice": "16-18",
+    "api_pages_resolved": "16-18",
+    "extracted_by": "pdf-text-parser",
+    "extracted_at": "2026-05-26T20:46:26.556Z",
+    "model": null,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

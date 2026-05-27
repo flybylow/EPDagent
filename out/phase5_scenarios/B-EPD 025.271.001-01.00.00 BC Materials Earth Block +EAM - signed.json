@@ -1,0 +1,49 @@
+{
+  "section_title": "10 DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
+  "scenarios": [
+    {
+      "module": "A1",
+      "number": "10.1",
+      "title": "A1 - raw material supply",
+      "description": "This module considers the extraction and processing of all raw materials and energy which occur upstream to the studied manufacturing process.\n\nTo produce Léém Compressed Earth Blocks, four different raw materials are needed: Cement, Loess loam, Crushed and washed concrete and Rhine sand.\n\nConcerning the Loess loam which are excavated on construction sites, the assumption is that there is no impact to produce these raw materials, considered in the A1 module. Indeed, they are legally considered as waste (of a construction site) the moment they leave the construction site.\n\nFor recycled concrete, only the washing process has been considered, the concrete in itself being a waste from demolition plant. End of life is after crushing.\n\nFor the modelling of Rhine sand, the MRPI-EPD called: \"Zand 0-4, in en nabij Nederland, geproduceerd door Cascade-leden, A1-A3, cat. 2\" has been used. The supplier is a member of Cascade.\n\nAll raw materials are transported in bulk."
+    },
+    {
+      "module": "A2",
+      "number": "10.2",
+      "title": "A2 – transport to the manufacturer",
+      "description": "The raw materials are transported to the manufacturing site.\nTransportation of raw materials is achieved using trucks. Table below shows information about transport of raw materials with the origin, the distance and the database used to model it.\n\nResource | Origin | Distance\nRecycled concrete | Gent, Belgium | 73\nLoess loam | Brussels, Belgium | /\nRhine sand | Germany | 250\nCement | Average distance\n\nFor Loess loam, transportation from the demolition site to BC Materials is not considered. The supplier is an earthmover who excavates from a construction site and delivers directly to BC materials, bypassing a Temporary Storage Centre.\n\nThe type of lorry used is the one recommended by the BE-PCR for bulk materials. Concerning the range EURO, suppliers have confirmed their EURO6 certification for trucks and the Brussels region only allows EURO6 trucks on its territory starting from 1/1/2025."
+    },
+    {
+      "module": "A3",
+      "number": "10.3",
+      "title": "A3 - manufacturing",
+      "description": "This module considers the production process.\n\nThe first step is the premixing of loam, Rhine sand and recycled concrete at BC materials. The wheel loader used for premixing uses diesel. Once the premix achieved, it is loaded into a truck, using the same wheel loader. The truck transports this premix to Claesen site (83 km away) where the premix is stored in a silo and subsequently transferred to the mixer using a hopper where cement is added.\n\nWhen the mix is finished, it goes to a vibrocompaction press to produce the blocks after which the blocks are stored in the curing/drying chamber. After curing/drying, the blocks are palletized by machine and receive a LDPE film for protection. Up until here, all processes at Claesen are electrified. The blocks are subsequently stored by a forklift on diesel. From this storage, blocks are transported to the construction site by Euro 6 truck and are to be installed on site by the contractor.\n\nAll operations are performed using machinery using diesel or electricity. Data are based on data collection with calculated and measured data on site."
+    },
+    {
+      "module": "A4",
+      "number": "10.4",
+      "title": "A4 – transport to the building site",
+      "description": "For the transportation to the construction site, statistics from the sales department are available and used to model the average transport.\n\nTransportation mode is road, and the used database is \"transport, freight, lorry 16-32 metric ton, EURO5 | transport, freight, lorry 16-32 metric ton, EURO6 | Cutoff, U – RER\".\n\nThe average distance has been calculated as 72.5 km. This is a weighted average of all sold of Compressed Earth Block – 140 mm from 1/7/2023 to 30/6/2024.\n\nDuring the transportation step, damage for blocks is estimated with 2% of losses.\n\nThe capacity utilisation including empty returns is the one given by default, as 50%."
+    },
+    {
+      "module": "A5",
+      "number": "10.5",
+      "title": "A5 – installation in the building",
+      "description": "The masonry can be achieved using Léém Earth Adhesive Mortar (2-3mm).\n\nLéém Adhesive Mortar is used to \"glue\" Léém Compressed Earth Blocks in joints of 2-3mm. Proper tools such as Adhesive Mortar Spreader Box/Trowel are available in the Léém Earth Blocks accessories range, or generic adhesive mortar spreading trowels can also be used.\n\nConcerning the installation stage, there are expected losses for blocks of 4%. For Léém Earth Adhesive Mortar, the reversible aspect of the clay binder makes that all construction site remains can be reused, hence no waste during installation, as mentioned in the German PCR for Earth materials.\n\nThe installation stage consists of building the wall using the appropriate mortar, prepared by mixing the product with water.\n\nFor the Leem Earth Adhesive Mortar, around 25% of water should be added, however this water is not counted as it is not used for chemical binding, but rather evaporates back to the natural cycle after a few weeks. (See German Product Category Rules for Earth Mortar PKR_LMM 4.3).\n\nParts of the installation quantity | Description\nProcesses necessary for the installation of the product - electricity | ELECTRICITY NEEDED FOR THE MIXING OF THE PRODUCT WITH WATER\nFixation materials | 25% of EAM, 6.7 kg WATER, EAM\nJointing materials | Not relevant /\nTreatments | Not relevant /\nMaterial losses | 4% LOSSES DUE TO BREAKING OF BLOCKS\nPackaging | PALLET, LDPE FILM, PAPER BAG\n\nThere is no ancillary materials for installation.\n\nConcerning the end-of-life of packaging, default scenarios have been used and are presented in table below.\n\nNature of packaging | Scenario | % | Ecoinvent database\nPaper/cardboard | Incineration | 5 | treatment of waste paperboard, municipal incineration | waste paperboard | Cutoff, U - GLO\nPaper/cardboard | Recycling | 95 | Burdens/benefits out of boundaries\nPallet | Incineration | 40 | treatment of waste wood, untreated, municipal incineration | waste wood, untreated | Cutoff, U - GLO\nPallet | Recycling | 40 | Burdens and benefits out of boundaries (see module D)\nPallet | Reuse | 20 | Benefits out of boundaries\nBig bag/Film | Landfill | 5 | treatment of waste polypropylene, sanitary landfill | waste polypropylene | Cutoff, U - RoW\nBig bag/Film | Incineration | 60 | treatment of waste polypropylene, municipal incineration | waste polypropylene | Cutoff, U - GLO\nBig bag/Film | Recycling | 35 | Burdens and benefits out of boundaries (see module D)\n\nTransportation of waste is also considered according to the default values of BE-PCR:\n• Transportation from the construction site to sorting plant: 30 km\n• Transportation from sorting plant to landfill: 50 km\n• Transportation from sorting facility to incineration plant/energy recovery: 100 km\n\nThe transportation mode is 100% with Lorry 16-32 ton (EURO 5).\n\nThe loads and benefits coming from the paper sack packaging are not considered, assumed to be under the cut off rule due to the low amount of this type of packaging in the average market."
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed.pdf",
+    "pdf_sha256": "423c951eac4a4121b02a3c9fc71a346b8eeae5b97bceec40ec250d6c795e4132",
+    "api_pages": "16-19",
+    "api_pages_resolved": "16,17,18,19",
+    "api_pdf_bytes": 252061,
+    "api_pdf_sha256": "751f1261675f9e785a2dc239a66d1f7fa31aef0db82d627cf4e4319861b271b3",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed.p16-p17-p18-p19.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:02:36.719Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 10874,
+    "output_tokens": 2071
+  }
+}

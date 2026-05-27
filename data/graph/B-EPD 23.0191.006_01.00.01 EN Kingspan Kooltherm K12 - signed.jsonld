@@ -111,6 +111,9 @@
       "producer": {
         "@id": "http://localhost:3000/id/org/bebe357d7ebb"
       },
+      "verifier": {
+        "@id": "http://localhost:3000/id/person/f65746f88cd1"
+      },
       "prov:wasDerivedFrom": {
         "@type": "prov:Entity",
         "schema:name": "B-EPD 23.0191.006_01.00.01 EN Kingspan Kooltherm K12 - signed.pdf"
@@ -119,16 +122,44 @@
       "productSection": {
         "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/product"
       },
+      "lcaStudy": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/lca-study"
+      },
+      "lcaTables": [
+        {
+          "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/lca-table/lca_impacts"
+        },
+        {
+          "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/lca-table/lca_resource"
+        },
+        {
+          "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/lca-table/lca_waste"
+        },
+        {
+          "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/lca-table/lca_additional"
+        }
+      ],
+      "scenarios": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/scenarios"
+      },
+      "epdSections": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/sections"
+      },
       "extractionCoverage": {
         "phase1": true,
         "phase2": true,
         "phase3_product": true,
         "phase3_composition": false,
-        "phase3_lca_study": false,
-        "phase4_lca": [],
-        "phase5_scenarios": false,
+        "phase3_lca_study": true,
+        "phase4_lca": [
+          "lca_impacts",
+          "lca_resource",
+          "lca_waste",
+          "lca_additional"
+        ],
+        "phase5_scenarios": true,
         "phase6_refs": false,
-        "phase7_epd_sections": false
+        "phase7_epd_sections": true
       }
     },
     {
@@ -145,16 +176,3479 @@
       "schema:addressCountry": "NL"
     },
     {
+      "@id": "http://localhost:3000/id/person/f65746f88cd1",
+      "@type": "schema:Person",
+      "schema:name": "Vinçotte nv",
+      "verificationType": "independent_third_party"
+    },
+    {
       "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/product",
       "@type": "ProductSection",
       "description": "The Kingspan Kooltherm® K12 is a premium performance insulation board with a fibre-free rigid thermoset phenolic core, faced on both sides with a perforated aluminium multilayer facing that is autohesively bonded to the insulation core during manufacture.\n\nPhenolic foam is produced by the use of phenolic resin, a catalyst, additives and blowing agent. The cell structure is formed in the resin under the influence of heat released during the chemical reaction. Hereby, the blowing agent is incorporated into the material which forms a solid and very fine cell structure, which is nearly 100% closed.\n\nThis is a specific EPD from a single company, Kingspan insulation BV.",
       "intendedUse": "Kooltherm® K12 is suitable for use as insulation for framing systems.",
+      "installation": "Materials for fixation and installation are not included. Regarding installation this EPD only includes the environmental impact related to the product itself: It also includes the loss of material during construction. The additional needed production, transport and end-of-life of the lost material during construction is included.\n\nThe end-of-life of packaging material up to the end-of-waste state is also included.\n\nFor installing the product following scenario is possible: Mechanical fixing. This may lead to the need of additional products and materials for which the impact is not included in this EPD and which shall be taken into account at building level.\n\nFor questions about installation please contact our Technical Service Department: Techline.be@kingspan.com\n\nIn chapter 15 an overview is given on the qualitative assessment of the reversibility of Kooltherm® K12",
+      "referenceServiceLifeYears": 75,
+      "geographicalRepresentativity": "The EPD is representative for the Belgian market.\nKooltherm® K12 is produced by Kingspan Insulation B.V. at the manufacturing facility in Tiel, the Netherlands.",
+      "productionProcess": "Kingspan Kooltherm® is made through a manufacturing process in which a foam forms an insulating core between two facing elements. At the start of the process a mix of chemicals is added directly to the bottom layer of facing and then expands to meet the top layer of facing. As it dries, the foam becomes tacky and adheres itself to the facing, top and bottom. Once it has reached the necessary thickness the foam is cooked under pressure. It is then moved onto a secondary oven to cure and harden, becoming bright pink in colour. The insulation boards are then cut into the necessary sizes, packaged and sent to the loading bay for collection.",
       "referenceFlow": {
         "@type": "schema:QuantitativeValue",
         "schema:value": 1,
         "schema:unitCode": "m2",
         "description": "1 m2 thermal insulation with a thickness of 80 mm which gives a RD-value of 3,80 m2·K/W."
+      },
+      "technicalProperties": [
+        {
+          "property": "Thickness",
+          "standard": null,
+          "value": "80",
+          "unit": "mm",
+          "comment": null
+        },
+        {
+          "property": "Density",
+          "standard": null,
+          "value": "35",
+          "unit": "kg/m3",
+          "comment": null
+        },
+        {
+          "property": "Thermal conductivity λd acc. to EN 13166",
+          "standard": "EN 13166",
+          "value": "0,021",
+          "unit": "W/(m·K)",
+          "comment": null
+        },
+        {
+          "property": "RD-value",
+          "standard": null,
+          "value": "3,80",
+          "unit": "m2·K/W",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/lca-study",
+      "@type": "LcaStudy",
+      "sectionTitle": "3 LCA-STUDY",
+      "standardsAndMethodology": "The total of neglected input flows per module is less than 5% of energy usage and mass as prescribed by EN15804+A2.",
+      "lcaSoftwareAndDatabase": "For the calculation of the LCA results, the software program SimaPro 9.1.1 has been used. The Ecoinvent v3.6 database (2019) is used for background data",
+      "functionalUnit": "The declared unit in this EPD is 1 m2thermal insulation with a thickness of 80 mm which gives a RD-value of 3,80 m2·K/W. Kingspan Kooltherm® K12 can be produced in all thicknesses between 20 and 200mm (single layer product) and covers a RD range of 0.95 – 9.50. The results in this EPD can be used to recalculate to other thicknesses / RD-values. Where the foam-core is the scalable part and the facer the non-scalable part.",
+      "systemBoundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 11\nDeclared modules (☒): A1, A2, A3, A4, A5, C1, C2, C3, C4, D\nNot declared (☐): B1, B2, B3, B4, B5, B6, B7\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4, A5\nEnd of life stage: C1, C2, C3, C4\nBeyond the system boundaries: D\n\nModule labels (vertical text):\nA1: Raw materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: Construction\nB1: Use\nB2: Maintenance\nB3: Repa\nB4: Replacement\nB5: Refurbishment\nB6: Operational energy use\nB7: Operational water use\nC1: construction\nC2: Transport\nC3: Waste processing\nC4: Disposal\nD: Recovery",
+      "productionSites": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site. Different types of Kooltherm® insulation boards are produced at the production plant in Tiel (NL). Manufacturer specific data for the location Tiel have been collected for the year 2019.",
+      "cutOffCriteria": "The total of neglected input flows per module is less than 5% of energy usage and mass as prescribed by EN15804+A2. Following processes were excluded for the inventory: - Impact of infrastructures - Consumables necessary for the functioning of the process, production, maintenance and end-of-life of equipment - Environmental impacts caused by the personnel of the production plants are not included in the LCA, e.g. waste from the cafeteria and sanitary installations or environmental effects caused by commuter traffic. Heating or cooling of the plants in order to ensure a comfortable indoor climate for the personnel could not be distinguished during the data collection and is therefore included.",
+      "allocation": "Different types of Kooltherm® insulation boards are produced at the production plant in Tiel (NL). For the use of energy there is only data available for the total site. This data has been allocated to Kooltherm® K12 based on physical properties. Production waste was allocated similarly.",
+      "dataQuality": "Company specific data for the product stage have been collected by Kingspan Insulation and were provided to Nibe (R<Think application).",
+      "timeRepresentativeness": "Manufacturer specific data for the location Tiel have been collected for the year 2019.",
+      "geographicalRepresentativeness": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site. Different types of Kooltherm® insulation boards are produced at the production plant in Tiel (NL).",
+      "technologyRepresentativeness": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site.",
+      "impactAssessment": "The characterization factors from EC-JRC were applied. No additional or deviating characterization factors were used.",
+      "additionalParagraphs": [
+        "The total mass of biogenic carbon containing materials is less than 5 % of the total mass of the product and accompanying packaging.",
+        "Carbon offsetting is not allowed in the EN 15804 and hence not taken into account in the calculations.",
+        "All electricity used during production comes from renewable sources. By generating energy on-site with PV panels and with procured energy from fully certified renewable sources (Guarantees of Origin)."
+      ],
+      "subsections": [
+        {
+          "number": "3.1",
+          "title": "Date of LCA-study",
+          "content": "August 2022"
+        },
+        {
+          "number": "3.2",
+          "title": "Software",
+          "content": "For the calculation of the LCA results, the software program SimaPro 9.1.1 has been used."
+        },
+        {
+          "number": "3.3",
+          "title": "Information on allocation",
+          "content": "Different types of Kooltherm® insulation boards are produced at the production plant in Tiel (NL). For the use of energy there is only data available for the total site. This data has been allocated to Kooltherm® K12 based on physical properties. Production waste was allocated similarly."
+        },
+        {
+          "number": "3.4",
+          "title": "Informatie on cut off",
+          "content": "The total of neglected input flows per module is less than 5% of energy usage and mass as prescribed by EN15804+A2."
+        },
+        {
+          "number": "3.5",
+          "title": "Information on excluded processes",
+          "content": "Following processes were excluded for the inventory: - Impact of infrastructures - Consumables necessary for the functioning of the process, production, maintenance and end-of-life of equipment - Environmental impacts caused by the personnel of the production plants are not included in the LCA, e.g. waste from the cafeteria and sanitary installations or environmental effects caused by commuter traffic. Heating or cooling of the plants in order to ensure a comfortable indoor climate for the personnel could not be distinguished during the data collection and is therefore included."
+        },
+        {
+          "number": "3.6",
+          "title": "Information on biogenic carbon modelling",
+          "content": "The total mass of biogenic carbon containing materials is less than 5 % of the total mass of the product and accompanying packaging."
+        },
+        {
+          "number": "3.7",
+          "title": "Information on carbon offsetting",
+          "content": "Carbon offsetting is not allowed in the EN 15804 and hence not taken into account in the calculations."
+        },
+        {
+          "number": "3.8",
+          "title": "Additional or deviating characterization factors",
+          "content": "The characterization factors from EC-JRC were applied. No additional or deviating characterization factors were used."
+        },
+        {
+          "number": "3.9",
+          "title": "Description of the variability",
+          "content": "The declared unit in this EPD is 1 m2 thermal insulation with a thickness of 80 mm which gives a RD-value of 3,80 m2·K/W. Kingspan Kooltherm® K12 can be produced in all thicknesses between 20 and 200mm (single layer product) and covers a RD range of 0.95 – 9.50. The results in this EPD can be used to recalculate to other thicknesses / RD-values. Where the foam-core is the scalable part and the facer the non-scalable part."
+        },
+        {
+          "number": "3.10",
+          "title": "Specificity",
+          "content": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site."
+        },
+        {
+          "number": "3.11",
+          "title": "Period of data collection",
+          "content": "Manufacturer specific data for the location Tiel have been collected for the year 2019."
+        },
+        {
+          "number": "3.12",
+          "title": "Information on data collection",
+          "content": "Company specific data for the product stage have been collected by Kingspan Insulation and were provided to Nibe (R<Think application)."
+        },
+        {
+          "number": "3.13",
+          "title": "Database used for background data",
+          "content": "The Ecoinvent v3.6 database (2019) is used for background data"
+        },
+        {
+          "number": "3.14",
+          "title": "Energy mix",
+          "content": "All electricity used during production comes from renewable sources. By generating energy on-site with PV panels and with procured energy from fully certified renewable sources (Guarantees of Origin)."
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/lca-table/lca_impacts",
+      "@type": "LcaTable",
+      "tableKey": "lca_impacts",
+      "tableTitle": "POTENTIAL ENVIRONMENTAL IMPACTS PER REFERENCE FLOW",
+      "tableType": "impacts",
+      "introductoryText": "Foam core (without multilayer facer)",
+      "columnGroups": [
+        {
+          "label": "Production",
+          "column_codes": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        {
+          "label": "Construction process stage",
+          "column_codes": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "label": "Use stage",
+          "column_codes": [
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7"
+          ]
+        },
+        {
+          "label": "End-of-life stage",
+          "column_codes": [
+            "C1",
+            "C2",
+            "C3",
+            "C4"
+          ]
+        },
+        {
+          "label": null,
+          "column_codes": [
+            "D"
+          ]
+        }
+      ],
+      "columns": [
+        {
+          "code": "A1",
+          "label": "A1 Raw material",
+          "group": "Production"
+        },
+        {
+          "code": "A2",
+          "label": "A2 Transport",
+          "group": "Production"
+        },
+        {
+          "code": "A3",
+          "label": "A3 manufacturing",
+          "group": "Production"
+        },
+        {
+          "code": "A4",
+          "label": "A4 Transport",
+          "group": "Construction process stage"
+        },
+        {
+          "code": "A5",
+          "label": "A5 Installation",
+          "group": "Construction process stage"
+        },
+        {
+          "code": "B1",
+          "label": "B1 Use",
+          "group": "Use stage"
+        },
+        {
+          "code": "B2",
+          "label": "B2 Maintenance",
+          "group": "Use stage"
+        },
+        {
+          "code": "B3",
+          "label": "B3 Repair",
+          "group": "Use stage"
+        },
+        {
+          "code": "B4",
+          "label": "B4 Replacement",
+          "group": "Use stage"
+        },
+        {
+          "code": "B5",
+          "label": "B5 Refurbishment",
+          "group": "Use stage"
+        },
+        {
+          "code": "B6",
+          "label": "B6 Operational energy use",
+          "group": "Use stage"
+        },
+        {
+          "code": "B7",
+          "label": "B7 Operational water use",
+          "group": "Use stage"
+        },
+        {
+          "code": "C1",
+          "label": "C1 Deconstruction / demolition",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C2",
+          "label": "C2 Transport",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C3",
+          "label": "C3 Waste processing",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C4",
+          "label": "C4 Disposal",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "D",
+          "label": "D Reuse, recovery, recycling",
+          "group": null
+        }
+      ],
+      "rows": [
+        {
+          "indicator": "GWP total",
+          "unit": "kg CO2 equiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "4,06E+00"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "1,41E-01"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "1,40E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "7,90E-02"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "3,23E-01"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "5,46E-02"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "5,72E+00"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "1,48E-02"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-1,33E+00"
+            }
+          ]
+        },
+        {
+          "indicator": "GWP fossil",
+          "unit": "kg CO2 equiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "4,04E+00"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "1,41E-01"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "1,40E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "7,89E-02"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "3,22E-01"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "5,45E-02"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "5,72E+00"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "1,48E-02"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-1,32E+00"
+            }
+          ]
+        },
+        {
+          "indicator": "GWP biogenic",
+          "unit": "kg CO2 equiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "9,90E-03"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "2,82E-04"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "-1,96E-03"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "4,21E-05"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,61E-04"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "2,91E-05"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "5,14E-04"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "1,58E-05"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-7,07E-03"
+            }
+          ]
+        },
+        {
+          "indicator": "GWP luluc",
+          "unit": "kg CO2 equiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "1,02E-03"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "9,41E-05"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "2,41E-04"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "2,76E-05"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "3,58E-05"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "1,91E-05"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "1,00E-04"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "4,59E-07"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-1,05E-03"
+            }
+          ]
+        },
+        {
+          "indicator": "ODP",
+          "unit": "kg CFC 11 equiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "2,99E-07"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "2,70E-08"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "1,24E-07"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "1,79E-08"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,15E-08"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "1,24E-08"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "3,96E-08"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "4,32E-10"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-2,11E-07"
+            }
+          ]
+        },
+        {
+          "indicator": "AP",
+          "unit": "mol H+ eq/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "1,49E-02"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "1,46E-03"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "2,81E-03"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "3,22E-04"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "4,66E-04"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "2,23E-04"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "1,50E-03"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "1,09E-05"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-1,68E-03"
+            }
+          ]
+        },
+        {
+          "indicator": "EP - freshwater",
+          "unit": "kg (PO4)3- equiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "6,86E-05"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "2,72E-06"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "1,74E-05"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "6,20E-07"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "2,04E-06"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "4,28E-07"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "3,93E-06"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "1,54E-08"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-1,14E-05"
+            }
+          ]
+        },
+        {
+          "indicator": "EP - marine",
+          "unit": "kg (PO4)3- equiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "2,66E-03"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "4,47E-04"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "5,53E-04"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "9,57E-05"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,04E-04"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "6,61E-05"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "6,22E-04"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "1,92E-05"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-4,23E-04"
+            }
+          ]
+        },
+        {
+          "indicator": "EP - terrestrial",
+          "unit": "kg (PO4)3- equiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "3,29E-02"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "4,95E-03"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "6,30E-03"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "1,06E-03"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,21E-03"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "7,31E-04"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "6,74E-03"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "4,39E-05"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-4,90E-03"
+            }
+          ]
+        },
+        {
+          "indicator": "POCP",
+          "unit": "kg Ethene equiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "1,25E-02"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "1,35E-03"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "2,47E-03"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "3,24E-04"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "4,16E-04"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "2,24E-04"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "1,72E-03"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "1,56E-05"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-1,53E-03"
+            }
+          ]
+        },
+        {
+          "indicator": "ADP Elements",
+          "unit": "kg Sb equiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "2,99E-05"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "2,46E-06"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "9,69E-06"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "2,14E-06"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,03E-06"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "1,48E-06"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "1,57E-06"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "1,07E-08"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-1,28E-06"
+            }
+          ]
+        },
+        {
+          "indicator": "ADP fossil fuels",
+          "unit": "MJ/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "1,30E+02"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "2,06E+00"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "2,28E+01"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "1,19E+00"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "3,26E+00"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "8,22E-01"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "1,18E+00"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "3,33E-02"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-3,23E+01"
+            }
+          ]
+        },
+        {
+          "indicator": "WDP",
+          "unit": "m³ water eq deprived /FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "1,92E+00"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "1,03E-02"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "2,95E-01"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "3,31E-03"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "4,83E-02"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "2,29E-03"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "6,88E-02"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "1,65E-04"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-2,08E-01"
+            }
+          ]
+        }
+      ],
+      "capture": {
+        "headers_rotated": true,
+        "column_count": 17,
+        "row_count": 13,
+        "complete": true,
+        "notes": "All columns (A1-A5, B1-B7, C1-C4, D) and all 13 impact indicator rows captured. Headers are rotated 90 degrees. MND indicates Module Not Declared for B-stage modules."
       }
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/lca-table/lca_resource",
+      "@type": "LcaTable",
+      "tableKey": "lca_resource",
+      "tableTitle": "RESOURCE USE",
+      "tableType": "resource_use",
+      "columnGroups": [
+        {
+          "label": "Production",
+          "column_codes": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        {
+          "label": "Construction process stage",
+          "column_codes": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "label": "Use stage",
+          "column_codes": [
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7"
+          ]
+        },
+        {
+          "label": "End-of-life stage",
+          "column_codes": [
+            "C1",
+            "C2",
+            "C3",
+            "C4"
+          ]
+        },
+        {
+          "label": null,
+          "column_codes": [
+            "D"
+          ]
+        }
+      ],
+      "columns": [
+        {
+          "code": "A1",
+          "label": "A1 Raw material",
+          "group": "Production"
+        },
+        {
+          "code": "A2",
+          "label": "A2 Transport",
+          "group": "Production"
+        },
+        {
+          "code": "A3",
+          "label": "A3 manufacturing",
+          "group": "Production"
+        },
+        {
+          "code": "A4",
+          "label": "A4 Transport",
+          "group": "Construction process stage"
+        },
+        {
+          "code": "A5",
+          "label": "A5 Installation",
+          "group": "Construction process stage"
+        },
+        {
+          "code": "B1",
+          "label": "B1 Use",
+          "group": "Use stage"
+        },
+        {
+          "code": "B2",
+          "label": "B2 Maintenance",
+          "group": "Use stage"
+        },
+        {
+          "code": "B3",
+          "label": "B3 Repair",
+          "group": "Use stage"
+        },
+        {
+          "code": "B4",
+          "label": "B4 Replacement",
+          "group": "Use stage"
+        },
+        {
+          "code": "B5",
+          "label": "B5 Refurbishment",
+          "group": "Use stage"
+        },
+        {
+          "code": "B6",
+          "label": "B6 Operational energy use",
+          "group": "Use stage"
+        },
+        {
+          "code": "B7",
+          "label": "B7 Operational water use",
+          "group": "Use stage"
+        },
+        {
+          "code": "C1",
+          "label": "C1 Deconstruction / demolition",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C2",
+          "label": "C2 Transport",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C3",
+          "label": "C3 Waste processing",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C4",
+          "label": "C4 Disposal",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "D",
+          "label": "D Reuse, recovery, recycling",
+          "group": null
+        }
+      ],
+      "rows": [
+        {
+          "indicator": "PERE",
+          "unit": "MJ/FU, net calorific value",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "1,97E+00"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "7,21E-02"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "6,52E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "1,68E-02"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,77E-01"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "1,16E-02"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "3,12E-02"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "1,41E-03"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-1,55E+00"
+            }
+          ]
+        },
+        {
+          "indicator": "PERM",
+          "unit": "MJ/FU, net calorific value",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "0,00E+00"
+            }
+          ]
+        },
+        {
+          "indicator": "PERT",
+          "unit": "MJ/FU, net calorific value",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "1,97E+00"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "7,21E-02"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "6,53E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "1,68E-02"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,80E-01"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "1,16E-02"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "1,06E-01"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "1,68E-03"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-1,55E+00"
+            }
+          ]
+        },
+        {
+          "indicator": "PENRE",
+          "unit": "MJ/FU, net calorific value",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "1,35E+02"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "2,19E+00"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "2,22E+01"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "1,26E+00"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "3,44E+00"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "8,73E-01"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "3,21E+00"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "1,20E-01"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-3,36E+01"
+            }
+          ]
+        },
+        {
+          "indicator": "PENRM",
+          "unit": "MJ/FU, net calorific value",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "6,10E+01"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "5,01E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,32E+00"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-7,51E-01"
+            }
+          ]
+        },
+        {
+          "indicator": "PENRT",
+          "unit": "MJ/FU, net calorific value",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "1,96E+02"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "2,19E+00"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "2,72E+01"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "1,26E+00"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "4,69E+00"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "8,73E-01"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "1,25E+00"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "3,53E-02"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-3,43E+01"
+            }
+          ]
+        },
+        {
+          "indicator": "SM",
+          "unit": "kg/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "0,00E+00"
+            }
+          ]
+        },
+        {
+          "indicator": "RSF",
+          "unit": "MJ/FU, net calorific value",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "0,00E+00"
+            }
+          ]
+        },
+        {
+          "indicator": "NRSF",
+          "unit": "MJ/FU, net calorific value",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "0,00E+00"
+            }
+          ]
+        },
+        {
+          "indicator": "FW",
+          "unit": "m³ water eq/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "7,78E-01"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "4,59E-04"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "3,69E-02"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "1,25E-04"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,64E-02"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "8,66E-05"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "2,80E-03"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "3,76E-05"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-5,92E-03"
+            }
+          ]
+        }
+      ],
+      "capture": {
+        "headers_rotated": true,
+        "column_count": 17,
+        "row_count": 10,
+        "complete": true,
+        "notes": "All columns and rows from the RESOURCE USE table on page 14 have been captured. The product described is 'Foam core (without multilayer facer)'. B-stage modules (B1-B7) are marked as MND (Module Not Declared)."
+      }
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/lca-table/lca_waste",
+      "@type": "LcaTable",
+      "tableKey": "lca_waste",
+      "tableTitle": "WASTE CATEGORIES & OUTPUT FLOWS",
+      "tableType": "waste",
+      "columnGroups": [
+        {
+          "label": "Production",
+          "column_codes": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        {
+          "label": "Construction process stage",
+          "column_codes": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "label": "Use stage",
+          "column_codes": [
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7"
+          ]
+        },
+        {
+          "label": "End-of-life stage",
+          "column_codes": [
+            "C1",
+            "C2",
+            "C3",
+            "C4"
+          ]
+        },
+        {
+          "label": null,
+          "column_codes": [
+            "D"
+          ]
+        }
+      ],
+      "columns": [
+        {
+          "code": "A1",
+          "label": "A1 Raw material",
+          "group": "Production"
+        },
+        {
+          "code": "A2",
+          "label": "A2 Transport",
+          "group": "Production"
+        },
+        {
+          "code": "A3",
+          "label": "A3 manufacturing",
+          "group": "Production"
+        },
+        {
+          "code": "A4",
+          "label": "A4 Transport",
+          "group": "Construction process stage"
+        },
+        {
+          "code": "A5",
+          "label": "A5 Installation",
+          "group": "Construction process stage"
+        },
+        {
+          "code": "B1",
+          "label": "B1 Use",
+          "group": "Use stage"
+        },
+        {
+          "code": "B2",
+          "label": "B2 Maintenance",
+          "group": "Use stage"
+        },
+        {
+          "code": "B3",
+          "label": "B3 Repair",
+          "group": "Use stage"
+        },
+        {
+          "code": "B4",
+          "label": "B4 Replacement",
+          "group": "Use stage"
+        },
+        {
+          "code": "B5",
+          "label": "B5 Refurbishment",
+          "group": "Use stage"
+        },
+        {
+          "code": "B6",
+          "label": "B6 Operational energy use",
+          "group": "Use stage"
+        },
+        {
+          "code": "B7",
+          "label": "B7 Operational water use",
+          "group": "Use stage"
+        },
+        {
+          "code": "C1",
+          "label": "C1 Deconstruction / demolition",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C2",
+          "label": "C2 Transport",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C3",
+          "label": "C3 Waste processing",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C4",
+          "label": "C4 Disposal",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "D",
+          "label": "D Reuse, recovery, recycling",
+          "group": null
+        }
+      ],
+      "rows": [
+        {
+          "indicator": "Hazardous waste disposed",
+          "unit": "kg/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "3,79E-05"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "4,44E-06"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "2,83E-05"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "3,12E-06"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,77E-06"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "2,16E-06"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "4,20E-06"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "4,04E-08"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-2,35E-05"
+            }
+          ]
+        },
+        {
+          "indicator": "Non-hazardous waste disposed",
+          "unit": "kg/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "2,65E-01"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "8,32E-02"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "8,82E-02"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "5,69E-02"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "2,16E-02"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "3,93E-02"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "4,95E-02"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "1,28E-01"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-3,30E-02"
+            }
+          ]
+        },
+        {
+          "indicator": "Radioactive waste disposed",
+          "unit": "kg/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "5,51E-05"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "1,34E-05"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "1,24E-05"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "8,11E-06"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "2,39E-06"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "5,61E-06"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "4,33E-06"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "2,29E-07"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-1,76E-04"
+            }
+          ]
+        },
+        {
+          "indicator": "Components for re-use",
+          "unit": "kg/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "0,00E+00"
+            }
+          ]
+        },
+        {
+          "indicator": "Materials for recycling",
+          "unit": "kg/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,80E-02"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "0,00E+00"
+            }
+          ]
+        },
+        {
+          "indicator": "Materials for energy recovery",
+          "unit": "kg/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "0,00E+00"
+            }
+          ]
+        },
+        {
+          "indicator": "Exported energy",
+          "unit": "MJ/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "-6,95E-01"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-1,82E+01"
+            }
+          ]
+        }
+      ],
+      "capture": {
+        "headers_rotated": true,
+        "column_count": 17,
+        "row_count": 7,
+        "complete": true,
+        "notes": "All columns and rows visible on page 16 have been captured. The table shows waste categories and output flows for foam core (without multilayer facer). MND indicates Module Not Declared."
+      }
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/lca-table/lca_additional",
+      "@type": "LcaTable",
+      "tableKey": "lca_additional",
+      "tableTitle": "9 IMPACT CATEGORIES ADDITIONAL TO EN 15804",
+      "tableType": "impacts",
+      "introductoryText": "HTCE = HUMAN TOXICITY – CANCER EFFECTS; HTNCE = HUMAN TOXICITY – NON CANCER EFFECTS; ETF = ECOTOXICITY – FRESHWATER; (POTENTIAL COMPARATIVE TOXIC UNIT)\nPM = PARTICULATE MATTER (POTENTIAL INCIDENCE OF DISEASE DUE TO PM EMISSIONS ); \nIRHH = IONIZING RADIATION – HUMAN HEALTH EFFECTS (POTENTIAL HUMAN EXPOSURE EFFICIENCY RELATIVE TO U235 );",
+      "columnGroups": [
+        {
+          "label": "Production",
+          "column_codes": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        {
+          "label": "Construction process stage",
+          "column_codes": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "label": "Use stage",
+          "column_codes": [
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7"
+          ]
+        },
+        {
+          "label": "End-of-life stage",
+          "column_codes": [
+            "C1",
+            "C2",
+            "C3",
+            "C4"
+          ]
+        },
+        {
+          "label": null,
+          "column_codes": [
+            "D"
+          ]
+        }
+      ],
+      "columns": [
+        {
+          "code": "A1",
+          "label": "Raw material",
+          "group": "Production"
+        },
+        {
+          "code": "A2",
+          "label": "Transport",
+          "group": "Production"
+        },
+        {
+          "code": "A3",
+          "label": "manufacturing",
+          "group": "Production"
+        },
+        {
+          "code": "A4",
+          "label": "Transport",
+          "group": "Construction process stage"
+        },
+        {
+          "code": "A5",
+          "label": "Installation",
+          "group": "Construction process stage"
+        },
+        {
+          "code": "B1",
+          "label": "Use",
+          "group": "Use stage"
+        },
+        {
+          "code": "B2",
+          "label": "Maintenance",
+          "group": "Use stage"
+        },
+        {
+          "code": "B3",
+          "label": "Repair",
+          "group": "Use stage"
+        },
+        {
+          "code": "B4",
+          "label": "Replacement",
+          "group": "Use stage"
+        },
+        {
+          "code": "B5",
+          "label": "Refurbishment",
+          "group": "Use stage"
+        },
+        {
+          "code": "B6",
+          "label": "Operational energy use",
+          "group": "Use stage"
+        },
+        {
+          "code": "B7",
+          "label": "Operational water use",
+          "group": "Use stage"
+        },
+        {
+          "code": "C1",
+          "label": "Deconstruction / demolition",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C2",
+          "label": "Transport",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C3",
+          "label": "Waste processing",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C4",
+          "label": "Disposal",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "D",
+          "label": "Reuse, recovery, recycling",
+          "group": null
+        }
+      ],
+      "rows": [
+        {
+          "indicator": "PM",
+          "unit": "disease incidence",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "1,49E-07"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "1,08E-08"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "2,07E-08"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "5,50E-09"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "4,52E-09"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "3,80E-09"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "1,03E-08"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "2,24E-10"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-7,66E-09"
+            }
+          ]
+        },
+        {
+          "indicator": "IRHH",
+          "unit": "kg U235 eq/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "1,19E-01"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "9,58E-03"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "1,22E-02"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "5,20E-03"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "3,50E-03"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "3,59E-03"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "4,81E-03"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "1,78E-04"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-2,02E-01"
+            }
+          ]
+        },
+        {
+          "indicator": "ETF",
+          "unit": "CTUe/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "1,13E+02"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "1,89E+00"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "1,25E+01"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "9,53E-01"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "3,22E+00"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "6,58E-01"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "1,56E+01"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "6,42E-02"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-6,01E+00"
+            }
+          ]
+        },
+        {
+          "indicator": "HTCE",
+          "unit": "CTUh/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "2,86E-09"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "8,72E-11"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "5,02E-10"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "2,68E-11"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,16E-10"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "1,85E-11"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "1,13E-09"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "8,62E-13"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-1,56E-10"
+            }
+          ]
+        },
+        {
+          "indicator": "HTnCE",
+          "unit": "CTUh/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "3,53E-08"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "2,04E-09"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "9,15E-09"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "1,04E-09"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,43E-09"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "7,18E-10"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "1,09E-08"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "2,66E-11"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-2,87E-09"
+            }
+          ]
+        },
+        {
+          "indicator": "Land Use Related impacts",
+          "unit": "dimensionless",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "-6,17E+01"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "1,49E+00"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "-7,63E-01"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "8,20E-01"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "-1,12E+00"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "MND"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "5,67E-01"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "3,98E-01"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "7,76E-02"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-4,40E+00"
+            }
+          ]
+        }
+      ],
+      "capture": {
+        "headers_rotated": true,
+        "column_count": 17,
+        "row_count": 6,
+        "complete": true,
+        "notes": "Two tables are present on these pages: one for 'Foam core (without multilayer facer)' on page 18/32, and one for 'Multilayer facer' on page 19/32. Both tables have identical structure with 6 impact indicators (PM, IRHH, ETF, HTCE, HTnCE, Land Use Related impacts) across 17 lifecycle modules (A1-A5, B1-B7, C1-C4, D). The first table (Foam core) has been captured completely. Explanatory text for indicator abbreviations appears at the bottom of page 19."
+      }
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/scenarios",
+      "@type": "ScenarioSet",
+      "sectionTitle": "10 DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
+      "scenarios": [
+        {
+          "module": "A1",
+          "number": "10.1",
+          "title": "A1 - raw material supply",
+          "description": "This module takes into account the extraction and processing of all raw materials and energy which occur upstream to the studied manufacturing process."
+        },
+        {
+          "module": "A2",
+          "number": "10.2",
+          "title": "A2 – transport to the manufacturer",
+          "description": "The raw materials are transported to the manufacturing site."
+        },
+        {
+          "module": "A3",
+          "number": "10.3",
+          "title": "manufacturing",
+          "description": "This module takes into account the production process."
+        },
+        {
+          "module": "A4",
+          "number": "10.4",
+          "title": "A4 – transport to the building site",
+          "description": "Fuel type and consumption of vehicle or vehicle type used for transport: Truck 16-32 ton, 0,256 l diesel / km\nDistance: 180 km\nCapacity utilisation (including empty returns): 50%\nBulk density of transported products: Ecoinvent\nVolume capacity utilisation factor: Ecoinvent\n\nKooltherm® K12 is only sold on a project basis. Kooltherm will therefore only be delivered directly to construction sites.\n\nThe following transport scenario applies:\n– 100% directly to the construction site over 180 km with a 16-32 ton lorry (ecoinvent record: 'Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, U')"
+        },
+        {
+          "module": "A5",
+          "number": "10.5",
+          "title": "A5 – installation in the building",
+          "description": "At the construction site, packaging materials are released. Also 2% material losses have been taken into account\n\nParts of the installation quantity:\nMaterial losses: 0,056 kg Kooltherm K12 - THE QUANTITY OF MATERIAL LOST DUE TO CUTTING IT IN THE RIGHT SHAPE\nPackaging: 0,0135 kg PE foil, 0,0504 kg EPS Skids - THE PACKAGING WASTE AT THE CONSTRUCTION SITE"
+        },
+        {
+          "module": "C",
+          "number": "10.6",
+          "title": "C: End of life",
+          "description": "The default scenario for synthetic isolation materials in the NBN/DTD B08-001 states 5% of the waste treatment consists of landfilling, the other 95% consists of incineration and/or energetic valorisation.\n\nAfter incineration the aluminium will be recycled from the bottom ash (based on sustainability report of Indaver: samen werken aan een circulaire economie, duurzaamheidsrapport 2021).\n\nThe default scenario for metals (non-ferro) in the NBN/DTD B08-001 states 5% of the waste treatment consists of landfilling, the other 95% consists of recycling.\n\nModule C2 – Transport to waste processing:\nTruck 16-32 ton, 0,256 l diesel/km, 30 km, 50% capacity utilisation, Ecoinvent scenario density and assumptions\nTruck 16-32 ton, 0,256 l diesel/km, 50 km, 50% capacity utilisation, Ecoinvent scenario density and assumptions\nTruck 16-32 ton, 0,256 l diesel/km, 10 km, 50% capacity utilisation, Ecoinvent scenario density and assumptions\n\nEnd-of-life modules – C3 and C4:\nWastes collected separately: 0 kg\nWastes collected as mixed construction waste: 2,80 kg\nWaste for re-use: 0 kg\nWaste for recycling: 0,09 kg\nWaste for energy recovery: 2,57 kg\nWaste for final disposal: 0,14 kg"
+        },
+        {
+          "module": "D",
+          "number": "10.7",
+          "title": "D – Benefits and loads beyond the system boundaries",
+          "description": "QUANTITATIVE DESCRIPTION OF THE LOADS BEYOND THE SYSTEM BOUNDARIES: No loads\n\nQUANTITATIVE DESCRIPTION OF THE BENEFITS BEYOND THE SYSTEM BOUNDARIES:\nAvoided production of 13,4 MJ of heat using natural gas\nAvoided production of 6,7 MJ of Belgian electricity mix"
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/sections",
+      "@type": "EpdSectionSet",
+      "blocks": [
+        {
+          "number": "11.1",
+          "title": "Indoor air",
+          "content": "The product is not intended for indoor use and hence no specific VOC emission tests are performed."
+        },
+        {
+          "number": "11.2",
+          "title": "Soil and water",
+          "content": "The product is not intended for indoor use and hence no specific VOC emission tests are performed.\n\nTheproduct does not come in contact with soil or water."
+        },
+        {
+          "number": "12",
+          "title": "DEMONSTRATION OF VERIFICATION",
+          "content": "11 RELEASE OF DANGEROUS\n\nSUBSTANCES TO INDOOR AIR,\n\nSOIL AND WATER DURING THE\n\nUSE STAG E\n\n11.1 Indoor air\n\nThe product is not intended for indoor use and hence no specific VOC emission tests are performed.\n\n11.2 Soil and wate r\n\nTheproduct does not come in contact with soil or water.\n\nVERIFICATION\n\nEN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO14025:2010\n\nInternal☐ External☒\n\nThird party verifier:\n\nVinçotte nv\n\nRamses Sterckx\n\nJan Olieslagerslaan 35 1800 Vilvoorde\n\nrsterckx@vincotte.b"
+        },
+        {
+          "number": "13",
+          "title": "lca interpretation",
+          "content": "12 DEMONSTRATION OF\n\nVERIFICATION\n\nEN 15804+A2serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO14025:2010\n\nInternal☐ External☒\n\nThird party verifier:\n\nVinçotte nv\n\nRamses Sterckx\n\nJan Olieslagerslaan 35 1800 Vilvoorde\n\nrsterckx@vincotte.b\n\nAll impact categories are mainlydetermined by the raw materials supply in A1. For GWP(and to less extend also the values\n\nfor ODP, FAETP and MAETP) also the incinerationemissions at the end of life have a significant environmental impact. The\n\npotential creditsfor thermal and electricalenergy are declared in module D and result in negative valuesfor most of the\n\nimpact categories."
+        }
+      ]
     }
   ]
 }

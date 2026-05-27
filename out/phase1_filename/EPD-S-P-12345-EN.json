@@ -1,0 +1,12 @@
+{
+  "pdf_filename": "EPD-S-P-12345-EN.pdf",
+  "pdf_stem": "EPD-S-P-12345-EN",
+  "epd_number": "S-P-12345",
+  "language": "EN",
+  "pattern": "S-P",
+  "_source": {
+    "pdf_filename": "EPD-S-P-12345-EN.pdf",
+    "extracted_by": "demo-fixture",
+    "extracted_at": "2026-05-26T10:00:00.000Z"
+  }
+}

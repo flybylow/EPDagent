@@ -1,0 +1,22 @@
+{
+  "bibliography": [],
+  "additional_information": [
+    "14 TECHNICAL INFORMATION FOR SCENARIO DEVELOPMENT - Not applicable for this EPD.",
+    "15 APPLICATION UNIT - Not applicable for this EPD.",
+    "16 ADDITIONAL INFORMATION ON REVERSIBILITY - Not applicable for this EPD."
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 023.0221.003-01.00.00 CEM IIIB 42,5 N-LHSR bulk “ECOPlanet” EN_ signed.pdf",
+    "pdf_sha256": "55bf1c8885461ad261acc495b542a6dd2e3a94f3795d822ed050355f1e8487de",
+    "api_pages": "24",
+    "api_pages_resolved": "24",
+    "api_pdf_bytes": 18048,
+    "api_pdf_sha256": "de637438907a3addc259d2de0d163cdd8f451cb737d3879b5a22e17407a0d40b",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 023.0221.003-01.00.00 CEM IIIB 42,5 N-LHSR bulk “ECOPlanet” EN_ signed.p24.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T17:43:29.888Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 2620,
+    "output_tokens": 105
+  }
+}

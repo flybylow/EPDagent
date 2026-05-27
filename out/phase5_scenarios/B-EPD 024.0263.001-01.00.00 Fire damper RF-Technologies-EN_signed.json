@@ -1,0 +1,18 @@
+{
+  "section_title": null,
+  "scenarios": [],
+  "_source": {
+    "pdf_filename": "B-EPD 024.0263.001-01.00.00 Fire damper RF-Technologies-EN_signed.pdf",
+    "pdf_sha256": "3870a1cd5451b08545478c285f81696f3e733ff900a5912cad19811be002d2dd",
+    "api_pages": "16-19",
+    "api_pages_resolved": "16,17,18,19",
+    "api_pdf_bytes": 110776,
+    "api_pdf_sha256": "262269bd6b3494a5c944a6f74d0c76926ef6bcab4da89b7dc6283b84c84425ab",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 024.0263.001-01.00.00 Fire damper RF-Technologies-EN_signed.p16-p17-p18-p19.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:24:19.994Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 10912,
+    "output_tokens": 52
+  }
+}

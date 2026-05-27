@@ -1,0 +1,25 @@
+{
+  "bibliography": [
+    "EN 15804:2012+A2:2019",
+    "German PCR for Earth blocks chapter 8",
+    "German PCR for Earth Masonry Mortar chapter 8",
+    "General guide: Building sustainably with Léém (download link)",
+    "BE-PCR",
+    "Valbiom"
+  ],
+  "additional_information": null,
+  "_source": {
+    "pdf_filename": "B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed.pdf",
+    "pdf_sha256": "423c951eac4a4121b02a3c9fc71a346b8eeae5b97bceec40ec250d6c795e4132",
+    "api_pages": "20-21",
+    "api_pages_resolved": "20,21",
+    "api_pdf_bytes": 197443,
+    "api_pdf_sha256": "b0277fb8679958003f410a5ec65c3438cb81f9062b573326c4d012d7a32f9ee7",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed.p20-p21.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:03:18.739Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 6233,
+    "output_tokens": 120
+  }
+}
