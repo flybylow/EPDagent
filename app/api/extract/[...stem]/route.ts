@@ -7,8 +7,8 @@ import { logExtractProgress } from "@/lib/extract/progress";
 import { extractPdf } from "@/lib/extract/run";
 import { normalizeEpdStem } from "@/lib/stems/normalize";
 
-/** Phase 7 can send a multi-page slice + long tool output; allow headroom on local / Pro. */
-export const maxDuration = 600;
+/** Vercel Hobby caps at 300s; raise on Pro via route segment config if needed. */
+export const maxDuration = 300;
 
 async function resolveExtractStem(params: Promise<{ stem: string[] }>): Promise<string> {
   const { stem: parts } = await params;

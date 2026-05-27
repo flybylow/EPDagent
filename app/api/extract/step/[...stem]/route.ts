@@ -4,7 +4,8 @@ import { buildGapReport } from "@/lib/extract/gap-report";
 import { runExtractStepForStem } from "@/lib/extract/run-extract-step";
 import { normalizeEpdStem } from "@/lib/stems/normalize";
 
-export const maxDuration = 600;
+/** Vercel Hobby caps at 300s. */
+export const maxDuration = 300;
 
 async function resolveStem(params: Promise<{ stem: string[] }>): Promise<string> {
   const { stem: parts } = await params;
