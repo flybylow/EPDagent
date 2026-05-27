@@ -63,16 +63,39 @@ async function main(): Promise<void> {
   assert((body.thermal?.properties?.length ?? 0) > 0, "facts thermal slice");
   assert(Object.keys(body.lca?.indicators ?? {}).length > 0, "facts lca slice");
 
-  const catalog = await get("/api/products?tag=insulation", {
+  const types = await get("/api/products/types", {
     headers: { Origin: TABULAS_ORIGIN },
   });
-  assert(catalog.ok, "GET products tag=insulation");
-  const cat = (await catalog.json()) as { count: number; products: { stem: string }[] };
-  assert(cat.count > 0, "insulation catalog not empty");
+  assert(types.ok, "GET products/types");
+  const typeList = (await types.json()) as { types: { id: string; count: number }[] };
+  assert(typeList.types.some((t) => t.id === "insulation" && t.count > 0), "insulation type listed");
+
+  const catalog = await get("/api/products?type=insulation&hints=1&limit=10", {
+    headers: { Origin: TABULAS_ORIGIN },
+  });
+  assert(catalog.ok, "GET products type=insulation");
+  const cat = (await catalog.json()) as {
+    schema: string;
+    products: { stem: string; calculator_hints?: { thermal?: unknown } }[];
+  };
+  assert(cat.schema === "epdagent.product-catalog.v2", "catalog v2");
+  assert(cat.products.length > 0, "insulation catalog not empty");
   assert(
     cat.products.some((p) => p.stem.includes("Rockwool")),
     "catalog includes Rockwool"
   );
+  assert(
+    cat.products.some((p) => p.calculator_hints?.thermal != null),
+    "hints include thermal"
+  );
+
+  const calc = await get(
+    `/api/facts/${ROCKWOOL}?parts=calculator`,
+    { headers: { Origin: TABULAS_ORIGIN } }
+  );
+  assert(calc.ok, "GET facts calculator part");
+  const calcBody = (await calc.json()) as { calculator?: { thermal?: { lambda_W_mK?: number } } };
+  assert(calcBody.calculator?.thermal?.lambda_W_mK != null, "facts calculator lambda");
 
   console.log(failed ? `\n${failed} failed` : "\nFacts API smoke tests passed");
   process.exitCode = failed ? 1 : 0;

@@ -7,8 +7,14 @@ import {
 } from "../data";
 import { loadPhase4Probes } from "../extract/phase4-probes";
 import { epdIri } from "../iri";
+import { buildCalculatorHints } from "./calculator-hints";
 import { buildLcaIndicators, pickPrimaryGwp } from "./lca-slice";
-import { inferProductTags, isThermalProperty } from "./tags";
+import {
+  inferPrimaryType,
+  inferProductTags,
+  inferProductTypes,
+  isThermalProperty,
+} from "./tags";
 import type {
   FactPart,
   ProductFacts,
@@ -40,6 +46,13 @@ function availableParts(stem: string): FactPart[] {
   if (p3?.technical_properties?.some(isThermalProperty)) parts.push("thermal");
   if (Object.keys(loadPhase4Probes(stem)).length) parts.push("lca");
   if (loadPhase3Composition(stem)) parts.push("composition");
+  const p3ForCalc = loadPhase3(stem);
+  if (
+    p3ForCalc?.technical_properties?.some(isThermalProperty) ||
+    Object.keys(loadPhase4Probes(stem)).length
+  ) {
+    parts.push("calculator");
+  }
   return parts;
 }
 
@@ -75,12 +88,15 @@ export function buildProductFacts(
   }
 
   if (parts.has("product") && (phase2 || phase3)) {
+    const types = inferProductTypes(phase2, phase3, stem);
     const product: ProductFactsProduct = {
       description: phase3?.description ?? phase2?.product_description ?? null,
       intended_use: phase3?.intended_use ?? null,
       reference_flow: phase3?.reference_flow ?? null,
       reference_service_life_years: phase3?.reference_service_life_years ?? null,
-      tags: inferProductTags(phase2, phase3),
+      tags: inferProductTags(phase2, phase3, stem),
+      primary_type: inferPrimaryType(types),
+      types,
     };
     out.product = product;
   }
@@ -123,6 +139,16 @@ export function buildProductFacts(
       };
       out.composition = composition;
     }
+  }
+
+  if (parts.has("calculator")) {
+    const lcaStudy = loadPhase3LcaStudy(stem);
+    out.calculator = buildCalculatorHints(
+      stem,
+      phase2,
+      phase3,
+      lcaStudy?.functional_unit ?? null
+    );
   }
 
   return out;

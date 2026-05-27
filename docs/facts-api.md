@@ -1,89 +1,160 @@
 # Product Facts API (cross-domain read)
 
-Prototype API for **Tabulas / Pentapylas** to discover EPDs and fetch **partial facts** (thermal λ, LCA modules) without downloading full JSON-LD graphs.
+Read API for **Tabulas / Pentapylas**: discover EPD products by **type** and **name**, fetch **thermal** and **carbon** facts for an external calculator. EPDagent publishes; the BIM app consumes from another domain (CORS or server proxy).
 
-EPDagent remains the **manufacturer ingest + publish** side; the consumer app calls these routes from another origin (CORS) or via a server proxy.
+## BIM case study flow (Tabulas)
+
+```mermaid
+sequenceDiagram
+  participant BIM as Tabulas BIM UI
+  participant API as searchepd.vercel.app
+  participant Calc as External calculator
+
+  BIM->>API: GET /api/products/types
+  API-->>BIM: insulation, gypsum, …
+  BIM->>API: GET /api/products?type=insulation&hints=1
+  API-->>BIM: shortlist + λ + GWP hints
+  Note over BIM: User picks product for wall layer
+  BIM->>API: GET /api/facts/{stem}?parts=calculator
+  API-->>BIM: normalized thermal + carbon
+  BIM->>Calc: POST wall area + product facts
+  Calc-->>BIM: U-value or embodied CO₂
+```
+
+1. **Wall from IFC** — geometry stays in Tabulas (area, thickness).
+2. **Filter products** — `type=insulation`, optional `q=rockwool`.
+3. **Compare shortlist** — use `hints=1` on catalog or fetch `parts=calculator` per stem.
+4. **Calculate** — Tabulas sends BIM quantities + EPD facts to your calculator service.
 
 ## Endpoints
 
 | Method | Path | Purpose |
 |--------|------|---------|
-| `GET` | `/api/products?tag=insulation` | Catalog with tags + `facts_url` |
-| `GET` | `/api/products?q=rockwool` | Substring search on name / description |
-| `GET` | `/api/epds?tag=insulation` | Same filter on full EPD index |
-| `GET` | `/api/facts/{stem}?parts=thermal,lca` | Sliced facts for one EPD |
+| `GET` | `/api/products/types` | Product types in corpus + counts |
+| `GET` | `/api/products?…` | Search / filter catalog (v2 schema) |
+| `GET` | `/api/facts/{stem}?parts=…` | Sliced facts per EPD |
+| `GET` | `/api/epds` | Full EPD index (legacy; prefer `/api/products`) |
+| `GET` | `/api/graph/{stem}` | Full JSON-LD graph |
 
-### `parts` (facts route)
+### Catalog search (`/api/products`)
 
-Comma-separated; default = all available parts.
+| Param | Example | Description |
+|-------|---------|-------------|
+| `type` or `tag` | `insulation` | Single category (aliases) |
+| `types` | `insulation,gypsum` | Multiple categories (OR) |
+| `q` | `rockwool` | Substring: name, stem, EPD no., description, producer |
+| `producer` | `ROCKWOOL` | Producer name substring |
+| `has_thermal` | `true` | Only products with λ (or thermal table) |
+| `has_lca` | `true` | Only products with LCA probe / graph |
+| `hints` | `1` | Include `calculator_hints` on each row |
+| `limit` | `20` | Page size (default 50, max 100) |
+| `offset` | `0` | Pagination |
+
+Response schema: `epdagent.product-catalog.v2`.
+
+```bash
+# Types for a filter dropdown
+curl -s 'https://searchepd.vercel.app/api/products/types'
+
+# Insulation products with calculator preview
+curl -s 'https://searchepd.vercel.app/api/products?type=insulation&has_thermal=true&hints=1&limit=10'
+
+# Name search
+curl -s 'https://searchepd.vercel.app/api/products?q=kingspan&hints=1'
+```
+
+Each product includes:
+
+- `primary_type`, `types[]` — categories
+- `facts_url` — full facts
+- `calculator_url` — shortcut: `?parts=calculator,thermal,lca`
+
+With `hints=1`, each row adds `calculator_hints`:
+
+```json
+{
+  "thermal": { "lambda_W_mK": 0.035, "property_label": "Thermal characteristics (λD)", "unit": "W/m.K" },
+  "carbon": { "gwp_a1_a3": "12.4", "gwp_unit": "kg CO2 eq", "declared_unit": "1 m²" }
+}
+```
+
+### Product types
+
+| `id` | Typical use in BIM case study |
+|------|-------------------------------|
+| `insulation` | Wall / roof thermal layers |
+| `gypsum` | Boards, finishing |
+| `concrete` | Structure, screed |
+| `windows` | Glazing / frames |
+| `roofing` | Membranes |
+| `paint` | Coatings |
+| `masonry` | Blocks |
+| `other` | Fallback |
+
+Types are inferred from product text (phase 2/3); not manually curated yet.
+
+### Facts (`/api/facts/{stem}`)
+
+`parts` — comma-separated:
 
 | Part | Content |
 |------|---------|
 | `identity` | stem, IRI, EPD number, producer |
-| `product` | description, intended use, reference flow, **tags** |
-| `thermal` | λ and related rows from phase 3 technical table |
-| `lca` | Canonical EN 15804 module grid (GWP total, A1–D, …) |
-| `composition` | Phase 3 composition rows |
+| `product` | description, types, tags, reference flow |
+| `thermal` | technical property rows (λ, etc.) |
+| `lca` | EN 15804 module grid |
+| `calculator` | normalized `thermal` + `carbon` for external calc |
+| `composition` | material rows |
 
-Response schema: `epdagent.product-facts.v1` (see `lib/facts/types.ts`).
+```bash
+curl -s 'https://searchepd.vercel.app/api/facts/B-EPD_023.0011.007-02.00.00%20Rockwool%20Rockfit%20Mono%20EN%20-%20signed?parts=calculator'
+```
 
 ## CORS
 
-Enabled on `/api/epds`, `/api/products`, `/api/facts/*`, `/api/graph/*`.
-
-Default allowed origins:
-
-- `http://localhost:3000`, `http://localhost:3001`
-- `https://tabulas.eu`, `https://www.tabulas.eu`
-
-Override:
+Enabled on `/api/products`, `/api/products/types`, `/api/facts/*`, `/api/graph/*`, `/api/epds`.
 
 ```bash
-EPDAGENT_CORS_ORIGINS=http://localhost:3001,https://tabulas.eu
+EPDAGENT_CORS_ORIGINS=https://tabulas.eu,http://localhost:3001
 ```
 
-For production Tabulas, prefer a **server-side proxy** to EPDagent and keep secrets off the browser; CORS is still useful for local UI dev on port 3001.
+Production Tabulas can use a **backend proxy** instead; CORS is for local UI dev.
 
-## Local test loop
+## Local test
 
 ```bash
-# Unit tests (no server)
 npm run test:facts
-
-# Terminal 1
 npm run dev
-
-# Terminal 2 — simulates Tabulas on :3001
 npm run test:facts-api
-```
-
-Manual:
-
-```bash
-curl -s 'http://localhost:3000/api/products?tag=insulation' | head
-curl -s 'http://localhost:3000/api/facts/B-EPD_023.0011.007-02.00.00%20Rockwool%20Rockfit%20Mono%20EN%20-%20signed?parts=thermal,lca' | head
 ```
 
 ## Vercel (serve only)
 
-**Extract locally, serve on the Vercel domain.** Full workflow, `maxDuration` limits (300s Hobby vs local/Pro), and what not to run on Vercel: **[vercel-deploy.md](vercel-deploy.md)**.
+Extract locally, commit `out/phase*` slices + `data/graph/`, deploy. See **[vercel-deploy.md](vercel-deploy.md)**.
 
-Quick checklist:
+- `EPDAGENT_IRI_BASE=https://searchepd.vercel.app/id`
+- Do **not** set `EPDAGENT_PDF_DIR` or `ANTHROPIC_API_KEY` on Vercel
 
-- Commit `out/phase2_header/`, `out/phase3_product/`, `out/phase4_lca_probe/`, … and `data/graph/*.jsonld` after local extract.
-- Set `EPDAGENT_IRI_BASE` and `EPDAGENT_CORS_ORIGINS` on the Vercel project.
-- Tabulas calls `https://your-app.vercel.app/api/products?tag=insulation` (no extraction on Vercel Hobby).
+## Tabulas integration
 
-The `node-domexception` npm warning on install is a transitive dependency notice; safe to ignore for deploy.
+```ts
+const BASE = "https://searchepd.vercel.app";
 
-## Move to Tabulas
+const types = await fetch(`${BASE}/api/products/types`).then((r) => r.json());
 
-1. Copy only the **client** (`fetch` + types); keep publish API on EPDagent.
-2. Set `EPDAGENT_API_BASE=https://…` in Tabulas.
-3. Matching UI + BIM quantities stay in Tabulas; POST normalized payload to your external calculator.
+const catalog = await fetch(
+  `${BASE}/api/products?type=insulation&has_thermal=true&hints=1&limit=20`
+).then((r) => r.json());
+
+const facts = await fetch(
+  `${BASE}/api/facts/${encodeURIComponent(selectedStem)}?parts=calculator`
+).then((r) => r.json());
+
+// POST { wall_area_m2, layer_thickness_mm, product: facts.calculator } → your calculator
+```
 
 ## Related
 
-- [architecture.md](architecture.md) — EPDagent vs consumer split
-- [knowledge-graph.md](knowledge-graph.md) — full JSON-LD when you need the whole graph
-- [local-dev.md](local-dev.md) — dev server and scripts
+- [vercel-deploy.md](vercel-deploy.md) — deploy + env
+- [architecture.md](architecture.md) — publisher vs consumer split
+- [knowledge-graph.md](knowledge-graph.md) — full JSON-LD

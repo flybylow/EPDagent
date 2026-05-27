@@ -1,11 +1,26 @@
 import type { TechnicalPropertyRow } from "../types";
 
+/** Stable product categories for BIM / Tabulas filters. */
+export const PRODUCT_TYPES = [
+  "insulation",
+  "gypsum",
+  "concrete",
+  "windows",
+  "roofing",
+  "paint",
+  "masonry",
+  "other",
+] as const;
+
+export type ProductType = (typeof PRODUCT_TYPES)[number];
+
 export const FACT_PARTS = [
   "identity",
   "product",
   "thermal",
   "lca",
   "composition",
+  "calculator",
 ] as const;
 
 export type FactPart = (typeof FACT_PARTS)[number];
@@ -30,6 +45,9 @@ export interface ProductFactsProduct {
   } | null;
   reference_service_life_years: number | null;
   tags: string[];
+  /** Highest-priority category for filters (insulation, gypsum, …). */
+  primary_type: ProductType;
+  types: ProductType[];
 }
 
 export interface ProductFactsThermal {
@@ -59,6 +77,22 @@ export interface ProductFactsComposition {
   }>;
 }
 
+/** Normalized values for external thermal / carbon calculators (Tabulas). */
+export interface CalculatorHints {
+  thermal: {
+    lambda_W_mK: number | null;
+    property_label: string | null;
+    standard: string | null;
+    unit: string | null;
+  } | null;
+  carbon: {
+    gwp_a1_a3: string | null;
+    gwp_unit: string | null;
+    declared_unit: string | null;
+    functional_unit: string | null;
+  } | null;
+}
+
 export interface ProductFacts {
   schema: "epdagent.product-facts.v1";
   stem: string;
@@ -69,4 +103,50 @@ export interface ProductFacts {
   thermal?: ProductFactsThermal;
   lca?: ProductFactsLca;
   composition?: ProductFactsComposition;
+  calculator?: CalculatorHints;
+}
+
+export interface CatalogProductSummary {
+  stem: string;
+  product_name: string;
+  epd_number: string | null;
+  producer: string | null;
+  primary_type: ProductType;
+  types: ProductType[];
+  tags: string[];
+  has_thermal: boolean;
+  has_lca: boolean;
+  facts_url: string;
+  calculator_url: string;
+  /** Present when catalog search uses `hints=1`. */
+  calculator_hints?: CalculatorHints;
+}
+
+export interface ProductCatalogResponse {
+  schema: "epdagent.product-catalog.v2";
+  count: number;
+  total: number;
+  limit: number;
+  offset: number;
+  filters: CatalogSearchFilters;
+  products: CatalogProductSummary[];
+}
+
+export interface CatalogSearchFilters {
+  q: string | null;
+  type: string | null;
+  types: string[];
+  producer: string | null;
+  has_thermal: boolean | null;
+  has_lca: boolean | null;
+  hints: boolean;
+}
+
+export interface ProductTypesResponse {
+  schema: "epdagent.product-types.v1";
+  types: Array<{
+    id: ProductType;
+    label: string;
+    count: number;
+  }>;
 }

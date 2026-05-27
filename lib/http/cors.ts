@@ -14,6 +14,7 @@ export function isCorsApiPath(pathname: string): boolean {
   return (
     pathname === "/api/epds" ||
     pathname === "/api/products" ||
+    pathname === "/api/products/types" ||
     pathname.startsWith("/api/facts/") ||
     pathname.startsWith("/api/graph/")
   );
