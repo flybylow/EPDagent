@@ -1,5 +1,5 @@
 import * as fs from "node:fs";
-import { pdfjs, pdfjsDocumentOptions } from "./configure-pdfjs";
+import { getPdfjs, pdfjsDocumentOptions } from "./configure-pdfjs";
 
 export interface PdfTextItem {
   x: number;
@@ -14,7 +14,8 @@ export async function extractPdfPageTextItems(
   pageNum: number
 ): Promise<PdfTextItem[]> {
   const data = new Uint8Array(fs.readFileSync(pdfPath));
-  const doc = await pdfjs.getDocument(pdfjsDocumentOptions(data)).promise;
+  const pdfjs = await getPdfjs();
+  const doc = await pdfjs.getDocument(await pdfjsDocumentOptions(data)).promise;
   const page = await doc.getPage(pageNum);
   const content = await page.getTextContent();
   const items: PdfTextItem[] = [];

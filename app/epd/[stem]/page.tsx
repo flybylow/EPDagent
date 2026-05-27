@@ -32,7 +32,9 @@ export default async function EpdPage({
   const { stem: rawStem } = await params;
   const { gaps: gapsQuery } = await searchParams;
   const stem = resolveCorpusStem(normalizeEpdStem(rawStem));
-  await ensurePdfArtifactsForStem(stem);
+  if (!isServeOnlyDeploy()) {
+    await ensurePdfArtifactsForStem(stem);
+  }
 
   const record = loadEpdRecord(stem, {
     includeSectionCoverage: !isServeOnlyDeploy(),
@@ -64,6 +66,7 @@ export default async function EpdPage({
           showVerification={false}
           gapReport={gapReport}
           initialGapsOnly={gapsQuery === "1"}
+          extractEnabled={!isServeOnlyDeploy()}
         />
 
         <details className="panel dev-data-panel">

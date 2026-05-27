@@ -33,6 +33,7 @@ export function EpdDetailWorkspace({
   hasDocmapIndex = true,
   gapReport = null,
   initialGapsOnly = false,
+  extractEnabled = true,
 }: {
   registry: EpdPhaseRegistry;
   pdfAvailable: boolean;
@@ -42,10 +43,13 @@ export function EpdDetailWorkspace({
   hasDocmapIndex?: boolean;
   gapReport?: GapReport | null;
   initialGapsOnly?: boolean;
+  /** False on Vercel serve-only — hides in-browser extract (use local CLI). */
+  extractEnabled?: boolean;
 }) {
   const nav = registry.sectionNav;
   const tocItems = nav.items.filter((item) => item.id !== "__header__");
   const showExtract =
+    extractEnabled &&
     extractSummary &&
     pdfAvailable &&
     (!extractSummary.upToDate || !hasDocmapIndex);

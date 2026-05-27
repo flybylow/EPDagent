@@ -40,7 +40,13 @@ function SourceTag({ record }: { record: EpdRecord }) {
   return <span className="source-tag source-orphan">no PDF</span>;
 }
 
-export function EpdCorpusCard({ record }: { record: EpdRecord }) {
+export function EpdCorpusCard({
+  record,
+  extractEnabled = true,
+}: {
+  record: EpdRecord;
+  extractEnabled?: boolean;
+}) {
   return (
     <li className="epd-card">
       <div className="epd-card-main">
@@ -68,7 +74,7 @@ export function EpdCorpusCard({ record }: { record: EpdRecord }) {
       </div>
 
       <div className="epd-actions">
-        {record.hasPdf ? (
+        {record.hasPdf && extractEnabled ? (
           <EpdExtractToolbar
             stem={record.stem}
             hasPdf={record.hasPdf}

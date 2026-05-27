@@ -2,10 +2,26 @@ import { createRequire } from "node:module";
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { pathToFileURL } from "node:url";
-import * as pdfjs from "pdfjs-dist/legacy/build/pdf.mjs";
+import { isServeOnlyDeploy } from "../deploy/serve-only";
 
 const PDFJS_VERSION = "4.10.38";
 const WORKER_CDN = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${PDFJS_VERSION}/legacy/build/pdf.worker.mjs`;
+
+type PdfJsModule = typeof import("pdfjs-dist/legacy/build/pdf.mjs");
+
+let pdfjsModule: PdfJsModule | null = null;
+let pdfjsLoad: Promise<PdfJsModule> | null = null;
+
+async function loadPdfjs(): Promise<PdfJsModule> {
+  if (pdfjsModule) return pdfjsModule;
+  if (!pdfjsLoad) {
+    pdfjsLoad = import("pdfjs-dist/legacy/build/pdf.mjs").then((mod) => {
+      pdfjsModule = mod;
+      return mod;
+    });
+  }
+  return pdfjsLoad;
+}
 
 function pdfjsRootDir(): string {
   try {
@@ -35,7 +51,7 @@ function pdfjsAssetUrl(...segments: string[]): string {
 
 let workerConfigured = false;
 
-function ensurePdfjsWorker(): void {
+function ensurePdfjsWorker(pdfjs: PdfJsModule): void {
   if (workerConfigured || pdfjs.GlobalWorkerOptions.workerSrc) {
     workerConfigured = true;
     return;
@@ -48,16 +64,37 @@ function ensurePdfjsWorker(): void {
 }
 
 /** Shared options for server-side PDF text extraction (docmap, TOC scan). */
-export function pdfjsDocumentOptions(data: Uint8Array) {
-  ensurePdfjsWorker();
+export async function pdfjsDocumentOptions(data: Uint8Array) {
+  if (isServeOnlyDeploy()) {
+    throw new Error(
+      "PDF text parsing is disabled on this deployment. Extract locally and commit out/phase_docmap/ and phase JSON."
+    );
+  }
+
+  const pdfjs = await loadPdfjs();
+  const isNode = typeof window === "undefined";
+
+  if (!isNode) {
+    ensurePdfjsWorker(pdfjs);
+  }
+
   return {
     data,
     disableFontFace: true,
     useSystemFonts: true,
+    /** Node serverless: no worker file — run in main thread. */
+    disableWorker: isNode,
     standardFontDataUrl: pdfjsAssetUrl("standard_fonts"),
     cMapUrl: pdfjsAssetUrl("cmaps"),
     cMapPacked: true,
   };
 }
 
-export { pdfjs };
+export async function getPdfjs() {
+  if (isServeOnlyDeploy()) {
+    throw new Error(
+      "PDF text parsing is disabled on this deployment. Extract locally and commit out/phase_docmap/ and phase JSON."
+    );
+  }
+  return loadPdfjs();
+}

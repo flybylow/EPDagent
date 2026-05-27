@@ -115,6 +115,7 @@ export function EpdCompareWorkspace({
   showVerification = true,
   gapReport = null,
   initialGapsOnly = false,
+  extractEnabled = true,
 }: {
   registry: EpdPhaseRegistry;
   pdfAvailable: boolean;
@@ -126,6 +127,7 @@ export function EpdCompareWorkspace({
   showVerification?: boolean;
   gapReport?: GapReport | null;
   initialGapsOnly?: boolean;
+  extractEnabled?: boolean;
 }) {
   return (
     <div className="verify-workspace">
@@ -138,6 +140,7 @@ export function EpdCompareWorkspace({
         hasDocmapIndex={hasDocmapIndex}
         gapReport={gapReport}
         initialGapsOnly={initialGapsOnly}
+        extractEnabled={extractEnabled}
       />
 
       {showVerification && registry.draft ? (

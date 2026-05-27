@@ -1,5 +1,5 @@
 import * as fs from "node:fs";
-import { pdfjs, pdfjsDocumentOptions } from "./configure-pdfjs";
+import { getPdfjs, pdfjsDocumentOptions } from "./configure-pdfjs";
 import { joinLineParts } from "./join-line-parts";
 
 export interface PdfTextLine {
@@ -10,7 +10,8 @@ export interface PdfTextLine {
 
 export async function extractPageLines(pdfPath: string, pageNum: number): Promise<PdfTextLine[]> {
   const data = new Uint8Array(fs.readFileSync(pdfPath));
-  const doc = await pdfjs.getDocument(pdfjsDocumentOptions(data)).promise;
+  const pdfjs = await getPdfjs();
+  const doc = await pdfjs.getDocument(await pdfjsDocumentOptions(data)).promise;
   const page = await doc.getPage(pageNum);
   const content = await page.getTextContent();
   const byY = new Map<number, Array<{ x: number; text: string }>>();
@@ -44,6 +45,7 @@ export async function extractPagesLines(
 
 export async function pdfPageCount(pdfPath: string): Promise<number> {
   const data = new Uint8Array(fs.readFileSync(pdfPath));
-  const doc = await pdfjs.getDocument(pdfjsDocumentOptions(data)).promise;
+  const pdfjs = await getPdfjs();
+  const doc = await pdfjs.getDocument(await pdfjsDocumentOptions(data)).promise;
   return doc.numPages;
 }

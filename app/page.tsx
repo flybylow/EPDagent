@@ -1,4 +1,5 @@
 import { EpdCorpusList } from "@/app/components/EpdCorpusList";
+import { isServeOnlyDeploy } from "@/lib/deploy/serve-only";
 import { listEpdDashboardRecords } from "@/lib/data";
 
 export const dynamic = "force-dynamic";
@@ -12,7 +13,7 @@ export default function HomePage() {
       <p className="hint">
         Select an EPD to open the workspace — corpus strip on top, section tree and PDF below.
       </p>
-      <EpdCorpusList records={records} />
+      <EpdCorpusList records={records} extractEnabled={!isServeOnlyDeploy()} />
     </div>
   );
 }

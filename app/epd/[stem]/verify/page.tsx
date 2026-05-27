@@ -9,6 +9,7 @@ import {
   loadVerification,
   resolveCorpusStem,
 } from "@/lib/data";
+import { isServeOnlyDeploy } from "@/lib/deploy/serve-only";
 import { ensurePdfArtifactsForStem } from "@/lib/extract/ensure-pdf-artifacts";
 import { resolveEpdPhases } from "@/lib/phases/registry";
 import { normalizeEpdStem } from "@/lib/stems/normalize";
@@ -20,7 +21,9 @@ export default async function VerifyPage({
 }) {
   const { stem: rawStem } = await params;
   const stem = resolveCorpusStem(normalizeEpdStem(rawStem));
-  await ensurePdfArtifactsForStem(stem);
+  if (!isServeOnlyDeploy()) {
+    await ensurePdfArtifactsForStem(stem);
+  }
   const record = loadEpdRecord(stem, { includeSectionCoverage: false });
   const registry = resolveEpdPhases(stem, { pdfAvailable: record.hasPdf });
 
@@ -50,6 +53,7 @@ export default async function VerifyPage({
         hasDocmapIndex={record.hasDocmapIndex}
         initialVerification={verification}
         showVerification
+        extractEnabled={!isServeOnlyDeploy()}
         />
       </EpdWorkspaceLayout>
     </div>

@@ -92,7 +92,9 @@ If `/api/epds` returns **500** with an empty body, check Vercel env: delete **`E
 
 ### pdfjs / EPD detail pages
 
-On Vercel (`VERCEL=1`), EPD routes use **serve-only** mode: they do not auto-build docmap or phase7 from PDF text. Committed `out/phase_docmap/` (if any) and phase JSON still load.
+On Vercel (`VERCEL=1` or `VERCEL_ENV` set), EPD routes use **serve-only** mode: they do not auto-build docmap or phase7 from PDF text, and the in-browser Extract button is hidden. Committed `out/phase_docmap/` (if any) and phase JSON still load.
+
+Do **not** set `EPDAGENT_ALLOW_PDF_PARSE=1` on Vercel (pdfjs worker/canvas fail on serverless). Use that only in local `.env.local` when running extract from the UI.
 
 EPD pages must **not** statically import `ensure-docmap` / `ensure-phase7` (those pull `pdfjs-dist` and fail with missing `pdf.worker.mjs` on serverless). Use `ensurePdfArtifactsForStem()` from `lib/extract/ensure-pdf-artifacts.ts` instead.
 
