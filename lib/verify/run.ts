@@ -1,4 +1,5 @@
 import Anthropic from "@anthropic-ai/sdk";
+import { createMessageWithRetry } from "../anthropic/create-message";
 import * as fs from "node:fs";
 import * as path from "node:path";
 import type { DraftDocument, FieldVerification, VerificationResult } from "../templates/types";
@@ -108,14 +109,14 @@ ${JSON.stringify(fieldList, null, 2)}`,
         },
       ];
 
-  const response = await client.messages.create({
+  const response = await createMessageWithRetry(client, {
     model: MODEL,
     max_tokens: 4096,
     system: systemPrompt,
     tools: [VERIFY_TOOL],
     tool_choice: { type: "tool", name: "record_verification" },
     messages: [{ role: "user", content: userContent }],
-  });
+  }, { label: "verify" });
 
   const toolUse = response.content.find(
     (block) => block.type === "tool_use" && block.name === "record_verification"

@@ -1,0 +1,160 @@
+{
+  "@context": {
+    "@vocab": "https://epdagent.dev/vocab/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "EPD": "https://epdagent.dev/vocab/EPD",
+    "ProgramOperator": "https://epdagent.dev/vocab/ProgramOperator",
+    "declaredUnit": {
+      "@id": "https://epdagent.dev/vocab/declaredUnit",
+      "@type": "schema:QuantitativeValue"
+    },
+    "programOperator": {
+      "@id": "https://epdagent.dev/vocab/programOperator",
+      "@type": "@id"
+    },
+    "producer": {
+      "@id": "https://epdagent.dev/vocab/producer",
+      "@type": "@id"
+    },
+    "verifier": {
+      "@id": "https://epdagent.dev/vocab/verifier",
+      "@type": "@id"
+    },
+    "pcrReference": "https://epdagent.dev/vocab/pcrReference",
+    "epdNumber": "https://epdagent.dev/vocab/epdNumber",
+    "language": "https://epdagent.dev/vocab/language",
+    "filenamePattern": "https://epdagent.dev/vocab/filenamePattern",
+    "schema:name": "https://schema.org/name",
+    "schema:address": "https://schema.org/address",
+    "schema:addressCountry": "https://schema.org/addressCountry",
+    "schema:validFrom": {
+      "@id": "https://schema.org/validFrom",
+      "@type": "xsd:date"
+    },
+    "schema:validThrough": {
+      "@id": "https://schema.org/validThrough",
+      "@type": "xsd:date"
+    },
+    "schema:value": "https://schema.org/value",
+    "schema:unitCode": "https://schema.org/unitCode",
+    "prov:wasDerivedFrom": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "prov:generatedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "extractionCoverage": "https://epdagent.dev/vocab/extractionCoverage",
+    "productSection": {
+      "@id": "https://epdagent.dev/vocab/productSection",
+      "@type": "@id"
+    },
+    "composition": {
+      "@id": "https://epdagent.dev/vocab/composition",
+      "@type": "@id"
+    },
+    "lcaStudy": {
+      "@id": "https://epdagent.dev/vocab/lcaStudy",
+      "@type": "@id"
+    },
+    "lcaTables": {
+      "@id": "https://epdagent.dev/vocab/lcaTables",
+      "@type": "@id"
+    },
+    "scenarios": {
+      "@id": "https://epdagent.dev/vocab/scenarios",
+      "@type": "@id"
+    },
+    "bibliography": {
+      "@id": "https://epdagent.dev/vocab/bibliography",
+      "@type": "@id"
+    },
+    "epdSections": {
+      "@id": "https://epdagent.dev/vocab/epdSections",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://localhost:3000/id/epd/B-EPD%2023.0191.006_01.00.01%20EN%20Kingspan%20Kooltherm%20K12%20-%20signed",
+      "@type": [
+        "EPD",
+        "schema:Product"
+      ],
+      "epdNumber": "23-0191-006-01.00.01",
+      "schema:name": "Kooltherm® K12",
+      "schema:description": "thermal insulation board",
+      "verificationStatement": "THIRD PARTY VERIFIED",
+      "conformityBasis": "in accordance with EN 15804+A2, EN16783 and NBN/DTD B08-001",
+      "declaredScope": "1 m2 thermal insulation board with a thickness of 80 mm with an RD-value of 3,80 m2·K/W",
+      "declaredModules": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "C",
+        "D"
+      ],
+      "filenamePattern": "unknown",
+      "declaredUnit": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2"
+      },
+      "schema:validFrom": "2023-04-20",
+      "schema:validThrough": "2028-04-20",
+      "pcrReference": "EN16783",
+      "programOperator": {
+        "@id": "http://localhost:3000/id/operator/B-EPD"
+      },
+      "producer": {
+        "@id": "http://localhost:3000/id/org/bebe357d7ebb"
+      },
+      "prov:wasDerivedFrom": {
+        "@type": "prov:Entity",
+        "schema:name": "B-EPD 23.0191.006_01.00.01 EN Kingspan Kooltherm K12 - signed.pdf"
+      },
+      "prov:generatedAtTime": "2026-05-26T18:04:45.898Z",
+      "productSection": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/product"
+      },
+      "extractionCoverage": {
+        "phase1": true,
+        "phase2": true,
+        "phase3_product": true,
+        "phase3_composition": false,
+        "phase3_lca_study": false,
+        "phase4_lca": [],
+        "phase5_scenarios": false,
+        "phase6_refs": false,
+        "phase7_epd_sections": false
+      }
+    },
+    {
+      "@id": "http://localhost:3000/id/operator/B-EPD",
+      "@type": "ProgramOperator",
+      "schema:name": "Federal Public Service Health, Food Chain Safety and Environment",
+      "operatorCode": "B-EPD"
+    },
+    {
+      "@id": "http://localhost:3000/id/org/bebe357d7ebb",
+      "@type": "schema:Organization",
+      "schema:name": "Kingspan Insulation BV",
+      "schema:address": null,
+      "schema:addressCountry": "NL"
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.006_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K12%2520-%2520signed/product",
+      "@type": "ProductSection",
+      "description": "The Kingspan Kooltherm® K12 is a premium performance insulation board with a fibre-free rigid thermoset phenolic core, faced on both sides with a perforated aluminium multilayer facing that is autohesively bonded to the insulation core during manufacture.\n\nPhenolic foam is produced by the use of phenolic resin, a catalyst, additives and blowing agent. The cell structure is formed in the resin under the influence of heat released during the chemical reaction. Hereby, the blowing agent is incorporated into the material which forms a solid and very fine cell structure, which is nearly 100% closed.\n\nThis is a specific EPD from a single company, Kingspan insulation BV.",
+      "intendedUse": "Kooltherm® K12 is suitable for use as insulation for framing systems.",
+      "referenceFlow": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2",
+        "description": "1 m2 thermal insulation with a thickness of 80 mm which gives a RD-value of 3,80 m2·K/W."
+      }
+    }
+  ]
+}

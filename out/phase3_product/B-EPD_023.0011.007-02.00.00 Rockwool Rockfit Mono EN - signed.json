@@ -1,0 +1,43 @@
+{
+  "description": "Mineral wool insulation. The finished product is included in this EPD, but not the materials needed for installation.\n\nDeclared for 150 mm. Available in 40 to 250 mm thickness.\n\nThe product is a rigid slab and has no facings.\n\nRockfit Mono is a flexible and water-repellent cavity board. Suitable for thermal and acoustic insulation of completely or partially filled cavity walls.\nIn the thinner thicknesses, Rockfit Mono is also extremely suitable as thermal and acoustic break in house partition walls (common walls).\n\nThis EPD is a specific EPD that reflects results from a single company and represents the manufacturing for product available on the Belgian market.",
+  "intended_use": "This product is used in cavity walls, curtain walls and separating walls.",
+  "reference_flow": {
+    "value": 1,
+    "unit": "m2",
+    "description": "1m² of installed insulation product with a defined RD-Value functioning for a period of 75 years in a building. Packaging is included. The weight per reference flow is 5.25 kg. The density of the product is 35 kg/m3. The thickness of the product is 150 mm."
+  },
+  "installation": "Materials for fixation and installation are not included. This means this EPD is \"as produced\".\n\nRegarding installation this EPD only includes the environmental impact related to the product itself.\n\nA typical installation is manually done with the help of cutting tools and results in 2% waste and is in accordance with EN16783.\n\nInstallation requires the need of additional products and materials for which the impact is not included in this EPD and which shall be taken into account at building level.\n\nFor auxiliary materials and installation guidelines: see technical data and installation guidelines on www.rockwool.com.",
+  "reference_service_life_years": 75,
+  "geographical_representativity": "The EPD is representative for the Belgian market.",
+  "production_process": "Stone and briquettes are melted in a cupola and melted material is spun on wheels that create stone fibres. These fibres are collected into a mat while resin is applied according to production specification. The resin is cured, and mineral oil is applied. The mat moves through a line process where compression, cutting and finishing are done to create the insulation products. ROCKWOOL products are then packaged. Mostly on pallet and a plastic wrap. Internal waste is recycled on-site.\n\nAll raw materials that enter the manufacturing stage have been traced back to the point of extraction from nature. In addition to raw materials, secondary materials from the market and internally recycled materials are used. Internally recycled material is modelled without environmental burden, apart from the processing it takes to prepare for on-site recycling.\n\nBlast Furnace Slag and the Converter slag are by-products of the steel industry and therefore the related emissions, attributed to their production should be accounted for. For this purpose, the principles of economic allocation, between the production of steel and slag are used. This B-EPD uses a conservative value of 1% using the process for pig iron.\n\nThe raw material input aluminium oxide (alumina source) is also classified as a by-product from the aluminium production and the allocation assigned to that is also 1% following a conservative approach. This B-EPD uses 1% of the process for aluminium, cast alloy.",
+  "technical_properties": [
+    {
+      "property": "Thickness",
+      "standard": null,
+      "value": "150",
+      "unit": "mm",
+      "comment": null
+    },
+    {
+      "property": "Thermal characteristics (λD)",
+      "standard": "EN 13162",
+      "value": "0.035",
+      "unit": "W/m.K",
+      "comment": null
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed.pdf",
+    "pdf_sha256": "1dcb3791d8f8ef2b1f3401323db334c05be0e3b8fae30c73fea242cad12aabdb",
+    "api_pages": "4-8",
+    "api_pages_resolved": "4,5,6,7,8",
+    "api_pdf_bytes": 359496,
+    "api_pdf_sha256": "4e60965626737fadb5681501a77ed3156549962d595fc1dcda78f23f368e87fa",
+    "api_pdf_slice": "out/pdf_slices/B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed.p4-p5-p6-p7-p8.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T15:57:49.538Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 11002,
+    "output_tokens": 974
+  }
+}

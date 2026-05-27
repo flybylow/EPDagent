@@ -1,0 +1,66 @@
+{
+  "components": [
+    {
+      "section": "Product",
+      "component": "Bitumen",
+      "composition": "Bitumen",
+      "quantity": "50 - 60%"
+    },
+    {
+      "section": "Product",
+      "component": "Polymers",
+      "composition": "Polymers",
+      "quantity": "13 - 20 %"
+    },
+    {
+      "section": "Product",
+      "component": "Reinforcement (support)",
+      "composition": "Reinforcement (support)",
+      "quantity": "4 - 6%"
+    },
+    {
+      "section": "Product",
+      "component": "Others ( charge, minerals",
+      "composition": "Others ( charge, minerals",
+      "quantity": ", finishing ) – 20 - 30 %"
+    },
+    {
+      "section": "Fixation materials",
+      "component": "Propane",
+      "composition": null,
+      "quantity": "0,150 kg/FU"
+    },
+    {
+      "section": "Jointing materials",
+      "component": "None",
+      "composition": null,
+      "quantity": null
+    },
+    {
+      "section": "Treatments",
+      "component": "None",
+      "composition": null,
+      "quantity": null
+    },
+    {
+      "section": "Packaging",
+      "component": "Pallet",
+      "composition": null,
+      "quantity": "0,1381 kg/FU"
+    }
+  ],
+  "declarations": [
+    "The product does not contain materials listed in the “Candidate list of Substances of Very High Concern for authorization”."
+  ],
+  "_source": {
+    "pdf_filename": "BEPD_024.0156.002-01.00.00_Derbigum NT 4- EN - signed.pdf",
+    "pdf_sha256": "8bd47b60762ce8be6b470c27271b0c2bd92247df0f127707856b0048245c72c0",
+    "api_pages": "7",
+    "api_pages_resolved": "7",
+    "extracted_by": "pdf-composition-table-parser",
+    "extracted_at": "2026-05-26T20:51:10.221Z",
+    "model": null,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

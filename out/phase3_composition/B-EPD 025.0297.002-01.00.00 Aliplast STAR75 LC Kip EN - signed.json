@@ -1,0 +1,18 @@
+{
+  "components": [],
+  "declarations": null,
+  "_source": {
+    "pdf_filename": "B-EPD 025.0297.002-01.00.00 Aliplast STAR75 LC Kip EN - signed.pdf",
+    "pdf_sha256": "4f62158c52c59848d61364bd4f9d594d412bfce6e3ea39aef460c22472efbf41",
+    "api_pages": "3",
+    "api_pages_resolved": "3",
+    "api_pdf_bytes": 111616,
+    "api_pdf_sha256": "b8164d6ca3459e5da7eb6e09a1201764e1804a99ae24338b2783af67d39aa7f3",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.0297.002-01.00.00 Aliplast STAR75 LC Kip EN - signed.p3.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:00:16.915Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 2978,
+    "output_tokens": 50
+  }
+}

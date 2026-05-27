@@ -19,8 +19,9 @@
       "id": "lca_impacts",
       "title": "Potential environmental impacts per reference unit",
       "phase": "phase4_lca",
-      "page": 11,
-      "section": "4"
+      "page": 8,
+      "section": "4",
+      "notes": "Impacts table; resource use p10, waste p12; rotated module headers"
     }
   ]
 }

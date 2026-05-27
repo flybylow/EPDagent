@@ -1,0 +1,111 @@
+{
+  "section_title": "3 LCA-STUDY",
+  "standards_and_methodology": "EN 15804+A2 is followed, meaning the characterization factors from EC-JRC were applied. No additional or deviating characterisation factors were used.",
+  "pcr_reference": null,
+  "lca_software_and_database": "For the calculation of the LCA results, the software program SimaPro 9.1 has been used. Ecoinvent 3.8",
+  "goal_and_scope": null,
+  "functional_unit": null,
+  "system_boundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 12\nDeclared modules (☒): A1, A2, A3, A4, A5, B1, B2, B3, B4, B5, C1, C2, C3, C4, D\nNot declared (☐): B6, B7\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4, A5\nUse stage: B1, B2, B3, B4, B5\nEnd of life stage: C1, C2, C3, C4\nBeyond the system boundaries: D\n\nModule labels (vertical text):\nA1: Raw materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: Construction\nB1: Use\nB2: Maintenance\nB3: Repa\nB4: Replacement\nB5: Refurbishment\nB6: Operational energy use\nB7: Operational water use\nC1: construction\nC2: Transport\nC3: Waste processing\nC4: Disposal\nD: Recovery",
+  "production_sites": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site. The manufacturing facility in Roermond uses multiple production lines and products can be produced on more than one line. Manufacturing data have been averaged per wool line and allocated to the amount of wool for the products and the ratio of the production volume of the specific products per line. The lines are of different age, use different efficiencies, allow for different uses of recycled briquettes and produce different types of wool. Averaging by volume over the lines provides the best way to model these differences into a representative average per product.",
+  "cut_off_criteria": "The cut-off criteria of EN 15804 are met. Following processes were excluded for the inventory: flows related to paper product labels, human activities such as employee transport and administration activity.",
+  "allocation": "Co-product allocation \nCo-product is relevant for internal allocation of consumables to products. This is relevant for the stone wool manufacturing data where multiple products are produced on the same production lines. The approach for co-products within the ROCKWOOL facilities was followed using mass and binder content.\nPlant level data \nPlant level data for ROCKWOOL is limited to the waste produced. Waste has been assigned to product based on the amount of wool in the product. All other data is production line specific and relevant allocation procedures per line are discussed un \"co-product allocation\" above.\nUse of secondary energy and material resources \nSome secondary energy and material resources are used at ROCKWOOL for the wool lines. Examples are the use of blast furnace slag and anode cokes. The processes to be able to utilize these secondary resources as well as the transportation to ROCKWOOL are included in the system boundaries. The production of these materials is considered where co-products generate 1% or more of total revenue. An example is blast furnace slag.\nMulti-input processes \nVarious products are processed together within an individual process, e.g. in a waste incineration plant or a landfill site. Allocation is performed based on physical classification of the material flows.\nRecycling \nInternally produced waste is recycled using the on-site recycling factory that produces briquettes that are used to make new products. The EPD includes this recycling by accounting for the consumption of briquettes on the lines.\nRecycling benefits from A5 are reported under module D.",
+  "data_quality": "Actual consumption data per manufacturing line have been compiled. The most notable background processes for which generic datasets were used are: \n• Diesel, low-sulfur {RER}| market group for | Cut-off, U \n• Natural gas, high pressure {NL}| market for | Cut-off, U \n• 'Heat, district or industrial, natural gas {Europe without Switzerland}| heat production, natural gas, at industrial furnace >100kW | Cut-off, U' \n• Electricity, low voltage {NL}| market for | Cut-off, U\n• Transport, freight, lorry, unspecified {GLO}| market for | Cut-off \n• Transport, freight, inland waterways, barge {RER}| processing | Cut-off, U \n• Transport, freight, sea, transoceanic ship {GLO}| market for | Cut-off, U\n• 'Electricity, high voltage {NL}| heat and power cogeneration, wood chips, 6667 kW, state-of-the-art 2014 | Cut-off, U'\n• 'Heat, district or industrial, other than natural gas {NL}| heat and power co-generation, wood chips, 6667 kW, state-of-the-art 2014 | Cut-off, U' \n• For sorting: Electricity, low voltage {NL}| market for | Cut-off, U",
+  "time_representativeness": "Manufacturer specific data have been collected for the year 2021.",
+  "geographical_representativeness": null,
+  "technology_representativeness": null,
+  "impact_assessment": null,
+  "interpretation": null,
+  "additional_paragraphs": [
+    "The product and packaging do not contain biogenic carbon, but the packaging does. Biogenic carbon content in product (at the gate) 0. Biogenic carbon content in accompanying packaging (at the gate) 0.17 kg C / FU.",
+    "Carbon offsetting is not allowed in the EN 15804 and hence not taken into account in the calculations.",
+    "National energy mix for generic processes. ROCKWOOL has a specific contract from renewable resources for the manufacturing site for the declared product. The following datasets have been used to model the actual supply mix: Electricity, high voltage {EE}| electricity production, wind, >3MW turbine, onshore | Cut-off, U, Electricity, hydropower, at run-of-river power plant/RER U and Electricity, high voltage {IT}| heat and power co-generation, wood chips, 6667 kW, state-of-the-art 2014 | Cut-off, U."
+  ],
+  "subsections": [
+    {
+      "number": "3.1",
+      "title": "Date of LCA-study",
+      "content": "October 2023"
+    },
+    {
+      "number": "3.2",
+      "title": "Software",
+      "content": "For the calculation of the LCA results, the software program SimaPro 9.1 has been used."
+    },
+    {
+      "number": "3.3",
+      "title": "Information on allocation",
+      "content": "Co-product allocation \nCo-product is relevant for internal allocation of consumables to products. This is relevant for the stone wool manufacturing data where multiple products are produced on the same production lines. The approach for co-products within the ROCKWOOL facilities was followed using mass and binder content.\nPlant level data \nPlant level data for ROCKWOOL is limited to the waste produced. Waste has been assigned to product based on the amount of wool in the product. All other data is production line specific and relevant allocation procedures per line are discussed un \"co-product allocation\" above.\nUse of secondary energy and material resources \nSome secondary energy and material resources are used at ROCKWOOL for the wool lines. Examples are the use of blast furnace slag and anode cokes. The processes to be able to utilize these secondary resources as well as the transportation to ROCKWOOL are included in the system boundaries. The production of these materials is considered where co-products generate 1% or more of total revenue. An example is blast furnace slag.\nMulti-input processes \nVarious products are processed together within an individual process, e.g. in a waste incineration plant or a landfill site. Allocation is performed based on physical classification of the material flows.\nRecycling \nInternally produced waste is recycled using the on-site recycling factory that produces briquettes that are used to make new products. The EPD includes this recycling by accounting for the consumption of briquettes on the lines.\nRecycling benefits from A5 are reported under module D."
+    },
+    {
+      "number": "3.4",
+      "title": "Informatie on cut off",
+      "content": "The cut-off criteria of EN 15804 are met."
+    },
+    {
+      "number": "3.5",
+      "title": "Information on excluded processes",
+      "content": "Following processes were excluded for the inventory: flows related to paper product labels, human activities such as employee transport and administration activity."
+    },
+    {
+      "number": "3.6",
+      "title": "Information on biogenic carbon modelling",
+      "content": "The product and packaging do not contain biogenic carbon, but the packaging does.\nBiogenic carbon content (kg C / FU )\nBiogenic carbon content in product (at the gate) 0\nBiogenic carbon content in accompanying packaging (at the gate) 0.17"
+    },
+    {
+      "number": "3.7",
+      "title": "Information on carbon offsetting",
+      "content": "Carbon offsetting is not allowed in the EN 15804 and hence not taken into account in the calculations."
+    },
+    {
+      "number": "3.8",
+      "title": "Additional or deviating characterisation factors",
+      "content": "EN 15804+A2 is followed, meaning the characterization factors from EC-JRC were applied. No additional or deviating characterisation factors were used."
+    },
+    {
+      "number": "3.9",
+      "title": "Description of the variability",
+      "content": "The manufacturing facility in Roermond uses multiple production lines and products can be produced on more than one line. Manufacturing data have been averaged per wool line and allocated to the amount of wool for the products and the ratio of the production volume of the specific products per line. The lines are of different age, use different efficiencies, allow for different uses of recycled briquettes and produce different types of wool. Averaging by volume over the lines provides the best way to model these differences into a representative average per product."
+    },
+    {
+      "number": "3.10",
+      "title": "Specificity",
+      "content": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site."
+    },
+    {
+      "number": "3.11",
+      "title": "Period of data collection",
+      "content": "Manufacturer specific data have been collected for the year 2021."
+    },
+    {
+      "number": "3.12",
+      "title": "Information on data collection",
+      "content": "Actual consumption data per manufacturing line have been compiled. The most notable background processes for which generic datasets were used are: \n• Diesel, low-sulfur {RER}| market group for | Cut-off, U \n• Natural gas, high pressure {NL}| market for | Cut-off, U \n• 'Heat, district or industrial, natural gas {Europe without Switzerland}| heat production, natural gas, at industrial furnace >100kW | Cut-off, U' \n• Electricity, low voltage {NL}| market for | Cut-off, U\n• Transport, freight, lorry, unspecified {GLO}| market for | Cut-off \n• Transport, freight, inland waterways, barge {RER}| processing | Cut-off, U \n• Transport, freight, sea, transoceanic ship {GLO}| market for | Cut-off, U\n• 'Electricity, high voltage {NL}| heat and power cogeneration, wood chips, 6667 kW, state-of-the-art 2014 | Cut-off, U'\n• 'Heat, district or industrial, other than natural gas {NL}| heat and power co-generation, wood chips, 6667 kW, state-of-the-art 2014 | Cut-off, U' \n• For sorting: Electricity, low voltage {NL}| market for | Cut-off, U"
+    },
+    {
+      "number": "3.13",
+      "title": "Database used for background data",
+      "content": "Ecoinvent 3.8"
+    },
+    {
+      "number": "3.14",
+      "title": "Energy mix",
+      "content": "National energy mix for generic processes. ROCKWOOL has a specific contract from renewable resources for the manufacturing site for the declared product. The following datasets have been used to model the actual supply mix: Electricity, high voltage {EE}| electricity production, wind, >3MW turbine, onshore | Cut-off, U, Electricity, hydropower, at run-of-river power plant/RER U and Electricity, high voltage {IT}| heat and power co-generation, wood chips, 6667 kW, state-of-the-art 2014 | Cut-off, U."
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed.pdf",
+    "pdf_sha256": "1dcb3791d8f8ef2b1f3401323db334c05be0e3b8fae30c73fea242cad12aabdb",
+    "api_pages": "9-10",
+    "api_pages_resolved": "9,10",
+    "api_pdf_bytes": 73098,
+    "api_pdf_sha256": "666613d37ce03c109dde6dea2adcac9c6435afde5b6c0554730e1c008ef8f6fc",
+    "api_pdf_slice": "out/pdf_slices/B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed.p9-p10.pdf",
+    "extracted_by": "claude-api+pdf-system-boundaries-parser",
+    "extracted_at": "2026-05-26T15:58:34.932Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 6576,
+    "output_tokens": 3227,
+    "system_boundaries_pages": "12",
+    "system_boundaries_refreshed_at": "2026-05-26T20:39:01.590Z"
+  }
+}

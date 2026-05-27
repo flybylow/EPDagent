@@ -1,0 +1,204 @@
+{
+  "@context": {
+    "@vocab": "https://epdagent.dev/vocab/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "EPD": "https://epdagent.dev/vocab/EPD",
+    "ProgramOperator": "https://epdagent.dev/vocab/ProgramOperator",
+    "declaredUnit": {
+      "@id": "https://epdagent.dev/vocab/declaredUnit",
+      "@type": "schema:QuantitativeValue"
+    },
+    "programOperator": {
+      "@id": "https://epdagent.dev/vocab/programOperator",
+      "@type": "@id"
+    },
+    "producer": {
+      "@id": "https://epdagent.dev/vocab/producer",
+      "@type": "@id"
+    },
+    "verifier": {
+      "@id": "https://epdagent.dev/vocab/verifier",
+      "@type": "@id"
+    },
+    "pcrReference": "https://epdagent.dev/vocab/pcrReference",
+    "epdNumber": "https://epdagent.dev/vocab/epdNumber",
+    "language": "https://epdagent.dev/vocab/language",
+    "filenamePattern": "https://epdagent.dev/vocab/filenamePattern",
+    "schema:name": "https://schema.org/name",
+    "schema:address": "https://schema.org/address",
+    "schema:addressCountry": "https://schema.org/addressCountry",
+    "schema:validFrom": {
+      "@id": "https://schema.org/validFrom",
+      "@type": "xsd:date"
+    },
+    "schema:validThrough": {
+      "@id": "https://schema.org/validThrough",
+      "@type": "xsd:date"
+    },
+    "schema:value": "https://schema.org/value",
+    "schema:unitCode": "https://schema.org/unitCode",
+    "prov:wasDerivedFrom": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "prov:generatedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "extractionCoverage": "https://epdagent.dev/vocab/extractionCoverage",
+    "productSection": {
+      "@id": "https://epdagent.dev/vocab/productSection",
+      "@type": "@id"
+    },
+    "composition": {
+      "@id": "https://epdagent.dev/vocab/composition",
+      "@type": "@id"
+    },
+    "lcaStudy": {
+      "@id": "https://epdagent.dev/vocab/lcaStudy",
+      "@type": "@id"
+    },
+    "lcaTables": {
+      "@id": "https://epdagent.dev/vocab/lcaTables",
+      "@type": "@id"
+    },
+    "scenarios": {
+      "@id": "https://epdagent.dev/vocab/scenarios",
+      "@type": "@id"
+    },
+    "bibliography": {
+      "@id": "https://epdagent.dev/vocab/bibliography",
+      "@type": "@id"
+    },
+    "epdSections": {
+      "@id": "https://epdagent.dev/vocab/epdSections",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://localhost:3000/id/epd/B-EPD%20023.0221.004-01.00.00%20Holcim%20CEM%20VA%20(S-V)%20425%20N-LH%20HSR%20bulk%20%E2%80%9CECOPlanet%E2%80%9D%20EN%20-%20signed",
+      "@type": [
+        "EPD",
+        "schema:Product"
+      ],
+      "epdNumber": "23.0221.04-01.00.00",
+      "schema:name": "CEM V/A (S-V) 42,5 N-LH HSR bulk \"ECOPlanet\"",
+      "verificationStatement": "THIRD PARTY VERIFIED",
+      "conformityBasis": "in accordance with EN 15804+A2, B-EPD Construction PCR and EN 16908+A1",
+      "declaredScope": "1 tonne (1000 kg) of CEM V/A (S-V) 42,5 N-LH HSR bulk \"ECOPlanet\". Cradle-to-gate with options.",
+      "declaredModules": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "filenamePattern": "unknown",
+      "declaredUnit": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "t"
+      },
+      "schema:validFrom": "2023-12-08",
+      "schema:validThrough": "2028-12-08",
+      "pcrReference": "EN 16908+A1",
+      "programOperator": {
+        "@id": "http://localhost:3000/id/operator/B-EPD"
+      },
+      "producer": {
+        "@id": "http://localhost:3000/id/org/2b2aa3f325e0"
+      },
+      "verifier": {
+        "@id": "http://localhost:3000/id/person/2c64782646b0"
+      },
+      "prov:wasDerivedFrom": {
+        "@type": "prov:Entity",
+        "schema:name": "B-EPD 023.0221.004-01.00.00 Holcim CEM VA (S-V) 425 N-LH HSR bulk “ECOPlanet” EN - signed.pdf"
+      },
+      "prov:generatedAtTime": "2026-05-26T17:57:50.655Z",
+      "productSection": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.004-01.00.00%2520Holcim%2520CEM%2520VA%2520(S-V)%2520425%2520N-LH%2520HSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN%2520-%2520signed/product"
+      },
+      "bibliography": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.004-01.00.00%2520Holcim%2520CEM%2520VA%2520(S-V)%2520425%2520N-LH%2520HSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN%2520-%2520signed/references"
+      },
+      "epdSections": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.004-01.00.00%2520Holcim%2520CEM%2520VA%2520(S-V)%2520425%2520N-LH%2520HSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN%2520-%2520signed/sections"
+      },
+      "extractionCoverage": {
+        "phase1": true,
+        "phase2": true,
+        "phase3_product": true,
+        "phase3_composition": false,
+        "phase3_lca_study": true,
+        "phase4_lca": [],
+        "phase5_scenarios": false,
+        "phase6_refs": true,
+        "phase7_epd_sections": true
+      }
+    },
+    {
+      "@id": "http://localhost:3000/id/operator/B-EPD",
+      "@type": "ProgramOperator",
+      "schema:name": "Federal Public Service of Health, Food Chain Safety and Environment",
+      "operatorCode": "B-EPD"
+    },
+    {
+      "@id": "http://localhost:3000/id/org/2b2aa3f325e0",
+      "@type": "schema:Organization",
+      "schema:name": "Holcim Belgique SA",
+      "schema:address": null,
+      "schema:addressCountry": "BE"
+    },
+    {
+      "@id": "http://localhost:3000/id/person/2c64782646b0",
+      "@type": "schema:Person",
+      "schema:name": "Dieter De Lathauwer",
+      "verificationType": "independent_third_party"
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.004-01.00.00%2520Holcim%2520CEM%2520VA%2520(S-V)%2520425%2520N-LH%2520HSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN%2520-%2520signed/product",
+      "@type": "ProductSection",
+      "intendedUse": "The intended use of this EPD is to communicate scientifically based environmental information for construction products, for the purpose of assessing the environmental performance of buildings."
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.004-01.00.00%2520Holcim%2520CEM%2520VA%2520(S-V)%2520425%2520N-LH%2520HSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN%2520-%2520signed/references",
+      "@type": "Bibliography",
+      "bibliography": [],
+      "additionalInformation": [
+        "The blast furnace slag input has been economically allocated as a co-product of pig iron production.",
+        "The impact of the siliceous fly ash (a waste from coal-fire electricity production) has been allocated to the previous system.",
+        "The B-PCR provides default transport scenarios for the transport to the building site for cases where specific data on transport are missing. The B-PCR provides scenarios for this life cycle stage. The following transport steps apply: – 75% directly to the construction site over 100 km with a Lorry 16-32 ton (EURO5) (ecoinvent record: 'Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, U') – 25% to a supplier over 100 km with a >32 ton lorry (ecoinvent record: 'Transport, freight, lorry >32 metric ton, EURO5 {RER}| transport, freight, lorry >32 metric ton, EURO5 | Cut-off, U'). Afterwards the product is transported from the supplier to the construction site. 90% of the 25% is transported with a Lorry 16-32 ton (EURO5) over a distance of 35km and 10% of the 25% is transported with a Lorry 7.5-16 ton (EURO5) over a distance of 35km. (ecoinvent records: 'Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, U', 'Transport, freight, lorry 7.5-16 metric ton, EURO5 {RER}| transport, freight, lorry 7.5-16 metric ton, EURO5 | Cut-off, U')"
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520023.0221.004-01.00.00%2520Holcim%2520CEM%2520VA%2520(S-V)%2520425%2520N-LH%2520HSR%2520bulk%2520%25E2%2580%259CECOPlanet%25E2%2580%259D%2520EN%2520-%2520signed/sections",
+      "@type": "EpdSectionSet",
+      "blocks": [
+        {
+          "number": "11.1",
+          "title": "Indoor air",
+          "content": "Cement is not in direct contact with indoor air. It is the cement-based products (concrete, mortar …) that are potentially in contact with indoor air."
+        },
+        {
+          "number": "11.2",
+          "title": "Soil and water",
+          "content": "Cement is not in direct contact with soil and water. It is the cement-based products (concrete, mortar …) that are potentially in contact with soil and water."
+        },
+        {
+          "number": "12",
+          "title": "DEMONSTRATION OF VERIFICATION",
+          "content": "EN 15804+A2 serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\nInternal ☐ External ☒\n\nThird party verifier: [ Evert Vermaut, Jan Olieslagerslaan 35, 1800 Vilvoorde, rsterckx@vincotte.be]"
+        },
+        {
+          "number": "15",
+          "title": "APPLICATION UNIT",
+          "content": "Not applicable for this EPD."
+        },
+        {
+          "number": "16",
+          "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+          "content": "Not applicable for this EPD."
+        }
+      ]
+    }
+  ]
+}

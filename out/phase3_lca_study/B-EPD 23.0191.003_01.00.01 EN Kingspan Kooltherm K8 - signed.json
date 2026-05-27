@@ -1,0 +1,112 @@
+{
+  "section_title": "3 LCA-STUDY",
+  "standards_and_methodology": "Carbon offsetting is not allowed in the EN 15804 and hence not taken into account in the calculations.",
+  "pcr_reference": null,
+  "lca_software_and_database": "For the calculation of the LCA results, the software program SimaPro 9.1.1 has been used. The Ecoinvent v3.6 database (2019) is used for background data",
+  "goal_and_scope": null,
+  "functional_unit": "The declared unit in this EPD is 1 m2 thermal insulation with a thickness of 80 mm which gives a RD-value of 3,80 m2·K/W.",
+  "system_boundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 11\nDeclared modules (☒): A1, A2, A3, A4, A5, C1, C2, C3, C4, D\nNot declared (☐): B1, B2, B3, B4, B5, B6, B7\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4, A5\nEnd of life stage: C1, C2, C3, C4\nBeyond the system boundaries: D\n\nModule labels (vertical text):\nA1: materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: Construction\nB1: Use\nB2: Maintenance\nB3: Repa\nB4: Replacement\nB5: Refurbishment\nB6: Operational energy use\nB7: Operational water use\nC1: construction\nC2: Transport\nC3: Waste processing\nC4: Disposal\nD: Recovery",
+  "production_sites": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site.",
+  "cut_off_criteria": "The total of neglected input flows per module is less than 5% of energy usage and mass as prescribed by EN15804+A2.",
+  "allocation": "Different types of Kooltherm® insulation boards are produced at the production plant in Tiel (NL). For the use of energy there is only data available for the total site. This data has been allocated to Kooltherm® K8 based on physical properties. Production waste was allocated similarly.",
+  "data_quality": "Company specific data for the product stage have been collected by Kingspan Insulation and were provided to Nibe (R<Think application).",
+  "time_representativeness": "Manufacturer specific data for the location Tiel have been collected for the year 2019.",
+  "geographical_representativeness": null,
+  "technology_representativeness": null,
+  "impact_assessment": "The characterization factors from EC-JRC were applied. No additional or deviating characterization factors were used.",
+  "interpretation": null,
+  "additional_paragraphs": [
+    "Following processes were excluded for the inventory:\n- Impact of infrastructures\n- Consumables necessary for the functioning of the process, production, maintenance and end-of-life of equipment\n- Environmental impacts caused by the personnel of the production plants are not included in the LCA, e.g. waste from the cafeteria and sanitary installations or environmental effects caused by commuter traffic. Heating or cooling of the plants in order to ensure a comfortable indoor climate for the personnel could not be distinguished during the data collection and is therefore included.",
+    "The total mass of biogenic carbon containing materials is less than 5 % of the total mass of the product and accompanying packaging.",
+    "Kingspan Kooltherm® K8 can be produced in all thicknesses between 20 and 200mm (single layer product) and covers a RD range of 0.95 – 9.50. The results in this EPD can be used to recalculate to other thicknesses / RD-values. Where the foam-core is the scalable part and the facer the non-scalable part.",
+    "All electricity used during production comes from renewable sources. By generating energy on-site with PV panels and with procured energy from fully certified renewable sources (Guarantees of Origin)."
+  ],
+  "subsections": [
+    {
+      "number": "3.1",
+      "title": "Date of LCA-study",
+      "content": "July 2022"
+    },
+    {
+      "number": "3.2",
+      "title": "Software",
+      "content": "For the calculation of the LCA results, the software program SimaPro 9.1.1 has been used."
+    },
+    {
+      "number": "3.3",
+      "title": "Information on allocation",
+      "content": "Different types of Kooltherm® insulation boards are produced at the production plant in Tiel (NL). For the use of energy there is only data available for the total site. This data has been allocated to Kooltherm® K8 based on physical properties. Production waste was allocated similarly."
+    },
+    {
+      "number": "3.4",
+      "title": "Informatie on cut off",
+      "content": "The total of neglected input flows per module is less than 5% of energy usage and mass as prescribed by EN15804+A2."
+    },
+    {
+      "number": "3.5",
+      "title": "Information on excluded processes",
+      "content": "Following processes were excluded for the inventory:\n- Impact of infrastructures\n- Consumables necessary for the functioning of the process, production, maintenance and end-of-life of equipment\n- Environmental impacts caused by the personnel of the production plants are not included in the LCA, e.g. waste from the cafeteria and sanitary installations or environmental effects caused by commuter traffic. Heating or cooling of the plants in order to ensure a comfortable indoor climate for the personnel could not be distinguished during the data collection and is therefore included."
+    },
+    {
+      "number": "3.6",
+      "title": "Information on biogenic carbon modelling",
+      "content": "The total mass of biogenic carbon containing materials is less than 5 % of the total mass of the product and accompanying packaging."
+    },
+    {
+      "number": "3.7",
+      "title": "Information on carbon offsetting",
+      "content": "Carbon offsetting is not allowed in the EN 15804 and hence not taken into account in the calculations."
+    },
+    {
+      "number": "3.8",
+      "title": "Additional or deviating characterization factors",
+      "content": "The characterization factors from EC-JRC were applied. No additional or deviating characterization factors were used."
+    },
+    {
+      "number": "3.9",
+      "title": "Description of the variability",
+      "content": "The declared unit in this EPD is 1 m2 thermal insulation with a thickness of 80 mm which gives a RD-value of 3,80 m2·K/W. Kingspan Kooltherm® K8 can be produced in all thicknesses between 20 and 200mm (single layer product) and covers a RD range of 0.95 – 9.50. The results in this EPD can be used to recalculate to other thicknesses / RD-values. Where the foam-core is the scalable part and the facer the non-scalable part."
+    },
+    {
+      "number": "3.10",
+      "title": "Specificity",
+      "content": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site."
+    },
+    {
+      "number": "3.11",
+      "title": "Period of data collection",
+      "content": "Manufacturer specific data for the location Tiel have been collected for the year 2019."
+    },
+    {
+      "number": "3.12",
+      "title": "Information on data collection",
+      "content": "Company specific data for the product stage have been collected by Kingspan Insulation and were provided to Nibe (R<Think application)."
+    },
+    {
+      "number": "3.13",
+      "title": "Database used for background data",
+      "content": "The Ecoinvent v3.6 database (2019) is used for background data"
+    },
+    {
+      "number": "3.14",
+      "title": "Energy mix",
+      "content": "All electricity used during production comes from renewable sources. By generating energy on-site with PV panels and with procured energy from fully certified renewable sources (Guarantees of Origin)."
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 23.0191.003_01.00.01 EN Kingspan Kooltherm K8 - signed.pdf",
+    "pdf_sha256": "54126da41d22c7435bd572d70db49eeba6a715ea80f8bf268407d3b68f28fae7",
+    "api_pages": "8-10",
+    "api_pages_resolved": "8,9,10",
+    "api_pdf_bytes": 74807,
+    "api_pdf_sha256": "6f496b44b965ec664c7ba06bb72b83ade8b490ec008f75b33e1bcf152105ee55",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 23.0191.003_01.00.01 EN Kingspan Kooltherm K8 - signed.p8-p9-p10.pdf",
+    "extracted_by": "claude-api+pdf-system-boundaries-parser",
+    "extracted_at": "2026-05-26T18:37:58.231Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 7570,
+    "output_tokens": 2016,
+    "system_boundaries_pages": "11",
+    "system_boundaries_refreshed_at": "2026-05-26T20:39:01.549Z"
+  }
+}

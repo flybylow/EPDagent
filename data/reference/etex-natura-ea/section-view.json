@@ -1,0 +1,97 @@
+{
+  "sections": {
+    "1": {
+      "fields": [
+        { "label": "Product description", "path": "phase3.description", "format": "text" },
+        { "label": "Intended use", "path": "phase3.intended_use", "format": "text" },
+        { "label": "Reference flow / declared unit", "path": "phase3.reference_flow.description", "format": "text" },
+        { "label": "Installation", "path": "phase3.installation", "format": "text" },
+        {
+          "label": "Reference service life",
+          "path": "phase3.reference_service_life_years",
+          "format": "years"
+        },
+        {
+          "label": "Geographical representativity",
+          "path": "phase3.geographical_representativity",
+          "format": "text"
+        },
+        {
+          "label": "Production process",
+          "path": "phase3.production_process",
+          "format": "text"
+        }
+      ]
+    },
+    "1.1": {
+      "fields": [{ "label": "Product name", "path": "phase2.product_name", "format": "text" }]
+    },
+    "1.2": {
+      "fields": [{ "label": "Product description", "path": "phase3.description", "format": "text" }]
+    },
+    "1.3": {
+      "fields": [{ "label": "Intended use", "path": "phase3.intended_use", "format": "text" }]
+    },
+    "1.4": {
+      "fields": [
+        {
+          "label": "Reference flow / declared unit",
+          "path": "phase3.reference_flow.description",
+          "format": "text"
+        }
+      ]
+    },
+    "1.5": {
+      "view": "phase3_composition",
+      "tableId": "composition"
+    },
+    "1.6": {
+      "fields": [
+        {
+          "label": "Reference service life",
+          "path": "phase3.reference_service_life_years",
+          "format": "years"
+        }
+      ]
+    },
+    "2": {
+      "view": "phase3_technical",
+      "tableId": "technical_data"
+    },
+    "3": {
+      "view": "phase3_lca_study"
+    },
+    "4": {
+      "view": "phase4_lca",
+      "tableId": "lca_impacts"
+    },
+    "5": {
+      "fields": [
+        {
+          "label": "Verification statement",
+          "path": "phase2.verification_statement",
+          "format": "text"
+        },
+        { "label": "Verifier", "path": "phase2.verifier.name", "format": "text" },
+        {
+          "label": "Verification type",
+          "path": "phase2.verifier.type",
+          "format": "text",
+          "enumLabels": {
+            "independent_third_party": "Third party verified",
+            "internal": "Internal verification",
+            "unknown": "Unknown"
+          }
+        },
+        {
+          "label": "Standards conformity",
+          "path": "phase2.standards_conformity",
+          "format": "text"
+        },
+        { "label": "Conformity basis", "path": "phase2.conformity_basis", "format": "text" },
+        { "label": "Program operator", "path": "phase2.program_operator", "format": "text" },
+        { "label": "PCR reference", "path": "phase2.pcr_reference", "format": "text" }
+      ]
+    }
+  }
+}

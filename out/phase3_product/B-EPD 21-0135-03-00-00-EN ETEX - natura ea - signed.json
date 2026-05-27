@@ -1,0 +1,120 @@
+{
+  "description": "EQUITONE [natura – textura - materia] is an air-cured calcium silicate fibre cement sheet produced at Neubeckum production plant, Germany. EQUITONE [natura-textura-materia] are naturally hardened fiber cement sheets comprising cellulose and polymer fibers for water retention, improved tensile load distribution and increased breaking load and distortion. EQUITONE [natura] is a glaze-coated façade panel with a translucent surface structure. EQUITONE [textura] is a coated façade panel with a slightly grainy surface. The coated top layer of EQUITONE [materia] façade panels is sanded.",
+  "intended_use": "EQUITONE [natura-textura-materia] serve as cladding materials for back-ventilated curtain façades. The façade panels serve towards assembly on substructures made of wood or metal. Once installed correctly according to the manufacturer's guidelines EQUITONE [natura-textura-materia] need no further maintenance, repair, replacement or refurbishment during the full life span of the product.",
+  "reference_flow": {
+    "value": 1,
+    "unit": "m2",
+    "description": "The functional unit is defined as: the production and installation of 1 m2 (thickness 8 mm) of a \"EQUITONE [natura – textura - materia]\" sheets and its related impacts over cradle-to-grave life cycle stages, where the product's expected average reference service life is of 60 years."
+  },
+  "installation": "The product is installed according to the following scenario(s): fixation of the panel to a substructure in wood or metal. This EPD declares the screws and energy consumption to fixate the panels, but does not include the substructure.",
+  "reference_service_life_years": 60,
+  "geographical_representativity": "The EPD is representative for the Belgian market.",
+  "production_process": "EQUITONE [natura-textura-materia] are large format panels made of fiber cement. They are manufactured largely in accordance with an automated winding process (Hatschek process): the raw materials are mixed with water to prepare a homogenous mixture. Rotating screen cylinders are immersed in this fiber cement pulp which drain internally. The screen surface is covered in a thin film of fiber cement which is transferred onto an infinite conveyor belt from where it is conveyed to a format roller which is gradually covered in an increasingly thicker layer of fiber cement. Once the requisite material thickness is achieved, the still moist and malleable fiber cement layer (fiber cement fleece) is separated and removed from the format roller. The fiber cement fleece is cut to size and leftovers from the wet process are returned to the production process preventing any waste from being incurred. The cut fleece is stacked and compressed at high pressure. The panels are then set aside for binding before stacking on pallets and store for further setting. The setting time lasts approx. 4 weeks. The façade panels are then dried, mechanically treated to obtain the desired surface aspect. EQUITONE [natura] is finished with two semi-transparent water-based acryl dispersions on the panel face (front) and a transparent back-sealing coating (rear). The surface of the EQUITONE [materia] receives a mechanical surface treatment giving the rough texture. They are given a partially transparent seal on the back. The surface finish of the EQUITONE [textura] is a water-based acrylate dispersion with grainy structure on the facing side and a transparent back-sealing coating on the rear. Waste from damaged or broken panels is recycled by an external company as raw material for cement production.",
+  "technical_properties": [
+    {
+      "property": "Gross density dry (min)",
+      "standard": "EN12467",
+      "value": "1650",
+      "unit": "kg/m3",
+      "comment": ""
+    },
+    {
+      "property": "Standard board thickness",
+      "standard": "",
+      "value": "8",
+      "unit": "mm",
+      "comment": ""
+    },
+    {
+      "property": "Thermal conductivity",
+      "standard": "",
+      "value": "0.407",
+      "unit": "W/(mK)",
+      "comment": ""
+    },
+    {
+      "property": "Water vapour diffusion resistance factor acc. to DIN V 4108-4, EN ISO 12572",
+      "standard": "DIN 4108-4, EN ISO 12572",
+      "value": "140-350",
+      "unit": "-",
+      "comment": ""
+    },
+    {
+      "property": "Flexural strength parallel",
+      "standard": "EN12467",
+      "value": "24",
+      "unit": "N/mm2",
+      "comment": ""
+    },
+    {
+      "property": "Flexural strength perpendicular",
+      "standard": "EN12467",
+      "value": "17",
+      "unit": "N/mm2",
+      "comment": ""
+    },
+    {
+      "property": "Modulus of elasticity parallel",
+      "standard": "EN12467",
+      "value": "> 17000",
+      "unit": "N/mm2",
+      "comment": ""
+    },
+    {
+      "property": "Modulus of elasticity perpendicular",
+      "standard": "EN12467",
+      "value": "> 15000",
+      "unit": "N/mm2",
+      "comment": ""
+    },
+    {
+      "property": "Moisture content at 23 °C, 80% humidity",
+      "standard": "",
+      "value": "10",
+      "unit": "M.-%",
+      "comment": ""
+    },
+    {
+      "property": "Coefficient of thermal expansion",
+      "standard": "",
+      "value": "0.01",
+      "unit": "10-6K-1",
+      "comment": ""
+    },
+    {
+      "property": "Chemical resistance similar to concrete C 35/45",
+      "standard": "-",
+      "value": "-",
+      "unit": "-",
+      "comment": ""
+    },
+    {
+      "property": "Ageing resistance similar to concrete C 35/45",
+      "standard": "-",
+      "value": "-",
+      "unit": "-",
+      "comment": ""
+    },
+    {
+      "property": "Permanent temperature resistance",
+      "standard": "",
+      "value": "80",
+      "unit": "°C",
+      "comment": ""
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 21-0135-03-00-00-EN ETEX - natura ea - signed.pdf",
+    "pdf_sha256": "a978cdef703774f12007227bbe6bd0df254ccdf8cae3dbd4372ec40eac9bbf22",
+    "api_pages": "2-4",
+    "api_pages_resolved": "2,3,4",
+    "api_pdf_bytes": 258649,
+    "api_pdf_sha256": "4bd31e703d0a612481bb9d0b177faf130af83c47d99a1afa0e75fbe2ec8512ba",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 21-0135-03-00-00-EN ETEX - natura ea - signed.p2-p3-p4.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T17:13:04.593Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 7952,
+    "output_tokens": 1663
+  }
+}

@@ -11,10 +11,33 @@ import {
   pdfDir,
   pdfStem,
 } from "./paths";
-import type { EpdRecord, Phase1Data, Phase2Data, Phase3CompositionData, Phase3ProductData } from "./types";
+import { docmapIsCached } from "./extract/docmap-cache";
+import { sectionNavCoverageStats } from "./navigation/coverage-stats";
+import { summarizeExtractRun } from "./extract/extract-plan-status";
+import { resolveEpdPhases } from "./phases/registry";
+import { resolveCorpusPhases } from "./phases/registry";
+import { phaseShortLabel } from "./phases/short-labels";
+import type {
+  EpdRecord,
+  Phase1Data,
+  Phase2Data,
+  Phase3CompositionData,
+  Phase3LcaStudyData,
+  Phase3ProductData,
+  Phase5ScenariosData,
+  Phase6RefsData,
+  Phase7EpdSectionsData,
+} from "./types";
 import type { DraftDocument, DraftManifest, VerificationResult } from "./templates/types";
 import type { PhaseDocmapResult } from "./extract/docmap";
 import { getReferenceByStem } from "./reference";
+import {
+  aliasStemsForCanonical,
+  collectCandidateStems,
+  dedupeCorpusStems,
+  invalidateCorpusStemCache,
+  resolveCanonicalCorpusStem,
+} from "./stems/corpus-dedupe";
 
 function isDemoFixture(phase1: Phase1Data | null, phase2: Phase2Data | null): boolean {
   const by =
@@ -28,29 +51,25 @@ function readJson<T>(filePath: string): T | null {
   return JSON.parse(fs.readFileSync(filePath, "utf-8")) as T;
 }
 
-function listStems(dir: string): string[] {
-  if (!fs.existsSync(dir)) return [];
-  return fs
-    .readdirSync(dir)
-    .filter((f) => f.endsWith(".json") && !f.endsWith(".error.json"))
-    .map((f) => path.basename(f, ".json"));
+export function listEpdStems(): string[] {
+  invalidateCorpusStemCache();
+  return dedupeCorpusStems(collectCandidateStems());
 }
 
-export function listEpdStems(): string[] {
-  const stems = new Set<string>([
-    ...listPdfFiles().map((f) => pdfStem(f)),
-    ...listStems(PHASE_DIRS.phase1),
-    ...listStems(PHASE_DIRS.phase2),
-  ]);
-  return [...stems].sort();
+function readPhaseJson<T>(phaseDir: string, stem: string): T | null {
+  for (const alias of aliasStemsForCanonical(stem)) {
+    const data = readJson<T>(path.join(phaseDir, `${alias}.json`));
+    if (data) return data;
+  }
+  return null;
 }
 
 export function loadPhase1(stem: string): Phase1Data | null {
-  return readJson<Phase1Data>(path.join(PHASE_DIRS.phase1, `${stem}.json`));
+  return readPhaseJson<Phase1Data>(PHASE_DIRS.phase1, stem);
 }
 
 export function loadPhase2(stem: string): Phase2Data | null {
-  return readJson<Phase2Data>(path.join(PHASE_DIRS.phase2, `${stem}.json`));
+  return readPhaseJson<Phase2Data>(PHASE_DIRS.phase2, stem);
 }
 
 export function loadPhase3(stem: string): Phase3ProductData | null {
@@ -59,6 +78,22 @@ export function loadPhase3(stem: string): Phase3ProductData | null {
 
 export function loadPhase3Composition(stem: string): Phase3CompositionData | null {
   return readJson<Phase3CompositionData>(path.join(PHASE_DIRS.phase3_composition, `${stem}.json`));
+}
+
+export function loadPhase3LcaStudy(stem: string): Phase3LcaStudyData | null {
+  return readJson<Phase3LcaStudyData>(path.join(PHASE_DIRS.phase3_lca_study, `${stem}.json`));
+}
+
+export function loadPhase5(stem: string): Phase5ScenariosData | null {
+  return readJson<Phase5ScenariosData>(path.join(PHASE_DIRS.phase5, `${stem}.json`));
+}
+
+export function loadPhase6(stem: string): Phase6RefsData | null {
+  return readJson<Phase6RefsData>(path.join(PHASE_DIRS.phase6, `${stem}.json`));
+}
+
+export function loadPhase7(stem: string): Phase7EpdSectionsData | null {
+  return readJson<Phase7EpdSectionsData>(path.join(PHASE_DIRS.phase7, `${stem}.json`));
 }
 
 export function loadGraphDocument(stem: string): Record<string, unknown> | null {
@@ -83,15 +118,74 @@ export function loadVerification(stem: string): VerificationResult | null {
 }
 
 export function loadDocmap(stem: string): PhaseDocmapResult | null {
-  return readJson<PhaseDocmapResult>(path.join(PHASE_DIRS.phase_docmap, `${stem}.json`));
+  const canonical = canonicalExtractStem(stem);
+  return readJson<PhaseDocmapResult>(
+    path.join(PHASE_DIRS.phase_docmap, `${canonical}.json`)
+  );
+}
+
+/** Resolve on-disk PDF for a corpus stem, phase1 metadata, or reference id/stem. */
+export function resolvePdfPathForStem(stem: string): string | null {
+  const dir = pdfDir();
+  const direct = path.join(dir, `${stem}.pdf`);
+  if (fs.existsSync(direct)) return direct;
+
+  const phase1 = loadPhase1(stem);
+  if (phase1?.pdf_filename) {
+    const byFilename = path.join(dir, phase1.pdf_filename);
+    if (fs.existsSync(byFilename)) return byFilename;
+  }
+  if (phase1?.pdf_stem && phase1.pdf_stem !== stem) {
+    const byStem = path.join(dir, `${phase1.pdf_stem}.pdf`);
+    if (fs.existsSync(byStem)) return byStem;
+  }
+
+  const reference = getReferenceByStem(stem);
+  if (reference) {
+    const byRef = path.join(dir, reference.pdfFile);
+    if (fs.existsSync(byRef)) return byRef;
+  }
+
+  const folded = foldPdfStem(stem);
+  for (const file of fs.readdirSync(dir)) {
+    if (!file.endsWith(".pdf")) continue;
+    const base = path.basename(file, ".pdf");
+    if (foldPdfStem(base) === folded) return path.join(dir, file);
+  }
+
+  return null;
+}
+
+function foldPdfStem(s: string): string {
+  return s
+    .normalize("NFC")
+    .replace(/[\u201C\u201D\u2018\u2019""]/g, '"')
+    .replace(/(\d),(\d)/g, "$1.$2")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
+/** Resolve URL/corpus stem to canonical on-disk identity (Unicode, comma/period, etc.). */
+export function resolveCorpusStem(raw: string): string {
+  const canonical = resolveCanonicalCorpusStem(raw);
+  if (pdfPathForStem(canonical)) return canonicalExtractStem(canonical);
+  return canonical;
 }
 
 export function pdfPathForStem(stem: string): string | null {
-  const candidate = path.join(pdfDir(), `${stem}.pdf`);
-  return fs.existsSync(candidate) ? candidate : null;
+  return resolvePdfPathForStem(stem);
 }
 
-export function loadEpdRecord(stem: string): EpdRecord {
+/** Stem that matches on-disk outputs (handles Unicode quotes in PDF filenames). */
+export function canonicalExtractStem(stem: string): string {
+  const pdfPath = resolvePdfPathForStem(stem);
+  if (pdfPath) return path.basename(pdfPath, path.extname(pdfPath));
+  return stem;
+}
+
+export function loadEpdRecord(rawStem: string): EpdRecord {
+  const stem = resolveCorpusStem(rawStem);
   const graphPath = fs.existsSync(path.join(GRAPH_DIR, `${stem}.jsonld`))
     ? path.join(GRAPH_DIR, `${stem}.jsonld`)
     : null;
@@ -103,20 +197,45 @@ export function loadEpdRecord(stem: string): EpdRecord {
     : null;
 
   const pdfPath = pdfPathForStem(stem);
+  const pdfServeStem = pdfPath ? path.basename(pdfPath, path.extname(pdfPath)) : null;
   const phase1 = loadPhase1(stem);
   const phase2 = loadPhase2(stem);
   const reference = getReferenceByStem(stem);
+  const pipelinePhases = resolveCorpusPhases(stem).map((phase) => ({
+    id: phase.id,
+    shortLabel: phaseShortLabel(phase.id),
+    name: phase.name,
+    status: phase.status,
+  }));
+  const extractRun = summarizeExtractRun(stem);
+  const sectionCoverage = pdfPath
+    ? sectionNavCoverageStats(
+        resolveEpdPhases(stem, { pdfAvailable: true }).sectionNav.items
+      )
+    : null;
 
   return {
     stem,
-    pdfFilename: pdfPath ? `${stem}.pdf` : phase1?.pdf_filename ?? null,
+    pdfFilename: pdfPath
+      ? path.basename(pdfPath)
+      : phase1?.pdf_filename ?? null,
     hasPdf: !!pdfPath,
+    pdfServeStem,
     isDemoFixture: isDemoFixture(phase1, phase2),
-    needsExtraction: !!pdfPath && (!phase1 || !phase2),
+    needsExtraction: !!pdfPath && (!phase1 || !phase2 || !docmapIsCached(stem)),
     referenceId: reference?.id ?? null,
     referenceLabel: reference?.label ?? null,
     phase1,
     phase2,
+    pipelinePhases,
+    hasDocmapIndex: docmapIsCached(stem),
+    sectionCoverage,
+    extractSummary: {
+      apiRunnableCount: extractRun.apiRunnableCount,
+      pendingCount: extractRun.pendingCount,
+      upToDate: extractRun.upToDate,
+      pendingStepLabels: extractRun.runnableSteps.map((s) => s.label),
+    },
     graphPath,
     draftPath,
     verificationPath,

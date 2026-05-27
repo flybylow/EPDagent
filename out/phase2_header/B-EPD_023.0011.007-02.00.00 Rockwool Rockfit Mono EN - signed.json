@@ -1,0 +1,52 @@
+{
+  "epd_number": "21.0011.07-02.00.00",
+  "program_operator": "Federal Public Service of Health, Food Chain Safety and Environment",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": "ROCKWOOL",
+    "address": null,
+    "country": "BE"
+  },
+  "product_name": "Rockfit Mono",
+  "product_description": "mineral wool insulation",
+  "standards_conformity": null,
+  "verification_statement": "THIRD PARTY VERIFIED",
+  "conformity_basis": "in accordance with EN 15804+A2 and B-EPD-PCR",
+  "declared_scope": "1 m² Rockfit Mono insulation for cavity walls, curtain walls and separating walls.",
+  "declared_modules": [
+    "A123",
+    "A4",
+    "A5",
+    "B2",
+    "B4",
+    "C",
+    "D"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "m2"
+  },
+  "validity": {
+    "issued": "2023-10-26",
+    "valid_until": "2028-10-26"
+  },
+  "pcr_reference": "EN 16783, Thermal insulation products – Product category rules (PCR) for factory made and in-situ formed products for environmental product declarations (2017)",
+  "verifier": {
+    "name": null,
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed.pdf",
+    "pdf_sha256": "1dcb3791d8f8ef2b1f3401323db334c05be0e3b8fae30c73fea242cad12aabdb",
+    "api_pages": "1-4,18,21",
+    "api_pages_resolved": "1,2,3,4,18,21",
+    "api_pdf_bytes": 911577,
+    "api_pdf_sha256": "6777b3cdcca2d7e558cbfc0acd892d50208e8478ab2bc892799b358ab6f1dbd7",
+    "api_pdf_slice": "out/pdf_slices/B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed.p1-p2-p3-p4-p18-p21.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T15:57:22.862Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 14361,
+    "output_tokens": 530
+  }
+}

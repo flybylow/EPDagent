@@ -43,6 +43,35 @@
     "prov:generatedAtTime": {
       "@id": "http://www.w3.org/ns/prov#generatedAtTime",
       "@type": "xsd:dateTime"
+    },
+    "extractionCoverage": "https://epdagent.dev/vocab/extractionCoverage",
+    "productSection": {
+      "@id": "https://epdagent.dev/vocab/productSection",
+      "@type": "@id"
+    },
+    "composition": {
+      "@id": "https://epdagent.dev/vocab/composition",
+      "@type": "@id"
+    },
+    "lcaStudy": {
+      "@id": "https://epdagent.dev/vocab/lcaStudy",
+      "@type": "@id"
+    },
+    "lcaTables": {
+      "@id": "https://epdagent.dev/vocab/lcaTables",
+      "@type": "@id"
+    },
+    "scenarios": {
+      "@id": "https://epdagent.dev/vocab/scenarios",
+      "@type": "@id"
+    },
+    "bibliography": {
+      "@id": "https://epdagent.dev/vocab/bibliography",
+      "@type": "@id"
+    },
+    "epdSections": {
+      "@id": "https://epdagent.dev/vocab/epdSections",
+      "@type": "@id"
     }
   },
   "@graph": [
@@ -52,11 +81,20 @@
         "EPD",
         "schema:Product"
       ],
-      "epdNumber": "21-0135-03-00-00-EN",
+      "epdNumber": "B-EPD n° 21-0135-03-00-00-EN",
       "schema:name": "EQUITONE [natura – textura - materia]",
       "schema:description": "fibre cement sheets",
       "standardsConformity": "Conform to EN 15804+A2, NBN/DTD B08-001 and ISO 14025",
       "verificationStatement": "Third party verified",
+      "declaredScope": "The production and installation of 1 m2(thickness 8 mm) of a \"EQUITONE [natura – textura - materia]\" panel and its related impacts over cradle-to-grave life cycle stages, over a reference service life of 60 years.",
+      "declaredModules": [
+        "A123",
+        "A4",
+        "A5",
+        "B",
+        "C",
+        "D"
+      ],
       "language": "EN",
       "filenamePattern": "B-EPD",
       "declaredUnit": {
@@ -66,24 +104,63 @@
       },
       "schema:validFrom": "2021-10-07",
       "schema:validThrough": "2026-10-07",
-      "pcrReference": "NBN/DTD B08-001",
+      "pcrReference": "EN 15804+A2 serves as the core PCR",
       "programOperator": {
-        "@id": "http://localhost:3000/id/operator/BE-BD"
+        "@id": "http://localhost:3000/id/operator/B-EPD"
       },
       "producer": {
         "@id": "http://localhost:3000/id/org/2d723fd34267"
+      },
+      "verifier": {
+        "@id": "http://localhost:3000/id/person/40a66510e56a"
       },
       "prov:wasDerivedFrom": {
         "@type": "prov:Entity",
         "schema:name": "B-EPD 21-0135-03-00-00-EN ETEX - natura ea - signed.pdf"
       },
-      "prov:generatedAtTime": "2026-05-26T09:58:38.140Z"
+      "prov:generatedAtTime": "2026-05-26T20:45:49.573Z",
+      "productSection": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/product"
+      },
+      "composition": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/composition"
+      },
+      "lcaStudy": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/lca-study"
+      },
+      "lcaTables": [
+        {
+          "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/lca-table/lca_impacts"
+        }
+      ],
+      "scenarios": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/scenarios"
+      },
+      "bibliography": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/references"
+      },
+      "epdSections": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/sections"
+      },
+      "extractionCoverage": {
+        "phase1": true,
+        "phase2": true,
+        "phase3_product": true,
+        "phase3_composition": true,
+        "phase3_lca_study": true,
+        "phase4_lca": [
+          "lca_impacts"
+        ],
+        "phase5_scenarios": true,
+        "phase6_refs": true,
+        "phase7_epd_sections": true
+      }
     },
     {
-      "@id": "http://localhost:3000/id/operator/BE-BD",
+      "@id": "http://localhost:3000/id/operator/B-EPD",
       "@type": "ProgramOperator",
-      "schema:name": "BE-BD",
-      "operatorCode": "BE-BD"
+      "schema:name": "Federal Public Service of Health, Food Chain Safety and Environment",
+      "operatorCode": "B-EPD"
     },
     {
       "@id": "http://localhost:3000/id/org/2d723fd34267",
@@ -91,6 +168,1334 @@
       "schema:name": "Etex services",
       "schema:address": null,
       "schema:addressCountry": null
+    },
+    {
+      "@id": "http://localhost:3000/id/person/40a66510e56a",
+      "@type": "schema:Person",
+      "schema:name": "Evert Vermaut (Vincotte)",
+      "verificationType": "independent_third_party"
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/product",
+      "@type": "ProductSection",
+      "description": "EQUITONE [natura – textura - materia] is an air-cured calcium silicate fibre cement sheet produced at Neubeckum production plant, Germany. EQUITONE [natura-textura-materia] are naturally hardened fiber cement sheets comprising cellulose and polymer fibers for water retention, improved tensile load distribution and increased breaking load and distortion. EQUITONE [natura] is a glaze-coated façade panel with a translucent surface structure. EQUITONE [textura] is a coated façade panel with a slightly grainy surface. The coated top layer of EQUITONE [materia] façade panels is sanded.",
+      "intendedUse": "EQUITONE [natura-textura-materia] serve as cladding materials for back-ventilated curtain façades. The façade panels serve towards assembly on substructures made of wood or metal. Once installed correctly according to the manufacturer's guidelines EQUITONE [natura-textura-materia] need no further maintenance, repair, replacement or refurbishment during the full life span of the product.",
+      "installation": "The product is installed according to the following scenario(s): fixation of the panel to a substructure in wood or metal. This EPD declares the screws and energy consumption to fixate the panels, but does not include the substructure.",
+      "referenceServiceLifeYears": 60,
+      "geographicalRepresentativity": "The EPD is representative for the Belgian market.",
+      "productionProcess": "EQUITONE [natura-textura-materia] are large format panels made of fiber cement. They are manufactured largely in accordance with an automated winding process (Hatschek process): the raw materials are mixed with water to prepare a homogenous mixture. Rotating screen cylinders are immersed in this fiber cement pulp which drain internally. The screen surface is covered in a thin film of fiber cement which is transferred onto an infinite conveyor belt from where it is conveyed to a format roller which is gradually covered in an increasingly thicker layer of fiber cement. Once the requisite material thickness is achieved, the still moist and malleable fiber cement layer (fiber cement fleece) is separated and removed from the format roller. The fiber cement fleece is cut to size and leftovers from the wet process are returned to the production process preventing any waste from being incurred. The cut fleece is stacked and compressed at high pressure. The panels are then set aside for binding before stacking on pallets and store for further setting. The setting time lasts approx. 4 weeks. The façade panels are then dried, mechanically treated to obtain the desired surface aspect. EQUITONE [natura] is finished with two semi-transparent water-based acryl dispersions on the panel face (front) and a transparent back-sealing coating (rear). The surface of the EQUITONE [materia] receives a mechanical surface treatment giving the rough texture. They are given a partially transparent seal on the back. The surface finish of the EQUITONE [textura] is a water-based acrylate dispersion with grainy structure on the facing side and a transparent back-sealing coating on the rear. Waste from damaged or broken panels is recycled by an external company as raw material for cement production.",
+      "referenceFlow": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2",
+        "description": "The functional unit is defined as: the production and installation of 1 m2 (thickness 8 mm) of a \"EQUITONE [natura – textura - materia]\" sheets and its related impacts over cradle-to-grave life cycle stages, where the product's expected average reference service life is of 60 years."
+      },
+      "technicalProperties": [
+        {
+          "property": "Gross density dry (min)",
+          "standard": "EN12467",
+          "value": "1650",
+          "unit": "kg/m3",
+          "comment": ""
+        },
+        {
+          "property": "Standard board thickness",
+          "standard": "",
+          "value": "8",
+          "unit": "mm",
+          "comment": ""
+        },
+        {
+          "property": "Thermal conductivity",
+          "standard": "",
+          "value": "0.407",
+          "unit": "W/(mK)",
+          "comment": ""
+        },
+        {
+          "property": "Water vapour diffusion resistance factor acc. to DIN V 4108-4, EN ISO 12572",
+          "standard": "DIN 4108-4, EN ISO 12572",
+          "value": "140-350",
+          "unit": "-",
+          "comment": ""
+        },
+        {
+          "property": "Flexural strength parallel",
+          "standard": "EN12467",
+          "value": "24",
+          "unit": "N/mm2",
+          "comment": ""
+        },
+        {
+          "property": "Flexural strength perpendicular",
+          "standard": "EN12467",
+          "value": "17",
+          "unit": "N/mm2",
+          "comment": ""
+        },
+        {
+          "property": "Modulus of elasticity parallel",
+          "standard": "EN12467",
+          "value": "> 17000",
+          "unit": "N/mm2",
+          "comment": ""
+        },
+        {
+          "property": "Modulus of elasticity perpendicular",
+          "standard": "EN12467",
+          "value": "> 15000",
+          "unit": "N/mm2",
+          "comment": ""
+        },
+        {
+          "property": "Moisture content at 23 °C, 80% humidity",
+          "standard": "",
+          "value": "10",
+          "unit": "M.-%",
+          "comment": ""
+        },
+        {
+          "property": "Coefficient of thermal expansion",
+          "standard": "",
+          "value": "0.01",
+          "unit": "10-6K-1",
+          "comment": ""
+        },
+        {
+          "property": "Chemical resistance similar to concrete C 35/45",
+          "standard": "-",
+          "value": "-",
+          "unit": "-",
+          "comment": ""
+        },
+        {
+          "property": "Ageing resistance similar to concrete C 35/45",
+          "standard": "-",
+          "value": "-",
+          "unit": "-",
+          "comment": ""
+        },
+        {
+          "property": "Permanent temperature resistance",
+          "standard": "",
+          "value": "80",
+          "unit": "°C",
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/composition",
+      "@type": "Composition",
+      "components": [
+        {
+          "section": "Product",
+          "component": "Cement",
+          "composition": null,
+          "quantity": "70-80%"
+        },
+        {
+          "section": "Product",
+          "component": "Pigments",
+          "composition": null,
+          "quantity": "<5%"
+        },
+        {
+          "section": "Product",
+          "component": "Cellulose",
+          "composition": null,
+          "quantity": "<5%"
+        },
+        {
+          "section": "Product",
+          "component": "Water",
+          "composition": null,
+          "quantity": "10-20%"
+        },
+        {
+          "section": "Product",
+          "component": "Coating",
+          "composition": null,
+          "quantity": "<5%"
+        },
+        {
+          "section": "Product",
+          "component": "Others",
+          "composition": null,
+          "quantity": "<10%"
+        },
+        {
+          "section": "Fixation materials",
+          "component": "Screws for wooden substructure)- Rivets (for metal substructure)",
+          "composition": null,
+          "quantity": "6 p"
+        },
+        {
+          "section": "Jointing materials",
+          "component": "NA",
+          "composition": null,
+          "quantity": "/"
+        },
+        {
+          "section": "Treatments",
+          "component": "NA",
+          "composition": null,
+          "quantity": "/"
+        },
+        {
+          "section": "Packaging",
+          "component": "Pallet",
+          "composition": null,
+          "quantity": "0,0688 kg"
+        },
+        {
+          "section": "Packaging",
+          "component": "Carton",
+          "composition": null,
+          "quantity": "0,0485 kg"
+        },
+        {
+          "section": "Packaging",
+          "component": "PE band on a carton roll",
+          "composition": null,
+          "quantity": "0,0320 kg"
+        },
+        {
+          "section": "Packaging",
+          "component": "Metal straps",
+          "composition": null,
+          "quantity": "0,0260 kg"
+        }
+      ],
+      "declarations": [
+        "The product does not contain materials listed in the \"Candidate list of Substances of Very High Concern for authorization\"."
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/lca-study",
+      "@type": "LcaStudy",
+      "sectionTitle": "LCA STUDY",
+      "lcaSoftwareAndDatabase": "For the calculation of the LCA results, the software program SimaPro 9.1.1.1 (PRé Consultants, 2021) has been used in combination with a specific LCA software program for ETEX.\n\nThe main LCI source used in this study is the Ecoinvent 3.6 database (Wernet et al., 2019).",
+      "systemBoundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 7\nDeclared modules (☒): A1, A2, A3, A4, A5, B1, B2, B3, B4, B5, B6, B7, C1, C2, C3, C4, D\nNot declared (☐): —\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4, A5\nUse stage: B1, B2, B3, B4, B5, B6, B7\nEnd of life stage: C1, C2, C3, C4\nBeyond the system boundaries: D\n\nModule labels (vertical text):\nA1: materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: installation\nB1: Use\nB2: Maintenance\nB3: Repair\nB4: Replacement\nB5: Refurbishment\nB6: use\nB7: use\nC1: construction\nC2: Transport\nC3: processing\nC4: Disposal\nD: Recovery",
+      "productionSites": "The production site is located at 59269 Neubeckum, Germany.",
+      "cutOffCriteria": "Following processes were considered below the cut-off:\n• Transport of packaging of raw materials\n• The metal templates in which the boards are produced need to be greased periodically. The template oil is considered below cut-off\n• Packaging and transport of ancillary materials used during installation\n• Waste treatment of ancillary materials used during installation\n• Wearable sieves and cutting knives",
+      "allocation": "At Etex, different types of cement fiber products are produced. However EQUITONE [natura-textura-materia] products are produced only on certain production lines, with no co-products being produced as part of the process. Only facility level data were available for electricity use, the use of natural gas, etc. The facility level data have been allocated to the analyzed product using their respective annual production volume (physical relationship), therefore volume allocation is applied. Material inputs and outputs which were not available at the product level, such as waste, were allocated similarly, by mass allocation.",
+      "dataQuality": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site.\n\nManufacturer specific data have been collected for the year 2016.\n\nCompany specific data for the product stage have been collected by Eternit and were provided to VITO through an excel file. The LCI data has been checked by the EPD verifier (Evert Vermaut, Vinçotte). VITO uses publicly available generic data for all background processes such as the production of electricity, transportation by means of a specific truck, etc. Primary data is used for modules A1, A2, A3, and A5. The rest of the study is based on scenarios (module A4, modules B1-B7, modules C1-C4, and module D).",
+      "timeRepresentativeness": "Manufacturer specific data have been collected for the year 2016.",
+      "geographicalRepresentativeness": "The German electricity mix has been used to model electricity use in life cycle stage A3. The Belgian electricity mix (consumption mix + import) has been used to model electricity use in life cycle stages A5, C1, C3, C4 and D. The used records are respectively the ecoinvent records 'Electricity, medium voltage {DE}| market for | Cut-off, U' and 'Electricity, low voltage {BE}| market for | Cutoff, U' (Wernet et al., 2016).",
+      "technologyRepresentativeness": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site.",
+      "impactAssessment": "The characterization factors from EC-JRC were applied. No additional or deviating characterization factors were used.",
+      "additionalParagraphs": [
+        "Following processes were excluded for the inventory:\n• Infrastructure and land use of the factory\n• Environmental impacts caused by the personnel of the production plants are not included in the LCA, e.g. waste from the cafeteria and sanitary installations, accidental pollution caused by human mistakes, or environmental effects caused by commuter traffic",
+        "The fibre cement panels contain cellulose, which is a biobased material. Uptake of biogenic CO2 within cellulose is reported in module A1, release of biogenic CO2 related to this flow is reported in C4.\nThe fibre cement panels are transported using wooden pallets and a carton coverage. Uptake of biogenic CO2 within these pallets and carton is reported in module A3, release in module A5.\n\nBiogenic carbon content (kg C / FU)\nBiogenic carbon content in product (at the gate) 1,53E-01\nBiogenic carbon content in accompanying packaging (at the gate) 3,29E-01",
+        "Carbon offsetting is not allowed in the EN 15804 and hence not taken into account in the calculations."
+      ],
+      "subsections": [
+        {
+          "number": "DATE OF LCA STUDY",
+          "title": "DATE OF LCA STUDY",
+          "content": "September 2021"
+        },
+        {
+          "number": "SOFTWARE",
+          "title": "SOFTWARE",
+          "content": "For the calculation of the LCA results, the software program SimaPro 9.1.1.1 (PRé Consultants, 2021) has been used in combination with a specific LCA software program for ETEX."
+        },
+        {
+          "number": "INFORMATION ON ALLOCATION",
+          "title": "INFORMATION ON ALLOCATION",
+          "content": "At Etex, different types of cement fiber products are produced. However EQUITONE [natura-textura-materia] products are produced only on certain production lines, with no co-products being produced as part of the process. Only facility level data were available for electricity use, the use of natural gas, etc. The facility level data have been allocated to the analyzed product using their respective annual production volume (physical relationship), therefore volume allocation is applied. Material inputs and outputs which were not available at the product level, such as waste, were allocated similarly, by mass allocation."
+        },
+        {
+          "number": "INFORMATION ON CUT OFF",
+          "title": "INFORMATION ON CUT OFF",
+          "content": "Following processes were considered below the cut-off:\n• Transport of packaging of raw materials\n• The metal templates in which the boards are produced need to be greased periodically. The template oil is considered below cut-off\n• Packaging and transport of ancillary materials used during installation\n• Waste treatment of ancillary materials used during installation\n• Wearable sieves and cutting knives"
+        },
+        {
+          "number": "INFORMATION ON EXCLUDED PROCESSES",
+          "title": "INFORMATION ON EXCLUDED PROCESSES",
+          "content": "Following processes were excluded for the inventory:\n• Infrastructure and land use of the factory\n• Environmental impacts caused by the personnel of the production plants are not included in the LCA, e.g. waste from the cafeteria and sanitary installations, accidental pollution caused by human mistakes, or environmental effects caused by commuter traffic"
+        },
+        {
+          "number": "INFORMATION ON BIOGENIC CARBON MODELLING",
+          "title": "INFORMATION ON BIOGENIC CARBON MODELLING",
+          "content": "The fibre cement panels contain cellulose, which is a biobased material. Uptake of biogenic CO2 within cellulose is reported in module A1, release of biogenic CO2 related to this flow is reported in C4.\nThe fibre cement panels are transported using wooden pallets and a carton coverage. Uptake of biogenic CO2 within these pallets and carton is reported in module A3, release in module A5.\n\nBiogenic carbon content (kg C / FU)\nBiogenic carbon content in product (at the gate) 1,53E-01\nBiogenic carbon content in accompanying packaging (at the gate) 3,29E-01"
+        },
+        {
+          "number": "INFORMATION ON CARBON OFFSETTING",
+          "title": "INFORMATION ON CARBON OFFSETTING",
+          "content": "Carbon offsetting is not allowed in the EN 15804 and hence not taken into account in the calculations."
+        },
+        {
+          "number": "ADDITIONAL OR DEVIATING CHARACTERISATION FACTORS",
+          "title": "ADDITIONAL OR DEVIATING CHARACTERISATION FACTORS",
+          "content": "The characterization factors from EC-JRC were applied. No additional or deviating characterization factors were used."
+        },
+        {
+          "number": "SPECIFICITY",
+          "title": "SPECIFICITY",
+          "content": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site."
+        },
+        {
+          "number": "PERIOD OF DATA COLLECTION",
+          "title": "PERIOD OF DATA COLLECTION",
+          "content": "Manufacturer specific data have been collected for the year 2016."
+        },
+        {
+          "number": "INFORMATION ON DATA COLLECTION",
+          "title": "INFORMATION ON DATA COLLECTION",
+          "content": "Company specific data for the product stage have been collected by Eternit and were provided to VITO through an excel file. The LCI data has been checked by the EPD verifier (Evert Vermaut, Vinçotte). VITO uses publicly available generic data for all background processes such as the production of electricity, transportation by means of a specific truck, etc. Primary data is used for modules A1, A2, A3, and A5. The rest of the study is based on scenarios (module A4, modules B1-B7, modules C1-C4, and module D)."
+        },
+        {
+          "number": "DATABASE USED FOR BACKGROUND DATA",
+          "title": "DATABASE USED FOR BACKGROUND DATA",
+          "content": "The main LCI source used in this study is the Ecoinvent 3.6 database (Wernet et al., 2019)."
+        },
+        {
+          "number": "ENERGY MIX",
+          "title": "ENERGY MIX",
+          "content": "The German electricity mix has been used to model electricity use in life cycle stage A3. The Belgian electricity mix (consumption mix + import) has been used to model electricity use in life cycle stages A5, C1, C3, C4 and D. The used records are respectively the ecoinvent records 'Electricity, medium voltage {DE}| market for | Cut-off, U' and 'Electricity, low voltage {BE}| market for | Cutoff, U' (Wernet et al., 2016)."
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/lca-table/lca_impacts",
+      "@type": "LcaTable",
+      "tableKey": "lca_impacts",
+      "tableTitle": "POTENTIAL ENVIRONMENTAL IMPACTS PER REFERENCE FLOW",
+      "tableType": "impacts",
+      "columnGroups": [
+        {
+          "label": "Production",
+          "column_codes": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        {
+          "label": "Construction process stage",
+          "column_codes": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "label": "Use stage",
+          "column_codes": [
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7"
+          ]
+        },
+        {
+          "label": "End-of-life stage",
+          "column_codes": [
+            "C1",
+            "C2",
+            "C3",
+            "C4"
+          ]
+        },
+        {
+          "label": "D Reuse, recovery, recycling",
+          "column_codes": [
+            "D"
+          ]
+        }
+      ],
+      "columns": [
+        {
+          "code": "A1",
+          "label": "A1 Raw material",
+          "group": "Production"
+        },
+        {
+          "code": "A2",
+          "label": "A2 Transport",
+          "group": "Production"
+        },
+        {
+          "code": "A3",
+          "label": "A3 manufacturing",
+          "group": "Production"
+        },
+        {
+          "code": "A4",
+          "label": "A4 Transport",
+          "group": "Construction process stage"
+        },
+        {
+          "code": "A5",
+          "label": "A5 Installation",
+          "group": "Construction process stage"
+        },
+        {
+          "code": "B1",
+          "label": "B1 Use",
+          "group": "Use stage"
+        },
+        {
+          "code": "B2",
+          "label": "B2 Maintenance",
+          "group": "Use stage"
+        },
+        {
+          "code": "B3",
+          "label": "B3 Repair",
+          "group": "Use stage"
+        },
+        {
+          "code": "B4",
+          "label": "B4 Replacement",
+          "group": "Use stage"
+        },
+        {
+          "code": "B5",
+          "label": "B5 Refurbishment",
+          "group": "Use stage"
+        },
+        {
+          "code": "B6",
+          "label": "B6 Operational energy use",
+          "group": "Use stage"
+        },
+        {
+          "code": "B7",
+          "label": "B7 Operational water use",
+          "group": "Use stage"
+        },
+        {
+          "code": "C1",
+          "label": "C1 Deconstruction / demolition",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C2",
+          "label": "C2 Transport",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C3",
+          "label": "C3 Waste processing",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "C4",
+          "label": "C4 Disposal",
+          "group": "End-of-life stage"
+        },
+        {
+          "code": "D",
+          "label": "D Reuse, recovery, recycling",
+          "group": "D Reuse, recovery, recycling"
+        },
+        {
+          "code": "Total",
+          "label": "Total excl module D",
+          "group": null
+        }
+      ],
+      "rows": [
+        {
+          "indicator": "GWP total",
+          "unit": "kg CO2 equiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "1,14E+01"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "3,44E-01"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "2,22E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "7,09E-01"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "3,04E+00"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "2,62E-03"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "2,01E-01"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "1,20E-05"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "6,46E-01"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-2,08E-01"
+            },
+            {
+              "column_code": "Total",
+              "raw_value": "1,86E+01"
+            }
+          ]
+        },
+        {
+          "indicator": "GWP fossil",
+          "unit": "kg CO2 equiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "1,20E+01"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "3,43E-01"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "3,33E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "7,08E-01"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,83E+00"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "2,60E-03"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "2,01E-01"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "1,19E-05"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "8,36E-02"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-2,07E-01"
+            },
+            {
+              "column_code": "Total",
+              "raw_value": "1,85E+01"
+            }
+          ]
+        },
+        {
+          "indicator": "GWP biogenic",
+          "unit": "kg CO2 equiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "-6,19E-01"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "1,92E-04"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "-1,11E+00"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "2,93E-04"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,21E+00"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "1,03E-05"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "8,20E-05"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "4,57E-08"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "5,62E-01"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-2,32E-05"
+            },
+            {
+              "column_code": "Total",
+              "raw_value": "4,18E-02"
+            }
+          ]
+        },
+        {
+          "indicator": "GWP luluc",
+          "unit": "kg CO2 equiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "5,82E-03"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "2,04E-04"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "2,89E-03"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "2,36E-04"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,00E-03"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "6,19E-06"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "7,03E-05"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "2,73E-08"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "4,59E-05"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-4,49E-04"
+            },
+            {
+              "column_code": "Total",
+              "raw_value": "1,03E-02"
+            }
+          ]
+        },
+        {
+          "indicator": "ODP",
+          "unit": "kg CFC 11 equiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "9,10E-07"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "7,11E-08"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "3,64E-07"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "1,63E-07"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,68E-07"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "5,43E-10"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "4,57E-08"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "2,44E-12"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "3,54E-08"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-2,70E-08"
+            },
+            {
+              "column_code": "Total",
+              "raw_value": "1,76E-06"
+            }
+          ]
+        },
+        {
+          "indicator": "AP",
+          "unit": "mol H+ eq",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "3,48E-02"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "6,12E-03"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "7,95E-03"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "2,92E-03"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "6,01E-03"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "6,47E-06"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "8,21E-04"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "3,21E-08"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "7,17E-04"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-7,35E-04"
+            },
+            {
+              "column_code": "Total",
+              "raw_value": "5,93E-02"
+            }
+          ]
+        },
+        {
+          "indicator": "EP - freshwater",
+          "unit": "kg Pequiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "2,42E-04"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "3,26E-06"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "1,47E-04"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "5,58E-06"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "4,41E-05"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "6,93E-08"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "1,58E-06"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "3,22E-10"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "8,86E-07"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-6,39E-06"
+            },
+            {
+              "column_code": "Total",
+              "raw_value": "4,45E-04"
+            }
+          ]
+        },
+        {
+          "indicator": "EP - marine",
+          "unit": "kg Nequiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "7,95E-03"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "1,53E-03"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "2,12E-03"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "8,69E-04"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,45E-03"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "1,33E-06"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "2,44E-04"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "6,92E-09"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "2,66E-04"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-1,97E-04"
+            },
+            {
+              "column_code": "Total",
+              "raw_value": "1,44E-02"
+            }
+          ]
+        },
+        {
+          "indicator": "EP - terrestrial",
+          "unit": "mol Nequiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "9,20E-02"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "1,70E-02"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "2,31E-02"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "9,61E-03"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "1,64E-02"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "1,63E-05"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "2,70E-03"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "8,37E-08"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "2,94E-03"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-2,20E-03"
+            },
+            {
+              "column_code": "Total",
+              "raw_value": "1,64E-01"
+            }
+          ]
+        },
+        {
+          "indicator": "POCP",
+          "unit": "kg NMVOC equiv/FU",
+          "values": [
+            {
+              "column_code": "A1",
+              "raw_value": "2,47E-02"
+            },
+            {
+              "column_code": "A2",
+              "raw_value": "4,52E-03"
+            },
+            {
+              "column_code": "A3",
+              "raw_value": "6,91E-03"
+            },
+            {
+              "column_code": "A4",
+              "raw_value": "3,01E-03"
+            },
+            {
+              "column_code": "A5",
+              "raw_value": "4,58E-03"
+            },
+            {
+              "column_code": "B1",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B2",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B3",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B4",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B5",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B6",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "B7",
+              "raw_value": "0,00E+00"
+            },
+            {
+              "column_code": "C1",
+              "raw_value": "4,18E-06"
+            },
+            {
+              "column_code": "C2",
+              "raw_value": "8,25E-04"
+            },
+            {
+              "column_code": "C3",
+              "raw_value": "2,25E-08"
+            },
+            {
+              "column_code": "C4",
+              "raw_value": "8,37E-04"
+            },
+            {
+              "column_code": "D",
+              "raw_value": "-7,68E-04"
+            },
+            {
+              "column_code": "Total",
+              "raw_value": "4,54E-02"
+            }
+          ]
+        }
+      ],
+      "capture": {
+        "headers_rotated": true,
+        "column_count": 18,
+        "row_count": 10,
+        "complete": true,
+        "notes": "All visible columns and rows captured. Headers are rotated 90 degrees. Table shows potential environmental impacts per reference flow across all lifecycle modules A1-A5, B1-B7, C1-C4, D, and Total excluding module D."
+      }
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/scenarios",
+      "@type": "ScenarioSet",
+      "sectionTitle": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
+      "scenarios": [
+        {
+          "module": "A1",
+          "number": null,
+          "title": "RAW MATERIAL SUPPLY",
+          "description": "This module takes into account the extraction and processing of all raw materials and energy which occur upstream to the studied manufacturing process.\n\nETEX uses different pigments to colour their fibre cement panels. Due to the lack of appropriate proxies for many of the pigments the model prorated the content up to 100% for the Titanium dioxide and Ferrite, which are available in Ecoinvent.. Considering that Titanium dioxide has an overall higher contribution than the other pigments, this is a worst case scenario. The impacts of the pigments will be thus overestimated."
+        },
+        {
+          "module": "A2",
+          "number": null,
+          "title": "TRANSPORT TO THE MANUFACTURER",
+          "description": "The raw materials are transported to the manufacturing site."
+        },
+        {
+          "module": "A3",
+          "number": null,
+          "title": "MANUFACTURING",
+          "description": "This module takes into account the production process."
+        },
+        {
+          "module": "A4",
+          "number": null,
+          "title": "TRANSPORT TO THE BUILDING SITE",
+          "description": "Fuel type and consumption of vehicle or vehicle type used for transport:\n- Truck 16-32 ton (EURO 5)\n- Truck >32 ton (EURO 5)\n- Truck 7.5-16 ton (EURO 5)\n\nDistance:\n- 100 km (40% from factory to construction site)\n- 35 km (60%*85% from supplier to construction site)\n- 100 km (60% from factory to supplier)\n- 35 km (60%*15% from supplier to construction site)\n\nCapacity utilisation (including empty returns): 50%\nBulk density of transported products: Ecoinvent\nVolume capacity utilisation factor: Ecoinvent\n\nThe B-PCR provides default transport scenarios for the transport to the building site for cases where specific data on transport are missing. The B-PCR provides scenario's for this life cycle stage. Fibre cement panels are categorized as 'loose products' in table 5 of the B-PCR. The following transport steps apply:\n• 40% directly to the construction site over 100 km with a 16-32 ton lorry (ecoinvent record: 'Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, U')\n• 60% to a supplier over 100 km with a >32 ton lorry (ecoinvent record: 'Transport, freight, lorry >32 metric ton, EURO5 {RER}| transport, freight, lorry >32 metric ton, EURO5 | Cut-off, U')\n• 85% of these 60% is transported over 35 km from supplier to construction site with a 16-32 ton lorry (ecoinvent record: 'Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, U')\n• 15% of these 60% is transported over 35 km from supplier to construction site with a 7.5-16 ton lorry (ecoinvent record: 'Transport, freight, lorry 7.5-16 metric ton, EURO5 {RER}| transport, freight, lorry 7.5-16 metric ton, EURO5 | Cut-off, U')"
+        },
+        {
+          "module": "A5",
+          "number": null,
+          "title": "INSTALLATION IN THE BUILDING",
+          "description": "The installation involves an amount of 0,00176 kWh per screw used to fix the EQUITONE [natura-textura-materia] product, where 6 screws are necessary for the functional unit. The dataset used to model the impacts is \"Electricity, low voltage {BE}| market for | Cut-off, U\".\n\nDuring the installation, depending on how the EQUITONE [natura-textura-materia] sheets are cut, there is a loss rate between 5-30%, depending on the building shape. For this EPD an average loss rate of 10% is used.\n\nAll packaging material for the EQUITONE [natura-textura-materia] product is transported to End of Life (EoL) and disposed of in line with the B-PCR default EoL scenarios for Belgium.\n\nParts of the installation:\n- Processes necessary for the installation of the product: 0,01056 kWh energy needed to fix the screws\n- Fixation materials: 6 Screws\n- Material losses: 10% Average material losses\n- Packaging:\n  - Pallet: 0,0688 kg\n  - Carton: 0,0485 kg\n  - PE band on a carton roll: 0,0320 kg\n  - Metal straps: 0,0260 kg\n- Ancillary materials for installation (specified by material): 6 Screws\n- Water use: None\n- Other resource use: 10% losses\n- Quantitative description of energy type (regional mix) and consumption during the installation process: 0,01056 kWh electricity, low voltage\n- Waste materials on the building site before waste processing, generated by the product's installation (specified by type):\n  - packaging waste: 0,0688 kg wood\n  - packaging waste: 0,0485 kg cardboard\n  - packaging waste: 0,0320 kg plastic\n  - Packaging waste: 0,0260 kg steel\n- Output materials (specified by type) as result of waste processing at the building site e.g. of collection for recycling, for energy recovery, disposal:\n  - Wood: 60% recycling, 20% incinerated\n  - Cardboard: 95% recycling, 5% incinerated\n  - Plastic: 35% recycling, 60% incinerated, 5% landfill\n  - Steel: 95% recycling, 5% landfill\n- Direct emissions to ambient air, soil and water: None\n- Distance: Not applicable"
+        },
+        {
+          "module": "B",
+          "number": null,
+          "title": "USE STAGE (EXCLUDING POTENTIAL SAVINGS)",
+          "description": "B1: No emissions during the use phase.\nB2: The product does not require maintenance.\nB3: The product does not require repair.\nB4: No replacement required.\nB5: No refurbishment\nB6: The product does not require operational energy use.\nB7: No operational water use."
+        },
+        {
+          "module": "C",
+          "number": null,
+          "title": "END OF LIFE",
+          "description": "The default scenario for Cement fibre boards from NBN/DTD B08-001 is used to model the End-of-life of the boards. The default scenario for metals from NBN/DTD B08-001 is used to model the End-of-life of the screws.\n\nC1: The dismantling of EQUITONE [natura-textura-materia] involves the same amount of energy as for the installation, which is 0,01056 kWh.\n\nC2: The default scenario for fibre cement boards from NBN/DTD B08-001 describes that the end-of-life waste is transported to a sorting facility over a distance of 30 km. Afterwards, 100% of the fibre cement boards and 5% of the metal screws is transported to a landfill over a distance of 50 km.\n\nC3: No recycling/reuse of fibre cement boards, 95% recycling of metal screws\n\nC4: 100% landfill of fibre cement boards, 5% landfill of metal screws\n\nModule C2 – Transport to waste processing:\nType of vehicle: Truck 16-32 ton\nFuel consumption: 0,256 l diesel/km\nDistance (km): 80\nCapacity utilisation (%): 50%\nDensity of products (kg/m3): Ecoinvent scenario\nAssumptions: Ecoinvent scenario\n\nEnd-of-life modules – C3 and C4:\n- Wastes collected separately: 0,0132 kg\n- Wastes collected as mixed construction waste: 15,07 kg\n- Waste for re-use: 0 kg\n- Waste for recycling: 0,0125 kg\n- Waste for energy recovery: 0 kg\n- Waste for final disposal: 15,07 kg"
+        },
+        {
+          "module": "D",
+          "number": null,
+          "title": "BENEFITS AND LOADS BEYOND THE SYSTEM BOUNDARIES",
+          "description": "In module D, the benefits and loads beyond the system boundaries are quantified. Following waste streams are considered after their end-of-waste: wooden pallets in A3 and A5 (of which 60% is recycled), plastic packaging in A3 and A5 (of which 35% is recycled), paper and cardboard in A5 (of which 95% is recycled), steel cables in A3 and A5 (of which 95% is recycled) and metal screws in C3 (of which 95% is recycled).\n\nQuantitative description of the loads beyond the system boundaries:\n- Treatment of 0,04254 kg of scrap steel to prepare it for to prepare it for recycling at the remelter\n- Sorting of 0,042kg of waste wood to prepare it for recycling\n- Treatment of 0,012 kg plastic to prepare it for recycling\n- Treatment of 0,046 kg paper to prepare it for recycling as pulp\n\nQuantitative description of the benefits beyond the system boundaries:\n- Avoided production of 0,80 MJ of heat using natural gas\n- Avoided production of 0,40 MJ of Belgian electricity mix\n- Avoided production of 0,04254 kg primary steel\n- Avoided production of 0,042 kg primary softwood\n- Avoided production of 0,012 kg primary polypropylene/ polypropylene granulates\n- Avoided production of 0,016 kg primary sulfate pulp"
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/references",
+      "@type": "Bibliography",
+      "bibliography": [],
+      "additionalInformation": [
+        "Owner of the EPD, Responsible for the data, LCA and information: Etex services, Kuiermansstraat 1, 1880 Kapelle-op-den-Bos, Belgium. Tel : +32 (0) 15 71 82 83; For more information you can contact Peggy Van De velde, peggy.vandevelde@etexgroup.com",
+        "EPD program, Program operator, Publisher of this EPD: B-EPD, Federal Public Service of Health / DG Environment, Galileelaan 5/2, 1210 Brussels, Belgium. www.environmentalproductdeclarations.eu",
+        "Contact programma operator: epd@environment.belgium.be",
+        "Based on following PCR documents: EN 15804+A2:2019, NBN/DTD B 08-001 and its complement",
+        "PCR review conducted by: Federal Public Service of Health and Environment & PCR Review committee",
+        "Author(s) of the LCA and EPD: Arthur De Jaegher, arthur@enperas.com",
+        "Identification of the project report: Life cycle assessment of EQUITONE [natura-textura-materia] (VITO, 07-09-21)",
+        "Verification: External independent verification of the declaration and data according to EN ISO 14025 and relevant PCR documents",
+        "Name of the third party verifier: Evert Vermaut (Vinçotte)",
+        "Date of verification: 08.09.2021",
+        "LCA practitioner: www.vito.be, www.enperas.be",
+        "Building calculator of the regional authorities: www.totem-building.be",
+        "Federal Public Service of Health, Food Chain Safety and Environment: www.b-epd.be",
+        "Comparing EPDs is not possible unless they are conform to the same PCR and taking into account the building context. The program operator cannot be held responsible for the information supplied by the owner of the EPD nor LCA practitioner."
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-03-00-00-EN%2520ETEX%2520-%2520natura%2520ea%2520-%2520signed/sections",
+      "@type": "EpdSectionSet",
+      "blocks": [
+        {
+          "number": "11.1",
+          "title": "INDOOR AIR",
+          "content": "Under normal conditions of use, EQUITONE [natura-textura-materia] products do not cause any adverse health effects or release of volatile organic compounds (VOCs) to indoor air."
+        },
+        {
+          "number": "11.2",
+          "title": "SOIL AND WATER",
+          "content": "No environmental impact to water, air or soil is expected due to the extremely low metal release from the low maintenance requirements."
+        },
+        {
+          "number": "12",
+          "title": "DEMONSTRATION OF VERIFICATION",
+          "content": "EN 15804+A2 serves as the core PCR\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\n\nInternal ☐ External☒\n\nThird party verifier: Evert Vermaut (Vincotte)\nJan Olieslagerslaan 35\n1800 Vilvoorde, Belgium\nevermaut@vincotte.be"
+        },
+        {
+          "number": "14",
+          "title": "APPLICATION UNIT",
+          "content": "This paragraph gives information on the applied product and how the reference flow and table with impacts relate to different applications. The table below gives an overview of the standard thicknesses, the thickness range and the ratio to the declared unit of 1 m2for each application. The environmental impact is proportional with the thickness.\n\nApplication Standard thickness Thickness range Ratio to the declared unit of 1 m2\nExterior wall covering 8 mm 8 and 12 mm 1\nCeilings 8 mm 8 and 12 mm 1"
+        },
+        {
+          "number": "15",
+          "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+          "content": "For the application and installation as described in this EPD a qualitative assessment of the reversibility is given. Following 4 indicators shall be used (based on BAMB – buildings as material banks). The assessment is applicable for exterior wall cladding and for all frameworks.\n\nReversibility - Reversible with light repairable damage (fixation with screws, bolts and dowels)\nSimplicity of disassembly - simple - no specific dismantling tools required\nSpeed of disassembly - speedy disassembly\nEase of handling (size and weight) - can be handled manually, but size and/or weight requires two or more workers\nRobustness of material (material resistance to disassembly) - the material resists well during disassembly"
+        }
+      ]
     }
   ]
 }

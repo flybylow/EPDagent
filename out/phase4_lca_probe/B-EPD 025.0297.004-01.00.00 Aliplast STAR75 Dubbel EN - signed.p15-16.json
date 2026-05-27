@@ -1,0 +1,603 @@
+{
+  "table_title": "IMPACT CATEGORIES ADDITIONAL TO EN 15804",
+  "table_type": "impacts",
+  "introductory_text": "HTCE = HUMAN TOXICITY – CANCER EFFECTS; HTNCE = HUMAN TOXICITY – NON-CANCER EFFECTS; ETF = ECOTOXICITY – FRESHWATER; (POTENTIAL COMPARATIVE TOXIC UNIT)\nPM = PARTICULATE MATTER (POTENTIAL INCIDENCE OF DISEASE DUE TO PM EMISSIONS ); \nIRHH = IONIZING RADIATION – HUMAN HEALTH EFFECTS (POTENTIAL HUMAN EXPOSURE EFFICIENCY RELATIVE TO U235 );",
+  "column_groups": [
+    {
+      "label": "Production",
+      "column_codes": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    {
+      "label": "Construction process stage",
+      "column_codes": [
+        "A4",
+        "A5"
+      ]
+    },
+    {
+      "label": "Use stage",
+      "column_codes": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7"
+      ]
+    },
+    {
+      "label": "End-of-life stage",
+      "column_codes": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "label": null,
+      "column_codes": [
+        "D"
+      ]
+    }
+  ],
+  "columns": [
+    {
+      "code": "A1",
+      "label": "Raw material",
+      "group": "Production"
+    },
+    {
+      "code": "A2",
+      "label": "Transport",
+      "group": "Production"
+    },
+    {
+      "code": "A3",
+      "label": "manufacturing",
+      "group": "Production"
+    },
+    {
+      "code": "A4",
+      "label": "Transport",
+      "group": "Construction process stage"
+    },
+    {
+      "code": "A5",
+      "label": "Installation",
+      "group": "Construction process stage"
+    },
+    {
+      "code": "B1",
+      "label": "Use",
+      "group": "Use stage"
+    },
+    {
+      "code": "B2",
+      "label": "Maintenance",
+      "group": "Use stage"
+    },
+    {
+      "code": "B3",
+      "label": "Repair",
+      "group": "Use stage"
+    },
+    {
+      "code": "B4",
+      "label": "Replacement",
+      "group": "Use stage"
+    },
+    {
+      "code": "B5",
+      "label": "Refurbishment",
+      "group": "Use stage"
+    },
+    {
+      "code": "B6",
+      "label": "Operational energy use",
+      "group": "Use stage"
+    },
+    {
+      "code": "B7",
+      "label": "Operational water use",
+      "group": "Use stage"
+    },
+    {
+      "code": "C1",
+      "label": "Deconstruction / demolition",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "C2",
+      "label": "Transport",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "C3",
+      "label": "Waste processing",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "C4",
+      "label": "Disposal",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "D",
+      "label": "Reuse, recovery, recycling",
+      "group": null
+    }
+  ],
+  "rows": [
+    {
+      "indicator": "PM",
+      "unit": "disease incidence",
+      "values": [
+        {
+          "column_code": "A1",
+          "raw_value": "1,195E-05"
+        },
+        {
+          "column_code": "A2",
+          "raw_value": "6,256E-08"
+        },
+        {
+          "column_code": "A3",
+          "raw_value": "1,739E-07"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "2,766E-08"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "3,791E-08"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B6",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B7",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "4,59E-08"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "1,94E-07"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "2,25E-08"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "-5,43E-06"
+        }
+      ]
+    },
+    {
+      "indicator": "IRHH",
+      "unit": "kg U235 eq/FU",
+      "values": [
+        {
+          "column_code": "A1",
+          "raw_value": "8,132E+00"
+        },
+        {
+          "column_code": "A2",
+          "raw_value": "5,163E-03"
+        },
+        {
+          "column_code": "A3",
+          "raw_value": "1,205E-01"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "2,683E-03"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "7,857E-03"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B6",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B7",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "4,11E-03"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "7,09E-02"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "8,43E-03"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "-4,01E+00"
+        }
+      ]
+    },
+    {
+      "indicator": "ETF",
+      "unit": "CTUe/FU",
+      "values": [
+        {
+          "column_code": "A1",
+          "raw_value": "2,141E+03"
+        },
+        {
+          "column_code": "A2",
+          "raw_value": "5,215E+00"
+        },
+        {
+          "column_code": "A3",
+          "raw_value": "1,442E+01"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "2,617E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "2,917E+00"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B6",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B7",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "4,05E+00"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "1,55E+01"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "2,26E+01"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "-2,27E+02"
+        }
+      ]
+    },
+    {
+      "indicator": "HTCE",
+      "unit": "CTUh/FU",
+      "values": [
+        {
+          "column_code": "A1",
+          "raw_value": "5,615E-07"
+        },
+        {
+          "column_code": "A2",
+          "raw_value": "3,189E-10"
+        },
+        {
+          "column_code": "A3",
+          "raw_value": "1,868E-09"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "1,699E-10"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "8,239E-10"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B6",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B7",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "2,63E-10"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "1,98E-09"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "1,30E-09"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "-1,62E-07"
+        }
+      ]
+    },
+    {
+      "indicator": "HTnCE",
+      "unit": "CTUh/FU",
+      "values": [
+        {
+          "column_code": "A1",
+          "raw_value": "6,150E-06"
+        },
+        {
+          "column_code": "A2",
+          "raw_value": "7,237E-09"
+        },
+        {
+          "column_code": "A3",
+          "raw_value": "3,414E-08"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "3,757E-09"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "6,781E-09"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B6",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B7",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "5,78E-09"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "8,90E-08"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "1,37E-08"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "-1,83E-06"
+        }
+      ]
+    },
+    {
+      "indicator": "Land Use Related impacts",
+      "unit": "dimensionless",
+      "values": [
+        {
+          "column_code": "A1",
+          "raw_value": "3,920E+02"
+        },
+        {
+          "column_code": "A2",
+          "raw_value": "9,192E+00"
+        },
+        {
+          "column_code": "A3",
+          "raw_value": "7,988E+01"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "3,201E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "4,521E+00"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B6",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B7",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "4,89E+00"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "1,94E+01"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "1,44E+00"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "-1,03E+02"
+        }
+      ]
+    }
+  ],
+  "capture": {
+    "headers_rotated": true,
+    "column_count": 17,
+    "row_count": 6,
+    "complete": true,
+    "notes": "All columns (A1-A5, B1-B7, C1-C4, D) and all 6 indicator rows (PM, IRHH, ETF, HTCE, HTnCE, Land Use Related impacts) are visible and captured. Column headers are rotated 90°. Table shows additional impact categories beyond EN 15804 core indicators."
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 025.0297.004-01.00.00 Aliplast STAR75 Dubbel EN - signed.pdf",
+    "pdf_sha256": "4c73c735316035f8359c687c4955f5ab7730fbd90cec179e9a085f6057722580",
+    "api_pages": "15-16",
+    "api_pages_resolved": "15,16",
+    "api_pdf_bytes": 108256,
+    "api_pdf_sha256": "38984edc3916e262d8efd293c3e3617d80b38d591e840a26a54fa0acb019390d",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.0297.004-01.00.00 Aliplast STAR75 Dubbel EN - signed.p15-p16.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T17:26:21.335Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 6814,
+    "output_tokens": 3666
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "section_title": "3 LCA-STUDY",
+  "standards_and_methodology": "For the calculation of the LCA results, the software program \"GCCA EPD Tool\" (v4.0) was used for A1 to A3 calculations and is based on ecoinvent 3.5. The \"GCCA EPD Tool\" is a specific tool to the cement and concrete industry, it is compliant with the EN 15804+A2 standard and is verified by EPD international.",
+  "pcr_reference": "The allocation rules defined by EN 15804+A2 and EN16908 have been applied.",
+  "lca_software_and_database": "For the calculation of the LCA results, the software program \"GCCA EPD Tool\" (v4.0) was used for A1 to A3 calculations and is based on ecoinvent 3.5. The \"GCCA EPD Tool\" is a specific tool to the cement and concrete industry, it is compliant with the EN 15804+A2 standard and is verified by EPD international. SimaPro was used to model module A4 module in combination with ecoinvent v3.8 . Ecoinvent v3.5 for A1 to A3 and ecoinvent version 3.8 for A4.",
+  "goal_and_scope": null,
+  "functional_unit": null,
+  "system_boundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 13\nDeclared modules (☒): A1, A2, A3, A4\nNot declared (☐): A5, B1, B2, B3, B4, B5, B6, B7, C1, C2, C3, C4, D\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4\n\nModule labels (vertical text):\nA1: Raw materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: Construction\nB1: Use\nB2: Maintenance\nB3: Repa\nB4: Replacement\nB5: Refurbishment\nB6: Operational energy use\nB7: Operational water use\nC1: construction\nC2: Transport\nC3: Waste processing\nC4: Disposal\nD: Recovery",
+  "production_sites": "The product is produced in Antwerp, where Holcim Belgium operates a cement blending plant.",
+  "cut_off_criteria": "The following processes are considered below cut-off:\n- Cleaning of the installation\n- Wear of grinding balls\n- Cement grinding losses\n- Cement mixing losses",
+  "allocation": "The allocation rules defined by EN 15804+A2 and EN16908 have been applied.\nThe manufacturing process does not produce co-products that require allocation.\nA cut-off is applied when recyclable waste reaches the end of the waste state.\nBy default, this EPD addresses the environmental impacts of cement production excluding the incineration of the input waste (net figure). For clarity and transparency, the gross figure is also communicated as recommended in the EN 16908+A1.\nFor the blast furnace slag, a co-product of the pig iron production, economic allocation has been used conform EN 15804+A2, based on EPD data from the main supplier.",
+  "data_quality": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site. The activity data is based on site specific data (volumes, lower heating values, emission factors) verified by the EU ETS system for the clinker production. For the cement production, the main data used is the recipe. Background data is included in the GCCA EPD tool and has been verified by EPD International.",
+  "time_representativeness": "Manufacturer specific data have been collected for the year 2021.",
+  "geographical_representativeness": "The residual electricity mix of Belgium in 2021 was used, based on the electricity attributes provided by the Association of issuing Bodies (AIB).",
+  "technology_representativeness": null,
+  "impact_assessment": "The EF3.0 version of the EN 15804+A2 LCIA method was used. The characterization factors from EC-JRC were applied. No additional or deviating characterisation factors were used.",
+  "interpretation": null,
+  "additional_paragraphs": [
+    "Following processes were excluded for the inventory: Production and construction of equipment for buildings and installations; Production and construction of equipment for the production of clinker and cement and lab analyses; Activities related to the personnel (mobility, furniture and desk consumables); Utilization of water and energy related to the sales and management of the product; Cleaning of offices",
+    "The product does not contain biogenic carbon. The product is sold in bulk and does not require packaging.",
+    "Carbon offsetting is not allowed in the EN 15804+A2 and hence not taken into account in the calculations",
+    "No carbonation of cementitious materials is considered in the scope of this EPD. The construction products made with cement (mortar, concrete) may indeed carbonate in the following life cycle stages.",
+    "The EPD is specific to the product and manufacturing site. No underlying parameters or assumptions that would impact the results were made. The results do not vary."
+  ],
+  "subsections": [
+    {
+      "number": "3.1",
+      "title": "Date of LCA-study",
+      "content": "September 27, 2023"
+    },
+    {
+      "number": "3.2",
+      "title": "Software",
+      "content": "For the calculation of the LCA results, the software program \"GCCA EPD Tool\" (v4.0) was used for A1 to A3 calculations and is based on ecoinvent 3.5. The \"GCCA EPD Tool\" is a specific tool to the cement and concrete industry, it is compliant with the EN 15804+A2 standard and is verified by EPD international. SimaPro was used to model module A4 module in combination with ecoinvent v3.8 ."
+    },
+    {
+      "number": "3.3",
+      "title": "Information on allocation",
+      "content": "The allocation rules defined by EN 15804+A2 and EN16908 have been applied.\nThe manufacturing process does not produce co-products that require allocation.\nA cut-off is applied when recyclable waste reaches the end of the waste state.\nBy default, this EPD addresses the environmental impacts of cement production excluding the incineration of the input waste (net figure). For clarity and transparency, the gross figure is also communicated as recommended in the EN 16908+A1.\nFor the blast furnace slag, a co-product of the pig iron production, economic allocation has been used conform EN 15804+A2, based on EPD data from the main supplier."
+    },
+    {
+      "number": "3.4",
+      "title": "Information on cut off",
+      "content": "The following processes are considered below cut-off:\n- Cleaning of the installation\n- Wear of grinding balls\n- Cement grinding losses\n- Cement mixing losses"
+    },
+    {
+      "number": "3.5",
+      "title": "Information on excluded processes",
+      "content": "Following processes were excluded for the inventory:\n- Production and construction of equipment for buildings and installations\n- Production and construction of equipment for the production of clinker and cement and lab analyses\n- Activities related to the personnel (mobility, furniture and desk consumables)\n- Utilization of water and energy related to the sales and management of the product\n- Cleaning of offices"
+    },
+    {
+      "number": "3.6",
+      "title": "Information on biogenic carbon modelling",
+      "content": "The product does not contain biogenic carbon.\nThe product is sold in bulk and does not require packaging.\n\nBiogenic carbon content (kg C / FU )\nBiogenic carbon content in product (at the gate): 0\nBiogenic carbon content in accompanying packaging (at the gate): 0"
+    },
+    {
+      "number": "3.7",
+      "title": "Information on carbon offsetting",
+      "content": "Carbon offsetting is not allowed in the EN 15804+A2 and hence not taken into account in the calculations"
+    },
+    {
+      "number": "3.8",
+      "title": "Information on carbonation of cementitious materials",
+      "content": "No carbonation of cementitious materials is considered in the scope of this EPD. The construction products made with cement (mortar, concrete) may indeed carbonate in the following life cycle stages."
+    },
+    {
+      "number": "3.9",
+      "title": "Additional or deviating characterisation factors",
+      "content": "The EF3.0 version of the EN 15804+A2 LCIA method was used. The characterization factors from EC-JRC were applied. No additional or deviating characterisation factors were used."
+    },
+    {
+      "number": "3.10",
+      "title": "Description of the variability",
+      "content": "The EPD is specific to the product and manufacturing site. No underlying parameters or assumptions that would impact the results were made. The results do not vary."
+    },
+    {
+      "number": "3.11",
+      "title": "Specificity",
+      "content": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site."
+    },
+    {
+      "number": "3.12",
+      "title": "Period of data collection",
+      "content": "Manufacturer specific data have been collected for the year 2021."
+    },
+    {
+      "number": "3.13",
+      "title": "Information on data collection",
+      "content": "The activity data is based on site specific data (volumes, lower heating values, emission factors) verified by the EU ETS system for the clinker production. For the cement production, the main data used is the recipe.\nBackground data is included in the GCCA EPD tool and has been verified by EPD International."
+    },
+    {
+      "number": "3.14",
+      "title": "Database used for background data",
+      "content": "Ecoinvent v3.5 for A1 to A3 and ecoinvent version 3.8 for A4."
+    },
+    {
+      "number": "3.15",
+      "title": "Energy mix",
+      "content": "The residual electricity mix of Belgium in 2021 was used, based on the electricity attributes provided by the Association of issuing Bodies (AIB)."
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 023.0221.003-01.00.00 CEM IIIB 42,5 N-LHSR bulk “ECOPlanet” EN_ signed.pdf",
+    "pdf_sha256": "55bf1c8885461ad261acc495b542a6dd2e3a94f3795d822ed050355f1e8487de",
+    "api_pages": "10-13",
+    "api_pages_resolved": "10,11,12,13",
+    "api_pdf_bytes": 130023,
+    "api_pdf_sha256": "e1656e04a5db64ca17c580f0519e49240c27be3569d0bdb5ad5a7bac356892be",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 023.0221.003-01.00.00 CEM IIIB 42,5 N-LHSR bulk “ECOPlanet” EN_ signed.p10-p11-p12-p13.pdf",
+    "extracted_by": "claude-api+pdf-system-boundaries-parser+pdf-system-boundaries-parser",
+    "extracted_at": "2026-05-26T20:25:44.621Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 9666,
+    "output_tokens": 2572,
+    "system_boundaries_pages": "13",
+    "system_boundaries_refreshed_at": "2026-05-26T20:39:01.338Z"
+  }
+}

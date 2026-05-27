@@ -1,0 +1,169 @@
+{
+  "description": "The Compressed Earth Block from BC Materials is a Belgian product used as load-bearing and non-load-bearing masonry protected from the elements. It is mainly used for internal walls. This product is suitable for damp rooms but must not be applied to areas in direct contact with water. The product is sold as a block.\n\nThis EPD is specific to the BC Materials company and corresponds to only one site of production. \n\nThe Léém Compressed block range uses 3,85% (wt.) of cement as a stabiliser, and is more water-resistant, acoustic, fire-resistant and stronger. The aesthetics is more industrial through its aspect and colour.",
+  "intended_use": "The Compressed Earth Block from BC Materials is a Belgian product used as load-bearing and non-load-bearing masonry protected from the elements. It is mainly used for internal walls. This product is suitable for damp rooms but must not be applied to areas in direct contact with water.",
+  "reference_flow": {
+    "value": 1,
+    "unit": "m2",
+    "description": "To build 1 m² of wall with 140 mm width compressed earth blocks installed with Earth adhesive mortar, ensuring an acoustic insulation 54,3 (-1,6;-4,9) dB with a REI 180, for a reference service life of 100 years in Belgium"
+  },
+  "installation": "Material for fixation and installation are included. This EPD includes the impacts of all processes, fixating materials, jointing materials or treatments necessary for installing the product.\n\nThe masonry of Léém Compressed Earth Blocks is executed in accordance with the rules of craftsmanship. The blocks are put together using Léém Earth Adhesive Mortar. Blocks must be prewet before laying. Masonry is achieved using normal masonry tools. During construction, the wall must be protected from water at its top (infiltrations, ...) and bottom (stagnating water and splash water). The installation process is presented in the figure below. \n\nThe Léém Earth Adhesive Mortar is applied using 2-3 mm joints.",
+  "reference_service_life_years": 100,
+  "geographical_representativity": "Compressed Earth block is produced in Brussels and Lummen, Belgium for the production of the block in itself. The Earth Adhesive mortar is produced in BC materials, in Brussels, Belgium \nData for this LCA are representative and relevant for this specific production. \nPrimary data inventory of described processes is representative of the BC materials product. \nInstallation (A4-A5), end-of-life (C) and benefits (D) are representative of Belgian practices. This study is in accordance with time, geography and technology compliance. \nThis study is representative of the Belgian market.",
+  "production_process": "The production of Compressed Earth Block is performed in Brussels then in Lummen with the following process. \nFirst, primary (Rhine Sand) and secondary (Loess loam and crushed washed concrete) resources come to the production site in Brussels by truck. Loess loam is considered as a secondary resource, since it is having the status of waste coming from the excavation site. Rhine sand is considered as a primary resource. They are both mixed with crushed washed concrete coming from the AC materials site. The concrete is recovered from demolition site and then crushed and washed with rainwater to obtain washed crushed concrete which is transported to the BC materials site. These three resources are then premixed on the Brussels site and then transported by truck to Claesen site in Lummen. Here the premix is further mixed with Cem III 42,5, and Léém Compressed Earth blocks are produced in a process of vibrocompaction.",
+  "technical_properties": [
+    {
+      "property": "Gross / Net Density block CEB_90 CEB_140 CEB_190",
+      "standard": "EN772-13",
+      "value": "1970/1970 1760/1970 1760/1970",
+      "unit": "kg/m3",
+      "comment": "90,140 or 190 mm of thickness"
+    },
+    {
+      "property": "Compressive strength (full block)",
+      "standard": "EN772-01",
+      "value": "9",
+      "unit": "N/mm2",
+      "comment": null
+    },
+    {
+      "property": "Tolerance Class",
+      "standard": "EN771-03",
+      "value": "D2",
+      "unit": null,
+      "comment": null
+    },
+    {
+      "property": "Plan parallelism of the bed faces",
+      "standard": "EN772-16",
+      "value": "2.0",
+      "unit": "mm",
+      "comment": null
+    },
+    {
+      "property": "Flatness of faces",
+      "standard": "EN772-20",
+      "value": "0.5",
+      "unit": "mm",
+      "comment": null
+    },
+    {
+      "property": "Equilibrium Moisture Content",
+      "standard": "EN772-10",
+      "value": "1-2%",
+      "unit": null,
+      "comment": null
+    },
+    {
+      "property": "Initial Water Absorption",
+      "standard": "EN772-11",
+      "value": "IW 2",
+      "unit": null,
+      "comment": null
+    },
+    {
+      "property": "Hygrometric Expansion",
+      "standard": "EN772-14",
+      "value": "0.6",
+      "unit": "mm/m",
+      "comment": null
+    },
+    {
+      "property": "Compressive strength (half blocks mortared)",
+      "standard": "XPP13-901",
+      "value": "7",
+      "unit": "N/mm2",
+      "comment": "Non flammable"
+    },
+    {
+      "property": "Application Class",
+      "standard": "XPP13-901",
+      "value": "CL1 (outside masonry exposed to elements)",
+      "unit": null,
+      "comment": null
+    },
+    {
+      "property": "Water vapor diffusion number μ",
+      "standard": "XPP13-901",
+      "value": "5/10",
+      "unit": null,
+      "comment": null
+    },
+    {
+      "property": "Thermal conductivity λ",
+      "standard": "XPP13-901",
+      "value": "1",
+      "unit": "W/m2K",
+      "comment": null
+    },
+    {
+      "property": "Fire reaction",
+      "standard": "XPP13-901",
+      "value": "A1",
+      "unit": "Non flammable",
+      "comment": "Non flammable"
+    },
+    {
+      "property": "Compressive Strength",
+      "standard": "EN1052-1",
+      "value": "3",
+      "unit": "N/mm2",
+      "comment": "Léém Adhesive Mortar (2-3 mm)"
+    },
+    {
+      "property": "Static E-modulus",
+      "standard": "EN1052-1",
+      "value": "3500",
+      "unit": "N/mm2",
+      "comment": "Léém Adhesive Mortar (2-3 mm)"
+    },
+    {
+      "property": "Flexural Strength",
+      "standard": "EN1052-2",
+      "value": "⊥ 0.38 ∥ 0.15",
+      "unit": "N/mm2",
+      "comment": "Léém Adhesive Mortar (2-3 mm)"
+    },
+    {
+      "property": "Initial Shear Strength",
+      "standard": "EN1052-3",
+      "value": "0.22",
+      "unit": "N/mm2",
+      "comment": "Léém Adhesive Mortar (2-3 mm)"
+    },
+    {
+      "property": "Bond Wrench Strength",
+      "standard": "EN1052-5",
+      "value": "0.17",
+      "unit": "N/mm2",
+      "comment": "Léém Adhesive Mortar (2-3 mm)"
+    },
+    {
+      "property": "Airborne Sound Insulation (14cm th. without plaster)",
+      "standard": "EN ISO 717-1",
+      "value": "54,3(-1,6;-4,9)",
+      "unit": "dB",
+      "comment": "Léém Adhesive Mortar (2-3 mm)"
+    },
+    {
+      "property": "Fire Resistance (14cm th. without plaster)",
+      "standard": "NBN EN 1363-1",
+      "value": "180",
+      "unit": "(R)EI",
+      "comment": "Léém Adhesive Mortar (2-3 mm)"
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed.pdf",
+    "pdf_sha256": "423c951eac4a4121b02a3c9fc71a346b8eeae5b97bceec40ec250d6c795e4132",
+    "api_pages": "3-7",
+    "api_pages_resolved": "3,4,5,6,7",
+    "api_pdf_bytes": 513802,
+    "api_pdf_sha256": "f5f9fe7e292f8bc0d3ead593e605d3efaf29b26de965d2d70be0792638a3e6d5",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed.p3-p4-p5-p6-p7.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T19:06:50.824Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 11587,
+    "output_tokens": 2266
+  }
+}

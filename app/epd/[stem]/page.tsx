@@ -1,8 +1,23 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { EpdCompareWorkspace } from "@/app/components/EpdCompareWorkspace";
-import { loadEpdRecord, loadGraphDocument, loadVerification } from "@/lib/data";
+import { GraphCoverageSummary } from "@/app/components/GraphCoverageSummary";
+import { EpdWorkspaceLayout } from "@/app/components/EpdWorkspaceLayout";
+import { corpusPickerItemsFromRecords } from "@/lib/corpus/picker-item";
+import {
+  canonicalExtractStem,
+  listEpdRecords,
+  loadEpdRecord,
+  loadVerification,
+  pdfPathForStem,
+  resolveCorpusStem,
+} from "@/lib/data";
+import { docmapIsCached } from "@/lib/extract/docmap-cache";
+import { ensureDocmapForStem } from "@/lib/extract/ensure-docmap";
+import { ensurePhase7ForStem } from "@/lib/extract/ensure-phase7";
+import { buildGapReport, writeGapSnapshot } from "@/lib/extract/gap-report";
+import { buildGraphDocumentForStem } from "@/lib/graph/document";
 import { resolveEpdPhases } from "@/lib/phases/registry";
+import { normalizeEpdStem } from "@/lib/stems/normalize";
 
 function JsonBlock({ data }: { data: unknown }) {
   return <pre className="code-block">{JSON.stringify(data, null, 2)}</pre>;
@@ -10,57 +25,55 @@ function JsonBlock({ data }: { data: unknown }) {
 
 export default async function EpdPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ stem: string }>;
+  searchParams: Promise<{ gaps?: string }>;
 }) {
   const { stem: rawStem } = await params;
-  const stem = decodeURIComponent(rawStem);
+  const { gaps: gapsQuery } = await searchParams;
+  const stem = resolveCorpusStem(normalizeEpdStem(rawStem));
+  if (pdfPathForStem(stem)) {
+    const canonical = canonicalExtractStem(stem);
+    if (!docmapIsCached(canonical)) {
+      await ensureDocmapForStem(stem);
+    }
+    await ensurePhase7ForStem(stem);
+  }
   const record = loadEpdRecord(stem);
+  const corpusItems = corpusPickerItemsFromRecords(listEpdRecords());
 
-  if (!record.phase1 && !record.phase2) {
+  if (!record.phase1 && !record.phase2 && !record.hasPdf) {
     notFound();
   }
 
-  const registry = resolveEpdPhases(stem);
-  const graph = loadGraphDocument(stem);
+  const registry = resolveEpdPhases(stem, { pdfAvailable: record.hasPdf });
+  const gapReport = record.hasPdf ? buildGapReport(stem) : null;
+  if (gapReport) writeGapSnapshot(gapReport);
+  const graph = buildGraphDocumentForStem(stem);
   const verification = loadVerification(stem);
   const encoded = encodeURIComponent(stem);
 
   return (
-    <div className="stack-lg">
-      <p>
-        <Link href="/">← All EPDs</Link>
-      </p>
+    <div className="epd-detail-page">
+      <EpdWorkspaceLayout corpusItems={corpusItems} activeStem={stem}>
+        <EpdCompareWorkspace
+          registry={registry}
+          pdfAvailable={record.hasPdf}
+          pdfServeStem={record.pdfServeStem}
+          extractSummary={record.extractSummary}
+          pipelinePhases={record.pipelinePhases}
+          hasDocmapIndex={record.hasDocmapIndex}
+          initialVerification={verification}
+          showVerification={false}
+          gapReport={gapReport}
+          initialGapsOnly={gapsQuery === "1"}
+        />
 
-      <section>
-        <h1>{record.phase2?.product_name ?? stem}</h1>
-        <p className="epd-meta">
-          {record.phase2?.epd_number ?? record.phase1?.epd_number} · {stem}
-        </p>
-        {registry.draft && verification ? (
-          <p className="hint">
-            Last AI verification: {new Date(verification.verifiedAt).toLocaleString()} (
-            {verification.summary.match} match, {verification.summary.mismatch} mismatch)
-          </p>
-        ) : null}
-        {!registry.draft ? (
-          <p className="hint">
-            No header draft yet — run <code>npm run drafts</code> after phase 2.
-          </p>
-        ) : null}
-      </section>
-
-      <EpdCompareWorkspace
-        registry={registry}
-        pdfAvailable={!!record.pdfPath}
-        initialVerification={verification}
-        showVerification={false}
-      />
-
-      <details className="panel dev-data-panel">
+        <details className="panel dev-data-panel">
         <summary className="panel-head dev-data-summary">
           <h2>JSON-LD graph</h2>
-          <span className="hint">Knowledge graph output</span>
+          <span className="hint">Live from extraction outputs</span>
         </summary>
         <div className="dev-data-body">
           <div className="panel-head">
@@ -70,14 +83,24 @@ export default async function EpdPage({
             </a>
           </div>
           {graph ? (
-            <JsonBlock data={graph} />
+            <>
+              <GraphCoverageSummary
+                coverage={
+                  (graph["@graph"] as Array<Record<string, unknown>>)?.[0]
+                    ?.extractionCoverage as Record<string, boolean | string[]>
+                }
+                nodeCount={(graph["@graph"] as unknown[])?.length ?? 0}
+              />
+              <JsonBlock data={graph} />
+            </>
           ) : (
             <p className="hint">
-              Run <code>npm run graph</code> to build.
+              No extraction data yet. Run extract on this EPD first.
             </p>
           )}
         </div>
-      </details>
+        </details>
+      </EpdWorkspaceLayout>
     </div>
   );
 }

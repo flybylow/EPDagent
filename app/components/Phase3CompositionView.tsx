@@ -6,8 +6,8 @@ export function Phase3CompositionView({ data }: { data: Phase3CompositionData })
   return (
     <div className="phase3-doc">
       {rows.length > 0 ? (
-        <div className="phase3-table-wrap">
-          <table className="phase3-table">
+        <div className="data-table-wrap">
+          <table className="data-table">
             <thead>
               <tr>
                 <th>Section</th>

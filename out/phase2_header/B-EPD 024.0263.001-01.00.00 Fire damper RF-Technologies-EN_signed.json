@@ -1,0 +1,52 @@
+{
+  "epd_number": "24.0263.001-01.00.00",
+  "program_operator": "Federal Public Service Health, Food Chain Safety and Environment",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": "Rf-Technologies",
+    "address": null,
+    "country": null
+  },
+  "product_name": "Fire damper with motorised actuator CU-LT 200x100",
+  "product_description": "Fire damper with motorised actuator",
+  "standards_conformity": null,
+  "verification_statement": "THIRD PARTY VERIFIED",
+  "conformity_basis": "in accordance with ISO 14025, EN 15804+A2 and B-EPD-PCR (Version 18.10.2022)",
+  "declared_scope": "1 CU-LT 200x100 fire damper with a motorised actuator, to be used in conjunction with partitions to maintain fire compartments in heating, ventilation and air conditioning installations, with a fire resistance up to 120 minutes and a reference service life of 30 years",
+  "declared_modules": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "C",
+    "D"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "piece"
+  },
+  "validity": {
+    "issued": "2024-10-11",
+    "valid_until": "2029-10-11"
+  },
+  "pcr_reference": null,
+  "verifier": {
+    "name": null,
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 024.0263.001-01.00.00 Fire damper RF-Technologies-EN_signed.pdf",
+    "pdf_sha256": "3870a1cd5451b08545478c285f81696f3e733ff900a5912cad19811be002d2dd",
+    "api_pages": "1-4",
+    "api_pages_resolved": "1,2,3,4",
+    "api_pdf_bytes": 976833,
+    "api_pdf_sha256": "9ee3ffa705250cafad5ab5f53e5bfaec4e5229c0a8fb5d168cc6ed4756ef9ca2",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 024.0263.001-01.00.00 Fire damper RF-Technologies-EN_signed.p1-p2-p3-p4.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:04:18.548Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 9931,
+    "output_tokens": 565
+  }
+}

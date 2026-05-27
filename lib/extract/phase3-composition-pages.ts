@@ -2,6 +2,7 @@ import { tableRegistryForStem } from "../tables/manifest";
 import { getReferenceByStem, referenceCompareDir } from "../reference";
 import * as fs from "node:fs";
 import * as path from "node:path";
+import { pagesFromDocmapSection } from "./phase-page-spec";
 
 /** Page(s) for the composition table (§1.5). */
 export function resolvePhase3CompositionPageSpec(stem: string): string {
@@ -17,6 +18,9 @@ export function resolvePhase3CompositionPageSpec(stem: string): string {
       }
     }
   }
+
+  const fromDocmap = pagesFromDocmapSection(stem, "1.5");
+  if (fromDocmap) return fromDocmap;
 
   const tables = tableRegistryForStem(stem).filter((t) => t.phase === "phase3_composition");
   if (tables.length > 0) {

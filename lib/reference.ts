@@ -33,7 +33,7 @@ export function listReferenceEpds(): ReferenceEpd[] {
 }
 
 export function getReferenceByStem(stem: string): ReferenceEpd | null {
-  return listReferenceEpds().find((r) => r.stem === stem) ?? null;
+  return listReferenceEpds().find((r) => r.stem === stem || r.id === stem) ?? null;
 }
 
 export function getCanonicalReference(): ReferenceEpd {

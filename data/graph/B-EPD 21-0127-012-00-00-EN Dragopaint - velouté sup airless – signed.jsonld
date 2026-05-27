@@ -1,0 +1,291 @@
+{
+  "@context": {
+    "@vocab": "https://epdagent.dev/vocab/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "EPD": "https://epdagent.dev/vocab/EPD",
+    "ProgramOperator": "https://epdagent.dev/vocab/ProgramOperator",
+    "declaredUnit": {
+      "@id": "https://epdagent.dev/vocab/declaredUnit",
+      "@type": "schema:QuantitativeValue"
+    },
+    "programOperator": {
+      "@id": "https://epdagent.dev/vocab/programOperator",
+      "@type": "@id"
+    },
+    "producer": {
+      "@id": "https://epdagent.dev/vocab/producer",
+      "@type": "@id"
+    },
+    "verifier": {
+      "@id": "https://epdagent.dev/vocab/verifier",
+      "@type": "@id"
+    },
+    "pcrReference": "https://epdagent.dev/vocab/pcrReference",
+    "epdNumber": "https://epdagent.dev/vocab/epdNumber",
+    "language": "https://epdagent.dev/vocab/language",
+    "filenamePattern": "https://epdagent.dev/vocab/filenamePattern",
+    "schema:name": "https://schema.org/name",
+    "schema:address": "https://schema.org/address",
+    "schema:addressCountry": "https://schema.org/addressCountry",
+    "schema:validFrom": {
+      "@id": "https://schema.org/validFrom",
+      "@type": "xsd:date"
+    },
+    "schema:validThrough": {
+      "@id": "https://schema.org/validThrough",
+      "@type": "xsd:date"
+    },
+    "schema:value": "https://schema.org/value",
+    "schema:unitCode": "https://schema.org/unitCode",
+    "prov:wasDerivedFrom": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "prov:generatedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "extractionCoverage": "https://epdagent.dev/vocab/extractionCoverage",
+    "productSection": {
+      "@id": "https://epdagent.dev/vocab/productSection",
+      "@type": "@id"
+    },
+    "composition": {
+      "@id": "https://epdagent.dev/vocab/composition",
+      "@type": "@id"
+    },
+    "lcaStudy": {
+      "@id": "https://epdagent.dev/vocab/lcaStudy",
+      "@type": "@id"
+    },
+    "lcaTables": {
+      "@id": "https://epdagent.dev/vocab/lcaTables",
+      "@type": "@id"
+    },
+    "scenarios": {
+      "@id": "https://epdagent.dev/vocab/scenarios",
+      "@type": "@id"
+    },
+    "bibliography": {
+      "@id": "https://epdagent.dev/vocab/bibliography",
+      "@type": "@id"
+    },
+    "epdSections": {
+      "@id": "https://epdagent.dev/vocab/epdSections",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://localhost:3000/id/epd/B-EPD%2021-0127-012-00-00-EN%20Dragopaint%20-%20velout%C3%A9%20sup%20airless%20%E2%80%93%20signed",
+      "@type": [
+        "EPD",
+        "schema:Product"
+      ],
+      "epdNumber": "21-0127-012-00-00-EN",
+      "schema:name": "DRAGOCRYL VELOUTE SUP AIRLESS",
+      "schema:description": "water-based paint",
+      "standardsConformity": "Conform to EN 15804+A2, NBN/DTD B08-001 and ISO 14025",
+      "verificationStatement": "Third party verified",
+      "declaredScope": "Protect and decorate 1m2 of substrate for a lifespan of 10 years.",
+      "declaredModules": [
+        "A123",
+        "A4",
+        "A5",
+        "B",
+        "C",
+        "D"
+      ],
+      "language": "EN",
+      "filenamePattern": "B-EPD",
+      "declaredUnit": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2"
+      },
+      "schema:validFrom": "2021-03-30",
+      "schema:validThrough": "2026-03-30",
+      "programOperator": {
+        "@id": "http://localhost:3000/id/operator/B-EPD"
+      },
+      "producer": {
+        "@id": "http://localhost:3000/id/org/fd8fff5cb019"
+      },
+      "prov:wasDerivedFrom": {
+        "@type": "prov:Entity",
+        "schema:name": "B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.pdf"
+      },
+      "prov:generatedAtTime": "2026-05-26T17:50:10.111Z",
+      "productSection": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520velout%25C3%25A9%2520sup%2520airless%2520%25E2%2580%2593%2520signed/product"
+      },
+      "composition": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520velout%25C3%25A9%2520sup%2520airless%2520%25E2%2580%2593%2520signed/composition"
+      },
+      "lcaStudy": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520velout%25C3%25A9%2520sup%2520airless%2520%25E2%2580%2593%2520signed/lca-study"
+      },
+      "extractionCoverage": {
+        "phase1": true,
+        "phase2": true,
+        "phase3_product": true,
+        "phase3_composition": true,
+        "phase3_lca_study": true,
+        "phase4_lca": [],
+        "phase5_scenarios": false,
+        "phase6_refs": false,
+        "phase7_epd_sections": false
+      }
+    },
+    {
+      "@id": "http://localhost:3000/id/operator/B-EPD",
+      "@type": "ProgramOperator",
+      "schema:name": "Federal Public Service of Health, Food Chain Safety and Environment",
+      "operatorCode": "B-EPD"
+    },
+    {
+      "@id": "http://localhost:3000/id/org/fd8fff5cb019",
+      "@type": "schema:Organization",
+      "schema:name": "Dragopaint",
+      "schema:address": null,
+      "schema:addressCountry": null
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520velout%25C3%25A9%2520sup%2520airless%2520%25E2%2580%2593%2520signed/product",
+      "@type": "ProductSection",
+      "description": "Dragocryl velouté sup airless is a water-based paint. The product has 1.41 kg/L density and an average coverage 8.55 m2/L, with an opacity of 95.48 %.\n\nThis is a specific EPD from a single company.",
+      "intendedUse": "Dragocryl velouté sup airless is applied to interior walls and ceilings, following the standard EN 13300.",
+      "installation": "The scope of this B-EPD is as installed.\n\nProduct losses during application is accounted as 2%. \n\nMaterials for paint application are included. This EPD includes the impacts of all processes, and application materials necessary for applying the product.",
+      "referenceServiceLifeYears": 10,
+      "geographicalRepresentativity": "This EPD is a cradle-to-grave, and includes modules A123, A4, A5, B, C and D for the Belgian scenario.\nThe EPD is representative for the Belgian market.",
+      "productionProcess": "Raw materials are transported by truck to Dragopaint site in Belgium. The manufacturing process consist in mixing the ingredients, Belgian electricity mix is used in this purpose. Production losses represent 2.00 % in mass. Those losses are landfilled as inert waste in their end of life. The final product is packed in 15 liters buckets, interlayers, and wooden pallets, surrounded by plastic film. The packed product is then distributed by truck.",
+      "referenceFlow": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2",
+        "description": "The functional unit is: Protect and decorate 1 m2 of substrate for a lifespan of 10 years, when applied according to DTU 59.1."
+      },
+      "technicalProperties": [
+        {
+          "property": "Opacity",
+          "standard": null,
+          "value": "95.48",
+          "unit": "%",
+          "comment": null
+        },
+        {
+          "property": "Average coverage",
+          "standard": null,
+          "value": "8.55",
+          "unit": "m2/liter",
+          "comment": null
+        },
+        {
+          "property": "Lifespan",
+          "standard": "DTU 59.1",
+          "value": "10",
+          "unit": "years",
+          "comment": null
+        },
+        {
+          "property": "COV",
+          "standard": null,
+          "value": "0.467",
+          "unit": "g/liter",
+          "comment": null
+        },
+        {
+          "property": "Biocide",
+          "standard": null,
+          "value": "0.15",
+          "unit": "% m/m",
+          "comment": null
+        },
+        {
+          "property": "Paint density",
+          "standard": null,
+          "value": "1.41",
+          "unit": "kg/liter",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520velout%25C3%25A9%2520sup%2520airless%2520%25E2%2580%2593%2520signed/composition",
+      "@type": "Composition",
+      "components": [
+        {
+          "section": "Product",
+          "component": "Water",
+          "composition": "Water",
+          "quantity": "15 - 20%"
+        },
+        {
+          "section": "Product",
+          "component": "Titanium dioxide",
+          "composition": "Titanium dioxide",
+          "quantity": "8 – 13%"
+        },
+        {
+          "section": "Product",
+          "component": "Calcium carbonate",
+          "composition": "Calcium carbonate",
+          "quantity": "28 - 33%"
+        },
+        {
+          "section": "Product",
+          "component": "Additives",
+          "composition": "Additives",
+          "quantity": "40 - 45%"
+        },
+        {
+          "section": "Application materials",
+          "component": "Airless machine",
+          "composition": "Airless machine",
+          "quantity": "1.2E-3 kWh/FU"
+        },
+        {
+          "section": "Packaging",
+          "component": "Interlayer (cardboard)",
+          "composition": "Interlayer (cardboard)",
+          "quantity": "1.60E-4 kg/FU"
+        },
+        {
+          "section": "Packaging",
+          "component": "Plastic film (polyethylene)",
+          "composition": "Plastic film (polyethylene)",
+          "quantity": "8.73E-5 kg/FU"
+        },
+        {
+          "section": "Packaging",
+          "component": "Bucket (polypropylene)",
+          "composition": "Bucket (polypropylene)",
+          "quantity": "3.75E-3 kg/FU"
+        },
+        {
+          "section": "Packaging",
+          "component": "Lids (polypropylene)",
+          "composition": "Lids (polypropylene)",
+          "quantity": "7.06E-4 kg/FU"
+        },
+        {
+          "section": "Packaging",
+          "component": "Wooden pallets",
+          "composition": "Wooden pallets",
+          "quantity": "5.91E-3 kg/FU"
+        }
+      ],
+      "declarations": [
+        "The product does not contain materials listed in the \"Candidate list of Substances of Very High Concern for authorization\"."
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0127-012-00-00-EN%2520Dragopaint%2520-%2520velout%25C3%25A9%2520sup%2520airless%2520%25E2%2580%2593%2520signed/lca-study",
+      "@type": "LcaStudy",
+      "sectionTitle": "POTENTIAL ENVIRONMENTAL IMPACTS PER REFERENCE FLOW",
+      "functionalUnit": "The results are provided for coverage of 1m2 using Dragocryl Velouté sup airless.",
+      "additionalParagraphs": [
+        "The results of the LCIA are calculated for Dragocryl Velouté sup airless."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "table_title": "IMPACT CATEGORIES ADDITIONAL TO EN 15804",
+  "table_type": "impacts",
+  "introductory_text": "9.1 Environmental impact categories explained\n\nGlobal Warming Potential\nThe global warming potential of a gas refers to the total contribution to global warming resulting from the emission of one unit of that gas relative to one unit of the reference gas, carbon dioxide, which is assigned a value of 1.\nIt is split up in 4:\n– Global Warming Potential total (GWP-total) which is the sum of GWP-fossil, GWP-biogenic and GWP-luluc\n– Global Warming Potential fossil fuels (GWP-fossil) : The global warming potential related to greenhouse gas (GHG) emissions to any media originating from the oxidation and/or reduction of fossil fuels by means of their transformation or degradation (e.g. combustion, digestion, landfilling, etc).\n– Global Warming Potential biogenic (GWP-biogenic) : The global warming potential related to carbon emissions to air (CO2, CO and CH4) originating from the oxidation and/or reduction of aboveground biomass by means of its transformation or degradation (e.g. combustion, digestion, composting, landfilling) and CO2 uptake from the atmosphere through photosynthesis during biomass growth - i.e. corresponding to the carbon content of products, biofuels or above ground plant residues such as litter and dead wood.\n– Global Warming Potential land use and land use change (GWP-luluc): The global warming potential related to carbon uptakes and emissions (CO2, CO and CH4) originating from carbon stock changes caused by land use change and land use. This sub-category includes biogenic carbon exchanges from deforestation, road construction or other soil activities (including soil carbon emissions).\n\nOzone Depletion\nDestruction of the stratospheric ozone layer which shields the earth from ultraviolet radiation harmful to life. This destruction of ozone is caused by the breakdown of certain chlorine and/or bromine containing compounds (chlorofluorocarbonsor halons), Which break down when they reach the stratosphere and then catalytically destroy ozone molecules.\n\nAcidification potential\nAcid depositions have negative impacts on natural ecosystems and the man-made environment incl. buildings. The main sources for emissions of acidifying substances are agriculture and fossil fuel combustion used for electricity production, heating and transport.\n\nEutrophication potential\nThe potential to cause over-fertilization of water and soil, which can result in increased growth of biomass and following adverse effects.\nIt is split up in 3:\n– Eutrophication potential - freshwater: The potential to cause over-fertilization of freshwater, which can result in increased growth of biomass and following adverse effects.\n– Eutrophication potential - marine: The potential to cause over-fertilization of marine water, which can result in increased growth of biomass and following adverse effects.\n– Eutrophication potential - terrestrial: The potential to cause over-fertilization of soil, which can result in increased growth of biomass and following adverse effects.\n\nPhotochemical ozone creation\nChemical reactions brought about by the light energy of the sun creating photochemical smog. The reaction of nitrogen oxides with hydrocarbons in the presence of sunlight to form ozone is an example of a photochemical reaction.\n\nAbiotic depletion potential for non-fossil ressources\nConsumption of non-renewable resources, thereby lowering their availability for future generations. Expressed in comparison to Antimonium (Sb).\nThe results of this environmental impact indicator shall be used with care as the uncertainties on these results are high or as there is limited experienced with the indicator.\n\nAbiotic depletion potential for fossil ressources\nMeasure for the depletion of fossil fuels such as oil, natural gas, and coal. The stock of the fossil fuels is formed by the total amount of fossil fuels, expressed in Megajoules (MJ).\nThe results of this environmental impact indicator shall be used with care as the uncertainties on these results are high or as there is limited experienced with the indicator.",
+  "column_groups": [
+    {
+      "label": "Product stage",
+      "column_codes": [
+        "A1/A2/A3"
+      ]
+    },
+    {
+      "label": "Construction process stage",
+      "column_codes": [
+        "A4",
+        "A5"
+      ]
+    },
+    {
+      "label": "Use stage",
+      "column_codes": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7"
+      ]
+    },
+    {
+      "label": "End-of-life stage",
+      "column_codes": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "label": null,
+      "column_codes": [
+        "D"
+      ]
+    }
+  ],
+  "columns": [
+    {
+      "code": "A1/A2/A3",
+      "label": "A1 / A2 / A3",
+      "group": "Product stage"
+    },
+    {
+      "code": "A4",
+      "label": "A4 Transport",
+      "group": "Construction process stage"
+    },
+    {
+      "code": "A5",
+      "label": "A5 Installation",
+      "group": "Construction process stage"
+    },
+    {
+      "code": "B1",
+      "label": "B1 Use",
+      "group": "Use stage"
+    },
+    {
+      "code": "B2",
+      "label": "B2 Maintenance",
+      "group": "Use stage"
+    },
+    {
+      "code": "B3",
+      "label": "B3 Repair",
+      "group": "Use stage"
+    },
+    {
+      "code": "B4",
+      "label": "B4 Replacement",
+      "group": "Use stage"
+    },
+    {
+      "code": "B5",
+      "label": "B5 Refurbishment",
+      "group": "Use stage"
+    },
+    {
+      "code": "B6",
+      "label": "B6 Operational energy use",
+      "group": "Use stage"
+    },
+    {
+      "code": "B7",
+      "label": "B7 Operational water use",
+      "group": "Use stage"
+    },
+    {
+      "code": "C1",
+      "label": "C1 Deconstruction / demolition",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "C2",
+      "label": "C2 Transport",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "C3",
+      "label": "C3 Waste processing",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "C4",
+      "label": "C4 Disposal",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "D",
+      "label": "D Reuse, recovery, recycling",
+      "group": null
+    }
+  ],
+  "rows": [
+    {
+      "indicator": "PM",
+      "unit": "disease incidence",
+      "values": [
+        {
+          "column_code": "A1/A2/A3",
+          "raw_value": "1,77E-07"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "1,51E-08"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "1,55E-08"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "1,17E-08"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "1,10E-08"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "8,42E-10"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "8,80E-09"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "3,18E-08"
+        }
+      ]
+    },
+    {
+      "indicator": "IRHH",
+      "unit": "kg U235 eq/FU",
+      "values": [
+        {
+          "column_code": "A1/A2/A3",
+          "raw_value": "7,36E-02"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "1,57E-02"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "6,43E-03"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "2,63E-03"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "1,23E-02"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "1,59E-03"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "6,54E-03"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "2,45E-02"
+        }
+      ]
+    },
+    {
+      "indicator": "ETF",
+      "unit": "CTUe/FU",
+      "values": [
+        {
+          "column_code": "A1/A2/A3",
+          "raw_value": "1,11E+01"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "2,48E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "1,61E+00"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "3,40E-01"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "1,93E+00"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "6,89E-02"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "1,98E+00"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "4,24E+00"
+        }
+      ]
+    },
+    {
+      "indicator": "HTCE",
+      "unit": "CTUh/FU",
+      "values": [
+        {
+          "column_code": "A1/A2/A3",
+          "raw_value": "4,61E-10"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "7,50E-11"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "8,05E-11"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "1,33E-11"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "6,07E-11"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "4,02E-12"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "2,96E-11"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "9,81E-11"
+        }
+      ]
+    },
+    {
+      "indicator": "HTnCE",
+      "unit": "CTUh/FU",
+      "values": [
+        {
+          "column_code": "A1/A2/A3",
+          "raw_value": "1,55E-08"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "2,25E-09"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "2,33E-09"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "2,49E-10"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "1,76E-09"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "5,07E-11"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "1,40E-09"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "1,15E-09"
+        }
+      ]
+    },
+    {
+      "indicator": "Land Use Related impacts",
+      "unit": "dimensionless",
+      "values": [
+        {
+          "column_code": "A1/A2/A3",
+          "raw_value": "6,60E+00"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "2,51E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "1,48E+00"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "0"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "7,32E-02"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "1,64E+00"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "2,35E-01"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "2,64E+00"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "4,13E+01"
+        }
+      ]
+    }
+  ],
+  "capture": {
+    "headers_rotated": true,
+    "column_count": 17,
+    "row_count": 6,
+    "complete": true,
+    "notes": "Columns B5, B6, and B7 appear to be blank/empty in all data rows for this additional impact categories table. The table presents six additional environmental impact indicators beyond the core EN 15804 impacts. Explanatory text for various impact categories is provided on page 2 (section 9.1)."
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 024.0013.008-01.00.00 Gyproc Rf 12.5 Saint-Gobain- EN_signed.pdf",
+    "pdf_sha256": "37696f82a2635691ee9d766477d3faf9596ca9cfd9d396d8095b6e6a0656bfda",
+    "api_pages": "14-15",
+    "api_pages_resolved": "14,15",
+    "api_pdf_bytes": 78608,
+    "api_pdf_sha256": "9416858c172d763861d8fcd6698af43c847a780803ea5fbbc41d72ec2d55396a",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 024.0013.008-01.00.00 Gyproc Rf 12.5 Saint-Gobain- EN_signed.p14-p15.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T19:59:30.772Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 6875,
+    "output_tokens": 4134
+  }
+}

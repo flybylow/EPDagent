@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EPD LCA study",
+  "description": "Phase 3 LCA study: methodology and representativeness (section 3)",
+  "type": "object",
+  "properties": {
+    "section_title": {
+      "type": ["string", "null"],
+      "description": "Main heading of the LCA study section when present"
+    },
+    "standards_and_methodology": {
+      "type": ["string", "null"],
+      "description": "Normative basis, EN 15804 / ISO 14040-44 references, calculation rules"
+    },
+    "pcr_reference": {
+      "type": ["string", "null"],
+      "description": "Product Category Rules reference as stated in the LCA study section"
+    },
+    "lca_software_and_database": {
+      "type": ["string", "null"],
+      "description": "LCA software, background database, and version when stated"
+    },
+    "goal_and_scope": {
+      "type": ["string", "null"],
+      "description": "Goal and scope of the LCA study"
+    },
+    "functional_unit": {
+      "type": ["string", "null"],
+      "description": "Functional / declared unit as described in the LCA study"
+    },
+    "system_boundaries": {
+      "type": ["string", "null"],
+      "description": "System boundary description and included life-cycle modules"
+    },
+    "production_sites": {
+      "type": ["string", "null"],
+      "description": "Manufacturing / production site representativeness"
+    },
+    "cut_off_criteria": {
+      "type": ["string", "null"],
+      "description": "Cut-off rules and completeness criteria"
+    },
+    "allocation": {
+      "type": ["string", "null"],
+      "description": "Allocation procedures"
+    },
+    "data_quality": {
+      "type": ["string", "null"],
+      "description": "Data quality requirements or assessment"
+    },
+    "time_representativeness": {
+      "type": ["string", "null"],
+      "description": "Time-related representativeness"
+    },
+    "geographical_representativeness": {
+      "type": ["string", "null"],
+      "description": "Geographical representativeness for the LCA"
+    },
+    "technology_representativeness": {
+      "type": ["string", "null"],
+      "description": "Technology / technical representativeness"
+    },
+    "impact_assessment": {
+      "type": ["string", "null"],
+      "description": "LCIA method, impact categories, characterisation factors"
+    },
+    "interpretation": {
+      "type": ["string", "null"],
+      "description": "Interpretation of LCA results when present in this section"
+    },
+    "additional_paragraphs": {
+      "type": ["array", "null"],
+      "items": { "type": "string" },
+      "description": "Other substantive paragraphs not covered by the fields above"
+    },
+    "subsections": {
+      "type": ["array", "null"],
+      "description": "Granular LCA study blocks (e.g. 3.1–3.14) when the EPD splits section 3 into subsections",
+      "items": {
+        "type": "object",
+        "properties": {
+          "number": { "type": ["string", "null"], "description": "Subsection number e.g. 3.2" },
+          "title": { "type": ["string", "null"], "description": "Subsection heading" },
+          "content": {
+            "type": ["string", "null"],
+            "description": "Full text for that subsection, verbatim"
+          }
+        },
+        "required": ["number", "title", "content"]
+      }
+    }
+  },
+  "required": [
+    "section_title",
+    "standards_and_methodology",
+    "pcr_reference",
+    "lca_software_and_database",
+    "goal_and_scope",
+    "functional_unit",
+    "system_boundaries",
+    "production_sites",
+    "cut_off_criteria",
+    "allocation",
+    "data_quality",
+    "time_representativeness",
+    "geographical_representativeness",
+    "technology_representativeness",
+    "impact_assessment",
+    "interpretation",
+    "additional_paragraphs",
+    "subsections"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "components": [
+    {
+      "section": null,
+      "component": "Portland clinker produced in Obourg",
+      "composition": null,
+      "quantity": "20% to 30%"
+    },
+    {
+      "section": null,
+      "component": "Blast-furnace slag",
+      "composition": null,
+      "quantity": "63% to 73% *"
+    },
+    {
+      "section": null,
+      "component": "Minor additional constituents",
+      "composition": null,
+      "quantity": "<= 5%"
+    },
+    {
+      "section": null,
+      "component": "Additives",
+      "composition": null,
+      "quantity": "<= 1%"
+    },
+    {
+      "section": null,
+      "component": "Gypsum and/or anhydrite",
+      "composition": null,
+      "quantity": "<= 6%"
+    }
+  ],
+  "declarations": [
+    "The product does not contain materials listed in the \"Candidate list of Substances of Very High Concern for authorization\"."
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 023.0221.003-01.00.00 CEM IIIB 42,5 N-LHSR bulk “ECOPlanet” EN_ signed.pdf",
+    "pdf_sha256": "55bf1c8885461ad261acc495b542a6dd2e3a94f3795d822ed050355f1e8487de",
+    "api_pages": "7",
+    "api_pages_resolved": "7",
+    "api_pdf_bytes": 23787,
+    "api_pdf_sha256": "3e1551b5fdec9b960c106f59259b57f42113bd067a353331c96d34fb0dc738d8",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 023.0221.003-01.00.00 CEM IIIB 42,5 N-LHSR bulk “ECOPlanet” EN_ signed.p7.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T20:25:00.578Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 3187,
+    "output_tokens": 308
+  }
+}

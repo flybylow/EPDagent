@@ -6,29 +6,17 @@
  *   npx tsx src/build_graph.ts EPD-S-P-12345-EN
  */
 
-import * as fs from "node:fs";
-import * as path from "node:path";
 import "dotenv/config";
-import { listEpdStems, loadPhase1, loadPhase2 } from "../lib/data";
-import { GRAPH_DIR } from "../lib/paths";
-import { buildEpdGraph, toCorpusDocument, toJsonLdDocument } from "../lib/jsonld/build";
+import { listEpdStems } from "../lib/data";
+import { writeGraphForStem, rebuildCorpus } from "../lib/graph/write";
 
 function buildOne(stem: string): void {
-  const phase1 = loadPhase1(stem);
-  const phase2 = loadPhase2(stem);
-
-  if (!phase1 && !phase2) {
+  const nodeCount = writeGraphForStem(stem);
+  if (nodeCount === 0) {
     console.warn(`skip ${stem}: no phase outputs`);
     return;
   }
-
-  const graph = buildEpdGraph(stem, phase1, phase2);
-  const doc = toJsonLdDocument(graph);
-  const outPath = path.join(GRAPH_DIR, `${stem}.jsonld`);
-
-  fs.mkdirSync(GRAPH_DIR, { recursive: true });
-  fs.writeFileSync(outPath, JSON.stringify(doc, null, 2));
-  console.log(`-> ${stem}  (${graph.length} nodes)  -> ${path.relative(process.cwd(), outPath)}`);
+  console.log(`-> ${stem}  (${nodeCount} nodes)  -> data/graph/${stem}.jsonld`);
 }
 
 function main(): void {
@@ -40,16 +28,9 @@ function main(): void {
     process.exit(1);
   }
 
-  const allGraphs = stems.map((stem) => {
-    buildOne(stem);
-    const phase1 = loadPhase1(stem);
-    const phase2 = loadPhase2(stem);
-    return buildEpdGraph(stem, phase1, phase2);
-  });
-
-  const corpusPath = path.join(GRAPH_DIR, "corpus.jsonld");
-  fs.writeFileSync(corpusPath, JSON.stringify(toCorpusDocument(allGraphs), null, 2));
-  console.log(`corpus  ${allGraphs.flat().length} nodes  -> ${path.relative(process.cwd(), corpusPath)}`);
+  for (const stem of stems) buildOne(stem);
+  rebuildCorpus();
+  console.log(`corpus  -> data/graph/corpus.jsonld`);
 }
 
 main();

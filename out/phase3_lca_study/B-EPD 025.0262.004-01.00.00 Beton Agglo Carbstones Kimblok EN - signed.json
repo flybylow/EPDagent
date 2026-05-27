@@ -1,0 +1,117 @@
+{
+  "section_title": "LCA-STUDY",
+  "standards_and_methodology": "The following processes are considered below cut-off (which follows the EN 15804+A2 rules of chapter 6.3.6) because the contribution and environmental impacts are expected to be less than 1% (per unit process for mass and energy) and less than 5% over the total mass and energy",
+  "pcr_reference": null,
+  "lca_software_and_database": "For the calculation of the LCA results, the software program SimaPro v9.5 has been used. The Ecoinvent v3.6 database is used for background data. The database was released in 2019.",
+  "goal_and_scope": null,
+  "functional_unit": "The declared unit is 1 m2.",
+  "system_boundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 10\nDeclared modules (☒): A1, A2, A3, A4, A5, B1, B2, B3, B4, B5, B6, B7, C1, C2, C3, C4, D\nNot declared (☐): —\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4, A5\nUse stage: B1, B2, B3, B4, B5, B6, B7\nEnd of life stage: C1, C2, C3, C4\nBeyond the system boundaries: D\n\nModule labels (vertical text):\nA1: Raw materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: Construction\nB1: Use\nB2: Maintenance\nB3: Repa\nB4: Replacement\nB5: Refurbishment\nB6: Operational energy use\nB7: Operational water use\nC1: -construction demolition\nC2: Transport\nC3: Waste processing\nC4: Disposal\nD: -Recovery- Recycling-",
+  "production_sites": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site.",
+  "cut_off_criteria": "The following processes are considered below cut-off (which follows the EN 15804+A2 rules of chapter 6.3.6) because the contribution and environmental impacts are expected to be less than 1% (per unit process for mass and energy) and less than 5% over the total mass and energy:\n Maintenance and use of auxiliary materials and equipment, excluding such processes included in the Ecoinvent background processes.\n Capital equipment and infrastructure processes, excluding such processes included in the Ecoinvent background processes. However, the capital goods of the crushing, screening and separation process at Orbix are included.\n PMD, paper and cardboard, and waste oil are not included because the masses are lower than 0.008%, and these are mainly office waste.",
+  "allocation": "For the raw materials sourced from Orbix used in the Carbstones, allocation takes place in their production. At the production location of Beton Agglomeraten Gubbels, the amount of materials, energy and auxiliary materials in the production processes are allocated per brick based on production quantities from the year 2022.",
+  "data_quality": "Company specific data for the product stage have been collected by Betonagglomeraten Gubbels N.V. and were provided to SGS Search.",
+  "time_representativeness": "Manufacturer specific data have been collected for the year 2022.",
+  "geographical_representativeness": null,
+  "technology_representativeness": null,
+  "impact_assessment": "The characterization factors from EC-JRC were applied. No additional or deviating characterisation factors were used.",
+  "interpretation": null,
+  "additional_paragraphs": [
+    "Only the processes considered below cut-off are excluded from the study. No additional processes are excluded.",
+    "The liquid CO2 used in the process of manufacturing Carbstones is certified from biogenic origin following the physical flow. The biogenic carbon uptake during production of the Carbstones is dependent on the, e.g., amount of carbon reacting materials and the surface area of the Carbstones able to react with water to create calcium carbonate. In A3, the biogenic carbon is emitted and leads almost immediately to carbonation, the emission is modelled in GWPbio and the carbonation is modelled in GWPfossil, clearly following the physical flow. This confirms the physical flow: As the carbon becomes chemically bound to the calcium into calcium carbonate (CaCO3) the mineral form has to be considered from that point on. The carbon is also not released during the waste treatment at EOL. Therefor it can be considered as permanently stored. Therefore, that carbon is no longer reported as \"biogenic carbon content in the product. During the use phase there is some remaining carbonation which takes place, but less due to the increased carbonation during the production process. The wooden pallet also contains biogenic carbon content.",
+    "Carbon offsetting is not allowed in the EN 15804+A2 and hence not taken into account in the calculations.",
+    "The sizes of the stones can vary from: Length 29 cm; Hight between 9 cm – 19 cm; Width 22 cm. In this EPD, the Carbstone Kimblok are reported with the sizes: 29/09/22, 29/14/22, 29/19/22. The representative Carbstone has the sizes 29/09/22. The amount of glue and the amount of carbstone (in mass) differ when other sizes are used. The carbstone has the most influence on environmental impact categories Climate change – total, Resource use minerals and metals, and Respiratory inorganics.",
+    "All electricity used during production comes from renewable sources either by generating energy on-site with PV panels, or from renewable electricity from the grid.",
+    "The results in this EPD are reported for Carbstone Kimblok 29/09/22. A conversion factor from below can be used to get the results for Carbstone Kimblok 29/14/22 and Carbstone Kimblok 29/19/22 by multiplying the conversion factor to the results of Carbstone Kimblok 29/09/22. Kimblok 29/09/22 is reported as worst-case stone because it has the lowest negative GWP results."
+  ],
+  "subsections": [
+    {
+      "number": "3.1",
+      "title": "Date of LCA-study",
+      "content": "July 2025"
+    },
+    {
+      "number": "3.2",
+      "title": "Software",
+      "content": "For the calculation of the LCA results, the software program SimaPro v9.5 has been used."
+    },
+    {
+      "number": "3.3",
+      "title": "Information on allocation",
+      "content": "For the raw materials sourced from Orbix used in the Carbstones, allocation takes place in their production. At the production location of Beton Agglomeraten Gubbels, the amount of materials, energy and auxiliary materials in the production processes are allocated per brick based on production quantities from the year 2022."
+    },
+    {
+      "number": "3.4",
+      "title": "Informatie on cut off",
+      "content": "The following processes are considered below cut-off (which follows the EN 15804+A2 rules of chapter 6.3.6) because the contribution and environmental impacts are expected to be less than 1% (per unit process for mass and energy) and less than 5% over the total mass and energy:\n Maintenance and use of auxiliary materials and equipment, excluding such processes included in the Ecoinvent background processes.\n Capital equipment and infrastructure processes, excluding such processes included in the Ecoinvent background processes. However, the capital goods of the crushing, screening and separation process at Orbix are included.\n PMD, paper and cardboard, and waste oil are not included because the masses are lower than 0.008%, and these are mainly office waste."
+    },
+    {
+      "number": "3.5",
+      "title": "Information on excluded processes",
+      "content": "Only the processes considered below cut-off are excluded from the study. No additional processes are excluded."
+    },
+    {
+      "number": "3.6",
+      "title": "Information on biogenic carbon modelling",
+      "content": "The liquid CO2 used in the process of manufacturing Carbstones is certified from biogenic origin following the physical flow. The biogenic carbon uptake during production of the Carbstones is dependent on the, e.g., amount of carbon reacting materials and the surface area of the Carbstones able to react with water to create calcium carbonate. In A3, the biogenic carbon is emitted and leads almost immediately to carbonation, the emission is modelled in GWPbio and the carbonation is modelled in GWPfossil, clearly following the physical flow. This confirms the physical flow: As the carbon becomes chemically bound to the calcium into calcium carbonate (CaCO3) the mineral form has to be considered from that point on. The carbon is also not released during the waste treatment at EOL. Therefor it can be considered as permanently stored. Therefore, that carbon is no longer reported as \"biogenic carbon content in the product. During the use phase there is some remaining carbonation which takes place, but less due to the increased carbonation during the production process.\n\nThe wooden pallet also contains biogenic carbon content."
+    },
+    {
+      "number": "3.7",
+      "title": "Information on carbon offsetting",
+      "content": "Carbon offsetting is not allowed in the EN 15804+A2 and hence not taken into account in the calculations."
+    },
+    {
+      "number": "3.8",
+      "title": "Additional or deviating characterisation factors",
+      "content": "The characterization factors from EC-JRC were applied. No additional or deviating characterisation factors were used."
+    },
+    {
+      "number": "3.9",
+      "title": "Description of the variability",
+      "content": "The declared unit is 1 m2. The sizes of the stones can vary from:\n• Length 29 cm;\n• Hight between 9 cm – 19 cm;\n• Width 22 cm.\n\nIn this EPD, the Carbstone Kimblok are reported with the sizes: 29/09/22, 29/14/22, 29/19/22. The representative Carbstone has the sizes 29/09/22.\n\nThe amount of glue and the amount of carbstone (in mass) differ when other sizes are used. The carbstone has the most influence on environmental impact categories Climate change – total, Resource use minerals and metals, and Respiratory inorganics."
+    },
+    {
+      "number": "3.10",
+      "title": "Specificity",
+      "content": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site."
+    },
+    {
+      "number": "3.11",
+      "title": "Period of data collection",
+      "content": "Manufacturer specific data have been collected for the year 2022."
+    },
+    {
+      "number": "3.12",
+      "title": "Information on data collection.",
+      "content": "Company specific data for the product stage have been collected by Betonagglomeraten Gubbels N.V. and were provided to SGS Search."
+    },
+    {
+      "number": "3.13",
+      "title": "Database used for background data",
+      "content": "The Ecoinvent v3.6 database is used for background data. The database was released in 2019."
+    },
+    {
+      "number": "3.14",
+      "title": "Energy mix",
+      "content": "All electricity used during production comes from renewable sources either by generating energy on-site with PV panels, or from renewable electricity from the grid."
+    },
+    {
+      "number": "3.15",
+      "title": "Conversion factors",
+      "content": "The results in this EPD are reported for Carbstone Kimblok 29/09/22. A conversion factor from below can be used to get the results for Carbstone Kimblok 29/14/22 and Carbstone Kimblok 29/19/22 by multiplying the conversion factor to the results of Carbstone Kimblok 29/09/22. Kimblok 29/09/22 is reported as worst-case stone because it has the lowest negative GWP results."
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 025.0262.004-01.00.00 Beton Agglo Carbstones Kimblok EN - signed.pdf",
+    "pdf_sha256": "bf8437a84b87484607fc2b36353bf7d82115eed369c2d0cb746ff34dde2db5b1",
+    "api_pages": "10",
+    "api_pages_resolved": "10",
+    "extracted_by": "pdf-system-boundaries-parser+pdf-system-boundaries-parser",
+    "extracted_at": "2026-05-26T20:17:38.049Z",
+    "model": null,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "system_boundaries_parser": true,
+    "system_boundaries_pages": "10",
+    "system_boundaries_refreshed_at": "2026-05-26T20:39:01.437Z"
+  }
+}

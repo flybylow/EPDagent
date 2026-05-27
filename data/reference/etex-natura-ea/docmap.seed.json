@@ -25,19 +25,31 @@
     {
       "number": "3",
       "title": "LCA study",
-      "page": 8,
+      "page": 5,
       "level": 1
     },
     {
       "number": "4",
       "title": "Potential environmental impacts per reference unit",
-      "page": 11,
+      "page": 8,
       "level": 1
     },
     {
       "number": "5",
       "title": "Demonstration of verification",
       "page": 18,
+      "level": 1
+    },
+    {
+      "number": "10",
+      "title": "Details of underlying scenarios",
+      "page": 16,
+      "level": 1
+    },
+    {
+      "number": "15",
+      "title": "Bibliography and additional information",
+      "page": 20,
       "level": 1
     }
   ],
@@ -50,14 +62,16 @@
     { "number": "1.5", "title": "Composition and content", "page": 3, "level": 2 },
     { "number": "1.6", "title": "Reference service life", "page": 3, "level": 2 },
     { "number": "2", "title": "Technical data / physical characteristics", "page": 4, "level": 1 },
-    { "number": "3", "title": "LCA study", "page": 8, "level": 1 },
+    { "number": "3", "title": "LCA study", "page": 5, "level": 1 },
     { "number": "4", "title": "Potential environmental impacts per reference unit", "page": 11, "level": 1 },
-    { "number": "5", "title": "Demonstration of verification", "page": 18, "level": 1 }
+    { "number": "5", "title": "Demonstration of verification", "page": 18, "level": 1 },
+    { "number": "10", "title": "Details of underlying scenarios", "page": 16, "level": 1 },
+    { "number": "15", "title": "Bibliography and additional information", "page": 20, "level": 1 }
   ],
   "_source": {
     "extracted_by": "reference_seed",
     "extracted_at": "2026-05-26T00:00:00.000Z",
-    "entry_count": 11,
+    "entry_count": 13,
     "tree_node_count": 11,
     "page_spec_source": "reference_seed"
   }

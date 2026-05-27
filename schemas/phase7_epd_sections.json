@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EPD narrative sections",
+  "description": "Additional environmental information, verification, application unit, reversibility (section numbers vary by EPD)",
+  "type": "object",
+  "properties": {
+    "blocks": {
+      "type": "array",
+      "description": "One block per section or subsection (11.1, 12, 13, 14, etc.)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": ["string", "null"],
+            "description": "Section number e.g. 11.1, 12"
+          },
+          "title": { "type": ["string", "null"] },
+          "content": {
+            "type": ["string", "null"],
+            "description": "Full section text, verbatim"
+          }
+        },
+        "required": ["number", "title", "content"]
+      }
+    }
+  },
+  "required": ["blocks"]
+}

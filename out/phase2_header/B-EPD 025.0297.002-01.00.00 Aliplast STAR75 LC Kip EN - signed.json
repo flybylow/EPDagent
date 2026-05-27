@@ -1,0 +1,51 @@
+{
+  "epd_number": "025.0297.002-01.00.00",
+  "program_operator": "Federal Public Service Health, Food Chain Safety and Environment",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": "Aliplast NV",
+    "address": null,
+    "country": "BE"
+  },
+  "product_name": "STAR 75 sash, turn-and-tilled, tilled window system",
+  "product_description": "Low Carbon",
+  "standards_conformity": null,
+  "verification_statement": "THIRD PARTY VERIFIED",
+  "conformity_basis": "in accordance with EN 15804+A2 and B-EPD PCR",
+  "declared_scope": "Coverage of 1 m2 of external wall with a window ( with a surface of < 2.3 m2) providing thermal and acoustic insulation, natural light transmission, water and air tightness and natural ventilation over a lifespan of 60 years.",
+  "declared_modules": [
+    "A123",
+    "A4",
+    "A5",
+    "B",
+    "C",
+    "D"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "m2"
+  },
+  "validity": {
+    "issued": "2025-07-04",
+    "valid_until": "2030-07-04"
+  },
+  "pcr_reference": null,
+  "verifier": {
+    "name": null,
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 025.0297.002-01.00.00 Aliplast STAR75 LC Kip EN - signed.pdf",
+    "pdf_sha256": "4f62158c52c59848d61364bd4f9d594d412bfce6e3ea39aef460c22472efbf41",
+    "api_pages": "1-4",
+    "api_pages_resolved": "1,2,3,4",
+    "api_pdf_bytes": 732562,
+    "api_pdf_sha256": "da8f4119c09c923b9de814c385c7de7a40b793df7a561e5aa63602e55cdd9573",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.0297.002-01.00.00 Aliplast STAR75 LC Kip EN - signed.p1-p2-p3-p4.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:00:07.769Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 10259,
+    "output_tokens": 540
+  }
+}

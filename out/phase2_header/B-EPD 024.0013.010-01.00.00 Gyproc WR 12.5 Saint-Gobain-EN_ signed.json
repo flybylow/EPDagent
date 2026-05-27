@@ -1,0 +1,54 @@
+{
+  "epd_number": "24.0013.010-01.00.00",
+  "program_operator": "Federal Public Service of Health, Food Chain Safety and Environment",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": "Saint-Gobain Construction Products nv/sa",
+    "address": null,
+    "country": "BE"
+  },
+  "product_name": "Gyproc® WR 12,5",
+  "product_description": "plasterboard type DFH2 (EN 520) produced at Kallo, Belgium",
+  "standards_conformity": null,
+  "verification_statement": "THIRD PARTY VERIFIED",
+  "conformity_basis": "in accordance with EN 15804+A2 and B-EPD PCR",
+  "declared_scope": "1m² of installed Gyproc® WR 12,5 plasterboard",
+  "declared_modules": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "B2",
+    "B4",
+    "C",
+    "D"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "m2"
+  },
+  "validity": {
+    "issued": "2024-10-25",
+    "valid_until": "2029-10-25"
+  },
+  "pcr_reference": "EN 15804+A2",
+  "verifier": {
+    "name": "Agnes Stehmann-Schuurmans and Bob Roijen (SGS INTRON B.V.)",
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 024.0013.010-01.00.00 Gyproc WR 12.5 Saint-Gobain-EN_ signed.pdf",
+    "pdf_sha256": "24c3cdfb55ab8612f6979a7a7270fa4279c40cf2c8d4a2539c4b8d129228dfa2",
+    "api_pages": "1-6,21",
+    "api_pages_resolved": "1,2,3,4,5,6,21",
+    "api_pdf_bytes": 584633,
+    "api_pdf_sha256": "30f717f4d0305a4f7e3e4c3afb39734d679f7da30b76549f277fc8a5eca7284e",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 024.0013.010-01.00.00 Gyproc WR 12.5 Saint-Gobain-EN_ signed.p1-p2-p3-p4-p5-p6-p21.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T19:48:32.476Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 15930,
+    "output_tokens": 563
+  }
+}

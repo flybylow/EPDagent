@@ -29,3 +29,7 @@ export function personIri(name: string | null | undefined): string | null {
   if (!name?.trim()) return null;
   return `${iriBase()}/person/${slugify(name)}`;
 }
+
+export function epdPartIri(stem: string, part: string): string {
+  return `${epdIri(stem)}/${part}`;
+}

@@ -1,14 +1,45 @@
 import type { PhaseStatus } from "@/lib/phases/registry";
 
-export function PhaseStatusBadge({ status }: { status: PhaseStatus }) {
+export function PhaseStatusBadge({
+  status,
+  compact = false,
+}: {
+  status: PhaseStatus;
+  compact?: boolean;
+}) {
   const label =
     status === "ready"
-      ? "Ready"
+      ? compact
+        ? "R"
+        : "Ready"
       : status === "visual_only"
-        ? "Visual"
+        ? compact
+          ? "V"
+          : "Visual"
         : status === "empty"
-          ? "Empty"
-          : "Pending";
+          ? compact
+            ? "E"
+            : "Empty"
+          : compact
+            ? "P"
+            : "Pending";
 
-  return <span className={`phase-status phase-status-${status}`}>{label}</span>;
+  return (
+    <span
+      className={`phase-status phase-status-${status}${compact ? " phase-status-compact" : ""}`}
+      title={
+        compact
+          ? status === "ready"
+            ? "Ready"
+            : status === "visual_only"
+              ? "Visual only"
+              : status === "empty"
+                ? "Empty"
+                : "Pending"
+          : undefined
+      }
+    >
+      {label}
+    </span>
+  );
 }

@@ -1,0 +1,85 @@
+{
+  "description": "Cement is a hydraulic binder, i.e. a finely ground inorganic material which, when mixed with water, forms a paste which sets and hardens by means of hydration reactions and processes and which, after hardening, retains its strength and stability even under water.\n\nCement is an intermediate product in the building sector and is mainly used as a binder for concrete, mortar or cement screed. CEM III/B 42,5 N-LH/SR is a blast-furnace cement whose main constituents are Portland clinker and granulated blast-furnace slag. CEM III/B 42,5 N-LH/SR is a low-heat, sulfate-resisting cement with a limited alkali content.\n\nThis EPD is a specific EPD of the CEM III/B 42,5 N-LH/SR bulk \"ECOPlanet\" cement produced at Holcim Belgium's cement blending plant and terminal located in Antwerp.",
+  "intended_use": "Cement is an intermediate product in the building sector and is mainly used as a binder for concrete, mortar or cement screed.",
+  "reference_flow": {
+    "value": 1000,
+    "unit": "kg",
+    "description": "The weight of the declared unit is 1000 kg (1 tonne or 1 T)."
+  },
+  "installation": "The installation of the product is not covered by the scope of the EPD as cement is an intermediate product.",
+  "reference_service_life_years": null,
+  "geographical_representativity": "CEM III/B 42,5 N-LH/SR bulk \"ECOPlanet\" is mainly sold to customers in Belgium, but exportations to France, Luxembourg, Germany and the Netherlands are common. Modules A1 to A3 are representative of the cement sold to all these countries. Module A4 is specific to the Belgian market. The EPD is representative for the Belgian market.",
+  "production_process": "The cement-making process can be divided into two basic steps: \n- Clinker (the main constituent of cement) is made in a kiln where the flame temperature reaches 2000°C, which heats raw materials such as limestone (calcium carbonate) with other silica, alumina and iron bearing materials (e.g. clay) up to 1450°C. During the first stage of this process, known as calcination, the calcium carbonate (limestone) is transformed into calcium oxide (free lime). During the second stage, known as clinkerisation, the calcium oxide reacts with the other constituents from the raw material mix to form new minerals, collectively called (Portland) clinker. This near-molten material is rapidly cooled to a temperature of 100 - 200°C. \n- In a second step, clinker is ground together with gypsum and other materials such as limestone, blast furnace slag, siliceous fly ash, natural or calcined pozzolana (known as \"MIC\" Mineral Components or \"SCM\" Supplementary Cementitious Materials) to produce the fine (grey) powder known as cement. Other constituents are calcium sulfate (gypsum and/or anhydrite) to control setting, additives such as grindings aids and chromate reducing agents (the total quantity of which shall not exceed 1.0 % by mass of the cement) and minor additional constituents added to improve the physical properties of the cement, such as workability or water retention.\n\nSpecific for the production facility in Antwerp, there is a third production step. The final cement is produced by blending (dry mixing) of different mineral powders: Portland cement CEM I 52,5 R from Obourg (as a source of the clinker, according to the 2 production steps described above), ground granulated blast furnace slag and a small quantity of additional set regulator (anhydrite, as a complement to the set regulator already present in the CEM I) and minor additional constituents.",
+  "technical_properties": [
+    {
+      "property": "Standard consistence",
+      "standard": "EN 196-3",
+      "value": "30",
+      "unit": "%",
+      "comment": null
+    },
+    {
+      "property": "Initial setting time",
+      "standard": "EN 196-3",
+      "value": "04:30",
+      "unit": "hh:mm",
+      "comment": null
+    },
+    {
+      "property": "Final setting time",
+      "standard": "EN 196-3",
+      "value": "05:30",
+      "unit": "hh:mm",
+      "comment": null
+    },
+    {
+      "property": "Soundness",
+      "standard": "EN 196-3",
+      "value": "< 1",
+      "unit": "mm",
+      "comment": null
+    },
+    {
+      "property": "Compressive strength: 2 days",
+      "standard": "EN 196-1",
+      "value": "14",
+      "unit": "N/mm2",
+      "comment": null
+    },
+    {
+      "property": "Compressive strength: 28 days",
+      "standard": "EN 196-1",
+      "value": "57",
+      "unit": "N/mm2",
+      "comment": null
+    },
+    {
+      "property": "Fineness (Blaine)",
+      "standard": "EN 196-6",
+      "value": "4460",
+      "unit": "cm2/g",
+      "comment": null
+    },
+    {
+      "property": "Density",
+      "standard": "EN 196-6",
+      "value": "2950",
+      "unit": "kg/m3",
+      "comment": null
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 023.0221.003-01.00.00 CEM IIIB 42,5 N-LHSR bulk “ECOPlanet” EN_ signed.pdf",
+    "pdf_sha256": "55bf1c8885461ad261acc495b542a6dd2e3a94f3795d822ed050355f1e8487de",
+    "api_pages": "5-9",
+    "api_pages_resolved": "5,6,7,8,9",
+    "api_pdf_bytes": 214017,
+    "api_pdf_sha256": "0c4ce7ddb8e007f96f9fa548c5522874b3d7e1469174c1e6f3f82823ff7b53cf",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 023.0221.003-01.00.00 CEM IIIB 42,5 N-LHSR bulk “ECOPlanet” EN_ signed.p5-p6-p7-p8-p9.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T20:08:44.774Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 11221,
+    "output_tokens": 1455
+  }
+}

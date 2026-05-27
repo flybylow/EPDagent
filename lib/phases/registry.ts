@@ -6,7 +6,21 @@ import { loadTableManifest, tableRegistryForStem } from "../tables/manifest";
 import type { TableExportManifest } from "../tables/types";
 import type { PhaseDocmapResult } from "../extract/docmap";
 import type { DraftDocument } from "../templates/types";
-import type { Phase1Data, Phase2Data, Phase3CompositionData, Phase3ProductData } from "../types";
+import { buildTocTree, countTreeNodes, repairFlatTocEntries } from "../extract/docmap-parse";
+import { buildSectionNav, type SectionNavTree } from "../navigation/sections";
+import { loadSectionViewTemplate } from "../templates/section-view-load";
+import type { SectionViewTemplate } from "../templates/section-view-types";
+import type {
+  Phase1Data,
+  Phase2Data,
+  Phase3CompositionData,
+  Phase3LcaStudyData,
+  Phase3ProductData,
+  Phase4LcaProbeData,
+  Phase5ScenariosData,
+  Phase6RefsData,
+  Phase7EpdSectionsData,
+} from "../types";
 
 function readJson<T>(filePath: string): T | null {
   if (!fs.existsSync(filePath)) return null;
@@ -32,6 +46,29 @@ function loadPhase3(stem: string): Phase3ProductData | null {
 function loadPhase3Composition(stem: string): Phase3CompositionData | null {
   return readJson<Phase3CompositionData>(path.join(OUT_DIR, "phase3_composition", `${stem}.json`));
 }
+
+function loadPhase3LcaStudy(stem: string): Phase3LcaStudyData | null {
+  return readJson<Phase3LcaStudyData>(path.join(OUT_DIR, "phase3_lca_study", `${stem}.json`));
+}
+
+function loadPhase5(stem: string): Phase5ScenariosData | null {
+  return readJson<Phase5ScenariosData>(path.join(OUT_DIR, "phase5_scenarios", `${stem}.json`));
+}
+
+function loadPhase6(stem: string): Phase6RefsData | null {
+  return readJson<Phase6RefsData>(path.join(OUT_DIR, "phase6_refs", `${stem}.json`));
+}
+
+function loadPhase7(stem: string): Phase7EpdSectionsData | null {
+  return readJson<Phase7EpdSectionsData>(path.join(OUT_DIR, "phase7_epd_sections", `${stem}.json`));
+}
+
+import {
+  enrichPhase2Data,
+  phase2HasCoverContent,
+} from "../extract/phase2-enrich";
+import { loadPhase4Probes, hasAnyPhase4Probe } from "../extract/phase4-probes";
+import { buildDraft, loadTemplate } from "../templates";
 
 function loadDocmap(stem: string): PhaseDocmapResult | null {
   return readJson<PhaseDocmapResult>(path.join(OUT_DIR, "phase_docmap", `${stem}.json`));
@@ -71,6 +108,14 @@ export interface EpdPhaseRegistry {
   phase2: Phase2Data | null;
   phase3: Phase3ProductData | null;
   phase3Composition: Phase3CompositionData | null;
+  phase3LcaStudy: Phase3LcaStudyData | null;
+  phase5: Phase5ScenariosData | null;
+  phase6: Phase6RefsData | null;
+  phase7: Phase7EpdSectionsData | null;
+  phase4Probe: Phase4LcaProbeData | null;
+  phase4Probes: Record<string, Phase4LcaProbeData>;
+  sectionNav: SectionNavTree;
+  sectionViewTemplate: SectionViewTemplate;
 }
 
 interface PhasesRegistryFile {
@@ -93,20 +138,41 @@ function loadDocmapSeed(stem: string): PhaseDocmapResult | null {
   return JSON.parse(fs.readFileSync(seedPath, "utf-8")) as PhaseDocmapResult;
 }
 
+function normalizeDocmapTree(docmap: PhaseDocmapResult): PhaseDocmapResult {
+  if (!docmap.flat_entries.length) return docmap;
+  const flat_entries = repairFlatTocEntries(docmap.flat_entries);
+  const entries = buildTocTree(flat_entries);
+  return {
+    ...docmap,
+    flat_entries,
+    entries,
+    _source: {
+      ...docmap._source,
+      entry_count: flat_entries.length,
+      tree_node_count: countTreeNodes(entries),
+    },
+  };
+}
+
 export function loadDocmapForStem(stem: string): PhaseDocmapResult | null {
   const extracted = loadDocmap(stem);
-  if (extracted?.flat_entries.length) return extracted;
   const seed = loadDocmapSeed(stem);
+
+  if (extracted?.flat_entries.length) {
+    return normalizeDocmapTree(extracted);
+  }
+
   if (seed?.flat_entries.length) {
-    return {
+    return normalizeDocmapTree({
       ...seed,
       _source: {
         ...seed._source,
         page_spec_source: seed._source.page_spec_source ?? "reference_seed",
       },
-    } as PhaseDocmapResult;
+    } as PhaseDocmapResult);
   }
-  return extracted ?? seed;
+
+  return null;
 }
 
 function phaseOutputExists(outputDir: string | undefined, stem: string): boolean {
@@ -162,6 +228,13 @@ function resolvePhaseStatus(
         tables: exported,
       };
     }
+    if (def.id === "phase4_lca" && hasAnyPhase4Probe(stem)) {
+      return {
+        status: "ready",
+        entryCount: exported.length || null,
+        tables: exported,
+      };
+    }
     if (exported.length > 0) {
       return { status: "visual_only", entryCount: exported.length, tables: exported };
     }
@@ -187,17 +260,14 @@ function apiUrlForPhase(def: RegistryPhaseDef, stem: string): string | null {
   return `/api/${def.apiPath}/${encoded}`;
 }
 
-export function resolveEpdPhases(stem: string): EpdPhaseRegistry {
+/** Pipeline phase statuses for corpus dashboard (no section-nav build). */
+export function resolveCorpusPhases(stem: string): ResolvedPhase[] {
   const defs = loadPhaseRegistryDefs();
   const docmap = loadDocmapForStem(stem);
   const draft = loadDraft(stem);
-  const phase1 = loadPhase1(stem);
-  const phase2 = loadPhase2(stem);
-  const phase3 = loadPhase3(stem);
-  const phase3Composition = loadPhase3Composition(stem);
   const tableManifest = loadTableManifest(stem);
 
-  const phases: ResolvedPhase[] = defs.map((def) => {
+  return defs.map((def) => {
     const { status, entryCount, tables } = resolvePhaseStatus(
       def,
       stem,
@@ -216,6 +286,83 @@ export function resolveEpdPhases(stem: string): EpdPhaseRegistry {
       tables,
     };
   });
+}
 
-  return { stem, phases, docmap, draft, phase1, phase2, phase3, phase3Composition };
+export function resolveEpdPhases(
+  stem: string,
+  options: { pdfAvailable?: boolean } = {}
+): EpdPhaseRegistry {
+  const docmap = loadDocmapForStem(stem);
+  const phase1 = loadPhase1(stem);
+  const phase2Raw = loadPhase2(stem);
+  const phase7 = loadPhase7(stem);
+  const phase2 = enrichPhase2Data(phase2Raw, phase7);
+  const draftOnDisk = loadDraft(stem);
+  const draft =
+    draftOnDisk ??
+    (phase2
+      ? buildDraft(stem, { phase1, phase2 }, loadTemplate())
+      : null);
+  const phase3 = loadPhase3(stem);
+  const phase3Composition = loadPhase3Composition(stem);
+  const phase3LcaStudy = loadPhase3LcaStudy(stem);
+  const phase5 = loadPhase5(stem);
+  const phase6 = loadPhase6(stem);
+  const phase4Probes = loadPhase4Probes(stem);
+  const phase4Probe = phase4Probes.lca_impacts ?? Object.values(phase4Probes)[0] ?? null;
+  const tableManifest = loadTableManifest(stem);
+  const tables = tableRegistryForStem(stem);
+  const phases = resolveCorpusPhases(stem);
+
+  const exportedTableIds = tableManifest?.tables.map((t) => t.id) ?? [];
+  const pdfAvailable = options.pdfAvailable ?? true;
+  const contentContext = {
+    stem,
+    draft,
+    phase1,
+    phase2,
+    phase3,
+    phase3Composition,
+    phase3LcaStudy,
+    phase4Probe,
+    phase4Probes,
+    phase5,
+    phase6,
+    phase7,
+    phases,
+    exportedTableIds,
+  };
+
+  const sectionViewTemplate = loadSectionViewTemplate(stem);
+
+  const sectionNav = buildSectionNav({
+    docmapEntries: docmap?.entries ?? [],
+    flatEntries: docmap?.flat_entries ?? [],
+    phases,
+    tables,
+    exportedTableIds,
+    hasDraft: !!draft || phase2HasCoverContent(phase2) || pdfAvailable,
+    content: contentContext,
+    pdfAvailable,
+    sectionViewTemplate,
+  });
+
+  return {
+    stem,
+    phases,
+    docmap,
+    draft,
+    phase1,
+    phase2,
+    phase3,
+    phase3Composition,
+    phase3LcaStudy,
+    phase5,
+    phase6,
+    phase7,
+    phase4Probe,
+    phase4Probes,
+    sectionNav,
+    sectionViewTemplate,
+  };
 }

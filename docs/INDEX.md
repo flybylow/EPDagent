@@ -23,8 +23,11 @@ Quick start and run commands: [README](../README.md).
 | Doc | Summary |
 |-----|---------|
 | [api-budget-policy.md](api-budget-policy.md) | **Read before any Claude API call** — limits, cache rules, canonical test plan |
+| [COVER-extract.md](COVER-extract.md) | Phase 2: physical page 1 cover → `phase2_header` + draft UI |
 | [phase-tables-verify.md](phase-tables-verify.md) | Table page exports + visual verify (composition, LCA §6) |
 | [local-dev.md](local-dev.md) | localhost setup, demo, scripts, API routes |
+| [facts-api.md](facts-api.md) | Cross-domain Product Facts API + CORS for Tabulas / Pentapylas |
 | [reference-epd-corpus.md](reference-epd-corpus.md) | `data/EPD/` PDFs, canonical ETEX natura ea comparison file |
+| [GAPS.md](GAPS.md) | Section gap snapshots (`out/gap_reports/`) and manual locks (`data/gap-locks/`) |
 
 _No per-phase extraction notes yet (`phaseN-*.md`)._

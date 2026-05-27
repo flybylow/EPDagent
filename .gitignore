@@ -4,8 +4,16 @@ node_modules/
 # Next.js
 .next/
 
-# Extraction outputs (regenerate locally)
-out/
+# Extraction outputs (regenerate locally; publish slices for Vercel Facts API)
+out/*
+!out/phase2_header/
+!out/phase3_product/
+!out/phase3_composition/
+!out/phase3_lca_study/
+!out/phase4_lca_probe/
+
+# TypeScript build info
+tsconfig.tsbuildinfo
 
 # Environment
 .env

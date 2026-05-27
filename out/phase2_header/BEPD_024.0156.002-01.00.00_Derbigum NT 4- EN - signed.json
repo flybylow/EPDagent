@@ -1,0 +1,54 @@
+{
+  "epd_number": "24.0156.02-01.00.00",
+  "program_operator": "Federal Public Service of Health, Food Chain Safety and Environment",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": "DERBIGUM",
+    "address": null,
+    "country": "BE"
+  },
+  "product_name": "DERBIGUM NT 4",
+  "product_description": "bituminous waterproofing membrane",
+  "standards_conformity": null,
+  "verification_statement": "THIRD PARTY VERIFIED",
+  "conformity_basis": "in accordance with EN 15804+A2 and BE-PCR version 18.10.2022",
+  "declared_scope": "Ensure the waterproofing of 1m² of roof with bituminous membrane with activities needed for a study period of 60 years for building",
+  "declared_modules": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "B2",
+    "B4",
+    "C",
+    "D"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "m2"
+  },
+  "validity": {
+    "issued": "2024-05-04",
+    "valid_until": "2024-05-04"
+  },
+  "pcr_reference": "BE-PCR version 18.10.2022",
+  "verifier": {
+    "name": "Naeem Adibi (WeLOOP S.A.R.L)",
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "BEPD_024.0156.002-01.00.00_Derbigum NT 4- EN - signed.pdf",
+    "pdf_sha256": "8bd47b60762ce8be6b470c27271b0c2bd92247df0f127707856b0048245c72c0",
+    "api_pages": "1-8,27",
+    "api_pages_resolved": "1,2,3,4,5,6,7,8,27",
+    "api_pdf_bytes": 1008449,
+    "api_pdf_sha256": "78ac3e3bfcec8844933e872544cd2520ece2f1485fd492639d227ce0f0d03b8a",
+    "api_pdf_slice": "out/pdf_slices/BEPD_024.0156.002-01.00.00_Derbigum NT 4- EN - signed.p1-p2-p3-p4-p5-p6-p7-p8-p27.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T19:47:07.548Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 19381,
+    "output_tokens": 558
+  }
+}

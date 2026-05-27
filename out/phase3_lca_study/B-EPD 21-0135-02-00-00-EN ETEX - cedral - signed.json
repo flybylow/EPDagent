@@ -1,0 +1,106 @@
+{
+  "section_title": "LCA STUDY",
+  "standards_and_methodology": null,
+  "pcr_reference": null,
+  "lca_software_and_database": "For the calculation of the LCA results, the software program SimaPro 9.1.1.1 (PRé Consultants, 2021) has been used in combination with a specific LCA software program for ETEX. The main LCI source used in this study is the Ecoinvent 3.6 database (Wernet et al., 2019).",
+  "goal_and_scope": null,
+  "functional_unit": null,
+  "system_boundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 7\nDeclared modules (☒): A1, A2, A3, A4, A5, B1, B2, B3, B4, B5, B6, B7, C1, C2, C3, C4, D\nNot declared (☐): —\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4, A5\nUse stage: B1, B2, B3, B4, B5, B6, B7\nEnd of life stage: C1, C2, C3, C4\nBeyond the system boundaries: D\n\nModule labels (vertical text):\nA1: materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: installation\nB1: Use\nB2: Maintenance\nB3: Repair\nB4: Replacement\nB5: Refurbishment\nB6: use\nB7: use\nC1: construction\nC2: Transport\nC3: processing\nC4: Disposal\nD: Recovery",
+  "production_sites": "The production site is located at Kuiermansstraat 1, 1880 Kapelle-op-den-Bos, Belgium.",
+  "cut_off_criteria": "Following processes were considered below the cut-off:\n• Transport of packaging of raw materials\n• The metal templates in which the boards are produced need to be greased periodically. The template oil is considered below cut-off\n• Packaging and transport of ancillary materials used during installation\n• Waste treatment of ancillary materials used during installation\n• Wearable sieves and cutting knives",
+  "allocation": "At Etex, different types of cement fiber products are produced. However CEDRAL products are produced only on certain production lines, with no co-products being produced as part of the process. Only facility level data were available for electricity use, the use of natural gas, etc. The facility level data have been allocated to the analyzed product using their respective annual production volume (physical relationship), therefore volume allocation is applied. Material inputs and outputs which were not available at the product level, such as waste, were allocated similarly, by mass allocation.",
+  "data_quality": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site. Manufacturer specific data have been collected for the year 2016. Company specific data for the product stage have been collected by Eternit and were provided to VITO through an excel file. The LCI data has been checked by the EPD verifier (Evert Vermaut, Vinçotte). VITO uses publicly available generic data for all background processes such as the production of electricity, transportation by means of a specific truck, etc. Primary data is used for modules A1, A2, A3, and A5. The rest of the study is based on scenarios (module A4, modules B1-B7, modules C1-C4, and module D).",
+  "time_representativeness": "Manufacturer specific data have been collected for the year 2016.",
+  "geographical_representativeness": "The Belgian electricity mix (consumption mix + import) has been used to model electricity use in life cycle stages A3, A5, C1, C3, C4 and D. The used record is the ecoinvent record 'Electricity, low voltage {BE}| market for | Cut-off, U' (Wernet et al., 2016).",
+  "technology_representativeness": null,
+  "impact_assessment": "The characterization factors from EC-JRC were applied. No additional or deviating characterization factors were used.",
+  "interpretation": null,
+  "additional_paragraphs": [
+    "Following processes were excluded for the inventory:\n• Infrastructure and land use of the factory\n•\n• Environmental impacts caused by the personnel of the production plants are not included in the LCA, e.g. waste from the cafeteria and sanitary installations, accidental pollution caused by human mistakes, or environmental effects caused by commuter traffic",
+    "The fibre cement panels contain cellulose, which is a biobased material. Uptake of biogenic CO2 within cellulose is reported in module A1, release of biogenic CO2 related to this flow is reported in C4. The fibre cement panels are transported using wooden pallets and a carton coverage. Uptake of biogenic CO2 within these pallets and carton is reported in module A3, release in module A5.\n\nBiogenic carbon content in product (at the gate) 4,71E-01\nBiogenic carbon content in accompanying packaging (at the gate) 3,03E-01",
+    "Carbon offsetting is not allowed in the EN 15804 and hence not taken into account in the calculations."
+  ],
+  "subsections": [
+    {
+      "number": "5.1",
+      "title": "DATE OF LCA STUDY",
+      "content": "September 2021"
+    },
+    {
+      "number": "5.2",
+      "title": "SOFTWARE",
+      "content": "For the calculation of the LCA results, the software program SimaPro 9.1.1.1 (PRé Consultants, 2021) has been used in combination with a specific LCA software program for ETEX."
+    },
+    {
+      "number": "5.3",
+      "title": "INFORMATION ON ALLOCATION",
+      "content": "At Etex, different types of cement fiber products are produced. However CEDRAL products are produced only on certain production lines, with no co-products being produced as part of the process. Only facility level data were available for electricity use, the use of natural gas, etc. The facility level data have been allocated to the analyzed product using their respective annual production volume (physical relationship), therefore volume allocation is applied. Material inputs and outputs which were not available at the product level, such as waste, were allocated similarly, by mass allocation."
+    },
+    {
+      "number": "5.4",
+      "title": "INFORMATION ON CUT OFF",
+      "content": "Following processes were considered below the cut-off:\n• Transport of packaging of raw materials\n• The metal templates in which the boards are produced need to be greased periodically. The template oil is considered below cut-off\n• Packaging and transport of ancillary materials used during installation\n• Waste treatment of ancillary materials used during installation\n• Wearable sieves and cutting knives"
+    },
+    {
+      "number": "5.5",
+      "title": "INFORMATION ON EXCLUDED PROCESSES",
+      "content": "Following processes were excluded for the inventory:\n• Infrastructure and land use of the factory\n•\n• Environmental impacts caused by the personnel of the production plants are not included in the LCA, e.g. waste from the cafeteria and sanitary installations, accidental pollution caused by human mistakes, or environmental effects caused by commuter traffic"
+    },
+    {
+      "number": "5.6",
+      "title": "INFORMATION ON BIOGENIC CARBON MODELLING",
+      "content": "The fibre cement panels contain cellulose, which is a biobased material. Uptake of biogenic CO2 within cellulose is reported in module A1, release of biogenic CO2 related to this flow is reported in C4. The fibre cement panels are transported using wooden pallets and a carton coverage. Uptake of biogenic CO2 within these pallets and carton is reported in module A3, release in module A5.\n\nBiogenic carbon content (kg C / FU)\nBiogenic carbon content in product (at the gate) 4,71E-01\nBiogenic carbon content in accompanying packaging (at the gate) 3,03E-01"
+    },
+    {
+      "number": "5.7",
+      "title": "INFORMATION ON CARBON OFFSETTING",
+      "content": "Carbon offsetting is not allowed in the EN 15804 and hence not taken into account in the calculations."
+    },
+    {
+      "number": "5.8",
+      "title": "ADDITIONAL OR DEVIATING CHARACTERISATION FACTORS",
+      "content": "The characterization factors from EC-JRC were applied. No additional or deviating characterization factors were used."
+    },
+    {
+      "number": "5.9",
+      "title": "SPECIFICITY",
+      "content": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site."
+    },
+    {
+      "number": "5.10",
+      "title": "PERIOD OF DATA COLLECTION",
+      "content": "Manufacturer specific data have been collected for the year 2016."
+    },
+    {
+      "number": "5.11",
+      "title": "INFORMATION ON DATA COLLECTION",
+      "content": "Company specific data for the product stage have been collected by Eternit and were provided to VITO through an excel file. The LCI data has been checked by the EPD verifier (Evert Vermaut, Vinçotte). VITO uses publicly available generic data for all background processes such as the production of electricity, transportation by means of a specific truck, etc. Primary data is used for modules A1, A2, A3, and A5. The rest of the study is based on scenarios (module A4, modules B1-B7, modules C1-C4, and module D)."
+    },
+    {
+      "number": "5.12",
+      "title": "DATABASE USED FOR BACKGROUND DATA",
+      "content": "The main LCI source used in this study is the Ecoinvent 3.6 database (Wernet et al., 2019)."
+    },
+    {
+      "number": "5.13",
+      "title": "ENERGY MIX",
+      "content": "The Belgian electricity mix (consumption mix + import) has been used to model electricity use in life cycle stages A3, A5, C1, C3, C4 and D. The used record is the ecoinvent record 'Electricity, low voltage {BE}| market for | Cut-off, U' (Wernet et al., 2016)."
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 21-0135-02-00-00-EN ETEX - cedral - signed.pdf",
+    "pdf_sha256": "64d786fb4145521fbc02d5e3008e2efd5520be5c54a7e7cc6be48c3ece292bfb",
+    "api_pages": "5-7",
+    "api_pages_resolved": "5,6,7",
+    "api_pdf_bytes": 136673,
+    "api_pdf_sha256": "0509b411c517e01a8f3a388e3f03b0bf99bda96e3d04df7bc740dcbd6cd2ec6c",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 21-0135-02-00-00-EN ETEX - cedral - signed.p5-p6-p7.pdf",
+    "extracted_by": "claude-api+pdf-system-boundaries-parser+pdf-system-boundaries-parser",
+    "extracted_at": "2026-05-26T20:25:39.350Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 8037,
+    "output_tokens": 2603,
+    "system_boundaries_pages": "7",
+    "system_boundaries_refreshed_at": "2026-05-26T20:39:01.525Z"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "components": [
+    {
+      "section": "Product",
+      "component": "Glass wool",
+      "composition": null,
+      "quantity": "≥ 94%"
+    },
+    {
+      "section": "Product",
+      "component": "Product",
+      "composition": "Binder",
+      "quantity": "≤ 6 %"
+    },
+    {
+      "section": "Product",
+      "component": "Facing",
+      "composition": null,
+      "quantity": "No facing"
+    },
+    {
+      "section": "Product",
+      "component": "LDPE and HDPE",
+      "composition": null,
+      "quantity": "0.025 kg/m²"
+    },
+    {
+      "section": "Packaging",
+      "component": "Wooden pallet",
+      "composition": null,
+      "quantity": "0.231 kg/m²"
+    }
+  ],
+  "declarations": [
+    "The product does not contain materials listed in the “Candidate list of Substances of Very High Concern for authorization”."
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD-LAMBDA 35 NAKED-Ursa-026.0184.001-EN-signed.pdf",
+    "pdf_sha256": "c16c8bd610fffb8e96be0ebdda7b3c76c3c056541930ff6383d5cfc89fe9ee68",
+    "api_pages": "4",
+    "api_pages_resolved": "4",
+    "extracted_by": "pdf-composition-table-parser",
+    "extracted_at": "2026-05-26T20:43:48.562Z",
+    "model": null,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

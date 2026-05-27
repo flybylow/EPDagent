@@ -33,11 +33,28 @@ Copy `.env.example` → `.env`.
 - `EPDAGENT_IRI_BASE` — defaults to `http://localhost:3000/id` for JSON-LD `@id` values
 - `EPDAGENT_MAX_PDF_BYTES` / `EPDAGENT_ALLOW_BULK_API` — see [api-budget-policy.md](api-budget-policy.md)
 
-## API (JSON-LD)
+## API
 
-All graph routes return `Content-Type: application/ld+json`.
+### Product Facts (cross-domain prototype)
 
-- `GET /api/epds` — corpus index
+See [facts-api.md](facts-api.md). Quick check:
+
+```bash
+npm run test:facts
+npm run dev   # other terminal
+npm run test:facts-api
+```
+
+- `GET /api/products?tag=insulation` — discover products
+- `GET /api/facts/[stem]?parts=thermal,lca` — slices for calculators
+
+Set `EPDAGENT_CORS_ORIGINS` for Tabulas dev (default includes `localhost:3001`).
+
+### JSON-LD graph
+
+Graph routes return `Content-Type: application/ld+json`.
+
+- `GET /api/epds` — corpus index (`?tag=insulation` supported)
 - `GET /api/graph/corpus` — merged `@graph`
 - `GET /api/graph/[stem]` — single EPD document
 - `GET /api/context` — shared `@context`

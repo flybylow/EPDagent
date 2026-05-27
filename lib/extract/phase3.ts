@@ -1,4 +1,5 @@
 import Anthropic from "@anthropic-ai/sdk";
+import { createMessageWithRetry } from "../anthropic/create-message";
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { assertApiPayloadWithinBudget, assertPdfWithinBudget, pdfSha256 } from "../anthropic/guard";
@@ -47,7 +48,7 @@ export async function runPhase3(
 
   const fullSha256 = pdfSha256(pdfPath);
   const client = new Anthropic({ apiKey });
-  const response = await client.messages.create({
+  const response = await createMessageWithRetry(client, {
     model: MODEL,
     max_tokens: 4096,
     system: SYSTEM_PROMPT,
@@ -79,7 +80,7 @@ export async function runPhase3(
         ],
       },
     ],
-  });
+  }, { label: "phase3" });
 
   const toolUse = response.content.find(
     (block) => block.type === "tool_use" && block.name === "record_epd_product"

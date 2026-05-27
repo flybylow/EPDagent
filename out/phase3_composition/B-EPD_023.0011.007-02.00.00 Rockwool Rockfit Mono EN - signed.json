@@ -1,0 +1,51 @@
+{
+  "components": [
+    {
+      "section": "Product",
+      "component": "Stonewool",
+      "composition": "Stonewool",
+      "quantity": "96.8%"
+    },
+    {
+      "section": "Product",
+      "component": "Resin",
+      "composition": "Resin",
+      "quantity": "3.2%"
+    },
+    {
+      "section": "Product",
+      "component": "Facing",
+      "composition": "Facing",
+      "quantity": "No facing"
+    },
+    {
+      "section": "Packaging",
+      "component": "Pallets",
+      "composition": "Pallets",
+      "quantity": "0.002 kg"
+    },
+    {
+      "section": "Packaging",
+      "component": "Foil",
+      "composition": "Foil",
+      "quantity": "0.005 kg"
+    }
+  ],
+  "declarations": [
+    "The product does not contain materials listed in the \"Candidate list of Substances of Very High Concern for authorization\"."
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed.pdf",
+    "pdf_sha256": "1dcb3791d8f8ef2b1f3401323db334c05be0e3b8fae30c73fea242cad12aabdb",
+    "api_pages": "6",
+    "api_pages_resolved": "6",
+    "api_pdf_bytes": 26548,
+    "api_pdf_sha256": "9dd73d9de65074c877b6f07ccacbda073a5915f0079c6f6793f9d869cf66b26b",
+    "api_pdf_slice": "out/pdf_slices/B-EPD_023.0011.007-02.00.00 Rockwool Rockfit Mono EN - signed.p6.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T15:57:53.863Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 3273,
+    "output_tokens": 305
+  }
+}

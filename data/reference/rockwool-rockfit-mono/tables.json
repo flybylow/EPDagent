@@ -6,13 +6,15 @@
       "title": "Composition and content",
       "phase": "phase3_composition",
       "page": 6,
+      "section": "1.5",
       "notes": "Components / composition / ingredients / quantity; diagonal headers"
     },
     {
       "id": "technical_data",
       "title": "Technical data / physical characteristics",
       "phase": "phase3_product",
-      "page": 8
+      "page": 8,
+      "section": "2"
     },
     {
       "id": "lca_impacts",
@@ -20,6 +22,29 @@
       "phase": "phase4_lca",
       "page": 13,
       "section": "6"
+    },
+    {
+      "id": "lca_resource",
+      "title": "Use of natural resources per reference unit",
+      "phase": "phase4_lca",
+      "page": 14,
+      "section": "7"
+    },
+    {
+      "id": "lca_waste",
+      "title": "Waste categories per reference unit",
+      "phase": "phase4_lca",
+      "page": 15,
+      "section": "8"
+    },
+    {
+      "id": "lca_additional",
+      "title": "Additional environmental impact categories",
+      "phase": "phase4_lca",
+      "page": 16,
+      "probePages": "16-17",
+      "section": "9",
+      "notes": "Table on p16; section 9.1 explanatory text on p17"
     }
   ]
 }

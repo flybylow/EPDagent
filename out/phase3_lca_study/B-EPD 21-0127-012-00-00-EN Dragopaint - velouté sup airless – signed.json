@@ -1,0 +1,38 @@
+{
+  "section_title": "POTENTIAL ENVIRONMENTAL IMPACTS PER REFERENCE FLOW",
+  "standards_and_methodology": null,
+  "pcr_reference": null,
+  "lca_software_and_database": null,
+  "goal_and_scope": null,
+  "functional_unit": "The results are provided for coverage of 1m2 using Dragocryl Velouté sup airless.",
+  "system_boundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 7\nDeclared modules (☒): A1, A2, A3, A4, A5, B1, B2, B3, B4, B5, B6, B7, C1, C2, C3, C4, D\nNot declared (☐): —\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4, A5\nUse stage: B1, B2, B3, B4, B5, B6, B7\nEnd of life stage: C1, C2, C3, C4\nBeyond the system boundaries: D\n\nModule labels (vertical text):\nA1: materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: installation\nB1: Use\nB2: Maintenance\nB3: Repair\nB4: Replacement\nB5: Refurbishment\nB6: use\nB7: use\nC1: construction\nC2: Transport\nC3: processing\nC4: Disposal\nD: Recovery",
+  "production_sites": null,
+  "cut_off_criteria": null,
+  "allocation": null,
+  "data_quality": null,
+  "time_representativeness": null,
+  "geographical_representativeness": null,
+  "technology_representativeness": null,
+  "impact_assessment": null,
+  "interpretation": null,
+  "additional_paragraphs": [
+    "The results of the LCIA are calculated for Dragocryl Velouté sup airless."
+  ],
+  "subsections": null,
+  "_source": {
+    "pdf_filename": "B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.pdf",
+    "pdf_sha256": "652da07295d0a6313acb20af893985679cd92a7c3baa0635c289f60aaeb96b32",
+    "api_pages": "8",
+    "api_pages_resolved": "8",
+    "api_pdf_bytes": 45230,
+    "api_pdf_sha256": "2c24747e39c5be39a07567a7da398204796ef7a700ccee1a635a5463549a243a",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.p8.pdf",
+    "extracted_by": "claude-api+pdf-system-boundaries-parser",
+    "extracted_at": "2026-05-26T17:50:44.001Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 5117,
+    "output_tokens": 432,
+    "system_boundaries_pages": "7",
+    "system_boundaries_refreshed_at": "2026-05-26T20:39:01.513Z"
+  }
+}

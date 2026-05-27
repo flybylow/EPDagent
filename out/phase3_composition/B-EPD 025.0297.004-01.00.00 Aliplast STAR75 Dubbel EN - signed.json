@@ -1,0 +1,18 @@
+{
+  "components": [],
+  "declarations": null,
+  "_source": {
+    "pdf_filename": "B-EPD 025.0297.004-01.00.00 Aliplast STAR75 Dubbel EN - signed.pdf",
+    "pdf_sha256": "4c73c735316035f8359c687c4955f5ab7730fbd90cec179e9a085f6057722580",
+    "api_pages": "3",
+    "api_pages_resolved": "3",
+    "api_pdf_bytes": 111155,
+    "api_pdf_sha256": "67447a86dd65396a873c7d366b751723187e6df059e90f35448b57a06f2126b9",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.0297.004-01.00.00 Aliplast STAR75 Dubbel EN - signed.p3.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T17:22:10.928Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 2974,
+    "output_tokens": 50
+  }
+}

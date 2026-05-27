@@ -10,6 +10,7 @@ import {
   type FlatTocEntry,
   type TocNode,
 } from "./docmap-parse";
+import { extractDocmapFromHeadings } from "./docmap-heading-scan";
 import { resolveDocmapPageSpec } from "./docmap-pages";
 
 export interface PhaseDocmapResult {
@@ -43,12 +44,25 @@ export async function extractDocmap(pdfPath: string): Promise<PhaseDocmapResult>
   }
 
   const { tocTitle, entries: flat } = parseTocFromLines(allLines);
-  const tree = buildTocTree(flat);
+
+  if (flat.length === 0) {
+    const fromHeadings = await extractDocmapFromHeadings(pdfPath);
+    return {
+      ...fromHeadings,
+      source_pages: pages,
+      _source: {
+        ...fromHeadings._source,
+        page_spec_source: source,
+      },
+    };
+  }
+
+  const entries = buildTocTree(flat);
 
   return {
     toc_title: tocTitle,
     source_pages: pages,
-    entries: tree,
+    entries,
     flat_entries: flat,
     _source: {
       pdf_path: pdfPath,
@@ -57,7 +71,7 @@ export async function extractDocmap(pdfPath: string): Promise<PhaseDocmapResult>
       extracted_by: "pdf-text-toc-parser",
       extracted_at: new Date().toISOString(),
       entry_count: flat.length,
-      tree_node_count: countTreeNodes(tree),
+      tree_node_count: countTreeNodes(entries),
     },
   };
 }

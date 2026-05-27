@@ -1,5 +1,14 @@
 import { NextResponse } from "next/server";
-import { loadPhase1, loadPhase2, loadPhase3, loadPhase3Composition } from "@/lib/data";
+import {
+  loadPhase1,
+  loadPhase2,
+  loadPhase3,
+  loadPhase3Composition,
+  loadPhase3LcaStudy,
+  loadPhase5,
+  loadPhase6,
+  loadPhase7,
+} from "@/lib/data";
 
 export async function GET(
   request: Request,
@@ -36,8 +45,34 @@ export async function GET(
     return NextResponse.json(data);
   }
 
+  if (phase === "3-lca-study") {
+    const data = loadPhase3LcaStudy(stem);
+    if (!data) {
+      return NextResponse.json({ error: "Phase 3 LCA study not found" }, { status: 404 });
+    }
+    return NextResponse.json(data);
+  }
+
+  if (phase === "5") {
+    const data = loadPhase5(stem);
+    if (!data) return NextResponse.json({ error: "Phase 5 not found" }, { status: 404 });
+    return NextResponse.json(data);
+  }
+
+  if (phase === "6") {
+    const data = loadPhase6(stem);
+    if (!data) return NextResponse.json({ error: "Phase 6 not found" }, { status: 404 });
+    return NextResponse.json(data);
+  }
+
+  if (phase === "7") {
+    const data = loadPhase7(stem);
+    if (!data) return NextResponse.json({ error: "Phase 7 not found" }, { status: 404 });
+    return NextResponse.json(data);
+  }
+
   return NextResponse.json(
-    { error: "Use ?phase=1, ?phase=2, ?phase=3, or ?phase=3-composition" },
+    { error: "Use ?phase=1, 2, 3, 3-composition, 3-lca-study, 5, 6, or 7" },
     { status: 400 }
   );
 }

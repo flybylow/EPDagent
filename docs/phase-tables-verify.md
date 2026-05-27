@@ -34,7 +34,7 @@ Diagonal labels and module grids are why **page PNG export** precedes full parsi
 | `out/table_exports/<stem>/manifest.json` | Table ids, titles, source pages, PNG paths |
 | `out/table_exports/<stem>/<id>.page-N.png` | Visual source for Verify |
 | `out/phase3_composition/<stem>.json` | Structured composition (TBD) |
-| `out/phase4_lca/<stem>.json` | Structured LCA grid (TBD) |
+| `out/phase4_lca_probe/<stem>.p<N>.json` | Structured LCA grid (phase 4 probe, one file per page) |
 
 ## Verify UI
 
@@ -48,8 +48,17 @@ AI verification for tables should target the **table PNG + structured JSON**, no
 ## CLI
 
 ```bash
+# Page PNGs for side-by-side compare in the UI
 npm run export-tables -- "data/EPD/….pdf"
+
+# One LCA table page (rotated module headers → JSON)
+npm run phase4-probe -- "data/EPD/….pdf" --pages 13
+
+# All LCA tables listed in data/reference/<id>/tables.json
+npm run phase4-lca -- "data/EPD/….pdf"
 ```
+
+Registry: `data/reference/<id>/tables.json` — each `phase4_lca` row needs `id`, `page`, and `section`. Probes are saved as `out/phase4_lca_probe/<stem>.p<page>.json` (legacy `/<stem>.json` for a single impacts table).
 
 Uses `data/reference/*/tables.json` when present, else heuristics from page text search.
 

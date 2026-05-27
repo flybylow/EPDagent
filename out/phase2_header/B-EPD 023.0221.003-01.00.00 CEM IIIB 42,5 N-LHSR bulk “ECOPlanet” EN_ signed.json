@@ -1,0 +1,49 @@
+{
+  "epd_number": "23.0221.003-01.00.00",
+  "program_operator": "B-EPD",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": "Holcim Belgique SA",
+    "address": null,
+    "country": "BE"
+  },
+  "product_name": "CEM III/B 42,5 N-LH/SR bulk \"ECOPlanet\"",
+  "product_description": null,
+  "standards_conformity": null,
+  "verification_statement": "THIRD PARTY VERIFIED",
+  "conformity_basis": "in accordance with EN 15804+A2, B-EPD Construction PCR and EN 16908+A1",
+  "declared_scope": "1 tonne (1000 kg) of CEM III/B 42,5 N-LH/SR bulk \"ECOPlanet\". Cradle-to-gate with options.",
+  "declared_modules": [
+    "A1",
+    "A2",
+    "A3",
+    "D"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "t"
+  },
+  "validity": {
+    "issued": "2023-12-08",
+    "valid_until": "2028-12-08"
+  },
+  "pcr_reference": "EN 15804+A2 serves as the core PCR",
+  "verifier": {
+    "name": "Evert Vermaut",
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 023.0221.003-01.00.00 CEM IIIB 42,5 N-LHSR bulk “ECOPlanet” EN_ signed.pdf",
+    "pdf_sha256": "55bf1c8885461ad261acc495b542a6dd2e3a94f3795d822ed050355f1e8487de",
+    "api_pages": "1,23",
+    "api_pages_resolved": "1,23",
+    "api_pdf_bytes": 275567,
+    "api_pdf_sha256": "34ccfe1e286e7fdbe15c45252018fe4a38d732c22e5e0b3ef37b79fce02438fe",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 023.0221.003-01.00.00 CEM IIIB 42,5 N-LHSR bulk “ECOPlanet” EN_ signed.p1-p23.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T20:02:53.581Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 6265,
+    "output_tokens": 545
+  }
+}

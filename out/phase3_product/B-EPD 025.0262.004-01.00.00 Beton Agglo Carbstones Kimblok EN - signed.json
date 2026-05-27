@@ -1,0 +1,64 @@
+{
+  "description": "Carbstones are carbonated full bricks with dimensions .The applied carbonation technique, developed by Orbix, transforms metal slag from the steel industry into circular building products.\n\nCarbstones have the characteristic of absorbing CO2 through carbonation. This happens because the Carbstones have metal slag as ingredients, which is a calcium-rich material. The calcium reacts with water and CO2 to form calcium carbonate, a strong binder. Because of this, the Carbstone has a binding agent of CO2 instead of cement. The building material has the same characteristics as a concrete block. The difference is in capturing the CO2.\n\nThe Carbstones are attached to each other using a specific glue for Carbstones. This EPD reports the results for 1 m2.",
+  "intended_use": "The Carbstones can be used for constructive and non-constructive interior walls.",
+  "reference_flow": {
+    "value": 1,
+    "unit": "m2",
+    "description": "The results are declared for 1 m2 Carbstone Kimblok with dimensions 29/09/22. Packaging is included."
+  },
+  "installation": "Materials for fixation and installation are included. This EPD includes the impacts of all processes, fixating materials, jointing material or treatments necessary for installing/mounting the product according to following scenario(s): the Carbstones are glued together with the Masterbloc ECO lijmmortel 950 (packed) of Saint-Gobain Weber Benelux (see reference in Bibliography).",
+  "reference_service_life_years": 100,
+  "geographical_representativity": "The EPD is representative for the Belgian market. The Carbstones are produced at the manufacturing facility in Maasmechelen, Belgium.",
+  "production_process": "Betonagglomeraten Gubbels N.V. mixes the raw materials and presses this mixture into a block shape on a vibrating press. Next, this pressed mix goes to a climate chamber, here the liquid CO2 is injected into the process. It is measured how much CO2 enters the chamber and how much is absorbed by the stones through carbonation and calcium carbonate is created. After this, the stones are polished if necessary. Finally, they go to a stacking/packing machine, which sorts the Carbstones for storage and transport to customers.",
+  "technical_properties": [
+    {
+      "property": "Gross dry volume mass",
+      "standard": "EN1991-1-2 ANB (2012)",
+      "value": "1500",
+      "unit": "kg/m3",
+      "comment": null
+    },
+    {
+      "property": "Calculated value of thermal conductivity coefficient λUi",
+      "standard": "EN1991-1-2 ANB (2012)",
+      "value": "1,33",
+      "unit": "W/(m.k)",
+      "comment": null
+    },
+    {
+      "property": "Normalised compressive strength",
+      "standard": null,
+      "value": "10",
+      "unit": "n/mm2",
+      "comment": null
+    },
+    {
+      "property": "Reaction to fire",
+      "standard": "EN1991-1-2 ANB (2012)",
+      "value": "A1",
+      "unit": null,
+      "comment": null
+    },
+    {
+      "property": "Frost/thaw resistance",
+      "standard": "NBN B15-231",
+      "value": "Sufficient",
+      "unit": null,
+      "comment": null
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 025.0262.004-01.00.00 Beton Agglo Carbstones Kimblok EN - signed.pdf",
+    "pdf_sha256": "bf8437a84b87484607fc2b36353bf7d82115eed369c2d0cb746ff34dde2db5b1",
+    "api_pages": "3-6",
+    "api_pages_resolved": "3,4,5,6",
+    "api_pdf_bytes": 677417,
+    "api_pdf_sha256": "682a07aadacf26770734be189c5544aeaff2320b9afce0a8a9845e1317ca5c14",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.0262.004-01.00.00 Beton Agglo Carbstones Kimblok EN - signed.p3-p4-p5-p6.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:44:31.455Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 9078,
+    "output_tokens": 955
+  }
+}

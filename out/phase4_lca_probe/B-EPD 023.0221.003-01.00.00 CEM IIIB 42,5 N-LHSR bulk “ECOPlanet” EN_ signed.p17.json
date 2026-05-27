@@ -1,0 +1,609 @@
+{
+  "table_title": "WASTE CATEGORIES & OUTPUT FLOWS",
+  "table_type": "waste",
+  "introductory_text": null,
+  "column_groups": [
+    {
+      "label": "Production",
+      "column_codes": [
+        "A1-A3"
+      ]
+    },
+    {
+      "label": "Construction process stage",
+      "column_codes": [
+        "A4",
+        "A5"
+      ]
+    },
+    {
+      "label": "Use stage",
+      "column_codes": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7"
+      ]
+    },
+    {
+      "label": "End-of-life stage",
+      "column_codes": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "label": null,
+      "column_codes": [
+        "D"
+      ]
+    }
+  ],
+  "columns": [
+    {
+      "code": "A1-A3",
+      "label": "A1-A3 Product stage",
+      "group": "Production"
+    },
+    {
+      "code": "A4",
+      "label": "A4 Transport",
+      "group": "Construction process stage"
+    },
+    {
+      "code": "A5",
+      "label": "A5 Installation",
+      "group": "Construction process stage"
+    },
+    {
+      "code": "B1",
+      "label": "B1 Use",
+      "group": "Use stage"
+    },
+    {
+      "code": "B2",
+      "label": "B2 Maintenance",
+      "group": "Use stage"
+    },
+    {
+      "code": "B3",
+      "label": "B3 Repair",
+      "group": "Use stage"
+    },
+    {
+      "code": "B4",
+      "label": "B4 Replacement",
+      "group": "Use stage"
+    },
+    {
+      "code": "B5",
+      "label": "B5 Refurbishment",
+      "group": "Use stage"
+    },
+    {
+      "code": "B6",
+      "label": "B6 Operational energy use",
+      "group": "Use stage"
+    },
+    {
+      "code": "B7",
+      "label": "B7 Operational water use",
+      "group": "Use stage"
+    },
+    {
+      "code": "C1",
+      "label": "C1 Deconstruction / demolition",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "C2",
+      "label": "C2 Transport",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "C3",
+      "label": "C3 Waste processing",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "C4",
+      "label": "C4 Disposal",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "D",
+      "label": "D Reuse, recovery, recycling",
+      "group": null
+    }
+  ],
+  "rows": [
+    {
+      "indicator": "Hazardous waste disposed",
+      "unit": "kg/FU",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "4,83E-04"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    },
+    {
+      "indicator": "Non-hazardous waste disposed",
+      "unit": "kg/FU",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "2,78E+00"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    },
+    {
+      "indicator": "Radioactive waste disposed",
+      "unit": "kg/FU",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "2,49E-02"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    },
+    {
+      "indicator": "Components for re-use",
+      "unit": "kg/FU",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    },
+    {
+      "indicator": "Materials for recycling",
+      "unit": "kg/FU",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    },
+    {
+      "indicator": "Materials for energy recovery",
+      "unit": "kg/FU",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    },
+    {
+      "indicator": "Exported energy",
+      "unit": "MJ/FU",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    }
+  ],
+  "capture": {
+    "headers_rotated": true,
+    "column_count": 15,
+    "row_count": 7,
+    "complete": false,
+    "notes": "This table shows waste categories and output flows. Only columns A1-A3 (Product stage) and A4 (Transport) contain visible data values. All other columns (A5, B1-B7, C1-C4, and D) appear as empty/blank columns in the visual presentation, though the headers are visible as rotated text. The table structure includes 15 lifecycle module columns and 7 indicator rows."
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 023.0221.003-01.00.00 CEM IIIB 42,5 N-LHSR bulk “ECOPlanet” EN_ signed.pdf",
+    "pdf_sha256": "55bf1c8885461ad261acc495b542a6dd2e3a94f3795d822ed050355f1e8487de",
+    "api_pages": "17",
+    "api_pages_resolved": "17",
+    "api_pdf_bytes": 22218,
+    "api_pdf_sha256": "2f38cc151cd2fafc531361f66f92fbafcc7c2e9a4cceef8d0e73e0e8ce06e2f2",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 023.0221.003-01.00.00 CEM IIIB 42,5 N-LHSR bulk “ECOPlanet” EN_ signed.p17.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T17:42:26.545Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 3722,
+    "output_tokens": 3294
+  }
+}

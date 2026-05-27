@@ -1,0 +1,18 @@
+{
+  "components": [],
+  "declarations": null,
+  "_source": {
+    "pdf_filename": "B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed.pdf",
+    "pdf_sha256": "423c951eac4a4121b02a3c9fc71a346b8eeae5b97bceec40ec250d6c795e4132",
+    "api_pages": "3",
+    "api_pages_resolved": "3",
+    "api_pdf_bytes": 187997,
+    "api_pdf_sha256": "34f75aa64a743cb7e0b02116984efd53793058131443c1c8efb3810a2542d983",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed.p3.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T19:06:54.612Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 3196,
+    "output_tokens": 50
+  }
+}

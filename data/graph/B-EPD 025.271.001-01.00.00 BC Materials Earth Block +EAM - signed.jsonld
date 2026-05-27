@@ -1,0 +1,244 @@
+{
+  "@context": {
+    "@vocab": "https://epdagent.dev/vocab/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "EPD": "https://epdagent.dev/vocab/EPD",
+    "ProgramOperator": "https://epdagent.dev/vocab/ProgramOperator",
+    "declaredUnit": {
+      "@id": "https://epdagent.dev/vocab/declaredUnit",
+      "@type": "schema:QuantitativeValue"
+    },
+    "programOperator": {
+      "@id": "https://epdagent.dev/vocab/programOperator",
+      "@type": "@id"
+    },
+    "producer": {
+      "@id": "https://epdagent.dev/vocab/producer",
+      "@type": "@id"
+    },
+    "verifier": {
+      "@id": "https://epdagent.dev/vocab/verifier",
+      "@type": "@id"
+    },
+    "pcrReference": "https://epdagent.dev/vocab/pcrReference",
+    "epdNumber": "https://epdagent.dev/vocab/epdNumber",
+    "language": "https://epdagent.dev/vocab/language",
+    "filenamePattern": "https://epdagent.dev/vocab/filenamePattern",
+    "schema:name": "https://schema.org/name",
+    "schema:address": "https://schema.org/address",
+    "schema:addressCountry": "https://schema.org/addressCountry",
+    "schema:validFrom": {
+      "@id": "https://schema.org/validFrom",
+      "@type": "xsd:date"
+    },
+    "schema:validThrough": {
+      "@id": "https://schema.org/validThrough",
+      "@type": "xsd:date"
+    },
+    "schema:value": "https://schema.org/value",
+    "schema:unitCode": "https://schema.org/unitCode",
+    "prov:wasDerivedFrom": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "prov:generatedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "extractionCoverage": "https://epdagent.dev/vocab/extractionCoverage",
+    "productSection": {
+      "@id": "https://epdagent.dev/vocab/productSection",
+      "@type": "@id"
+    },
+    "composition": {
+      "@id": "https://epdagent.dev/vocab/composition",
+      "@type": "@id"
+    },
+    "lcaStudy": {
+      "@id": "https://epdagent.dev/vocab/lcaStudy",
+      "@type": "@id"
+    },
+    "lcaTables": {
+      "@id": "https://epdagent.dev/vocab/lcaTables",
+      "@type": "@id"
+    },
+    "scenarios": {
+      "@id": "https://epdagent.dev/vocab/scenarios",
+      "@type": "@id"
+    },
+    "bibliography": {
+      "@id": "https://epdagent.dev/vocab/bibliography",
+      "@type": "@id"
+    },
+    "epdSections": {
+      "@id": "https://epdagent.dev/vocab/epdSections",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://localhost:3000/id/epd/B-EPD%20025.271.001-01.00.00%20BC%20Materials%20Earth%20Block%20%2BEAM%20-%20signed",
+      "@type": [
+        "EPD",
+        "schema:Product"
+      ],
+      "epdNumber": "025.0271.001-01.00.00",
+      "schema:name": "COMPRESSED EARTH BLOCK – installed with earth adhesive mortar",
+      "schema:description": "Compressed block 140, CEB_140 installed with Léém Earth Adhesive Mortar (EB_EAM)",
+      "verificationStatement": "THIRD PARTY VERIFIED",
+      "conformityBasis": "in accordance with NBN EN 15804+A2 and B-EPD PCR",
+      "declaredScope": "To build 1 m² of wall with 140 mm width compressed earth blocks installed with earth adhesive mortar, for a reference service life of 100 years in Belgium",
+      "declaredModules": [
+        "A123",
+        "A4",
+        "A5",
+        "B",
+        "C",
+        "D"
+      ],
+      "filenamePattern": "unknown",
+      "declaredUnit": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2"
+      },
+      "schema:validFrom": "2025-09-12",
+      "schema:validThrough": "2030-09-12",
+      "programOperator": {
+        "@id": "http://localhost:3000/id/operator/B-EPD"
+      },
+      "producer": {
+        "@id": "http://localhost:3000/id/org/c9ef7a07eed9"
+      },
+      "prov:wasDerivedFrom": {
+        "@type": "prov:Entity",
+        "schema:name": "B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed.pdf"
+      },
+      "prov:generatedAtTime": "2026-05-26T18:00:43.627Z",
+      "productSection": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.271.001-01.00.00%2520BC%2520Materials%2520Earth%2520Block%2520%252BEAM%2520-%2520signed/product"
+      },
+      "scenarios": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.271.001-01.00.00%2520BC%2520Materials%2520Earth%2520Block%2520%252BEAM%2520-%2520signed/scenarios"
+      },
+      "bibliography": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.271.001-01.00.00%2520BC%2520Materials%2520Earth%2520Block%2520%252BEAM%2520-%2520signed/references"
+      },
+      "epdSections": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.271.001-01.00.00%2520BC%2520Materials%2520Earth%2520Block%2520%252BEAM%2520-%2520signed/sections"
+      },
+      "extractionCoverage": {
+        "phase1": true,
+        "phase2": true,
+        "phase3_product": true,
+        "phase3_composition": false,
+        "phase3_lca_study": false,
+        "phase4_lca": [],
+        "phase5_scenarios": true,
+        "phase6_refs": true,
+        "phase7_epd_sections": true
+      }
+    },
+    {
+      "@id": "http://localhost:3000/id/operator/B-EPD",
+      "@type": "ProgramOperator",
+      "schema:name": "Federal Public Service Health, Food Chain Safety and Environment",
+      "operatorCode": "B-EPD"
+    },
+    {
+      "@id": "http://localhost:3000/id/org/c9ef7a07eed9",
+      "@type": "schema:Organization",
+      "schema:name": "BC MATERIALS",
+      "schema:address": null,
+      "schema:addressCountry": "BE"
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.271.001-01.00.00%2520BC%2520Materials%2520Earth%2520Block%2520%252BEAM%2520-%2520signed/product",
+      "@type": "ProductSection",
+      "description": "The Compressed Earth Block from BC Materials is a Belgian product used as load-bearing and non-load-bearing masonry protected from the elements. It is mainly used for internal walls. This product is suitable for damp rooms but must not be applied to areas in direct contact with water. The product is sold as a block.\n\nThis EPD is specific to the BC Materials company and corresponds to only one site of production. \n\nThe Léém Compressed block range uses 3,85% (wt.) of cement as a stabiliser, and is more water-resistant, acoustic, fire-resistant and stronger. The aesthetics is more industrial through its aspect and colour.",
+      "intendedUse": "The Compressed Earth Block from BC Materials is a Belgian product used as load-bearing and non-load-bearing masonry protected from the elements. It is mainly used for internal walls. This product is suitable for damp rooms but must not be applied to areas in direct contact with water.",
+      "installation": "Material for fixation and installation are included. This EPD includes the impacts of all processes, fixating materials, jointing materials or treatments necessary for installing the product.\n\nThe masonry of Léém Compressed Earth Blocks is executed in accordance with the rules of craftsmanship. The blocks are put together using Léém Earth Adhesive Mortar. Blocks must be prewet before laying. Masonry is achieved using normal masonry tools. During construction, the wall must be protected from water at its top (infiltrations, ...) and bottom (stagnating water and splash water).\n\nThe Léém Earth Adhesive Mortar is applied using 2-3 mm joints.",
+      "referenceServiceLifeYears": 100,
+      "referenceFlow": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2",
+        "description": "To build 1 m² of wall with 140 mm width compressed earth blocks installed with Earth adhesive mortar, ensuring an acoustic insulation 54,3 (-1,6;-4,9) dB with a REI 180, for a reference service life of 100 years in Belgium"
+      }
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.271.001-01.00.00%2520BC%2520Materials%2520Earth%2520Block%2520%252BEAM%2520-%2520signed/scenarios",
+      "@type": "ScenarioSet",
+      "sectionTitle": "10 DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
+      "scenarios": [
+        {
+          "module": "A1",
+          "number": "10.1",
+          "title": "A1 - raw material supply",
+          "description": "This module considers the extraction and processing of all raw materials and energy which occur upstream to the studied manufacturing process.\n\nTo produce Léém Compressed Earth Blocks, four different raw materials are needed: Cement, Loess loam, Crushed and washed concrete and Rhine sand.\n\nConcerning the Loess loam which are excavated on construction sites, the assumption is that there is no impact to produce these raw materials, considered in the A1 module. Indeed, they are legally considered as waste (of a construction site) the moment they leave the construction site.\n\nFor recycled concrete, only the washing process has been considered, the concrete in itself being a waste from demolition plant. End of life is after crushing.\n\nFor the modelling of Rhine sand, the MRPI-EPD called: \"Zand 0-4, in en nabij Nederland, geproduceerd door Cascade-leden, A1-A3, cat. 2\" has been used. The supplier is a member of Cascade.\n\nAll raw materials are transported in bulk."
+        },
+        {
+          "module": "A2",
+          "number": "10.2",
+          "title": "A2 – transport to the manufacturer",
+          "description": "The raw materials are transported to the manufacturing site.\nTransportation of raw materials is achieved using trucks. Table below shows information about transport of raw materials with the origin, the distance and the database used to model it.\n\nResource | Origin | Distance\nRecycled concrete | Gent, Belgium | 73\nLoess loam | Brussels, Belgium | /\nRhine sand | Germany | 250\nCement | Average distance\n\nFor Loess loam, transportation from the demolition site to BC Materials is not considered. The supplier is an earthmover who excavates from a construction site and delivers directly to BC materials, bypassing a Temporary Storage Centre.\n\nThe type of lorry used is the one recommended by the BE-PCR for bulk materials. Concerning the range EURO, suppliers have confirmed their EURO6 certification for trucks and the Brussels region only allows EURO6 trucks on its territory starting from 1/1/2025."
+        },
+        {
+          "module": "A3",
+          "number": "10.3",
+          "title": "A3 - manufacturing",
+          "description": "This module considers the production process.\n\nThe first step is the premixing of loam, Rhine sand and recycled concrete at BC materials. The wheel loader used for premixing uses diesel. Once the premix achieved, it is loaded into a truck, using the same wheel loader. The truck transports this premix to Claesen site (83 km away) where the premix is stored in a silo and subsequently transferred to the mixer using a hopper where cement is added.\n\nWhen the mix is finished, it goes to a vibrocompaction press to produce the blocks after which the blocks are stored in the curing/drying chamber. After curing/drying, the blocks are palletized by machine and receive a LDPE film for protection. Up until here, all processes at Claesen are electrified. The blocks are subsequently stored by a forklift on diesel. From this storage, blocks are transported to the construction site by Euro 6 truck and are to be installed on site by the contractor.\n\nAll operations are performed using machinery using diesel or electricity. Data are based on data collection with calculated and measured data on site."
+        },
+        {
+          "module": "A4",
+          "number": "10.4",
+          "title": "A4 – transport to the building site",
+          "description": "For the transportation to the construction site, statistics from the sales department are available and used to model the average transport.\n\nTransportation mode is road, and the used database is \"transport, freight, lorry 16-32 metric ton, EURO5 | transport, freight, lorry 16-32 metric ton, EURO6 | Cutoff, U – RER\".\n\nThe average distance has been calculated as 72.5 km. This is a weighted average of all sold of Compressed Earth Block – 140 mm from 1/7/2023 to 30/6/2024.\n\nDuring the transportation step, damage for blocks is estimated with 2% of losses.\n\nThe capacity utilisation including empty returns is the one given by default, as 50%."
+        },
+        {
+          "module": "A5",
+          "number": "10.5",
+          "title": "A5 – installation in the building",
+          "description": "The masonry can be achieved using Léém Earth Adhesive Mortar (2-3mm).\n\nLéém Adhesive Mortar is used to \"glue\" Léém Compressed Earth Blocks in joints of 2-3mm. Proper tools such as Adhesive Mortar Spreader Box/Trowel are available in the Léém Earth Blocks accessories range, or generic adhesive mortar spreading trowels can also be used.\n\nConcerning the installation stage, there are expected losses for blocks of 4%. For Léém Earth Adhesive Mortar, the reversible aspect of the clay binder makes that all construction site remains can be reused, hence no waste during installation, as mentioned in the German PCR for Earth materials.\n\nThe installation stage consists of building the wall using the appropriate mortar, prepared by mixing the product with water.\n\nFor the Leem Earth Adhesive Mortar, around 25% of water should be added, however this water is not counted as it is not used for chemical binding, but rather evaporates back to the natural cycle after a few weeks. (See German Product Category Rules for Earth Mortar PKR_LMM 4.3).\n\nParts of the installation quantity | Description\nProcesses necessary for the installation of the product - electricity | ELECTRICITY NEEDED FOR THE MIXING OF THE PRODUCT WITH WATER\nFixation materials | 25% of EAM, 6.7 kg WATER, EAM\nJointing materials | Not relevant /\nTreatments | Not relevant /\nMaterial losses | 4% LOSSES DUE TO BREAKING OF BLOCKS\nPackaging | PALLET, LDPE FILM, PAPER BAG\n\nThere is no ancillary materials for installation.\n\nConcerning the end-of-life of packaging, default scenarios have been used and are presented in table below.\n\nNature of packaging | Scenario | % | Ecoinvent database\nPaper/cardboard | Incineration | 5 | treatment of waste paperboard, municipal incineration | waste paperboard | Cutoff, U - GLO\nPaper/cardboard | Recycling | 95 | Burdens/benefits out of boundaries\nPallet | Incineration | 40 | treatment of waste wood, untreated, municipal incineration | waste wood, untreated | Cutoff, U - GLO\nPallet | Recycling | 40 | Burdens and benefits out of boundaries (see module D)\nPallet | Reuse | 20 | Benefits out of boundaries\nBig bag/Film | Landfill | 5 | treatment of waste polypropylene, sanitary landfill | waste polypropylene | Cutoff, U - RoW\nBig bag/Film | Incineration | 60 | treatment of waste polypropylene, municipal incineration | waste polypropylene | Cutoff, U - GLO\nBig bag/Film | Recycling | 35 | Burdens and benefits out of boundaries (see module D)\n\nTransportation of waste is also considered according to the default values of BE-PCR:\n• Transportation from the construction site to sorting plant: 30 km\n• Transportation from sorting plant to landfill: 50 km\n• Transportation from sorting facility to incineration plant/energy recovery: 100 km\n\nThe transportation mode is 100% with Lorry 16-32 ton (EURO 5).\n\nThe loads and benefits coming from the paper sack packaging are not considered, assumed to be under the cut off rule due to the low amount of this type of packaging in the average market."
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.271.001-01.00.00%2520BC%2520Materials%2520Earth%2520Block%2520%252BEAM%2520-%2520signed/references",
+      "@type": "Bibliography",
+      "bibliography": [
+        "EN 15804:2012+A2:2019",
+        "German PCR for Earth blocks chapter 8",
+        "German PCR for Earth Masonry Mortar chapter 8",
+        "General guide: Building sustainably with Léém (download link)",
+        "BE-PCR",
+        "Valbiom"
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.271.001-01.00.00%2520BC%2520Materials%2520Earth%2520Block%2520%252BEAM%2520-%2520signed/sections",
+      "@type": "EpdSectionSet",
+      "blocks": [
+        {
+          "number": "13",
+          "title": "LCA INTERPRETATION",
+          "content": "This study has shown the low environmental impact of product coming from earth as a resource, especially when using secondary resources such as Loess loam coming from excavations of construction sites as well as recycled washed concrete.\nThis study has shown the importance of the take back program that implies a reuse of the components and then savings of resources and energy. The take back program is already in place but this type of element is quite new on the market and there are few experiences about demolition of buildings including this product. Indeed, the starting point of the use of this component is less old than the lifetime of the buildings where they are involved. However, a take back program as a defining principle of earth building materials is also mentioned in the German PCR for Clay Plaster (see German PKR for Earth Blocks and Earth Masonry Mortar chapter 8 Nachnutzungsphase).\nThe take back program is possible thanks to the easy separating qualities of clay-based building materials. The blocks and mortar can be easily separated by hand after wetting by a high-pressure water hose. There is no particulate matter during this dismantling. Blocks can be stored for reuse.\nIn this case of installation, using Leem Adhesive Mortar and because of the reversible binding qualities of clay, this product has the exact same composition and unaltered chemistry as the initial product and can be reused without further processing in the C stage (See German PKR for Earth Masonry Mortar chapter 8.1)."
+        },
+        {
+          "number": "14",
+          "title": "TECHNICAL INFORMATION FOR SCENARIO DEVELOPMENT",
+          "content": "This B-EPD is relative to a Compressed Earth Block of 140 mm width installed with Earth Adhesive Mortar. Other dimensions are available with 90 m or 190 mm of width. In order to extrapolate the impact data to the required thickness, conversion factors and how they are obtained are found in 15 'Application Unit'."
+        },
+        {
+          "number": "15",
+          "title": "APPLICATION UNIT",
+          "content": "The functional unit is defined as \"To build 1 m² of wall with 140 mm width compressed earth blocks installed with Earth adhesive mortar and with a lifetime of 100 years, in Belgium\". To fulfil this, 238.5 kg of product is needed. This study is performed for the Compressed Earth Block \"as installed\" with Earth adhesive mortar (6.7 kg per FU). This functional unit is in accordance with the TOTEM program.\n\nThis study is related to the block of 140 mm width with installation using Earth Adhesive Mortar.\n\nThe thickness of the block can vary between 90 mm and 190 mm.\n\nFor the 190 mm, a proportional rule can be applied due to the same density of the product.\n\nFor the 90 mm, the rule of weight is not direct. Indeed, the density of the block 90 mm is 1970 kg/m3 while for the 140 and 190 mm, the density is 1760 kg/m3. That means that block of 90 mm requires proportionally more matter than the ones of 140 and 190 mm. Calculations from A1 to A4 are directly proportional to the mass of the blocks. Based on this, and the ratio between the density of the blocks (90 and 140/190), the proportional rule must be multiplied by 1.12 to obtain the results for modules A1 to A4.\n\nModule A5 is directly proportional to the width of the blocks.\n\nThat means:\n\nImpact of CEB 90 (A1 to A4) = Impacts of CEB 140 (A1 to A4) *90/140*1.12\n\nImpact of CEB 190 = Impacts of CEB 140 * 190/140\n\nThe impact of module B1 is then converted with the same ratio as for A1-A4 (based on density ratio).\n\nLastly, for C1-D, the conversion factor to go from 140mm to 90mm is based on the mass of block and mortar separately, also added up.\n\nAn overview table with the thickness conversion factors per module can be found below.\n\nConversion factors to extrapolate the impact to different block thicknesses\n\nBlock thickness | A1 | A2 | A3 | A4 | A5 | B1 | C1 | C2 | C3 | C4 | D\n190mm | 1,36 | 1,36 | 1,36 | 1,36 | 1,36 | 1,36 | 1,36 | 1,36 | 1,36 | 1,36 | 1,36\n140mm | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1\n90mm | 0,71 | 0,71 | 0,71 | 0,71 | 0,64 | 0,71 | 0,71 | 0,71 | 0,71 | 0,71 | 0,71"
+        },
+        {
+          "number": "16",
+          "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+          "content": "Description | Type of fixing | Level of reversibility | Simplicity of disassembly | Speed of disassembly | Ease of handling (size and weight) | Robustness of material (material resistance to disassembly) | Comment\n\nBlocks joint together to form an interior wall | Earth Adhesive mortar | Reversible connection (See German PKR for Earth Blocks and Earth Masonry Mortar, Chapter 8) | simple – use of trowels and water if needed. | Speedy disassembly | easy to handle manually, one worker is usually sufficient | The material resists well during disassembly, there is no loss of quality. |"
+        }
+      ]
+    }
+  ]
+}

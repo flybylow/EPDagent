@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EPD LCA table probe",
+  "description": "Phase 4 probe: capture LCA grid structure including rotated column headers",
+  "type": "object",
+  "properties": {
+    "table_title": {
+      "type": ["string", "null"],
+      "description": "Main table heading, e.g. POTENTIAL ENVIRONMENTAL IMPACTS PER REFERENCE FLOW"
+    },
+    "table_type": {
+      "type": ["string", "null"],
+      "description": "impacts | resource_use | waste | output_flows | other"
+    },
+    "introductory_text": {
+      "type": ["string", "null"],
+      "description": "Explanatory narrative before or after the table on this excerpt (e.g. impact category definitions), verbatim"
+    },
+    "column_groups": {
+      "type": "array",
+      "description": "Top-level grouped headers spanning multiple columns",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": { "type": ["string", "null"] },
+          "column_codes": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "required": ["label", "column_codes"]
+      }
+    },
+    "columns": {
+      "type": "array",
+      "description": "One entry per data column, left to right",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": ["string", "null"],
+            "description": "Lifecycle module code: prefer A1, A2, A3 as separate columns when the PDF shows them separately; use A1/A2/A3 only for one combined column"
+          },
+          "label": {
+            "type": ["string", "null"],
+            "description": "Full rotated header text when readable"
+          },
+          "group": {
+            "type": ["string", "null"],
+            "description": "Parent group, e.g. Production, Use stage"
+          }
+        },
+        "required": ["code", "label", "group"]
+      }
+    },
+    "rows": {
+      "type": "array",
+      "description": "One entry per indicator row",
+      "items": {
+        "type": "object",
+        "properties": {
+          "indicator": {
+            "type": ["string", "null"],
+            "description": "Indicator code (e.g. PERE, GWP-total)"
+          },
+          "unit": {
+            "type": ["string", "null"],
+            "description": "Unit line from the row label, e.g. MJ/FU, net calorific value"
+          },
+          "values": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "column_code": { "type": ["string", "null"] },
+                "raw_value": {
+                  "type": ["string", "null"],
+                  "description": "Cell value as printed, e.g. 1,14E+01"
+                }
+              },
+              "required": ["column_code", "raw_value"]
+            }
+          }
+        },
+        "required": ["indicator", "unit", "values"]
+      }
+    },
+    "capture": {
+      "type": "object",
+      "properties": {
+        "headers_rotated": { "type": "boolean" },
+        "column_count": { "type": "integer" },
+        "row_count": { "type": "integer" },
+        "complete": {
+          "type": "boolean",
+          "description": "True when all visible columns and rows were captured"
+        },
+        "notes": { "type": ["string", "null"] }
+      },
+      "required": ["headers_rotated", "column_count", "row_count", "complete", "notes"]
+    }
+  },
+  "required": ["table_title", "table_type", "column_groups", "columns", "rows", "capture"]
+}

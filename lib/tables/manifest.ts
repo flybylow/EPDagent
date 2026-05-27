@@ -1,6 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { REFERENCE_DIR } from "../paths";
+import { defaultTableRegistryForStem } from "./default-registry";
 import type { TableExportDef, TableExportManifest } from "./types";
 
 export const TABLE_EXPORTS_DIR = path.join(process.cwd(), "out", "table_exports");
@@ -23,7 +24,7 @@ export function tableRegistryForStem(stem: string): TableExportDef[] {
       return data.tables;
     }
   }
-  return [];
+  return defaultTableRegistryForStem(stem);
 }
 
 export function loadTableManifest(stem: string): TableExportManifest | null {

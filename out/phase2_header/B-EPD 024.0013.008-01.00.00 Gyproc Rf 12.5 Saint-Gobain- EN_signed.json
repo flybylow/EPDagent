@@ -1,0 +1,52 @@
+{
+  "epd_number": "24.0013.008-01.00.00",
+  "program_operator": "B-EPD",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": null,
+    "address": null,
+    "country": null
+  },
+  "product_name": "Gyproc® Rf 12,5",
+  "product_description": "12,5 mm",
+  "standards_conformity": null,
+  "verification_statement": "THIRD PARTY VERIFIED",
+  "conformity_basis": "in accordance with EN 15804+A2 and B-EPD PCR",
+  "declared_scope": "1m² of installed Gyproc® Rf 12,5 plasterboard",
+  "declared_modules": [
+    "A123",
+    "A4",
+    "A5",
+    "B2",
+    "B4",
+    "C",
+    "D"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "m2"
+  },
+  "validity": {
+    "issued": "2024-10-25",
+    "valid_until": "2029-10-25"
+  },
+  "pcr_reference": "EN 15804+A2",
+  "verifier": {
+    "name": "Agnes Stehmann-Schuurmans and Bob Roijen (SGS INTRON B.V.)",
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 024.0013.008-01.00.00 Gyproc Rf 12.5 Saint-Gobain- EN_signed.pdf",
+    "pdf_sha256": "37696f82a2635691ee9d766477d3faf9596ca9cfd9d396d8095b6e6a0656bfda",
+    "api_pages": "1,21",
+    "api_pages_resolved": "1,21",
+    "api_pdf_bytes": 783681,
+    "api_pdf_sha256": "357722ad52175b35e5b50106e6c6456f7386fe2b69a999258a13b9bb4d02c3d0",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 024.0013.008-01.00.00 Gyproc Rf 12.5 Saint-Gobain- EN_signed.p1-p21.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T19:58:46.519Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 6268,
+    "output_tokens": 519
+  }
+}

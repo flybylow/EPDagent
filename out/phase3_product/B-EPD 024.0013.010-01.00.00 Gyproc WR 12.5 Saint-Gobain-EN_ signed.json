@@ -1,0 +1,71 @@
+{
+  "description": "Gyproc® WR 12,5 is a 12.5 mm thick standard plasterboard suitable for most interior building applications where normal levels of fire resistance, structural strength and sound insulation are specified. Gyproc® WR 12,5 was specifically developed for high performance under humid conditions. Gyproc® WR 12,5 plasterboard can be used in light weight building systems of 1 to 3 layers on steel or timber framing. The tapered edge allows the use of joint filler to produce a durable joint reinforcement and a smooth, continuous, crack-resistant surface ready for priming and final decoration. The smooth surface of the paper lining is an ideal base for decoration with wallpaper or by painting.\n\nPlasterboard is made up of a gypsum core (calcium sulfate hydrate) with additives and a paper liner. Small quantities of starch, foam and dispersants are added to the core.\n\nThis is a specific EPD for the Gyproc® WR 12.5 boards produced in Kallo, Belgium by Saint-Gobain Construction Products nv/sa.",
+  "intended_use": "Gyproc® WR 12,5 is a 12.5 mm thick standard plasterboard suitable for most interior building applications where normal levels of fire resistance, structural strength and sound insulation are specified. Gyproc® WR 12,5 was specifically developed for high performance under humid conditions. Gyproc® WR 12,5 plasterboard can be used in light weight building systems of 1 to 3 layers on steel or timber framing.",
+  "reference_flow": {
+    "value": 1,
+    "unit": "m2",
+    "description": "1m² of installed Gyproc® WR 12,5 plasterboard with a weight of 10,3 kg/m² installed in Belgium. Packaging is included."
+  },
+  "installation": "Materials for fixation and installation are included. This EPD includes the impacts of all processes, fixating materials, and jointing material needed for installing the product according to following scenario: screwed installation on metal profiles or timber framing. The structure (metal profiles or timber framing) is not included in the EPD.",
+  "reference_service_life_years": 60,
+  "geographical_representativity": "Data included in this EPD is collected from one production site, Kallo. The EPD is representative for the Belgian market",
+  "production_process": "The initial materials are homogenously mixed to form a gypsum slurry that is spread via multiple hose outlets onto a paper liner on a moving conveyor belt. A second paper liner is fed onto the production line from above to form the plasterboard. The plasterboard continues along the production line where it is finished, dried, and cut to size.\n\nAll plasterboard cut-offs and waste are recycled and the Recycled Gypsum is 100% reintegrated back into the manufacturing process.",
+  "technical_properties": [
+    {
+      "property": "Thickness",
+      "standard": "EN 520",
+      "value": "12,5",
+      "unit": "mm",
+      "comment": null
+    },
+    {
+      "property": "Width",
+      "standard": "EN 520",
+      "value": "1200",
+      "unit": "mm",
+      "comment": null
+    },
+    {
+      "property": "EN Classification",
+      "standard": "EN 520",
+      "value": "Type DFH2",
+      "unit": "-",
+      "comment": null
+    },
+    {
+      "property": "Reaction to fire",
+      "standard": "EN 520",
+      "value": "A2, s1, d0",
+      "unit": "-",
+      "comment": null
+    },
+    {
+      "property": "Thermal conductivity",
+      "standard": "EN ISO 10456",
+      "value": "0,25",
+      "unit": "W/m.K",
+      "comment": null
+    },
+    {
+      "property": "Water vapour resistance factor, µ",
+      "standard": "EN ISO 10456",
+      "value": "4",
+      "unit": "-",
+      "comment": null
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 024.0013.010-01.00.00 Gyproc WR 12.5 Saint-Gobain-EN_ signed.pdf",
+    "pdf_sha256": "24c3cdfb55ab8612f6979a7a7270fa4279c40cf2c8d4a2539c4b8d129228dfa2",
+    "api_pages": "4-7",
+    "api_pages_resolved": "4,5,6,7",
+    "api_pdf_bytes": 234967,
+    "api_pdf_sha256": "39fe10970a174db4b2d18091c7d86cca2704306b4f0535861e7a72866f792af8",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 024.0013.010-01.00.00 Gyproc WR 12.5 Saint-Gobain-EN_ signed.p4-p5-p6-p7.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T17:54:12.700Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 9048,
+    "output_tokens": 1106
+  }
+}

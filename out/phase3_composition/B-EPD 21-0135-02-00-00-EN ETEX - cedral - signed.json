@@ -1,0 +1,123 @@
+{
+  "components": [
+    {
+      "section": "Product",
+      "component": "Sand",
+      "composition": null,
+      "quantity": "30 -40%"
+    },
+    {
+      "section": "Product",
+      "component": "Cement",
+      "composition": null,
+      "quantity": "20 - 30%"
+    },
+    {
+      "section": "Product",
+      "component": "Cellulose",
+      "composition": null,
+      "quantity": "<10%"
+    },
+    {
+      "section": "Product",
+      "component": "Internal production waste",
+      "composition": null,
+      "quantity": "<5%"
+    },
+    {
+      "section": "Product",
+      "component": "Wollastonite",
+      "composition": null,
+      "quantity": "<5%"
+    },
+    {
+      "section": "Product",
+      "component": "Aluminium hydroxide",
+      "composition": null,
+      "quantity": "<5%"
+    },
+    {
+      "section": "Product",
+      "component": "Primer",
+      "composition": null,
+      "quantity": "<5%"
+    },
+    {
+      "section": "Product",
+      "component": "Water",
+      "composition": null,
+      "quantity": "15-20%"
+    },
+    {
+      "section": "Product",
+      "component": "Others",
+      "composition": null,
+      "quantity": "<1%"
+    },
+    {
+      "section": "Fixation materials",
+      "component": "Cedral click: inox clips",
+      "composition": null,
+      "quantity": "10 p"
+    },
+    {
+      "section": "Fixation materials",
+      "component": "Cedral lap: inox screws",
+      "composition": null,
+      "quantity": "12,5 p"
+    },
+    {
+      "section": "Jointing materials",
+      "component": "NA",
+      "composition": null,
+      "quantity": "/"
+    },
+    {
+      "section": "Treatments",
+      "component": "NA",
+      "composition": null,
+      "quantity": "/"
+    },
+    {
+      "section": "Packaging",
+      "component": "Pallet",
+      "composition": null,
+      "quantity": "0,6787 kg"
+    },
+    {
+      "section": "Packaging",
+      "component": "PE cover foil",
+      "composition": null,
+      "quantity": "0,0041 kg"
+    },
+    {
+      "section": "Packaging",
+      "component": "PE plastic foam layers",
+      "composition": null,
+      "quantity": "0,1545 kg"
+    },
+    {
+      "section": "Packaging",
+      "component": "PE band on a carton roll",
+      "composition": null,
+      "quantity": "0,1620 kg"
+    }
+  ],
+  "declarations": [
+    "The product does not contain materials listed in the \"Candidate list of Substances of Very High Concern for authorization\"."
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 21-0135-02-00-00-EN ETEX - cedral - signed.pdf",
+    "pdf_sha256": "64d786fb4145521fbc02d5e3008e2efd5520be5c54a7e7cc6be48c3ece292bfb",
+    "api_pages": "3",
+    "api_pages_resolved": "3",
+    "api_pdf_bytes": 206413,
+    "api_pdf_sha256": "e559d059c16f6cf8d4573db4662e102cfed9a16e3c1b978f438dae50e652c28e",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 21-0135-02-00-00-EN ETEX - cedral - signed.p3.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:03:15.588Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 3497,
+    "output_tokens": 808
+  }
+}

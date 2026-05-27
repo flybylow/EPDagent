@@ -1,4 +1,4 @@
-import type { TocNode } from "@/lib/extract/docmap-parse";
+import { buildTocTree, type TocNode } from "@/lib/extract/docmap-parse";
 
 export interface PhaseDocmapData {
   toc_title: string | null;
@@ -51,8 +51,8 @@ export function DocmapTreeView({ docmap }: { docmap: PhaseDocmapData }) {
             : ""}
         </p>
       </header>
-      {docmap.entries.length ? (
-        <TocBranch nodes={docmap.entries} />
+      {docmap.flat_entries.length ? (
+        <TocBranch nodes={buildTocTree(docmap.flat_entries)} />
       ) : (
         <p className="hint">No index entries captured for this PDF.</p>
       )}

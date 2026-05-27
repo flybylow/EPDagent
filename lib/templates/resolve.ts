@@ -31,10 +31,14 @@ export function resolvePath(data: MergedPhaseData, dotPath: string): {
 
 export function formatDisplayValue(
   value: string | number | string[] | null,
-  format: "text" | "date" | "date-eu" | "enum" | "list" = "text",
+  format: "text" | "date" | "date-eu" | "enum" | "list" | "years" = "text",
   enumLabels?: Record<string, string>
 ): string {
   if (value === null || value === "") return "—";
+
+  if (format === "years") {
+    return `${value} years`;
+  }
 
   if (format === "list" && Array.isArray(value)) {
     return value.length ? value.join(" · ") : "—";

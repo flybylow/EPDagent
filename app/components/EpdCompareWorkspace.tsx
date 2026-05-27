@@ -3,6 +3,8 @@
 import { useState } from "react";
 import type { FieldVerification, VerificationResult } from "@/lib/templates/types";
 import type { EpdPhaseRegistry } from "@/lib/phases/registry";
+import type { GapReport } from "@/lib/extract/gap-report";
+import type { ExtractRunSummary, PipelinePhaseSummary } from "@/lib/types";
 import { EpdDetailWorkspace } from "@/app/components/EpdDetailWorkspace";
 
 function statusClass(status: FieldVerification["status"]): string {
@@ -34,7 +36,16 @@ function VerificationPanel({
     setError(null);
     try {
       const res = await fetch(`/api/verify/${encodeURIComponent(stem)}`, { method: "POST" });
-      const data = await res.json();
+      const contentType = res.headers.get("content-type") ?? "";
+      const raw = await res.text();
+      if (!contentType.includes("application/json")) {
+        throw new Error(
+          res.ok
+            ? "Server returned non-JSON response"
+            : `Verification failed (${res.status}): ${raw.slice(0, 200).replace(/\s+/g, " ")}`
+        );
+      }
+      const data = JSON.parse(raw) as { error?: string };
       if (!res.ok) throw new Error(data.error ?? "Verification failed");
       setResult(data as VerificationResult);
     } catch (err) {
@@ -96,17 +107,38 @@ function VerificationPanel({
 export function EpdCompareWorkspace({
   registry,
   pdfAvailable,
+  pdfServeStem,
+  extractSummary,
+  pipelinePhases = [],
+  hasDocmapIndex = true,
   initialVerification,
   showVerification = true,
+  gapReport = null,
+  initialGapsOnly = false,
 }: {
   registry: EpdPhaseRegistry;
   pdfAvailable: boolean;
+  pdfServeStem: string | null;
+  extractSummary?: ExtractRunSummary | null;
+  pipelinePhases?: PipelinePhaseSummary[];
+  hasDocmapIndex?: boolean;
   initialVerification: VerificationResult | null;
   showVerification?: boolean;
+  gapReport?: GapReport | null;
+  initialGapsOnly?: boolean;
 }) {
   return (
     <div className="verify-workspace">
-      <EpdDetailWorkspace registry={registry} pdfAvailable={pdfAvailable} />
+      <EpdDetailWorkspace
+        registry={registry}
+        pdfAvailable={pdfAvailable}
+        pdfServeStem={pdfServeStem}
+        extractSummary={extractSummary}
+        pipelinePhases={pipelinePhases}
+        hasDocmapIndex={hasDocmapIndex}
+        gapReport={gapReport}
+        initialGapsOnly={initialGapsOnly}
+      />
 
       {showVerification && registry.draft ? (
         <VerificationPanel initial={initialVerification} stem={registry.stem} />

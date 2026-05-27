@@ -1,0 +1,72 @@
+{
+  "components": [
+    {
+      "section": "Carbstone Kimblok",
+      "component": "Argex 1/5 clay granules",
+      "composition": null,
+      "quantity": "20% - 60%"
+    },
+    {
+      "section": "Carbstone Kimblok",
+      "component": "Carbinox",
+      "composition": null,
+      "quantity": "20% - 60%"
+    },
+    {
+      "section": "Carbstone Kimblok",
+      "component": "Water",
+      "composition": null,
+      "quantity": "1% - 15%"
+    },
+    {
+      "section": "Carbstone Kimblok",
+      "component": "Liquid CO 2",
+      "composition": null,
+      "quantity": "1% - 15%"
+    },
+    {
+      "section": "Fixation materials",
+      "component": "Fixation materials",
+      "composition": null,
+      "quantity": "NA"
+    },
+    {
+      "section": "Jointing materials",
+      "component": "Jointing materials",
+      "composition": "All Carbstones, use a specific glue.",
+      "quantity": "2 mm on the sides of the stones"
+    },
+    {
+      "section": "Treatments",
+      "component": "Treatments",
+      "composition": null,
+      "quantity": "NA"
+    },
+    {
+      "section": "Packaging",
+      "component": "Wooden pallet",
+      "composition": null,
+      "quantity": "0,1 – 0,3 kg"
+    },
+    {
+      "section": "Packaging",
+      "component": "PET straps",
+      "composition": null,
+      "quantity": "< 0,01 kg"
+    }
+  ],
+  "declarations": [
+    "The product does not contain materials listed in the “Candidate list of Substances of Very High Concern for authorization”."
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 025.0262.004-01.00.00 Beton Agglo Carbstones Kimblok EN - signed.pdf",
+    "pdf_sha256": "bf8437a84b87484607fc2b36353bf7d82115eed369c2d0cb746ff34dde2db5b1",
+    "api_pages": "4",
+    "api_pages_resolved": "4",
+    "extracted_by": "pdf-composition-table-parser",
+    "extracted_at": "2026-05-26T20:21:22.774Z",
+    "model": null,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

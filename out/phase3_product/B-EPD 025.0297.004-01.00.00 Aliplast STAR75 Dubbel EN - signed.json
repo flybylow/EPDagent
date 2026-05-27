@@ -1,0 +1,71 @@
+{
+  "description": "Star 75 double casement & Star 75 double casement turn-and-tilled are aluminium window systems. The frames are made of aluminium profiles with thermal breaks. Elastomer seals are used to ensure watertightness.\n\nThis is a specific EPD for a specific product produced by Aliplast NV.",
+  "intended_use": "Window system is used in a window in all types of residential and non-residential buildings, both for new-build and renovations.",
+  "reference_flow": {
+    "value": 1,
+    "unit": "m2",
+    "description": "COVERAGE OF 1 M2 OF EXTERNAL WALL WITH A WINDOW (WITH A SURFACE OF < 2.3 M2) PROVIDING THERMAL AND ACOUSTIC INSULATION, NATURAL LIGHT TRANSMISSION, WATER AND AIR TIGHTNESS AND NATURAL VENTILATION OVER A LIFESPAN OF 60-YEARS."
+  },
+  "installation": "The scope of this product is 'AS PRODUCED'.\nMaterials for fixation and installation (glass) are not included. \nThis EPD only includes the environmental impact related to the product itself and end-of-life treatment of packaging.\nFor installing the product, one should follow the instructions provided by Aliplast N.V. The following scenarios are possible:\n- Mounting brackets\n- - Fixation screws.\nThis may lead to the need of additional products and materials for which the impact is not included in this EPD and which shall be taken into account at building level. More detailed information on these scenarios can be found in the chapter \"Additional technical information for scenario development at building\".",
+  "reference_service_life_years": 60,
+  "geographical_representativity": "The EPD is representative of a product produced, installed and discarded in Belgium.\nThe EPD is representative for the Belgian market.",
+  "production_process": "The assembly process is generally carried out on site. \nThe following operations are carried out to produce the main parts: \n1. Preparation of the aluminium profile (powder coating), mainly by sawing and milling. \n2. Production of the frame by assembling the various profiles using connectors and fixing with bolts or glue. The connectors used are mainly made of aluminium. \n3. Positioning and fixing the various joints. \n4. Application of the infill (e.g. glazing, opaque panels). \n5. Integration of equipment (where applicable).",
+  "technical_properties": [
+    {
+      "property": "Dimensions",
+      "standard": "metric",
+      "value": "1.23 x 1.48",
+      "unit": "m",
+      "comment": null
+    },
+    {
+      "property": "Thermal insulation (mandatory)",
+      "standard": "EN ISO 10077-2",
+      "value": "0.94",
+      "unit": "W/m2K",
+      "comment": null
+    },
+    {
+      "property": "Acoustic insulation",
+      "standard": "EN ISO 140-3\nEN ISO 717-1",
+      "value": "till 47.1",
+      "unit": "dB (-1,-4)",
+      "comment": null
+    },
+    {
+      "property": "Air tightness",
+      "standard": "EN 1026\nEN12207",
+      "value": "C5",
+      "unit": null,
+      "comment": null
+    },
+    {
+      "property": "Fire resistance",
+      "standard": "EN 13501-2",
+      "value": "EW30-EI30",
+      "unit": null,
+      "comment": null
+    },
+    {
+      "property": "Water tightness",
+      "standard": "EN 1027\nEN 12208",
+      "value": "E1200A",
+      "unit": null,
+      "comment": null
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 025.0297.004-01.00.00 Aliplast STAR75 Dubbel EN - signed.pdf",
+    "pdf_sha256": "4c73c735316035f8359c687c4955f5ab7730fbd90cec179e9a085f6057722580",
+    "api_pages": "4-7",
+    "api_pages_resolved": "4,5,6,7",
+    "api_pdf_bytes": 168577,
+    "api_pdf_sha256": "99fdb3d8c0d2d963ddf505b98c992856011f9aa48b5f1117d5a44cfcd4c1bb2b",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.0297.004-01.00.00 Aliplast STAR75 Dubbel EN - signed.p4-p5-p6-p7.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T17:22:08.016Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 9190,
+    "output_tokens": 1023
+  }
+}

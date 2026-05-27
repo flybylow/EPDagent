@@ -1,0 +1,51 @@
+{
+  "epd_number": "B-EPD n° 21-0135-03-00-00-EN",
+  "program_operator": "Federal Public Service of Health, Food Chain Safety and Environment",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": "Etex services",
+    "address": null,
+    "country": null
+  },
+  "product_name": "EQUITONE [natura – textura - materia]",
+  "product_description": "fibre cement sheets",
+  "standards_conformity": "Conform to EN 15804+A2, NBN/DTD B08-001 and ISO 14025",
+  "verification_statement": "Third party verified",
+  "conformity_basis": null,
+  "declared_scope": "The production and installation of 1 m2(thickness 8 mm) of a \"EQUITONE [natura – textura - materia]\" panel and its related impacts over cradle-to-grave life cycle stages, over a reference service life of 60 years.",
+  "declared_modules": [
+    "A123",
+    "A4",
+    "A5",
+    "B",
+    "C",
+    "D"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "m2"
+  },
+  "validity": {
+    "issued": "2021-10-07",
+    "valid_until": "2026-10-07"
+  },
+  "pcr_reference": "EN 15804+A2 serves as the core PCR",
+  "verifier": {
+    "name": "Evert Vermaut (Vincotte)",
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 21-0135-03-00-00-EN ETEX - natura ea - signed.pdf",
+    "pdf_sha256": "a978cdef703774f12007227bbe6bd0df254ccdf8cae3dbd4372ec40eac9bbf22",
+    "api_pages": "1,18",
+    "api_pages_resolved": "1,18",
+    "api_pdf_bytes": 167863,
+    "api_pdf_sha256": "719bd584677aa720c3d55cdbfaef99c1c92012761a7da5f42a247f138e8ffade",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 21-0135-03-00-00-EN ETEX - natura ea - signed.p1-p18.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T20:45:49.573Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 6278,
+    "output_tokens": 569
+  }
+}

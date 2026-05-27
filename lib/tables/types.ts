@@ -3,6 +3,8 @@ export interface TableExportDef {
   title: string;
   phase: string;
   page: number;
+  /** Optional wider page range for Claude probe (e.g. table + explanatory text). */
+  probePages?: string;
   section?: string;
   notes?: string;
 }

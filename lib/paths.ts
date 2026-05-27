@@ -25,6 +25,12 @@ export const PHASE_DIRS = {
   phase2: path.join(OUT_DIR, "phase2_header"),
   phase3: path.join(OUT_DIR, "phase3_product"),
   phase3_composition: path.join(OUT_DIR, "phase3_composition"),
+  phase3_lca_study: path.join(OUT_DIR, "phase3_lca_study"),
+  phase4: path.join(OUT_DIR, "phase4_lca"),
+  phase4_probe: path.join(OUT_DIR, "phase4_lca_probe"),
+  phase5: path.join(OUT_DIR, "phase5_scenarios"),
+  phase6: path.join(OUT_DIR, "phase6_refs"),
+  phase7: path.join(OUT_DIR, "phase7_epd_sections"),
   phase_docmap: path.join(OUT_DIR, "phase_docmap"),
 } as const;
 

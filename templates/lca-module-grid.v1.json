@@ -1,0 +1,30 @@
+{
+  "id": "lca-module-grid",
+  "version": "1.0.0",
+  "title": "EN 15804 LCA results grid",
+  "description": "One layout for all phase-4 LCA tables: indicators as rows, lifecycle modules as columns.",
+  "columns": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "D"
+  ],
+  "optionalColumns": ["Total", "Total excl. D", "Total excl module D"],
+  "rowFields": {
+    "indicator": "Short indicator code (e.g. PERE, GWP-total)",
+    "unit": "Unit line in parentheses under the indicator"
+  }
+}

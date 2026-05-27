@@ -28,4 +28,12 @@ export const JSONLD_CONTEXT = {
     "@id": "http://www.w3.org/ns/prov#generatedAtTime",
     "@type": "xsd:dateTime",
   },
+  extractionCoverage: "https://epdagent.dev/vocab/extractionCoverage",
+  productSection: { "@id": "https://epdagent.dev/vocab/productSection", "@type": "@id" },
+  composition: { "@id": "https://epdagent.dev/vocab/composition", "@type": "@id" },
+  lcaStudy: { "@id": "https://epdagent.dev/vocab/lcaStudy", "@type": "@id" },
+  lcaTables: { "@id": "https://epdagent.dev/vocab/lcaTables", "@type": "@id" },
+  scenarios: { "@id": "https://epdagent.dev/vocab/scenarios", "@type": "@id" },
+  bibliography: { "@id": "https://epdagent.dev/vocab/bibliography", "@type": "@id" },
+  epdSections: { "@id": "https://epdagent.dev/vocab/epdSections", "@type": "@id" },
 } as const;

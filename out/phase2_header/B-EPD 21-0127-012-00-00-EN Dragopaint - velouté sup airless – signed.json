@@ -1,0 +1,51 @@
+{
+  "epd_number": "21-0127-012-00-00-EN",
+  "program_operator": "Federal Public Service of Health, Food Chain Safety and Environment",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": "Dragopaint",
+    "address": null,
+    "country": null
+  },
+  "product_name": "DRAGOCRYL VELOUTE SUP AIRLESS",
+  "product_description": null,
+  "standards_conformity": "Conform to EN 15804+A2, NBN/DTD B08-001 and ISO 14025",
+  "verification_statement": "Third party verified",
+  "conformity_basis": null,
+  "declared_scope": "Protect and decorate 1m2 of substrate for a lifespan of 10 years.",
+  "declared_modules": [
+    "A123",
+    "A4",
+    "A5",
+    "B",
+    "C",
+    "D"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "m2"
+  },
+  "validity": {
+    "issued": "2021-03-30",
+    "valid_until": "2026-03-30"
+  },
+  "pcr_reference": null,
+  "verifier": {
+    "name": "Evert Vermaut",
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.pdf",
+    "pdf_sha256": "652da07295d0a6313acb20af893985679cd92a7c3baa0635c289f60aaeb96b32",
+    "api_pages": "1",
+    "api_pages_resolved": "1",
+    "api_pdf_bytes": 82562,
+    "api_pdf_sha256": "4e71e465c2d0fe36588fcf7288c83674d97026c13a0b8baffe83cf374ce2cb71",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.p1.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T20:30:00.523Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 4441,
+    "output_tokens": 499
+  }
+}

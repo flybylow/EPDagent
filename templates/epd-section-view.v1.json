@@ -1,0 +1,16 @@
+{
+  "id": "epd-section-view",
+  "version": "1.0.0",
+  "title": "PDF section → extracted content (defaults)",
+  "sections": {
+    "__header__": {
+      "view": "draft"
+    },
+    "3": {
+      "view": "phase3_lca_study"
+    },
+    "10": {
+      "view": "phase5_scenarios"
+    }
+  }
+}

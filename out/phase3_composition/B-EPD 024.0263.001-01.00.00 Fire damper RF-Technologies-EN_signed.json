@@ -1,0 +1,42 @@
+{
+  "components": [
+    {
+      "section": null,
+      "component": "Casing",
+      "composition": null,
+      "quantity": "4 2 %"
+    },
+    {
+      "section": null,
+      "component": "CU - LT 200x100 fire damper",
+      "composition": "B lade",
+      "quantity": "12 %"
+    },
+    {
+      "section": null,
+      "component": "with motorised actuator",
+      "composition": "M echanics",
+      "quantity": "14 %"
+    },
+    {
+      "section": null,
+      "component": "Motorised a ctuator",
+      "composition": null,
+      "quantity": "32%"
+    }
+  ],
+  "declarations": [
+    "The product does not contain materials listed in the “Candidate list of Substances of Very High Concern for authorization”."
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 024.0263.001-01.00.00 Fire damper RF-Technologies-EN_signed.pdf",
+    "pdf_sha256": "3870a1cd5451b08545478c285f81696f3e733ff900a5912cad19811be002d2dd",
+    "api_pages": "7",
+    "api_pages_resolved": "7",
+    "extracted_by": "pdf-composition-table-parser",
+    "extracted_at": "2026-05-26T20:44:01.398Z",
+    "model": null,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

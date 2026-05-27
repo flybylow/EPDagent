@@ -1,0 +1,677 @@
+{
+  "table_title": "WASTE CATEGORIES & OUTPUT FLOWS",
+  "table_type": "waste",
+  "introductory_text": null,
+  "column_groups": [
+    {
+      "label": "Production",
+      "column_codes": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    {
+      "label": "Construction process stage",
+      "column_codes": [
+        "A4",
+        "A5"
+      ]
+    },
+    {
+      "label": "Use stage",
+      "column_codes": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7"
+      ]
+    },
+    {
+      "label": "End-of-life stage",
+      "column_codes": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "label": null,
+      "column_codes": [
+        "D"
+      ]
+    }
+  ],
+  "columns": [
+    {
+      "code": "A1",
+      "label": "A1 Raw material",
+      "group": "Production"
+    },
+    {
+      "code": "A2",
+      "label": "A2 Transport",
+      "group": "Production"
+    },
+    {
+      "code": "A3",
+      "label": "A3 manufacturing",
+      "group": "Production"
+    },
+    {
+      "code": "A4",
+      "label": "A4 Transport",
+      "group": "Construction process stage"
+    },
+    {
+      "code": "A5",
+      "label": "A5 Installation",
+      "group": "Construction process stage"
+    },
+    {
+      "code": "B1",
+      "label": "B1 Use",
+      "group": "Use stage"
+    },
+    {
+      "code": "B2",
+      "label": "B2 Maintenance",
+      "group": "Use stage"
+    },
+    {
+      "code": "B3",
+      "label": "B3 Repair",
+      "group": "Use stage"
+    },
+    {
+      "code": "B4",
+      "label": "B4 Replacement",
+      "group": "Use stage"
+    },
+    {
+      "code": "B5",
+      "label": "B5 Refurbishment",
+      "group": "Use stage"
+    },
+    {
+      "code": "B6",
+      "label": "B6 Operational energy use",
+      "group": "Use stage"
+    },
+    {
+      "code": "B7",
+      "label": "B7 Operational water use",
+      "group": "Use stage"
+    },
+    {
+      "code": "C1",
+      "label": "C1 Deconstruction / demolition",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "C2",
+      "label": "C2 Transport",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "C3",
+      "label": "C3 Waste processing",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "C4",
+      "label": "C4 Disposal",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "D",
+      "label": "D Reuse, recovery, recycling",
+      "group": null
+    }
+  ],
+  "rows": [
+    {
+      "indicator": "Hazardous waste disposed",
+      "unit": "kg/FU",
+      "values": [
+        {
+          "column_code": "A1",
+          "raw_value": "4,43E-02"
+        },
+        {
+          "column_code": "A2",
+          "raw_value": "5,86E-05"
+        },
+        {
+          "column_code": "A3",
+          "raw_value": "1,75E-04"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "2,54E-05"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "1,74E-05"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B6",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B7",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "3,96E-05"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "5,89E-02"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "2,46E-03"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "0,00E+00"
+        }
+      ]
+    },
+    {
+      "indicator": "Non-hazardous waste disposed",
+      "unit": "kg/FU",
+      "values": [
+        {
+          "column_code": "A1",
+          "raw_value": "5,15E+00"
+        },
+        {
+          "column_code": "A2",
+          "raw_value": "7,28E-01"
+        },
+        {
+          "column_code": "A3",
+          "raw_value": "3,26E-01"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "1,98E-01"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "2,42E-01"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B6",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B7",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "3,04E-01"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "1,31E+00"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "2,30E-01"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "0,00E+00"
+        }
+      ]
+    },
+    {
+      "indicator": "Radioactive waste disposed",
+      "unit": "kg/FU",
+      "values": [
+        {
+          "column_code": "A1",
+          "raw_value": "1,19E-03"
+        },
+        {
+          "column_code": "A2",
+          "raw_value": "2,95E-06"
+        },
+        {
+          "column_code": "A3",
+          "raw_value": "6,47E-05"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "1,31E-06"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "4,14E-06"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B6",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B7",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "2,02E-06"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "3,93E-05"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "4,60E-06"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "0,00E+00"
+        }
+      ]
+    },
+    {
+      "indicator": "Components for re-use",
+      "unit": "kg/FU",
+      "values": [
+        {
+          "column_code": "A1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A2",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A3",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "3,84E-02"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B6",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B7",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "0,00E+00"
+        }
+      ]
+    },
+    {
+      "indicator": "Materials for recycling",
+      "unit": "kg/FU",
+      "values": [
+        {
+          "column_code": "A1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A2",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A3",
+          "raw_value": "4,83E-01"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "5,99E-01"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B6",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B7",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "1,06E+01"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "0,00E+00"
+        }
+      ]
+    },
+    {
+      "indicator": "Materials for energy recovery",
+      "unit": "kg/FU",
+      "values": [
+        {
+          "column_code": "A1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A2",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A3",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B6",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B7",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "0,00E+00"
+        }
+      ]
+    },
+    {
+      "indicator": "Exported energy",
+      "unit": "MJ/FU",
+      "values": [
+        {
+          "column_code": "A1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A2",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A3",
+          "raw_value": "3,51E-01"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": "5,05E+00"
+        },
+        {
+          "column_code": "B1",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B2",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B3",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B4",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B5",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B6",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "B7",
+          "raw_value": "ND"
+        },
+        {
+          "column_code": "C1",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C2",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C3",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "C4",
+          "raw_value": "2,45E+01"
+        },
+        {
+          "column_code": "D",
+          "raw_value": "0,00E+00"
+        }
+      ]
+    }
+  ],
+  "capture": {
+    "headers_rotated": true,
+    "column_count": 17,
+    "row_count": 7,
+    "complete": true,
+    "notes": null
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 025.0297.002-01.00.00 Aliplast STAR75 LC Kip EN - signed.pdf",
+    "pdf_sha256": "4f62158c52c59848d61364bd4f9d594d412bfce6e3ea39aef460c22472efbf41",
+    "api_pages": "14",
+    "api_pages_resolved": "14",
+    "api_pdf_bytes": 53872,
+    "api_pdf_sha256": "983a82a75c5791f336e518fb64fd027b5c9fe8bdb92f6647297adb121f51a751",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.0297.002-01.00.00 Aliplast STAR75 LC Kip EN - signed.p14.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:47:57.378Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 4223,
+    "output_tokens": 3933
+  }
+}

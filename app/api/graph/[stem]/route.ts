@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { loadGraphDocument } from "@/lib/data";
+import { buildGraphDocumentForStem } from "@/lib/graph/document";
 
 export async function GET(
   _request: Request,
@@ -7,10 +7,10 @@ export async function GET(
 ) {
   const { stem: rawStem } = await params;
   const stem = decodeURIComponent(rawStem);
-  const doc = loadGraphDocument(stem);
+  const doc = buildGraphDocumentForStem(stem);
 
   if (!doc) {
-    return NextResponse.json({ error: "Graph not found" }, { status: 404 });
+    return NextResponse.json({ error: "No extraction data for graph" }, { status: 404 });
   }
 
   return NextResponse.json(doc, {

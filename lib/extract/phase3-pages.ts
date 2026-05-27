@@ -3,6 +3,7 @@ import * as path from "node:path";
 import { parsePageSpecs } from "../pdf/pages";
 import { getReferenceByStem, referenceCompareDir } from "../reference";
 import { tableRegistryForStem } from "../tables/manifest";
+import { pagesFromDocmapSections } from "./phase-page-spec";
 
 /** Per-EPD page list for phase 3 (reference manifest) or table registry span. */
 export function resolvePhase3PageSpec(stem: string): string {
@@ -31,6 +32,12 @@ export function resolvePhase3PageSpec(stem: string): string {
     const max = sorted[sorted.length - 1]!;
     return min === max ? String(min) : `${min}-${max}`;
   }
+
+  const fromDocmap = pagesFromDocmapSections(
+    stem,
+    (n) => /^1(\.|$)|^2$/.test(n)
+  );
+  if (fromDocmap) return fromDocmap;
 
   return process.env.EPDAGENT_PHASE3_PAGES?.trim() || "2-4";
 }

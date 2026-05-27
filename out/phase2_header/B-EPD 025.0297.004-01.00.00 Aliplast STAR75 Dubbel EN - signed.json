@@ -1,0 +1,51 @@
+{
+  "epd_number": "025.0297.004-01.00.00",
+  "program_operator": "Federal Public Service of Health, Food Chain Safety and Environment",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": "Aliplast NV",
+    "address": null,
+    "country": "BE"
+  },
+  "product_name": "STAR 75 double casement & double casement turn and tilled",
+  "product_description": "window system",
+  "standards_conformity": null,
+  "verification_statement": "THIRD PARTY VERIFIED",
+  "conformity_basis": "in accordance with EN 15804+A2 and B-EPD PCR",
+  "declared_scope": "Coverage of 1 m2 of external wall with a window ( with a surface of < 2.3 m2) providing thermal and acoustic insulation, natural light transmission, water and air tightness and natural ventilation over a lifespan of 60 years.",
+  "declared_modules": [
+    "A123",
+    "A4",
+    "A5",
+    "B",
+    "C",
+    "D"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "m2"
+  },
+  "validity": {
+    "issued": "2025-07-04",
+    "valid_until": "2030-07-04"
+  },
+  "pcr_reference": null,
+  "verifier": {
+    "name": "Bob Roijen & Agnes Schuurmans (SGS INTRON B.V.)",
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 025.0297.004-01.00.00 Aliplast STAR75 Dubbel EN - signed.pdf",
+    "pdf_sha256": "4c73c735316035f8359c687c4955f5ab7730fbd90cec179e9a085f6057722580",
+    "api_pages": "1-7,22",
+    "api_pages_resolved": "1,2,3,4,5,6,7,22",
+    "api_pdf_bytes": 731157,
+    "api_pdf_sha256": "5fb71ca8b6f33e6ef214287dac01b22251f7a76c9ddd5d1eebdcb05692263762",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.0297.004-01.00.00 Aliplast STAR75 Dubbel EN - signed.p1-p2-p3-p4-p5-p6-p7-p22.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T19:49:04.805Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 17832,
+    "output_tokens": 559
+  }
+}

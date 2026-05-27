@@ -1,0 +1,204 @@
+{
+  "@context": {
+    "@vocab": "https://epdagent.dev/vocab/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "EPD": "https://epdagent.dev/vocab/EPD",
+    "ProgramOperator": "https://epdagent.dev/vocab/ProgramOperator",
+    "declaredUnit": {
+      "@id": "https://epdagent.dev/vocab/declaredUnit",
+      "@type": "schema:QuantitativeValue"
+    },
+    "programOperator": {
+      "@id": "https://epdagent.dev/vocab/programOperator",
+      "@type": "@id"
+    },
+    "producer": {
+      "@id": "https://epdagent.dev/vocab/producer",
+      "@type": "@id"
+    },
+    "verifier": {
+      "@id": "https://epdagent.dev/vocab/verifier",
+      "@type": "@id"
+    },
+    "pcrReference": "https://epdagent.dev/vocab/pcrReference",
+    "epdNumber": "https://epdagent.dev/vocab/epdNumber",
+    "language": "https://epdagent.dev/vocab/language",
+    "filenamePattern": "https://epdagent.dev/vocab/filenamePattern",
+    "schema:name": "https://schema.org/name",
+    "schema:address": "https://schema.org/address",
+    "schema:addressCountry": "https://schema.org/addressCountry",
+    "schema:validFrom": {
+      "@id": "https://schema.org/validFrom",
+      "@type": "xsd:date"
+    },
+    "schema:validThrough": {
+      "@id": "https://schema.org/validThrough",
+      "@type": "xsd:date"
+    },
+    "schema:value": "https://schema.org/value",
+    "schema:unitCode": "https://schema.org/unitCode",
+    "prov:wasDerivedFrom": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "prov:generatedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "extractionCoverage": "https://epdagent.dev/vocab/extractionCoverage",
+    "productSection": {
+      "@id": "https://epdagent.dev/vocab/productSection",
+      "@type": "@id"
+    },
+    "composition": {
+      "@id": "https://epdagent.dev/vocab/composition",
+      "@type": "@id"
+    },
+    "lcaStudy": {
+      "@id": "https://epdagent.dev/vocab/lcaStudy",
+      "@type": "@id"
+    },
+    "lcaTables": {
+      "@id": "https://epdagent.dev/vocab/lcaTables",
+      "@type": "@id"
+    },
+    "scenarios": {
+      "@id": "https://epdagent.dev/vocab/scenarios",
+      "@type": "@id"
+    },
+    "bibliography": {
+      "@id": "https://epdagent.dev/vocab/bibliography",
+      "@type": "@id"
+    },
+    "epdSections": {
+      "@id": "https://epdagent.dev/vocab/epdSections",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://localhost:3000/id/epd/B-EPD%2023.0191.003_01.00.01%20EN%20Kingspan%20Kooltherm%20K8%20-%20signed",
+      "@type": [
+        "EPD",
+        "schema:Product"
+      ],
+      "epdNumber": "23-0191-003-01.00.01",
+      "schema:name": "Kooltherm® K8",
+      "schema:description": "thermal insulation board",
+      "verificationStatement": "THIRD PARTY VERIFIED",
+      "conformityBasis": "in accordance with EN 15804+A2, EN 16783 and NBN/DTD B08-001",
+      "declaredScope": "1 m2 thermal insulation board with a thickness of 80 mm with an RD-value of 3,80 m2·K/W",
+      "declaredModules": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "C",
+        "D"
+      ],
+      "filenamePattern": "unknown",
+      "declaredUnit": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2"
+      },
+      "schema:validFrom": "2023-04-20",
+      "schema:validThrough": "2028-04-20",
+      "pcrReference": "EN 16783",
+      "programOperator": {
+        "@id": "http://localhost:3000/id/operator/B-EPD"
+      },
+      "producer": {
+        "@id": "http://localhost:3000/id/org/bebe357d7ebb"
+      },
+      "prov:wasDerivedFrom": {
+        "@type": "prov:Entity",
+        "schema:name": "B-EPD 23.0191.003_01.00.01 EN Kingspan Kooltherm K8 - signed.pdf"
+      },
+      "prov:generatedAtTime": "2026-05-26T18:22:29.635Z",
+      "productSection": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.003_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K8%2520-%2520signed/product"
+      },
+      "lcaStudy": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.003_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K8%2520-%2520signed/lca-study"
+      },
+      "extractionCoverage": {
+        "phase1": true,
+        "phase2": true,
+        "phase3_product": true,
+        "phase3_composition": false,
+        "phase3_lca_study": true,
+        "phase4_lca": [],
+        "phase5_scenarios": false,
+        "phase6_refs": false,
+        "phase7_epd_sections": false
+      }
+    },
+    {
+      "@id": "http://localhost:3000/id/operator/B-EPD",
+      "@type": "ProgramOperator",
+      "schema:name": "Federal Public Service Health, Food Chain Safety and Environment",
+      "operatorCode": "B-EPD"
+    },
+    {
+      "@id": "http://localhost:3000/id/org/bebe357d7ebb",
+      "@type": "schema:Organization",
+      "schema:name": "Kingspan Insulation BV",
+      "schema:address": null,
+      "schema:addressCountry": null
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.003_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K8%2520-%2520signed/product",
+      "@type": "ProductSection",
+      "description": "The Kingspan Kooltherm® K8 is a premium performance insulation board with a fibre-free rigid thermoset phenolic core, faced on both sides with a perforated aluminium multilayer facing that is autohesively bonded to the insulation core during manufacture.\n\nPhenolic foam is produced by the use of phenolic resin, a catalyst, additives and blowing agent. The cell structure is formed in the resin under the influence of heat released during the chemical reaction. Hereby, the blowing agent is incorporated into the material which forms a solid and very fine cell structure, which is nearly 100% closed.\n\nThis is a specific EPD from a single company, Kingspan insulation BV.",
+      "intendedUse": "Kooltherm® K8 is suitable for use as cavity wall insulation.",
+      "referenceFlow": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2",
+        "description": "1 m2 thermal insulation with a thickness of 80 mm which gives a RD-value of 3,80 m2·K/W."
+      }
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252023.0191.003_01.00.01%2520EN%2520Kingspan%2520Kooltherm%2520K8%2520-%2520signed/lca-study",
+      "@type": "LcaStudy",
+      "sectionTitle": "3 LCA-STUDY",
+      "standardsAndMethodology": "The total of neglected input flows per module is less than 5% of energy usage and mass as prescribed by EN15804+A2.",
+      "lcaSoftwareAndDatabase": "For the calculation of the LCA results, the software program SimaPro 9.1.1 has been used.",
+      "productionSites": "Different types of Kooltherm® insulation boards are produced at the production plant in Tiel (NL).",
+      "cutOffCriteria": "The total of neglected input flows per module is less than 5% of energy usage and mass as prescribed by EN15804+A2.",
+      "allocation": "Different types of Kooltherm® insulation boards are produced at the production plant in Tiel (NL). For the use of energy there is only data available for the total site. This data has been allocated to Kooltherm® K8 based on physical properties. Production waste was allocated similarly.",
+      "timeRepresentativeness": "July 2022",
+      "additionalParagraphs": [
+        "Following processes were excluded for the inventory: Impact of infrastructures; Consumables necessary for the functioning of the process, production, maintenance and end-of-life of equipment; Environmental impacts caused by the personnel of the production plants are not included in the LCA, e.g. waste from the cafeteria and sanitary installations or environmental effects caused by commuter traffic. Heating or cooling of the plants in order to ensure a comfortable indoor climate for the personnel could not be distinguished during the data collection and is therefore included."
+      ],
+      "subsections": [
+        {
+          "number": "3.1",
+          "title": "Date of LCA-study",
+          "content": "July 2022"
+        },
+        {
+          "number": "3.2",
+          "title": "Software",
+          "content": "For the calculation of the LCA results, the software program SimaPro 9.1.1 has been used."
+        },
+        {
+          "number": "3.3",
+          "title": "Information on allocation",
+          "content": "Different types of Kooltherm® insulation boards are produced at the production plant in Tiel (NL). For the use of energy there is only data available for the total site. This data has been allocated to Kooltherm® K8 based on physical properties. Production waste was allocated similarly."
+        },
+        {
+          "number": "3.4",
+          "title": "Informatie on cut off",
+          "content": "The total of neglected input flows per module is less than 5% of energy usage and mass as prescribed by EN15804+A2."
+        },
+        {
+          "number": "3.5",
+          "title": "Information on excluded processes",
+          "content": "Following processes were excluded for the inventory:\n- Impact of infrastructures\n- Consumables necessary for the functioning of the process, production, maintenance and end-of-life of equipment\n- Environmental impacts caused by the personnel of the production plants are not included in the LCA, e.g. waste from the cafeteria and sanitary installations or environmental effects caused by commuter traffic. Heating or cooling of the plants in order to ensure a comfortable indoor climate for the personnel could not be distinguished during the data collection and is therefore included."
+        }
+      ]
+    }
+  ]
+}

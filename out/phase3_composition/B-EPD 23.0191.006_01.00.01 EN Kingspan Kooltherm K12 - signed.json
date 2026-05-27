@@ -1,0 +1,18 @@
+{
+  "components": [],
+  "declarations": null,
+  "_source": {
+    "pdf_filename": "B-EPD 23.0191.006_01.00.01 EN Kingspan Kooltherm K12 - signed.pdf",
+    "pdf_sha256": "dc110f9f93e224960dbb448f52c7ea5f05e51c4824c2fa22f95370c4c9c59b55",
+    "api_pages": "3",
+    "api_pages_resolved": "3",
+    "api_pdf_bytes": 103954,
+    "api_pdf_sha256": "fc6a6c1658f0d2f27ab659956920c44895ca5543c3b564bccc64a58c70d75536",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 23.0191.006_01.00.01 EN Kingspan Kooltherm K12 - signed.p3.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:22:32.470Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 2941,
+    "output_tokens": 50
+  }
+}

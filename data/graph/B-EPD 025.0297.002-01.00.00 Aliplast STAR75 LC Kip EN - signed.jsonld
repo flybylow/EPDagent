@@ -1,0 +1,266 @@
+{
+  "@context": {
+    "@vocab": "https://epdagent.dev/vocab/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "EPD": "https://epdagent.dev/vocab/EPD",
+    "ProgramOperator": "https://epdagent.dev/vocab/ProgramOperator",
+    "declaredUnit": {
+      "@id": "https://epdagent.dev/vocab/declaredUnit",
+      "@type": "schema:QuantitativeValue"
+    },
+    "programOperator": {
+      "@id": "https://epdagent.dev/vocab/programOperator",
+      "@type": "@id"
+    },
+    "producer": {
+      "@id": "https://epdagent.dev/vocab/producer",
+      "@type": "@id"
+    },
+    "verifier": {
+      "@id": "https://epdagent.dev/vocab/verifier",
+      "@type": "@id"
+    },
+    "pcrReference": "https://epdagent.dev/vocab/pcrReference",
+    "epdNumber": "https://epdagent.dev/vocab/epdNumber",
+    "language": "https://epdagent.dev/vocab/language",
+    "filenamePattern": "https://epdagent.dev/vocab/filenamePattern",
+    "schema:name": "https://schema.org/name",
+    "schema:address": "https://schema.org/address",
+    "schema:addressCountry": "https://schema.org/addressCountry",
+    "schema:validFrom": {
+      "@id": "https://schema.org/validFrom",
+      "@type": "xsd:date"
+    },
+    "schema:validThrough": {
+      "@id": "https://schema.org/validThrough",
+      "@type": "xsd:date"
+    },
+    "schema:value": "https://schema.org/value",
+    "schema:unitCode": "https://schema.org/unitCode",
+    "prov:wasDerivedFrom": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "prov:generatedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "extractionCoverage": "https://epdagent.dev/vocab/extractionCoverage",
+    "productSection": {
+      "@id": "https://epdagent.dev/vocab/productSection",
+      "@type": "@id"
+    },
+    "composition": {
+      "@id": "https://epdagent.dev/vocab/composition",
+      "@type": "@id"
+    },
+    "lcaStudy": {
+      "@id": "https://epdagent.dev/vocab/lcaStudy",
+      "@type": "@id"
+    },
+    "lcaTables": {
+      "@id": "https://epdagent.dev/vocab/lcaTables",
+      "@type": "@id"
+    },
+    "scenarios": {
+      "@id": "https://epdagent.dev/vocab/scenarios",
+      "@type": "@id"
+    },
+    "bibliography": {
+      "@id": "https://epdagent.dev/vocab/bibliography",
+      "@type": "@id"
+    },
+    "epdSections": {
+      "@id": "https://epdagent.dev/vocab/epdSections",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://localhost:3000/id/epd/B-EPD%20025.0297.002-01.00.00%20Aliplast%20STAR75%20LC%20Kip%20EN%20-%20signed",
+      "@type": [
+        "EPD",
+        "schema:Product"
+      ],
+      "epdNumber": "025.0297.002-01.00.00",
+      "schema:name": "STAR 75 sash, turn-and-tilled, tilled window system",
+      "schema:description": "Low Carbon",
+      "verificationStatement": "THIRD PARTY VERIFIED",
+      "conformityBasis": "in accordance with EN 15804+A2 and B-EPD PCR",
+      "declaredScope": "Coverage of 1 m2 of external wall with a window ( with a surface of < 2.3 m2) providing thermal and acoustic insulation, natural light transmission, water and air tightness and natural ventilation over a lifespan of 60 years.",
+      "declaredModules": [
+        "A123",
+        "A4",
+        "A5",
+        "B",
+        "C",
+        "D"
+      ],
+      "filenamePattern": "unknown",
+      "declaredUnit": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2"
+      },
+      "schema:validFrom": "2025-07-04",
+      "schema:validThrough": "2030-07-04",
+      "programOperator": {
+        "@id": "http://localhost:3000/id/operator/B-EPD"
+      },
+      "producer": {
+        "@id": "http://localhost:3000/id/org/316279078ee4"
+      },
+      "prov:wasDerivedFrom": {
+        "@type": "prov:Entity",
+        "schema:name": "B-EPD 025.0297.002-01.00.00 Aliplast STAR75 LC Kip EN - signed.pdf"
+      },
+      "prov:generatedAtTime": "2026-05-26T18:00:07.769Z",
+      "productSection": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.0297.002-01.00.00%2520Aliplast%2520STAR75%2520LC%2520Kip%2520EN%2520-%2520signed/product"
+      },
+      "lcaStudy": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.0297.002-01.00.00%2520Aliplast%2520STAR75%2520LC%2520Kip%2520EN%2520-%2520signed/lca-study"
+      },
+      "scenarios": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.0297.002-01.00.00%2520Aliplast%2520STAR75%2520LC%2520Kip%2520EN%2520-%2520signed/scenarios"
+      },
+      "epdSections": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.0297.002-01.00.00%2520Aliplast%2520STAR75%2520LC%2520Kip%2520EN%2520-%2520signed/sections"
+      },
+      "extractionCoverage": {
+        "phase1": true,
+        "phase2": true,
+        "phase3_product": true,
+        "phase3_composition": false,
+        "phase3_lca_study": true,
+        "phase4_lca": [],
+        "phase5_scenarios": true,
+        "phase6_refs": false,
+        "phase7_epd_sections": true
+      }
+    },
+    {
+      "@id": "http://localhost:3000/id/operator/B-EPD",
+      "@type": "ProgramOperator",
+      "schema:name": "Federal Public Service Health, Food Chain Safety and Environment",
+      "operatorCode": "B-EPD"
+    },
+    {
+      "@id": "http://localhost:3000/id/org/316279078ee4",
+      "@type": "schema:Organization",
+      "schema:name": "Aliplast NV",
+      "schema:address": null,
+      "schema:addressCountry": "BE"
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.0297.002-01.00.00%2520Aliplast%2520STAR75%2520LC%2520Kip%2520EN%2520-%2520signed/product",
+      "@type": "ProductSection",
+      "description": "Star 75 is aluminium window system. The frames are made of aluminium profiles with thermal breaks. Elastomer seals are used to ensure watertightness.\n\nThis is a specific EPD for a specific product group produced by Aliplast NV.",
+      "intendedUse": "Window system is used in a window in all types of residential and non-residential buildings, both for new-build and renovations.",
+      "referenceServiceLifeYears": 60,
+      "referenceFlow": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2",
+        "description": "COVERAGE OF 1 M2 OF EXTERNAL WALL WITH A WINDOW (WITH A SURFACE OF < 2.3 M2) PROVIDING THERMAL AND ACOUSTIC INSULATION, NATURAL LIGHT TRANSMISSION, WATER AND AIR TIGHTNESS AND NATURAL VENTILATION OVER A LIFESPAN OF 60-YEARS."
+      }
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.0297.002-01.00.00%2520Aliplast%2520STAR75%2520LC%2520Kip%2520EN%2520-%2520signed/lca-study",
+      "@type": "LcaStudy",
+      "sectionTitle": "3 LCA-STUDY",
+      "standardsAndMethodology": "The allocation procedure described by the European standard EN 15804+A2 has been followed.",
+      "lcaSoftwareAndDatabase": "For the calculation of the LCA results, the software program SimaPro 9.5.1 has been used.",
+      "cutOffCriteria": "The following processes are considered below cut-off: \n• Recycling of raw materials packaging.\n• All activities and energy use related to the offices and personnel.\n• Steel cassettes as packaging of one of the raw materials, as these are re-used countless times.\n• Infrastructure & impacts related to the use of the machines at Aliplast's site.\nCut-off criteria described in EN15804+A2 has been followed: 5% of energy and materials by module and 1% of total energy and raw materials.",
+      "allocation": "Allocation of inputs and outputs has been necessary in the manufacturing stage A3. Allocation has been performed using physical relationship – annual usage vs. annual volume of the specific window system produced.\nThe allocation procedure described by the European standard EN 15804+A2 has been followed.",
+      "timeRepresentativeness": "The LCA study has been performed in October 2024.",
+      "additionalParagraphs": [
+        "Following processes were excluded for the inventory:\n- Flows related to human activities such as employee transport and administration activity."
+      ],
+      "subsections": [
+        {
+          "number": "3.1",
+          "title": "Date of LCA-study",
+          "content": "The LCA study has been performed in October 2024."
+        },
+        {
+          "number": "3.2",
+          "title": "Software",
+          "content": "For the calculation of the LCA results, the software program SimaPro 9.5.1 has been used."
+        },
+        {
+          "number": "3.3",
+          "title": "Information on allocation",
+          "content": "Allocation of inputs and outputs has been necessary in the manufacturing stage A3. Allocation has been performed using physical relationship – annual usage vs. annual volume of the specific window system produced.\nThe allocation procedure described by the European standard EN 15804+A2 has been followed."
+        },
+        {
+          "number": "3.4",
+          "title": "Information on cut off",
+          "content": "The following processes are considered below cut-off: \n• Recycling of raw materials packaging.\n• All activities and energy use related to the offices and personnel.\n• Steel cassettes as packaging of one of the raw materials, as these are re-used countless times.\n• Infrastructure & impacts related to the use of the machines at Aliplast's site.\nCut-off criteria described in EN15804+A2 has been followed: 5% of energy and materials by module and 1% of total energy and raw materials."
+        },
+        {
+          "number": "3.5",
+          "title": "Information on excluded processes",
+          "content": "Following processes were excluded for the inventory:\n- Flows related to human activities such as employee transport and administration activity."
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.0297.002-01.00.00%2520Aliplast%2520STAR75%2520LC%2520Kip%2520EN%2520-%2520signed/scenarios",
+      "@type": "ScenarioSet",
+      "sectionTitle": "10 DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
+      "scenarios": [
+        {
+          "module": "A1",
+          "number": "10.1",
+          "title": "A1 - raw material supply",
+          "description": "This module takes into account the extraction and processing of all raw materials and energy which occur upstream to the studied manufacturing process."
+        },
+        {
+          "module": "A2",
+          "number": "10.2",
+          "title": "A2 – transport to the manufacturer",
+          "description": "The raw materials are transported to the manufacturing site."
+        },
+        {
+          "module": "A3",
+          "number": "10.3",
+          "title": "A3 - manufacturing",
+          "description": "This module considers the production process, including waste generated during production, as well as treatment of waste coming from raw materials packaging."
+        },
+        {
+          "module": "A4",
+          "number": "10.4",
+          "title": "A4 – transport to the building site",
+          "description": "Fuel type and consumption of vehicle or vehicle type used for transport: Truck 16-32 ton, EURO6\nDistance: 100 km\nCapacity utilisation (including empty returns): 50%\nBulk density of transported products: -\nVolume capacity utilisation factor: 1\n\nThe default B-EPD PCR scenario of 100 km has been considered."
+        },
+        {
+          "module": "A5",
+          "number": "10.5",
+          "title": "A5 – installation in the building",
+          "description": "At the construction site, product packaging materials become waste. The impact of packaging's EOL treatment has been included in this module (until end-of-waste point). All other processes and materials are out of scope of this study,\n\nPackaging waste type - Quantity, kg - Description\nWood - 1.21E-02, 5.28E-02, 1.27E-01 - RECYCLED, INCINERATED, LANDFILLED\nCardboard - 1.45E-01, 1.38E-02, 1.07E-02 - RECYCLED, INCINERATED, LANDFILLED\nPlastic - 1.69E-01, 3.60E-01, 2.05E-01 - RECYCLED, INCINERATED, LANDFILLED"
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520025.0297.002-01.00.00%2520Aliplast%2520STAR75%2520LC%2520Kip%2520EN%2520-%2520signed/sections",
+      "@type": "EpdSectionSet",
+      "blocks": [
+        {
+          "number": "13",
+          "title": "TECHNICAL INFORMATION FOR SCENARIO DEVELOPMENT",
+          "content": "Parts of the installation quantity Description\n\nProcesses necessary for the installation of the product 1 m2\nGLAZING, DOUBLE OR TRIPPLE, DEPENDING ON THE END-CLIENT OR THE REQUIRED U VALUES\n\nFixation & joining materials 12 STEEL WALL ANCHORS\n\nMaterial losses 0 kg BOTH WINDOW SYSTEM AND GLAZING ARE MADE TO SIZE"
+        },
+        {
+          "number": "14",
+          "title": "APPLICATION UNIT",
+          "content": "This paragraph gives information on the applied product and how the reference flow and table with impacts relate to different applications.\nSTAR 75 window systems have only 1 application.\n\nResults presented in this EPD are for 1 m2 of a window system with the size < 2.3 m2.\nDifferent dimensions are possible, and window systems are made to measure, depending on the requirements of the customer and limited by the glass supplier.\n\nTo calculate the environmental impact of a window system with a different surface area:\n- Results must be multiplied by the surface area (in m2) of the window system in question.\n\nFor example, if window system is 1.5 m2, results presented in this EPD have to be multiplied by 1.5.\n\nThe ratio between application and the reference flow in the EPD is, therefore 1."
+        },
+        {
+          "number": "15",
+          "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+          "content": "Description Type of fixing Level of reversibility Simplicity of disassembly Speed of disassembly Ease of handling (size and weight) Robustness of material (material resistance to disassembly) Comment\n\nOuter or inner wall of a residential or commercial building Steel wall anchors for mechanical fixing Reversible connections with light repairable damage Simple – requires the use of specific though common tools Speed of disassembly varies from quick to slow depending on element dimensions Easy to manipulate (by hand (small size and limited weight): one worker should be sufficient The material resists well during disassembly"
+        }
+      ]
+    }
+  ]
+}

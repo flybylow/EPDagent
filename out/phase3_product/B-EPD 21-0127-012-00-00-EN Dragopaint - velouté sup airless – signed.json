@@ -1,0 +1,71 @@
+{
+  "description": "Dragocryl velouté sup airless is a water-based paint. The product has 1.41 kg/L density and an average coverage 8.55 m2/L, with an opacity of 95.48 %.\n\nThis is a specific EPD from a single company.",
+  "intended_use": "Dragocryl velouté sup airless is applied to interior walls and ceilings, following the standard EN 13300.",
+  "reference_flow": {
+    "value": 1,
+    "unit": "m2",
+    "description": "The functional unit is: Protect and decorate 1 m2 of substrate for a lifespan of 10 years, when applied according to DTU 59.1."
+  },
+  "installation": "The scope of this B-EPD is as installed.\n\nProduct losses during application is accounted as 2%. \n\nMaterials for paint application are included. This EPD includes the impacts of all processes, and application materials necessary for applying the product.",
+  "reference_service_life_years": 10,
+  "geographical_representativity": "This EPD is a cradle-to-grave, and includes modules A123, A4, A5, B, C and D for the Belgian scenario.\nThe EPD is representative for the Belgian market.",
+  "production_process": "Raw materials are transported by truck to Dragopaint site in Belgium. The manufacturing process consist in mixing the ingredients, Belgian electricity mix is used in this purpose. Production losses represent 2.00 % in mass. Those losses are landfilled as inert waste in their end of life. The final product is packed in 15 liters buckets, interlayers, and wooden pallets, surrounded by plastic film. The packed product is then distributed by truck.",
+  "technical_properties": [
+    {
+      "property": "Opacity",
+      "standard": null,
+      "value": "95.48",
+      "unit": "%",
+      "comment": null
+    },
+    {
+      "property": "Average coverage",
+      "standard": null,
+      "value": "8.55",
+      "unit": "m2/liter",
+      "comment": null
+    },
+    {
+      "property": "Lifespan",
+      "standard": "DTU 59.1",
+      "value": "10",
+      "unit": "years",
+      "comment": null
+    },
+    {
+      "property": "COV",
+      "standard": null,
+      "value": "0.467",
+      "unit": "g/liter",
+      "comment": null
+    },
+    {
+      "property": "Biocide",
+      "standard": null,
+      "value": "0.15",
+      "unit": "% m/m",
+      "comment": null
+    },
+    {
+      "property": "Paint density",
+      "standard": null,
+      "value": "1.41",
+      "unit": "kg/liter",
+      "comment": null
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.pdf",
+    "pdf_sha256": "652da07295d0a6313acb20af893985679cd92a7c3baa0635c289f60aaeb96b32",
+    "api_pages": "2-4",
+    "api_pages_resolved": "2,3,4",
+    "api_pdf_bytes": 325259,
+    "api_pdf_sha256": "1311bb0d8cca02cab61229ee91df2000d380eddb50292ec44774ae72c6836b82",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.p2-p3-p4.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T17:50:24.878Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 7393,
+    "output_tokens": 812
+  }
+}

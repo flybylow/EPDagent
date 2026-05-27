@@ -1,0 +1,71 @@
+{
+  "description": "Unfaced mineral wool insulation in accordance with the EN 13162 standard. The insulation products are noncombustible, water repellent and have a high acoustic performance. The insulation products have different commercial names depending on the application.\n HOMETEC® 35 is a lightweight, unfaced mineral wool roll for use in pitched roofs, attics, timber frame walls and twin skin metal cladding.\n FRAMETEC® 35 is a lightweight, unfaced mineral wool roll for use in timber and steel frame walls.\n FRAMETEC® SLAB 35 is a lightweight, unfaced mineral wool semi-rigid slab for use in light steel frame walls.\n ACOUSTIC ROLL is a lightweight, unfaced mineral wool roll for use in partition walls, internal walls and floors.\n PARTY WALL ROLL is a lightweight, unfaced mineral wool roll for use in masonry cavity party.\n CAVITY BATT 35 is a semi-rigid mineral wool slab for use in external walls and masonry cavity party.\nThe product is available in thicknesses from 25 mm up to 260 mm.",
+  "intended_use": "HOMETEC® 35: for use in pitched roofs, attics, timber frame walls and twin skin metal cladding.\nFRAMETEC® 35: for use in timber and steel frame walls.\nFRAMETEC® SLAB 35: for use in light steel frame walls.\nACOUSTIC ROLL: for use in partition walls, internal walls and floors.\nPARTY WALL ROLL: for use in masonry cavity party.\nCAVITY BATT 35: for use in external walls and masonry cavity party.",
+  "reference_flow": {
+    "value": 1,
+    "unit": "m2",
+    "description": "1 m² thermal insulation with a thickness of 180 mm and RD value of 5,10 m²K/W."
+  },
+  "installation": "Materials for fixation and installation are not included. Regarding installation this EPD only includes the environmental impact related to the product itself:\n- the loss of material during construction;\n- the additional needed production;\n- transport;\n- end-of-life of the lost material during construction;\n- end-of-life of packaging material up to the end-of-waste state.\nFor installing the product following scenarios are possible: built-in or mechanical fixing. This may lead to the need of additional products and materials for which the impact is not included in this EPD and which shall be taken into account at building level. More detailed information on these scenarios can be found in our technical datasheets on our website www.ursa.be.",
+  "reference_service_life_years": 75,
+  "geographical_representativity": "The EPD is representative for the Belgian market.",
+  "production_process": "URSA manufactures glass wool using natural raw materials (sand), recycled materials (cullet) and additives that are melted into glass in a furnace. A high-speed fiberizing process divides the melted glass into millions of filaments, which are sprayed with a binding solution and accumulated on a conveyor belt. The resulting product is transported through a curing oven and cut to size. In some cases, facing materials are attached to the glass wool product. Furthermore, production of packaging is considered during this phase.",
+  "technical_properties": [
+    {
+      "property": "Thickness",
+      "standard": null,
+      "value": "180",
+      "unit": "mm",
+      "comment": null
+    },
+    {
+      "property": "Thermal characteristics (mandatory)",
+      "standard": "EN 12667 EN 12939",
+      "value": "0,035",
+      "unit": "W/(m.K)",
+      "comment": null
+    },
+    {
+      "property": "R-value",
+      "standard": null,
+      "value": "5,10",
+      "unit": "m2 K/W",
+      "comment": null
+    },
+    {
+      "property": "Reaction to fire",
+      "standard": "EN 13501-1",
+      "value": "A1",
+      "unit": null,
+      "comment": null
+    },
+    {
+      "property": "Designation code CE",
+      "standard": null,
+      "value": "HOMETEC® 35: EN13162- MW-T2-WS-MU1-AFr5 FRAMETEC® 35: EN13162- MW- T2-WS-MU1-AFr5 FRAMETEC® SLAB 35: EN13162- MW- T2-WS-MU1-AFr5 ACOUSTIC ROLL: EN13162- MW-T2-MU1-AFr5 PARTY WALL ROLL: EN13162- MW- T2-MU1-AFr5 CAVITY BATT 35: EN13162- MW- T4-WS-WL(P)",
+      "unit": null,
+      "comment": null
+    },
+    {
+      "property": "Application",
+      "standard": null,
+      "value": "Thermal Insulation in Building",
+      "unit": null,
+      "comment": null
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD-LAMBDA 35 NAKED-Ursa-026.0184.001-EN-signed.pdf",
+    "pdf_sha256": "c16c8bd610fffb8e96be0ebdda7b3c76c3c056541930ff6383d5cfc89fe9ee68",
+    "api_pages": "3-18",
+    "api_pages_resolved": "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
+    "api_pdf_bytes": 1212772,
+    "api_pdf_sha256": "815ae7bae674468ef86b468a32e5c5f8845347b5986a3b0c4702e60c0b024af7",
+    "api_pdf_slice": "out/pdf_slices/B-EPD-LAMBDA 35 NAKED-Ursa-026.0184.001-EN-signed.p3-p4-p5-p6-p7-p8-p9-p10-p11-p12-p13-p14-p15-p16-p17-p18.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:43:12.065Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 37909,
+    "output_tokens": 1331
+  }
+}

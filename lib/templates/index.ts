@@ -1,5 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
+import { loadPhase7 } from "../data";
+import { enrichPhase2Data } from "../extract/phase2-enrich";
 import { buildDraft } from "./build";
 import { loadTemplate } from "./load";
 import { renderDraftHtml } from "./render-html";
@@ -12,7 +14,8 @@ export function draftDirForStem(stem: string): string {
 
 export function writeDraftOutputs(stem: string, data: MergedPhaseData, templateFile?: string): DraftDocument {
   const template = loadTemplate(templateFile);
-  const draft = buildDraft(stem, data, template);
+  const phase2 = enrichPhase2Data(data.phase2, loadPhase7(stem));
+  const draft = buildDraft(stem, { ...data, phase2 }, template);
   const dir = draftDirForStem(stem);
 
   fs.mkdirSync(dir, { recursive: true });

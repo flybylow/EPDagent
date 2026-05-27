@@ -1,5 +1,6 @@
-import * as pdfjs from "pdfjs-dist/legacy/build/pdf.mjs";
 import * as fs from "node:fs";
+import { pdfjs, pdfjsDocumentOptions } from "./configure-pdfjs";
+import { joinLineParts } from "./join-line-parts";
 
 export interface PdfTextLine {
   y: number;
@@ -9,7 +10,7 @@ export interface PdfTextLine {
 
 export async function extractPageLines(pdfPath: string, pageNum: number): Promise<PdfTextLine[]> {
   const data = new Uint8Array(fs.readFileSync(pdfPath));
-  const doc = await pdfjs.getDocument({ data, disableFontFace: true }).promise;
+  const doc = await pdfjs.getDocument(pdfjsDocumentOptions(data)).promise;
   const page = await doc.getPage(pageNum);
   const content = await page.getTextContent();
   const byY = new Map<number, Array<{ x: number; text: string }>>();
@@ -26,7 +27,7 @@ export async function extractPageLines(pdfPath: string, pageNum: number): Promis
     .sort((a, b) => b[0] - a[0])
     .map(([y, parts]) => {
       parts.sort((a, b) => a.x - b.x);
-      return { y, parts, text: parts.map((p) => p.text).join(" ") };
+      return { y, parts, text: joinLineParts(parts) };
     });
 }
 
@@ -43,6 +44,6 @@ export async function extractPagesLines(
 
 export async function pdfPageCount(pdfPath: string): Promise<number> {
   const data = new Uint8Array(fs.readFileSync(pdfPath));
-  const doc = await pdfjs.getDocument({ data, disableFontFace: true }).promise;
+  const doc = await pdfjs.getDocument(pdfjsDocumentOptions(data)).promise;
   return doc.numPages;
 }

@@ -1,12 +1,12 @@
 import type { Phase1Data, Phase2Data } from "../types";
 
 export interface TemplateFieldDef {
-  id: string;
+  id?: string;
   label: string;
   path: string;
   /** Use when primary path is empty (e.g. B-EPD conformity_basis vs ETEX standards_conformity). */
   fallbackPath?: string;
-  format?: "text" | "date" | "date-eu" | "enum" | "list";
+  format?: "text" | "date" | "date-eu" | "enum" | "list" | "years";
   enumLabels?: Record<string, string>;
 }
 

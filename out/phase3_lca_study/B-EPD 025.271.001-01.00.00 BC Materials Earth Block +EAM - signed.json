@@ -1,0 +1,43 @@
+{
+  "section_title": "LCA-STUDY",
+  "standards_and_methodology": "Accordingly to the EN 15804:2012+A2:2019 standard and the BE-EPD PCR, when generic data from Ecoinvent V3 are used, the model of \"allocation, cut-off by classification\" is used.",
+  "pcr_reference": "BE-EPD PCR",
+  "lca_software_and_database": "For the calculation of the LCA results, the software program Open LCA v2.2.0. has been used.\n\nBackground data come from Ecoinvent 3.10.\nAccordingly to the EN 15804:2012+A2:2019 standard and the BE-EPD PCR, when generic data from Ecoinvent V3 are used, the model of \"allocation, cut-off by classification\" is used. \nDate of update : Ecoinvent v3.10 – June 2024",
+  "goal_and_scope": null,
+  "functional_unit": null,
+  "system_boundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 11\nDeclared modules (☒): A1, A2, A3, A4, A5, B1, B2, B3, B4, B5, B6, B7, C1, C2, C3, C4, D\nNot declared (☐): —\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4, A5\nUse stage: B1, B2, B3, B4, B5, B6, B7\nEnd of life stage: C1, C2, C3, C4\nBeyond the system boundaries: D\n\nModule labels (vertical text):\nA1: Raw materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: Construction\nB1: Use\nB2: Maintenance\nB3: Repa\nB4: Replacement\nB5: Refurbishment\nB6: Operational energy use\nB7: Operational water use\nC1: construction demolition\nC2: Transport\nC3: Waste processing\nC4: Disposal\nD: Recycling",
+  "production_sites": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer BC Materials in a single production site in Brussels (including mentioned operational sites as ASIAT, Claesen and Eurakor).",
+  "cut_off_criteria": "Concerning cut-off, the EN15084+A2 rule has been applied: \"In case of insufficient input data, or data daps for a unit process, the cut-off criteria shall be 1% of renewable, 1% of nonrenewable primary energy usage, 1% of the total mass input of that unit process.\"\n\nFurthermore, the EN15804+A2 claims: \"The total of neglected input flows per module, e.g. per module A1-A3, A4-A5, B1-B5, B6-B7, C1-C4 and module D shall be a maximum of 5 % of energy usage and mass. Conservative assumptions in combination with plausibility considerations and expert judgement can be used to demonstrate compliance with these criteria.\"\n\nFor Léém Earth Adhesive Mortar, the reversible aspect of the clay binder makes that all construction site remains can be reused, hence no waste during installation, as mentioned in the German PCR for Earth materials.\n\nThe packaging of raw materials (methylcellulose) for Earth Adhesive mortar is under the cut off rule with a weight of 0.5% in the mortar and the mortar representing 2.5% of the functional unit total weight.\n\nThe charges and benefits of paper in module D for paper bag packaging from Earth adhesive mortar are cut off due to the very small part of weight.\n\nExcept for direct infrastructure in the operational site, all flows of mass and energy have been taken into account.",
+  "allocation": "Mass allocation has been used to model secondary resources included in the product (Washed concrete, Loam and Brussels sand) as well as for the modelling of module D. \n\nSecondary resources are 'free of environmental burden' because of their waste status.",
+  "data_quality": "Inventory data for the compressed earth block production, its installation, its packaging as well as annex consumptions are primary data given by BC Materials and production site (Claesen). \n\nThe declared value is based on the CEB_140 installed with Earth Adhesive mortar.",
+  "time_representativeness": "Manufacturer specific data have been collected for the year 2023.",
+  "geographical_representativeness": "The Belgian residual mix in the background process in Ecoinvent V3.10 corresponds to 2020. It is used as it is.",
+  "technology_representativeness": null,
+  "impact_assessment": "For the CEN indicators all CF are conform to EN 15804+A2: 2019 with EF 3.1 for normalization and weighting step. \n\nThe characterization factors from EC-JRC were applied. No additional or deviating characterisation factors were used.",
+  "interpretation": null,
+  "additional_paragraphs": [
+    "Following processes were excluded for the inventory:\n• Employee transport and business travel \n• Energy use, infrastructure and consumables from administrative departments (e.g. head offices and sales offices)\n• Lighting, heating and cleaning of production sites, Consumables necessary for the functioning of the process (e.g. lubricating oil),\n• Production, maintenance and end-of-life of equipment.",
+    "The product does not contain any biogenic carbon. The only biogenic carbon present in this scenario is the one included in the wood.\n\nGlobally, the biogenic carbon content is calculated according to the following formula:\nkg C/UF = C content of component (kg C/kg) x quantity of component per UF (kg/UF) x characterization factor (+/-1)\n\nThe Carbon to CO2 conversion is performed by multiplying the C content by the molar ratio of the two components: 44/12 = 3.667.\n\nConcerning packaging, there is biogenic carbon: \n• Wood pallet (A3 ): the quantity of carbon dioxide captured by wood is evaluated using the generic estimate for wood-based products of approximately 0.5 kg C/kg or 1.83 kgCO2/kg.\n– For 1 FU (market based): 1.99E-1 x 1.83 = 3.65E-1 kg CO2/UF.\n\nOther packaging component does not contain biogenic carbon.\n\nBiogenic carbon content of the product (at factory gate) 0 kg C/FU\nBiogenic carbon content of packaging (at factory gate) 9.94E-2 kg C/FU",
+    "Carbon offsetting is not allowed in the EN 15804+A2 and hence not taken into account in the calculations. BC Materials does not take any carbon offsetting.",
+    "There are cementitious materials in our scenario, both in the production step and in the installation steps. \n\nDuring the lifetime of the Compressed Earth Blocks, the carbon dioxide present in the air will penetrate the blocks from the surface of the material. This carbon dioxide reacts with the calocium hydroxide (Ca(OH)2), present in the block (cement). This phenomenon is called carbonation. \n\nThe quantity of carbon dioxide which is absorbed is linked on a stoichiometric base to the amount of calcium oxide (CaO) and responds to the following equation: \nCa (OH)2 + CO2 → CaCO3 + H2O\n1 kmol of Ca(OH)2 (74.09 kg/kmol) allows the sequestration of 1 kmol of CO2 (44.01 kg/kmol).\n\nThe washed concrete reused is assumed to be already fully carbonated and then its contribution is not taken into account.\n\nConcerning the cement present in the blocks, we need 9.06 kg of cement that includes 51.9% of CaO (https://www.holcim.be/sites/belgium/files/documents/11_cem_iii_a_425_n_la_fr.pdf). The Annex G3 of the standard EN 16757 has been used.\n\nCarbonatation for the blocks is then equal to 1.14 kg CO2/m².",
+    "This EPD is not an average EPD hence there is no variability declared.",
+    "The Belgian residual mix in the background process in Ecoinvent V3.10 corresponds to 2020. It is used as it is.\n\nOrigin of energy: Nuclear 34,3%, Natural gas 19,2%, Imports 14,5%, Wind 13,3%, Hydro 1,4%, Photovoltaics 10,4%, Waste 2,5%, Biomass 2,6%, Oil 0,0%, Other 1,8%"
+  ],
+  "subsections": null,
+  "_source": {
+    "pdf_filename": "B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed.pdf",
+    "pdf_sha256": "423c951eac4a4121b02a3c9fc71a346b8eeae5b97bceec40ec250d6c795e4132",
+    "api_pages": "8-10",
+    "api_pages_resolved": "8,9,10",
+    "api_pdf_bytes": 160383,
+    "api_pdf_sha256": "d98930569a5867e4d672a5f20eaeb9b5639c0f4525a90612d579ff476e838370",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed.p8-p9-p10.pdf",
+    "extracted_by": "claude-api+pdf-system-boundaries-parser",
+    "extracted_at": "2026-05-26T19:08:14.894Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 8665,
+    "output_tokens": 4096,
+    "system_boundaries_pages": "11",
+    "system_boundaries_refreshed_at": "2026-05-26T20:39:01.500Z"
+  }
+}

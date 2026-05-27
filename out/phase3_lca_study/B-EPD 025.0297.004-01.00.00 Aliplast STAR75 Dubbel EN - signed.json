@@ -1,0 +1,112 @@
+{
+  "section_title": "3 LCA-STUDY",
+  "standards_and_methodology": "The allocation procedure described by the European standard EN 15804+A2 has been followed.\nCut-off criteria described in EN15804+A2 has been followed: 5% of energy and materials by module and 1% of total energy and raw materials.\nFollowing EN15804+A2, flows of biogenic carbon have been allocated according to physical properties, because the net sum of biogenic CO2 uptake and release over modules A1-C4 should be zero. Relevant data records have been adjusted accordingly.\nCarbon offsetting is not allowed in EN 15804+A2 and hence not taken into account in the calculations.",
+  "pcr_reference": null,
+  "lca_software_and_database": "For the calculation of the LCA results, the software program SimaPro 9.5.1 has been used.\nDatabased used for modelling include:\n- Ecoinvent 3.9\n- Industry 2.0",
+  "goal_and_scope": null,
+  "functional_unit": null,
+  "system_boundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 11\nDeclared modules (☒): A1, A2, A3, A4, A5, C1, C2, C3, C4, D\nNot declared (☐): B1, B2, B3, B4, B5, B6, B7\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4, A5\nEnd of life stage: C1, C2, C3, C4\nBeyond the system boundaries: D\n\nModule labels (vertical text):\nA1: Raw materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: Construction\nB1: Use\nB2: Maintenance\nB3: Repa\nB4: Replacement\nB5: Refurbishment\nB6: Operational energy use\nB7: Operational water use\nC1: construction\nC2: Transport\nC3: Waste processing\nC4: Disposal\nD: Recovery",
+  "production_sites": "The data used for the LCA is specific for this product which is manufactured by a single manufacturer in a single production site.",
+  "cut_off_criteria": "The following processes are considered below cut-off: \n• Recycling of raw materials packaging.\n• All activities and energy use related to the offices and personnel.\n• Steel cassettes as packaging of one of the raw materials, as these are re-used countless times.\n• Infrastructure & impacts related to the use of the machines at Aliplast's site.\nCut-off criteria described in EN15804+A2 has been followed: 5% of energy and materials by module and 1% of total energy and raw materials.",
+  "allocation": "Allocation of inputs and outputs has been necessary in the manufacturing stage A3. Allocation has been performed using physical relationship – annual usage vs. annual volume of the specific window system produced.\nThe allocation procedure described by the European standard EN 15804+A2 has been followed.",
+  "data_quality": "Foreground processes include:\n- Raw Materials used, their packaging, transportation mode and related quantities,\n- Energy mix and amount used for production,\n- Types of product packaging and related quantities,\n- Environmental impacts of raw materials for which EPDs were available,\n- All other quantitative information. \nGeneric datasets were used for:\n- Extraction and manufacturing of raw materials, packaging,\n- Transportation and treatment of waste from raw material packaging and production,\n- Waste treatment processes,\n- Transport to end-of-life treatment,\n- End-of-life treatment processes and scenarios.\n– Declared value is representative of the representative product – Double casement turn-and-tilled Window System, which is also a worst case (highest impacts) of the product group covered by this EPD.",
+  "time_representativeness": "Manufacturer specific data have been collected for the year 2022.",
+  "geographical_representativeness": "Renewable energy mix was modelled based on the statistics for Belgium.",
+  "technology_representativeness": null,
+  "impact_assessment": "The characterization factors from EC-JRC were applied: EF 3.1. No additional or deviating characterization factors were used.",
+  "interpretation": null,
+  "additional_paragraphs": [
+    "The following processes were excluded from the inventory:\n- Flows related to human activities such as employee transport and administration activity.",
+    "Only product packaging contains biogenic carbon. Following EN15804+A2, flows of biogenic carbon have been allocated according to physical properties, because the net sum of biogenic CO2 uptake and release over modules A1-C4 should be zero. Relevant data records have been adjusted accordingly.\n\nBiogenic carbon content (kg C / FU )\nBiogenic carbon content in product (at the gate) 0\nBiogenic carbon content in accompanying packaging (at the gate) 2.39E-01",
+    "This EPD covers 2 types of window systems. The differences between these systems are minor - quantities of only some components vary (handles, fittings, one plastic part). Consequently, this EPD is representative of the worst-case scenario.",
+    "Aliplast purchases renewable energy mix from their supplier. Renewable energy mix was modelled based on the statistics for Belgium.\nGWP of this mix is 0.049 kg CO2 eq. / kWh."
+  ],
+  "subsections": [
+    {
+      "number": "3.1",
+      "title": "Date of LCA-study",
+      "content": "The LCA study has been performed in October 2024."
+    },
+    {
+      "number": "3.2",
+      "title": "Software",
+      "content": "For the calculation of the LCA results, the software program SimaPro 9.5.1 has been used."
+    },
+    {
+      "number": "3.3",
+      "title": "Information on allocation",
+      "content": "Allocation of inputs and outputs has been necessary in the manufacturing stage A3. Allocation has been performed using physical relationship – annual usage vs. annual volume of the specific window system produced.\nThe allocation procedure described by the European standard EN 15804+A2 has been followed."
+    },
+    {
+      "number": "3.4",
+      "title": "Information on cut-off",
+      "content": "The following processes are considered below cut-off: \n• Recycling of raw materials packaging.\n• All activities and energy use related to the offices and personnel.\n• Steel cassettes as packaging of one of the raw materials, as these are re-used countless times.\n• Infrastructure & impacts related to the use of the machines at Aliplast's site.\nCut-off criteria described in EN15804+A2 has been followed: 5% of energy and materials by module and 1% of total energy and raw materials."
+    },
+    {
+      "number": "3.5",
+      "title": "Information on excluded processes",
+      "content": "The following processes were excluded from the inventory:\n- Flows related to human activities such as employee transport and administration activity."
+    },
+    {
+      "number": "3.6",
+      "title": "Information on biogenic carbon modelling",
+      "content": "Only product packaging contains biogenic carbon. Following EN15804+A2, flows of biogenic carbon have been allocated according to physical properties, because the net sum of biogenic CO2 uptake and release over modules A1-C4 should be zero. Relevant data records have been adjusted accordingly.\n\nBiogenic carbon content (kg C / FU )\nBiogenic carbon content in product (at the gate) 0\nBiogenic carbon content in accompanying packaging (at the gate) 2.39E-01"
+    },
+    {
+      "number": "3.7",
+      "title": "Information on carbon off-setting",
+      "content": "Carbon offsetting is not allowed in EN 15804+A2 and hence not taken into account in the calculations."
+    },
+    {
+      "number": "3.8",
+      "title": "Additional or deviating characterization factors",
+      "content": "The characterization factors from EC-JRC were applied: EF 3.1. No additional or deviating characterization factors were used."
+    },
+    {
+      "number": "3.9",
+      "title": "Description of the variability",
+      "content": "This EPD covers 2 types of window systems. The differences between these systems are minor - quantities of only some components vary (handles, fittings, one plastic part). Consequently, this EPD is representative of the worst-case scenario."
+    },
+    {
+      "number": "3.10",
+      "title": "Specificity",
+      "content": "The data used for the LCA is specific for this product which is manufactured by a single manufacturer in a single production site."
+    },
+    {
+      "number": "3.11",
+      "title": "Period of data collection",
+      "content": "Manufacturer specific data have been collected for the year 2022."
+    },
+    {
+      "number": "3.12",
+      "title": "Information on data collection",
+      "content": "Foreground processes include:\n- Raw Materials used, their packaging, transportation mode and related quantities,\n- Energy mix and amount used for production,\n- Types of product packaging and related quantities,\n- Environmental impacts of raw materials for which EPDs were available,\n- All other quantitative information. \nGeneric datasets were used for:\n- Extraction and manufacturing of raw materials, packaging,\n- Transportation and treatment of waste from raw material packaging and production,\n- Waste treatment processes,\n- Transport to end-of-life treatment,\n- End-of-life treatment processes and scenarios.\n– Declared value is representative of the representative product – Double casement turn-and-tilled Window System, which is also a worst case (highest impacts) of the product group covered by this EPD."
+    },
+    {
+      "number": "3.13",
+      "title": "Database used for background data",
+      "content": "Databased used for modelling include:\n- Ecoinvent 3.9\n- Industry 2.0"
+    },
+    {
+      "number": "3.14",
+      "title": "Energy mix",
+      "content": "Aliplast purchases renewable energy mix from their supplier. Renewable energy mix was modelled based on the statistics for Belgium.\nGWP of this mix is 0.049 kg CO2 eq. / kWh."
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 025.0297.004-01.00.00 Aliplast STAR75 Dubbel EN - signed.pdf",
+    "pdf_sha256": "4c73c735316035f8359c687c4955f5ab7730fbd90cec179e9a085f6057722580",
+    "api_pages": "8-10",
+    "api_pages_resolved": "8,9,10",
+    "api_pdf_bytes": 60575,
+    "api_pdf_sha256": "3a8982a167f9e256b69e822479b917632934eb432a880a738dd5255199cff744",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.0297.004-01.00.00 Aliplast STAR75 Dubbel EN - signed.p8-p9-p10.pdf",
+    "extracted_by": "claude-api+pdf-system-boundaries-parser",
+    "extracted_at": "2026-05-26T17:22:56.522Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 7761,
+    "output_tokens": 2469,
+    "system_boundaries_pages": "11",
+    "system_boundaries_refreshed_at": "2026-05-26T20:39:01.460Z"
+  }
+}

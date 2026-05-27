@@ -1,0 +1,52 @@
+{
+  "epd_number": "23-0191-003-01.00.01",
+  "program_operator": "Federal Public Service Health, Food Chain Safety and Environment",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": "Kingspan Insulation BV",
+    "address": null,
+    "country": null
+  },
+  "product_name": "Kooltherm® K8",
+  "product_description": "thermal insulation board",
+  "standards_conformity": null,
+  "verification_statement": "THIRD PARTY VERIFIED",
+  "conformity_basis": "in accordance with EN 15804+A2, EN 16783 and NBN/DTD B08-001",
+  "declared_scope": "1 m2 thermal insulation board with a thickness of 80 mm with an RD-value of 3,80 m2·K/W",
+  "declared_modules": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "C",
+    "D"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "m2"
+  },
+  "validity": {
+    "issued": "2023-04-20",
+    "valid_until": "2028-04-20"
+  },
+  "pcr_reference": "EN 16783",
+  "verifier": {
+    "name": null,
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 23.0191.003_01.00.01 EN Kingspan Kooltherm K8 - signed.pdf",
+    "pdf_sha256": "54126da41d22c7435bd572d70db49eeba6a715ea80f8bf268407d3b68f28fae7",
+    "api_pages": "1-4",
+    "api_pages_resolved": "1,2,3,4",
+    "api_pdf_bytes": 476204,
+    "api_pdf_sha256": "c36884004f13d49e7a28497e5d7fa050cd8ff1b50aedbbfaa2c53870872efd3f",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 23.0191.003_01.00.01 EN Kingspan Kooltherm K8 - signed.p1-p2-p3-p4.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:22:29.635Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 10287,
+    "output_tokens": 523
+  }
+}

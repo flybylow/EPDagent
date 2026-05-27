@@ -1,0 +1,111 @@
+{
+  "section_title": "LCA-STUDY",
+  "standards_and_methodology": "As specified in EN 15804:2012+A2:2019/AC:2021 and the Product-Category Rules, the environmental impacts are declared and reported using the baseline characterization factors are from the ILCD. Characterization factors EN15804 based on EF 3.1.",
+  "pcr_reference": "Product-Category Rules",
+  "lca_software_and_database": "For the calculation of the LCA results, the software program OpenLCA 2.4.0 has been used. The Ecoinvent 3.10 database has been used to choose the most representative processes, considering that the data is representative of technological development, regionalized data and as current as possible.",
+  "goal_and_scope": null,
+  "functional_unit": "The declared unit is 1 m² thermal insulation with a thickness of 180 mm and RD value of 5,10 m²K/W. This product can be produced in thicknesses between 25 mm and 260 mm with corresponding RD-range from 0,70 m²K/W (25 mm) to 7,40 m²K/W (260 mm). The variability percentages for GWP-total (kg CO2 eq.) stages A1-A3 goes from -51/+25%. The results in this EPD can be converted to other thicknesses and corresponding RD-values.",
+  "system_boundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 9\nDeclared modules (☒): A1, A2, A3, A4, A5, C1, C2, C3, C4, D\nNot declared (☐): B2, B3, B4, B5, B6, B7\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4, A5\nEnd of life stage: C1, C2, C3, C4\nBeyond the system boundaries: D\n\nModule labels (vertical text):\nA1: Raw materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: Construction\nB2: Maintenance\nB3: Repair\nB4: Replacement\nB5: Refurbishment\nB6: Operational energy use\nB7: Operational water use\nC1: -construction demolition\nC2: Transport\nC3: Waste processing\nC4: Disposal\nD: -Recovery- Recycling-",
+  "production_sites": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site. The production data of the Desselgem factory, for the full year 2023, have been used.",
+  "cut_off_criteria": "The following processes are considered below cut-off:\n- The process energy and materials representing less than 1% of the whole energy and mass are neglected (when they do not cause significant impacts);\n- Diffuse emissions of particulate matter during transport and storage of raw materials, & long-term emissions.\n- The total of neglected input flows per module is less than 5% of energy usage and mass as prescribed by EN15804+A2].\n\nFollowing processes were excluded for the inventory:\n- lighting, heating and cleaning of workshops;\n- the administrative department;\n- transportation of employees;\n- the manufacturing of the production tool and transport systems (machines, trucks, etc.)\n- maintenance of the infrastructure.",
+  "allocation": "At URSA, different types of mineral wool insulation are produced. The energy consumption, emissions and raw materials are allocated based on the physical criteria of the mass of glass. The allocations of energy consumption, emissions and raw materials have been made based on physical criteria of the mass of glass.",
+  "data_quality": null,
+  "time_representativeness": "Manufacturer specific data have been collected for the year 2023.",
+  "geographical_representativeness": "The Belgian energy mix for generic processes has been used.",
+  "technology_representativeness": "The Ecoinvent 3.10 database has been used to choose the most representative processes, considering that the data is representative of technological development, regionalized data and as current as possible.",
+  "impact_assessment": "As specified in EN 15804:2012+A2:2019/AC:2021 and the Product-Category Rules, the environmental impacts are declared and reported using the baseline characterization factors are from the ILCD. Characterization factors EN15804 based on EF 3.1.",
+  "interpretation": null,
+  "additional_paragraphs": [
+    "The product and plastic packaging do not contain biogenic carbon. The wooden pallets contain biogenic carbon taken into account in the LCA study. Biogenic carbon content in product (at the gate) 0 kg C / FU. Biogenic carbon content in accompanying packaging (at the gate) 0.116 kg C / FU.",
+    "Carbon offsetting is not allowed in the EN 15804 and hence not taken into account in the calculations.",
+    "The table in the following page details the variability percentages for stage A1-A3 for every indicator."
+  ],
+  "subsections": [
+    {
+      "number": "3.1",
+      "title": "Date of LCA STUDY",
+      "content": "November 2024"
+    },
+    {
+      "number": "3.2",
+      "title": "Software",
+      "content": "For the calculation of the LCA results, the software program OpenLCA 2.4.0 has been used."
+    },
+    {
+      "number": "3.3",
+      "title": "Information on allocation",
+      "content": "At URSA, different types of mineral wool insulation are produced. The energy consumption, emissions and raw materials are allocated based on the physical criteria of the mass of glass."
+    },
+    {
+      "number": "3.4",
+      "title": "Informatie on cut off",
+      "content": "The following processes are considered below cut-off:\n- The process energy and materials representing less than 1% of the whole energy and mass are neglected (when they do not cause significant impacts);\n- Diffuse emissions of particulate matter during transport and storage of raw materials, & long-term emissions.\n- The total of neglected input flows per module is less than 5% of energy usage and mass as prescribed by EN15804+A2]."
+    },
+    {
+      "number": "3.5",
+      "title": "Information on excluded processes",
+      "content": "Following processes were excluded for the inventory:\n- lighting, heating and cleaning of workshops;\n- the administrative department;\n- transportation of employees;\n- the manufacturing of the production tool and transport systems (machines, trucks, etc.)\n- maintenance of the infrastructure."
+    },
+    {
+      "number": "3.6",
+      "title": "Information on biogenic carbon modelling",
+      "content": "The product and plastic packaging do not contain biogenic carbon. The wooden pallets contain biogenic carbon taken into account in the LCA study.\n\nBiogenic carbon content (kg C / FU)\nBiogenic carbon content in product (at the gate): 0\nBiogenic carbon content in accompanying packaging (at the gate): 0.116"
+    },
+    {
+      "number": "3.7",
+      "title": "Information on carbon offsetting",
+      "content": "Carbon offsetting is not allowed in the EN 15804 and hence not taken into account in the calculations."
+    },
+    {
+      "number": "3.8",
+      "title": "Additional or deviating characterisation factors",
+      "content": "As specified in EN 15804:2012+A2:2019/AC:2021 and the Product-Category Rules, the environmental impacts are declared and reported using the baseline characterization factors are from the ILCD. Characterization factors EN15804 based on EF 3.1."
+    },
+    {
+      "number": "3.9",
+      "title": "Description of the variability",
+      "content": "The declared unit is 1 m² thermal insulation with a thickness of 180 mm and RD value of 5,10 m²K/W. This product can be produced in thicknesses between 25 mm and 260 mm with corresponding RD-range from 0,70 m²K/W (25 mm) to 7,40 m²K/W (260 mm). The variability percentages for GWP-total (kg CO2 eq.) stages A1-A3 goes from -51/+25%. The results in this EPD can be converted to other thicknesses and corresponding RD-values. The table in the following page details the variability percentages for stage A1-A3 for every indicator."
+    },
+    {
+      "number": "3.10",
+      "title": "Specificity",
+      "content": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site."
+    },
+    {
+      "number": "3.11",
+      "title": "Period of data collection",
+      "content": "Manufacturer specific data have been collected for the year 2023."
+    },
+    {
+      "number": "3.12",
+      "title": "Information on data collection",
+      "content": "All the raw materials for the manufacturing of the declared product, the necessary energy consumption, the water and the resulting emissions are considered in the life cycle analysis in its two forms, slab and roll. The production data of the Desselgem factory, for the full year 2023, have been used. The allocations of energy consumption, emissions and raw materials have been made based on physical criteria of the mass of glass. Primary data is used for modules A1, A2, A3, and A5. The rest of the study is based on scenarios (module A4, modules B1-B7, modules C1-C4, and module D)."
+    },
+    {
+      "number": "3.13",
+      "title": "Database used for background data",
+      "content": "The Ecoinvent 3.10 database has been used to choose the most representative processes, considering that the data is representative of technological development, regionalized data and as current as possible."
+    },
+    {
+      "number": "3.14",
+      "title": "Energy mix",
+      "content": "The Belgian energy mix for generic processes has been used."
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD-LAMBDA 35 NAKED-Ursa-026.0184.001-EN-signed.pdf",
+    "pdf_sha256": "c16c8bd610fffb8e96be0ebdda7b3c76c3c056541930ff6383d5cfc89fe9ee68",
+    "api_pages": "7-8",
+    "api_pages_resolved": "7,8",
+    "api_pdf_bytes": 370859,
+    "api_pdf_sha256": "08526634367b37933c906dfa2f2c5eb511ada290ffed11a685fc31febea48d6f",
+    "api_pdf_slice": "out/pdf_slices/B-EPD-LAMBDA 35 NAKED-Ursa-026.0184.001-EN-signed.p7-p8.pdf",
+    "extracted_by": "claude-api+pdf-system-boundaries-parser",
+    "extracted_at": "2026-05-26T18:44:06.028Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 6181,
+    "output_tokens": 2508,
+    "system_boundaries_pages": "9",
+    "system_boundaries_refreshed_at": "2026-05-26T20:39:01.579Z"
+  }
+}

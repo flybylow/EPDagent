@@ -1,0 +1,60 @@
+{
+  "components": [
+    {
+      "section": "Product",
+      "component": "Gyproc® WR 12,5mm",
+      "composition": "Natural gypsum",
+      "quantity": "8,25 kg/m²"
+    },
+    {
+      "section": "Product",
+      "component": "Gyproc® WR 12,5mm",
+      "composition": "Paper liner",
+      "quantity": "0,34 kg/m²"
+    },
+    {
+      "section": "Product",
+      "component": "Gyproc® WR 12,5mm",
+      "composition": "Process Additives",
+      "quantity": "0,36 kg/m²"
+    },
+    {
+      "section": "Fixation materials",
+      "component": "Screws",
+      "composition": null,
+      "quantity": "8 pcs/m²"
+    },
+    {
+      "section": "Jointing materials",
+      "component": "Paper tape",
+      "composition": null,
+      "quantity": "1,23 m/m²"
+    },
+    {
+      "section": "Jointing materials",
+      "component": "Jointing compound",
+      "composition": null,
+      "quantity": "0,33 kg/m²"
+    },
+    {
+      "section": "Packaging",
+      "component": "Wooden pallet",
+      "composition": null,
+      "quantity": "0,22 kg/m²"
+    }
+  ],
+  "declarations": [
+    "The product does not contain materials listed in the “Candidate list of Substances of Very High Concern for authorization”."
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 024.0013.010-01.00.00 Gyproc WR 12.5 Saint-Gobain-EN_ signed.pdf",
+    "pdf_sha256": "24c3cdfb55ab8612f6979a7a7270fa4279c40cf2c8d4a2539c4b8d129228dfa2",
+    "api_pages": "5",
+    "api_pages_resolved": "5",
+    "extracted_by": "pdf-composition-table-parser",
+    "extracted_at": "2026-05-26T20:48:54.325Z",
+    "model": null,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

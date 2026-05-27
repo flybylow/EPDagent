@@ -1,0 +1,149 @@
+{
+  "sections": {
+    "1": {
+      "fields": [
+        { "label": "Product description", "path": "phase3.description", "format": "text" },
+        { "label": "Intended use", "path": "phase3.intended_use", "format": "text" },
+        {
+          "label": "Reference flow / declared unit",
+          "path": "phase3.reference_flow.description",
+          "format": "text"
+        },
+        { "label": "Installation", "path": "phase3.installation", "format": "text" },
+        {
+          "label": "Reference service life",
+          "path": "phase3.reference_service_life_years",
+          "format": "years"
+        },
+        {
+          "label": "Geographical representativity",
+          "path": "phase3.geographical_representativity",
+          "format": "text"
+        },
+        {
+          "label": "Production process",
+          "path": "phase3.production_process",
+          "format": "text"
+        }
+      ]
+    },
+    "1.1": {
+      "fields": [{ "label": "Product name", "path": "phase2.product_name", "format": "text" }]
+    },
+    "1.2": {
+      "fields": [
+        { "label": "Product description", "path": "phase3.description", "format": "text" },
+        { "label": "Intended use", "path": "phase3.intended_use", "format": "text" }
+      ]
+    },
+    "1.3": {
+      "fields": [
+        {
+          "label": "Reference flow / declared unit",
+          "path": "phase3.reference_flow.description",
+          "format": "text"
+        }
+      ]
+    },
+    "1.4": {
+      "fields": [{ "label": "Installation", "path": "phase3.installation", "format": "text" }]
+    },
+    "1.5": {
+      "view": "phase3_composition",
+      "tableId": "composition"
+    },
+    "1.6": {
+      "fields": [
+        {
+          "label": "Reference service life",
+          "path": "phase3.reference_service_life_years",
+          "format": "years"
+        },
+        {
+          "label": "Geographical representativity",
+          "path": "phase3.geographical_representativity",
+          "format": "text"
+        }
+      ]
+    },
+    "1.7": {
+      "fields": [
+        {
+          "label": "Geographical representativity",
+          "path": "phase3.geographical_representativity",
+          "format": "text"
+        }
+      ]
+    },
+    "1.8": {
+      "fields": [
+        {
+          "label": "Production process",
+          "path": "phase3.production_process",
+          "format": "text"
+        }
+      ]
+    },
+    "2": {
+      "view": "phase3_technical",
+      "tableId": "technical_data"
+    },
+    "3": {
+      "view": "phase3_lca_study"
+    },
+    "4": {
+      "fields": [
+        { "label": "Production sites", "path": "phase3LcaStudy.production_sites", "format": "text" }
+      ]
+    },
+    "5": {
+      "fields": [
+        { "label": "System boundaries", "path": "phase3LcaStudy.system_boundaries", "format": "text" }
+      ]
+    },
+    "6": {
+      "view": "phase4_lca",
+      "tableId": "lca_impacts"
+    },
+    "7": {
+      "view": "phase4_lca",
+      "tableId": "lca_resource"
+    },
+    "8": {
+      "view": "phase4_lca",
+      "tableId": "lca_waste"
+    },
+    "9": {
+      "view": "phase4_lca",
+      "tableId": "lca_additional"
+    },
+    "9.1": {
+      "view": "phase4_lca_intro",
+      "tableId": "lca_additional"
+    },
+    "10": {
+      "view": "phase5_scenarios"
+    },
+    "11": {
+      "view": "phase7_section"
+    },
+    "11.1": {
+      "view": "phase7_section"
+    },
+    "11.2": {
+      "view": "phase7_section"
+    },
+    "12": {
+      "view": "phase7_section"
+    },
+    "13": {
+      "view": "phase7_section"
+    },
+    "14": {
+      "view": "phase7_section"
+    },
+    "15": {
+      "view": "phase6_refs"
+    }
+  }
+}

@@ -25,7 +25,7 @@ export function buildDraft(
       const { value, sourcePhase } = resolved;
       const displayValue = formatDisplayValue(value, field.format, field.enumLabels);
       return {
-        id: field.id,
+        id: field.id ?? field.path.replace(/\./g, "_"),
         label: field.label,
         path: field.path,
         value,

@@ -1,0 +1,51 @@
+{
+  "epd_number": "21-0135-02-00-00-EN",
+  "program_operator": "Federal Public Service of Health, Food Chain Safety and Environment",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": "Etex services",
+    "address": null,
+    "country": null
+  },
+  "product_name": "CEDRAL fibre cement sheets",
+  "product_description": "fibre cement sheets",
+  "standards_conformity": "Conform to EN 15804+A2, NBN/DTD B08-001 and ISO14025",
+  "verification_statement": "Third party verified",
+  "conformity_basis": null,
+  "declared_scope": "The production and installation of 1 m2 (thickness 10 mm overlap, 12mm non-overlap) of a \"Cedral\" panel and its related impacts over cradle-to-grave life cycle stages, over a reference service life of 60 years.",
+  "declared_modules": [
+    "A123",
+    "A4",
+    "A5",
+    "B",
+    "C",
+    "D"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "m2"
+  },
+  "validity": {
+    "issued": "2021-10-07",
+    "valid_until": "2026-10-07"
+  },
+  "pcr_reference": null,
+  "verifier": {
+    "name": "Evert Vermaut (Vincotte)",
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 21-0135-02-00-00-EN ETEX - cedral - signed.pdf",
+    "pdf_sha256": "64d786fb4145521fbc02d5e3008e2efd5520be5c54a7e7cc6be48c3ece292bfb",
+    "api_pages": "1",
+    "api_pages_resolved": "1",
+    "api_pdf_bytes": 152449,
+    "api_pdf_sha256": "bad8279d11184959174dcb592ea367c84a407c98e0293a0689088d0cf4905c6d",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 21-0135-02-00-00-EN ETEX - cedral - signed.p1.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T20:12:43.050Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 4480,
+    "output_tokens": 531
+  }
+}

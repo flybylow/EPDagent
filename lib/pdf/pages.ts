@@ -45,6 +45,24 @@ export interface PdfSliceResult {
   byteSize: number;
   sha256: string;
   exportPath: string | null;
+  /** Pages from the spec that exceeded document length (docmap printed numbers, etc.). */
+  droppedPages?: number[];
+}
+
+/** Keep in-range pages; if none remain, use the last `tailCount` pages of the PDF. */
+export function fitPagesToDocument(
+  requested: number[],
+  totalPages: number,
+  tailCount = 4
+): { pages: number[]; dropped: number[] } {
+  const dropped = requested.filter((p) => p > totalPages);
+  const pages = requested.filter((p) => p >= 1 && p <= totalPages);
+  if (pages.length > 0) {
+    return { pages: [...new Set(pages)].sort((a, b) => a - b), dropped };
+  }
+  const start = Math.max(1, totalPages - tailCount + 1);
+  const tail = Array.from({ length: totalPages - start + 1 }, (_, i) => start + i);
+  return { pages: tail, dropped };
 }
 
 /**
@@ -77,21 +95,14 @@ export async function slicePdfByPageSpec(
   pageSpec: string,
   options: { export?: boolean; stem?: string } = {}
 ): Promise<PdfSliceResult> {
-  const pages = parsePageSpecs(pageSpec);
-  if (pages.length === 0) {
-    throw new Error(`Page spec "${pageSpec}" matched no pages.`);
-  }
+  const requested = pageSpec.trim() ? parsePageSpecs(pageSpec) : [];
 
   const srcBytes = fs.readFileSync(pdfPath);
   const srcDoc = await PDFDocument.load(srcBytes, { ignoreEncryption: true });
   const totalPages = srcDoc.getPageCount();
 
-  const pageIndexes = pages.map((p) => {
-    if (p > totalPages) {
-      throw new Error(`Page ${p} not in PDF (only ${totalPages} pages).`);
-    }
-    return p - 1;
-  });
+  const { pages, dropped } = fitPagesToDocument(requested, totalPages);
+  const pageIndexes = pages.map((p) => p - 1);
 
   const outDoc = await PDFDocument.create();
   const copied = await outDoc.copyPages(srcDoc, pageIndexes);
@@ -117,5 +128,6 @@ export async function slicePdfByPageSpec(
     byteSize: bytes.length,
     sha256,
     exportPath,
+    droppedPages: dropped.length ? dropped : undefined,
   };
 }

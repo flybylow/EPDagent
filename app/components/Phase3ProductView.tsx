@@ -46,8 +46,8 @@ export function Phase3ProductView({ data }: { data: Phase3ProductData }) {
       {rows.length > 0 ? (
         <section className="draft-doc-section">
           <h3>Technical data</h3>
-          <div className="phase3-table-wrap">
-            <table className="phase3-table">
+          <div className="data-table-wrap">
+            <table className="data-table">
               <thead>
                 <tr>
                   <th>Property</th>

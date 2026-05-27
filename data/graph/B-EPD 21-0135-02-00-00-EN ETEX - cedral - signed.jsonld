@@ -1,0 +1,454 @@
+{
+  "@context": {
+    "@vocab": "https://epdagent.dev/vocab/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "EPD": "https://epdagent.dev/vocab/EPD",
+    "ProgramOperator": "https://epdagent.dev/vocab/ProgramOperator",
+    "declaredUnit": {
+      "@id": "https://epdagent.dev/vocab/declaredUnit",
+      "@type": "schema:QuantitativeValue"
+    },
+    "programOperator": {
+      "@id": "https://epdagent.dev/vocab/programOperator",
+      "@type": "@id"
+    },
+    "producer": {
+      "@id": "https://epdagent.dev/vocab/producer",
+      "@type": "@id"
+    },
+    "verifier": {
+      "@id": "https://epdagent.dev/vocab/verifier",
+      "@type": "@id"
+    },
+    "pcrReference": "https://epdagent.dev/vocab/pcrReference",
+    "epdNumber": "https://epdagent.dev/vocab/epdNumber",
+    "language": "https://epdagent.dev/vocab/language",
+    "filenamePattern": "https://epdagent.dev/vocab/filenamePattern",
+    "schema:name": "https://schema.org/name",
+    "schema:address": "https://schema.org/address",
+    "schema:addressCountry": "https://schema.org/addressCountry",
+    "schema:validFrom": {
+      "@id": "https://schema.org/validFrom",
+      "@type": "xsd:date"
+    },
+    "schema:validThrough": {
+      "@id": "https://schema.org/validThrough",
+      "@type": "xsd:date"
+    },
+    "schema:value": "https://schema.org/value",
+    "schema:unitCode": "https://schema.org/unitCode",
+    "prov:wasDerivedFrom": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "prov:generatedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "extractionCoverage": "https://epdagent.dev/vocab/extractionCoverage",
+    "productSection": {
+      "@id": "https://epdagent.dev/vocab/productSection",
+      "@type": "@id"
+    },
+    "composition": {
+      "@id": "https://epdagent.dev/vocab/composition",
+      "@type": "@id"
+    },
+    "lcaStudy": {
+      "@id": "https://epdagent.dev/vocab/lcaStudy",
+      "@type": "@id"
+    },
+    "lcaTables": {
+      "@id": "https://epdagent.dev/vocab/lcaTables",
+      "@type": "@id"
+    },
+    "scenarios": {
+      "@id": "https://epdagent.dev/vocab/scenarios",
+      "@type": "@id"
+    },
+    "bibliography": {
+      "@id": "https://epdagent.dev/vocab/bibliography",
+      "@type": "@id"
+    },
+    "epdSections": {
+      "@id": "https://epdagent.dev/vocab/epdSections",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://localhost:3000/id/epd/B-EPD%2021-0135-02-00-00-EN%20ETEX%20-%20cedral%20-%20signed",
+      "@type": [
+        "EPD",
+        "schema:Product"
+      ],
+      "epdNumber": "21-0135-02-00-00-EN",
+      "schema:name": "CEDRAL fibre cement sheets",
+      "schema:description": "fibre cement sheets",
+      "standardsConformity": "Conform to EN 15804+A2, NBN/DTD B08-001 and ISO14025",
+      "verificationStatement": "Third party verified",
+      "declaredScope": "The production and installation of 1 m2(thickness 10 mm overlap, 12mm non-overlap) of a \"Cedral\" panel and its related impacts over cradle-to-grave life cycle stages, over a reference service life of 60 years.",
+      "declaredModules": [
+        "A123",
+        "A4",
+        "A5",
+        "B",
+        "C",
+        "D"
+      ],
+      "language": "EN",
+      "filenamePattern": "B-EPD",
+      "declaredUnit": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2"
+      },
+      "schema:validFrom": "2021-10-07",
+      "schema:validThrough": "2026-10-07",
+      "programOperator": {
+        "@id": "http://localhost:3000/id/operator/B-EPD"
+      },
+      "producer": {
+        "@id": "http://localhost:3000/id/org/2d723fd34267"
+      },
+      "prov:wasDerivedFrom": {
+        "@type": "prov:Entity",
+        "schema:name": "B-EPD 21-0135-02-00-00-EN ETEX - cedral - signed.pdf"
+      },
+      "prov:generatedAtTime": "2026-05-26T18:02:40.348Z",
+      "productSection": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-02-00-00-EN%2520ETEX%2520-%2520cedral%2520-%2520signed/product"
+      },
+      "composition": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-02-00-00-EN%2520ETEX%2520-%2520cedral%2520-%2520signed/composition"
+      },
+      "scenarios": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-02-00-00-EN%2520ETEX%2520-%2520cedral%2520-%2520signed/scenarios"
+      },
+      "extractionCoverage": {
+        "phase1": true,
+        "phase2": true,
+        "phase3_product": true,
+        "phase3_composition": true,
+        "phase3_lca_study": true,
+        "phase4_lca": [],
+        "phase5_scenarios": true,
+        "phase6_refs": false,
+        "phase7_epd_sections": false
+      }
+    },
+    {
+      "@id": "http://localhost:3000/id/operator/B-EPD",
+      "@type": "ProgramOperator",
+      "schema:name": "Federal Public Service of Health, Food Chain Safety and Environment",
+      "operatorCode": "B-EPD"
+    },
+    {
+      "@id": "http://localhost:3000/id/org/2d723fd34267",
+      "@type": "schema:Organization",
+      "schema:name": "Etex services",
+      "schema:address": null,
+      "schema:addressCountry": "BE"
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-02-00-00-EN%2520ETEX%2520-%2520cedral%2520-%2520signed/product",
+      "@type": "ProductSection",
+      "description": "Cedral sidings are steam-hardened cellulose-reinforced fibre cement planks produced at Kapelle-op-den-Bos production plant, Belgium. They exist in two finishes: smooth or structured (wood relief). Planks are coated and available in various colours.",
+      "intendedUse": "Cedral sidings are used as board-like façade cladding for backventilated façades. For both smooth and structured panels two installation methods are provided. The \"click\" application has a tongue and groove system, while the \"lap\" application foresees an overlap of the panels. The results of the LCA are valid for both Click and Lap application, and are based on a weighted average of the market shares of both products. In both cases the weight of 1m² installed CEDRAL is 19,5 kg or 0,0195 ton. The overlap of the \"lap\" application is exactly compensated by the board being 2 mm thinner than the \"click\" application.",
+      "installation": "The product is installed according to the following scenario(s): fixation of the panel to a framework in wood or metal. This EPD declares the screws and energy consumption to fixate the panels, but does not include the framework. This may lead to the need of additional products and materials for which the impact is not included in this EPD and which shall be taken into account at building level. The different frameworks are described in the chapter \"Additional technical information for scenario development at building\".",
+      "referenceServiceLifeYears": 60,
+      "geographicalRepresentativity": "The EPD is representative for the Belgian market.",
+      "productionProcess": "Cedral Click and Lap Cedral are manufactured largely in accordance with an automated winding process: the raw materials are mixed with water to prepare a homogenous mixture. Rotating screen cylinders are immersed in this fibre cement pulp which drain internally. The screen surface is covered in a thin film of fibre cement which is transferred onto an infinite conveyor belt from where it is conveyed to a format roller which is gradually covered in an increasingly thicker layer of fibre cement. Once the requisite material thickness is achieved, the still moist and malleable fibre cement layer (fibre cement fleece) is separated and removed from the format roller. The fibres cement fleece is cut to size. Leftovers are returned to the production process preventing any waste from being incurred. The panels are then set aside for curing before stacking on pallets and steam-hardened in an autoclave for approx. two hours. The setting time lasts approx. three days. Waste from damaged or broken panels is recycled by an external company as raw material for cement production. For the Click application a tongue and groove closure is milled out from the panels. Finally the façade panels are coated in acrylic paint.",
+      "referenceFlow": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "m2",
+        "description": "The functional unit is defined as: the production and installation of 1 m2 (thickness 10 mm overlap, 12mm non-overlap) of a \"CEDRAL\" sheets and its related impacts over cradle-to-grave life cycle stages, where the product's expected average reference service life is of 60 years."
+      },
+      "technicalProperties": [
+        {
+          "property": "Gross density dry (min)",
+          "standard": "EN12467",
+          "value": "1300",
+          "unit": "kg/m3",
+          "comment": null
+        },
+        {
+          "property": "Standard panel thickness (\"lap\" system)",
+          "standard": null,
+          "value": "10",
+          "unit": "mm",
+          "comment": null
+        },
+        {
+          "property": "Standard panel thickness (\"click\" system)",
+          "standard": null,
+          "value": "12",
+          "unit": "mm",
+          "comment": null
+        },
+        {
+          "property": "Thermal conductivity",
+          "standard": null,
+          "value": "0.212",
+          "unit": "W/(mK)",
+          "comment": null
+        },
+        {
+          "property": "Flexural strength parallel",
+          "standard": "EN12467",
+          "value": "23",
+          "unit": "N/mm2",
+          "comment": null
+        },
+        {
+          "property": "Flexural strength perpendicular",
+          "standard": "EN12467",
+          "value": "11",
+          "unit": "N/mm2",
+          "comment": null
+        },
+        {
+          "property": "Modulus of elasticity parallel",
+          "standard": "EN12467",
+          "value": "7500",
+          "unit": "N/mm2",
+          "comment": null
+        },
+        {
+          "property": "Modulus of elasticity perpendicular",
+          "standard": "EN12467",
+          "value": "5500",
+          "unit": "N/mm2",
+          "comment": null
+        },
+        {
+          "property": "Coefficient of thermal expansion",
+          "standard": null,
+          "value": "<0.01",
+          "unit": "10-6K-1",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-02-00-00-EN%2520ETEX%2520-%2520cedral%2520-%2520signed/composition",
+      "@type": "Composition",
+      "components": [
+        {
+          "section": "Product",
+          "component": "Sand",
+          "composition": null,
+          "quantity": "30 -40%"
+        },
+        {
+          "section": "Product",
+          "component": "Cement",
+          "composition": null,
+          "quantity": "20 - 30%"
+        },
+        {
+          "section": "Product",
+          "component": "Cellulose",
+          "composition": null,
+          "quantity": "<10%"
+        },
+        {
+          "section": "Product",
+          "component": "Internal production waste",
+          "composition": null,
+          "quantity": "<5%"
+        },
+        {
+          "section": "Product",
+          "component": "Wollastonite",
+          "composition": null,
+          "quantity": "<5%"
+        },
+        {
+          "section": "Product",
+          "component": "Aluminium hydroxide",
+          "composition": null,
+          "quantity": "<5%"
+        },
+        {
+          "section": "Product",
+          "component": "Primer",
+          "composition": null,
+          "quantity": "<5%"
+        },
+        {
+          "section": "Product",
+          "component": "Water",
+          "composition": null,
+          "quantity": "15-20%"
+        },
+        {
+          "section": "Product",
+          "component": "Others",
+          "composition": null,
+          "quantity": "<1%"
+        },
+        {
+          "section": "Fixation materials",
+          "component": "Cedral click: inox clips",
+          "composition": null,
+          "quantity": "10 p"
+        },
+        {
+          "section": "Fixation materials",
+          "component": "Cedral lap: inox screws",
+          "composition": null,
+          "quantity": "12,5 p"
+        },
+        {
+          "section": "Jointing materials",
+          "component": "NA",
+          "composition": null,
+          "quantity": "/"
+        },
+        {
+          "section": "Treatments",
+          "component": "NA",
+          "composition": null,
+          "quantity": "/"
+        },
+        {
+          "section": "Packaging",
+          "component": "Pallet",
+          "composition": null,
+          "quantity": "0,6787 kg"
+        },
+        {
+          "section": "Packaging",
+          "component": "PE cover foil",
+          "composition": null,
+          "quantity": "0,0041 kg"
+        },
+        {
+          "section": "Packaging",
+          "component": "PE plastic foam layers",
+          "composition": null,
+          "quantity": "0,1545 kg"
+        },
+        {
+          "section": "Packaging",
+          "component": "PE band on a carton roll",
+          "composition": null,
+          "quantity": "0,1620 kg"
+        }
+      ],
+      "declarations": [
+        "The product does not contain materials listed in the \"Candidate list of Substances of Very High Concern for authorization\"."
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%252021-0135-02-00-00-EN%2520ETEX%2520-%2520cedral%2520-%2520signed/scenarios",
+      "@type": "ScenarioSet",
+      "sectionTitle": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
+      "scenarios": [
+        {
+          "module": "A1",
+          "number": null,
+          "title": "RAW MATERIAL SUPPLY",
+          "description": "This module takes into account the extraction and processing of all raw materials and energy which occur upstream to the studied manufacturing process."
+        },
+        {
+          "module": "A2",
+          "number": null,
+          "title": "TRANSPORT TO THE MANUFACTURER",
+          "description": "The raw materials are transported to the manufacturing site."
+        },
+        {
+          "module": "A3",
+          "number": null,
+          "title": "MANUFACTURING",
+          "description": "This module takes into account the production process."
+        },
+        {
+          "module": "A4",
+          "number": null,
+          "title": "TRANSPORT TO THE BUILDING SITE",
+          "description": "Fuel type and consumption of vehicle or vehicle type used for transport: Truck 16-32 ton EURO 5 (0,260 l/km), Truck >32 ton EURO 5 (0,366 l/km), Truck 7.5-16 ton EURO 5 (0,186 l/km)\n\nDistance: 100 km (40% from factory to construction site), 35 km (60%*85% from supplier to construction site), 100 km (60% from factory to supplier), 35 km (60%*15% from supplier to construction site)\n\nCapacity utilisation (including empty returns): 50%\n\nBulk density of transported products: Ecoinvent\n\nVolume capacity utilisation factor: Ecoinvent\n\nThe B-PCR provides default transport scenarios for the transport to the building site for cases where specific data on transport are missing. The B-PCR provides scenario's for this life cycle stage. Fibre cement panels are categorized as 'loose products' in table 5 of the B-PCR. The following transport steps apply:\n• 40% directly to the construction site over 100 km with a 16-32 ton lorry (ecoinvent record: 'Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, U')\n• 60% to a supplier over 100 km with a >32 ton lorry (ecoinvent record: 'Transport, freight, lorry >32 metric ton, EURO5 {RER}| transport, freight, lorry >32 metric ton, EURO5 | Cut-off, U')\n• 85% of these 60% is transported over 35 km from supplier to construction site with a 16-32 ton lorry (ecoinvent record: 'Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, U')\n• 15% of these 60% is transported over 35 km from supplier to construction site with a 7.5-16 ton lorry (ecoinvent record: 'Transport, freight, lorry 7.5-16 metric ton, EURO5 {RER}| transport, freight, lorry 7.5-16 metric ton, EURO5 | Cut-off, U')"
+        },
+        {
+          "module": "A5",
+          "number": null,
+          "title": "INSTALLATION IN THE BUILDING",
+          "description": "12,5 inox screws are necessary per functional unit for Cedral lap and 10 inox clips are necessary for Cedral clip. In this EPD an average has been considered by including 50% of the screws (6,25 screws or 0,019 kg) and 50% of the clips (5 clips or 0,060 kg). For the installation of 1m² CEDRAL product, 0.022 kWh of electricity is declared. The dataset used to model the impacts is 'Electricity, low voltage {BE}| market for | Cut-off, U'.\n\nDuring the installation, depending on how the CEDRAL sheets are cut, there is a loss rate between 5-30%, depending on the building shape. For this EPD an average loss rate of 10% is used. All packaging material for the CEDRAL product is transported to End of Life (EoL) and disposed of in line with the B-PCR default EoL scenarios for Belgium.\n\nParts of the installation:\n- Processes necessary for the installation of the product: 0,022 kWh energy needed to fix the screws\n- Fixation materials: 6,25 Screws, 5 Clips\n- Material losses: 10% Average material losses\n- Packaging: Pallet 0,6787 kg, PE cover foil 0,0041 kg, PE plastic foam layers 0,1545 kg, PE band on a carton roll 0,1620 kg\n- Ancillary materials for installation (specified by material): 12,5 Screws, 10 clips\n- Water use: None\n- Other resource use: 10% losses\n- Quantitative description of energy type (regional mix) and consumption during the installation process: 0,022 kWh electricity, low voltage\n- Waste materials on the building site before waste processing, generated by the product's installation (specified by type): packaging waste: 0,6787 kg wood, packaging waste: 0,321 kg plastic\n- Output materials (specified by type) as result of waste processing at the building site e.g. of collection for recycling, for energy recovery, disposal (specified by route): 60% recycling, 20% incinerated (wood); 35% recycling, 60% incinerated, 5% landfill (plastic)\n- Direct emissions to ambient air, soil and water: None\n- Distance: Not applicable"
+        },
+        {
+          "module": "B1",
+          "number": null,
+          "title": "USE STAGE - Use",
+          "description": "No emissions during the use phase."
+        },
+        {
+          "module": "B2",
+          "number": null,
+          "title": "USE STAGE - Maintenance",
+          "description": "The product does not require maintenance."
+        },
+        {
+          "module": "B3",
+          "number": null,
+          "title": "USE STAGE - Repair",
+          "description": "The product does not require repair."
+        },
+        {
+          "module": "B4",
+          "number": null,
+          "title": "USE STAGE - Replacement",
+          "description": "No replacement required."
+        },
+        {
+          "module": "B5",
+          "number": null,
+          "title": "USE STAGE - Refurbishment",
+          "description": "No refurbishment"
+        },
+        {
+          "module": "B6",
+          "number": null,
+          "title": "USE STAGE - Operational energy use",
+          "description": "The product does not require operational energy use."
+        },
+        {
+          "module": "B7",
+          "number": null,
+          "title": "USE STAGE - Operational water use",
+          "description": "No operational water use."
+        },
+        {
+          "module": "C1",
+          "number": null,
+          "title": "END OF LIFE - Deconstruction/Demolition",
+          "description": "The dismantling of EQUITONE [tectiva] involves the same amount of energy as for the installation, which is 0,022 kWh."
+        },
+        {
+          "module": "C2",
+          "number": null,
+          "title": "END OF LIFE - Transport to waste processing",
+          "description": "The default scenario for fibre cement boards from NBN/DTD B08-001 describes that the end-of-life waste is transported to a sorting facility over a distance of 30 km. Afterwards, 100% of the fibre cement boards and 5% of the metal screws and clips are transported to a landfill over a distance of 50 km.\n\nModule C2 – Transport to waste processing:\nType of vehicle: Truck 16-32 ton\nFuel consumption: 0,260 l diesel/km\nDistance (km): 80\nCapacity utilisation (%): 50%\nDensity of products (kg/m³): Ecoinvent scenario\nAssumptions: Ecoinvent scenario"
+        },
+        {
+          "module": "C3",
+          "number": null,
+          "title": "END OF LIFE - Waste processing for reuse, recovery and/or recycling",
+          "description": "No recycling/reuse of fibre cement boards, 95% recycling of metal screws\n\nEnd-of-life modules – C3 and C4:\nWastes collected separately: 0,079 kg\nWastes collected as mixed construction waste: 19,5 kg\nWaste for re-use: 0 kg\nWaste for recycling: 0,075 kg\nWaste for energy recovery: 0 kg\nWaste for final disposal: 19,5 kg"
+        },
+        {
+          "module": "C4",
+          "number": null,
+          "title": "END OF LIFE - Disposal",
+          "description": "100% landfill of fibre cement boards, 5% landfill of metal screws\n\nEnd-of-life modules – C3 and C4:\nWastes collected separately: 0,079 kg\nWastes collected as mixed construction waste: 19,5 kg\nWaste for re-use: 0 kg\nWaste for recycling: 0,075 kg\nWaste for energy recovery: 0 kg\nWaste for final disposal: 19,5 kg"
+        },
+        {
+          "module": "D",
+          "number": null,
+          "title": "BENEFITS AND LOADS BEYOND THE SYSTEM BOUNDARIES",
+          "description": "In module D, the benefits and loads beyond the system boundaries are quantified. Following waste streams are considered after their end-of-waste: wooden pallets in A3 and A5 (of which 60% is recycled), plastic packaging in A3 and A5 (of which 35% is recycled), paper and cardboard in A3 (of which 95% is recycled), steel cables in A3 (of which 95% is recycled) and metal screws and clips (of which 95% is recycled).\n\nQuantitative description of the loads beyond the system boundaries:\n- Treatment of 0,078 kg of scrap steel to prepare it for to prepare it for recycling at the remelter\n- Sorting of 0,408 kg of waste wood to prepare it for recycling\n- Treatment of 0,113 kg plastic to prepare it for recycling\n\nQuantitative description of the benefits beyond the system boundaries:\n- Avoided production of 2,40 MJ of heat using natural gas\n- Avoided production of 1,20 MJ of Belgian electricity mix\n- Avoided production of 0,078 kg primary steel\n- Avoided production of 0,408 kg primary softwood\n- Avoided production of 0,113 kg primary polypropylene/ polypropylene granulates"
+        }
+      ]
+    }
+  ]
+}

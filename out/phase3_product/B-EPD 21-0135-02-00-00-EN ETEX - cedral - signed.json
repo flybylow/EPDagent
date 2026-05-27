@@ -1,0 +1,92 @@
+{
+  "description": "Cedral sidings are steam-hardened cellulose-reinforced fibre cement planks produced at Kapelle-op-den-Bos production plant, Belgium. They exist in two finishes: smooth or structured (wood relief). Planks are coated and available in various colours.",
+  "intended_use": "Cedral sidings are used as board-like façade cladding for backventilated façades. For both smooth and structured panels two installation methods are provided. The \"click\" application has a tongue and groove system, while the \"lap\" application foresees an overlap of the panels. The results of the LCA are valid for both Click and Lap application, and are based on a weighted average of the market shares of both products. In both cases the weight of 1m² installed CEDRAL is 19,5 kg or 0,0195 ton. The overlap of the \"lap\" application is exactly compensated by the board being 2 mm thinner than the \"click\" application.",
+  "reference_flow": {
+    "value": 1,
+    "unit": "m2",
+    "description": "The functional unit is defined as: the production and installation of 1 m2 (thickness 10 mm overlap, 12mm non-overlap) of a \"CEDRAL\" sheets and its related impacts over cradle-to-grave life cycle stages, where the product's expected average reference service life is of 60 years."
+  },
+  "installation": "The product is installed according to the following scenario(s): fixation of the panel to a framework in wood or metal. This EPD declares the screws and energy consumption to fixate the panels, but does not include the framework. This may lead to the need of additional products and materials for which the impact is not included in this EPD and which shall be taken into account at building level. The different frameworks are described in the chapter \"Additional technical information for scenario development at building\".",
+  "reference_service_life_years": 60,
+  "geographical_representativity": "The EPD is representative for the Belgian market.",
+  "production_process": "Cedral Click and Lap Cedral are manufactured largely in accordance with an automated winding process: the raw materials are mixed with water to prepare a homogenous mixture. Rotating screen cylinders are immersed in this fibre cement pulp which drain internally. The screen surface is covered in a thin film of fibre cement which is transferred onto an infinite conveyor belt from where it is conveyed to a format roller which is gradually covered in an increasingly thicker layer of fibre cement. Once the requisite material thickness is achieved, the still moist and malleable fibre cement layer (fibre cement fleece) is separated and removed from the format roller. The fibres cement fleece is cut to size. Leftovers are returned to the production process preventing any waste from being incurred. The panels are then set aside for curing before stacking on pallets and steam-hardened in an autoclave for approx. two hours. The setting time lasts approx. three days. Waste from damaged or broken panels is recycled by an external company as raw material for cement production. For the Click application a tongue and groove closure is milled out from the panels. Finally the façade panels are coated in acrylic paint.",
+  "technical_properties": [
+    {
+      "property": "Gross density dry (min)",
+      "standard": "EN12467",
+      "value": "1300",
+      "unit": "kg/m3",
+      "comment": null
+    },
+    {
+      "property": "Standard panel thickness (\"lap\" system)",
+      "standard": null,
+      "value": "10",
+      "unit": "mm",
+      "comment": null
+    },
+    {
+      "property": "Standard panel thickness (\"click\" system)",
+      "standard": null,
+      "value": "12",
+      "unit": "mm",
+      "comment": null
+    },
+    {
+      "property": "Thermal conductivity",
+      "standard": null,
+      "value": "0.212",
+      "unit": "W/(mK)",
+      "comment": null
+    },
+    {
+      "property": "Flexural strength parallel",
+      "standard": "EN12467",
+      "value": "23",
+      "unit": "N/mm2",
+      "comment": null
+    },
+    {
+      "property": "Flexural strength perpendicular",
+      "standard": "EN12467",
+      "value": "11",
+      "unit": "N/mm2",
+      "comment": null
+    },
+    {
+      "property": "Modulus of elasticity parallel",
+      "standard": "EN12467",
+      "value": "7500",
+      "unit": "N/mm2",
+      "comment": null
+    },
+    {
+      "property": "Modulus of elasticity perpendicular",
+      "standard": "EN12467",
+      "value": "5500",
+      "unit": "N/mm2",
+      "comment": null
+    },
+    {
+      "property": "Coefficient of thermal expansion",
+      "standard": null,
+      "value": "<0.01",
+      "unit": "10-6K-1",
+      "comment": null
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 21-0135-02-00-00-EN ETEX - cedral - signed.pdf",
+    "pdf_sha256": "64d786fb4145521fbc02d5e3008e2efd5520be5c54a7e7cc6be48c3ece292bfb",
+    "api_pages": "2-4",
+    "api_pages_resolved": "2,3,4",
+    "api_pdf_bytes": 324558,
+    "api_pdf_sha256": "23df0cfcad57f43fb8310b3034049e61601c519e2d1e458b2c0b265c54579c56",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 21-0135-02-00-00-EN ETEX - cedral - signed.p2-p3-p4.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:03:06.668Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 7776,
+    "output_tokens": 1331
+  }
+}

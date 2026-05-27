@@ -1,0 +1,11 @@
+{
+  "stem": "B-EPD 023.0221.003-01.00.00 CEM IIIB 42,5 N-LHSR bulk “ECOPlanet” EN_ signed",
+  "updatedAt": "2026-05-26T20:05:00.964Z",
+  "locks": {
+    "16~p24": {
+      "status": "accepted",
+      "note": "Accepted via gap panel",
+      "lockedAt": "2026-05-26T20:05:00.964Z"
+    }
+  }
+}

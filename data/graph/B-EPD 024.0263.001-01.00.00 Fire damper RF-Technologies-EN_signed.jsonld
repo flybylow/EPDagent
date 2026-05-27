@@ -1,0 +1,262 @@
+{
+  "@context": {
+    "@vocab": "https://epdagent.dev/vocab/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "EPD": "https://epdagent.dev/vocab/EPD",
+    "ProgramOperator": "https://epdagent.dev/vocab/ProgramOperator",
+    "declaredUnit": {
+      "@id": "https://epdagent.dev/vocab/declaredUnit",
+      "@type": "schema:QuantitativeValue"
+    },
+    "programOperator": {
+      "@id": "https://epdagent.dev/vocab/programOperator",
+      "@type": "@id"
+    },
+    "producer": {
+      "@id": "https://epdagent.dev/vocab/producer",
+      "@type": "@id"
+    },
+    "verifier": {
+      "@id": "https://epdagent.dev/vocab/verifier",
+      "@type": "@id"
+    },
+    "pcrReference": "https://epdagent.dev/vocab/pcrReference",
+    "epdNumber": "https://epdagent.dev/vocab/epdNumber",
+    "language": "https://epdagent.dev/vocab/language",
+    "filenamePattern": "https://epdagent.dev/vocab/filenamePattern",
+    "schema:name": "https://schema.org/name",
+    "schema:address": "https://schema.org/address",
+    "schema:addressCountry": "https://schema.org/addressCountry",
+    "schema:validFrom": {
+      "@id": "https://schema.org/validFrom",
+      "@type": "xsd:date"
+    },
+    "schema:validThrough": {
+      "@id": "https://schema.org/validThrough",
+      "@type": "xsd:date"
+    },
+    "schema:value": "https://schema.org/value",
+    "schema:unitCode": "https://schema.org/unitCode",
+    "prov:wasDerivedFrom": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "prov:generatedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "extractionCoverage": "https://epdagent.dev/vocab/extractionCoverage",
+    "productSection": {
+      "@id": "https://epdagent.dev/vocab/productSection",
+      "@type": "@id"
+    },
+    "composition": {
+      "@id": "https://epdagent.dev/vocab/composition",
+      "@type": "@id"
+    },
+    "lcaStudy": {
+      "@id": "https://epdagent.dev/vocab/lcaStudy",
+      "@type": "@id"
+    },
+    "lcaTables": {
+      "@id": "https://epdagent.dev/vocab/lcaTables",
+      "@type": "@id"
+    },
+    "scenarios": {
+      "@id": "https://epdagent.dev/vocab/scenarios",
+      "@type": "@id"
+    },
+    "bibliography": {
+      "@id": "https://epdagent.dev/vocab/bibliography",
+      "@type": "@id"
+    },
+    "epdSections": {
+      "@id": "https://epdagent.dev/vocab/epdSections",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://localhost:3000/id/epd/B-EPD%20024.0263.001-01.00.00%20Fire%20damper%20RF-Technologies-EN_signed",
+      "@type": [
+        "EPD",
+        "schema:Product"
+      ],
+      "epdNumber": "24.0263.001-01.00.00",
+      "schema:name": "Fire damper with motorised actuator CU-LT 200x100",
+      "schema:description": "Fire damper with motorised actuator",
+      "verificationStatement": "THIRD PARTY VERIFIED",
+      "conformityBasis": "in accordance with ISO 14025, EN 15804+A2 and B-EPD-PCR (Version 18.10.2022)",
+      "declaredScope": "1 CU-LT 200x100 fire damper with a motorised actuator, to be used in conjunction with partitions to maintain fire compartments in heating, ventilation and air conditioning installations, with a fire resistance up to 120 minutes and a reference service life of 30 years",
+      "declaredModules": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "C",
+        "D"
+      ],
+      "filenamePattern": "unknown",
+      "declaredUnit": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "piece"
+      },
+      "schema:validFrom": "2024-10-11",
+      "schema:validThrough": "2029-10-11",
+      "programOperator": {
+        "@id": "http://localhost:3000/id/operator/B-EPD"
+      },
+      "producer": {
+        "@id": "http://localhost:3000/id/org/866ab3d86d49"
+      },
+      "verifier": {
+        "@id": "http://localhost:3000/id/person/dbb5748d05f5"
+      },
+      "prov:wasDerivedFrom": {
+        "@type": "prov:Entity",
+        "schema:name": "B-EPD 024.0263.001-01.00.00 Fire damper RF-Technologies-EN_signed.pdf"
+      },
+      "prov:generatedAtTime": "2026-05-26T18:04:18.548Z",
+      "productSection": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520024.0263.001-01.00.00%2520Fire%2520damper%2520RF-Technologies-EN_signed/product"
+      },
+      "composition": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520024.0263.001-01.00.00%2520Fire%2520damper%2520RF-Technologies-EN_signed/composition"
+      },
+      "lcaStudy": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520024.0263.001-01.00.00%2520Fire%2520damper%2520RF-Technologies-EN_signed/lca-study"
+      },
+      "bibliography": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520024.0263.001-01.00.00%2520Fire%2520damper%2520RF-Technologies-EN_signed/references"
+      },
+      "epdSections": {
+        "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520024.0263.001-01.00.00%2520Fire%2520damper%2520RF-Technologies-EN_signed/sections"
+      },
+      "extractionCoverage": {
+        "phase1": true,
+        "phase2": true,
+        "phase3_product": true,
+        "phase3_composition": true,
+        "phase3_lca_study": true,
+        "phase4_lca": [],
+        "phase5_scenarios": false,
+        "phase6_refs": true,
+        "phase7_epd_sections": true
+      }
+    },
+    {
+      "@id": "http://localhost:3000/id/operator/B-EPD",
+      "@type": "ProgramOperator",
+      "schema:name": "Federal Public Service Health, Food Chain Safety and Environment",
+      "operatorCode": "B-EPD"
+    },
+    {
+      "@id": "http://localhost:3000/id/org/866ab3d86d49",
+      "@type": "schema:Organization",
+      "schema:name": "Rf-Technologies",
+      "schema:address": null,
+      "schema:addressCountry": null
+    },
+    {
+      "@id": "http://localhost:3000/id/person/dbb5748d05f5",
+      "@type": "schema:Person",
+      "schema:name": "Bob Roijen",
+      "verificationType": "independent_third_party"
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520024.0263.001-01.00.00%2520Fire%2520damper%2520RF-Technologies-EN_signed/product",
+      "@type": "ProductSection",
+      "description": "CU-LT 200x100 is an optimised rectangular fire damper with a fire resistance up to 120 minutes. It is the smallest type of a fire damper series and has a width of 200 mm and a height of 100 mm. A minimal pressure loss is guaranteed thanks to the thin blade and the transmission located outside the tunnel. A galvanised steel tunnel contributes to the light weight of the damper. The fire damper can be equipped with various types of mechanisms (motorised or not), depending on the specific needs linked to the project or to the local regulations. In this EPD, one specific motorised actuator is considered as a reference.\n\nFire dampers are installed where air ducts penetrate fire-resistant compartment walls. Their role is to restore the fire resistance grade of the penetrated wall and to prevent smoke propagation. Fire dampers are distinguished by their degree of fire resistance, by their aeraulic properties and by their installation ease. Rf-Technologies solutions are designed and approved for all types of walls: vertical and horizontal, in concrete or lightweight materials. They are compliant with the most stringent local and European standards. Furthermore, the products for the compartmentation and smoke control provide fire safety for commercial and institutional buildings across Europe: office buildings, hospitals, museums, multi-family housing, public buildings and shopping centres.\n\nIn general, a CU-LT fire damper consists of three main parts, i.e. a fire damper casing, mainly composed of a galvanised steel duct, a fire damper blade, composed of a 25 mm thick Promatect H plate, and an actuator (motorised or not). In this EPD, a motorised actuator is considered as a reference.\n\nThis EPD is a specific EPD for one specific product, i.e. CU-LT 200x100 fire damper with motorised actuator, from one single company, i.e. Rf-Technologies, that is produced in one single site, i.e. Oosterzele, Belgium.",
+      "intendedUse": "Fire dampers are installed where air ducts penetrate fire-resistant compartment walls. Their role is to restore the fire resistance grade of the penetrated wall and to prevent smoke propagation. Fire dampers are distinguished by their degree of fire resistance, by their aeraulic properties and by their installation ease. Rf-Technologies solutions are designed and approved for all types of walls: vertical and horizontal, in concrete or lightweight materials. They are compliant with the most stringent local and European standards. Furthermore, the products for the compartmentation and smoke control provide fire safety for commercial and institutional buildings across Europe: office buildings, hospitals, museums, multi-family housing, public buildings and shopping centres.",
+      "installation": "The product can be installed in different varieties, in respect with the Declaration of Performance (DoP):\n• Installation in a rigid wall and floor;\n• Installation in flexible wall (metal stud gypsum plasterboard wall);\n• Installation in flexible wall (metal stud gypsum plasterboard wall), sealing with gypsum;\n• Installation in flexible wall (metal stud gypsum plasterboard wall), sealing with mortar;\n• Installation in shaft wall, sealing with gypsum;\n• Installation in shaft wall, sealing with rigid rock wool boards with coating;\n• Installation in shaft wall with IFW installation kit and plaster joint filler;\n• Installation in flexible and rigid wall, sealing with rigid rock wool boards with coating;\n• Installation in rigid floor, sealing with rigid rock wool boards with coating;\n• Installation remote from the wall, sealing and insulation with rigid rock wool boards with coating;\n• Installation remote from the wall + GEOFLAM plates (threaded rods and U-shaped steel profiles).\n\nBecause of the different ways of installation, the product is declared as 'as produced'' in this EPD.\n\nConsequently, regarding installation, this EPD only includes the environmental impact related to the product itself (i.e. treatment of the waste arising from the packaging of the final product). The impact of possible additional products and materials, necessary for the installation of the product, is not included in this EPD. However, this impact shall be taken into account at building level.\n\nMore detailed information on the different installation scenarios can be found in the chapter \"Additional technical information for scenario development\" in this EPD.",
+      "referenceServiceLifeYears": 30,
+      "geographicalRepresentativity": "The CU-LT 200x100 fire damper with motorised actuator is produced in Belgium by the Belgian company Rf-Technologies and is installed in Belgium. The EPD is representative for the Belgian market. The composed datasets for this EPD are representative and relevant for a CU-LT 200x100 fire damper with motorised actuator produced by Rf-Technologies in Belgium.",
+      "productionProcess": "For the production of the CU-LT 200x100 fire damper, at first, the parts for the calcium silicate damper blade and the metal tunnel body are produced as sub-assembly parts. These two parts come together in the final assembly line. Here, the following steps are performed: assembly of the damper blade, assembly of the transmission, mounting of the actuator on the damper, adding labels, end control and test. Finally, the finished and tested fire damper is packed.",
+      "referenceFlow": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 1,
+        "schema:unitCode": "piece",
+        "description": "The functional unit for this EPD is 1 CU-LT 200x100 fire damper with a motorised actuator, to be used in conjunction with partitions to maintain fire compartments in heating, ventilation and air conditioning installations, with a fire resistance up to 120 minutes and a reference service life of 30 years. Packaging of the raw materials and the finished product is included. The net weight per reference flow is 4,856 kg."
+      }
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520024.0263.001-01.00.00%2520Fire%2520damper%2520RF-Technologies-EN_signed/composition",
+      "@type": "Composition",
+      "components": [
+        {
+          "section": null,
+          "component": "Casing",
+          "composition": null,
+          "quantity": "4 2 %"
+        },
+        {
+          "section": null,
+          "component": "CU - LT 200x100 fire damper",
+          "composition": "B lade",
+          "quantity": "12 %"
+        },
+        {
+          "section": null,
+          "component": "with motorised actuator",
+          "composition": "M echanics",
+          "quantity": "14 %"
+        },
+        {
+          "section": null,
+          "component": "Motorised a ctuator",
+          "composition": null,
+          "quantity": "32%"
+        }
+      ],
+      "declarations": [
+        "The product does not contain materials listed in the “Candidate list of Substances of Very High Concern for authorization”."
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520024.0263.001-01.00.00%2520Fire%2520damper%2520RF-Technologies-EN_signed/lca-study",
+      "@type": "LcaStudy",
+      "systemBoundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 13\nDeclared modules (☒): A1, A2, A3, A4, A5, C1, C2, C3, C4, D\nNot declared (☐): B1, B2, B3, B4, B5, B6, B7\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4, A5\nEnd of life stage: C1, C2, C3, C4\nBeyond the system boundaries: D\n\nModule labels (vertical text):\nA1: Raw materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: Construction\nB1: Use\nB2: Maintenance\nB3: Repa\nB4: Replacement\nB5: Refurbishment\nB6: Operational energy use\nB7: Operational water use\nC1: Deconstruction\nC2: Transport\nC3: Waste processing\nC4: Disposal\nD: Recovery"
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520024.0263.001-01.00.00%2520Fire%2520damper%2520RF-Technologies-EN_signed/references",
+      "@type": "Bibliography",
+      "bibliography": [
+        "Statbel, 2021"
+      ],
+      "additionalInformation": [
+        "Ecoinvent v3.9.1 data record: 'Transport, freight, lorry 16-32 metric ton, EURO6 {RER}| transport, freight, lorry 16-32 metric ton, EURO6 | Cut-off, U'",
+        "Ecoinvent v3.9.1 Cut-off data record: 'Transport, freight, lorry 7.5-16 metric ton, EURO6 {RER}| market for transport, freight, lorry 7.5-16 metric ton, EURO6 | Cut-off, U'",
+        "Ecoinvent v3.9.1 data record: 'Transport, freight, lorry >32 metric ton, EURO6 {RER}| transport, freight, lorry >32 metric ton, EURO6 | Cut-off, U'",
+        "Ecoinvent v3.9.1 data record: 'Transport, freight, lorry 16-32 metric ton, EURO6 {RER}| transport, freight, lorry 16-32 metric ton, EURO6 | Cut-off, U'",
+        "Ecoinvent v3.9.1 data record: 'Transport, freight, lorry 7.5-16 metric ton, EURO6 {RER}| transport, freight, lorry 7.5-16 metric ton, EURO6 | Cut-off, U'"
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/id/epd/http%3A%2F%2Flocalhost%3A3000%2Fid%2Fepd%2FB-EPD%2520024.0263.001-01.00.00%2520Fire%2520damper%2520RF-Technologies-EN_signed/sections",
+      "@type": "EpdSectionSet",
+      "blocks": [
+        {
+          "number": "11.1",
+          "title": "Indoor air",
+          "content": "SUBSTANCES TO INDOOR AIR,\n\nSOIL AND WATER DURING THE\n\nUSE STAG E\n\nThere are noemissions to indoor aircaused by the CU-LT 200x100 fire damper with motorised actuator."
+        },
+        {
+          "number": "11.2",
+          "title": "Soil and water",
+          "content": "There are noemissions to indoor aircaused by the CU-LT 200x100 fire damper with motorised actuator.\n\nNot applicable, as this product is not in contact with (drinking) water, runoff water, seepage water and surface water."
+        },
+        {
+          "number": "12",
+          "title": "DEMONSTRATION OF VERIFICATION",
+          "content": "10.8 D–benefits and loads beyond the system boundaries\n\nInmodule D, following waste streamsoriginating from the final productare considered after their end-of-wastepoint: the\n\ndifferentmetals(steel,copper and brass,95% recycled). For packagingwaste:wooden packaging (50% recycled),cardboard\n\npackaging (95% recycled),plastic packaging (35%recycled). The EOL waste treatments are accordingto theB-EPD-PCR\n\ndefault scenariosfor the different waste materials.\n\nProduction of secondary low-alloyed steel:3,366 kg\n\nQUANTITATIVE DESCRIPTION OF\n\nTHE LOADS BEYOND THE\n\nTreatment of copper scrap by electrolytic refining: 0,102 kg\n\nSYSTEM BOUNDARIES\n\nProduction of recycled polyethylene granulates:0,019kg\n\nProduction of recycledPETgranulates: 0,001 kg\n\nThe sorting and shredding of woodchips for recycling:0,840 kg\n\nThe sorting of waste paperboard for recycling:0,130 kg\n\nAvoided production of primary steel: 3,366 kg\n\nAvoided production of primarycopper:0,102kg\n\nQUANTITATIVE DESCRIPTION OF\n\nAvoided production of primary polyethylene granulates: 0,019kg\n\nTHE BENEFITS BEYOND THE\n\nSYSTEM BOUNDARIES Avoided production of primary PET granulates: 0,001 kg\n\nAvoided production of primary wood chips for wooden packaging production: 0,840 kg\n\nAvoided production of primary pulp for paper production: 0,130 kg\n\n11 RELEASE OF DANGEROUS\n\nSUBSTANCES TO INDOOR AIR,\n\nSOIL AND WATER DURING THE\n\nUSE STAG E\n\n11.1 Indoor air\n\nThere are noemissions to indoor aircaused by the CU-LT 200x100 fire damper with motorised actuator.\n\n11.2 Soil and wate r\n\nNot applicable, as this product is not in contact with (drinking) water, runoff water, seepage water and surface water.\n\nVERIFICATION\n\nEN 15804+A2servesas the core PCR.\n\nIndependent verification of the environmental declaration and data according to standard EN ISO 14025:2010\n\nInternal☐ External☒\n\nThirdparty verifier:\n\nBob Roijen\n\nSGS Intron\n\nDr. Nolenslaan 126"
+        },
+        {
+          "number": "14",
+          "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+          "content": "13 TECHNICAL INFORMATION FOR\n\nSCENARIO DEVELOPMENT /\n\nAPPLICATION UNIT\n\nThe information in this EPD is given for one specific fire damper with motorised actuator, produced by Rf-Technologies in\n\nits factory at Oosterzele, Belgium.\n\nThe ratio between application unit and reference flow in the EPD equals 1 (same unit in application unit as in EPD).\n\nThe fire dampers are designed and installedwhere air ducts penetrate fire-resistant compartment wallsin order to restore\n\nthe fire resistance grade of the penetrated wall and to prevent smoke propagation.\n\nInstallation can be donein different varieties, in respect with the Declaration of Performance (DoP)of the product:\n\n• Installation in a rigid wall and floor;\n\n• Installation in flexible wall (metal stud gypsum plasterboard wall);\n\n• Installation in flexible wall (metal stud gypsum plasterboard wall), sealing with gypsum;\n\n• Installation in flexible wall (metal stud gypsum plasterboard wall), sealing withmortar;\n\n• Installation in shaft wall, sealing with gypsum;\n\n• Installation in shaft wall, sealing with rigid rock wool boards with coating;\n\n• Installation in shaft wall with IFW installation kit and plaster joint filler;\n\n• Installation in flexible and rigid wall, sealing with rigid rock wool boards with coating;\n\n• Installation in rigid floor, sealing with rigid rock wool boards with coating;\n\n• Installation remote from the wall, sealing and insulation with rigid rock wool boards with coating;\n\n• Installation remote from the wall + GEOFLAM plates (threaded rods and U-shaped steel profiles).\n\nFor each scenario, different materials and processes may be necessary in order to install the product.Details on the\n\ninstallation procedures can be found on the website of the producer through the following link:Optimised rectangular fire\n\ndamper up to 120’ (rft.eu)\n\nThe reversibility of the here consideredCU-LT 200x100 fire damper with motorised actuatorstrongly depends on the type of installation(see chapter 13).Considering the rather large variety in\n\napplication, in the following table, a general qualitative description of reversibility is given for all different applications together.\n\nSimplicity of Ease of handling (sizeRobustness of material (material\n\nDescription Type of fixing Level of reversibility Speed of disassembly Comment\n\ndisassembly and weight) resistance to disassembly)\n\nThe fire damperis Different types of fixationDepending on theDepending on the- Speed of – Material easy to– Material with a long lifespan,\n\ninstalled where air ductswith different sealingapplication: application: disassembly varies frommanipulate by hand,disassembly is possible but the\n\npenetrate fire-resistantmaterials – Reversible – Simple–requiresquick to slow dependingone to two workersmaterial should be handled with care in\n\ncompartment walls connections withthe use of specificon element dimensionsrequired dependingorder to prevent damaging it\n\nlight repairablethough commonandtype andnumber of on dimensions– Disassembly is possible but can cause\n\ndamage tools fixations per distance unit damage to the material due to the type\n\n– Reversible – Simple, but of assembly or fixing used\n\nconnections withcollecting the\n\nnon-repairable material is a bit\n\ndamage more intensive\n\n– Non reversible\n\nconnections"
+        }
+      ]
+    }
+  ]
+}

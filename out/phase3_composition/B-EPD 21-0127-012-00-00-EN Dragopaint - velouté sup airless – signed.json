@@ -1,0 +1,81 @@
+{
+  "components": [
+    {
+      "section": "Product",
+      "component": "Water",
+      "composition": "Water",
+      "quantity": "15 - 20%"
+    },
+    {
+      "section": "Product",
+      "component": "Titanium dioxide",
+      "composition": "Titanium dioxide",
+      "quantity": "8 – 13%"
+    },
+    {
+      "section": "Product",
+      "component": "Calcium carbonate",
+      "composition": "Calcium carbonate",
+      "quantity": "28 - 33%"
+    },
+    {
+      "section": "Product",
+      "component": "Additives",
+      "composition": "Additives",
+      "quantity": "40 - 45%"
+    },
+    {
+      "section": "Application materials",
+      "component": "Airless machine",
+      "composition": "Airless machine",
+      "quantity": "1.2E-3 kWh/FU"
+    },
+    {
+      "section": "Packaging",
+      "component": "Interlayer (cardboard)",
+      "composition": "Interlayer (cardboard)",
+      "quantity": "1.60E-4 kg/FU"
+    },
+    {
+      "section": "Packaging",
+      "component": "Plastic film (polyethylene)",
+      "composition": "Plastic film (polyethylene)",
+      "quantity": "8.73E-5 kg/FU"
+    },
+    {
+      "section": "Packaging",
+      "component": "Bucket (polypropylene)",
+      "composition": "Bucket (polypropylene)",
+      "quantity": "3.75E-3 kg/FU"
+    },
+    {
+      "section": "Packaging",
+      "component": "Lids (polypropylene)",
+      "composition": "Lids (polypropylene)",
+      "quantity": "7.06E-4 kg/FU"
+    },
+    {
+      "section": "Packaging",
+      "component": "Wooden pallets",
+      "composition": "Wooden pallets",
+      "quantity": "5.91E-3 kg/FU"
+    }
+  ],
+  "declarations": [
+    "The product does not contain materials listed in the \"Candidate list of Substances of Very High Concern for authorization\"."
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.pdf",
+    "pdf_sha256": "652da07295d0a6313acb20af893985679cd92a7c3baa0635c289f60aaeb96b32",
+    "api_pages": "3",
+    "api_pages_resolved": "3",
+    "api_pdf_bytes": 222799,
+    "api_pdf_sha256": "2e868b8449fd7857028ed6f916d212d6b41d476a34d7f3ff069f1247c01fe161",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.p3.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T17:50:35.744Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 3300,
+    "output_tokens": 624
+  }
+}

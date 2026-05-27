@@ -1,0 +1,51 @@
+{
+  "epd_number": "026.0184.001-01.00.00",
+  "program_operator": "Federal Public Service of Health, Food Chain Safety and Environment",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": "URSA BENELUX",
+    "address": null,
+    "country": "BE"
+  },
+  "product_name": "Glass mineral wool lambda 35 naked",
+  "product_description": "HOMETEC® 35 FRAMETEC® 35 FRAMETEC® SLAB 35 ACOUSTIC ROLL PARTY WALL ROLL CAVITY BATT 35",
+  "standards_conformity": null,
+  "verification_statement": "THIRD PARTY VERIFIED",
+  "conformity_basis": "in accordance with EN 15804+A2, EN 16783, and B-EPD PCR_versie1.0_18.10.2022",
+  "declared_scope": "1 m² thermal insulation with a thickness of 180 mm and RD value of 5,10 m²K/W",
+  "declared_modules": [
+    "A123",
+    "A4",
+    "A5",
+    "B2-B4",
+    "C",
+    "D"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "m2"
+  },
+  "validity": {
+    "issued": "2026-01-05",
+    "valid_until": "2031-01-05"
+  },
+  "pcr_reference": "EN 16783",
+  "verifier": {
+    "name": null,
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "B-EPD-LAMBDA 35 NAKED-Ursa-026.0184.001-EN-signed.pdf",
+    "pdf_sha256": "c16c8bd610fffb8e96be0ebdda7b3c76c3c056541930ff6383d5cfc89fe9ee68",
+    "api_pages": "1-4",
+    "api_pages_resolved": "1,2,3,4",
+    "api_pdf_bytes": 1487504,
+    "api_pdf_sha256": "7154257c2b61a1ca114075cae5259b66da32d21079bf65659e3ea78c91ba6cd5",
+    "api_pdf_slice": "out/pdf_slices/B-EPD-LAMBDA 35 NAKED-Ursa-026.0184.001-EN-signed.p1-p2-p3-p4.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:22:26.048Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 11198,
+    "output_tokens": 569
+  }
+}

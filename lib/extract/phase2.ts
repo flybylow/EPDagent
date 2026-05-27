@@ -1,10 +1,15 @@
 import Anthropic from "@anthropic-ai/sdk";
+import { createMessageWithRetry } from "../anthropic/create-message";
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { assertApiPayloadWithinBudget, assertPdfWithinBudget, pdfSha256 } from "../anthropic/guard";
+import { enrichPhase2Data } from "./phase2-enrich";
 import { resolvePhase2PageSpec } from "./phase2-pages";
 import { slicePdfByPageSpec } from "../pdf/pages";
+import { loadPhase7 } from "../data";
 import { PHASE_DIRS, SCHEMAS_DIR } from "../paths";
+import { writeDraftOutputs } from "../templates";
+import { loadPhase1 } from "../data";
 import type { Phase2Data } from "../types";
 
 const MODEL = "claude-sonnet-4-5";
@@ -15,9 +20,11 @@ const schema = JSON.parse(
 
 const SYSTEM_PROMPT = `You are an extractor for Environmental Product Declarations (EPDs) following EN 15804 and ISO 14025.
 
-Your task: read the attached EPD PDF excerpt and extract the header-level metadata fields defined in the provided tool schema.
+Your task: read the attached PDF excerpt and extract declaration cover metadata into the tool schema.
 
-The attachment may include cover pages plus later pages (e.g. verifier signature blocks). Extract verifier.name from any attached page where it appears.
+The first page(s) are the EPD cover sheet (B-EPD, ETEX, INIES, etc.): logos, product title, registration number, program operator, MODULES DECLARED grid, declared unit, issue/expiry dates, PCR line, verification badge. Read that page carefully.
+
+If a later page in the same excerpt shows a verifier name or signature block (often §12 Demonstration of verification), fill verifier.name from that page.
 
 Rules:
 - Return values exactly as they appear in the document. Do not normalize or paraphrase product names.
@@ -32,6 +39,7 @@ Rules:
 - verification_statement: copy the verification badge text verbatim, e.g. "Third party verified" or "THIRD PARTY VERIFIED".
 - pcr_reference: copy the full PCR standard title from the cover, not an abbreviated code alone.
 - Dates must be ISO format YYYY-MM-DD. If only month/year is given, use the first day of the month.
+- validity.valid_until: use the explicit "valid until" / expiry date on the cover. Do not copy the issue date into valid_until unless the PDF shows the same date for both.
 - Country codes must be ISO 3166-1 alpha-2 (e.g. BE, NL, DE, FR).
 - declared_unit.unit: use a short symbol form (m3, m2, kg, t, piece, m, kWh). No spaces, no Unicode superscripts.
 - If a field is not present in the document or you are not confident, set it to null. Do not guess.
@@ -54,7 +62,7 @@ export async function runPhase2(
 
   const fullSha256 = pdfSha256(pdfPath);
   const client = new Anthropic({ apiKey });
-  const response = await client.messages.create({
+  const response = await createMessageWithRetry(client, {
     model: MODEL,
     max_tokens: 2048,
     system: SYSTEM_PROMPT,
@@ -81,12 +89,12 @@ export async function runPhase2(
           },
           {
             type: "text",
-            text: `Extract the header metadata from this EPD excerpt (pages ${slice.pages.join(", ")} of ${slice.totalPages}) and call the record_epd_header tool with the results.`,
+            text: `Extract cover & declaration metadata from this excerpt (PDF pages ${slice.pages.join(", ")} of ${slice.totalPages}). Page 1 is the cover sheet when it is included. Call record_epd_header once with all fields you can read.`,
           },
         ],
       },
     ],
-  });
+  }, { label: "phase2" });
 
   const toolUse = response.content.find(
     (block) => block.type === "tool_use" && block.name === "record_epd_header"
@@ -96,8 +104,11 @@ export async function runPhase2(
     throw new Error(`No tool_use block in response. Stop reason: ${response.stop_reason}`);
   }
 
+  const raw = toolUse.input as Omit<Phase2Data, "_source">;
+  const enriched =
+    enrichPhase2Data(raw as Phase2Data, loadPhase7(stem)) ?? (raw as Phase2Data);
   const result: Phase2Data = {
-    ...(toolUse.input as Omit<Phase2Data, "_source">),
+    ...enriched,
     _source: {
       pdf_filename: path.basename(pdfPath),
       pdf_sha256: fullSha256,
@@ -118,5 +129,7 @@ export async function runPhase2(
 
   fs.mkdirSync(PHASE_DIRS.phase2, { recursive: true });
   fs.writeFileSync(path.join(PHASE_DIRS.phase2, `${stem}.json`), JSON.stringify(result, null, 2));
+
+  writeDraftOutputs(stem, { phase1: loadPhase1(stem), phase2: result });
   return result;
 }

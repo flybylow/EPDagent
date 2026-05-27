@@ -9,6 +9,10 @@
   "language": "EN",
   "phase3Pages": "2-4",
   "phase3CompositionPages": "3",
+  "phase3LcaStudyPages": "5-7",
+  "phase4Pages": "8",
+  "phase5Pages": "16-19",
+  "phase6Pages": "20-21",
   "outputs": {
     "phase1": "out/phase1_filename/{stem}.json",
     "phase2": "out/phase2_header/{stem}.json",

@@ -1,0 +1,141 @@
+{
+  "description": "Derbigum NT is a bituminous waterproofing membrane modified by plastomeric polymers. Derbigum NT partly consists of bitumen extracted from recycled cutting waste and used bituminous roofing membranes (Derbitumen).\nThe upper side of the Derbigum NT membrane is fitted with two reinforcements , one glass-fibre and one non-woven polyester (both with a recycled content). This gives the membrane dimensional stability, and tear and puncture resistance.\nThe reference product has a thickness of 4 mm (Derbigum NT4 – noted DG4). The alternative thickness is 3 mm (Derbigum NT3 – noted DG3).\nDerbigum NT 4 is a product.\nThis is a specific EPD from a single company.",
+  "intended_use": "reinforced bituminous sheet for roof waterproofing\nThe product can be used on different types of substrates: wood, concrete, and sheet steel",
+  "reference_flow": {
+    "value": 1.105,
+    "unit": "m2",
+    "description": "FUNCTIONAL UNIT (FU):: \"ENSURE THE WATERPROOFING OF 1 M² OF ROOF WITH BITUMINOUS MEMBRANE, FROM CRADLE-TO-GRAVE, WITH ACTIVITIES NEEDED FOR A STUDY PERIOD OF 60 YEARS FOR THE BUILDING\". THE FU INCLUDES THE OVERLAP NECESSARY TO ENSURE A CORRECT INSTALLATION. THE OVERLAP IS 10.5%, AND THE FU CORRESPOND TO 1.105 M² OF MEMBRANE."
+  },
+  "installation": "Materials for fixation and installation are included. It consists in propane for fully torch installation.\nThis EPD includes the necessary overlap of two strips of membrane to ensure the tightness (10,5%), and the installation losses (2%), \nDetailed information on this scenario can be found in the chapter \"Data of the underlying scenario's\".\nYou can find more detailed information helping to develop alternative scenarios in the chapter \"Technical information for scenario development at building level\" (cold bonded with bituminous cold glue, mechanical fixing with screw, loose lay under ballast).",
+  "reference_service_life_years": 40,
+  "geographical_representativity": "The B-EPD is representative for the Belgian market for A123, A4, A5, B, C and D.\nThe assumed market for the installation, the use phase and the end-of-life is Belgium.",
+  "production_process": "Virgin bitumen, recycled mix and plastomer/elastomer are mixed and stored in liquid phase at 180°C in 16-tonne tanks. The mixture is impregnated with a double reinforcement of glass cloth and nonwoven polyester (for Derbigum NT membranes), then laminated by calendering. Once cooled, the bottom and top side of the membrane are then treated with chalk or talc, then cut into 7,27 m lengths and rolled up. Finally, it is packaged. Any waste as a result of the production is collected and internally recycled.\nWater is used to cool the bitumen during the process in a closed-circuit.",
+  "technical_properties": [
+    {
+      "property": "Thickness",
+      "standard": null,
+      "value": "4",
+      "unit": "mm",
+      "comment": "also available in 3 mm"
+    },
+    {
+      "property": "Thermal conductivity",
+      "standard": null,
+      "value": "0,23",
+      "unit": "W/m.K",
+      "comment": "Not measured - TOTEM value for roof waterproofing bitumen sheet"
+    },
+    {
+      "property": "Thermal resistance R",
+      "standard": null,
+      "value": "0,017",
+      "unit": "m2.K/W",
+      "comment": "Calculated from λ value for 4 mm thickness"
+    },
+    {
+      "property": "Flow resistance",
+      "standard": "EN 1110",
+      "value": "≥ 140",
+      "unit": "°C",
+      "comment": null
+    },
+    {
+      "property": "Cold bending",
+      "standard": "EN 1109",
+      "value": "-15",
+      "unit": "°C",
+      "comment": null
+    },
+    {
+      "property": "Tensile strength L/T",
+      "standard": "EN 12311-1",
+      "value": "750 x 650",
+      "unit": "N/50 mm",
+      "comment": null
+    },
+    {
+      "property": "Elongation at break L/T",
+      "standard": "EN 12311-1",
+      "value": "45 x 45",
+      "unit": "%",
+      "comment": null
+    },
+    {
+      "property": "Resistance to static loading method A",
+      "standard": null,
+      "value": "20",
+      "unit": "kg",
+      "comment": null
+    },
+    {
+      "property": "Resistance to impact method A and B",
+      "standard": null,
+      "value": "1250",
+      "unit": "mm",
+      "comment": null
+    },
+    {
+      "property": "Dimensional stability",
+      "standard": "EN 1107-1",
+      "value": "≤ 0,2",
+      "unit": "%",
+      "comment": null
+    },
+    {
+      "property": "Tear resistance",
+      "standard": "EN 12310-1",
+      "value": "≥ 150",
+      "unit": "N",
+      "comment": null
+    },
+    {
+      "property": "Dynamic seizure (B)",
+      "standard": null,
+      "value": "≥1250",
+      "unit": "mm",
+      "comment": null
+    },
+    {
+      "property": "Static seizure (A)",
+      "standard": null,
+      "value": "≥ 20",
+      "unit": "kg",
+      "comment": null
+    },
+    {
+      "property": "Density",
+      "standard": null,
+      "value": "1126",
+      "unit": "kg/m3",
+      "comment": null
+    },
+    {
+      "property": "External fire performance",
+      "standard": null,
+      "value": "FRoof (t1, t2, t3, t4)",
+      "unit": "-",
+      "comment": null
+    },
+    {
+      "property": "Reaction to fire",
+      "standard": null,
+      "value": "E",
+      "unit": null,
+      "comment": null
+    }
+  ],
+  "_source": {
+    "pdf_filename": "BEPD_024.0156.002-01.00.00_Derbigum NT 4- EN - signed.pdf",
+    "pdf_sha256": "8bd47b60762ce8be6b470c27271b0c2bd92247df0f127707856b0048245c72c0",
+    "api_pages": "5-9",
+    "api_pages_resolved": "5,6,7,8,9",
+    "api_pdf_bytes": 281573,
+    "api_pdf_sha256": "08fe3f8d10bc1aca9ed426058ca63116d927b312f5062a8f8eed5fdd6d888add",
+    "api_pdf_slice": "out/pdf_slices/BEPD_024.0156.002-01.00.00_Derbigum NT 4- EN - signed.p5-p6-p7-p8-p9.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:41:00.415Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 11184,
+    "output_tokens": 1717
+  }
+}

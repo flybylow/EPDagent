@@ -49,6 +49,15 @@
       "tablePhase": "phase3_composition"
     },
     {
+      "id": "phase3_lca_study",
+      "order": 3.2,
+      "name": "LCA study",
+      "description": "LCA methodology, boundaries, and representativeness",
+      "outputDir": "phase3_lca_study",
+      "apiPath": "phases",
+      "apiQuery": "phase=3-lca-study"
+    },
+    {
       "id": "phase4_lca",
       "order": 4,
       "name": "LCA tables",
@@ -61,14 +70,27 @@
       "order": 5,
       "name": "Scenarios",
       "description": "Transport, installation, use, end-of-life assumptions",
-      "outputDir": "phase5_scenarios"
+      "outputDir": "phase5_scenarios",
+      "apiPath": "phases",
+      "apiQuery": "phase=5"
     },
     {
       "id": "phase6_refs",
       "order": 6,
       "name": "References",
       "description": "Bibliography and additional information",
-      "outputDir": "phase6_refs"
+      "outputDir": "phase6_refs",
+      "apiPath": "phases",
+      "apiQuery": "phase=6"
+    },
+    {
+      "id": "phase7_epd_sections",
+      "order": 7,
+      "name": "Narrative sections",
+      "description": "Additional environmental information, verification, application unit, reversibility",
+      "outputDir": "phase7_epd_sections",
+      "apiPath": "phases",
+      "apiQuery": "phase=7"
     }
   ]
 }

@@ -4,6 +4,10 @@
   "phase2Pages": "1-4,18,21",
   "phase3Pages": "4-8",
   "phase3CompositionPages": "6",
+  "phase3LcaStudyPages": "9-10",
+  "phase5Pages": "19-22",
+  "phase7Pages": "23-26",
+  "phase6Pages": "27",
   "docmapPages": "2-3",
-  "notes": "Cover/header on 1–4; TOC on 2–3; independent verifier signature blocks on 18 and 21"
+  "notes": "Cover/header on 1–4; TOC on 2–3; LCA tables §6–9 on 13–16; scenarios §10 on 19–22; bibliography §15 on 27"
 }

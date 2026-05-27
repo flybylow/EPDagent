@@ -4,8 +4,21 @@ import * as path from "node:path";
 import { resolvePhase2PageSpec } from "../extract/phase2-pages";
 import { resolvePhase3CompositionPageSpec } from "../extract/phase3-composition-pages";
 import { resolvePhase3PageSpec } from "../extract/phase3-pages";
+import { resolvePhase3LcaStudyPageSpec } from "../extract/phase3-lca-study-pages";
+import { resolvePhase5PageSpec } from "../extract/phase5-pages";
+import { resolvePhase6PageSpec } from "../extract/phase6-pages";
+import { phase7TargetsSatisfied } from "../extract/phase7-targets";
+import { resolvePhase7PageSpec } from "../extract/phase7-pages";
 import { PHASE_DIRS } from "../paths";
-import type { Phase2Data, Phase3CompositionData, Phase3ProductData } from "../types";
+import type {
+  Phase2Data,
+  Phase3CompositionData,
+  Phase3ProductData,
+  Phase3LcaStudyData,
+  Phase5ScenariosData,
+  Phase6RefsData,
+  Phase7EpdSectionsData,
+} from "../types";
 
 const DEFAULT_MAX_PDF_BYTES = 5 * 1024 * 1024;
 const DEFAULT_MAX_API_PDF_BYTES = 2 * 1024 * 1024;
@@ -164,4 +177,93 @@ export function phase3CompositionCacheStatus(
   }
 
   return { skip: false, outPath };
+}
+
+function phaseCacheStatus<T extends { _source?: Record<string, unknown> }>(
+  outDir: string,
+  stem: string,
+  pdfPath: string,
+  currentPages: string,
+  force: boolean,
+  label: string
+): { skip: boolean; reason?: string; outPath: string } {
+  const outPath = path.join(outDir, `${stem}.json`);
+  if (force || !fs.existsSync(outPath)) {
+    return { skip: false, outPath };
+  }
+  const cached = JSON.parse(fs.readFileSync(outPath, "utf-8")) as T;
+  const cachedHash = cached._source?.pdf_sha256;
+  const cachedPages = cached._source?.api_pages as string | undefined;
+  if (!cachedHash) return { skip: false, outPath };
+  if (pdfSha256(pdfPath) === cachedHash && cachedPages === currentPages) {
+    return {
+      skip: true,
+      reason: `unchanged PDF + pages ${currentPages}; cached ${label} exists (use --force to re-extract)`,
+      outPath,
+    };
+  }
+  return { skip: false, outPath };
+}
+
+export function phase3LcaStudyCacheStatus(stem: string, pdfPath: string, force = false) {
+  return phaseCacheStatus<Phase3LcaStudyData>(
+    PHASE_DIRS.phase3_lca_study,
+    stem,
+    pdfPath,
+    resolvePhase3LcaStudyPageSpec(stem),
+    force,
+    "phase3 LCA study output"
+  );
+}
+
+export function phase5CacheStatus(stem: string, pdfPath: string, force = false) {
+  return phaseCacheStatus<Phase5ScenariosData>(
+    PHASE_DIRS.phase5,
+    stem,
+    pdfPath,
+    resolvePhase5PageSpec(stem),
+    force,
+    "phase5 output"
+  );
+}
+
+export function phase6CacheStatus(stem: string, pdfPath: string, force = false) {
+  return phaseCacheStatus<Phase6RefsData>(
+    PHASE_DIRS.phase6,
+    stem,
+    pdfPath,
+    resolvePhase6PageSpec(stem),
+    force,
+    "phase6 output"
+  );
+}
+
+export function phase7CacheStatus(stem: string, pdfPath: string, force = false) {
+  const outPath = path.join(PHASE_DIRS.phase7, `${stem}.json`);
+  const pageSpec = resolvePhase7PageSpec(stem);
+
+  if (force || !fs.existsSync(outPath)) {
+    return { skip: false, outPath };
+  }
+
+  const cached = JSON.parse(fs.readFileSync(outPath, "utf-8")) as Phase7EpdSectionsData;
+  const cachedHash = cached._source?.pdf_sha256;
+  const cachedPages = cached._source?.api_pages as string | undefined;
+  if (!cachedHash || pdfSha256(pdfPath) !== cachedHash || cachedPages !== pageSpec) {
+    return { skip: false, outPath };
+  }
+
+  if (!phase7TargetsSatisfied(stem, cached)) {
+    return {
+      skip: false,
+      outPath,
+      reason: "cached phase7 is missing docmap narrative targets (re-extract phase 7)",
+    };
+  }
+
+  return {
+    skip: true,
+    reason: `unchanged PDF + pages ${pageSpec}; cached phase7 output exists (use --force to re-extract)`,
+    outPath,
+  };
 }

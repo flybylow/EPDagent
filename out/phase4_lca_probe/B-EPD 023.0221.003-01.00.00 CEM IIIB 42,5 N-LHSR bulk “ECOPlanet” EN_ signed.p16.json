@@ -1,0 +1,807 @@
+{
+  "table_title": "RESOURCE USE",
+  "table_type": "resource_use",
+  "introductory_text": "PERE = USE OF RENEWABLE PRIMARY ENERGY EXCLUDING RENEWABLE PRIMARY ENERGY RESOURCES USED AS RAW MATERIALS; PERM = USE OF RENEWABLE PRIMARY ENERGY RESOURCES USED AS RAW MATERIALS; PERT = TOTAL USE OF RENEWABLE PRIMARY ENERGY RESOURCES; PENRE = USE OF NON-RENEWABLE PRIMARY ENERGY EXCLUDING NON-RENEWABLE PRIMARY ENERGY RESOURCES USED AS RAW MATERIALS; PENRM = USE OF NON-RENEWABLE PRIMARY ENERGY RESOURCES USED AS RAW MATERIALS; PENRT = TOTAL USE OF NON-RENEWABLE PRIMARY ENERGY RESOURCES; SM = USE OF SECONDARY MATERIAL; RSF = USE OF RENEWABLE SECONDARY FUELS; NRSF = USE OF NON-RENEWABLE SECONDARY FUELS; FW = NET USE OF FRESH WATER",
+  "column_groups": [
+    {
+      "label": "Production",
+      "column_codes": [
+        "A1-A3"
+      ]
+    },
+    {
+      "label": "Construction process stage",
+      "column_codes": [
+        "A4",
+        "A5"
+      ]
+    },
+    {
+      "label": "Use stage",
+      "column_codes": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7"
+      ]
+    },
+    {
+      "label": "End-of-life stage",
+      "column_codes": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "label": null,
+      "column_codes": [
+        "D"
+      ]
+    }
+  ],
+  "columns": [
+    {
+      "code": "A1-A3",
+      "label": "A1-A3 Product stage",
+      "group": "Production"
+    },
+    {
+      "code": "A4",
+      "label": "A4 Transport",
+      "group": "Construction process stage"
+    },
+    {
+      "code": "A5",
+      "label": "A5 Installation",
+      "group": "Construction process stage"
+    },
+    {
+      "code": "B1",
+      "label": "B1 Use",
+      "group": "Use stage"
+    },
+    {
+      "code": "B2",
+      "label": "B2 Maintenance",
+      "group": "Use stage"
+    },
+    {
+      "code": "B3",
+      "label": "B3 Repair",
+      "group": "Use stage"
+    },
+    {
+      "code": "B4",
+      "label": "B4 Replacement",
+      "group": "Use stage"
+    },
+    {
+      "code": "B5",
+      "label": "B5 Refurbishment",
+      "group": "Use stage"
+    },
+    {
+      "code": "B6",
+      "label": "B6 Operational energy use",
+      "group": "Use stage"
+    },
+    {
+      "code": "B7",
+      "label": "B7 Operational water use",
+      "group": "Use stage"
+    },
+    {
+      "code": "C1",
+      "label": "C1 Deconstruction / demolition",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "C2",
+      "label": "C2 Transport",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "C3",
+      "label": "C3 Waste processing",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "C4",
+      "label": "C4 Disposal",
+      "group": "End-of-life stage"
+    },
+    {
+      "code": "D",
+      "label": "D Reuse, recovery, recycling",
+      "group": null
+    }
+  ],
+  "rows": [
+    {
+      "indicator": "PERE",
+      "unit": "MJ/FU, net calorific value",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "2,98E+02"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "7,73E-01"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    },
+    {
+      "indicator": "PERM",
+      "unit": "MJ/FU, net calorific value",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    },
+    {
+      "indicator": "PERT",
+      "unit": "MJ/FU, net calorific value",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "2,98E+02"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "7,73E-01"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    },
+    {
+      "indicator": "PENRE",
+      "unit": "MJ/FU, net calorific value",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "2,21E+03"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "2,24E+02"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    },
+    {
+      "indicator": "PENRM",
+      "unit": "MJ/FU, net calorific value",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    },
+    {
+      "indicator": "PENRT",
+      "unit": "MJ/FU, net calorific value",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "2,21E+03"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "2,24E+02"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    },
+    {
+      "indicator": "SM",
+      "unit": "kg/FU",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "7,37E+02"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    },
+    {
+      "indicator": "RSF",
+      "unit": "MJ/FU, net calorific value",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "2,43E+02"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    },
+    {
+      "indicator": "NRSF",
+      "unit": "MJ/FU, net calorific value",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "6,62E+02"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "0,00E+00"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    },
+    {
+      "indicator": "FW",
+      "unit": "m³ water eq/FU",
+      "values": [
+        {
+          "column_code": "A1-A3",
+          "raw_value": "2,57E+01"
+        },
+        {
+          "column_code": "A4",
+          "raw_value": "2,52E-02"
+        },
+        {
+          "column_code": "A5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B1",
+          "raw_value": null
+        },
+        {
+          "column_code": "B2",
+          "raw_value": null
+        },
+        {
+          "column_code": "B3",
+          "raw_value": null
+        },
+        {
+          "column_code": "B4",
+          "raw_value": null
+        },
+        {
+          "column_code": "B5",
+          "raw_value": null
+        },
+        {
+          "column_code": "B6",
+          "raw_value": null
+        },
+        {
+          "column_code": "B7",
+          "raw_value": null
+        },
+        {
+          "column_code": "C1",
+          "raw_value": null
+        },
+        {
+          "column_code": "C2",
+          "raw_value": null
+        },
+        {
+          "column_code": "C3",
+          "raw_value": null
+        },
+        {
+          "column_code": "C4",
+          "raw_value": null
+        },
+        {
+          "column_code": "D",
+          "raw_value": null
+        }
+      ]
+    }
+  ],
+  "capture": {
+    "headers_rotated": true,
+    "column_count": 15,
+    "row_count": 10,
+    "complete": false,
+    "notes": "Only modules A1-A3 and A4 contain data values. Modules A5, B1-B7, C1-C4, and D appear as column headers but have no visible data values in the cells (appear empty/blank). This suggests the table may continue on another page or these modules are not applicable for this product in the Resource Use category."
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 023.0221.003-01.00.00 CEM IIIB 42,5 N-LHSR bulk “ECOPlanet” EN_ signed.pdf",
+    "pdf_sha256": "55bf1c8885461ad261acc495b542a6dd2e3a94f3795d822ed050355f1e8487de",
+    "api_pages": "16",
+    "api_pages_resolved": "16",
+    "api_pdf_bytes": 30276,
+    "api_pdf_sha256": "a43ed46a46cf31e75a2eed0ac0c6dec0afa2459d019f57e664d2c1218ff2a049",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 023.0221.003-01.00.00 CEM IIIB 42,5 N-LHSR bulk “ECOPlanet” EN_ signed.p16.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T17:42:34.004Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 4039,
+    "output_tokens": 4470
+  }
+}

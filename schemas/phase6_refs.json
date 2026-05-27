@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EPD References",
+  "description": "Phase 6 output: bibliography and additional information",
+  "type": "object",
+  "properties": {
+    "bibliography": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Bibliography / normative reference entries"
+    },
+    "additional_information": {
+      "type": ["array", "null"],
+      "items": { "type": "string" },
+      "description": "Other reference blocks (owner info, contacts, notes)"
+    }
+  },
+  "required": ["bibliography", "additional_information"]
+}

@@ -1,0 +1,51 @@
+{
+  "epd_number": "025.0271.001-01.00.00",
+  "program_operator": "Federal Public Service Health, Food Chain Safety and Environment",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": "BC MATERIALS",
+    "address": null,
+    "country": "BE"
+  },
+  "product_name": "COMPRESSED EARTH BLOCK – installed with earth adhesive mortar",
+  "product_description": "Compressed block 140, CEB_140 installed with Léém Earth Adhesive Mortar (EB_EAM)",
+  "standards_conformity": null,
+  "verification_statement": "THIRD PARTY VERIFIED",
+  "conformity_basis": "in accordance with NBN EN 15804+A2 and B-EPD PCR",
+  "declared_scope": "To build 1 m² of wall with 140 mm width compressed earth blocks installed with earth adhesive mortar, for a reference service life of 100 years in Belgium",
+  "declared_modules": [
+    "A123",
+    "A4",
+    "A5",
+    "B",
+    "C",
+    "D"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "m2"
+  },
+  "validity": {
+    "issued": "2025-09-12",
+    "valid_until": "2030-09-12"
+  },
+  "pcr_reference": null,
+  "verifier": {
+    "name": null,
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed.pdf",
+    "pdf_sha256": "423c951eac4a4121b02a3c9fc71a346b8eeae5b97bceec40ec250d6c795e4132",
+    "api_pages": "1-4",
+    "api_pages_resolved": "1,2,3,4",
+    "api_pdf_bytes": 872136,
+    "api_pdf_sha256": "c337531ad891763bd43c14da7b7cc1fab0577cf406691e79bf1bfe1e789b45d9",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.271.001-01.00.00 BC Materials Earth Block +EAM - signed.p1-p2-p3-p4.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:00:43.627Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 10469,
+    "output_tokens": 541
+  }
+}

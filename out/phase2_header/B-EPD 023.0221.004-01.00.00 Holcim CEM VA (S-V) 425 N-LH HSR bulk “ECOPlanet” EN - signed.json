@@ -1,0 +1,48 @@
+{
+  "epd_number": "23.0221.04-01.00.00",
+  "program_operator": "Federal Public Service of Health, Food Chain Safety and Environment",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": "Holcim Belgique SA",
+    "address": null,
+    "country": "BE"
+  },
+  "product_name": "CEM V/A (S-V) 42,5 N-LH HSR bulk \"ECOPlanet\"",
+  "product_description": null,
+  "standards_conformity": null,
+  "verification_statement": "THIRD PARTY VERIFIED",
+  "conformity_basis": "in accordance with EN 15804+A2, B-EPD Construction PCR and EN 16908+A1",
+  "declared_scope": "1 tonne (1000 kg) of CEM V/A (S-V) 42,5 N-LH HSR bulk \"ECOPlanet\". Cradle-to-gate with options.",
+  "declared_modules": [
+    "A1",
+    "A2",
+    "A3"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "t"
+  },
+  "validity": {
+    "issued": "2023-12-08",
+    "valid_until": "2028-12-08"
+  },
+  "pcr_reference": "EN 16908+A1",
+  "verifier": {
+    "name": "Dieter De Lathauwer",
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 023.0221.004-01.00.00 Holcim CEM VA (S-V) 425 N-LH HSR bulk “ECOPlanet” EN - signed.pdf",
+    "pdf_sha256": "c49ea64d7f7cd1394aec643bcae3e3735a785d81662aaaf16253bba6a5106a70",
+    "api_pages": "1-4",
+    "api_pages_resolved": "1,2,3,4",
+    "api_pdf_bytes": 815299,
+    "api_pdf_sha256": "d0e64bcfb137939ab6a4161a6e58200b9f066577c56e6db48cc8a164e321111b",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 023.0221.004-01.00.00 Holcim CEM VA (S-V) 425 N-LH HSR bulk “ECOPlanet” EN - signed.p1-p2-p3-p4.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T17:57:50.655Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 9987,
+    "output_tokens": 555
+  }
+}

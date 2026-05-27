@@ -1,0 +1,107 @@
+{
+  "section_title": "3 LCA-STUDY",
+  "standards_and_methodology": "As specified in EN 15804:2012+A2:2019/AC:2021 and the Product-Category Rules, the environmental impacts are declared and reported using the baseline characterization factors are from the ILCD. Raw materials and energy consumption, as well as transport distances have been taken directly from the manufacturing plant. \nCharacterization factors EN15804 based on EF 3.1.",
+  "pcr_reference": "Product-Category Rules",
+  "lca_software_and_database": "For the calculation of the LCA results, the software program Gabi 10 has been used.\n\nBackground data from Sphera 2023 and ecoinvent v.3.8",
+  "goal_and_scope": null,
+  "functional_unit": null,
+  "system_boundaries": "System boundaries (parsed from PDF diagram — no AI)\nPage 10\nDeclared modules (☒): A1, A2, A3, A4, A5, B1, B2, B3, B4, C1, C2, C3, C4, D\nNot declared (☐): B5, B6, B7\nBy life-cycle stage:\nProduct stage: A1, A2, A3\nConstruction installation stage: A4, A5\nUse stage: B1, B2, B3, B4\nEnd of life stage: C1, C2, C3, C4\nBeyond the system boundaries: D\n\nModule labels (vertical text):\nA1: Raw materials\nA2: Transport\nA3: Manufacturing\nA4: Transport\nA5: Construction\nB1: Use\nB2: Maintenance\nB3: Repa\nB4: Replacement\nB5: Refurbishment\nB6: Operational energy use\nB7: Operational water use\nC1: construction\nC2: Transport\nC3: Waste processing\nC4: Disposal\nD: Recovery",
+  "production_sites": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site.\n\nThe data was collected from internal records and reporting documents from Saint-Gobain Construction Products nv/sa plant at Kallo, Belgium.",
+  "cut_off_criteria": "The cut-off criteria used in this study is based on mass with the following details. All inputs and outputs for which data is available are included in the calculation.\nIn case of insufficient input data or data gaps for a unit process, the cut-off criterion is 1% of renewable and nonrenewable primary energy usage and 1% of the total mass input of that unit process. The total of neglected input flows per module is a maximum of 5% of energy usage and mass. Conservative assumptions in combination with plausibility considerations and expert judgement have been used to demonstrate compliance with these criteria.\nAll hazardous and toxic materials and substances are included in the inventory and the cut-off rules do not apply.",
+  "allocation": "Allocation has been avoided when possible and when not possible a mass allocation has been applied.\nThe polluter pays as well the modularity principles have been followed.",
+  "data_quality": "Inventory data quality is judged by geographical, temporal, and technological representativeness. To cover these requirements and to ensure reliable results, first-hand industry data crossed with LCA background datasets were used. The data was collected from internal records and reporting documents from Saint-Gobain Construction Products nv/sa plant at Kallo, Belgium. After evaluating the inventory, according to the defined ranking in the LCA report, the assessment reflects good inventory data quality.",
+  "time_representativeness": "Manufacturer specific data have been collected for the year 2022.",
+  "geographical_representativeness": "The data was collected from internal records and reporting documents from Saint-Gobain Construction Products nv/sa plant at Kallo, Belgium.",
+  "technology_representativeness": null,
+  "impact_assessment": "As specified in EN 15804:2012+A2:2019/AC:2021 and the Product-Category Rules, the environmental impacts are declared and reported using the baseline characterization factors are from the ILCD.\nCharacterization factors EN15804 based on EF 3.1.",
+  "interpretation": null,
+  "additional_paragraphs": [
+    "Following processes were excluded for the inventory:\n- Research and development activities\n- Flows related to human activities such as employee transport and administration activity\n- Saint-Gobain capital equipment",
+    "The product contains biogenic carbon due to the additives and paper liner used. Regarding packaging, biogenic carbon is quantified due to wooden pallets production.\n\nBiogenic carbon content in product (at the gate): 1,67E-01 kg C / FU\nBiogenic carbon content in accompanying packaging (at the gate): 1,06E-01 kg C / FU",
+    "Carbon offsetting is not allowed in the EN 15804 and hence not taken into account in the calculations.",
+    "The main energy used is natural gas for the calcination of gypsum and drying of the plasterboard.\nThe factory based in Kallo uses renewable electricity produced on-site by wind mill and purchased with Guarantee of Origin certificate (GO's). Hence, the electricity mix considered for the manufacturing of the studied product is modelled according to the electricity mix described in the Guarantee of Origin certificate."
+  ],
+  "subsections": [
+    {
+      "number": "3.1",
+      "title": "Date of LCA-study",
+      "content": "Date of model development: July 3rd 2024\nDate of LCA study: July 18th 2024"
+    },
+    {
+      "number": "3.2",
+      "title": "Software",
+      "content": "For the calculation of the LCA results, the software program Gabi 10 has been used."
+    },
+    {
+      "number": "3.3",
+      "title": "Information on allocation",
+      "content": "Allocation has been avoided when possible and when not possible a mass allocation has been applied.\nThe polluter pays as well the modularity principles have been followed."
+    },
+    {
+      "number": "3.4",
+      "title": "Informatie on cut off",
+      "content": "The cut-off criteria used in this study is based on mass with the following details. All inputs and outputs for which data is available are included in the calculation.\nIn case of insufficient input data or data gaps for a unit process, the cut-off criterion is 1% of renewable and nonrenewable primary energy usage and 1% of the total mass input of that unit process. The total of neglected input flows per module is a maximum of 5% of energy usage and mass. Conservative assumptions in combination with plausibility considerations and expert judgement have been used to demonstrate compliance with these criteria.\nAll hazardous and toxic materials and substances are included in the inventory and the cut-off rules do not apply."
+    },
+    {
+      "number": "3.5",
+      "title": "Information on excluded processes",
+      "content": "Following processes were excluded for the inventory:\n- Research and development activities\n- Flows related to human activities such as employee transport and administration activity\n- Saint-Gobain capital equipment"
+    },
+    {
+      "number": "3.6",
+      "title": "Information on biogenic carbon modelling",
+      "content": "The product contains biogenic carbon due to the additives and paper liner used. Regarding packaging, biogenic carbon is quantified due to wooden pallets production.\n\nBiogenic carbon content (kg C / FU):\nBiogenic carbon content in product (at the gate): 1,67E-01\nBiogenic carbon content in accompanying packaging (at the gate): 1,06E-01"
+    },
+    {
+      "number": "3.7",
+      "title": "Information on carbon offsetting",
+      "content": "Carbon offsetting is not allowed in the EN 15804 and hence not taken into account in the calculations."
+    },
+    {
+      "number": "3.8",
+      "title": "Additional or deviating characterisation factors",
+      "content": "As specified in EN 15804:2012+A2:2019/AC:2021 and the Product-Category Rules, the environmental impacts are declared and reported using the baseline characterization factors are from the ILCD. Raw materials and energy consumption, as well as transport distances have been taken directly from the manufacturing plant.\nCharacterization factors EN15804 based on EF 3.1."
+    },
+    {
+      "number": "3.9",
+      "title": "Specificity",
+      "content": "The data used for the LCA are specific for this product which is manufactured by a single manufacturer in a single production site."
+    },
+    {
+      "number": "3.10",
+      "title": "Period of data collection",
+      "content": "Manufacturer specific data have been collected for the year 2022."
+    },
+    {
+      "number": "3.11",
+      "title": "Information on data collection",
+      "content": "Inventory data quality is judged by geographical, temporal, and technological representativeness. To cover these requirements and to ensure reliable results, first-hand industry data crossed with LCA background datasets were used. The data was collected from internal records and reporting documents from Saint-Gobain Construction Products nv/sa plant at Kallo, Belgium. After evaluating the inventory, according to the defined ranking in the LCA report, the assessment reflects good inventory data quality."
+    },
+    {
+      "number": "3.12",
+      "title": "Database used for background data",
+      "content": "Background data from Sphera 2023 and ecoinvent v.3.8"
+    },
+    {
+      "number": "3.13",
+      "title": "Energy mix",
+      "content": "The main energy used is natural gas for the calcination of gypsum and drying of the plasterboard.\nThe factory based in Kallo uses renewable electricity produced on-site by wind mill and purchased with Guarantee of Origin certificate (GO's). Hence, the electricity mix considered for the manufacturing of the studied product is modelled according to the electricity mix described in the Guarantee of Origin certificate."
+    }
+  ],
+  "_source": {
+    "pdf_filename": "B-EPD 024.0013.008-01.00.00 Gyproc Rf 12.5 Saint-Gobain- EN_signed.pdf",
+    "pdf_sha256": "37696f82a2635691ee9d766477d3faf9596ca9cfd9d396d8095b6e6a0656bfda",
+    "api_pages": "8-9",
+    "api_pages_resolved": "8,9",
+    "api_pdf_bytes": 71419,
+    "api_pdf_sha256": "cb26827a06d23717975af4c2a7afad6108e049a9be5df9d3a07eba469deb8544",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 024.0013.008-01.00.00 Gyproc Rf 12.5 Saint-Gobain- EN_signed.p8-p9.pdf",
+    "extracted_by": "claude-api+pdf-system-boundaries-parser",
+    "extracted_at": "2026-05-26T18:32:00.269Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 6099,
+    "output_tokens": 2339,
+    "system_boundaries_pages": "10",
+    "system_boundaries_refreshed_at": "2026-05-26T20:39:01.392Z"
+  }
+}

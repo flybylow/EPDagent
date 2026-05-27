@@ -27,4 +27,12 @@ Before running phase 2, Extract PDF (with phase 2), or AI verify, **read [`api-b
 - **Contracts:** Phase JSON schemas are the extraction contract; JSON-LD is the publication / linking layer.
 - **PDF corpus:** `data/EPD/` (default folder). Reference EPDs registered in `data/reference/index.json` — see [reference-epd-corpus.md](reference-epd-corpus.md).
 
+## Docmap (section index / nav menu)
+
+- **TOC parser** runs on pages 2–3; many B-EPD PDFs have no table of contents.
+- **Heading scan** (`pdf-heading-scan`) is the backup: ALL-CAPS EN 15804 headings across the full PDF (`lib/extract/docmap-heading-scan.ts`), invoked from `extractDocmap()` when TOC returns 0 entries.
+- **Empty docmap files** (0 `flat_entries`) must not count as “done”: extract skip uses `docmapIsCached` (entry count &gt; 0), not mere file existence.
+- **EPD page load** calls `ensureDocmapForStem()` when a PDF exists but the index is missing/empty — builds the menu without manual `npm run docmap`.
+- **Phase 7 narrative** (`§11.1` indoor air, §12 verification, §13 scenario development, §14 application unit, etc.): `phase7-text-parse` extracts text between PDF headings (no API). Headings without a printed section number (common on ETEX/Cedral) are anchored via docmap page + title. Docmap entries mislabeled as `11 · INDOOR AIR` are normalized to `11.1`. §13 “Additional technical information for scenario development” is phase 7 (not phase 5 §10). EPD page load runs `ensurePhase7ForStem()` when narrative is missing. Bulk: `npm run refresh:phase7-text`; check: `npm run test:phase7-sections`.
+
 Extend this file when project-wide conventions change.

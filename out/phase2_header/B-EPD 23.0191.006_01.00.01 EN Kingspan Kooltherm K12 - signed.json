@@ -1,0 +1,52 @@
+{
+  "epd_number": "23-0191-006-01.00.01",
+  "program_operator": "Federal Public Service Health, Food Chain Safety and Environment",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": "Kingspan Insulation BV",
+    "address": null,
+    "country": "NL"
+  },
+  "product_name": "Kooltherm® K12",
+  "product_description": "thermal insulation board",
+  "standards_conformity": null,
+  "verification_statement": "THIRD PARTY VERIFIED",
+  "conformity_basis": "in accordance with EN 15804+A2, EN16783 and NBN/DTD B08-001",
+  "declared_scope": "1 m2 thermal insulation board with a thickness of 80 mm with an RD-value of 3,80 m2·K/W",
+  "declared_modules": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "C",
+    "D"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "m2"
+  },
+  "validity": {
+    "issued": "2023-04-20",
+    "valid_until": "2028-04-20"
+  },
+  "pcr_reference": "EN16783",
+  "verifier": {
+    "name": null,
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 23.0191.006_01.00.01 EN Kingspan Kooltherm K12 - signed.pdf",
+    "pdf_sha256": "dc110f9f93e224960dbb448f52c7ea5f05e51c4824c2fa22f95370c4c9c59b55",
+    "api_pages": "1-4",
+    "api_pages_resolved": "1,2,3,4",
+    "api_pdf_bytes": 482962,
+    "api_pdf_sha256": "455355bd7dd20a42a6ecee2a2ad7e9a644a08d409c92cddb0681a8a35b55437c",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 23.0191.006_01.00.01 EN Kingspan Kooltherm K12 - signed.p1-p2-p3-p4.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:04:45.898Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 10278,
+    "output_tokens": 524
+  }
+}

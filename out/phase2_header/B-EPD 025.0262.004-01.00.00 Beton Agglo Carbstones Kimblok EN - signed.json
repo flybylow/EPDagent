@@ -1,0 +1,51 @@
+{
+  "epd_number": "025.0262.004-01.00.00",
+  "program_operator": "Federal Public Service of Health, Food Chain Safety and Environment",
+  "program_operator_code": "B-EPD",
+  "producer": {
+    "name": "Orbix & Betonagglomeraten Gubbels N.V.",
+    "address": null,
+    "country": "BE"
+  },
+  "product_name": "Carbstone Kimblok",
+  "product_description": "Sizes: 29/09/22, 29/14/22, 29/19/22",
+  "standards_conformity": null,
+  "verification_statement": "THIRD PARTY VERIFIED",
+  "conformity_basis": "in accordance with EN 15804+A2 and B-EPD PCR 18.10.2022",
+  "declared_scope": "1 m2 of load bearing wall made of Carbstone Kimblok including installation, (dimensions : 29/09/22, 29/14/22, 29/19/22)",
+  "declared_modules": [
+    "A123",
+    "A4",
+    "A5",
+    "B1-7",
+    "C",
+    "D"
+  ],
+  "declared_unit": {
+    "value": 1,
+    "unit": "m2"
+  },
+  "validity": {
+    "issued": "2025-10-30",
+    "valid_until": "2030-10-30"
+  },
+  "pcr_reference": null,
+  "verifier": {
+    "name": null,
+    "type": "independent_third_party"
+  },
+  "_source": {
+    "pdf_filename": "B-EPD 025.0262.004-01.00.00 Beton Agglo Carbstones Kimblok EN - signed.pdf",
+    "pdf_sha256": "bf8437a84b87484607fc2b36353bf7d82115eed369c2d0cb746ff34dde2db5b1",
+    "api_pages": "1-4",
+    "api_pages_resolved": "1,2,3,4",
+    "api_pdf_bytes": 1357056,
+    "api_pdf_sha256": "1c0ad2bc54ae699bf5e853ca2ebf86265a49e75ecbc14aed225f692e555f2cff",
+    "api_pdf_slice": "out/pdf_slices/B-EPD 025.0262.004-01.00.00 Beton Agglo Carbstones Kimblok EN - signed.p1-p2-p3-p4.pdf",
+    "extracted_by": "claude-api",
+    "extracted_at": "2026-05-26T18:04:15.598Z",
+    "model": "claude-sonnet-4-5",
+    "input_tokens": 10971,
+    "output_tokens": 557
+  }
+}
