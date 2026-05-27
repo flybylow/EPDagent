@@ -46,7 +46,8 @@ export default async function EpdPage({
   }
 
   const registry = resolveEpdPhases(stem, { pdfAvailable: record.hasPdf });
-  const gapReport = record.hasPdf ? buildGapReport(stem) : null;
+  const gapReport =
+    record.hasPdf && !isServeOnlyDeploy() ? buildGapReport(stem) : null;
   if (gapReport) writeGapSnapshot(gapReport);
   const graph = buildGraphDocumentForStem(stem);
   const verification = loadVerification(stem);

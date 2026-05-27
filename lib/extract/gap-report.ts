@@ -6,6 +6,7 @@ import { resolveEpdPhases } from "../phases/registry";
 import type { SectionAvailability } from "../templates/section-view-types";
 import { resolveSectionAvailability } from "../templates/section-view-resolve";
 import { loadTableManifest, tableRegistryForStem } from "../tables/manifest";
+import { isServeOnlyDeploy } from "../deploy/serve-only";
 import { OUT_DIR, ROOT } from "../paths";
 import {
   loadGapLocks,
@@ -161,11 +162,16 @@ export function buildGapReport(stem: string): GapReport {
   };
 }
 
-export function writeGapSnapshot(report: GapReport): string {
+export function writeGapSnapshot(report: GapReport): string | null {
+  if (isServeOnlyDeploy()) return null;
   const file = gapSnapshotPath(report.stem);
-  fs.mkdirSync(path.dirname(file), { recursive: true });
-  fs.writeFileSync(file, JSON.stringify(report, null, 2));
-  return file;
+  try {
+    fs.mkdirSync(path.dirname(file), { recursive: true });
+    fs.writeFileSync(file, JSON.stringify(report, null, 2));
+    return file;
+  } catch {
+    return null;
+  }
 }
 
 export function readGapSnapshot(stem: string): GapReport | null {

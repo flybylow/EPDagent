@@ -68,7 +68,9 @@ import {
   phase2HasCoverContent,
 } from "../extract/phase2-enrich";
 import { loadPhase4Probes, hasAnyPhase4Probe } from "../extract/phase4-probes";
+import { safeReadJson } from "../fs-safe";
 import { buildDraft, loadTemplate } from "../templates";
+import phasesRegistryBundled from "../../data/reference/phases.registry.json";
 
 function loadDocmap(stem: string): PhaseDocmapResult | null {
   return readJson<PhaseDocmapResult>(path.join(OUT_DIR, "phase_docmap", `${stem}.json`));
@@ -126,7 +128,9 @@ interface PhasesRegistryFile {
 const REGISTRY_PATH = path.join(REFERENCE_DIR, "phases.registry.json");
 
 export function loadPhaseRegistryDefs(): RegistryPhaseDef[] {
-  const data = JSON.parse(fs.readFileSync(REGISTRY_PATH, "utf-8")) as PhasesRegistryFile;
+  const data =
+    safeReadJson<PhasesRegistryFile>(REGISTRY_PATH) ??
+    (phasesRegistryBundled as PhasesRegistryFile);
   return [...data.phases].sort((a, b) => a.order - b.order);
 }
 

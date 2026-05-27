@@ -1,6 +1,8 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
+import { safeReadJson } from "./fs-safe";
 import { ROOT } from "./paths";
+import referenceIndexBundled from "../data/reference/index.json";
 
 export interface ReferenceEpd {
   id: string;
@@ -25,7 +27,10 @@ interface ReferenceIndex {
 const INDEX_PATH = path.join(ROOT, "data", "reference", "index.json");
 
 export function loadReferenceIndex(): ReferenceIndex {
-  return JSON.parse(fs.readFileSync(INDEX_PATH, "utf-8")) as ReferenceIndex;
+  return (
+    safeReadJson<ReferenceIndex>(INDEX_PATH) ??
+    (referenceIndexBundled as ReferenceIndex)
+  );
 }
 
 export function listReferenceEpds(): ReferenceEpd[] {
