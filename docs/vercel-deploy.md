@@ -98,6 +98,8 @@ Do **not** set `EPDAGENT_ALLOW_PDF_PARSE=1` on Vercel (pdfjs worker/canvas fail 
 
 EPD pages must **not** statically import `ensure-docmap` / `ensure-phase7` (those pull `pdfjs-dist` and fail with missing `pdf.worker.mjs` on serverless). Use `ensurePdfArtifactsForStem()` from `lib/extract/ensure-pdf-artifacts.ts` instead.
 
+Draft/section layout templates (`templates/epd-header.v1.json`, `epd-section-view.v1.json`) are **imported in code** so Vercel bundles them; `next.config.ts` also lists `templates/**/*.json` under `outputFileTracingIncludes` for any runtime `readFileSync` fallbacks.
+
 `pdfjs-dist` optionally loads `@napi-rs/canvas`. The repo lists it under `optionalDependencies`. Extraction stays **local**. Warnings during `/api/extract` on Vercel are expected on Hobby — Tabulas should use `/api/products` and `/api/facts` only.
 
 ## Related
