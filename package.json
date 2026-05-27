@@ -20,6 +20,7 @@
     "phase6": "tsx src/phase6_refs.ts",
     "phase7": "tsx src/phase7_epd_sections.ts",
     "docmap": "tsx src/phase_docmap.ts",
+    "docmap:all": "tsx src/phase_docmap.ts --all",
     "graph": "tsx src/build_graph.ts",
     "drafts": "tsx src/build_drafts.ts",
     "export-tables": "tsx src/export_tables.ts",

@@ -1,0 +1,434 @@
+{
+  "toc_title": "TABLE OF CONTENTS",
+  "source_pages": [
+    3,
+    4
+  ],
+  "entries": [
+    {
+      "number": "1",
+      "title": "PRODUCT DESCRIPTION",
+      "page": 5,
+      "level": 1,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "Product name",
+          "page": 5,
+          "level": 2
+        },
+        {
+          "number": "1.2",
+          "title": "Product description and intended use",
+          "page": 5,
+          "level": 2
+        },
+        {
+          "number": "1.3",
+          "title": "Reference flow / declared unit",
+          "page": 5,
+          "level": 2
+        },
+        {
+          "number": "1.4",
+          "title": "Installation",
+          "page": 6,
+          "level": 2
+        },
+        {
+          "number": "1.5",
+          "title": "Composition and content",
+          "page": 7,
+          "level": 2
+        },
+        {
+          "number": "1.6",
+          "title": "Reference service life",
+          "page": 7,
+          "level": 2
+        },
+        {
+          "number": "1.7",
+          "title": "Description of geographical representativity",
+          "page": 7,
+          "level": 2
+        },
+        {
+          "number": "1.8",
+          "title": "Description of the production process and technology",
+          "page": 8,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "TECHNICAL DATA / PHYSICAL CHARACTERISTICS",
+      "page": 9,
+      "level": 1
+    },
+    {
+      "number": "3",
+      "title": "LCA-study",
+      "page": 10,
+      "level": 1,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Date of LCA-study",
+          "page": 10,
+          "level": 2
+        },
+        {
+          "number": "3.2",
+          "title": "Software",
+          "page": 10,
+          "level": 2
+        },
+        {
+          "number": "3.3",
+          "title": "Information on allocation",
+          "page": 10,
+          "level": 2
+        },
+        {
+          "number": "3.4",
+          "title": "Information on cut off",
+          "page": 10,
+          "level": 2
+        },
+        {
+          "number": "3.5",
+          "title": "Information on excluded processes",
+          "page": 10,
+          "level": 2
+        },
+        {
+          "number": "3.6",
+          "title": "Information on biogenic carbon modelling",
+          "page": 11,
+          "level": 2
+        },
+        {
+          "number": "3.7",
+          "title": "Information on carbon offsetting",
+          "page": 11,
+          "level": 2
+        },
+        {
+          "number": "3.8",
+          "title": "Information on carbonation of cementitious materials",
+          "page": 11,
+          "level": 2
+        },
+        {
+          "number": "3.9",
+          "title": "Additional or deviating characterisation factors 3.10Description of the variability................................................................................................................11 3.11Specificity................................................................................................................................................12 3.12Period of data collection.......................................................................................................................12 3.13Information on data collection............................................................................................................12 3.14Database used for background data..................................................................................................12 3.15Energy mix...............................................................................................................................................12",
+          "page": 11,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Production sites",
+      "page": 13,
+      "level": 1
+    },
+    {
+      "number": "5",
+      "title": "System boundaries",
+      "page": 13,
+      "level": 1
+    },
+    {
+      "number": "6",
+      "title": "POTENTIAL ENVIRONMENTAL IMPACTS PER REFERENCE FLOW",
+      "page": 14,
+      "level": 1
+    },
+    {
+      "number": "7",
+      "title": "RESOURCE USE",
+      "page": 16,
+      "level": 1
+    },
+    {
+      "number": "8",
+      "title": "WASTE CATEGORIES & OUTPUT FLOWS",
+      "page": 17,
+      "level": 1
+    },
+    {
+      "number": "9",
+      "title": "IMPACT CATEGORIES ADDITIONAL TO EN 15804",
+      "page": 18,
+      "level": 1,
+      "children": [
+        {
+          "number": "9.1",
+          "title": "Environmental impact categories explained",
+          "page": 19,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS 10.1A1-raw material supply.......................................................................................................................21 10.2A2–transport to the manufacturer...................................................................................................21 10.3manufacturing........................................................................................................................................21 10.4A4–transport to the building site......................................................................................................21 10.5A5–installation in the building...........................................................................................................22 10.6B–use stage (excluding potential savings).....................................................................................22 10.7C: End of life............................................................................................................................................22 10.8D–Benefits and loads beyond the system boundaries.................................................................22 STAGe 23 11.1Indoor air.................................................................................................................................................23 11.2Soil and water.........................................................................................................................................23",
+      "page": 21,
+      "level": 1
+    },
+    {
+      "number": "12",
+      "title": "DEMONSTRATION OF VERIFICATION 3|26B-EPDCEM III/B42,5 N-LH/SRbulk“ECOPlanet”",
+      "page": 23,
+      "level": 1
+    },
+    {
+      "number": "13",
+      "title": "lca interpretation",
+      "page": 23,
+      "level": 1
+    },
+    {
+      "number": "14",
+      "title": "TECHNICAL INFORMATION FOR SCENARIO DEVELOPMENT",
+      "page": 24,
+      "level": 1
+    },
+    {
+      "number": "15",
+      "title": "APPLICATION UNIT",
+      "page": 24,
+      "level": 1
+    },
+    {
+      "number": "16",
+      "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+      "page": 24,
+      "level": 1
+    },
+    {
+      "number": "17",
+      "title": "BIBLIOGRAPHY 4|26B-EPDCEM III/B42,5 N-LH/SRbulk“ECOPlanet”",
+      "page": 25,
+      "level": 1
+    }
+  ],
+  "flat_entries": [
+    {
+      "number": "1",
+      "title": "PRODUCT DESCRIPTION",
+      "page": 5,
+      "level": 1
+    },
+    {
+      "number": "1.1",
+      "title": "Product name",
+      "page": 5,
+      "level": 2
+    },
+    {
+      "number": "1.2",
+      "title": "Product description and intended use",
+      "page": 5,
+      "level": 2
+    },
+    {
+      "number": "1.3",
+      "title": "Reference flow / declared unit",
+      "page": 5,
+      "level": 2
+    },
+    {
+      "number": "1.4",
+      "title": "Installation",
+      "page": 6,
+      "level": 2
+    },
+    {
+      "number": "1.5",
+      "title": "Composition and content",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "number": "1.6",
+      "title": "Reference service life",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "number": "1.7",
+      "title": "Description of geographical representativity",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "number": "1.8",
+      "title": "Description of the production process and technology",
+      "page": 8,
+      "level": 2
+    },
+    {
+      "number": "2",
+      "title": "TECHNICAL DATA / PHYSICAL CHARACTERISTICS",
+      "page": 9,
+      "level": 1
+    },
+    {
+      "number": "3",
+      "title": "LCA-study",
+      "page": 10,
+      "level": 1
+    },
+    {
+      "number": "3.1",
+      "title": "Date of LCA-study",
+      "page": 10,
+      "level": 2
+    },
+    {
+      "number": "3.2",
+      "title": "Software",
+      "page": 10,
+      "level": 2
+    },
+    {
+      "number": "3.3",
+      "title": "Information on allocation",
+      "page": 10,
+      "level": 2
+    },
+    {
+      "number": "3.4",
+      "title": "Information on cut off",
+      "page": 10,
+      "level": 2
+    },
+    {
+      "number": "3.5",
+      "title": "Information on excluded processes",
+      "page": 10,
+      "level": 2
+    },
+    {
+      "number": "3.6",
+      "title": "Information on biogenic carbon modelling",
+      "page": 11,
+      "level": 2
+    },
+    {
+      "number": "3.7",
+      "title": "Information on carbon offsetting",
+      "page": 11,
+      "level": 2
+    },
+    {
+      "number": "3.8",
+      "title": "Information on carbonation of cementitious materials",
+      "page": 11,
+      "level": 2
+    },
+    {
+      "number": "3.9",
+      "title": "Additional or deviating characterisation factors 3.10Description of the variability................................................................................................................11 3.11Specificity................................................................................................................................................12 3.12Period of data collection.......................................................................................................................12 3.13Information on data collection............................................................................................................12 3.14Database used for background data..................................................................................................12 3.15Energy mix...............................................................................................................................................12",
+      "page": 11,
+      "level": 2
+    },
+    {
+      "number": "4",
+      "title": "Production sites",
+      "page": 13,
+      "level": 1
+    },
+    {
+      "number": "5",
+      "title": "System boundaries",
+      "page": 13,
+      "level": 1
+    },
+    {
+      "number": "6",
+      "title": "POTENTIAL ENVIRONMENTAL IMPACTS PER REFERENCE FLOW",
+      "page": 14,
+      "level": 1
+    },
+    {
+      "number": "7",
+      "title": "RESOURCE USE",
+      "page": 16,
+      "level": 1
+    },
+    {
+      "number": "8",
+      "title": "WASTE CATEGORIES & OUTPUT FLOWS",
+      "page": 17,
+      "level": 1
+    },
+    {
+      "number": "9",
+      "title": "IMPACT CATEGORIES ADDITIONAL TO EN 15804",
+      "page": 18,
+      "level": 1
+    },
+    {
+      "number": "9.1",
+      "title": "Environmental impact categories explained",
+      "page": 19,
+      "level": 2
+    },
+    {
+      "number": "10",
+      "title": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS 10.1A1-raw material supply.......................................................................................................................21 10.2A2–transport to the manufacturer...................................................................................................21 10.3manufacturing........................................................................................................................................21 10.4A4–transport to the building site......................................................................................................21 10.5A5–installation in the building...........................................................................................................22 10.6B–use stage (excluding potential savings).....................................................................................22 10.7C: End of life............................................................................................................................................22 10.8D–Benefits and loads beyond the system boundaries.................................................................22 STAGe 23 11.1Indoor air.................................................................................................................................................23 11.2Soil and water.........................................................................................................................................23",
+      "page": 21,
+      "level": 1
+    },
+    {
+      "number": "12",
+      "title": "DEMONSTRATION OF VERIFICATION 3|26B-EPDCEM III/B42,5 N-LH/SRbulk“ECOPlanet”",
+      "page": 23,
+      "level": 1
+    },
+    {
+      "number": "13",
+      "title": "lca interpretation",
+      "page": 23,
+      "level": 1
+    },
+    {
+      "number": "14",
+      "title": "TECHNICAL INFORMATION FOR SCENARIO DEVELOPMENT",
+      "page": 24,
+      "level": 1
+    },
+    {
+      "number": "15",
+      "title": "APPLICATION UNIT",
+      "page": 24,
+      "level": 1
+    },
+    {
+      "number": "16",
+      "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+      "page": 24,
+      "level": 1
+    },
+    {
+      "number": "17",
+      "title": "BIBLIOGRAPHY 4|26B-EPDCEM III/B42,5 N-LH/SRbulk“ECOPlanet”",
+      "page": 25,
+      "level": 1
+    }
+  ],
+  "_source": {
+    "pdf_path": "/Users/warddem/dev/EPDagent/data/EPD/B-EPD 023.0221.003-01.00.00 CEM IIIB 42,5 N-LHSR bulk “ECOPlanet” EN_ signed.pdf",
+    "pdf_sha256": "55bf1c8885461ad261acc495b542a6dd2e3a94f3795d822ed050355f1e8487de",
+    "page_spec_source": "scan",
+    "extracted_by": "pdf-text-toc-parser",
+    "extracted_at": "2026-05-26T17:38:49.199Z",
+    "entry_count": 34,
+    "tree_node_count": 34
+  }
+}

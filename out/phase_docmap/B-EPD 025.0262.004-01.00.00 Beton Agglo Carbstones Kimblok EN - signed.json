@@ -1,0 +1,618 @@
+{
+  "toc_title": "TABLE OF CONTENTS",
+  "source_pages": [
+    2,
+    3
+  ],
+  "entries": [
+    {
+      "number": "1",
+      "title": "PRODUCT DESCRIPTION",
+      "page": 3,
+      "level": 1,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "Product name",
+          "page": 3,
+          "level": 2
+        },
+        {
+          "number": "1.2",
+          "title": "Product description and intended use",
+          "page": 3,
+          "level": 2
+        },
+        {
+          "number": "1.3",
+          "title": "Reference flow / declared unit",
+          "page": 3,
+          "level": 2
+        },
+        {
+          "number": "1.4",
+          "title": "Installation",
+          "page": 3,
+          "level": 2
+        },
+        {
+          "number": "1.5",
+          "title": "Composition and content",
+          "page": 4,
+          "level": 2
+        },
+        {
+          "number": "1.6",
+          "title": "Reference service life",
+          "page": 4,
+          "level": 2
+        },
+        {
+          "number": "1.7",
+          "title": "Description of geographical representativity",
+          "page": 4,
+          "level": 2
+        },
+        {
+          "number": "1.8",
+          "title": "Description of the production process and technology",
+          "page": 4,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "TECHNICAL DATA / PHYSICAL CHARACTERISTICS",
+      "page": 6,
+      "level": 1
+    },
+    {
+      "number": "3",
+      "title": "LCA-STUDY",
+      "page": 7,
+      "level": 1,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Date of LCA-study",
+          "page": 7,
+          "level": 2
+        },
+        {
+          "number": "3.2",
+          "title": "Software",
+          "page": 7,
+          "level": 2
+        },
+        {
+          "number": "3.3",
+          "title": "Information on allocation",
+          "page": 7,
+          "level": 2
+        },
+        {
+          "number": "3.4",
+          "title": "Informatie on cut off",
+          "page": 7,
+          "level": 2
+        },
+        {
+          "number": "3.5",
+          "title": "Information on excluded processes",
+          "page": 8,
+          "level": 2
+        },
+        {
+          "number": "3.6",
+          "title": "Information on biogenic carbon modelling",
+          "page": 8,
+          "level": 2
+        },
+        {
+          "number": "3.7",
+          "title": "Information on carbon offsetting",
+          "page": 8,
+          "level": 2
+        },
+        {
+          "number": "3.8",
+          "title": "Additional or deviating characterisation factors",
+          "page": 8,
+          "level": 2
+        },
+        {
+          "number": "3.9",
+          "title": "Description of the variability",
+          "page": 8,
+          "level": 2
+        },
+        {
+          "number": "3.10",
+          "title": "Specificity",
+          "page": 8,
+          "level": 2
+        },
+        {
+          "number": "3.11",
+          "title": "Period of data collection",
+          "page": 8,
+          "level": 2
+        },
+        {
+          "number": "3.12",
+          "title": "Information on data collection.",
+          "page": 9,
+          "level": 2
+        },
+        {
+          "number": "3.13",
+          "title": "Database used for background data",
+          "page": 9,
+          "level": 2
+        },
+        {
+          "number": "3.14",
+          "title": "Energy mix",
+          "page": 9,
+          "level": 2
+        },
+        {
+          "number": "3.15",
+          "title": "Conversion factors",
+          "page": 9,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "PRODUCTION SITES",
+      "page": 10,
+      "level": 1
+    },
+    {
+      "number": "5",
+      "title": "SYSTEM BOUNDARIES",
+      "page": 10,
+      "level": 1
+    },
+    {
+      "number": "6",
+      "title": "POTENTIAL ENVIRONMENTAL IMPACTS PER REFERENCE FLOW",
+      "page": 11,
+      "level": 1
+    },
+    {
+      "number": "7",
+      "title": "RESOURCE USE",
+      "page": 12,
+      "level": 1
+    },
+    {
+      "number": "8",
+      "title": "WASTE CATEGORIES & OUTPUT FLOWS",
+      "page": 13,
+      "level": 1
+    },
+    {
+      "number": "9",
+      "title": "IMPACT CATEGORIES ADDITIONAL TO EN 15804",
+      "page": 14,
+      "level": 1,
+      "children": [
+        {
+          "number": "9.1",
+          "title": "Environmental impact categories explained",
+          "page": 15,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
+      "page": 17,
+      "level": 1,
+      "children": [
+        {
+          "number": "10.1",
+          "title": "A1 - raw material supply",
+          "page": 17,
+          "level": 2
+        },
+        {
+          "number": "10.2",
+          "title": "A2 – transport to the manufacturer",
+          "page": 17,
+          "level": 2
+        },
+        {
+          "number": "10.3",
+          "title": "A3 – manufacturing",
+          "page": 17,
+          "level": 2
+        },
+        {
+          "number": "10.4",
+          "title": "A4 – transport to the building site",
+          "page": 17,
+          "level": 2
+        },
+        {
+          "number": "10.5",
+          "title": "A5 – installation in the building",
+          "page": 18,
+          "level": 2
+        },
+        {
+          "number": "10.6",
+          "title": "B – use stage (excluding potential savings)",
+          "page": 18,
+          "level": 2
+        },
+        {
+          "number": "10.7",
+          "title": "C – end of life",
+          "page": 18,
+          "level": 2
+        },
+        {
+          "number": "10.8",
+          "title": "D – benefits and loads beyond the system boundaries",
+          "page": 19,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "title": "RELEASE OF DANGEROUS SUBSTANCES TO INDOOR AIR, SOIL AND WATER DURING THE USE STAGe",
+      "page": 20,
+      "level": 1,
+      "children": [
+        {
+          "number": "11.1",
+          "title": "Indoor air",
+          "page": 20,
+          "level": 2
+        },
+        {
+          "number": "11.2",
+          "title": "Soil and water",
+          "page": 20,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "title": "DEMONSTRATION OF VERIFICATION",
+      "page": 20,
+      "level": 1
+    },
+    {
+      "number": "13",
+      "title": "APPLICATION UNIT",
+      "page": 21,
+      "level": 1
+    },
+    {
+      "number": "14",
+      "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+      "page": 22,
+      "level": 1
+    },
+    {
+      "number": "15",
+      "title": "BIBLIOGRAPHY 2 | 24B-EPD Carbstone Kimblok 1 PRODUCT DESCRIPTION 1.1Product name Carbstone Kimblok. Sizes: 29/09/22, 29/14/22, 29/19/22. 1.2Product description and intended use Carbstones are carbonated full bricks with dimensions .The applied carbonation technique, developed by Orbix, transforms metal slag from the steel industry into circular building products. Carbstones have the characteristic of absorbing COthrough carbonation. This happens because the Carbstones have metal slag as 2 ingredients, which is acalcium-rich material. The calcium reacts with water and COto form calcium carbonate, astrong binder. 2 Because of this, the Carbstone has abinding agent of COinstead of cement. The building material has the same characteristics as a 2 concrete block. The difference is in capturing the CO. 2 2 The Carbstones are attached to each other using aspecific glue for Carbstones. This EPD reports the results for 1 m. The Carbstones can be used for constructive and non-constructive interior walls. This is aspecific B-EPD for asingle company. 1.3Reference flow / declared unit 2 The results are declared for 1 mCarbstone Kimblok with dimensions 29/09/22. Packaging is included. The results of the remaining sizes can be calculated by multiplying the results of size 29/09/22 with the conversion factors in section 3.15. The weight per reference flow (kg/m2) is: Carbstone Kimblok 29/09/22150 kg/m2 Carbstone Kimblok 29/14/22232 kg/m2 Carbstone Kimblok 29/19/22318 kg/m2 The density of the product is as followed: 3  Carbstone Kimblok is 1500 kg / m. 1.4Installation Materials for fixation and installation are included. This EPD includes the impacts of all processes, fixating materials, jointing material or treatments necessary for installing/mounting the product according to following scenario(s): the Carbstones are glued together with the Masterbloc ECO lijmmortel 950 (packed) of Saint-Gobain Weber Benelux (see reference in Bibliography). 3 | 24B-EPD Carbstone Kimblok",
+      "page": 23,
+      "level": 1
+    }
+  ],
+  "flat_entries": [
+    {
+      "number": "1",
+      "title": "PRODUCT DESCRIPTION",
+      "page": 3,
+      "level": 1
+    },
+    {
+      "number": "1.1",
+      "title": "Product name",
+      "page": 3,
+      "level": 2
+    },
+    {
+      "number": "1.2",
+      "title": "Product description and intended use",
+      "page": 3,
+      "level": 2
+    },
+    {
+      "number": "1.3",
+      "title": "Reference flow / declared unit",
+      "page": 3,
+      "level": 2
+    },
+    {
+      "number": "1.4",
+      "title": "Installation",
+      "page": 3,
+      "level": 2
+    },
+    {
+      "number": "1.5",
+      "title": "Composition and content",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "number": "1.6",
+      "title": "Reference service life",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "number": "1.7",
+      "title": "Description of geographical representativity",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "number": "1.8",
+      "title": "Description of the production process and technology",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "number": "2",
+      "title": "TECHNICAL DATA / PHYSICAL CHARACTERISTICS",
+      "page": 6,
+      "level": 1
+    },
+    {
+      "number": "3",
+      "title": "LCA-STUDY",
+      "page": 7,
+      "level": 1
+    },
+    {
+      "number": "3.1",
+      "title": "Date of LCA-study",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "number": "3.2",
+      "title": "Software",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "number": "3.3",
+      "title": "Information on allocation",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "number": "3.4",
+      "title": "Informatie on cut off",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "number": "3.5",
+      "title": "Information on excluded processes",
+      "page": 8,
+      "level": 2
+    },
+    {
+      "number": "3.6",
+      "title": "Information on biogenic carbon modelling",
+      "page": 8,
+      "level": 2
+    },
+    {
+      "number": "3.7",
+      "title": "Information on carbon offsetting",
+      "page": 8,
+      "level": 2
+    },
+    {
+      "number": "3.8",
+      "title": "Additional or deviating characterisation factors",
+      "page": 8,
+      "level": 2
+    },
+    {
+      "number": "3.9",
+      "title": "Description of the variability",
+      "page": 8,
+      "level": 2
+    },
+    {
+      "number": "3.10",
+      "title": "Specificity",
+      "page": 8,
+      "level": 2
+    },
+    {
+      "number": "3.11",
+      "title": "Period of data collection",
+      "page": 8,
+      "level": 2
+    },
+    {
+      "number": "3.12",
+      "title": "Information on data collection.",
+      "page": 9,
+      "level": 2
+    },
+    {
+      "number": "3.13",
+      "title": "Database used for background data",
+      "page": 9,
+      "level": 2
+    },
+    {
+      "number": "3.14",
+      "title": "Energy mix",
+      "page": 9,
+      "level": 2
+    },
+    {
+      "number": "3.15",
+      "title": "Conversion factors",
+      "page": 9,
+      "level": 2
+    },
+    {
+      "number": "4",
+      "title": "PRODUCTION SITES",
+      "page": 10,
+      "level": 1
+    },
+    {
+      "number": "5",
+      "title": "SYSTEM BOUNDARIES",
+      "page": 10,
+      "level": 1
+    },
+    {
+      "number": "6",
+      "title": "POTENTIAL ENVIRONMENTAL IMPACTS PER REFERENCE FLOW",
+      "page": 11,
+      "level": 1
+    },
+    {
+      "number": "7",
+      "title": "RESOURCE USE",
+      "page": 12,
+      "level": 1
+    },
+    {
+      "number": "8",
+      "title": "WASTE CATEGORIES & OUTPUT FLOWS",
+      "page": 13,
+      "level": 1
+    },
+    {
+      "number": "9",
+      "title": "IMPACT CATEGORIES ADDITIONAL TO EN 15804",
+      "page": 14,
+      "level": 1
+    },
+    {
+      "number": "9.1",
+      "title": "Environmental impact categories explained",
+      "page": 15,
+      "level": 2
+    },
+    {
+      "number": "10",
+      "title": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
+      "page": 17,
+      "level": 1
+    },
+    {
+      "number": "10.1",
+      "title": "A1 - raw material supply",
+      "page": 17,
+      "level": 2
+    },
+    {
+      "number": "10.2",
+      "title": "A2 – transport to the manufacturer",
+      "page": 17,
+      "level": 2
+    },
+    {
+      "number": "10.3",
+      "title": "A3 – manufacturing",
+      "page": 17,
+      "level": 2
+    },
+    {
+      "number": "10.4",
+      "title": "A4 – transport to the building site",
+      "page": 17,
+      "level": 2
+    },
+    {
+      "number": "10.5",
+      "title": "A5 – installation in the building",
+      "page": 18,
+      "level": 2
+    },
+    {
+      "number": "10.6",
+      "title": "B – use stage (excluding potential savings)",
+      "page": 18,
+      "level": 2
+    },
+    {
+      "number": "10.7",
+      "title": "C – end of life",
+      "page": 18,
+      "level": 2
+    },
+    {
+      "number": "10.8",
+      "title": "D – benefits and loads beyond the system boundaries",
+      "page": 19,
+      "level": 2
+    },
+    {
+      "number": "11",
+      "title": "RELEASE OF DANGEROUS SUBSTANCES TO INDOOR AIR, SOIL AND WATER DURING THE USE STAGe",
+      "page": 20,
+      "level": 1
+    },
+    {
+      "number": "11.1",
+      "title": "Indoor air",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "number": "11.2",
+      "title": "Soil and water",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "number": "12",
+      "title": "DEMONSTRATION OF VERIFICATION",
+      "page": 20,
+      "level": 1
+    },
+    {
+      "number": "13",
+      "title": "APPLICATION UNIT",
+      "page": 21,
+      "level": 1
+    },
+    {
+      "number": "14",
+      "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+      "page": 22,
+      "level": 1
+    },
+    {
+      "number": "15",
+      "title": "BIBLIOGRAPHY 2 | 24B-EPD Carbstone Kimblok 1 PRODUCT DESCRIPTION 1.1Product name Carbstone Kimblok. Sizes: 29/09/22, 29/14/22, 29/19/22. 1.2Product description and intended use Carbstones are carbonated full bricks with dimensions .The applied carbonation technique, developed by Orbix, transforms metal slag from the steel industry into circular building products. Carbstones have the characteristic of absorbing COthrough carbonation. This happens because the Carbstones have metal slag as 2 ingredients, which is acalcium-rich material. The calcium reacts with water and COto form calcium carbonate, astrong binder. 2 Because of this, the Carbstone has abinding agent of COinstead of cement. The building material has the same characteristics as a 2 concrete block. The difference is in capturing the CO. 2 2 The Carbstones are attached to each other using aspecific glue for Carbstones. This EPD reports the results for 1 m. The Carbstones can be used for constructive and non-constructive interior walls. This is aspecific B-EPD for asingle company. 1.3Reference flow / declared unit 2 The results are declared for 1 mCarbstone Kimblok with dimensions 29/09/22. Packaging is included. The results of the remaining sizes can be calculated by multiplying the results of size 29/09/22 with the conversion factors in section 3.15. The weight per reference flow (kg/m2) is: Carbstone Kimblok 29/09/22150 kg/m2 Carbstone Kimblok 29/14/22232 kg/m2 Carbstone Kimblok 29/19/22318 kg/m2 The density of the product is as followed: 3  Carbstone Kimblok is 1500 kg / m. 1.4Installation Materials for fixation and installation are included. This EPD includes the impacts of all processes, fixating materials, jointing material or treatments necessary for installing/mounting the product according to following scenario(s): the Carbstones are glued together with the Masterbloc ECO lijmmortel 950 (packed) of Saint-Gobain Weber Benelux (see reference in Bibliography). 3 | 24B-EPD Carbstone Kimblok",
+      "page": 23,
+      "level": 1
+    }
+  ],
+  "_source": {
+    "pdf_path": "/Users/warddem/dev/EPDagent/data/EPD/B-EPD 025.0262.004-01.00.00 Beton Agglo Carbstones Kimblok EN - signed.pdf",
+    "pdf_sha256": "bf8437a84b87484607fc2b36353bf7d82115eed369c2d0cb746ff34dde2db5b1",
+    "page_spec_source": "scan",
+    "extracted_by": "pdf-text-toc-parser",
+    "extracted_at": "2026-05-26T18:44:00.774Z",
+    "entry_count": 49,
+    "tree_node_count": 49
+  }
+}

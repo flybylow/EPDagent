@@ -32,12 +32,21 @@ flowchart LR
    npm run graph
    ```
 
-2. **Commit published artifacts** (already whitelisted in `.gitignore`):
+2. **Commit published artifacts** (whitelisted in `.gitignore`):
 
+   - `out/phase_docmap/` — **required for section navigation** on EPD detail pages (PDF table of contents)
    - `out/phase2_header/`, `out/phase3_product/`, `out/phase3_composition/`, `out/phase3_lca_study/`, `out/phase4_lca_probe/`
    - `data/graph/*.jsonld`
 
-   Do **not** rely on committing full `out/` (docmap cache, `pdf_slices/`, etc.) unless you intend to.
+   Build docmaps locally (no Claude API):
+
+   ```bash
+   npm run docmap:all
+   git add out/phase_docmap/
+   git commit -m "Publish docmap indexes for Vercel section nav"
+   ```
+
+   Vercel cannot build docmaps from PDF (pdfjs is disabled in serve-only mode). Without committed `out/phase_docmap/{stem}.json`, the detail page has no section menu.
 
 3. **Push to GitHub** → Vercel redeploys.
 

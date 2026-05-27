@@ -11,6 +11,8 @@ out/*
 !out/phase3_composition/
 !out/phase3_lca_study/
 !out/phase4_lca_probe/
+!out/phase_docmap/
+!out/phase_docmap/**
 
 # TypeScript build info
 tsconfig.tsbuildinfo

@@ -1,0 +1,592 @@
+{
+  "toc_title": "TABLE OF CONTENTS",
+  "source_pages": [
+    2,
+    3
+  ],
+  "entries": [
+    {
+      "number": "1",
+      "title": "PRODUCT DESCRIPTION",
+      "page": 4,
+      "level": 1,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "Product name",
+          "page": 4,
+          "level": 2
+        },
+        {
+          "number": "1.2",
+          "title": "Product description and intended use",
+          "page": 4,
+          "level": 2
+        },
+        {
+          "number": "1.3",
+          "title": "Reference flow / declared unit",
+          "page": 4,
+          "level": 2
+        },
+        {
+          "number": "1.4",
+          "title": "Installation",
+          "page": 5,
+          "level": 2
+        },
+        {
+          "number": "1.5",
+          "title": "Composition and content",
+          "page": 6,
+          "level": 2
+        },
+        {
+          "number": "1.6",
+          "title": "Reference service life",
+          "page": 6,
+          "level": 2
+        },
+        {
+          "number": "1.7",
+          "title": "Description of geographical representativity",
+          "page": 6,
+          "level": 2
+        },
+        {
+          "number": "1.8",
+          "title": "Description of the production process and technology",
+          "page": 7,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "TECHNICAL DATA / PHYSICAL CHARACTERISTICS",
+      "page": 7,
+      "level": 1
+    },
+    {
+      "number": "3",
+      "title": "LCA-STUDY",
+      "page": 8,
+      "level": 1,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Date of LCA-study",
+          "page": 8,
+          "level": 2
+        },
+        {
+          "number": "3.2",
+          "title": "Software",
+          "page": 8,
+          "level": 2
+        },
+        {
+          "number": "3.3",
+          "title": "Information on allocation",
+          "page": 8,
+          "level": 2
+        },
+        {
+          "number": "3.4",
+          "title": "Information on cut off",
+          "page": 8,
+          "level": 2
+        },
+        {
+          "number": "3.5",
+          "title": "Information on excluded processes",
+          "page": 8,
+          "level": 2
+        },
+        {
+          "number": "3.6",
+          "title": "Information on biogenic carbon modelling",
+          "page": 9,
+          "level": 2
+        },
+        {
+          "number": "3.7",
+          "title": "Information on carbon off-setting",
+          "page": 9,
+          "level": 2
+        },
+        {
+          "number": "3.8",
+          "title": "Additional or deviating characterization factors",
+          "page": 9,
+          "level": 2
+        },
+        {
+          "number": "3.9",
+          "title": "Description of the variability",
+          "page": 9,
+          "level": 2
+        },
+        {
+          "number": "3.10",
+          "title": "Specificity",
+          "page": 10,
+          "level": 2
+        },
+        {
+          "number": "3.11",
+          "title": "Period of data collection",
+          "page": 10,
+          "level": 2
+        },
+        {
+          "number": "3.12",
+          "title": "Information on data collection",
+          "page": 10,
+          "level": 2
+        },
+        {
+          "number": "3.13",
+          "title": "Database used for background data",
+          "page": 10,
+          "level": 2
+        },
+        {
+          "number": "3.14",
+          "title": "Energy mix",
+          "page": 10,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "PRODUCTION SITES",
+      "page": 11,
+      "level": 1
+    },
+    {
+      "number": "5",
+      "title": "SYSTEM BOUNDARIES",
+      "page": 11,
+      "level": 1
+    },
+    {
+      "number": "6",
+      "title": "POTENTIAL ENVIRONMENTAL IMPACTS PER REFERENCE FLOW",
+      "page": 12,
+      "level": 1
+    },
+    {
+      "number": "7",
+      "title": "RESOURCE USE",
+      "page": 13,
+      "level": 1
+    },
+    {
+      "number": "8",
+      "title": "WASTE CATEGORIES & OUTPUT FLOWS",
+      "page": 14,
+      "level": 1
+    },
+    {
+      "number": "9",
+      "title": "IMPACT CATEGORIES ADDITIONAL TO EN 15804",
+      "page": 15,
+      "level": 1,
+      "children": [
+        {
+          "number": "9.1",
+          "title": "Environmental impact categories explained",
+          "page": 16,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
+      "page": 18,
+      "level": 1,
+      "children": [
+        {
+          "number": "10.1",
+          "title": "A1-raw material supply",
+          "page": 18,
+          "level": 2
+        },
+        {
+          "number": "10.2",
+          "title": "A2–transport to the manufacturer",
+          "page": 18,
+          "level": 2
+        },
+        {
+          "number": "10.3",
+          "title": "A3-manufacturing",
+          "page": 18,
+          "level": 2
+        },
+        {
+          "number": "10.4",
+          "title": "A4–transport to the building site",
+          "page": 18,
+          "level": 2
+        },
+        {
+          "number": "10.5",
+          "title": "A5–installation in the building",
+          "page": 19,
+          "level": 2
+        },
+        {
+          "number": "10.6",
+          "title": "C: End of life 2|28B-EPDSTAR 75 Sash, turn-and-tilled, tilled window system Low Carbon",
+          "page": 20,
+          "level": 2
+        },
+        {
+          "number": "10.7",
+          "title": "D–Benefits and loads beyond the system boundaries 11 RELEASE OF DANGEROUS SUBSTANCES TO INDOOR AIR, SOIL AND WATER DURING THE USE",
+          "page": 20,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "number": "11.1",
+      "title": "Indoor air",
+      "page": 22,
+      "level": 2
+    },
+    {
+      "number": "11.2",
+      "title": "Soil and water",
+      "page": 22,
+      "level": 2
+    },
+    {
+      "number": "12",
+      "title": "DEMONSTRATION OF VERIFICATION",
+      "page": 22,
+      "level": 1
+    },
+    {
+      "number": "13",
+      "title": "TECHNICAL INFORMATION FOR SCENARIO DEVELOPMENT",
+      "page": 23,
+      "level": 1
+    },
+    {
+      "number": "14",
+      "title": "APPLICATION UNIT",
+      "page": 24,
+      "level": 1
+    },
+    {
+      "number": "15",
+      "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+      "page": 25,
+      "level": 1
+    },
+    {
+      "number": "16",
+      "title": "BIBLIOGRAPHY 3|28B-EPDSTAR 75 Sash, turn-and-tilled, tilled window system Low Carbon",
+      "page": 26,
+      "level": 1
+    }
+  ],
+  "flat_entries": [
+    {
+      "number": "1",
+      "title": "PRODUCT DESCRIPTION",
+      "page": 4,
+      "level": 1
+    },
+    {
+      "number": "1.1",
+      "title": "Product name",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "number": "1.2",
+      "title": "Product description and intended use",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "number": "1.3",
+      "title": "Reference flow / declared unit",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "number": "1.4",
+      "title": "Installation",
+      "page": 5,
+      "level": 2
+    },
+    {
+      "number": "1.5",
+      "title": "Composition and content",
+      "page": 6,
+      "level": 2
+    },
+    {
+      "number": "1.6",
+      "title": "Reference service life",
+      "page": 6,
+      "level": 2
+    },
+    {
+      "number": "1.7",
+      "title": "Description of geographical representativity",
+      "page": 6,
+      "level": 2
+    },
+    {
+      "number": "1.8",
+      "title": "Description of the production process and technology",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "number": "2",
+      "title": "TECHNICAL DATA / PHYSICAL CHARACTERISTICS",
+      "page": 7,
+      "level": 1
+    },
+    {
+      "number": "3",
+      "title": "LCA-STUDY",
+      "page": 8,
+      "level": 1
+    },
+    {
+      "number": "3.1",
+      "title": "Date of LCA-study",
+      "page": 8,
+      "level": 2
+    },
+    {
+      "number": "3.2",
+      "title": "Software",
+      "page": 8,
+      "level": 2
+    },
+    {
+      "number": "3.3",
+      "title": "Information on allocation",
+      "page": 8,
+      "level": 2
+    },
+    {
+      "number": "3.4",
+      "title": "Information on cut off",
+      "page": 8,
+      "level": 2
+    },
+    {
+      "number": "3.5",
+      "title": "Information on excluded processes",
+      "page": 8,
+      "level": 2
+    },
+    {
+      "number": "3.6",
+      "title": "Information on biogenic carbon modelling",
+      "page": 9,
+      "level": 2
+    },
+    {
+      "number": "3.7",
+      "title": "Information on carbon off-setting",
+      "page": 9,
+      "level": 2
+    },
+    {
+      "number": "3.8",
+      "title": "Additional or deviating characterization factors",
+      "page": 9,
+      "level": 2
+    },
+    {
+      "number": "3.9",
+      "title": "Description of the variability",
+      "page": 9,
+      "level": 2
+    },
+    {
+      "number": "3.10",
+      "title": "Specificity",
+      "page": 10,
+      "level": 2
+    },
+    {
+      "number": "3.11",
+      "title": "Period of data collection",
+      "page": 10,
+      "level": 2
+    },
+    {
+      "number": "3.12",
+      "title": "Information on data collection",
+      "page": 10,
+      "level": 2
+    },
+    {
+      "number": "3.13",
+      "title": "Database used for background data",
+      "page": 10,
+      "level": 2
+    },
+    {
+      "number": "3.14",
+      "title": "Energy mix",
+      "page": 10,
+      "level": 2
+    },
+    {
+      "number": "4",
+      "title": "PRODUCTION SITES",
+      "page": 11,
+      "level": 1
+    },
+    {
+      "number": "5",
+      "title": "SYSTEM BOUNDARIES",
+      "page": 11,
+      "level": 1
+    },
+    {
+      "number": "6",
+      "title": "POTENTIAL ENVIRONMENTAL IMPACTS PER REFERENCE FLOW",
+      "page": 12,
+      "level": 1
+    },
+    {
+      "number": "7",
+      "title": "RESOURCE USE",
+      "page": 13,
+      "level": 1
+    },
+    {
+      "number": "8",
+      "title": "WASTE CATEGORIES & OUTPUT FLOWS",
+      "page": 14,
+      "level": 1
+    },
+    {
+      "number": "9",
+      "title": "IMPACT CATEGORIES ADDITIONAL TO EN 15804",
+      "page": 15,
+      "level": 1
+    },
+    {
+      "number": "9.1",
+      "title": "Environmental impact categories explained",
+      "page": 16,
+      "level": 2
+    },
+    {
+      "number": "10",
+      "title": "DETAILS OF THE UNDERLYING SCENARIOS USED TO CALCULATE THE IMPACTS",
+      "page": 18,
+      "level": 1
+    },
+    {
+      "number": "10.1",
+      "title": "A1-raw material supply",
+      "page": 18,
+      "level": 2
+    },
+    {
+      "number": "10.2",
+      "title": "A2–transport to the manufacturer",
+      "page": 18,
+      "level": 2
+    },
+    {
+      "number": "10.3",
+      "title": "A3-manufacturing",
+      "page": 18,
+      "level": 2
+    },
+    {
+      "number": "10.4",
+      "title": "A4–transport to the building site",
+      "page": 18,
+      "level": 2
+    },
+    {
+      "number": "10.5",
+      "title": "A5–installation in the building",
+      "page": 19,
+      "level": 2
+    },
+    {
+      "number": "10.6",
+      "title": "C: End of life 2|28B-EPDSTAR 75 Sash, turn-and-tilled, tilled window system Low Carbon",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "number": "10.7",
+      "title": "D–Benefits and loads beyond the system boundaries 11 RELEASE OF DANGEROUS SUBSTANCES TO INDOOR AIR, SOIL AND WATER DURING THE USE",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "number": "11.1",
+      "title": "Indoor air",
+      "page": 22,
+      "level": 2
+    },
+    {
+      "number": "11.2",
+      "title": "Soil and water",
+      "page": 22,
+      "level": 2
+    },
+    {
+      "number": "12",
+      "title": "DEMONSTRATION OF VERIFICATION",
+      "page": 22,
+      "level": 1
+    },
+    {
+      "number": "13",
+      "title": "TECHNICAL INFORMATION FOR SCENARIO DEVELOPMENT",
+      "page": 23,
+      "level": 1
+    },
+    {
+      "number": "14",
+      "title": "APPLICATION UNIT",
+      "page": 24,
+      "level": 1
+    },
+    {
+      "number": "15",
+      "title": "ADDITIONAL INFORMATION ON REVERSIBILITY",
+      "page": 25,
+      "level": 1
+    },
+    {
+      "number": "16",
+      "title": "BIBLIOGRAPHY 3|28B-EPDSTAR 75 Sash, turn-and-tilled, tilled window system Low Carbon",
+      "page": 26,
+      "level": 1
+    }
+  ],
+  "_source": {
+    "pdf_path": "/Users/warddem/dev/EPDagent/data/EPD/B-EPD 025.0297.002-01.00.00 Aliplast STAR75 LC Kip EN - signed.pdf",
+    "pdf_sha256": "4f62158c52c59848d61364bd4f9d594d412bfce6e3ea39aef460c22472efbf41",
+    "page_spec_source": "scan",
+    "extracted_by": "pdf-text-toc-parser",
+    "extracted_at": "2026-05-26T18:40:40.053Z",
+    "entry_count": 47,
+    "tree_node_count": 47
+  }
+}

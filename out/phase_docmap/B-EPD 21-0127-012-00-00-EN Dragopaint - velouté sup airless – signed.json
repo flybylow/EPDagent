@@ -1,0 +1,422 @@
+{
+  "toc_title": "Document sections (heading scan)",
+  "source_pages": [
+    2,
+    3
+  ],
+  "entries": [
+    {
+      "number": "1",
+      "title": "PRODUCT DESCRIPTION",
+      "page": 2,
+      "level": 1,
+      "children": [
+        {
+          "number": "1.4",
+          "title": "INSTALLATION",
+          "page": 2,
+          "level": 2
+        },
+        {
+          "number": "1.5",
+          "title": "COMPOSITION AND CONTENT",
+          "page": 3,
+          "level": 2
+        },
+        {
+          "number": "1.6",
+          "title": "REFERENCE SERVICE LIFE",
+          "page": 3,
+          "level": 2
+        },
+        {
+          "number": "1.7",
+          "title": "DESCRIPTION OF GEOGRAPHICAL REPRESENTATIVITY",
+          "page": 3,
+          "level": 2
+        },
+        {
+          "number": "1.8",
+          "title": "DESCRIPTION OF THE PRODUCTION PROCESS AND TECHNOLOGY",
+          "page": 3,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "TECHNICAL DATA /PHYSICAL CHARACTERISTICS",
+      "page": 4,
+      "level": 1
+    },
+    {
+      "number": "3",
+      "title": "LCA STUDY",
+      "page": 5,
+      "level": 1,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "DATE OF LCA STUDY",
+          "page": 5,
+          "level": 2
+        },
+        {
+          "number": "3.2",
+          "title": "SOFTWARE",
+          "page": 5,
+          "level": 2
+        },
+        {
+          "number": "3.3",
+          "title": "INFORMATION ON ALLOCATION",
+          "page": 5,
+          "level": 2
+        },
+        {
+          "number": "3.4",
+          "title": "INFORMATION ON CUT OFF",
+          "page": 5,
+          "level": 2
+        },
+        {
+          "number": "3.5",
+          "title": "INFORMATION ON EXCLU DED PROCESSES",
+          "page": 5,
+          "level": 2
+        },
+        {
+          "number": "3.6",
+          "title": "INFORMATION ON BIOGENIC CARBO NMODELLING",
+          "page": 5,
+          "level": 2
+        },
+        {
+          "number": "3.7",
+          "title": "INFORMATION ON CARBON OFFSETTING",
+          "page": 5,
+          "level": 2
+        },
+        {
+          "number": "3.8",
+          "title": "ADDITIONAL OR DEVIATING CHARACTERISATION FACTORS",
+          "page": 5,
+          "level": 2
+        },
+        {
+          "number": "3.9",
+          "title": "DESCRIPTION OF THE VARIABILITY",
+          "page": 5,
+          "level": 2
+        },
+        {
+          "number": "3.11",
+          "title": "PERIOD OF DATA COLLECTION",
+          "page": 6,
+          "level": 2
+        },
+        {
+          "number": "3.12",
+          "title": "INFORMATION ON DATA COLLECTION",
+          "page": 6,
+          "level": 2
+        },
+        {
+          "number": "3.13",
+          "title": "DATABASE USED FOR BACKGROUND DATA",
+          "page": 6,
+          "level": 2
+        },
+        {
+          "number": "3.14",
+          "title": "ENERGY MIX",
+          "page": 6,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "PRODUCTI ON SITE",
+      "page": 7,
+      "level": 1
+    },
+    {
+      "number": "5",
+      "title": "SYSTEM BOUNDARIES",
+      "page": 7,
+      "level": 1
+    },
+    {
+      "number": "6",
+      "title": "POTENTIAL ENVIRONMENTAL IMPACTS PER REFERENCE FLOW",
+      "page": 8,
+      "level": 1
+    },
+    {
+      "number": "7",
+      "title": "RESOURCE USE",
+      "page": 9,
+      "level": 1
+    },
+    {
+      "number": "8",
+      "title": "WASTE CATEGORIES & OUTPUT FLOWS",
+      "page": 10,
+      "level": 1
+    },
+    {
+      "number": "9",
+      "title": "IMPACT CATEGORIES ADDITIONAL TO EN 15804",
+      "page": 11,
+      "level": 1
+    },
+    {
+      "number": "10",
+      "title": "DETAILS OF THE UNDERLYING SCENARIO SUSED TO CALCULATE THE IMPACTS",
+      "page": 15,
+      "level": 1
+    },
+    {
+      "number": "11",
+      "title": "INDOOR AIR",
+      "page": 16,
+      "level": 1,
+      "children": [
+        {
+          "number": "11.2",
+          "title": "SOIL AND WATER",
+          "page": 16,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "title": "DEMONSTRATION OF VERIFICATION",
+      "page": 16,
+      "level": 1
+    },
+    {
+      "number": "14",
+      "title": "APPLICATION UNIT",
+      "page": 17,
+      "level": 1
+    },
+    {
+      "number": "16",
+      "title": "BIBLIOGRAPHY",
+      "page": 18,
+      "level": 1
+    }
+  ],
+  "flat_entries": [
+    {
+      "number": "1",
+      "title": "PRODUCT DESCRIPTION",
+      "page": 2,
+      "level": 1
+    },
+    {
+      "number": "1.4",
+      "title": "INSTALLATION",
+      "page": 2,
+      "level": 2
+    },
+    {
+      "number": "1.5",
+      "title": "COMPOSITION AND CONTENT",
+      "page": 3,
+      "level": 2
+    },
+    {
+      "number": "1.6",
+      "title": "REFERENCE SERVICE LIFE",
+      "page": 3,
+      "level": 2
+    },
+    {
+      "number": "1.7",
+      "title": "DESCRIPTION OF GEOGRAPHICAL REPRESENTATIVITY",
+      "page": 3,
+      "level": 2
+    },
+    {
+      "number": "1.8",
+      "title": "DESCRIPTION OF THE PRODUCTION PROCESS AND TECHNOLOGY",
+      "page": 3,
+      "level": 2
+    },
+    {
+      "number": "2",
+      "title": "TECHNICAL DATA /PHYSICAL CHARACTERISTICS",
+      "page": 4,
+      "level": 1
+    },
+    {
+      "number": "3",
+      "title": "LCA STUDY",
+      "page": 5,
+      "level": 1
+    },
+    {
+      "number": "3.1",
+      "title": "DATE OF LCA STUDY",
+      "page": 5,
+      "level": 2
+    },
+    {
+      "number": "3.2",
+      "title": "SOFTWARE",
+      "page": 5,
+      "level": 2
+    },
+    {
+      "number": "3.3",
+      "title": "INFORMATION ON ALLOCATION",
+      "page": 5,
+      "level": 2
+    },
+    {
+      "number": "3.4",
+      "title": "INFORMATION ON CUT OFF",
+      "page": 5,
+      "level": 2
+    },
+    {
+      "number": "3.5",
+      "title": "INFORMATION ON EXCLU DED PROCESSES",
+      "page": 5,
+      "level": 2
+    },
+    {
+      "number": "3.6",
+      "title": "INFORMATION ON BIOGENIC CARBO NMODELLING",
+      "page": 5,
+      "level": 2
+    },
+    {
+      "number": "3.7",
+      "title": "INFORMATION ON CARBON OFFSETTING",
+      "page": 5,
+      "level": 2
+    },
+    {
+      "number": "3.8",
+      "title": "ADDITIONAL OR DEVIATING CHARACTERISATION FACTORS",
+      "page": 5,
+      "level": 2
+    },
+    {
+      "number": "3.9",
+      "title": "DESCRIPTION OF THE VARIABILITY",
+      "page": 5,
+      "level": 2
+    },
+    {
+      "number": "3.11",
+      "title": "PERIOD OF DATA COLLECTION",
+      "page": 6,
+      "level": 2
+    },
+    {
+      "number": "3.12",
+      "title": "INFORMATION ON DATA COLLECTION",
+      "page": 6,
+      "level": 2
+    },
+    {
+      "number": "3.13",
+      "title": "DATABASE USED FOR BACKGROUND DATA",
+      "page": 6,
+      "level": 2
+    },
+    {
+      "number": "3.14",
+      "title": "ENERGY MIX",
+      "page": 6,
+      "level": 2
+    },
+    {
+      "number": "4",
+      "title": "PRODUCTI ON SITE",
+      "page": 7,
+      "level": 1
+    },
+    {
+      "number": "5",
+      "title": "SYSTEM BOUNDARIES",
+      "page": 7,
+      "level": 1
+    },
+    {
+      "number": "6",
+      "title": "POTENTIAL ENVIRONMENTAL IMPACTS PER REFERENCE FLOW",
+      "page": 8,
+      "level": 1
+    },
+    {
+      "number": "7",
+      "title": "RESOURCE USE",
+      "page": 9,
+      "level": 1
+    },
+    {
+      "number": "8",
+      "title": "WASTE CATEGORIES & OUTPUT FLOWS",
+      "page": 10,
+      "level": 1
+    },
+    {
+      "number": "9",
+      "title": "IMPACT CATEGORIES ADDITIONAL TO EN 15804",
+      "page": 11,
+      "level": 1
+    },
+    {
+      "number": "10",
+      "title": "DETAILS OF THE UNDERLYING SCENARIO SUSED TO CALCULATE THE IMPACTS",
+      "page": 15,
+      "level": 1
+    },
+    {
+      "number": "11",
+      "title": "INDOOR AIR",
+      "page": 16,
+      "level": 1
+    },
+    {
+      "number": "11.2",
+      "title": "SOIL AND WATER",
+      "page": 16,
+      "level": 2
+    },
+    {
+      "number": "12",
+      "title": "DEMONSTRATION OF VERIFICATION",
+      "page": 16,
+      "level": 1
+    },
+    {
+      "number": "14",
+      "title": "APPLICATION UNIT",
+      "page": 17,
+      "level": 1
+    },
+    {
+      "number": "16",
+      "title": "BIBLIOGRAPHY",
+      "page": 18,
+      "level": 1
+    }
+  ],
+  "_source": {
+    "pdf_path": "/Users/warddem/dev/EPDagent/data/EPD/B-EPD 21-0127-012-00-00-EN Dragopaint - velouté sup airless – signed.pdf",
+    "pdf_sha256": "652da07295d0a6313acb20af893985679cd92a7c3baa0635c289f60aaeb96b32",
+    "page_spec_source": "default",
+    "extracted_by": "pdf-heading-scan",
+    "extracted_at": "2026-05-26T20:33:40.059Z",
+    "entry_count": 33,
+    "tree_node_count": 33
+  }
+}

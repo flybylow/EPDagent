@@ -7,7 +7,11 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/api/extract/**/*": ["./node_modules/pdfjs-dist/**/*"],
     "/api/extract/step/**/*": ["./node_modules/pdfjs-dist/**/*"],
-    "/epd/*": ["./templates/**/*.json", "./data/reference/**/*"],
+    "/epd/*": [
+      "./templates/**/*.json",
+      "./data/reference/**/*",
+      "./out/phase_docmap/**/*",
+    ],
     "/*": ["./templates/**/*.json"],
   },
 };
