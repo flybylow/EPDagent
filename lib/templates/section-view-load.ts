@@ -2,28 +2,11 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import { safeReadJson } from "../fs-safe";
 import { getReferenceByStem, referenceCompareDir } from "../reference";
-import { TEMPLATES_DIR } from "./load";
 import type { SectionViewDef, SectionViewTemplate } from "./section-view-types";
-import baseSectionViewTemplate from "../../templates/epd-section-view.v1.json";
-
-const BASE_TEMPLATE = path.join(TEMPLATES_DIR, "epd-section-view.v1.json");
-
-const EMPTY_TEMPLATE: SectionViewTemplate = {
-  id: "epd-section-view",
-  version: "1",
-  title: "EPD sections",
-  sections: {},
-};
-
-function loadBaseSectionViewTemplate(): SectionViewTemplate {
-  return (
-    safeReadJson<SectionViewTemplate>(BASE_TEMPLATE) ??
-    (baseSectionViewTemplate as SectionViewTemplate)
-  );
-}
+import baseSectionViewTemplate from "./epd-section-view.v1.json";
 
 export function loadSectionViewTemplate(stem: string): SectionViewTemplate {
-  const base = loadBaseSectionViewTemplate();
+  const base = baseSectionViewTemplate as SectionViewTemplate;
   const ref = getReferenceByStem(stem);
   if (!ref) return base;
 
