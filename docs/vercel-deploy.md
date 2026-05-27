@@ -75,16 +75,20 @@ There is no separate env var: Vercel validates the **numeric literal** at build 
 
 | Variable | Example | Required for serve |
 |----------|---------|-------------------|
-| `EPDAGENT_IRI_BASE` | `https://your-app.vercel.app/id` | Recommended |
+| `EPDAGENT_IRI_BASE` | `https://searchepd.vercel.app/id` | **Yes** — wrong value yields `localhost` IRIs in `/api/facts` |
 | `EPDAGENT_CORS_ORIGINS` | `https://tabulas.eu,http://localhost:3001` | For browser calls from Tabulas |
-| `ANTHROPIC_API_KEY` | — | **No** (extract local) |
+| `ANTHROPIC_API_KEY` | — | **Remove** (extract local) |
+| `EPDAGENT_PDF_DIR` | — | **Remove** — use repo `data/EPD/`; invalid paths break `/api/epds` and `/api/products` |
 
 ## Verify after deploy
 
 ```bash
-curl -s "https://your-app.vercel.app/api/products?tag=insulation" | head
-curl -s "https://your-app.vercel.app/api/epds" | head
+curl -s "https://searchepd.vercel.app/api/products?tag=insulation" | head
+curl -s "https://searchepd.vercel.app/api/epds" | head
+curl -s "https://searchepd.vercel.app/api/facts/B-EPD_023.0011.007-02.00.00%20Rockwool%20Rockfit%20Mono%20EN%20-%20signed?parts=thermal,lca" | head
 ```
+
+If `/api/epds` returns **500** with an empty body, check Vercel env: delete **`EPDAGENT_PDF_DIR`** if it points outside the deployment (or to a missing folder).
 
 ## Related
 

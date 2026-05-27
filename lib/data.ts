@@ -146,6 +146,8 @@ export function resolvePdfPathForStem(stem: string): string | null {
     if (fs.existsSync(byRef)) return byRef;
   }
 
+  if (!fs.existsSync(dir)) return null;
+
   const folded = foldPdfStem(stem);
   for (const file of fs.readdirSync(dir)) {
     if (!file.endsWith(".pdf")) continue;
