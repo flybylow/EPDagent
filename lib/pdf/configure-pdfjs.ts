@@ -1,7 +1,11 @@
 import { createRequire } from "node:module";
+import * as fs from "node:fs";
 import * as path from "node:path";
 import { pathToFileURL } from "node:url";
 import * as pdfjs from "pdfjs-dist/legacy/build/pdf.mjs";
+
+const PDFJS_VERSION = "4.10.38";
+const WORKER_CDN = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${PDFJS_VERSION}/legacy/build/pdf.worker.mjs`;
 
 function pdfjsRootDir(): string {
   try {
@@ -16,9 +20,17 @@ function pdfjsRootDir(): string {
   return path.join(process.cwd(), "node_modules", "pdfjs-dist");
 }
 
-/** Resolve pdfjs assets on disk (Next.js must not bundle pdfjs-dist). */
+function assetPath(...segments: string[]): string {
+  return path.join(pdfjsRootDir(), ...segments);
+}
+
+/** Resolve pdfjs assets on disk, or CDN when missing (Vercel serverless bundle). */
 function pdfjsAssetUrl(...segments: string[]): string {
-  return pathToFileURL(path.join(pdfjsRootDir(), ...segments)).href;
+  const local = assetPath(...segments);
+  if (fs.existsSync(local)) {
+    return pathToFileURL(local).href;
+  }
+  return `https://cdn.jsdelivr.net/npm/pdfjs-dist@${PDFJS_VERSION}/${segments.join("/")}`;
 }
 
 let workerConfigured = false;
@@ -28,11 +40,10 @@ function ensurePdfjsWorker(): void {
     workerConfigured = true;
     return;
   }
-  pdfjs.GlobalWorkerOptions.workerSrc = pdfjsAssetUrl(
-    "legacy",
-    "build",
-    "pdf.worker.mjs"
-  );
+  const localWorker = assetPath("legacy", "build", "pdf.worker.mjs");
+  pdfjs.GlobalWorkerOptions.workerSrc = fs.existsSync(localWorker)
+    ? pathToFileURL(localWorker).href
+    : WORKER_CDN;
   workerConfigured = true;
 }
 
@@ -42,7 +53,6 @@ export function pdfjsDocumentOptions(data: Uint8Array) {
   return {
     data,
     disableFontFace: true,
-    /** Text extraction only — avoids optional @napi-rs/canvas when unavailable. */
     useSystemFonts: true,
     standardFontDataUrl: pdfjsAssetUrl("standard_fonts"),
     cMapUrl: pdfjsAssetUrl("cmaps"),

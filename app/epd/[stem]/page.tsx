@@ -4,21 +4,19 @@ import { GraphCoverageSummary } from "@/app/components/GraphCoverageSummary";
 import { EpdWorkspaceLayout } from "@/app/components/EpdWorkspaceLayout";
 import { corpusPickerItemsFromRecords } from "@/lib/corpus/picker-item";
 import {
-  canonicalExtractStem,
-  listEpdRecords,
+  listEpdDashboardRecords,
   loadEpdRecord,
   loadVerification,
-  pdfPathForStem,
   resolveCorpusStem,
 } from "@/lib/data";
 import { isServeOnlyDeploy } from "@/lib/deploy/serve-only";
-import { docmapIsCached } from "@/lib/extract/docmap-cache";
-import { ensureDocmapForStem } from "@/lib/extract/ensure-docmap";
-import { ensurePhase7ForStem } from "@/lib/extract/ensure-phase7";
+import { ensurePdfArtifactsForStem } from "@/lib/extract/ensure-pdf-artifacts";
 import { buildGapReport, writeGapSnapshot } from "@/lib/extract/gap-report";
 import { buildGraphDocumentForStem } from "@/lib/graph/document";
 import { resolveEpdPhases } from "@/lib/phases/registry";
 import { normalizeEpdStem } from "@/lib/stems/normalize";
+
+export const dynamic = "force-dynamic";
 
 function JsonBlock({ data }: { data: unknown }) {
   return <pre className="code-block">{JSON.stringify(data, null, 2)}</pre>;
@@ -34,15 +32,12 @@ export default async function EpdPage({
   const { stem: rawStem } = await params;
   const { gaps: gapsQuery } = await searchParams;
   const stem = resolveCorpusStem(normalizeEpdStem(rawStem));
-  if (pdfPathForStem(stem) && !isServeOnlyDeploy()) {
-    const canonical = canonicalExtractStem(stem);
-    if (!docmapIsCached(canonical)) {
-      await ensureDocmapForStem(stem);
-    }
-    await ensurePhase7ForStem(stem);
-  }
-  const record = loadEpdRecord(stem);
-  const corpusItems = corpusPickerItemsFromRecords(listEpdRecords());
+  await ensurePdfArtifactsForStem(stem);
+
+  const record = loadEpdRecord(stem, {
+    includeSectionCoverage: !isServeOnlyDeploy(),
+  });
+  const corpusItems = corpusPickerItemsFromRecords(listEpdDashboardRecords());
 
   if (!record.phase1 && !record.phase2 && !record.hasPdf) {
     notFound();

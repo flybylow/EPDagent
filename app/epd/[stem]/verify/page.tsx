@@ -4,17 +4,12 @@ import { EpdCompareWorkspace } from "@/app/components/EpdCompareWorkspace";
 import { EpdWorkspaceLayout } from "@/app/components/EpdWorkspaceLayout";
 import { corpusPickerItemsFromRecords } from "@/lib/corpus/picker-item";
 import {
-  canonicalExtractStem,
-  listEpdRecords,
+  listEpdDashboardRecords,
   loadEpdRecord,
   loadVerification,
-  pdfPathForStem,
   resolveCorpusStem,
 } from "@/lib/data";
-import { isServeOnlyDeploy } from "@/lib/deploy/serve-only";
-import { docmapIsCached } from "@/lib/extract/docmap-cache";
-import { ensureDocmapForStem } from "@/lib/extract/ensure-docmap";
-import { ensurePhase7ForStem } from "@/lib/extract/ensure-phase7";
+import { ensurePdfArtifactsForStem } from "@/lib/extract/ensure-pdf-artifacts";
 import { resolveEpdPhases } from "@/lib/phases/registry";
 import { normalizeEpdStem } from "@/lib/stems/normalize";
 
@@ -25,14 +20,8 @@ export default async function VerifyPage({
 }) {
   const { stem: rawStem } = await params;
   const stem = resolveCorpusStem(normalizeEpdStem(rawStem));
-  if (pdfPathForStem(stem) && !isServeOnlyDeploy()) {
-    const canonical = canonicalExtractStem(stem);
-    if (!docmapIsCached(canonical)) {
-      await ensureDocmapForStem(stem);
-    }
-    await ensurePhase7ForStem(stem);
-  }
-  const record = loadEpdRecord(stem);
+  await ensurePdfArtifactsForStem(stem);
+  const record = loadEpdRecord(stem, { includeSectionCoverage: false });
   const registry = resolveEpdPhases(stem, { pdfAvailable: record.hasPdf });
 
   if (!registry.draft) {
@@ -40,7 +29,7 @@ export default async function VerifyPage({
   }
 
   const verification = loadVerification(stem);
-  const corpusItems = corpusPickerItemsFromRecords(listEpdRecords());
+  const corpusItems = corpusPickerItemsFromRecords(listEpdDashboardRecords());
 
   return (
     <div className="epd-detail-page">

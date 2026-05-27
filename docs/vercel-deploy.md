@@ -90,11 +90,13 @@ curl -s "https://searchepd.vercel.app/api/facts/B-EPD_023.0011.007-02.00.00%20Ro
 
 If `/api/epds` returns **500** with an empty body, check Vercel env: delete **`EPDAGENT_PDF_DIR`** if it points outside the deployment (or to a missing folder).
 
-### pdfjs / `@napi-rs/canvas` warning
+### pdfjs / EPD detail pages
 
-`pdfjs-dist` optionally loads `@napi-rs/canvas`. On Vercel, **serve-only** mode skips auto PDF parsing on EPD pages (`VERCEL=1`). Read APIs do not need canvas.
+On Vercel (`VERCEL=1`), EPD routes use **serve-only** mode: they do not auto-build docmap or phase7 from PDF text. Committed `out/phase_docmap/` (if any) and phase JSON still load.
 
-The repo lists `@napi-rs/canvas` under `optionalDependencies` so Linux deploys install the native binary when present. Extraction stays **local** (`npm install` on your machine). If the warning still appears in Vercel logs during an extract API call, ignore it for Tabulas — use `/api/products` and `/api/facts` only.
+EPD pages must **not** statically import `ensure-docmap` / `ensure-phase7` (those pull `pdfjs-dist` and fail with missing `pdf.worker.mjs` on serverless). Use `ensurePdfArtifactsForStem()` from `lib/extract/ensure-pdf-artifacts.ts` instead.
+
+`pdfjs-dist` optionally loads `@napi-rs/canvas`. The repo lists it under `optionalDependencies`. Extraction stays **local**. Warnings during `/api/extract` on Vercel are expected on Hobby — Tabulas should use `/api/products` and `/api/facts` only.
 
 ## Related
 
